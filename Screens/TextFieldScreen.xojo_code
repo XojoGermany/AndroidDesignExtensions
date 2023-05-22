@@ -156,6 +156,95 @@ Begin TemplateScreen TextFieldScreen
       Visible         =   True
       Width           =   200
    End
+   Begin MobileTextField MultilineField
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   0
+      Enabled         =   True
+      Height          =   148
+      Hint            =   "Multiline"
+      InputType       =   0
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   2
+      SelectedText    =   ""
+      SelectionLength =   0
+      SelectionStart  =   0
+      Text            =   "Since MobileTextArea has no Hint property, we simply use MobileTextField and enable Multiline."
+      TextColor       =   &c00000000
+      Top             =   347
+      Visible         =   True
+      Width           =   320
+   End
+   Begin MobileSwitch PasswordSwitch
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   30
+      Left            =   290
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   503
+      Value           =   False
+      Visible         =   True
+      Width           =   50
+   End
+   Begin MobileLabel PasswordLabel
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   2
+      Enabled         =   True
+      Height          =   26
+      Left            =   188
+      LineBreakMode   =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Text            =   "Password"
+      TextColor       =   &c00000000
+      Top             =   506
+      Visible         =   True
+      Width           =   100
+   End
+   Begin MobileTextField DefaultField1
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   0
+      Enabled         =   True
+      Height          =   44
+      Hint            =   "Default TextField"
+      InputType       =   0
+      Left            =   53
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   2
+      SelectedText    =   ""
+      SelectionLength =   0
+      SelectionStart  =   0
+      Text            =   ""
+      TextColor       =   &c00000000
+      Top             =   557
+      Visible         =   True
+      Width           =   200
+   End
 End
 #tag EndMobileScreen
 
@@ -199,6 +288,33 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.HighlightColor = Color.Red
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events MultilineField
+	#tag Event
+		Sub Opening()
+		  Me.SetInputType(kTYPE_CLASS_TEXT + _
+		  kTYPE_TEXT_FLAG_MULTI_LINE)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events PasswordSwitch
+	#tag Event
+		Sub ValueChanged()
+		  MultilineField.SetInputType(kTYPE_CLASS_TEXT + _
+		  kTYPE_TEXT_FLAG_MULTI_LINE + _
+		  If(PasswordSwitch.Value, kTYPE_TEXT_VARIATION_PASSWORD, 0))
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events DefaultField1
+	#tag Event
+		Sub Opening()
+		  #Pragma Warning "Nur ein Test"
+		  
+		  Declare Sub setImeOptions Lib "Object:DefaultField1:MobileTextField" (options As Integer)
+		  setImeOptions(3)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

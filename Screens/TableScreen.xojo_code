@@ -65,6 +65,15 @@ End
 	#tag EndMethod
 
 
+	#tag Property, Flags = &h21
+		Private CheckBoxPic As Picture
+	#tag EndProperty
+
+	#tag Property, Flags = &h21
+		Private CheckBoxPicBlank As Picture
+	#tag EndProperty
+
+
 #tag EndScreenCode
 
 #tag Events NavigationBarContainer1
@@ -82,6 +91,9 @@ End
 #tag Events Table1
 	#tag Event
 		Sub Opening()
+		  CheckBoxPicBlank = Picture.SystemImage("checkbox_blank_circle_outline", Picture.SystemImageSizes.dp24, Color.LightGray)
+		  CheckBoxPic = Picture.SystemImage("checkbox_marked_circle", Picture.SystemImageSizes.dp24, Color.AccentThemeColor)
+		  
 		  Me.ShadowColor = &c000000FF ' no shadow
 		  Me.ScrollBarFadeDuration = 0 ' make Scrollbar always visible
 		  
@@ -91,6 +103,13 @@ End
 		  For row As Integer = 0 To Me.LastAddedRowIndex
 		    
 		    Me.RowBackgroundColorAt(row) = &c000000FF ' transparent
+		    
+		    If row >= 19 And row <= 38 Then
+		      
+		      Me.RowPictureAt(row, True) = CheckBoxPicBlank
+		      Me.RowTagAt(row) = False
+		      
+		    End If
 		    
 		  Next
 		  
@@ -130,6 +149,13 @@ End
 		  Var oRowTag As Variant = Me.RowTagAt(Me.SelectedRowIndex)
 		  
 		  If oRowTag = Nil Then Return
+		  
+		  If Me.SelectedRowIndex >= 19 And Me.SelectedRowIndex <= 38 Then
+		    
+		    Me.RowPictureAt(Me.SelectedRowIndex, True) = If(oRowTag.BooleanValue, CheckBoxPicBlank, CheckBoxPic)
+		    Me.RowTagAt(Me.SelectedRowIndex) = Not oRowTag.BooleanValue
+		    
+		  End If
 		  
 		  Select Case oRowTag
 		  Case "blue"
@@ -178,7 +204,7 @@ End
 		    
 		  Case "scrollTo"
 		    
-		    Me.SmoothScrollToPosition(5)
+		    Me.SmoothScrollToPosition(32)
 		    
 		  Case "transparent"
 		    
