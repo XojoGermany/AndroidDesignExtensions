@@ -13,6 +13,7 @@ Begin TemplateScreen TextFieldScreen
       Enabled         =   True
       HasBackButton   =   False
       HasBackgroundColor=   False
+      HasGradient     =   False
       Height          =   56
       Left            =   0
       LockBottom      =   False
@@ -242,7 +243,7 @@ Begin TemplateScreen TextFieldScreen
       Text            =   ""
       TextColor       =   &c00000000
       Top             =   557
-      Visible         =   True
+      Visible         =   False
       Width           =   200
    End
 End

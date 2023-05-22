@@ -5,46 +5,6 @@ Begin TemplateScreen FontScreen
    Modal           =   False
    Orientation     =   0
    Title           =   "Untitled"
-   Begin MobileLabel DefaultLabel
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   1
-      Enabled         =   True
-      Height          =   40
-      Left            =   80
-      LineBreakMode   =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Text            =   "Default Font"
-      TextColor       =   &c00000000
-      Top             =   80
-      Visible         =   True
-      Width           =   200
-   End
-   Begin MobileLabel MonospaceLabel
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   1
-      Enabled         =   True
-      Height          =   40
-      Left            =   80
-      LineBreakMode   =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Text            =   "Monospace"
-      TextColor       =   &c00000000
-      Top             =   128
-      Visible         =   True
-      Width           =   200
-   End
    Begin NavigationBarContainer NavigationBarContainer1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
@@ -53,6 +13,7 @@ Begin TemplateScreen FontScreen
       Enabled         =   True
       HasBackButton   =   False
       HasBackgroundColor=   False
+      HasGradient     =   False
       Height          =   56
       Left            =   0
       LockBottom      =   False
@@ -66,70 +27,29 @@ Begin TemplateScreen FontScreen
       Visible         =   True
       Width           =   360
    End
-   Begin MobileLabel SerifLabel
+   Begin MobileScrollableArea FontScrollableArea
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
-      Alignment       =   1
       Enabled         =   True
-      Height          =   40
-      Left            =   80
-      LineBreakMode   =   0
-      LockBottom      =   False
+      Height          =   700
+      Left            =   0
+      LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Text            =   "Serif"
-      TextColor       =   &c00000000
-      Top             =   176
+      ScrollContent   =   1534883839
+      Top             =   56
       Visible         =   True
-      Width           =   200
-   End
-   Begin MobileLabel SansSerifLabel
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   1
-      Enabled         =   True
-      Height          =   40
-      Left            =   80
-      LineBreakMode   =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Text            =   "Sans Serif"
-      TextColor       =   &c00000000
-      Top             =   224
-      Visible         =   True
-      Width           =   200
+      Width           =   360
    End
 End
 #tag EndMobileScreen
 
 #tag ScreenCode
-	#tag Constant, Name = kFontSize, Type = Double, Dynamic = False, Default = \"20", Scope = Private
-	#tag EndConstant
-
-
 #tag EndScreenCode
 
-#tag Events DefaultLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = Font.SystemFont(kFontSize)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events MonospaceLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("monospace", kFontSize)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
 #tag Events NavigationBarContainer1
 	#tag Event
 		Sub Opening()
@@ -139,20 +59,6 @@ End
 	#tag Event
 		Sub Pressed()
 		  Close
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events SerifLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("serif", kFontSize)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events SansSerifLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("sans-serif", kFontSize)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

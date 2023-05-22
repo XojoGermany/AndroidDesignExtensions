@@ -47,6 +47,7 @@ MobileScreen=TextFieldScreen;Screens/TextFieldScreen.xojo_code;&h00000000791A4FF
 MultiImage=mwxlogoclear;Resources/mwxlogoclear.xojo_image;&h000000000E67BFFF;&h0000000004DCCFFF;false
 MobileContainer=ScrollableContainer;Containers/ScrollableContainer.xojo_code;&h0000000043B16FFF;&h000000003BC167FF;false
 Class=ColorButton;Controls/ColorButton.xojo_code;&h00000000229F67FF;&h000000001E06E7FF;false
+MobileContainer=FontContainer;Containers/FontContainer.xojo_code;&h000000005B7C77FF;&h000000003BC167FF;false
 DefaultMobileView=HomeScreen
 MajorVersion=1
 MinorVersion=0
