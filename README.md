@@ -1,5 +1,5 @@
 [![XOJO 2023r2](https://img.shields.io/badge/Xojo-2023r2-green.svg)](https://www.xojo.com/)
-[![Platforms Android](https://img.shields.io/badge/Platforms-Android-lightgrey.svg?style=flat)](http://www.apple.com/ios/)
+[![Platforms Android](https://img.shields.io/badge/Platforms-Android-lightgrey.svg?style=flat)](https://www.android.com)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
 # AndroidDesignExtensions
@@ -8,27 +8,62 @@ A set of UI extensions for Xojo Android framework.
 ## Currently implemented extensions
 
 ### AndroidMobileTable
+* Background Color
+* Scrollbar Fade Duration
 * Scrollbar Style
+* Shadow Color
 * Smooth Scroll By
 * Smooth Scroll To Position
-* Transcript Mode
 * Vertical Scrollbar Position
 
 ### MobileButton
 * Background Color
 * Corner Radius
+* Shadow Color
 
 ### MobileContainer
 * Background Color
+* Shadow Color
 
 ### MobileHTMLViewer
 * Background Color
+* Shadow Color
 
 ### MobileImageViewer
+* Alpha Value
 * Background Color
+* Shadow Color
 
 ### MobileLabel
 * Background Color
+* Shadow Color
+
+### MobileScreen
+* Background Color
+
+### MobileScrollableArea
+* Background Color
+* Shadow Color
+* Smooth Scroll By
+* Smooth Scroll To
+
+### MobileTabPanel
+* Background Color
+
+### MobileTextArea
+* Background Color
+* First Baseline To Top Height
+* Highlight Color
+* Last Baseline To Bottom Height
+* Line Height
+* Padding
+
+### MobileTextField
+* Background Color
+* Highlight Color
+* Padding
+
+## ToDo
 
 ### MobileOval
 * Background Color
@@ -39,39 +74,15 @@ A set of UI extensions for Xojo Android framework.
 ### MobileProgressWheel
 * Background Color
 
-### MobileScreen
-* Background Color
-
-### MobileScrollableAreas
-* Background Color
-
 ### MobileSeparator
 * Background Color
 
 ### MobileSlider
 * Background Color
 
-### MobileTabPanel
-* Background Color
-
-### MobileTextArea
-* Background Color
-* First Baseline To Top Height
-* Gravity
-* Highlight Color
-* Last Baseline To Bottom Height
-* Line Height
-* Padding
-* Paint Flags
-
-### MobileTextField
-* Background Color
-* Highlight Color
-* Padding
-
 ## History
 
-Copy-paste the AndroidDesignExtensions Module into your project.
+Copy-paste the AndroidDesignExtensions Folder into your project.
 
 Feel free to ask for feature requests!
 
