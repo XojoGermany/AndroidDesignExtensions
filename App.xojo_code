@@ -8,6 +8,16 @@ Inherits MobileApplication
 		End Sub
 	#tag EndEvent
 
+	#tag Event
+		Function UnhandledException(exc As RuntimeException) As Boolean
+		  Break
+		End Function
+	#tag EndEvent
+
+
+	#tag Property, Flags = &h0
+		BackgroundMode As Integer
+	#tag EndProperty
 
 	#tag Property, Flags = &h0
 		SystemImages() As String

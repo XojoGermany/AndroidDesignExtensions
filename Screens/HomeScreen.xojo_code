@@ -147,6 +147,9 @@ End
 		  AddSection("Image Extensions")
 		  AddRow("Image Examples", "imageviewer", GetPicture("image", &c5E5CE600))
 		  
+		  AddSection("Screen Extensions")
+		  AddRow("Screen Examples", "screen", GetPicture("cellphone_android", &cFFD60A00))
+		  
 		  AddSection("Scroll Extensions")
 		  AddRow("Scroll Examples", "scrollablearea", GetPicture("arrow_expand_vertical", &cFC800700))
 		  
@@ -200,6 +203,10 @@ End
 		  Case "label"
 		    
 		    LabelScreen.Show
+		    
+		  Case "screen"
+		    
+		    ActivityScreen.Show
 		    
 		  Case "scrollablearea"
 		    

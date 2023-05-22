@@ -13,6 +13,7 @@ Begin TemplateScreen TableScreen
       Enabled         =   True
       HasBackButton   =   False
       HasBackgroundColor=   False
+      HasGradient     =   False
       Height          =   56
       Left            =   0
       LockBottom      =   False
@@ -93,6 +94,9 @@ End
 		Sub Opening()
 		  CheckBoxPicBlank = Picture.SystemImage("checkbox_blank_circle_outline", Picture.SystemImageSizes.dp24, Color.LightGray)
 		  CheckBoxPic = Picture.SystemImage("checkbox_marked_circle", Picture.SystemImageSizes.dp24, Color.AccentThemeColor)
+		  
+		  Me.ScrollBarSize = 20
+		  Me.OverScrollMode = 2 ' Always = 0, IfContentScrolls = 1, Never = 2
 		  
 		  Me.ShadowColor = &c000000FF ' no shadow
 		  Me.ScrollBarFadeDuration = 0 ' make Scrollbar always visible

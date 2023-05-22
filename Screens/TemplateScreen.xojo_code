@@ -3,6 +3,7 @@ Protected Class TemplateScreen
 Inherits MobileScreen
 	#tag Event
 		Sub Opening()
+		  ' Call Opening-Event
 		  RaiseEvent Opening
 		  
 		  Self.BackgroundColor = Color.White

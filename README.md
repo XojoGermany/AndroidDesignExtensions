@@ -9,7 +9,10 @@ A set of UI extensions for Xojo Android framework.
 
 ### AndroidMobileTable
 * Background Color
+* Over Scroll Mode
+* Scrollbar Default Delay Before Fade
 * Scrollbar Fade Duration
+* Scrollbar Size
 * Scrollbar Style
 * Shadow Color
 * Smooth Scroll By
@@ -40,6 +43,8 @@ A set of UI extensions for Xojo Android framework.
 
 ### MobileScreen
 * Background Color
+* Navigationbar Color
+* Statusbar Color
 
 ### MobileScrollableArea
 * Background Color
@@ -61,6 +66,7 @@ A set of UI extensions for Xojo Android framework.
 ### MobileTextField
 * Background Color
 * Highlight Color
+* Input Type
 * Padding
 
 ## ToDo

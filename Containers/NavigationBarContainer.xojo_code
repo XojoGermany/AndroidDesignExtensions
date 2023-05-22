@@ -69,6 +69,7 @@ End
 #tag ScreenCode
 	#tag Event
 		Sub Opening()
+		  ' Call Opening-Event
 		  RaiseEvent Opening
 		  
 		  If HasBackgroundColor Then
@@ -109,6 +110,15 @@ End
 	#tag Property, Flags = &h0
 		HasBackgroundColor As Boolean = False
 	#tag EndProperty
+
+	#tag ComputedProperty, Flags = &h0
+		#tag Setter
+			Set
+			  GradientCanvas.Visible = value
+			End Set
+		#tag EndSetter
+		HasGradient As Boolean
+	#tag EndComputedProperty
 
 	#tag Property, Flags = &h21
 		Private mText As String
@@ -168,6 +178,7 @@ End
 		  BackButtonPressed = False
 		  Me.Refresh
 		  
+		  ' Call Pressed-Event
 		  RaiseEvent Pressed
 		End Sub
 	#tag EndEvent
@@ -340,6 +351,14 @@ End
 		Visible=false
 		Group="Behavior"
 		InitialValue="False"
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="HasGradient"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
 		Type="Boolean"
 		EditorType=""
 	#tag EndViewProperty
