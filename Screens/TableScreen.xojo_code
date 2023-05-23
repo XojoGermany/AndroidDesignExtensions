@@ -33,10 +33,10 @@ Begin TemplateScreen TableScreen
       Enabled         =   True
       HasHeader       =   False
       Header          =   ""
-      Height          =   646
+      Height          =   676
       InitialValue    =   "Background Color\n⭕️ Transparent\n⚪️ White\n🔴 Red\n🟢 Green\n🔵 Blue\nScrolling\nSmooth Scroll By\nSmooth Scroll To Position\nVertical Scrollbar Position\nDefault\nLeft\nRight\nScrollbar Style\nInside Inset\nInside Overlay\nOutside Inset\nOutside Overlay\nFruits\n🍏 Apple\n🍐 Pear\n🍋 Lemon\n🍌 Banana\n🍉 Melone\n🍇 Grapes\n🍓 Strawberry\n🫐 Blueberry\n🍒 Cherry\n🍑 Peach\n🥭 Mango\n🍍 Pineapple\n🥥 Coconut\n🥝 Kiwi\n🍅Tomato\n🥑 Avocado\n🥒 Cucumber\n🧅 Onion"
       LastAddedRowIndex=   0
-      Left            =   20
+      Left            =   0
       LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   True
@@ -51,7 +51,7 @@ Begin TemplateScreen TableScreen
       SeparatorThickness=   0
       Top             =   80
       Visible         =   True
-      Width           =   320
+      Width           =   360
    End
 End
 #tag EndMobileScreen

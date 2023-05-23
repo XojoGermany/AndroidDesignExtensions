@@ -13,6 +13,7 @@ Begin TemplateScreen HTMLScreen
       Enabled         =   True
       HasBackButton   =   False
       HasBackgroundColor=   False
+      HasGradient     =   False
       Height          =   56
       Left            =   0
       LockBottom      =   False
@@ -30,7 +31,7 @@ Begin TemplateScreen HTMLScreen
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
-      Height          =   700
+      Height          =   578
       Left            =   0
       LockBottom      =   True
       LockedInPosition=   False
@@ -38,9 +39,71 @@ Begin TemplateScreen HTMLScreen
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   56
+      Top             =   116
       Visible         =   True
       Width           =   360
+   End
+   Begin MobileTextField Search
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   0
+      Enabled         =   True
+      Height          =   44
+      Hint            =   "Search on page"
+      InputType       =   0
+      Left            =   10
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   2
+      SelectedText    =   ""
+      SelectionLength =   0
+      SelectionStart  =   0
+      Text            =   ""
+      TextColor       =   &c00000000
+      Top             =   64
+      Visible         =   True
+      Width           =   232
+   End
+   Begin MobileButton SearchButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Search"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   250
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   64
+      Visible         =   True
+      Width           =   100
+   End
+   Begin MobileButton Button1
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Save WebArchive"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   180
+      LockBottom      =   True
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   False
+      Scope           =   0
+      Top             =   701
+      Visible         =   True
+      Width           =   170
    End
 End
 #tag EndMobileScreen
@@ -63,7 +126,31 @@ End
 #tag Events HTMLViewer1
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = &cFFD60A00
+		  ' Me.BackgroundColor = &cFFD60A00
+		  Me.LoadURL("https://www.xojo.com")
+		  Me.OverScrollMode = 2 ' Always = 0, IfContentScrolls = 1, Never = 2
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Search
+	#tag Event
+		Sub Opening()
+		  Me.BackgroundColor = &c000000FF
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events SearchButton
+	#tag Event
+		Sub Pressed()
+		  HTMLViewer1.Find(Search.Text)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Button1
+	#tag Event
+		Sub Pressed()
+		  Var path As String = SpecialFolder.Documents.Child("My WebArchive.webarchive").NativePath
+		  HTMLViewer1.SaveAsWebArchive(path)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

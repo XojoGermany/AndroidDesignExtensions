@@ -30,6 +30,10 @@ A set of UI extensions for Xojo Android framework.
 
 ### MobileHTMLViewer
 * Background Color
+* Find
+* Over Scroll Mode
+* Save As WebArchive
+* Scrollbar Style
 * Shadow Color
 
 ### MobileImageViewer

@@ -75,6 +75,14 @@ End
 #tag EndMobileScreen
 
 #tag ScreenCode
+	#tag Event
+		Sub Opening()
+		  Self.NavigationBarColor = &cF2F2F7
+		  Self.NavigationBarDividerColor = &cF2F2F7
+		End Sub
+	#tag EndEvent
+
+
 	#tag Method, Flags = &h21
 		Private Sub AddRow(title As String, tag As String, pic As Picture = Nil)
 		  Static oChevronPic As Picture

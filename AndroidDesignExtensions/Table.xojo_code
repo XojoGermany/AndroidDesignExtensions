@@ -18,7 +18,7 @@ Protected Module Table
 		End Sub
 	#tag EndMethod
 
-	#tag Method, Flags = &h0, Description = 5365747320746865207769647468206F6620766572746963616C207363726F6C6C6261727320616E6420686569676874206F6620686F72697A6F6E74616C207363726F6C6C626172732E
+	#tag Method, Flags = &h0
 		Sub OverScrollMode(Extends myTable As AndroidMobileTable, Assigns overScrollMode As Integer)
 		  #Pragma Unused myTable
 		  
