@@ -13,6 +13,7 @@ Begin TemplateScreen ButtonScreen
       Enabled         =   True
       HasBackButton   =   False
       HasBackgroundColor=   False
+      HasGradient     =   True
       Height          =   56
       Left            =   0
       LockBottom      =   False
@@ -26,113 +27,22 @@ Begin TemplateScreen ButtonScreen
       Visible         =   True
       Width           =   360
    End
-   Begin MobileButton DefaultButton
+   Begin MobileScrollableArea ButtonScrollableArea
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
-      Caption         =   "Default Button"
-      CaptionColor    =   &cFFFFFF00
       Enabled         =   True
-      Height          =   44
-      Left            =   80
-      LockBottom      =   False
+      Height          =   700
+      Left            =   0
+      LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   85
+      ScrollContent   =   578543615
+      Top             =   56
       Visible         =   True
-      Width           =   200
-   End
-   Begin MobileButton BackgroundColorButton
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Background Color"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   80
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   137
-      Visible         =   True
-      Width           =   200
-   End
-   Begin MobileButton CornerRadiusButton
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Corner Radius"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   80
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   189
-      Visible         =   True
-      Width           =   200
-   End
-   Begin MobileButton CornerRadiusButton2
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Corner Radius"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   80
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   241
-      Visible         =   True
-      Width           =   200
-   End
-   Begin MobileButton ShadowButton
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Without Shadow"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   80
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   293
-      Visible         =   True
-      Width           =   200
-   End
-   Begin MobileButton ColoredShadowButton
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Colored Shadow"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   80
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   345
-      Visible         =   True
-      Width           =   200
+      Width           =   360
    End
 End
 #tag EndMobileScreen
@@ -149,43 +59,6 @@ End
 	#tag Event
 		Sub Pressed()
 		  Close
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events BackgroundColorButton
-	#tag Event
-		Sub Opening()
-		  Me.BackgroundColor = &c6AC4DC00
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events CornerRadiusButton
-	#tag Event
-		Sub Opening()
-		  Me.BackgroundColor = &cFF375F00
-		  Me.CornerRadius = 0
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events CornerRadiusButton2
-	#tag Event
-		Sub Opening()
-		  Me.BackgroundColor = &c5E5CE600
-		  Me.CornerRadius = 80
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ShadowButton
-	#tag Event
-		Sub Opening()
-		  Me.ShadowColor = &c000000FF
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ColoredShadowButton
-	#tag Event
-		Sub Opening()
-		  Me.ShadowColor = Color.Red
 		End Sub
 	#tag EndEvent
 #tag EndEvents

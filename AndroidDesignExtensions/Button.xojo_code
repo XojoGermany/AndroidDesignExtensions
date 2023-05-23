@@ -19,12 +19,46 @@ Protected Module Button
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
+		Sub BackgroundColor(Extends myButton As MobileDateTimePicker, Assigns myColor As Color)
+		  #Pragma Unused myButton
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:myButton:MobileDateTimePicker" (aColor As Integer)
+		    setBackgroundColor(myColor.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused myColor
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
 		Sub CornerRadius(Extends myButton As MobileButton, Assigns myRadius As Integer)
 		  #Pragma Unused myButton
 		  
 		  #If TargetAndroid
 		    
 		    Declare Sub setCornerRadius Lib "Object:myButton:MobileButton" (aRadius As Integer)
+		    setCornerRadius(myRadius)
+		    
+		  #Else
+		    
+		    #Pragma Unused myRadius
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub CornerRadius(Extends myButton As MobileDateTimePicker, Assigns myRadius As Integer)
+		  #Pragma Unused myButton
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setCornerRadius Lib "Object:myButton:MobileDateTimePicker" (aRadius As Integer)
 		    setCornerRadius(myRadius)
 		    
 		  #Else
@@ -42,6 +76,23 @@ Protected Module Button
 		  #If TargetAndroid
 		    
 		    Declare Sub setOutlineSpotShadowColor Lib "Object:myButton:MobileButton" (aColor As Integer)
+		    setOutlineSpotShadowColor(myColor.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused myColor
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, CompatibilityFlags = (TargetConsole and (Target64Bit)) or  (TargetWeb and (Target64Bit)) or  (TargetDesktop and (Target64Bit)) or  (TargetAndroid and (Target64Bit))
+		Sub ShadowColor(Extends myButton As MobileDateTimePicker, Assigns myColor As Color)
+		  #Pragma Unused myButton
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:myButton:MobileDateTimePicker" (aColor As Integer)
 		    setOutlineSpotShadowColor(myColor.ToInteger)
 		    
 		  #Else

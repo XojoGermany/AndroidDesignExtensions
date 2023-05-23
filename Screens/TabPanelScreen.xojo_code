@@ -102,6 +102,7 @@ End
 #tag Events TabModePanel
 	#tag Event
 		Sub Opening()
+		  Me.SetTextColors(Color.LightGray, Color.Black)
 		  Me.TabMode = 0
 		End Sub
 	#tag EndEvent
