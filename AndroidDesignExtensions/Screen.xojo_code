@@ -36,6 +36,23 @@ Protected Module Screen
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
+		Sub NavigationBarDividerColor(Extends myScreen As MobileScreen, Assigns myColor As Color)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNavigationBarDividerColor Lib "Object:myScreen:MobileScreen" Alias "getWindow().setNavigationBarDividerColor" (aColor As Integer)
+		    setNavigationBarDividerColor(myColor.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused myColor
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
 		Sub StatusBarColor(Extends myScreen As MobileScreen, Assigns myColor As Color)
 		  #Pragma Unused myScreen
 		  

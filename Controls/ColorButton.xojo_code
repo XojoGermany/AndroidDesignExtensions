@@ -2,6 +2,15 @@
 Protected Class ColorButton
 Inherits MobileButton
 	#tag Event
+		Sub Opening()
+		  ' Call Opening-Event
+		  RaiseEvent Opening
+		  
+		  Me.CornerRadius = 180
+		End Sub
+	#tag EndEvent
+
+	#tag Event
 		Sub Pressed()
 		  Select Case App.BackgroundMode
 		  Case 0
@@ -15,6 +24,10 @@ Inherits MobileButton
 		  Case 2
 		    
 		    App.CurrentScreen.NavigationBarColor = MyColor
+		    
+		  Case 3
+		    
+		    App.CurrentScreen.NavigationBarDividerColor = MyColor
 		    
 		  End Select
 		  
@@ -32,6 +45,10 @@ Inherits MobileButton
 		End Sub
 	#tag EndMethod
 
+
+	#tag Hook, Flags = &h0
+		Event Opening()
+	#tag EndHook
 
 	#tag Hook, Flags = &h0
 		Event Pressed()

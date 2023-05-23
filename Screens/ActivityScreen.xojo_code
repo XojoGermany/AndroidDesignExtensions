@@ -304,7 +304,7 @@ Begin TemplateScreen ActivityScreen
       HasHeader       =   False
       Header          =   ""
       Height          =   143
-      InitialValue    =   "Status Bar\nBackground\nNavigation Bar"
+      InitialValue    =   "Status Bar\nBackground\nNavigation Bar\nNavigation Bar Divider"
       LastAddedRowIndex=   0
       Left            =   20
       LockBottom      =   False
@@ -377,21 +377,11 @@ End
 		  Me.MyBackgroundColor = &c236BFD
 		End Sub
 	#tag EndEvent
-	#tag Event
-		Sub Pressed()
-		  ' Self.SetSystemBarAppearance(16, 0)
-		End Sub
-	#tag EndEvent
 #tag EndEvents
 #tag Events ColorButton2
 	#tag Event
 		Sub Opening()
 		  Me.MyBackgroundColor = &cFFD407
-		End Sub
-	#tag EndEvent
-	#tag Event
-		Sub Pressed()
-		  ' Self.SetSystemBarAppearance(2, 0)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
