@@ -13,7 +13,7 @@ Begin TemplateScreen FontScreen
       Enabled         =   True
       HasBackButton   =   False
       HasBackgroundColor=   False
-      HasGradient     =   False
+      HasGradient     =   True
       Height          =   56
       Left            =   0
       LockBottom      =   False

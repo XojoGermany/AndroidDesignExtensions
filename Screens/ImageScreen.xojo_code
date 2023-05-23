@@ -13,6 +13,7 @@ Begin TemplateScreen ImageScreen
       Enabled         =   True
       HasBackButton   =   False
       HasBackgroundColor=   False
+      HasGradient     =   False
       Height          =   56
       Left            =   0
       LockBottom      =   False
@@ -137,6 +138,24 @@ Begin TemplateScreen ImageScreen
       Visible         =   True
       Width           =   200
    End
+   Begin MobileButton TintColorButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Red Tint Color"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   80
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   0
+      Top             =   562
+      Visible         =   True
+      Width           =   200
+   End
 End
 #tag EndMobileScreen
 
@@ -181,6 +200,13 @@ End
 	#tag Event
 		Sub Pressed()
 		  Image1.ShadowColor = Color.Orange
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events TintColorButton
+	#tag Event
+		Sub Pressed()
+		  Image1.TintColor = Color.Red
 		End Sub
 	#tag EndEvent
 #tag EndEvents

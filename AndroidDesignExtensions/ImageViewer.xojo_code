@@ -52,6 +52,23 @@ Protected Module ImageViewer
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 53657420612074696E74696E67206F7074696F6E20666F722074686520696D6167652E
+		Sub TintColor(Extends myImageViewer As MobileImageViewer, Assigns myColor As Color)
+		  #Pragma Unused myImageViewer
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setColorFilter Lib "Object:myImageViewer:MobileImageViewer" (aColor As Integer)
+		    setColorFilter(myColor.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused myColor
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 
 	#tag ViewBehavior
 		#tag ViewProperty

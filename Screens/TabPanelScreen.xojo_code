@@ -13,6 +13,7 @@ Begin TemplateScreen TabPanelScreen
       Enabled         =   True
       HasBackButton   =   False
       HasBackgroundColor=   False
+      HasGradient     =   False
       Height          =   56
       Left            =   0
       LockBottom      =   False
@@ -31,7 +32,7 @@ Begin TemplateScreen TabPanelScreen
       AccessibilityLabel=   ""
       Count           =   0
       Enabled         =   True
-      Height          =   320
+      Height          =   140
       LastAddedTabIndex=   0
       LayoutTabIndex  =   0
       Left            =   20
@@ -44,6 +45,27 @@ Begin TemplateScreen TabPanelScreen
       SelectedTabIndex=   0
       Tabs            =   "Background\n0\n1309796351\rColor\n0\n91045887"
       Top             =   80
+      Visible         =   True
+      Width           =   320
+   End
+   Begin MobileTabPanel TabModePanel
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Count           =   0
+      Enabled         =   True
+      Height          =   140
+      LastAddedTabIndex=   0
+      LayoutTabIndex  =   0
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      SelectedTabIndex=   0
+      Tabs            =   "Tab 1\n0\n1309796351\rTab 2\n0\n91045887\rTab 3\n0\n\rTab 4\n0\n\rTab 5\n0\n\rTab 6\n0\n\rTab 7\n0\n\rTab 8\n0\n"
+      Top             =   245
       Visible         =   True
       Width           =   320
    End
@@ -71,7 +93,16 @@ End
 		  Me.IconAt(0) = Picture.SystemImage("format_paint", Picture.SystemImageSizes.dp36, Color.AccentThemeColor)
 		  Me.IconAt(1) = Picture.SystemImage("format_color_fill", Picture.SystemImageSizes.dp36, Color.AccentThemeColor)
 		  
-		  Me.BackgroundColor = &cA5BDEA00
+		  Me.BackgroundColor = &c76D6FF00
+		  Me.SetTextColors(Color.White, Color.AccentThemeColor)
+		  Me.SelectedTabIndicatorColor = &c94175100
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events TabModePanel
+	#tag Event
+		Sub Opening()
+		  Me.TabMode = 0
 		End Sub
 	#tag EndEvent
 #tag EndEvents

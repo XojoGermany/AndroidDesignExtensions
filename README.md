@@ -36,6 +36,7 @@ A set of UI extensions for Xojo Android framework.
 * Alpha Value
 * Background Color
 * Shadow Color
+* Tint Color
 
 ### MobileLabel
 * Background Color
@@ -55,6 +56,10 @@ A set of UI extensions for Xojo Android framework.
 
 ### MobileTabPanel
 * Background Color
+* Selected Tab Indicator Color
+* (Selected) Text Color
+* Tab Indicator Animation Mode
+* Tab Mode
 
 ### MobileTextArea
 * Background Color

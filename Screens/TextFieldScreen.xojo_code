@@ -13,7 +13,7 @@ Begin TemplateScreen TextFieldScreen
       Enabled         =   True
       HasBackButton   =   False
       HasBackgroundColor=   False
-      HasGradient     =   False
+      HasGradient     =   True
       Height          =   56
       Left            =   0
       LockBottom      =   False
@@ -228,7 +228,7 @@ Begin TemplateScreen TextFieldScreen
       Height          =   44
       Hint            =   "Default TextField"
       InputType       =   0
-      Left            =   53
+      Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -242,7 +242,7 @@ Begin TemplateScreen TextFieldScreen
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
-      Top             =   557
+      Top             =   541
       Visible         =   False
       Width           =   200
    End
@@ -263,6 +263,8 @@ End
 		  Close
 		End Sub
 	#tag EndEvent
+#tag EndEvents
+#tag Events DefaultField
 #tag EndEvents
 #tag Events BackgroundColorField
 	#tag Event
@@ -314,8 +316,8 @@ End
 		Sub Opening()
 		  #Pragma Warning "Nur ein Test"
 		  
-		  Declare Sub setImeOptions Lib "Object:DefaultField1:MobileTextField" (options As Integer)
-		  setImeOptions(3)
+		  ' Declare Sub setImeOptions Lib "Object:DefaultField1:MobileTextField" (options As Integer)
+		  ' setImeOptions(3)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
