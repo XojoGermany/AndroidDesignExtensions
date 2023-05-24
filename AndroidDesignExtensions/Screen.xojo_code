@@ -53,6 +53,23 @@ Protected Module Screen
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
+		Sub RequestedOrientation(Extends myScreen As MobileScreen, Assigns requestedOrientation As Integer)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRequestedOrientation Lib "Object:myScreen:MobileScreen" (aRequestedOrientation As Integer)
+		    setRequestedOrientation(requestedOrientation)
+		    
+		  #Else
+		    
+		    #Pragma Unused requestedOrientation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
 		Sub StatusBarColor(Extends myScreen As MobileScreen, Assigns myColor As Color)
 		  #Pragma Unused myScreen
 		  

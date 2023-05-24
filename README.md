@@ -63,6 +63,7 @@ A set of UI extensions for Xojo Android framework.
 * Background Color
 * Navigationbar Color
 * Navigationbar Divider Color
+* Requested Orientation
 * Statusbar Color
 
 ### MobileScrollableArea

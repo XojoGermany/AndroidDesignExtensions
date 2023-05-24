@@ -27,301 +27,58 @@ Begin TemplateScreen ActivityScreen
       Visible         =   True
       Width           =   360
    End
-   Begin ColorButton ColorButton1
+   Begin MobileButton LandscapeButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
-      Caption         =   ""
+      Caption         =   "Landscape"
       CaptionColor    =   &cFFFFFF00
       Enabled         =   True
-      Height          =   74
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   215
-      Visible         =   True
-      Width           =   68
-   End
-   Begin ColorButton ColorButton2
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   ""
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   74
-      Left            =   96
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   215
-      Visible         =   True
-      Width           =   68
-   End
-   Begin ColorButton ColorButton3
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   ""
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   74
-      Left            =   172
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   215
-      Visible         =   True
-      Width           =   68
-   End
-   Begin ColorButton ColorButton4
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   ""
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   74
-      Left            =   248
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   215
-      Visible         =   True
-      Width           =   68
-   End
-   Begin ColorButton ColorButton5
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   ""
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   74
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   297
-      Visible         =   True
-      Width           =   68
-   End
-   Begin ColorButton ColorButton6
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   ""
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   74
-      Left            =   96
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   297
-      Visible         =   True
-      Width           =   68
-   End
-   Begin ColorButton ColorButton7
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   ""
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   74
-      Left            =   172
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   297
-      Visible         =   True
-      Width           =   68
-   End
-   Begin ColorButton ColorButton8
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   ""
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   74
-      Left            =   248
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   297
-      Visible         =   True
-      Width           =   68
-   End
-   Begin ColorButton ColorButton9
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   ""
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   74
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   379
-      Visible         =   True
-      Width           =   68
-   End
-   Begin ColorButton ColorButton10
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   ""
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   74
-      Left            =   96
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   379
-      Visible         =   True
-      Width           =   68
-   End
-   Begin ColorButton ColorButton11
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   ""
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   74
-      Left            =   172
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   379
-      Visible         =   True
-      Width           =   68
-   End
-   Begin ColorButton ColorButton12
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   ""
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   74
-      Left            =   248
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   379
-      Visible         =   True
-      Width           =   68
-   End
-   Begin ColorButton ColorButton13
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   ""
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   74
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   461
-      Visible         =   True
-      Width           =   68
-   End
-   Begin ColorButton ColorButton14
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   ""
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   74
-      Left            =   96
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   461
-      Visible         =   True
-      Width           =   68
-   End
-   Begin ColorButton ColorButton15
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   ""
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   74
-      Left            =   172
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   461
-      Visible         =   True
-      Width           =   68
-   End
-   Begin AndroidMobileTable Table1
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Enabled         =   True
-      HasHeader       =   False
-      Header          =   ""
-      Height          =   143
-      InitialValue    =   "Status Bar\nBackground\nNavigation Bar\nNavigation Bar Divider"
-      LastAddedRowIndex=   0
+      Height          =   44
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
-      LockRight       =   True
+      LockRight       =   False
       LockTop         =   True
-      RowCount        =   0
       Scope           =   2
-      ScrollPosition  =   0
-      SelectedRowIndex=   0
-      SelectedRowText =   ""
-      SeparatorColor  =   &c00000000
-      SeparatorThickness=   0
       Top             =   64
       Visible         =   True
-      Width           =   320
+      Width           =   150
+   End
+   Begin MobileButton PortraitButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Portrait"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   190
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   64
+      Visible         =   True
+      Width           =   150
+   End
+   Begin MobileScrollableArea ScrollableArea1
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   640
+      Left            =   0
+      LockBottom      =   True
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      ScrollContent   =   724957183
+      Top             =   116
+      Visible         =   True
+      Width           =   360
    End
 End
 #tag EndMobileScreen
@@ -343,19 +100,6 @@ End
 	#tag EndEvent
 
 
-	#tag Property, Flags = &h21
-		Private CheckBoxPic As Picture
-	#tag EndProperty
-
-	#tag Property, Flags = &h21
-		Private CheckBoxPicBlank As Picture
-	#tag EndProperty
-
-	#tag Property, Flags = &h21
-		Private SelectedRowIndex As Integer
-	#tag EndProperty
-
-
 #tag EndScreenCode
 
 #tag Events NavigationBarContainer1
@@ -371,157 +115,17 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events ColorButton1
+#tag Events LandscapeButton
 	#tag Event
-		Sub Opening()
-		  Me.MyBackgroundColor = &c236BFD
+		Sub Pressed()
+		  Self.RequestedOrientation = 0 ' Landscape
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events ColorButton2
+#tag Events PortraitButton
 	#tag Event
-		Sub Opening()
-		  Me.MyBackgroundColor = &cFFD407
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ColorButton3
-	#tag Event
-		Sub Opening()
-		  Me.MyBackgroundColor = &c4BDF81
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ColorButton4
-	#tag Event
-		Sub Opening()
-		  Me.MyBackgroundColor = &cF85656
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ColorButton5
-	#tag Event
-		Sub Opening()
-		  Me.MyBackgroundColor = &cEC1A61
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ColorButton6
-	#tag Event
-		Sub Opening()
-		  Me.MyBackgroundColor = &c9D26AB
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ColorButton7
-	#tag Event
-		Sub Opening()
-		  Me.MyBackgroundColor = &c673DB5
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ColorButton8
-	#tag Event
-		Sub Opening()
-		  Me.MyBackgroundColor = &c00B9D8
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ColorButton9
-	#tag Event
-		Sub Opening()
-		  Me.MyBackgroundColor = &c039589
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ColorButton10
-	#tag Event
-		Sub Opening()
-		  Me.MyBackgroundColor = &c4AAF57
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ColorButton11
-	#tag Event
-		Sub Opening()
-		  Me.MyBackgroundColor = &c8BC355
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ColorButton12
-	#tag Event
-		Sub Opening()
-		  Me.MyBackgroundColor = &cFF9820
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ColorButton13
-	#tag Event
-		Sub Opening()
-		  Me.MyBackgroundColor = &cFD5923
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ColorButton14
-	#tag Event
-		Sub Opening()
-		  Me.MyBackgroundColor = &c7A5547
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ColorButton15
-	#tag Event
-		Sub Opening()
-		  Me.MyBackgroundColor = &cF2F2F7
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events Table1
-	#tag Event
-		Sub Opening()
-		  CheckBoxPicBlank = Picture.SystemImage("checkbox_blank_circle_outline", Picture.SystemImageSizes.dp24, Color.LightGray)
-		  CheckBoxPic = Picture.SystemImage("checkbox_marked_circle", Picture.SystemImageSizes.dp24, Color.AccentThemeColor)
-		  
-		  Me.ShadowColor = &c000000FF ' no shadow
-		  Me.RowTextFont = Font.SystemFont(17)
-		  Me.SeparatorColor = &cCACACC00
-		  
-		  For index As Integer = 0 To Me.LastAddedRowIndex
-		    
-		    Me.RowBackgroundColorAt(index) = &c000000FF ' transparent
-		    
-		    If index = 0 Then
-		      
-		      Me.RowPictureAt(index, True) = CheckBoxPic
-		      Me.RowTagAt(index) = True
-		      
-		    Else
-		      
-		      Me.RowPictureAt(index, True) = CheckBoxPicBlank
-		      Me.RowTagAt(index) = False
-		      
-		    End If
-		    
-		  Next
-		End Sub
-	#tag EndEvent
-	#tag Event
-		Sub SelectionChanged()
-		  ' Reset selection
-		  Me.RowPictureAt(SelectedRowIndex, True) = CheckBoxPicBlank
-		  
-		  Var oRowTag As Variant = Me.RowTagAt(Me.SelectedRowIndex)
-		  
-		  ' Save new selection
-		  Self.SelectedRowIndex = Me.SelectedRowIndex
-		  
-		  ' Set new picture
-		  Me.RowPictureAt(Self.SelectedRowIndex, True) = CheckBoxPic
-		  
-		  ' Set new selection state
-		  Me.RowTagAt(Self.SelectedRowIndex) = Not oRowTag.BooleanValue
-		  
-		  App.BackgroundMode = Self.SelectedRowIndex
+		Sub Pressed()
+		  Self.RequestedOrientation = 1 ' Portrait
 		End Sub
 	#tag EndEvent
 #tag EndEvents

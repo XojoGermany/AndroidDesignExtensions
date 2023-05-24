@@ -13,6 +13,7 @@ Begin TemplateScreen LabelScreen
       Enabled         =   True
       HasBackButton   =   False
       HasBackgroundColor=   False
+      HasGradient     =   True
       Height          =   56
       Left            =   0
       LockBottom      =   False
