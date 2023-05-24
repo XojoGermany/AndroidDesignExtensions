@@ -47,6 +47,18 @@ A set of UI extensions for Xojo Android framework.
 * Background Color
 * Shadow Color
 
+### MobileOval
+* Background Color
+* Shadow Color
+
+### MobileProgressBar
+* Background Color
+* Shadow Color
+
+### MobileProgressWheel
+* Background Color
+* Shadow Color
+
 ### MobileScreen
 * Background Color
 * Navigationbar Color
@@ -58,6 +70,14 @@ A set of UI extensions for Xojo Android framework.
 * Shadow Color
 * Smooth Scroll By
 * Smooth Scroll To
+
+### MobileSeparator
+* Background Color
+* Shadow Color
+
+### MobileSlider
+* Background Color
+* Shadow Color
 
 ### MobileTabPanel
 * Background Color
@@ -81,21 +101,6 @@ A set of UI extensions for Xojo Android framework.
 * Padding
 
 ## ToDo
-
-### MobileOval
-* Background Color
-
-### MobileProgressBar
-* Background Color
-
-### MobileProgressWheel
-* Background Color
-
-### MobileSeparator
-* Background Color
-
-### MobileSlider
-* Background Color
 
 ## History
 

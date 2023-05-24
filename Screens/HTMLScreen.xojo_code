@@ -126,7 +126,7 @@ Begin TemplateScreen HTMLScreen
    Begin MobileButton BackwardButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
-      Caption         =   "<"
+      Caption         =   "❮"
       CaptionColor    =   &cFFFFFF00
       Enabled         =   True
       Height          =   44
@@ -144,7 +144,7 @@ Begin TemplateScreen HTMLScreen
    Begin MobileButton ForwardButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
-      Caption         =   ">"
+      Caption         =   "❯"
       CaptionColor    =   &cFFFFFF00
       Enabled         =   True
       Height          =   44
