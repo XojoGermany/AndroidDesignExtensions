@@ -49,9 +49,9 @@ Begin TemplateScreen HTMLScreen
       Alignment       =   0
       Enabled         =   True
       Height          =   44
-      Hint            =   "Search on page"
+      Hint            =   "URL or Search on page"
       InputType       =   0
-      Left            =   10
+      Left            =   94
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -67,12 +67,48 @@ Begin TemplateScreen HTMLScreen
       TextColor       =   &c00000000
       Top             =   64
       Visible         =   True
-      Width           =   232
+      Width           =   148
    End
    Begin MobileButton SearchButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Search"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   10
+      LockBottom      =   True
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   False
+      Scope           =   2
+      Top             =   702
+      Visible         =   True
+      Width           =   100
+   End
+   Begin MobileButton SaveButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Save WebArchive"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   180
+      LockBottom      =   True
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   False
+      Scope           =   2
+      Top             =   701
+      Visible         =   True
+      Width           =   170
+   End
+   Begin MobileButton LoadButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Load"
       CaptionColor    =   &cFFFFFF00
       Enabled         =   True
       Height          =   44
@@ -87,23 +123,41 @@ Begin TemplateScreen HTMLScreen
       Visible         =   True
       Width           =   100
    End
-   Begin MobileButton Button1
+   Begin MobileButton BackwardButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
-      Caption         =   "Save WebArchive"
+      Caption         =   "<"
       CaptionColor    =   &cFFFFFF00
       Enabled         =   True
       Height          =   44
-      Left            =   180
-      LockBottom      =   True
+      Left            =   10
+      LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   False
-      LockRight       =   True
+      LockRight       =   False
       LockTop         =   False
-      Scope           =   0
-      Top             =   701
+      Scope           =   2
+      Top             =   64
       Visible         =   True
-      Width           =   170
+      Width           =   38
+   End
+   Begin MobileButton ForwardButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   ">"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   51
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   False
+      Scope           =   2
+      Top             =   64
+      Visible         =   True
+      Width           =   38
    End
 End
 #tag EndMobileScreen
@@ -146,11 +200,42 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events Button1
+#tag Events SaveButton
 	#tag Event
 		Sub Pressed()
 		  Var path As String = SpecialFolder.Documents.Child("My WebArchive.webarchive").NativePath
 		  HTMLViewer1.SaveAsWebArchive(path)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events LoadButton
+	#tag Event
+		Sub Pressed()
+		  HTMLViewer1.LoadURL(Search.Text)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events BackwardButton
+	#tag Event
+		Sub Pressed()
+		  HTMLViewer1.GoBackOrForward(-1)
+		End Sub
+	#tag EndEvent
+	#tag Event
+		Sub Opening()
+		  Me.CornerRadius = 80
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events ForwardButton
+	#tag Event
+		Sub Pressed()
+		  HTMLViewer1.GoBackOrForward(1)
+		End Sub
+	#tag EndEvent
+	#tag Event
+		Sub Opening()
+		  Me.CornerRadius = 80
 		End Sub
 	#tag EndEvent
 #tag EndEvents

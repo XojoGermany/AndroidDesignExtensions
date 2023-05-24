@@ -36,6 +36,23 @@ Protected Module HTMLViewer
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
+		Sub GoBackOrForward(Extends myHTMLViewer As MobileHTMLViewer, steps As Integer)
+		  #Pragma Unused myHTMLViewer
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub _goBackOrForward Lib "Object:myHTMLViewer:MobileHTMLViewer" Alias "goBackOrForward" (aSteps As Integer)
+		    _goBackOrForward(steps)
+		    
+		  #Else
+		    
+		    #Pragma Unused steps
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
 		Sub OverScrollMode(Extends myHTMLViewer As MobileHTMLViewer, Assigns overScrollMode As Integer)
 		  #Pragma Unused myHTMLViewer
 		  
