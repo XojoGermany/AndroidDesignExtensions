@@ -13,6 +13,7 @@ Begin TemplateScreen SystemImagesScreen
       Enabled         =   True
       HasBackButton   =   False
       HasBackgroundColor=   False
+      HasGradient     =   True
       Height          =   56
       Left            =   0
       LockBottom      =   False
@@ -88,7 +89,6 @@ End
 		  For Each sImageName As String In App.SystemImages
 		    
 		    Table1.AddRow(sImageName)
-		    Table1.RowBackgroundColorAt(Table1.LastAddedRowIndex) = &c000000FF ' transparent
 		    Table1.RowPictureAt(Table1.LastAddedRowIndex) = Picture.SystemImage(sImageName, Picture.SystemImageSizes.dp48)
 		    
 		  Next

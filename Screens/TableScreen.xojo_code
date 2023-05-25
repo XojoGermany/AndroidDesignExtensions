@@ -98,15 +98,13 @@ End
 		  Me.ScrollBarSize = 20
 		  Me.OverScrollMode = 2 ' Always = 0, IfContentScrolls = 1, Never = 2
 		  
-		  Me.ShadowColor = &c000000FF ' no shadow
+		  Me.ShadowColor = Color.Clear ' no shadow
 		  Me.ScrollBarFadeDuration = 0 ' make Scrollbar always visible
 		  
 		  Me.RowTextFont = Font.SystemFont(17)
 		  Me.SeparatorColor = &cCACACC00
 		  
 		  For row As Integer = 0 To Me.LastAddedRowIndex
-		    
-		    Me.RowBackgroundColorAt(row) = &c000000FF ' transparent
 		    
 		    If row >= 19 And row <= 38 Then
 		      
@@ -212,7 +210,7 @@ End
 		    
 		  Case "transparent"
 		    
-		    Me.BackgroundColor = &c000000FF
+		    Me.BackgroundColor = Color.Clear
 		    
 		  Case "white"
 		    

@@ -109,7 +109,7 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.BackgroundColor = &cFFD60A00
-		  Me.ShadowColor = &c000000FF
+		  Me.ShadowColor = Color.Clear
 		End Sub
 	#tag EndEvent
 #tag EndEvents

@@ -94,7 +94,6 @@ End
 		  End If
 		  
 		  Table1.AddRow(title)
-		  Table1.RowBackgroundColorAt(Table1.LastAddedRowIndex) = &c000000FF ' set transparent
 		  Table1.RowPictureAt(Table1.LastAddedRowIndex, True) = oChevronPic
 		  Table1.RowTagAt(Table1.LastAddedRowIndex) = tag
 		  
@@ -118,7 +117,7 @@ End
 		Private Function GetPicture(name As String, aColor As Color = &c000000FF) As Picture
 		  Var kSize As Picture.SystemImageSizes = Picture.SystemImageSizes.dp24
 		  
-		  If aColor <> &c000000FF Then
+		  If aColor <> Color.Clear Then
 		    
 		    Return Picture.SystemImage(name, kSize, aColor)
 		    

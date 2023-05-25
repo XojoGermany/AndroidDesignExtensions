@@ -437,13 +437,11 @@ End
 		  CheckBoxPicBlank = Picture.SystemImage("checkbox_blank_circle_outline", Picture.SystemImageSizes.dp24, Color.LightGray)
 		  CheckBoxPic = Picture.SystemImage("checkbox_marked_circle", Picture.SystemImageSizes.dp24, Color.AccentThemeColor)
 		  
-		  Me.ShadowColor = &c000000FF ' no shadow
+		  Me.ShadowColor = Color.Clear ' no shadow
 		  Me.RowTextFont = Font.SystemFont(17)
 		  Me.SeparatorColor = &cCACACC00
 		  
 		  For index As Integer = 0 To Me.LastAddedRowIndex
-		    
-		    Me.RowBackgroundColorAt(index) = &c000000FF ' transparent
 		    
 		    If index = 0 Then
 		      

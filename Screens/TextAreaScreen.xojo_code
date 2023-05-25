@@ -140,7 +140,7 @@ End
 #tag Events TransparentArea
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = &c000000FF
+		  Me.BackgroundColor = Color.Clear
 		  Me.HighlightColor = Color.Red
 		End Sub
 	#tag EndEvent

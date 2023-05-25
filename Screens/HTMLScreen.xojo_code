@@ -189,7 +189,7 @@ End
 #tag Events Search
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = &c000000FF
+		  Me.BackgroundColor = Color.Clear
 		End Sub
 	#tag EndEvent
 #tag EndEvents

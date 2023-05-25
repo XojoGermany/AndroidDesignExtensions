@@ -264,8 +264,6 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events DefaultField
-#tag EndEvents
 #tag Events BackgroundColorField
 	#tag Event
 		Sub Opening()
@@ -276,7 +274,7 @@ End
 #tag Events TransparentField
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = &c000000FF
+		  Me.BackgroundColor = Color.Clear
 		End Sub
 	#tag EndEvent
 #tag EndEvents

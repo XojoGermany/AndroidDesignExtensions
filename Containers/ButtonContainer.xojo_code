@@ -202,7 +202,7 @@ End
 #tag Events ShadowButton
 	#tag Event
 		Sub Opening()
-		  Me.ShadowColor = &c000000FF
+		  Me.ShadowColor = Color.Clear
 		End Sub
 	#tag EndEvent
 #tag EndEvents
