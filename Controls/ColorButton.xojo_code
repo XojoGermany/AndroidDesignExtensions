@@ -6,7 +6,7 @@ Inherits MobileButton
 		  ' Call Opening-Event
 		  RaiseEvent Opening
 		  
-		  Me.CornerRadius = 180
+		  Me.SetCornerRadiusXC(180)
 		End Sub
 	#tag EndEvent
 
@@ -15,19 +15,19 @@ Inherits MobileButton
 		  Select Case App.BackgroundMode
 		  Case 0
 		    
-		    App.CurrentScreen.StatusBarColor = MyColor
+		    App.CurrentScreen.SetStatusBarColorXC(MyColor)
 		    
 		  Case 1
 		    
-		    App.CurrentScreen.BackgroundColor = MyColor
+		    App.CurrentScreen.SetBackgroundColorXC(MyColor)
 		    
 		  Case 2
 		    
-		    App.CurrentScreen.NavigationBarColor = MyColor
+		    App.CurrentScreen.SetNavigationBarColorXC(MyColor)
 		    
 		  Case 3
 		    
-		    App.CurrentScreen.NavigationBarDividerColor = MyColor
+		    App.CurrentScreen.SetNavigationBarDividerColorXC(MyColor)
 		    
 		  End Select
 		  
@@ -40,8 +40,8 @@ Inherits MobileButton
 	#tag Method, Flags = &h0
 		Sub MyBackgroundColor(Assigns myColor As Color)
 		  Self.MyColor = myColor
-		  Self.BackgroundColor = myColor
-		  Self.CornerRadius = 44
+		  Self.SetBackgroundColorXC(myColor)
+		  Self.SetCornerRadiusXC(44)
 		End Sub
 	#tag EndMethod
 

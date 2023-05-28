@@ -3,9 +3,9 @@ Protected Class TemplateScreen
 Inherits MobileScreen
 	#tag Event
 		Sub Opening()
-		  Self.BackgroundColor = Color.White
-		  Self.NavigationBarColor = Color.White
-		  Self.NavigationBarDividerColor = Color.White
+		  Self.SetBackgroundColorXC(Color.White)
+		  Self.SetNavigationBarColorXC(Color.White)
+		  Self.SetNavigationBarDividerColorXC(Color.White)
 		  
 		  ' Call Opening-Event
 		  RaiseEvent Opening

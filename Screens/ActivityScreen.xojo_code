@@ -67,7 +67,7 @@ Begin TemplateScreen ActivityScreen
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
-      Height          =   640
+      Height          =   588
       Left            =   0
       LockBottom      =   True
       LockedInPosition=   False
@@ -76,9 +76,27 @@ Begin TemplateScreen ActivityScreen
       LockTop         =   True
       Scope           =   2
       ScrollContent   =   724957183
-      Top             =   116
+      Top             =   168
       Visible         =   True
       Width           =   360
+   End
+   Begin MobileButton TranslucentButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Translucent (False)"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   116
+      Visible         =   True
+      Width           =   320
    End
 End
 #tag EndMobileScreen
@@ -118,14 +136,27 @@ End
 #tag Events LandscapeButton
 	#tag Event
 		Sub Pressed()
-		  Self.RequestedOrientation = 0 ' Landscape
+		  Self.SetRequestedOrientationXC(0) ' Landscape
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events PortraitButton
 	#tag Event
 		Sub Pressed()
-		  Self.RequestedOrientation = 1 ' Portrait
+		  Self.SetRequestedOrientationXC(1) ' Portrait
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events TranslucentButton
+	#tag Event
+		Sub Pressed()
+		  Static value As Boolean
+		  
+		  value = Not value
+		  
+		  Call Self.SetTranslucentXC(value)
+		  
+		  Me.Caption = "Translucent (" + value.ToString + ")"
 		End Sub
 	#tag EndEvent
 #tag EndEvents

@@ -77,8 +77,8 @@ End
 #tag ScreenCode
 	#tag Event
 		Sub Opening()
-		  Self.NavigationBarColor = &cF2F2F7
-		  Self.NavigationBarDividerColor = &cF2F2F7
+		  Self.SetNavigationBarColorXC(&cF2F2F7)
+		  Self.SetNavigationBarDividerColorXC(&cF2F2F7)
 		End Sub
 	#tag EndEvent
 

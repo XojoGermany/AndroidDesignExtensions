@@ -151,8 +151,26 @@ Begin TemplateScreen ImageScreen
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
-      Scope           =   0
+      Scope           =   2
       Top             =   562
+      Visible         =   True
+      Width           =   200
+   End
+   Begin MobileButton ClearTintColorButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Clear Tint Color"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   80
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   614
       Visible         =   True
       Width           =   200
    End
@@ -177,7 +195,7 @@ End
 #tag Events AlphaSlider
 	#tag Event
 		Sub ValueChanged()
-		  Image1.AlphaValue = Me.Value
+		  Image1.SetImageAlphaXC(Me.Value)
 		  AlphaLabel.Text = "Alpha: " + Me.Value.ToString
 		End Sub
 	#tag EndEvent
@@ -185,28 +203,35 @@ End
 #tag Events BackgroundColor1Button
 	#tag Event
 		Sub Pressed()
-		  Image1.BackgroundColor = Color.Yellow
+		  Image1.SetBackgroundColorXC(Color.Yellow)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events BackgroundColor2Button
 	#tag Event
 		Sub Pressed()
-		  Image1.BackgroundColor = Color.Red
+		  Image1.SetBackgroundColorXC(Color.Red)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events ShadowColorButton
 	#tag Event
 		Sub Pressed()
-		  Image1.ShadowColor = Color.Orange
+		  Image1.SetOutlineSpotShadowColorXC(Color.Orange)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events TintColorButton
 	#tag Event
 		Sub Pressed()
-		  Image1.TintColor = Color.Red
+		  Image1.SetColorFilterXC(Color.Red)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events ClearTintColorButton
+	#tag Event
+		Sub Pressed()
+		  Image1.ClearColorFilterXC
 		End Sub
 	#tag EndEvent
 #tag EndEvents

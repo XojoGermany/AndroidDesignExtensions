@@ -264,17 +264,24 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
+#tag Events DefaultField
+	#tag Event
+		Sub Opening()
+		  Me.CharacterSpacing = 0.25
+		End Sub
+	#tag EndEvent
+#tag EndEvents
 #tag Events BackgroundColorField
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = &cD6D6D600
+		  Me.SetBackgroundColorXC(&cD6D6D600)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events TransparentField
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = Color.Clear
+		  Me.SetBackgroundColorXC(Color.Clear)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

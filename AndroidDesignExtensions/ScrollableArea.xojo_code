@@ -2,40 +2,6 @@
 Protected Module ScrollableArea
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0
-		Sub BackgroundColor(Extends myScrollableArea As MobileScrollableArea, Assigns myColor As Color)
-		  #Pragma Unused myScrollableArea
-		  
-		  #If TargetAndroid
-		    
-		    Declare Sub setBackgroundColor Lib "Object:myScrollableArea:MobileScrollableArea" (aColor As Integer)
-		    setBackgroundColor(myColor.ToInteger)
-		    
-		  #Else
-		    
-		    #Pragma Unused myColor
-		    
-		  #EndIf
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0
-		Sub ShadowColor(Extends myScrollableArea As MobileScrollableArea, Assigns myColor As Color)
-		  #Pragma Unused myScrollableArea
-		  
-		  #If TargetAndroid
-		    
-		    Declare Sub setOutlineSpotShadowColor Lib "Object:myScrollableArea:MobileScrollableArea" (aColor As Integer)
-		    setOutlineSpotShadowColor(myColor.ToInteger)
-		    
-		  #Else
-		    
-		    #Pragma Unused myColor
-		    
-		  #EndIf
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0
 		Sub SmoothScrollBy(Extends myScrollableArea As MobileScrollableArea, x As Integer, y As Integer)
 		  #Pragma Unused myScrollableArea
 		  

@@ -307,6 +307,22 @@ Begin MobileContainer ScreenContainer
       Visible         =   True
       Width           =   320
    End
+   Begin MobileCanvas FixBottomPaddingCanvas
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   22
+      Left            =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   509
+      Visible         =   True
+      Width           =   360
+   End
 End
 #tag EndMobileContainer
 
@@ -434,10 +450,10 @@ End
 #tag Events Table1
 	#tag Event
 		Sub Opening()
-		  CheckBoxPicBlank = Picture.SystemImage("checkbox_blank_circle_outline", Picture.SystemImageSizes.dp24, Color.LightGray)
-		  CheckBoxPic = Picture.SystemImage("checkbox_marked_circle", Picture.SystemImageSizes.dp24, Color.AccentThemeColor)
+		  CheckBoxPicBlank = Picture.SystemImage("radiobox_blank", Picture.SystemImageSizes.dp24, Color.LightGray)
+		  CheckBoxPic = Picture.SystemImage("radiobox_marked", Picture.SystemImageSizes.dp24, Color.AccentThemeColor)
 		  
-		  Me.ShadowColor = Color.Clear ' no shadow
+		  Me.SetOutlineSpotShadowColorXC(Color.Clear) ' no shadow
 		  Me.RowTextFont = Font.SystemFont(17)
 		  Me.SeparatorColor = &cCACACC00
 		  

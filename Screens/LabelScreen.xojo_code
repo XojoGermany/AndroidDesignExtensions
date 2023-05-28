@@ -108,16 +108,16 @@ End
 #tag Events BackgroundColorLabel
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = &cFFD60A00
-		  Me.ShadowColor = Color.Clear
+		  Me.SetBackgroundColorXC(&cFFD60A00)
+		  Me.SetOutlineSpotShadowColorXC(Color.Clear)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events ShadowLabel
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = Color.White
-		  Me.ShadowColor = Color.Green
+		  Me.SetBackgroundColorXC(Color.White)
+		  Me.SetOutlineSpotShadowColorXC(Color.Green)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

@@ -65,7 +65,7 @@ Begin TemplateScreen HTMLScreen
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
-      Top             =   64
+      Top             =   67
       Visible         =   True
       Width           =   148
    End
@@ -119,7 +119,7 @@ Begin TemplateScreen HTMLScreen
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   64
+      Top             =   67
       Visible         =   True
       Width           =   100
    End
@@ -128,7 +128,7 @@ Begin TemplateScreen HTMLScreen
       AccessibilityLabel=   ""
       Caption         =   "❮"
       CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
+      Enabled         =   False
       Height          =   44
       Left            =   10
       LockBottom      =   False
@@ -137,7 +137,7 @@ Begin TemplateScreen HTMLScreen
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   64
+      Top             =   67
       Visible         =   True
       Width           =   38
    End
@@ -146,7 +146,7 @@ Begin TemplateScreen HTMLScreen
       AccessibilityLabel=   ""
       Caption         =   "❯"
       CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
+      Enabled         =   False
       Height          =   44
       Left            =   51
       LockBottom      =   False
@@ -155,9 +155,39 @@ Begin TemplateScreen HTMLScreen
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   64
+      Top             =   67
       Visible         =   True
       Width           =   38
+   End
+   Begin Timer LoadTimer
+      Enabled         =   True
+      Left            =   0
+      LockedInPosition=   False
+      PanelIndex      =   -1
+      Parent          =   ""
+      Period          =   5
+      RunMode         =   0
+      Scope           =   2
+      Top             =   0
+   End
+   Begin MobileProgressBar LoadProgress
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   14
+      Left            =   0
+      LockBottom      =   True
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      MaximumValue    =   100.0
+      MinimumValue    =   0.0
+      Scope           =   2
+      Top             =   51
+      Value           =   0.0
+      Visible         =   False
+      Width           =   360
    End
 End
 #tag EndMobileScreen
@@ -180,31 +210,34 @@ End
 #tag Events HTMLViewer1
 	#tag Event
 		Sub Opening()
-		  ' Me.BackgroundColor = &cFFD60A00
+		  ' Me.SetBackgroundColor(&cFFD60A00)
 		  Me.LoadURL("https://www.xojo.com")
-		  Me.OverScrollMode = 2 ' Always = 0, IfContentScrolls = 1, Never = 2
+		  Me.SetOverScrollModeXC(2) ' Always = 0, IfContentScrolls = 1, Never = 2
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events Search
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = Color.Clear
+		  Me.SetBackgroundColorXC(Color.Clear)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events SearchButton
 	#tag Event
 		Sub Pressed()
-		  HTMLViewer1.Find(Search.Text)
+		  HTMLViewer1.FindAllAsyncXC(Search.Text)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events SaveButton
 	#tag Event
 		Sub Pressed()
-		  Var path As String = SpecialFolder.Documents.Child("My WebArchive.webarchive").NativePath
-		  HTMLViewer1.SaveAsWebArchive(path)
+		  Var path As String
+		  
+		  path = SpecialFolder.Documents.Child("My WebArchive.webarchive").NativePath
+		  
+		  HTMLViewer1.SaveAsWebArchiveXC(path)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -212,32 +245,75 @@ End
 	#tag Event
 		Sub Pressed()
 		  HTMLViewer1.LoadURL(Search.Text)
+		  
+		  BackwardButton.Enabled = HTMLViewer1.CanGoBackXC
+		  ForwardButton.Enabled = HTMLViewer1.CanGoForwardXC
+		  
+		  LoadProgress.Visible = True
+		  LoadTimer.RunMode = Timer.RunModes.Multiple
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events BackwardButton
 	#tag Event
 		Sub Pressed()
-		  HTMLViewer1.GoBackOrForward(-1)
+		  If HTMLViewer1.CanGoBackXC Then
+		    
+		    LoadProgress.Visible = True
+		    LoadTimer.RunMode = Timer.RunModes.Multiple
+		    HTMLViewer1.GoBackXC
+		    
+		  End If
+		  
+		  ForwardButton.Enabled = HTMLViewer1.CanGoForwardXC
+		  
+		  Me.Enabled = HTMLViewer1.CanGoBackXC
 		End Sub
 	#tag EndEvent
 	#tag Event
 		Sub Opening()
-		  Me.CornerRadius = 80
+		  Me.SetCornerRadiusXC(80)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events ForwardButton
 	#tag Event
 		Sub Pressed()
-		  HTMLViewer1.GoBackOrForward(1)
+		  If HTMLViewer1.CanGoForwardXC Then
+		    
+		    LoadProgress.Visible = True
+		    LoadTimer.RunMode = Timer.RunModes.Multiple
+		    HTMLViewer1.GoForwardXC
+		    
+		  End If
+		  
+		  BackwardButton.Enabled = HTMLViewer1.CanGoBackXC
+		  
+		  Me.Enabled = HTMLViewer1.CanGoForwardXC
 		End Sub
 	#tag EndEvent
 	#tag Event
 		Sub Opening()
-		  Me.CornerRadius = 80
+		  Me.SetCornerRadiusXC(80)
 		End Sub
 	#tag EndEvent
+#tag EndEvents
+#tag Events LoadTimer
+	#tag Event
+		Sub Run()
+		  If HTMLViewer1.GetProgressXC = 100 Then
+		    
+		    LoadProgress.Visible = False
+		    LoadProgress.Value = 0
+		    Me.RunMode = Timer.RunModes.Off
+		    
+		  End If
+		  
+		  LoadProgress.Value = HTMLViewer1.GetProgressXC
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events LoadProgress
 #tag EndEvents
 #tag ViewBehavior
 	#tag ViewProperty

@@ -164,45 +164,52 @@ End
 #tag Events BackgroundColorButton
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = &c6AC4DC00
+		  Me.SetBackgroundColorXC(&c6AC4DC00)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events ColoredShadowButton
 	#tag Event
 		Sub Opening()
-		  Me.ShadowColor = Color.Red
+		  Me.SetOutlineSpotShadowColorXC(Color.Red)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events CornerRadiusButton
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = &cFF375F00
-		  Me.CornerRadius = 0
+		  Me.SetBackgroundColorXC(&cFF375F00)
+		  Me.SetCornerRadiusXC(0)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events CornerRadiusButton2
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = &c5E5CE600
-		  Me.CornerRadius = 80
+		  Me.SetBackgroundColorXC(&c5E5CE600)
+		  Me.SetCornerRadiusXC(80)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events DateTimePicker1
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = &cFFD60A00
-		  Me.CornerRadius = 0
+		  Me.SetBackgroundColorXC(&cFFD60A00)
+		  Me.SetCornerRadiusXC(0)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events DefaultButton
+	#tag Event
+		Sub Opening()
+		  Me.SetScaleXXC(1.5)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events ShadowButton
 	#tag Event
 		Sub Opening()
-		  Me.ShadowColor = Color.Clear
+		  Me.SetOutlineSpotShadowColorXC(Color.Clear)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

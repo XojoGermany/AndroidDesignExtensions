@@ -1,64 +1,64 @@
 #tag Module
 Protected Module Screen
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
-	#tag Method, Flags = &h0
-		Sub BackgroundColor(Extends myScreen As MobileScreen, Assigns myColor As Color)
+	#tag Method, Flags = &h0, Description = 54686520626C75722072616469757320746F2075736520666F722077696E646F77206261636B67726F756E6420626C757220696E20706978656C732E0A466F7220626C75722C207468652073637265656E2068617320746F206265207472616E736C7563656E7420616E6420666C6F6174696E672E
+		Sub SetBackgroundBlurRadiusXC(Extends myScreen As MobileScreen, blurRadius As Integer)
 		  #Pragma Unused myScreen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackgroundColor Lib "Object:myScreen:MobileScreen" Alias "getWindow().getDecorView().setBackgroundColor" (aColor As Integer)
-		    setBackgroundColor(myColor.ToInteger)
+		    Declare Sub setBackgroundBlurRadius Lib "Object:myScreen:MobileScreen" Alias "getWindow().setBackgroundBlurRadius" (myBlurRadius As Integer)
+		    setBackgroundBlurRadius(blurRadius)
 		    
 		  #Else
 		    
-		    #Pragma Unused myColor
+		    #Pragma Unused blurRadius
 		    
 		  #EndIf
 		End Sub
 	#tag EndMethod
 
-	#tag Method, Flags = &h0
-		Sub NavigationBarColor(Extends myScreen As MobileScreen, Assigns myColor As Color)
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F6620746865206E617669676174696F6E2062617220746F202E20466F72207468697320746F2074616B65206566666563742C207468652077696E646F77206D7573742062652064726177696E67207468652073797374656D20626172206261636B67726F756E647320776974682057696E646F774D616E616765722E4C61796F7574506172616D732E464C41475F44524157535F53595354454D5F4241525F4241434B47524F554E445320616E642057696E646F774D616E616765722E4C61796F7574506172616D732E464C41475F5452414E534C5543454E545F4E415649474154494F4E206D757374206E6F74206265207365742E204966206973206E6F74206F70617175652C20636F6E73696465722073657474696E6720566965772E53595354454D5F55495F464C41475F4C41594F55545F535441424C4520616E6420566965772E53595354454D5F55495F464C41475F4C41594F55545F484944455F4E415649474154494F4E2E
+		Sub SetNavigationBarColorXC(Extends myScreen As MobileScreen, c As Color)
 		  #Pragma Unused myScreen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setNavigationBarColor Lib "Object:myScreen:MobileScreen" Alias "getWindow().setNavigationBarColor" (aColor As Integer)
-		    setNavigationBarColor(myColor.ToInteger)
+		    Declare Sub setNavigationBarColor Lib "Object:myScreen:MobileScreen" Alias "getWindow().setNavigationBarColor" (myColor As Integer)
+		    setNavigationBarColor(c.ToInteger)
 		    
 		  #Else
 		    
-		    #Pragma Unused myColor
+		    #Pragma Unused c
 		    
 		  #EndIf
 		End Sub
 	#tag EndMethod
 
-	#tag Method, Flags = &h0
-		Sub NavigationBarDividerColor(Extends myScreen As MobileScreen, Assigns myColor As Color)
+	#tag Method, Flags = &h0, Description = 53686F77732061207468696E206C696E65206F66207468652073706563696669656420636F6C6F72206265747765656E20746865206E617669676174696F6E2062617220616E64207468652061707020636F6E74656E742E
+		Sub SetNavigationBarDividerColorXC(Extends myScreen As MobileScreen, c As Color)
 		  #Pragma Unused myScreen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setNavigationBarDividerColor Lib "Object:myScreen:MobileScreen" Alias "getWindow().setNavigationBarDividerColor" (aColor As Integer)
-		    setNavigationBarDividerColor(myColor.ToInteger)
+		    Declare Sub setNavigationBarDividerColor Lib "Object:myScreen:MobileScreen" Alias "getWindow().setNavigationBarDividerColor" (myColor As Integer)
+		    setNavigationBarDividerColor(c.ToInteger)
 		    
 		  #Else
 		    
-		    #Pragma Unused myColor
+		    #Pragma Unused c
 		    
 		  #EndIf
 		End Sub
 	#tag EndMethod
 
-	#tag Method, Flags = &h0
-		Sub RequestedOrientation(Extends myScreen As MobileScreen, Assigns requestedOrientation As Integer)
+	#tag Method, Flags = &h0, Description = 4368616E6765207468652064657369726564206F7269656E746174696F6E206F6620746869732061637469766974792E204966207468652061637469766974792069732063757272656E746C7920696E2074686520666F726567726F756E64206F72206F746865727769736520696D70616374696E67207468652073637265656E206F7269656E746174696F6E2C207468652073637265656E2077696C6C20696D6D6564696174656C79206265206368616E6765642028706F737369626C792063617573696E672074686520616374697669747920746F20626520726573746172746564292E204F74686572776973652C20746869732077696C6C206265207573656420746865206E6578742074696D65207468652061637469766974792069732076697369626C652E
+		Sub SetRequestedOrientationXC(Extends myScreen As MobileScreen, requestedOrientation As Integer)
 		  #Pragma Unused myScreen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setRequestedOrientation Lib "Object:myScreen:MobileScreen" (aRequestedOrientation As Integer)
+		    Declare Sub setRequestedOrientation Lib "Object:myScreen:MobileScreen" (myRequestedOrientation As Integer)
 		    setRequestedOrientation(requestedOrientation)
 		    
 		  #Else
@@ -69,21 +69,56 @@ Protected Module Screen
 		End Sub
 	#tag EndMethod
 
-	#tag Method, Flags = &h0
-		Sub StatusBarColor(Extends myScreen As MobileScreen, Assigns myColor As Color)
+	#tag Method, Flags = &h0, Description = 537065636966696573207768657468657220616E2041637469766974792073686F756C642062652073686F776E206F6E20746F70206F6620746865206C6F636B2073637265656E207768656E6576657220746865206C6F636B73637265656E20697320757020616E642074686520616374697669747920697320726573756D65642E204E6F726D616C6C7920616E2061637469766974792077696C6C206265207472616E736974696F6E656420746F207468652073746F707065642073746174652069662069742069732073746172746564207768696C6520746865206C6F636B73637265656E2069732075702C206275742077697468207468697320666C616720736574207468652061637469766974792077696C6C2072656D61696E20696E2074686520726573756D65642073746174652076697369626C65206F6E2D746F70206F6620746865206C6F636B2073637265656E2E20546869732076616C75652063616E206265207365742061732061206D616E696665737420617474726962757465207573696E6720522E617474722E73686F775768656E4C6F636B65642E
+		Sub SetShowWhenLockedXC(Extends myScreen As MobileScreen, showWhenLocked As Boolean)
 		  #Pragma Unused myScreen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStatusBarColor Lib "Object:myScreen:MobileScreen" Alias "getWindow().setStatusBarColor" (aType As Integer)
-		    setStatusBarColor(myColor.ToInteger)
+		    Declare Sub setShowWhenLocked Lib "Object:myScreen:MobileScreen" (myShowWhenLocked As Boolean)
+		    setShowWhenLocked(showWhenLocked)
 		    
 		  #Else
 		    
-		    #Pragma Unused myColor
+		    #Pragma Unused showWhenLocked
 		    
 		  #EndIf
 		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F6620746865207374617475732062617220746F20636F6C6F722E20466F72207468697320746F2074616B65206566666563742C207468652077696E646F77206D7573742062652064726177696E67207468652073797374656D20626172206261636B67726F756E647320776974682057696E646F774D616E616765722E4C61796F7574506172616D732E464C41475F44524157535F53595354454D5F4241525F4241434B47524F554E445320616E642057696E646F774D616E616765722E4C61796F7574506172616D732E464C41475F5452414E534C5543454E545F535441545553206D757374206E6F74206265207365742E20496620636F6C6F72206973206E6F74206F70617175652C20636F6E73696465722073657474696E6720566965772E53595354454D5F55495F464C41475F4C41594F55545F535441424C4520616E6420566965772E53595354454D5F55495F464C41475F4C41594F55545F46554C4C53435245454E2E
+		Sub SetStatusBarColorXC(Extends myScreen As MobileScreen, c As Color)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setStatusBarColor Lib "Object:myScreen:MobileScreen" Alias "getWindow().setStatusBarColor" (myColor As Integer)
+		    setStatusBarColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E7665727420616E2061637469766974792C20776869636820706172746963756C61726C79207769746820522E617474722E77696E646F7749735472616E736C7563656E74206F7220522E617474722E77696E646F774973466C6F6174696E67206174747269627574652C20746F20612066756C6C73637265656E206F70617175652061637469766974792C206F7220636F6E766572742069742066726F6D206F7061717565206261636B20746F207472616E736C7563656E742E
+		Function SetTranslucentXC(Extends myScreen As MobileScreen, translucent As Boolean) As Boolean
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function setTranslucent Lib "Object:myScreen:MobileScreen" (myTranslucent As Boolean) As Boolean
+		    Return setTranslucent(translucent)
+		    
+		  #Else
+		    
+		    #Pragma Unused translucent
+		    Return False
+		    
+		  #EndIf
+		End Function
 	#tag EndMethod
 
 

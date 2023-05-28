@@ -13,6 +13,7 @@ Begin TemplateScreen ScrollableAreaScreen
       Enabled         =   True
       HasBackButton   =   False
       HasBackgroundColor=   False
+      HasGradient     =   True
       Height          =   56
       Left            =   0
       LockBottom      =   False
@@ -118,7 +119,7 @@ End
 #tag Events ScrollableArea1
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = &cAC8E6800
+		  Me.SetBackgroundColorXC(&cAC8E6800)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -139,7 +140,7 @@ End
 #tag Events ShadowColorButton
 	#tag Event
 		Sub Pressed()
-		  ScrollableArea1.ShadowColor = Color.Green
+		  ScrollableArea1.SetOutlineSpotShadowColorXC(Color.Green)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

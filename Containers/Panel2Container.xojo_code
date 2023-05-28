@@ -37,7 +37,7 @@ End
 #tag ScreenCode
 	#tag Event
 		Sub Opening()
-		  Me.SetBackgroundColor(&cFFFC7900)
+		  Me.SetBackgroundColorXC(&cFFFC7900)
 		End Sub
 	#tag EndEvent
 

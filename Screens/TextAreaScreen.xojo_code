@@ -90,7 +90,7 @@ Begin TemplateScreen TextAreaScreen
       SelectedText    =   ""
       SelectionLength =   0
       SelectionStart  =   0
-      Text            =   "Text Area with\n- Transparent Background\n- Red Highlight Color"
+      Text            =   "Text Area with\n- Character Spacing\n- Transparent Background\n- Red Highlight Color"
       TextColor       =   &c00000000
       Top             =   246
       Visible         =   True
@@ -130,7 +130,7 @@ End
 #tag Events BackgroundColorArea
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = &cFFD47900
+		  Me.SetBackgroundColorXC(&cFFD47900)
 		  Me.LineHeight = 100
 		  Me.SetPadding(0, 0, 0, 0)
 		  Me.FirstBaselineToTopHeight = 100
@@ -140,7 +140,8 @@ End
 #tag Events TransparentArea
 	#tag Event
 		Sub Opening()
-		  Me.BackgroundColor = Color.Clear
+		  Me.SetBackgroundColorXC(Color.Clear)
+		  Me.CharacterSpacing = 0.25
 		  Me.HighlightColor = Color.Red
 		End Sub
 	#tag EndEvent

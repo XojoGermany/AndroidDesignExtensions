@@ -93,7 +93,7 @@ End
 		  Me.IconAt(0) = Picture.SystemImage("format_paint", Picture.SystemImageSizes.dp36, Color.AccentThemeColor)
 		  Me.IconAt(1) = Picture.SystemImage("format_color_fill", Picture.SystemImageSizes.dp36, Color.AccentThemeColor)
 		  
-		  Me.BackgroundColor = &c76D6FF00
+		  Me.SetBackgroundColorXC(&c76D6FF00)
 		  Me.SetTextColors(Color.White, Color.AccentThemeColor)
 		  Me.SelectedTabIndicatorColor = &c94175100
 		End Sub
@@ -104,6 +104,7 @@ End
 		Sub Opening()
 		  Me.SetTextColors(Color.LightGray, Color.Black)
 		  Me.TabMode = 0
+		  Me.TabBackgroundColorAt(1) = &cFF7E7900
 		End Sub
 	#tag EndEvent
 #tag EndEvents

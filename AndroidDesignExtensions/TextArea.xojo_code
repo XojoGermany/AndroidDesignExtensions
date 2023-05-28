@@ -2,17 +2,17 @@
 Protected Module TextArea
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0
-		Sub BackgroundColor(Extends myTextArea As MobileTextArea, Assigns myColor As Color)
+		Sub CharacterSpacing(Extends myTextArea As MobileTextArea, Assigns letterSpacing As Double)
 		  #Pragma Unused myTextArea
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackgroundColor Lib "Object:myTextArea:MobileTextArea" (aColor As Integer)
-		    setBackgroundColor(myColor.ToInteger) ' 0 = Transparent
+		    Declare Sub setLetterSpacing Lib "Object:myTextArea:MobileTextArea" (aLetterSpacing As Single)
+		    setLetterSpacing(letterSpacing)
 		    
 		  #Else
 		    
-		    #Pragma Unused myColor
+		    #Pragma Unused letterSpacing
 		    
 		  #EndIf
 		End Sub

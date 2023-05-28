@@ -1,6 +1,17057 @@
 #tag Module
 Protected Module Extensions
 	#tag CompatibilityFlags = ( TargetConsole and ( Target32Bit or Target64Bit ) ) or ( TargetWeb and ( Target32Bit or Target64Bit ) ) or ( TargetDesktop and ( Target32Bit or Target64Bit ) ) or ( TargetIOS and ( Target64Bit ) ) or ( TargetAndroid and ( Target64Bit ) )
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As AndroidMobileTable, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:AndroidMobileTable" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileButton, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileButton" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileCanvas, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileCanvas" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileDateTimePicker, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileDateTimePicker" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileHTMLViewer, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileHTMLViewer" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileImageViewer, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileImageViewer" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileLabel, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileLabel" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileOval, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileOval" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileProgressBar, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileProgressBar" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileProgressWheel, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileProgressWheel" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileRectangle, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileRectangle" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileScrollableArea, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileScrollableArea" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileSlider, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileSlider" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileSwitch, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileSwitch" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileTabPanel, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileTabPanel" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileTextArea, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileTextArea" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
+		Sub SetAlphaXC(Extends ctrl As MobileTextField, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileTextField" (myAlpha As Single)
+		    setAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As AndroidMobileTable, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:AndroidMobileTable" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileButton, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileButton" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileCanvas, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileCanvas" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends myContainer As MobileContainer, c As Color)
+		  #Pragma Unused myContainer
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:myContainer:MobileContainer" Alias "getView()!!.setBackgroundColor" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileDateTimePicker, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileDateTimePicker" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileHTMLViewer, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileHTMLViewer" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileImageViewer, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileImageViewer" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileLabel, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileLabel" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileOval, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileOval" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileProgressBar, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileProgressBar" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileProgressWheel, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileProgressWheel" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileRectangle, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileRectangle" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends myScreen As MobileScreen, c As Color)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:myScreen:MobileScreen" Alias "getWindow().getDecorView().setBackgroundColor" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileScrollableArea, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileScrollableArea" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileSlider, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileSlider" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileSwitch, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileSwitch" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileTabPanel, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileTabPanel" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileTextArea, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileTextArea" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F72207468697320766965772E
+		Sub SetBackgroundColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileTextField" (myColor As Integer)
+		    setBackgroundColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As AndroidMobileTable, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:AndroidMobileTable" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileButton, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileButton" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileCanvas, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileCanvas" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileDateTimePicker, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileDateTimePicker" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileHTMLViewer, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileHTMLViewer" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileImageViewer, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileImageViewer" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileLabel, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileLabel" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileOval, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileOval" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileProgressBar, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileProgressBar" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileProgressWheel, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileProgressWheel" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileRectangle, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileRectangle" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileScrollableArea, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileScrollableArea" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileSlider, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileSlider" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileSwitch, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileSwitch" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileTabPanel, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileTabPanel" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileTextArea, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileTextArea" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C642075736520612064656661756C7420666F63757320686967686C69676874207768656E206974206765747320666F63757365642062757420646F65736E2774206861766520616E64726F69642E522E617474722373746174655F666F637573656420646566696E656420696E20697473206261636B67726F756E642E
+		Sub SetDefaultFocusHighlightEnabledXC(Extends ctrl As MobileTextField, defaultFocusHighlightEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileTextField" (myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused defaultFocusHighlightEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As AndroidMobileTable, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:AndroidMobileTable" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileButton, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileButton" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileCanvas, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileCanvas" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileDateTimePicker, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileDateTimePicker" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileHTMLViewer, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileHTMLViewer" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileImageViewer, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileImageViewer" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileLabel, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileLabel" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileOval, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileOval" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileProgressBar, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileProgressBar" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileProgressWheel, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileProgressWheel" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileRectangle, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileRectangle" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileScrollableArea, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileScrollableArea" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileSlider, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileSlider" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileSwitch, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileSwitch" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileTabPanel, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileTabPanel" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileTextArea, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileTextArea" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320746865206475706C69636174696F6E206F662074686520706172656E74277320737461746520696E746F207468697320766965772E205768656E206475706C69636174696F6E20697320656E61626C65642C20746869732076696577206765747320697473206472617761626C652073746174652066726F6D2069747320706172656E7420726174686572207468616E2066726F6D20697473206F776E20696E7465726E616C2070726F706572746965732E
+		Sub SetDuplicateParentStateEnabledXC(Extends ctrl As MobileTextField, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileTextField" (myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261736520656C65766174696F6E206F66207468697320766965772C20696E20706978656C732E
+		Sub SetElevationXC(Extends ctrl As AndroidMobileTable, elevation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setElevation Lib "Object:ctrl:AndroidMobileTable" (myElevation As Single)
+		    setElevation(elevation)
+		    
+		  #Else
+		    
+		    #Pragma Unused elevation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261736520656C65766174696F6E206F66207468697320766965772C20696E20706978656C732E
+		Sub SetElevationXC(Extends ctrl As MobileButton, elevation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setElevation Lib "Object:ctrl:MobileButton" (myElevation As Single)
+		    setElevation(elevation)
+		    
+		  #Else
+		    
+		    #Pragma Unused elevation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261736520656C65766174696F6E206F66207468697320766965772C20696E20706978656C732E
+		Sub SetElevationXC(Extends ctrl As MobileCanvas, elevation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setElevation Lib "Object:ctrl:MobileCanvas" (myElevation As Single)
+		    setElevation(elevation)
+		    
+		  #Else
+		    
+		    #Pragma Unused elevation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261736520656C65766174696F6E206F66207468697320766965772C20696E20706978656C732E
+		Sub SetElevationXC(Extends ctrl As MobileDateTimePicker, elevation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setElevation Lib "Object:ctrl:MobileDateTimePicker" (myElevation As Single)
+		    setElevation(elevation)
+		    
+		  #Else
+		    
+		    #Pragma Unused elevation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261736520656C65766174696F6E206F66207468697320766965772C20696E20706978656C732E
+		Sub SetElevationXC(Extends ctrl As MobileHTMLViewer, elevation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setElevation Lib "Object:ctrl:MobileHTMLViewer" (myElevation As Single)
+		    setElevation(elevation)
+		    
+		  #Else
+		    
+		    #Pragma Unused elevation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261736520656C65766174696F6E206F66207468697320766965772C20696E20706978656C732E
+		Sub SetElevationXC(Extends ctrl As MobileImageViewer, elevation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setElevation Lib "Object:ctrl:MobileImageViewer" (myElevation As Single)
+		    setElevation(elevation)
+		    
+		  #Else
+		    
+		    #Pragma Unused elevation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261736520656C65766174696F6E206F66207468697320766965772C20696E20706978656C732E
+		Sub SetElevationXC(Extends ctrl As MobileLabel, elevation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setElevation Lib "Object:ctrl:MobileLabel" (myElevation As Single)
+		    setElevation(elevation)
+		    
+		  #Else
+		    
+		    #Pragma Unused elevation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261736520656C65766174696F6E206F66207468697320766965772C20696E20706978656C732E
+		Sub SetElevationXC(Extends ctrl As MobileOval, elevation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setElevation Lib "Object:ctrl:MobileOval" (myElevation As Single)
+		    setElevation(elevation)
+		    
+		  #Else
+		    
+		    #Pragma Unused elevation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261736520656C65766174696F6E206F66207468697320766965772C20696E20706978656C732E
+		Sub SetElevationXC(Extends ctrl As MobileProgressBar, elevation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setElevation Lib "Object:ctrl:MobileProgressBar" (myElevation As Single)
+		    setElevation(elevation)
+		    
+		  #Else
+		    
+		    #Pragma Unused elevation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261736520656C65766174696F6E206F66207468697320766965772C20696E20706978656C732E
+		Sub SetElevationXC(Extends ctrl As MobileProgressWheel, elevation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setElevation Lib "Object:ctrl:MobileProgressWheel" (myElevation As Single)
+		    setElevation(elevation)
+		    
+		  #Else
+		    
+		    #Pragma Unused elevation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261736520656C65766174696F6E206F66207468697320766965772C20696E20706978656C732E
+		Sub SetElevationXC(Extends ctrl As MobileRectangle, elevation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setElevation Lib "Object:ctrl:MobileRectangle" (myElevation As Single)
+		    setElevation(elevation)
+		    
+		  #Else
+		    
+		    #Pragma Unused elevation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261736520656C65766174696F6E206F66207468697320766965772C20696E20706978656C732E
+		Sub SetElevationXC(Extends ctrl As MobileScrollableArea, elevation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setElevation Lib "Object:ctrl:MobileScrollableArea" (myElevation As Single)
+		    setElevation(elevation)
+		    
+		  #Else
+		    
+		    #Pragma Unused elevation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261736520656C65766174696F6E206F66207468697320766965772C20696E20706978656C732E
+		Sub SetElevationXC(Extends ctrl As MobileSlider, elevation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setElevation Lib "Object:ctrl:MobileSlider" (myElevation As Single)
+		    setElevation(elevation)
+		    
+		  #Else
+		    
+		    #Pragma Unused elevation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261736520656C65766174696F6E206F66207468697320766965772C20696E20706978656C732E
+		Sub SetElevationXC(Extends ctrl As MobileSwitch, elevation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setElevation Lib "Object:ctrl:MobileSwitch" (myElevation As Single)
+		    setElevation(elevation)
+		    
+		  #Else
+		    
+		    #Pragma Unused elevation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As AndroidMobileTable, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:AndroidMobileTable" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As MobileButton, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileButton" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As MobileCanvas, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileCanvas" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As MobileDateTimePicker, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileDateTimePicker" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As MobileHTMLViewer, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileHTMLViewer" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As MobileImageViewer, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileImageViewer" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As MobileLabel, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileLabel" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As MobileOval, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileOval" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As MobileProgressBar, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileProgressBar" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As MobileProgressWheel, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileProgressWheel" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As MobileRectangle, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileRectangle" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As MobileScrollableArea, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileScrollableArea" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As MobileSlider, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileSlider" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As MobileSwitch, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileSwitch" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As MobileTextArea, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileTextArea" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073697A65206F66207468652066616465642065646765207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E2074686973207669657720697320617661696C61626C652E2057696C6C206E6F74206368616E676520776865746865722074686520666164696E67206564676520697320656E61626C65643B2075736520736574566572746963616C466164696E6745646765456E61626C656428626F6F6C65616E29206F7220736574486F72697A6F6E74616C466164696E6745646765456E61626C656428626F6F6C65616E2920746F20656E61626C652074686520666164696E67206564676520666F722074686520766572746963616C206F7220686F72697A6F6E74616C20666164696E672065646765732E
+		Sub SetFadingEdgeLengthXC(Extends ctrl As MobileTextField, length As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileTextField" (myElevation As Integer)
+		    setFadingEdgeLength(length)
+		    
+		  #Else
+		    
+		    #Pragma Unused length
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As AndroidMobileTable, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:AndroidMobileTable" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileButton, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileButton" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileCanvas, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileCanvas" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileDateTimePicker, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileDateTimePicker" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileHTMLViewer, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileHTMLViewer" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileImageViewer, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileImageViewer" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileLabel, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileLabel" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileOval, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileOval" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileProgressBar, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileProgressBar" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileProgressWheel, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileProgressWheel" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileRectangle, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileRectangle" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileScrollableArea, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileScrollableArea" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileSlider, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileSlider" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileSwitch, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileSwitch" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileTabPanel, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileTabPanel" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileTextArea, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileTextArea" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E207265636569766520666F637573207768696C6520696E20746F756368206D6F64652E2053657474696E67207468697320746F20747275652077696C6C20616C736F20656E7375726520746861742074686973207669657720697320666F63757361626C652E
+		Sub SetFocusableInTouchModeXC(Extends ctrl As MobileTextField, focusableInTouchMode As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileTextField" (myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(focusableInTouchMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusableInTouchMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As AndroidMobileTable, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:AndroidMobileTable" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As AndroidMobileTable, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:AndroidMobileTable" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileButton, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileButton" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileButton, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileButton" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileCanvas, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileCanvas" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileCanvas, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileCanvas" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileDateTimePicker, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileDateTimePicker" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileDateTimePicker, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileDateTimePicker" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileHTMLViewer, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileHTMLViewer" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileHTMLViewer, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileHTMLViewer" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileImageViewer, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileImageViewer" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileImageViewer, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileImageViewer" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileLabel, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileLabel" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileLabel, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileLabel" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileOval, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileOval" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileOval, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileOval" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileProgressBar, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileProgressBar" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileProgressBar, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileProgressBar" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileProgressWheel, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileProgressWheel" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileProgressWheel, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileProgressWheel" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileRectangle, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileRectangle" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileRectangle, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileRectangle" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileScrollableArea, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileScrollableArea" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileScrollableArea, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileScrollableArea" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileSlider, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileSlider" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileSlider, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileSlider" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileSwitch, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileSwitch" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileSwitch, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileSwitch" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileTabPanel, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileTabPanel" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileTabPanel, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileTabPanel" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileTextArea, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileTextArea" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileTextArea, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileTextArea" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772063616E20726563656976652074686520666F6375732E0A53657474696E67207468697320746F2066616C73652077696C6C20616C736F20656E73757265207468617420746869732076696577206973206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileTextField, focusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileTextField" (myFocusable As Boolean)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320766965772063616E207265636569766520666F6375732E0A0A53657474696E67207468697320746F20464F43555341424C455F4155544F2074656C6C7320746865206672616D65776F726B20746F2064657465726D696E6520666F6375736162696C697479206175746F6D61746963616C6C79206261736564206F6E207468652076696577277320696E74657261637469766974792E2054686973206973207468652064656661756C742E0A0A53657474696E67207468697320746F204E4F545F464F43555341424C452077696C6C20656E7375726520746861742074686973207669657720697320616C736F206E6F7420666F63757361626C6520696E20746F756368206D6F64652E
+		Sub SetFocusableXC(Extends ctrl As MobileTextField, focusable As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusable Lib "Object:ctrl:MobileTextField" (myFocusable As Integer)
+		    setFocusable(focusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused focusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As AndroidMobileTable, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:AndroidMobileTable" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileButton, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileButton" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileCanvas, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileCanvas" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileDateTimePicker, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileDateTimePicker" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileHTMLViewer, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileHTMLViewer" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileImageViewer, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileImageViewer" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileLabel, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileLabel" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileOval, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileOval" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileProgressBar, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileProgressBar" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileProgressWheel, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileProgressWheel" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileRectangle, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileRectangle" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileScrollableArea, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileScrollableArea" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileSlider, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileSlider" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileSwitch, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileSwitch" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileTabPanel, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileTabPanel" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileTextArea, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileTextArea" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Sub SetFocusedByDefaultXC(Extends ctrl As MobileTextField, isFocusedByDefault As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileTextField" (myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(isFocusedByDefault)
+		    
+		  #Else
+		    
+		    #Pragma Unused isFocusedByDefault
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As AndroidMobileTable, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:AndroidMobileTable" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileButton, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileButton" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileCanvas, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileCanvas" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileDateTimePicker, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileDateTimePicker" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileHTMLViewer, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileHTMLViewer" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileImageViewer, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileImageViewer" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileLabel, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileLabel" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileOval, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileOval" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileProgressBar, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileProgressBar" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileProgressWheel, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileProgressWheel" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileRectangle, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileRectangle" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileScrollableArea, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileScrollableArea" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileSlider, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileSlider" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileSwitch, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileSwitch" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileTabPanel, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileTabPanel" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileTextArea, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileTextArea" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F20616C6C6F7720666F726365206461726B20746F206170706C7920746F207468697320766965772E2053657474696E67207468697320746F2066616C73652077696C6C2064697361626C6520746865206175746F2D6461726B2066656174757265206F6E2065766572797468696E67207468697320766965772064726177732C20696E636C7564696E6720616E792064657363656E64616E74732E2053657474696E67207468697320746F20747275652077696C6C20616C6C6F772074686973207669657720746F206265206175746F6D61746963616C6C79206D616465206461726B2C20686F776576657220612076616C7565206F66202774727565272077696C6C206E6F74206F7665727269646520616E79202766616C7365272076616C756520696E2069747320706172656E7420636861696E206E6F722077696C6C2069742070726576656E7420616E79202766616C73652720696E20616E79206F6620697473206368696C6472656E2E205468652064656661756C74206265686176696F72206F6620666F726365206461726B20697320616C736F20696E666C75656E63656420627920746865205468656D6527732069734C696768745468656D65206174747269627574652E2049662061207468656D652069732069734C696768745468656D653D2266616C7365222C207468656E20666F726365206461726B20697320676C6F62616C6C792064697361626C656420666F722074686174207468656D652E
+		Sub SetForceDarkAllowedXC(Extends ctrl As MobileTextField, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileTextField" (myAllow As Boolean)
+		    setForceDarkAllowed(allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused allow
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As AndroidMobileTable, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:AndroidMobileTable" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileButton, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileButton" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileCanvas, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileCanvas" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileDateTimePicker, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileDateTimePicker" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileHTMLViewer, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileHTMLViewer" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileImageViewer, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileImageViewer" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileLabel, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileLabel" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileOval, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileOval" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileProgressBar, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileProgressBar" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileProgressWheel, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileProgressWheel" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileRectangle, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileRectangle" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileScrollableArea, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileScrollableArea" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileSlider, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileSlider" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileSwitch, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileSwitch" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileTabPanel, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileTabPanel" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileTextArea, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileTextArea" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44657363726962657320686F772074686520666F726567726F756E6420697320706F736974696F6E65642E2044656661756C747320746F20535441525420616E6420544F502E
+		Sub SetForegroundGravityXC(Extends ctrl As MobileTextField, gravity As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileTextField" (myGravity As Integer)
+		    setForegroundGravity(gravity)
+		    
+		  #Else
+		    
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As AndroidMobileTable, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:AndroidMobileTable" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileButton, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileButton" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileCanvas, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileCanvas" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileDateTimePicker, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileDateTimePicker" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileHTMLViewer, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileHTMLViewer" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileImageViewer, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileImageViewer" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileLabel, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileLabel" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileOval, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileOval" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileProgressBar, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileProgressBar" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileProgressWheel, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileProgressWheel" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileRectangle, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileRectangle" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileScrollableArea, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileScrollableArea" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileSlider, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileSlider" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileSwitch, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileSwitch" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileTabPanel, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileTabPanel" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileTextArea, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileTextArea" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20666F72206576656E74732073756368206173206C6F6E6720707265737365732E0A0A596F75206D6179207769736820746F2064697361626C652068617074696320666565646261636B20696620796F7572207669657720616C726561647920636F6E74726F6C7320697473206F776E2068617074696320666565646261636B2E
+		Sub SetHapticFeedbackEnabledXC(Extends ctrl As MobileTextField, hapticFeedbackEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileTextField" (myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused hapticFeedbackEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As AndroidMobileTable, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:AndroidMobileTable" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileButton, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileButton" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileCanvas, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileCanvas" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileDateTimePicker, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileDateTimePicker" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileHTMLViewer, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileHTMLViewer" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileImageViewer, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileImageViewer" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileLabel, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileLabel" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileOval, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileOval" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileProgressBar, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileProgressBar" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileProgressWheel, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileProgressWheel" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileRectangle, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileRectangle" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileScrollableArea, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileScrollableArea" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileSlider, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileSlider" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileSwitch, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileSwitch" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileTabPanel, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileTabPanel" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileTextArea, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileTextArea" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772069732063757272656E746C7920747261636B696E67207472616E7369656E74207374617465207468617420746865206672616D65776F726B2073686F756C6420617474656D707420746F207072657365727665207768656E20706F737369626C652E205468697320666C6167206973207265666572656E636520636F756E7465642C20736F2065766572792063616C6C20746F207365744861735472616E7369656E7453746174652874727565292073686F756C642062652070616972656420776974682061206C617465722063616C6C20746F207365744861735472616E7369656E7453746174652866616C7365292E0A0A4120766965772077697468207472616E7369656E742073746174652063616E6E6F74206265207472697669616C6C79207265626F756E642066726F6D20616E2065787465726E616C206461746120736F757263652C207375636820617320616E20616461707465722062696E64696E67206974656D20766965777320696E2061206C6973742E2054686973206D6179206265206265636175736520746865207669657720697320706572666F726D696E6720616E20616E696D6174696F6E2C20747261636B696E6720757365722073656C656374696F6E206F6620636F6E74656E742C206F722073696D696C61722E
+		Sub SetHasTransientStateXC(Extends ctrl As MobileTextField, hasTransientState As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileTextField" (myHasTransientState As Boolean)
+		    setHasTransientState(hasTransientState)
+		    
+		  #Else
+		    
+		    #Pragma Unused hasTransientState
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As AndroidMobileTable, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:AndroidMobileTable" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileButton, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileButton" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileCanvas, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileCanvas" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileDateTimePicker, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileDateTimePicker" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileHTMLViewer, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileHTMLViewer" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileImageViewer, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileImageViewer" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileLabel, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileLabel" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileOval, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileOval" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileProgressBar, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileProgressBar" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileProgressWheel, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileProgressWheel" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileRectangle, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileRectangle" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileScrollableArea, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileScrollableArea" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileSlider, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileSlider" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileSwitch, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileSwitch" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileTabPanel, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileTabPanel" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileTextArea, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileTextArea" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Sub SetHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileTextField, horizontalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileTextField" (myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As AndroidMobileTable, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:AndroidMobileTable" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileButton, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileButton" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileCanvas, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileCanvas" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileDateTimePicker, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileDateTimePicker" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileHTMLViewer, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileHTMLViewer" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileImageViewer, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileImageViewer" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileLabel, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileLabel" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileOval, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileOval" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileProgressBar, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileProgressBar" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileProgressWheel, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileProgressWheel" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileRectangle, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileRectangle" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileScrollableArea, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileScrollableArea" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileSlider, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileSlider" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileSwitch, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileSwitch" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileTabPanel, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileTabPanel" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileTextArea, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileTextArea" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetHorizontalScrollBarEnabledXC(Extends ctrl As MobileTextField, horizontalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileTextField" (myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused horizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As AndroidMobileTable, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:AndroidMobileTable" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileButton, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileButton" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileCanvas, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileCanvas" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileDateTimePicker, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileDateTimePicker" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileHTMLViewer, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileHTMLViewer" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileImageViewer, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileImageViewer" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileLabel, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileLabel" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileOval, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileOval" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileProgressBar, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileProgressBar" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileProgressWheel, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileProgressWheel" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileRectangle, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileRectangle" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileScrollableArea, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileScrollableArea" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileSlider, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileSlider" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileSwitch, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileSwitch" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileTabPanel, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileTabPanel" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileTextArea, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileTextArea" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F7720746F2064657465726D696E6520776865746865722074686973207669657720697320696D706F7274616E7420666F72206163636573736962696C697479207768696368206973206966206974206669726573206163636573736962696C697479206576656E747320616E64206966206974206973207265706F7274656420746F206163636573736962696C6974792073657276696365732074686174207175657279207468652073637265656E2E
+		Sub SetImportantForAccessibilityXC(Extends ctrl As MobileTextField, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileTextField" (myMode As Integer)
+		    setImportantForAccessibility(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As AndroidMobileTable, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:AndroidMobileTable" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As MobileButton, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileButton" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As MobileCanvas, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileCanvas" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As MobileDateTimePicker, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileDateTimePicker" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As MobileHTMLViewer, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileHTMLViewer" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As MobileImageViewer, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileImageViewer" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As MobileLabel, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileLabel" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As MobileOval, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileOval" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As MobileProgressBar, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileProgressBar" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As MobileProgressWheel, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileProgressWheel" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As MobileRectangle, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileRectangle" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As MobileScrollableArea, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileScrollableArea" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As MobileSlider, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileSlider" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As MobileSwitch, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileSwitch" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As MobileTextArea, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileTextArea" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C2E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E
+		Sub SetImportantForAutofillXC(Extends ctrl As MobileTextField, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileTextField" (myMode As Integer)
+		    setImportantForAutofill(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As AndroidMobileTable, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:AndroidMobileTable" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileButton, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileButton" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileCanvas, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileCanvas" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileDateTimePicker, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileDateTimePicker" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileHTMLViewer, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileHTMLViewer" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileImageViewer, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileImageViewer" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileLabel, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileLabel" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileOval, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileOval" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileProgressBar, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileProgressBar" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileProgressWheel, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileProgressWheel" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileRectangle, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileRectangle" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileScrollableArea, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileScrollableArea" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileSlider, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileSlider" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileSwitch, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileSwitch" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileTabPanel, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileTabPanel" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileTextArea, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileTextArea" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D6F646520666F722064657465726D696E696E6720776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652E0A0A54686520706C6174666F726D2064657465726D696E65732074686520696D706F7274616E636520666F72206175746F66696C6C206175746F6D61746963616C6C792062757420796F752063616E207573652074686973206D6574686F6420746F20637573746F6D697A6520746865206265686176696F722E205479706963616C6C792C2061207669657720746861742070726F766964657320746578742073686F756C64206265206D61726B656420617320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F5945532E
+		Sub SetImportantForContentCaptureXC(Extends ctrl As MobileTextField, mode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileTextField" (myMode As Integer)
+		    setImportantForContentCapture(mode)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As AndroidMobileTable, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:AndroidMobileTable" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileButton, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileButton" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileCanvas, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileCanvas" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileDateTimePicker, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileDateTimePicker" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileHTMLViewer, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileHTMLViewer" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileImageViewer, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileImageViewer" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileLabel, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileLabel" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileOval, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileOval" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileProgressBar, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileProgressBar" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileProgressWheel, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileProgressWheel" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileRectangle, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileRectangle" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileScrollableArea, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileScrollableArea" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileSlider, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileSlider" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileSwitch, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileSwitch" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileTabPanel, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileTabPanel" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileTextArea, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileTextArea" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C206D6F64696679696E67207468652076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Sub SetKeepScreenOnXC(Extends ctrl As MobileTextField, keepScreenOn As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileTextField" (myKeepScreenOn As Boolean)
+		    setKeepScreenOn(keepScreenOn)
+		    
+		  #Else
+		    
+		    #Pragma Unused keepScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As AndroidMobileTable, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:AndroidMobileTable" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileButton, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileButton" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileCanvas, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileCanvas" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileDateTimePicker, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileDateTimePicker" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileHTMLViewer, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileHTMLViewer" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileImageViewer, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileImageViewer" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileLabel, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileLabel" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileOval, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileOval" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileProgressBar, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileProgressBar" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileProgressWheel, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileProgressWheel" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileRectangle, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileRectangle" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileScrollableArea, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileScrollableArea" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileSlider, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileSlider" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileSwitch, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileSwitch" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileTabPanel, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileTabPanel" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileTextArea, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileTextArea" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206C61796F757420646972656374696F6E20666F72207468697320766965772E20546869732077696C6C2070726F7061676174652061207265736574206F66206C61796F757420646972656374696F6E207265736F6C7574696F6E20746F2074686520766965772773206368696C6472656E20616E64207265736F6C7665206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Sub SetLayoutDirectionXC(Extends ctrl As MobileTextField, layoutDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileTextField" (myLayoutDirection As Integer)
+		    setLayoutDirection(layoutDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused layoutDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As AndroidMobileTable, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:AndroidMobileTable" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileButton, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileButton" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileCanvas, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileCanvas" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileDateTimePicker, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileDateTimePicker" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileHTMLViewer, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileHTMLViewer" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileImageViewer, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileImageViewer" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileLabel, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileLabel" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileOval, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileOval" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileProgressBar, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileProgressBar" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileProgressWheel, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileProgressWheel" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileRectangle, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileRectangle" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileScrollableArea, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileScrollableArea" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileSlider, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileSlider" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileSwitch, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileSwitch" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileTabPanel, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileTabPanel" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileTextArea, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileTextArea" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D20686569676874206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D206865696768742028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C6520686569676874292E
+		Sub SetMinimumHeightXC(Extends ctrl As MobileTextField, minHeight As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileTextField" (myMinHeight As Integer)
+		    setMinimumHeight(minHeight)
+		    
+		  #Else
+		    
+		    #Pragma Unused minHeight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As AndroidMobileTable, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:AndroidMobileTable" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As MobileButton, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileButton" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As MobileCanvas, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileCanvas" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As MobileDateTimePicker, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileDateTimePicker" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As MobileHTMLViewer, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileHTMLViewer" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As MobileImageViewer, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileImageViewer" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As MobileLabel, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileLabel" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As MobileOval, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileOval" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As MobileProgressBar, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileProgressBar" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As MobileProgressWheel, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileProgressWheel" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As MobileRectangle, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileRectangle" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As MobileScrollableArea, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileScrollableArea" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As MobileSlider, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileSlider" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As MobileSwitch, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileSwitch" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As MobileTextArea, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileTextArea" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206D696E696D756D207769647468206F662074686520766965772E204974206973206E6F742067756172616E746565642074686520766965772077696C6C2062652061626C6520746F20616368696576652074686973206D696E696D756D2077696474682028666F72206578616D706C652C2069662069747320706172656E74206C61796F757420636F6E73747261696E732069742077697468206C65737320617661696C61626C65207769647468292E
+		Sub SetMinimumWidthXC(Extends ctrl As MobileTextField, minWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileTextField" (myMinWidth As Integer)
+		    setMinimumWidth(minWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused minWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As AndroidMobileTable, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:AndroidMobileTable" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileButton, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileButton" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileCanvas, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileCanvas" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileDateTimePicker, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileDateTimePicker" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileHTMLViewer, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileHTMLViewer" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileImageViewer, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileImageViewer" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileLabel, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileLabel" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileOval, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileOval" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileProgressBar, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileProgressBar" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileProgressWheel, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileProgressWheel" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileRectangle, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileRectangle" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileScrollableArea, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileScrollableArea" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileSlider, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileSlider" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileSwitch, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileSwitch" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileTabPanel, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileTabPanel" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileTextArea, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileTextArea" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65206E6573746564207363726F6C6C696E6720666F72207468697320766965772E0A0A496620746869732070726F70657274792069732073657420746F20747275652074686520766965772077696C6C206265207065726D697474656420746F20696E697469617465206E6573746564207363726F6C6C696E67206F7065726174696F6E732077697468206120636F6D70617469626C6520706172656E74207669657720696E207468652063757272656E74206869657261726368792E2049662074686973207669657720646F6573206E6F7420696D706C656D656E74206E6573746564207363726F6C6C696E6720746869732077696C6C2068617665206E6F206566666563742E2044697361626C696E67206E6573746564207363726F6C6C696E67207768696C652061206E6573746564207363726F6C6C20697320696E2070726F6772657373206861732074686520656666656374206F662073746F7070696E6720746865206E6573746564207363726F6C6C2E
+		Sub SetNestedScrollingEnabledXC(Extends ctrl As MobileTextField, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileTextField" (myEnabled As Boolean)
+		    setNestedScrollingEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As AndroidMobileTable, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:AndroidMobileTable" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileButton, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileButton" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileCanvas, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileCanvas" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileDateTimePicker, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileDateTimePicker" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileHTMLViewer, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileHTMLViewer" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileImageViewer, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileImageViewer" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileLabel, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileLabel" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileOval, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileOval" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileProgressBar, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileProgressBar" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileProgressWheel, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileProgressWheel" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileRectangle, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileRectangle" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileScrollableArea, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileScrollableArea" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileSlider, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileSlider" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileSwitch, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileSwitch" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileTabPanel, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileTabPanel" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileTextArea, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileTextArea" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F662074686520616D6269656E7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C20616D6269656E7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E65416D6269656E74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E616D6269656E74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineAmbientShadowColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileTextField" (myColor As Integer)
+		    setOutlineAmbientShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As AndroidMobileTable, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:AndroidMobileTable" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileButton, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileButton" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileCanvas, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileCanvas" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, CompatibilityFlags = (TargetConsole and (Target64Bit)) or  (TargetWeb and (Target64Bit)) or  (TargetDesktop and (Target64Bit)) or  (TargetAndroid and (Target64Bit)), Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends myContainer As MobileContainer, Assigns c As Color)
+		  #Pragma Unused myContainer
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:myContainer:MobileContainer" Alias "getView()!!.setOutlineSpotShadowColor" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileDateTimePicker, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileDateTimePicker" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileHTMLViewer, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileHTMLViewer" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileImageViewer, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileImageViewer" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileLabel, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileLabel" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileOval, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileOval" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileProgressBar, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileProgressBar" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileProgressWheel, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileProgressWheel" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileRectangle, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileRectangle" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileScrollableArea, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileScrollableArea" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileSlider, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileSlider" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileSwitch, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileSwitch" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileTabPanel, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileTabPanel" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileTextArea, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileTextArea" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652073706F7420736861646F77207468617420697320647261776E207768656E20746865207669657720686173206120706F736974697665205A206F7220656C65766174696F6E2076616C75652E0A0A42792064656661756C742074686520736861646F7720636F6C6F7220697320626C61636B2E2047656E6572616C6C792C207468697320636F6C6F722077696C6C206265206F706171756520736F2074686520696E74656E73697479206F662074686520736861646F7720697320636F6E73697374656E74206265747765656E20646966666572656E74207669657773207769746820646966666572656E7420636F6C6F72732E0A0A546865206F706163697479206F66207468652066696E616C2073706F7420736861646F7720697320612066756E6374696F6E206F662074686520736861646F7720636173746572206865696768742C2074686520616C706861206368616E6E656C206F6620746865206F75746C696E6553706F74536861646F77436F6C6F7220287479706963616C6C79206F7061717565292C20616E642074686520522E617474722E73706F74536861646F77416C706861207468656D65206174747269627574652E
+		Sub SetOutlineSpotShadowColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileTextField" (myColor As Integer)
+		    setOutlineSpotShadowColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As AndroidMobileTable, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:AndroidMobileTable" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileButton, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileButton" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileCanvas, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileCanvas" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileDateTimePicker, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileDateTimePicker" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileHTMLViewer, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileHTMLViewer" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileImageViewer, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileImageViewer" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileLabel, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileLabel" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileOval, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileOval" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileProgressBar, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileProgressBar" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileProgressWheel, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileProgressWheel" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileRectangle, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileRectangle" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileScrollableArea, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileScrollableArea" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileSlider, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileSlider" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileSwitch, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileSwitch" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileTabPanel, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileTabPanel" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileTextArea, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileTextArea" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2056616C6964206F7665722D7363726F6C6C206D6F64657320617265204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E2053657474696E6720746865206F7665722D7363726F6C6C206D6F6465206F66206120766965772077696C6C206861766520616E20656666656374206F6E6C792069662074686520766965772069732063617061626C65206F66207363726F6C6C696E672E
+		Sub SetOverScrollModeXC(Extends ctrl As MobileTextField, overScrollMode As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileTextField" (myOverScrollMode As Integer)
+		    setOverScrollMode(overScrollMode)
+		    
+		  #Else
+		    
+		    #Pragma Unused overScrollMode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As AndroidMobileTable, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:AndroidMobileTable" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileButton, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileButton" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileCanvas, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileCanvas" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileDateTimePicker, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileDateTimePicker" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileHTMLViewer, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileHTMLViewer" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileImageViewer, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileImageViewer" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileLabel, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileLabel" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileOval, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileOval" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileProgressBar, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileProgressBar" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileProgressWheel, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileProgressWheel" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileRectangle, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileRectangle" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileScrollableArea, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileScrollableArea" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileSlider, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileSlider" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileSwitch, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileSwitch" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileTabPanel, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileTabPanel" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileTextArea, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileTextArea" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652072656C61746976652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E67537461727428292C2067657450616464696E67546F7028292C2067657450616464696E67456E64282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingRelativeXC(Extends ctrl As MobileTextField, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileTextField" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPaddingRelative(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As AndroidMobileTable, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:AndroidMobileTable" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileButton, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileButton" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileCanvas, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileCanvas" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileDateTimePicker, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileDateTimePicker" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileHTMLViewer, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileHTMLViewer" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileImageViewer, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileImageViewer" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileLabel, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileLabel" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileOval, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileOval" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileProgressBar, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileProgressBar" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileProgressWheel, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileProgressWheel" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileRectangle, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileRectangle" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileScrollableArea, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileScrollableArea" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileSlider, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileSlider" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileSwitch, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileSwitch" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileTabPanel, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileTabPanel" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileTextArea, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileTextArea" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652070616464696E672E205468652076696577206D617920616464206F6E2074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732C20646570656E64696E67206F6E20746865207374796C6520616E64207669736962696C697479206F6620746865207363726F6C6C626172732E20536F207468652076616C7565732072657475726E65642066726F6D2067657450616464696E674C65667428292C2067657450616464696E67546F7028292C2067657450616464696E675269676874282920616E642067657450616464696E67426F74746F6D2829206D617920626520646966666572656E742066726F6D207468652076616C7565732073657420696E20746869732063616C6C2E
+		Sub SetPaddingXC(Extends ctrl As MobileTextField, left As Integer, top As Integer, right As Integer, bottom As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPadding Lib "Object:ctrl:MobileTextField" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
+		    setPadding(left, top, right, bottom)
+		    
+		  #Else
+		    
+		    #Pragma Unused left
+		    #Pragma Unused top
+		    #Pragma Unused right
+		    #Pragma Unused bottom
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As AndroidMobileTable, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:AndroidMobileTable" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileButton, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileButton" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileCanvas, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileCanvas" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileDateTimePicker, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileDateTimePicker" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileHTMLViewer, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileHTMLViewer" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileImageViewer, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileImageViewer" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileLabel, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileLabel" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileOval, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileOval" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileProgressBar, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileProgressBar" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileProgressWheel, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileProgressWheel" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileRectangle, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileRectangle" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileScrollableArea, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileScrollableArea" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileSlider, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileSlider" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileSwitch, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileSwitch" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileTabPanel, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileTabPanel" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileTextArea, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileTextArea" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652078206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotXXC(Extends ctrl As MobileTextField, pivotX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotX Lib "Object:ctrl:MobileTextField" (myPivotX As Single)
+		    setPivotX(pivotX)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As AndroidMobileTable, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:AndroidMobileTable" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileButton, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileButton" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileCanvas, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileCanvas" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileDateTimePicker, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileDateTimePicker" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileHTMLViewer, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileHTMLViewer" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileImageViewer, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileImageViewer" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileLabel, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileLabel" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileOval, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileOval" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileProgressBar, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileProgressBar" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileProgressWheel, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileProgressWheel" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileRectangle, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileRectangle" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileScrollableArea, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileScrollableArea" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileSlider, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileSlider" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileSwitch, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileSwitch" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileTabPanel, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileTabPanel" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileTextArea, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileTextArea" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652079206C6F636174696F6E206F662074686520706F696E742061726F756E6420776869636820746865207669657720697320726F746174656420616E64207363616C65642E2042792064656661756C742C20746865207069766F7420706F696E742069732063656E7465726564206F6E20746865206F626A6563742E2053657474696E6720746869732070726F70657274792064697361626C65732074686973206265686176696F7220616E642063617573657320746865207669657720746F20757365206F6E6C7920746865206578706C696369746C7920736574207069766F745820616E64207069766F74592076616C7565732E
+		Sub SetPivotYXC(Extends ctrl As MobileTextField, pivotY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPivotY Lib "Object:ctrl:MobileTextField" (myPivotY As Single)
+		    setPivotY(pivotY)
+		    
+		  #Else
+		    
+		    #Pragma Unused pivotY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As AndroidMobileTable, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:AndroidMobileTable" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileButton, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileButton" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileCanvas, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileCanvas" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileDateTimePicker, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileDateTimePicker" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileHTMLViewer, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileHTMLViewer" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileImageViewer, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileImageViewer" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileLabel, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileLabel" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileOval, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileOval" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileProgressBar, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileProgressBar" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileProgressWheel, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileProgressWheel" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileRectangle, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileRectangle" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileScrollableArea, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileScrollableArea" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileSlider, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileSlider" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileSwitch, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileSwitch" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileTabPanel, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileTabPanel" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileTextArea, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileTextArea" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2073657420746F20747275652C20746869732069732061207369676E616C20746F20616E636573746F7220766965777320696E207468652068696572617263687920746861742074686973207669657720776F756C642070726566657220746F2062652062726F756768742066756C6C7920696E746F2076696577207768656E206974206761696E7320666F6375732E20466F72206578616D706C652C20612074657874206669656C64207468617420612075736572206973206D65616E7420746F207479706520696E746F2E204F746865722076696577732073756368206173207363726F6C6C696E6720636F6E7461696E657273206D61792070726566657220746F206F70742D6F7574206F662074686973206265686176696F722E0A0A5468652064656661756C742076616C756520666F7220766965777320697320747275652C2074686F75676820737562636C6173736573206D6179206368616E67652074686973206261736564206F6E20746865697220707265666572726564206265686176696F722E
+		Sub SetRevealOnFocusHintXC(Extends ctrl As MobileTextField, revealOnFocus As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileTextField" (myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(revealOnFocus)
+		    
+		  #Else
+		    
+		    #Pragma Unused revealOnFocus
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As AndroidMobileTable, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:AndroidMobileTable" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileButton, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileButton" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileCanvas, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileCanvas" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileDateTimePicker, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileDateTimePicker" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileHTMLViewer, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileHTMLViewer" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileImageViewer, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileImageViewer" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileLabel, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileLabel" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileOval, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileOval" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileProgressBar, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileProgressBar" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileProgressWheel, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileProgressWheel" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileRectangle, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileRectangle" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileScrollableArea, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileScrollableArea" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileSlider, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileSlider" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileSwitch, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileSwitch" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileTabPanel, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileTabPanel" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileTextArea, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileTextArea" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E6420746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2E
+		Sub SetRotationXC(Extends ctrl As MobileTextField, rotation As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotation Lib "Object:ctrl:MobileTextField" (myRotation As Single)
+		    setRotation(rotation)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As AndroidMobileTable, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:AndroidMobileTable" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileButton, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileButton" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileCanvas, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileCanvas" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileDateTimePicker, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileDateTimePicker" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileHTMLViewer, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileHTMLViewer" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileImageViewer, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileImageViewer" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileLabel, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileLabel" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileOval, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileOval" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileProgressBar, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileProgressBar" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileProgressWheel, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileProgressWheel" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileRectangle, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileRectangle" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileScrollableArea, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileScrollableArea" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileSlider, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileSlider" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileSwitch, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileSwitch" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileTabPanel, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileTabPanel" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileTextArea, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileTextArea" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520686F72697A6F6E74616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207820617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationXXC(Extends ctrl As MobileTextField, rotationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationX Lib "Object:ctrl:MobileTextField" (myRotationX As Single)
+		    setRotationX(rotationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As AndroidMobileTable, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:AndroidMobileTable" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileButton, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileButton" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileCanvas, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileCanvas" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileDateTimePicker, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileDateTimePicker" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileHTMLViewer, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileHTMLViewer" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileImageViewer, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileImageViewer" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileLabel, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileLabel" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileOval, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileOval" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileProgressBar, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileProgressBar" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileProgressWheel, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileProgressWheel" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileRectangle, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileRectangle" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileScrollableArea, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileScrollableArea" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileSlider, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileSlider" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileSwitch, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileSwitch" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileTabPanel, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileTabPanel" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileTextArea, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileTextArea" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652064656772656573207468617420746865207669657720697320726F74617465642061726F756E642074686520766572746963616C2061786973207468726F75676820746865207069766F7420706F696E742E20496E6372656173696E672076616C75657320726573756C7420696E20636F756E7465722D636C6F636B7769736520726F746174696F6E2066726F6D207468652076696577706F696E74206F66206C6F6F6B696E6720646F776E20746865207920617869732E205768656E20726F746174696E67206C617267652076696577732C206974206973207265636F6D6D656E64656420746F2061646A757374207468652063616D6572612064697374616E6365206163636F7264696E676C792E20526566657220746F2073657443616D65726144697374616E636528666C6F61742920666F72206D6F726520696E666F726D6174696F6E2E
+		Sub SetRotationYXC(Extends ctrl As MobileTextField, rotationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRotationY Lib "Object:ctrl:MobileTextField" (myRotationY As Single)
+		    setRotationY(rotationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused rotationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As AndroidMobileTable, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:AndroidMobileTable" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileButton, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileButton" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileCanvas, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileCanvas" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileDateTimePicker, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileDateTimePicker" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileHTMLViewer, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileHTMLViewer" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileImageViewer, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileImageViewer" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileLabel, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileLabel" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileOval, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileOval" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileProgressBar, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileProgressBar" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileProgressWheel, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileProgressWheel" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileRectangle, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileRectangle" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileScrollableArea, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileScrollableArea" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileSlider, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileSlider" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileSwitch, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileSwitch" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileTabPanel, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileTabPanel" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileTextArea, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileTextArea" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20782061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleXXC(Extends ctrl As MobileTextField, scaleX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleX Lib "Object:ctrl:MobileTextField" (myScaleX As Single)
+		    setScaleX(scaleX)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As AndroidMobileTable, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:AndroidMobileTable" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileButton, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileButton" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileCanvas, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileCanvas" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileDateTimePicker, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileDateTimePicker" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileHTMLViewer, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileHTMLViewer" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileImageViewer, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileImageViewer" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileLabel, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileLabel" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileOval, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileOval" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileProgressBar, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileProgressBar" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileProgressWheel, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileProgressWheel" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileRectangle, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileRectangle" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileScrollableArea, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileScrollableArea" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileSlider, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileSlider" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileSwitch, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileSwitch" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileTabPanel, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileTabPanel" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileTextArea, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileTextArea" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520616D6F756E742074686174207468652076696577206973207363616C656420696E20592061726F756E6420746865207069766F7420706F696E742C20617320612070726F706F7274696F6E206F66207468652076696577277320756E7363616C65642077696474682E20412076616C7565206F662031206D65616E732074686174206E6F207363616C696E67206973206170706C6965642E
+		Sub SetScaleYXC(Extends ctrl As MobileTextField, scaleY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScaleY Lib "Object:ctrl:MobileTextField" (myScaleY As Single)
+		    setScaleY(scaleY)
+		    
+		  #Else
+		    
+		    #Pragma Unused scaleY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As AndroidMobileTable, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:AndroidMobileTable" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileButton, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileButton" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileCanvas, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileCanvas" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileDateTimePicker, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileDateTimePicker" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileHTMLViewer, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileHTMLViewer" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileImageViewer, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileImageViewer" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileLabel, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileLabel" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileOval, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileOval" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileProgressBar, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileProgressBar" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileProgressWheel, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileProgressWheel" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileRectangle, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileRectangle" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileScrollableArea, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileScrollableArea" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileSlider, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileSlider" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileSwitch, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileSwitch" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileTabPanel, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileTabPanel" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileTextArea, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileTextArea" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572207468697320566965772073686F756C64206265206120666F63757361626C6520656C656D656E7420666F722073637265656E207265616465727320616E6420696E636C756465206E6F6E2D666F63757361626C652056696577732066726F6D206974732073756274726565207768656E2070726F766964696E6720666565646261636B2E
+		Sub SetScreenReaderFocusableXC(Extends ctrl As MobileTextField, screenReaderFocusable As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileTextField" (myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(screenReaderFocusable)
+		    
+		  #Else
+		    
+		    #Pragma Unused screenReaderFocusable
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As AndroidMobileTable, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:AndroidMobileTable" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileButton, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileButton" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileCanvas, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileCanvas" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileDateTimePicker, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileDateTimePicker" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileHTMLViewer, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileHTMLViewer" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileImageViewer, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileImageViewer" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileLabel, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileLabel" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileOval, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileOval" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileProgressBar, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileProgressBar" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileProgressWheel, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileProgressWheel" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileRectangle, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileRectangle" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileScrollableArea, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileScrollableArea" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileSlider, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileSlider" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileSwitch, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileSwitch" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileTabPanel, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileTabPanel" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileTextArea, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileTextArea" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E65207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E
+		Sub SetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileTextField, scrollBarDefaultDelayBeforeFade As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileTextField" (myScrollBarDefaultDelayBeforeFade As Integer)
+		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As AndroidMobileTable, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:AndroidMobileTable" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileButton, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileButton" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileCanvas, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileCanvas" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileDateTimePicker, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileDateTimePicker" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileHTMLViewer, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileHTMLViewer" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileImageViewer, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileImageViewer" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileLabel, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileLabel" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileOval, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileOval" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileProgressBar, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileProgressBar" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileProgressWheel, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileProgressWheel" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileRectangle, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileRectangle" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileScrollableArea, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileScrollableArea" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileSlider, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileSlider" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileSwitch, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileSwitch" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileTabPanel, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileTabPanel" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileTextArea, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileTextArea" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722066616465206475726174696F6E2C20696E206D696C6C697365636F6E64732E
+		Sub SetScrollBarFadeDurationXC(Extends ctrl As MobileTextField, scrollBarFadeDuration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileTextField" (myScrollBarFadeDuration As Integer)
+		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarFadeDuration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As AndroidMobileTable, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:AndroidMobileTable" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileButton, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileButton" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileCanvas, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileCanvas" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileDateTimePicker, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileDateTimePicker" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileHTMLViewer, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileHTMLViewer" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileImageViewer, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileImageViewer" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileLabel, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileLabel" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileOval, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileOval" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileProgressBar, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileProgressBar" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileProgressWheel, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileProgressWheel" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileRectangle, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileRectangle" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileScrollableArea, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileScrollableArea" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileSlider, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileSlider" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileSwitch, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileSwitch" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileTabPanel, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileTabPanel" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileTextArea, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileTextArea" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E652077686574686572207363726F6C6C626172732077696C6C2066616465207768656E207468652076696577206973206E6F74207363726F6C6C696E672E
+		Sub SetScrollBarFadingEnabledXC(Extends ctrl As MobileTextField, fadeScrollbars As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileTextField" (myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(fadeScrollbars)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeScrollbars
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As AndroidMobileTable, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:AndroidMobileTable" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileButton, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileButton" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileCanvas, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileCanvas" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileDateTimePicker, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileDateTimePicker" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileHTMLViewer, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileHTMLViewer" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileImageViewer, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileImageViewer" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileLabel, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileLabel" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileOval, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileOval" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileProgressBar, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileProgressBar" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileProgressWheel, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileProgressWheel" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileRectangle, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileRectangle" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileScrollableArea, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileScrollableArea" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileSlider, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileSlider" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileSwitch, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileSwitch" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileTabPanel, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileTabPanel" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileTextArea, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileTextArea" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520746865207363726F6C6C6261722073697A652E
+		Sub SetScrollBarSizeXC(Extends ctrl As MobileTextField, scrollBarSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileTextField" (myScrollBarSize As Integer)
+		    setScrollBarSize(scrollBarSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused scrollBarSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As AndroidMobileTable, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:AndroidMobileTable" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileButton, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileButton" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileCanvas, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileCanvas" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileDateTimePicker, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileDateTimePicker" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileHTMLViewer, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileHTMLViewer" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileImageViewer, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileImageViewer" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileLabel, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileLabel" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileOval, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileOval" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileProgressBar, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileProgressBar" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileProgressWheel, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileProgressWheel" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileRectangle, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileRectangle" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileScrollableArea, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileScrollableArea" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileSlider, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileSlider" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileSwitch, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileSwitch" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileTabPanel, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileTabPanel" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileTextArea, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileTextArea" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369667920746865207374796C65206F6620746865207363726F6C6C626172732E20546865207363726F6C6C626172732063616E206265206F7665726C616964206F7220696E7365742E205768656E20696E7365742C20746865792061646420746F207468652070616464696E67206F662074686520766965772E20416E6420746865207363726F6C6C626172732063616E20626520647261776E20696E73696465207468652070616464696E672061726561206F72206F6E207468652065646765206F662074686520766965772E20466F72206578616D706C652C20696620612076696577206861732061206261636B67726F756E64206472617761626C6520616E6420796F752077616E7420746F206472617720746865207363726F6C6C6261727320696E73696465207468652070616464696E672073706563696669656420627920746865206472617761626C652C20796F752063616E20757365205343524F4C4C424152535F494E534944455F4F5645524C4159206F72205343524F4C4C424152535F494E534944455F494E5345542E20496620796F752077616E74207468656D20746F20617070656172206174207468652065646765206F662074686520766965772C2069676E6F72696E67207468652070616464696E672C207468656E20796F752063616E20757365205343524F4C4C424152535F4F5554534944455F4F5645524C4159206F72205343524F4C4C424152535F4F5554534944455F494E5345542E
+		Sub SetScrollBarStyleXC(Extends ctrl As MobileTextField, style As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileTextField" (myStyle As Integer)
+		    setScrollBarStyle(style)
+		    
+		  #Else
+		    
+		    #Pragma Unused style
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As AndroidMobileTable, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:AndroidMobileTable" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileButton, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileButton" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileCanvas, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileCanvas" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileDateTimePicker, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileDateTimePicker" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileHTMLViewer, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileHTMLViewer" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileImageViewer, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileImageViewer" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileLabel, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileLabel" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileOval, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileOval" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileProgressBar, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileProgressBar" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileProgressWheel, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileProgressWheel" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileRectangle, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileRectangle" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileScrollableArea, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileScrollableArea" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileSeparator, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileSeparator" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileSlider, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileSlider" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileSwitch, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileSwitch" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileTabPanel, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileTabPanel" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileTextArea, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileTextArea" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207363726F6C6C20636170747572652068696E7420666F72207468697320566965772E20546865736520666C61677320616666656374207468652073656172636820666F72206120706F74656E7469616C207363726F6C6C206361707475726520746172676574732E
+		Sub SetScrollCaptureHintXC(Extends ctrl As MobileTextField, hint As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileTextField" (myHint As Integer)
+		    setScrollCaptureHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As AndroidMobileTable, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:AndroidMobileTable" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileButton, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileButton" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileCanvas, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileCanvas" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileDateTimePicker, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileDateTimePicker" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileHTMLViewer, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileHTMLViewer" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileImageViewer, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileImageViewer" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileLabel, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileLabel" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileOval, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileOval" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileProgressBar, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileProgressBar" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileProgressWheel, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileProgressWheel" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileRectangle, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileRectangle" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileScrollableArea, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileScrollableArea" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileSeparator, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileSeparator" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileSlider, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileSlider" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileSwitch, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileSwitch" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileTabPanel, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileTabPanel" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileTextArea, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileTextArea" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E6765207768657468657220746869732076696577206973206F6E65206F662074686520736574206F66207363726F6C6C61626C6520636F6E7461696E65727320696E206974732077696E646F772E20546869732077696C6C206265207573656420746F2064657465726D696E652077686574686572207468652077696E646F772063616E20726573697A65206F72206D7573742070616E207768656E206120736F667420696E7075742061726561206973206F70656E202D2D207363726F6C6C61626C6520636F6E7461696E65727320616C6C6F77207468652077696E646F7720746F2075736520726573697A65206D6F64652073696E63652074686520636F6E7461696E65722077696C6C20617070726F7072696174656C7920736872696E6B2E
+		Sub SetScrollContainerXC(Extends ctrl As MobileTextField, isScrollContainer As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileTextField" (myIsScrollContainer As Boolean)
+		    setScrollContainer(isScrollContainer)
+		    
+		  #Else
+		    
+		    #Pragma Unused isScrollContainer
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As AndroidMobileTable, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:AndroidMobileTable" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As AndroidMobileTable, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:AndroidMobileTable" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileButton, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileButton" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileButton, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileButton" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileCanvas, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileCanvas" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileCanvas, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileCanvas" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileDateTimePicker, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileDateTimePicker" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileDateTimePicker, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileDateTimePicker" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileHTMLViewer, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileHTMLViewer" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileHTMLViewer, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileHTMLViewer" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileImageViewer, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileImageViewer" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileImageViewer, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileImageViewer" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileLabel, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileLabel" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileLabel, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileLabel" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileOval, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileOval" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileOval, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileOval" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileProgressBar, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileProgressBar" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileProgressBar, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileProgressBar" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileProgressWheel, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileProgressWheel" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileProgressWheel, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileProgressWheel" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileRectangle, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileRectangle" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileRectangle, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileRectangle" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileScrollableArea, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileScrollableArea" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileScrollableArea, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileScrollableArea" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileSlider, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileSlider" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileSlider, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileSlider" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileSwitch, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileSwitch" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileSwitch, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileSwitch" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileTabPanel, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileTabPanel" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileTabPanel, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileTabPanel" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileTextArea, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileTextArea" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileTextArea, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileTextArea" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620616C6C207363726F6C6C20696E64696361746F72732E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileTextField, indicators As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileTextField" (myIndicators As Integer)
+		    setScrollIndicators(indicators)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617465206F6620746865207363726F6C6C20696E64696361746F72732073706563696669656420627920746865206D61736B2E20546F206368616E676520616C6C207363726F6C6C20696E64696361746F7273206174206F6E63652C20736565207365745363726F6C6C496E64696361746F727328696E74292E0A0A5768656E2061207363726F6C6C20696E64696361746F7220697320656E61626C65642C2069742077696C6C20626520646973706C617965642069662074686520766965772063616E207363726F6C6C20696E2074686520646972656374696F6E206F662074686520696E64696361746F722E0A0A4D756C7469706C6520696E64696361746F72207479706573206D617920626520656E61626C6564206F722064697361626C65642062792070617373696E6720746865206C6F676963616C204F52206F662074686520646573697265642074797065732E204966206D756C7469706C6520747970657320617265207370656369666965642C20746865792077696C6C20616C6C2062652073657420746F207468652073616D6520656E61626C65642073746174652E
+		Sub SetScrollIndicatorsXC(Extends ctrl As MobileTextField, indicators As Integer, mask As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileTextField" (myIndicators As Integer, myMask As Integer)
+		    setScrollIndicators(indicators, mask)
+		    
+		  #Else
+		    
+		    #Pragma Unused indicators
+		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As AndroidMobileTable, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:AndroidMobileTable" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileButton, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileButton" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileCanvas, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileCanvas" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileDateTimePicker, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileDateTimePicker" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileHTMLViewer, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileHTMLViewer" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileImageViewer, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileImageViewer" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileLabel, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileLabel" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileOval, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileOval" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileProgressBar, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileProgressBar" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileProgressWheel, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileProgressWheel" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileRectangle, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileRectangle" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileScrollableArea, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileScrollableArea" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileSeparator, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileSeparator" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileSlider, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileSlider" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileSwitch, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileSwitch" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileTabPanel, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileTabPanel" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileTextArea, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileTextArea" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4368616E676573207468652073656C656374696F6E207374617465206F66207468697320766965772E204120766965772063616E2062652073656C6563746564206F72206E6F742E204E6F746520746861742073656C656374696F6E206973206E6F74207468652073616D6520617320666F6375732E20566965777320617265207479706963616C6C792073656C656374656420696E2074686520636F6E74657874206F6620616E204164617074657256696577206C696B65204C69737456696577206F722047726964566965773B207468652073656C65637465642076696577206973207468652076696577207468617420697320686967686C6967687465642E
+		Sub SetSelectedXC(Extends ctrl As MobileTextField, selected As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelected Lib "Object:ctrl:MobileTextField" (mySelected As Boolean)
+		    setSelected(selected)
+		    
+		  #Else
+		    
+		    #Pragma Unused selected
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As AndroidMobileTable, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:AndroidMobileTable" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileButton, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileButton" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileCanvas, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileCanvas" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileDateTimePicker, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileDateTimePicker" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileHTMLViewer, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileHTMLViewer" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileImageViewer, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileImageViewer" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileLabel, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileLabel" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileOval, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileOval" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileProgressBar, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileProgressBar" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileProgressWheel, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileProgressWheel" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileRectangle, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileRectangle" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileScrollableArea, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileScrollableArea" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileSeparator, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileSeparator" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileSlider, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileSlider" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileSwitch, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileSwitch" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileTabPanel, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileTabPanel" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileTextArea, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileTextArea" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742077686574686572207468697320766965772073686F756C64206861766520736F756E64206566666563747320656E61626C656420666F72206576656E7473207375636820617320636C69636B696E6720616E6420746F756368696E672E0A0A596F75206D6179207769736820746F2064697361626C6520736F756E64206566666563747320666F722061207669657720696620796F7520616C726561647920706C617920736F756E64732C20666F7220696E7374616E63652C2061206469616C206B6579207468617420706C6179732064746D6620746F6E65732E
+		Sub SetSoundEffectsEnabledXC(Extends ctrl As MobileTextField, soundEffectsEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileTextField" (mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused soundEffectsEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As AndroidMobileTable, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:AndroidMobileTable" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileButton, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileButton" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileCanvas, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileCanvas" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileDateTimePicker, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileDateTimePicker" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileHTMLViewer, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileHTMLViewer" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileImageViewer, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileImageViewer" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileLabel, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileLabel" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileOval, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileOval" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileProgressBar, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileProgressBar" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileProgressWheel, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileProgressWheel" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileRectangle, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileRectangle" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileScrollableArea, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileScrollableArea" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileSeparator, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileSeparator" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileSlider, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileSlider" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileSwitch, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileSwitch" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileTabPanel, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileTabPanel" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileTextArea, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileTextArea" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420616C69676E6D656E742E
+		Sub SetTextAlignmentXC(Extends ctrl As MobileTextField, textAlignment As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileTextField" (myTextAlignment As Integer)
+		    setTextAlignment(textAlignment)
+		    
+		  #Else
+		    
+		    #Pragma Unused textAlignment
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As AndroidMobileTable, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:AndroidMobileTable" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileButton, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileButton" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileCanvas, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileCanvas" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileDateTimePicker, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileDateTimePicker" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileHTMLViewer, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileHTMLViewer" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileImageViewer, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileImageViewer" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileLabel, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileLabel" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileOval, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileOval" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileProgressBar, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileProgressBar" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileProgressWheel, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileProgressWheel" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileRectangle, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileRectangle" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileScrollableArea, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileScrollableArea" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileSeparator, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileSeparator" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileSlider, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileSlider" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileSwitch, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileSwitch" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileTabPanel, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileTabPanel" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileTextArea, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileTextArea" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207465787420646972656374696F6E2E
+		Sub SetTextDirectionXC(Extends ctrl As MobileTextField, textDirection As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTextDirection Lib "Object:ctrl:MobileTextField" (myTextDirection As Integer)
+		    setTextDirection(textDirection)
+		    
+		  #Else
+		    
+		    #Pragma Unused textDirection
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As AndroidMobileTable, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:AndroidMobileTable" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileButton, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileButton" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileCanvas, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileCanvas" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileDateTimePicker, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileDateTimePicker" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileHTMLViewer, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileHTMLViewer" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileImageViewer, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileImageViewer" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileLabel, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileLabel" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileOval, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileOval" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileProgressBar, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileProgressBar" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileProgressWheel, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileProgressWheel" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileRectangle, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileRectangle" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileScrollableArea, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileScrollableArea" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileSeparator, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileSeparator" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileSlider, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileSlider" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileSwitch, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileSwitch" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileTabPanel, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileTabPanel" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileTextArea, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileTextArea" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 546869732070726F706572747920697320696E74656E646564206F6E6C7920666F7220757365206279207468652046616465207472616E736974696F6E2C20776869636820616E696D6174657320697420746F2070726F6475636520612076697375616C207472616E736C7563656E6379207468617420646F6573206E6F7420736964652D65666665637420286F72206765742061666665637465642062792920746865207265616C20616C7068612070726F70657274792E20546869732076616C756520697320636F6D706F7369746564207769746820746865206F7468657220616C7068612076616C75652028616E642074686520416C706861416E696D6174696F6E2076616C75652C207768656E20746861742069732070726573656E742920746F2070726F6475636520612066696E616C2076697375616C207472616E736C7563656E637920726573756C742C20776869636820697320776861742069732070617373656420696E746F2074686520446973706C61794C6973742E
+		Sub SetTransitionAlphaXC(Extends ctrl As MobileTextField, alpha As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileTextField" (myAlpha As Single)
+		    setTransitionAlpha(alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As AndroidMobileTable, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:AndroidMobileTable" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileButton, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileButton" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileCanvas, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileCanvas" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileDateTimePicker, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileDateTimePicker" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileHTMLViewer, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileHTMLViewer" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileImageViewer, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileImageViewer" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileLabel, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileLabel" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileOval, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileOval" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileProgressBar, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileProgressBar" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileProgressWheel, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileProgressWheel" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileRectangle, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileRectangle" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileScrollableArea, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileScrollableArea" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileSeparator, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileSeparator" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileSlider, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileSlider" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileSwitch, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileSwitch" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileTabPanel, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileTabPanel" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileTextArea, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileTextArea" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520686F72697A6F6E74616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F20697473206C65667420706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationXXC(Extends ctrl As MobileTextField, translationX As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationX Lib "Object:ctrl:MobileTextField" (myTranslationX As Single)
+		    setTranslationX(translationX)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationX
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As AndroidMobileTable, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:AndroidMobileTable" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileButton, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileButton" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileCanvas, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileCanvas" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileDateTimePicker, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileDateTimePicker" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileHTMLViewer, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileHTMLViewer" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileImageViewer, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileImageViewer" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileLabel, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileLabel" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileOval, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileOval" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileProgressBar, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileProgressBar" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileProgressWheel, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileProgressWheel" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileRectangle, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileRectangle" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileScrollableArea, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileScrollableArea" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileSeparator, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileSeparator" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileSlider, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileSlider" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileSwitch, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileSwitch" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileTabPanel, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileTabPanel" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileTextArea, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileTextArea" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520766572746963616C206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320746F7020706F736974696F6E2E2054686973206566666563746976656C7920706F736974696F6E7320746865206F626A65637420706F73742D6C61796F75742C20696E206164646974696F6E20746F20776865726576657220746865206F626A6563742773206C61796F757420706C616365642069742E
+		Sub SetTranslationYXC(Extends ctrl As MobileTextField, translationY As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationY Lib "Object:ctrl:MobileTextField" (myTranslationY As Single)
+		    setTranslationY(translationY)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationY
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As AndroidMobileTable, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:AndroidMobileTable" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileButton, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileButton" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileCanvas, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileCanvas" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileDateTimePicker, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileDateTimePicker" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileHTMLViewer, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileHTMLViewer" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileImageViewer, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileImageViewer" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileLabel, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileLabel" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileOval, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileOval" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileProgressBar, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileProgressBar" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileProgressWheel, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileProgressWheel" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileRectangle, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileRectangle" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileScrollableArea, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileScrollableArea" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileSeparator, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileSeparator" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileSlider, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileSlider" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileSwitch, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileSwitch" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileTabPanel, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileTabPanel" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileTextArea, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileTextArea" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206465707468206C6F636174696F6E206F66207468697320766965772072656C617469766520746F2069747320656C65766174696F6E2E
+		Sub SetTranslationZXC(Extends ctrl As MobileTextField, translationZ As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileTextField" (myTranslationZ As Single)
+		    setTranslationZ(translationZ)
+		    
+		  #Else
+		    
+		    #Pragma Unused translationZ
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As AndroidMobileTable, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:AndroidMobileTable" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileButton, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileButton" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileCanvas, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileCanvas" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileDateTimePicker, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileDateTimePicker" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileHTMLViewer, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileHTMLViewer" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileImageViewer, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileImageViewer" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileLabel, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileLabel" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileOval, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileOval" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileProgressBar, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileProgressBar" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileProgressWheel, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileProgressWheel" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileRectangle, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileRectangle" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileScrollableArea, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileScrollableArea" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileSeparator, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileSeparator" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileSlider, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileSlider" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileSwitch, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileSwitch" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileTabPanel, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileTabPanel" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileTextArea, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileTextArea" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C2065646765732073686F756C64206265206661646564207768656E20746869732076696577206973207363726F6C6C656420766572746963616C6C792E
+		Sub SetVerticalFadingEdgeEnabledXC(Extends ctrl As MobileTextField, verticalFadingEdgeEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileTextField" (myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As AndroidMobileTable, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:AndroidMobileTable" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileButton, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileButton" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileCanvas, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileCanvas" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileDateTimePicker, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileDateTimePicker" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileHTMLViewer, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileHTMLViewer" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileImageViewer, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileImageViewer" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileLabel, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileLabel" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileOval, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileOval" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileProgressBar, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileProgressBar" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileProgressWheel, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileProgressWheel" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileRectangle, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileRectangle" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileScrollableArea, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileScrollableArea" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileSeparator, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileSeparator" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileSlider, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileSlider" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileSwitch, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileSwitch" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileTabPanel, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileTabPanel" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileTextArea, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileTextArea" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 446566696E6520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Sub SetVerticalScrollBarEnabledXC(Extends ctrl As MobileTextField, verticalScrollBarEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileTextField" (myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused verticalScrollBarEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As AndroidMobileTable, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:AndroidMobileTable" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileButton, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileButton" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileCanvas, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileCanvas" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileDateTimePicker, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileDateTimePicker" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileHTMLViewer, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileHTMLViewer" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileImageViewer, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileImageViewer" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileLabel, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileLabel" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileOval, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileOval" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileProgressBar, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileProgressBar" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileProgressWheel, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileProgressWheel" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileRectangle, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileRectangle" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileScrollableArea, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileScrollableArea" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileSeparator, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileSeparator" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileSlider, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileSlider" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileSwitch, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileSwitch" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileTabPanel, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileTabPanel" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileTextArea, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileTextArea" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742074686520706F736974696F6E206F662074686520766572746963616C207363726F6C6C206261722E2053686F756C64206265206F6E65206F66205343524F4C4C4241525F504F534954494F4E5F44454641554C542C205343524F4C4C4241525F504F534954494F4E5F4C454654206F72205343524F4C4C4241525F504F534954494F4E5F52494748542E
+		Sub SetVerticalScrollBarPositionXC(Extends ctrl As MobileTextField, position As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileTextField" (myPosition As Integer)
+		    setVerticalScrollbarPosition(position)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0
 		Function ToInteger(Extends c As Color) As Integer
 		  Var colorInput As Variant = c

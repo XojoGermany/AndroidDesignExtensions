@@ -95,11 +95,11 @@ End
 		  CheckBoxPicBlank = Picture.SystemImage("checkbox_blank_circle_outline", Picture.SystemImageSizes.dp24, Color.LightGray)
 		  CheckBoxPic = Picture.SystemImage("checkbox_marked_circle", Picture.SystemImageSizes.dp24, Color.AccentThemeColor)
 		  
-		  Me.ScrollBarSize = 20
-		  Me.OverScrollMode = 2 ' Always = 0, IfContentScrolls = 1, Never = 2
+		  Me.SetScrollBarSizeXC(20)
+		  Me.SetOverScrollModeXC(2) ' Always = 0, IfContentScrolls = 1, Never = 2
 		  
-		  Me.ShadowColor = Color.Clear ' no shadow
-		  Me.ScrollBarFadeDuration = 0 ' make Scrollbar always visible
+		  Me.SetOutlineSpotShadowColorXC(Color.Clear) ' no shadow
+		  Me.SetScrollBarFadeDurationXC(0) ' make Scrollbar always visible
 		  
 		  Me.RowTextFont = Font.SystemFont(17)
 		  Me.SeparatorColor = &cCACACC00
@@ -162,43 +162,43 @@ End
 		  Select Case oRowTag
 		  Case "blue"
 		    
-		    Me.BackgroundColor = &c0A84FF00
+		    Me.SetBackgroundColorXC(&c0A84FF00)
 		    
 		  Case "green"
 		    
-		    Me.BackgroundColor = &c32D74B00
+		    Me.SetBackgroundColorXC(&c32D74B00)
 		    
 		  Case "insideInset"
 		    
-		    Me.ScrollBarStyle = 16777216
+		    Me.SetScrollBarStyleXC(16777216)
 		    
 		  Case "insideOverlay"
 		    
-		    Me.ScrollBarStyle = 0
+		    Me.SetScrollBarStyleXC(0)
 		    
 		  Case "outsideInset"
 		    
-		    Me.ScrollBarStyle = 50331648
+		    Me.SetScrollBarStyleXC(50331648)
 		    
 		  Case "outsideOverlay"
 		    
-		    Me.ScrollBarStyle = 33554432
+		    Me.SetScrollBarStyleXC(33554432)
 		    
 		  Case "positionDefault"
 		    
-		    Me.VerticalScrollbarPosition = 0
+		    Me.SetVerticalScrollBarPositionXC(0)
 		    
 		  Case "positionLeft"
 		    
-		    Me.VerticalScrollbarPosition = 1
+		    Me.SetVerticalScrollBarPositionXC(1)
 		    
 		  Case "positionRight"
 		    
-		    Me.VerticalScrollbarPosition = 2
+		    Me.SetVerticalScrollBarPositionXC(2)
 		    
 		  Case "red"
 		    
-		    Me.BackgroundColor = &cFF453A00
+		    Me.SetBackgroundColorXC(&cFF453A00)
 		    
 		  Case "scrollBy"
 		    
@@ -210,11 +210,11 @@ End
 		    
 		  Case "transparent"
 		    
-		    Me.BackgroundColor = Color.Clear
+		    Me.SetBackgroundColorXC(Color.Clear)
 		    
 		  Case "white"
 		    
-		    Me.BackgroundColor = Color.White
+		    Me.SetBackgroundColorXC(Color.White)
 		    
 		  End Select
 		End Sub

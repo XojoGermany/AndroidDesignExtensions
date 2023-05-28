@@ -2,41 +2,7 @@
 Protected Module Button
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0
-		Sub BackgroundColor(Extends myButton As MobileButton, Assigns myColor As Color)
-		  #Pragma Unused myButton
-		  
-		  #If TargetAndroid
-		    
-		    Declare Sub setBackgroundColor Lib "Object:myButton:MobileButton" (aColor As Integer)
-		    setBackgroundColor(myColor.ToInteger)
-		    
-		  #Else
-		    
-		    #Pragma Unused myColor
-		    
-		  #EndIf
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0
-		Sub BackgroundColor(Extends myButton As MobileDateTimePicker, Assigns myColor As Color)
-		  #Pragma Unused myButton
-		  
-		  #If TargetAndroid
-		    
-		    Declare Sub setBackgroundColor Lib "Object:myButton:MobileDateTimePicker" (aColor As Integer)
-		    setBackgroundColor(myColor.ToInteger)
-		    
-		  #Else
-		    
-		    #Pragma Unused myColor
-		    
-		  #EndIf
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0
-		Sub CornerRadius(Extends myButton As MobileButton, Assigns myRadius As Integer)
+		Sub SetCornerRadiusXC(Extends myButton As MobileButton, myRadius As Integer)
 		  #Pragma Unused myButton
 		  
 		  #If TargetAndroid
@@ -53,7 +19,7 @@ Protected Module Button
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Sub CornerRadius(Extends myButton As MobileDateTimePicker, Assigns myRadius As Integer)
+		Sub SetCornerRadiusXC(Extends myButton As MobileDateTimePicker, myRadius As Integer)
 		  #Pragma Unused myButton
 		  
 		  #If TargetAndroid
@@ -64,40 +30,6 @@ Protected Module Button
 		  #Else
 		    
 		    #Pragma Unused myRadius
-		    
-		  #EndIf
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0, CompatibilityFlags = (TargetConsole and (Target64Bit)) or  (TargetWeb and (Target64Bit)) or  (TargetDesktop and (Target64Bit)) or  (TargetAndroid and (Target64Bit))
-		Sub ShadowColor(Extends myButton As MobileButton, Assigns myColor As Color)
-		  #Pragma Unused myButton
-		  
-		  #If TargetAndroid
-		    
-		    Declare Sub setOutlineSpotShadowColor Lib "Object:myButton:MobileButton" (aColor As Integer)
-		    setOutlineSpotShadowColor(myColor.ToInteger)
-		    
-		  #Else
-		    
-		    #Pragma Unused myColor
-		    
-		  #EndIf
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0, CompatibilityFlags = (TargetConsole and (Target64Bit)) or  (TargetWeb and (Target64Bit)) or  (TargetDesktop and (Target64Bit)) or  (TargetAndroid and (Target64Bit))
-		Sub ShadowColor(Extends myButton As MobileDateTimePicker, Assigns myColor As Color)
-		  #Pragma Unused myButton
-		  
-		  #If TargetAndroid
-		    
-		    Declare Sub setOutlineSpotShadowColor Lib "Object:myButton:MobileDateTimePicker" (aColor As Integer)
-		    setOutlineSpotShadowColor(myColor.ToInteger)
-		    
-		  #Else
-		    
-		    #Pragma Unused myColor
 		    
 		  #EndIf
 		End Sub

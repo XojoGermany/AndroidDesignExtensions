@@ -7,88 +7,157 @@ A set of UI extensions for Xojo Android framework.
 
 ## Currently implemented extensions
 
+### All MobileUIControls
+* SetAlphaXC
+* SetBackgroundColorXC
+* SetDefaultFocusHighlightEnabledXC
+* SetDuplicateParentStateEnabledXC
+* SetElevationXC
+* SetFadingEdgeLength
+* SetFocusableInTouchModeXC
+* SetFocusableXC
+* SetFocusedByDefaultXC
+* SetForceDarkAllowedXC
+* SetForegroundGravity
+* SetHapticFeedbackEnabledXC
+* SetHasTransientStateXC
+* SetHorizontalFadingEdgeEnabledXC
+* SetHorizontalScrollBarEnabledXC
+* SetImportantForAccessibilityXC
+* SetImportantForAutofillXC
+* SetImportantForContentCaptureXC
+* SetKeepScreenOnXC
+* SetLayoutDirectionXC
+* SetMinimumHeightXC
+* SetMinimumWidthXC
+* SetNestedScrollingEnabledXC
+* SetOutlineAmbientShadowColorXC
+* SetOutlineSpotShadowColorXC
+* SetOverScrollModeXC
+* SetPaddingRelativeXC
+* SetPaddingXC
+* SetPivotXXC
+* SetPivotYXC
+* SetRevealOnFocusHintXC
+* SetRotationXC
+* SetRotationXXC
+* SetRotationYXC
+* SetScaleXXC
+* SetScaleYXC
+* SetScreenReaderFocusableXC
+* SetScrollBarDefaultDelayBeforeFadeXC
+* SetScrollBarFadeDurationXC
+* SetScrollBarFadingEnabledXC
+* SetScrollBarSizeXC
+* SetScrollBarStyleXC
+* SetScrollCaptureHintXC
+* SetScrollContainerXC
+* SetScrollIndicatorsXC
+* SetSelectedXC
+* SetSoundEffectsEnabledXC
+* SetTextAlignmentXC
+* SetTextDirectionXC
+* SetTransitionAlphaXC
+* SetTranslationXXC
+* SetTranslationYXC
+* SetTranslationZXC
+* SetVerticalFadingEdgeEnabledXC
+* SetVerticalScrollBarEnabledXC
+* SetVerticalScrollBarPositionXC
+* ToStringXC
+
 ### AndroidMobileTable
-* Background Color
-* Over Scroll Mode
-* Scrollbar Default Delay Before Fade
-* Scrollbar Fade Duration
-* Scrollbar Size
-* Scrollbar Style
-* Shadow Color
 * Smooth Scroll By
 * Smooth Scroll To Position
-* Vertical Scrollbar Position
 
 ### MobileButton / MobileDateTimePicker
-* Background Color
 * Corner Radius
-* Shadow Color
 
 ### MobileContainer
-* Background Color
-* Shadow Color
+* SetBackgroundColorXC
+* SetOutlineSpotShadowColorXC
 
 ### MobileHTMLViewer
-* Background Color
-* Find
-* Go Back Or Forward
-* Over Scroll Mode
-* Save As WebArchive
-* Scrollbar Style
-* Shadow Color
+* CanGoBackXC
+* CanGoBackOrForwardXC
+* CanGoForwardXC
+* ClearCacheXC
+* ClearFormDataXC
+* ClearFormDataXC
+* ClearHistoryXC
+* ClearSSLPreferencesXC
+* FindAllAsyncXC
+* FindNextXC
+* GetContentHeightXC
+* GetProgressXC
+* GetRendererPriorityWaivedWhenNotVisibleXC
+* GetRendererRequestedPriorityXC
+* GoBackOrForwardXC
+* GoBackXC
+* GoForwardXC
+* InvokeZoomPickerXC
+* IsPrivateBrowsingEnabledXC
+* PageDownXC
+* PageUpXC
+* ReloadXC
+* SaveAsWebArchiveXC
+* SetInitialScaleXC
+* SetNetworkAvailableXC
+* StopLoadingXC
+* ZoomByXC
+* ZoomInXC
+* ZoomOutXC
 
 ### MobileImageViewer
-* Alpha Value
-* Background Color
-* Shadow Color
-* Tint Color
+* ClearColorFilterXC
+* GetAdjustViewBoundsXC
+* GetCropToPaddingXC
+* GetImageAlphaXC
+* HasOverlappingRenderingXC
+* IsOpaqueXC
+* SetAdjustViewBoundsXC
+* SetColorFilterXC
+* SetCropToPaddingXC
+* SetImageAlphaXC
 
 ### MobileLabel
-* Background Color
-* Shadow Color
 
 ### MobileOval
-* Background Color
-* Shadow Color
 
 ### MobileProgressBar
-* Background Color
-* Shadow Color
+* SetIndeterminateXC
 
 ### MobileProgressWheel
-* Background Color
-* Shadow Color
 
 ### MobileScreen
-* Background Color
-* Navigationbar Color
-* Navigationbar Divider Color
-* Requested Orientation
-* Statusbar Color
+* SetBackgroundBlurRadiusXC
+* SetBackgroundColorXC
+* SetNavigationBarColorXC
+* SetNavigationBarDividerColorXC
+* SetRequestedOrientationXC
+* SetShowWhenLockedXC
+* SetStatusBarColorXC
+* SetTransitionBackgroundFadeDurationXC
+* SetTranslucentXC
 
 ### MobileScrollableArea
-* Background Color
-* Shadow Color
 * Smooth Scroll By
 * Smooth Scroll To
 
 ### MobileSeparator
-* Background Color
-* Shadow Color
 
 ### MobileSlider
-* Background Color
-* Shadow Color
+
+### MobileSwitch
 
 ### MobileTabPanel
-* Background Color
 * Selected Tab Indicator Color
 * (Selected) Text Color
 * Tab Indicator Animation Mode
 * Tab Mode
 
 ### MobileTextArea
-* Background Color
+* Character Spacing
 * First Baseline To Top Height
 * Highlight Color
 * Last Baseline To Bottom Height
@@ -96,7 +165,7 @@ A set of UI extensions for Xojo Android framework.
 * Padding
 
 ### MobileTextField
-* Background Color
+* Character Spacing
 * Highlight Color
 * Input Type
 * Padding

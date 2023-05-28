@@ -1,41 +1,6 @@
 #tag Module
 Protected Module Separator
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
-	#tag Method, Flags = &h0
-		Sub BackgroundColor(Extends mySeparator As MobileSeparator, Assigns myColor As Color)
-		  #Pragma Unused mySeparator
-		  
-		  #If TargetAndroid
-		    
-		    Declare Sub setBackgroundColor Lib "Object:mySeparator:MobileSeparator" (aColor As Integer)
-		    setBackgroundColor(myColor.ToInteger)
-		    
-		  #Else
-		    
-		    #Pragma Unused myColor
-		    
-		  #EndIf
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0, CompatibilityFlags = (TargetConsole and (Target64Bit)) or  (TargetWeb and (Target64Bit)) or  (TargetDesktop and (Target64Bit)) or  (TargetAndroid and (Target64Bit))
-		Sub ShadowColor(Extends mySeparator As MobileSeparator, Assigns myColor As Color)
-		  #Pragma Unused mySeparator
-		  
-		  #If TargetAndroid
-		    
-		    Declare Sub setOutlineSpotShadowColor Lib "Object:mySeparator:MobileSeparator" (aColor As Integer)
-		    setOutlineSpotShadowColor(myColor.ToInteger)
-		    
-		  #Else
-		    
-		    #Pragma Unused myColor
-		    
-		  #EndIf
-		End Sub
-	#tag EndMethod
-
-
 	#tag ViewBehavior
 		#tag ViewProperty
 			Name="Name"

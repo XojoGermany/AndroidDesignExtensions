@@ -2,23 +2,6 @@
 Protected Module TabPanel
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0
-		Sub BackgroundColor(Extends myTabPanel As MobileTabPanel, Assigns myColor As Color)
-		  #Pragma Unused myTabPanel
-		  
-		  #If TargetAndroid
-		    
-		    Declare Sub setBackgroundColor Lib "Object:myTabPanel:MobileTabPanel" (aColor As Integer)
-		    setBackgroundColor(myColor.ToInteger)
-		    
-		  #Else
-		    
-		    #Pragma Unused myColor
-		    
-		  #EndIf
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0
 		Sub SelectedTabIndicatorColor(Extends myTabPanel As MobileTabPanel, Assigns myColor As Color)
 		  #Pragma Unused myTabPanel
 		  
@@ -48,6 +31,23 @@ Protected Module TabPanel
 		    
 		    #Pragma Unused normalColor
 		    #Pragma Unused selectedColor
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub TabBackgroundColorAt(Extends myTabPanel As MobileTabPanel, index As Integer, Assigns myColor As Color)
+		  #Pragma Unused myTabPanel
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:myTabPanel:MobileTabPanel" Alias "getTabAt(2)!!.view.setBackgroundColor" (aColor As Integer)
+		    setBackgroundColor(myColor.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused myColor
 		    
 		  #EndIf
 		End Sub

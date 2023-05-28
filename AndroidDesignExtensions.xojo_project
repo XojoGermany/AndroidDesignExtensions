@@ -36,6 +36,7 @@ Module=Screen;AndroidDesignExtensions/Screen.xojo_code;&h000000005D140FFF;&h0000
 Module=ScrollableArea;AndroidDesignExtensions/ScrollableArea.xojo_code;&h000000007696EFFF;&h000000004BEA7FFF;false
 Module=Separator;AndroidDesignExtensions/Separator.xojo_code;&h0000000054179FFF;&h000000004BEA7FFF;false
 Module=Slider;AndroidDesignExtensions/Slider.xojo_code;&h0000000043053FFF;&h000000004BEA7FFF;false
+Module=Switch;AndroidDesignExtensions/Switch.xojo_code;&h000000006B849FFF;&h000000004BEA7FFF;false
 Module=Table;AndroidDesignExtensions/Table.xojo_code;&h000000000C4DF7FF;&h000000004BEA7FFF;false
 Module=TabPanel;AndroidDesignExtensions/TabPanel.xojo_code;&h000000002EC2DFFF;&h000000004BEA7FFF;false
 Module=TextArea;AndroidDesignExtensions/TextArea.xojo_code;&h000000002DDA47FF;&h000000004BEA7FFF;false

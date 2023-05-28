@@ -2,17 +2,17 @@
 Protected Module TextField
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0
-		Sub BackgroundColor(Extends myTextField As MobileTextField, Assigns myColor As Color)
+		Sub CharacterSpacing(Extends myTextField As MobileTextField, Assigns letterSpacing As Double)
 		  #Pragma Unused myTextField
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackgroundColor Lib "Object:myTextField:MobileTextField" (aColor As Integer)
-		    setBackgroundColor(myColor.ToInteger) ' 0 = Transparent
+		    Declare Sub setLetterSpacing Lib "Object:myTextField:MobileTextField" (aLetterSpacing As Single)
+		    setLetterSpacing(letterSpacing)
 		    
 		  #Else
 		    
-		    #Pragma Unused myColor
+		    #Pragma Unused letterSpacing
 		    
 		  #EndIf
 		End Sub

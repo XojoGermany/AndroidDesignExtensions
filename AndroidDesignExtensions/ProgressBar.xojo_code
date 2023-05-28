@@ -1,35 +1,18 @@
 #tag Module
 Protected Module ProgressBar
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
-	#tag Method, Flags = &h0
-		Sub BackgroundColor(Extends myProgressBar As MobileProgressBar, Assigns myColor As Color)
-		  #Pragma Unused myProgressBar
+	#tag Method, Flags = &h0, Description = 4368616E67652074686520696E64657465726D696E617465206D6F646520666F7220746869732070726F6772657373206261722E20496E20696E64657465726D696E617465206D6F64652C207468652070726F67726573732069732069676E6F72656420616E64207468652070726F6772657373206261722073686F777320616E20696E66696E69746520616E696D6174696F6E20696E73746561642E0A0A496620746869732070726F6772657373206261722773207374796C65206F6E6C7920737570706F72747320696E64657465726D696E617465206D6F6465202873756368206173207468652063697263756C61722070726F67726573732062617273292C207468656E20746869732077696C6C2062652069676E6F7265642E
+		Sub SetIndeterminateXC(Extends ctrl As MobileProgressBar, indeterminate As Boolean)
+		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackgroundColor Lib "Object:myProgressBar:MobileProgressBar" (aColor As Integer)
-		    setBackgroundColor(myColor.ToInteger)
+		    Declare Sub setIndeterminate Lib "Object:ctrl:MobileProgressBar" (myIndeterminate As Boolean)
+		    setIndeterminate(indeterminate)
 		    
 		  #Else
 		    
-		    #Pragma Unused myColor
-		    
-		  #EndIf
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0, CompatibilityFlags = (TargetConsole and (Target64Bit)) or  (TargetWeb and (Target64Bit)) or  (TargetDesktop and (Target64Bit)) or  (TargetAndroid and (Target64Bit))
-		Sub ShadowColor(Extends myProgressBar As MobileProgressBar, Assigns myColor As Color)
-		  #Pragma Unused myProgressBar
-		  
-		  #If TargetAndroid
-		    
-		    Declare Sub setOutlineSpotShadowColor Lib "Object:myProgressBar:MobileProgressBar" (aColor As Integer)
-		    setOutlineSpotShadowColor(myColor.ToInteger)
-		    
-		  #Else
-		    
-		    #Pragma Unused myColor
+		    #Pragma Unused indeterminate
 		    
 		  #EndIf
 		End Sub
