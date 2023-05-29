@@ -158,10 +158,14 @@ A set of UI extensions for Xojo Android framework.
 ### MobileSwitch
 
 ### MobileTabPanel
-* Selected Tab Indicator Color
-* (Selected) Text Color
-* Tab Indicator Animation Mode
-* Tab Mode
+* SetInlineLabelXC
+* SetSelectedTabIndicatorColorXC
+* SetSelectedTabIndicatorGravityXC
+* SetTabGravityXC
+* SetTabIndicatorAnimationModeXC
+* SetTabIndicatorFullWidthXC
+* SetTabModeXC
+* SetTabTextColorsXC
 
 ### MobileTextArea
 * Character Spacing

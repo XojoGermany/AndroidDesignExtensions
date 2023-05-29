@@ -90,21 +90,26 @@ End
 #tag Events BackgroundColorPanel
 	#tag Event
 		Sub Opening()
-		  Me.IconAt(0) = Picture.SystemImage("format_paint", Picture.SystemImageSizes.dp36, Color.AccentThemeColor)
-		  Me.IconAt(1) = Picture.SystemImage("format_color_fill", Picture.SystemImageSizes.dp36, Color.AccentThemeColor)
+		  Me.IconAt(0) = Picture.SystemImage("format_paint", Picture.SystemImageSizes.dp18, Color.AccentThemeColor)
+		  Me.IconAt(1) = Picture.SystemImage("format_color_fill", Picture.SystemImageSizes.dp18, Color.AccentThemeColor)
+		  
+		  ' Me.IconAt(0) = Picture.SystemImage("format_paint", Picture.SystemImageSizes.dp36, Color.AccentThemeColor)
+		  ' Me.IconAt(1) = Picture.SystemImage("format_color_fill", Picture.SystemImageSizes.dp36, Color.AccentThemeColor)
 		  
 		  Me.SetBackgroundColorXC(&c76D6FF00)
-		  Me.SetTextColors(Color.White, Color.AccentThemeColor)
-		  Me.SelectedTabIndicatorColor = &c94175100
+		  Me.SetInlineLabelXC(False)
+		  Me.SetTabTextColorsXC(Color.White, Color.AccentThemeColor)
+		  Me.SetSelectedTabIndicatorColorXC(&c94175100)
+		  Me.SetSelectedTabIndicatorGravityXC(2)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events TabModePanel
 	#tag Event
 		Sub Opening()
-		  Me.SetTextColors(Color.LightGray, Color.Black)
-		  Me.TabMode = 0
-		  Me.TabBackgroundColorAt(1) = &cFF7E7900
+		  Me.SetTabTextColorsXC(Color.LightGray, Color.Black)
+		  Me.SetTabModeXC(0)
+		  Me.SetTabBackgroundColorAtXC(1, &cFF7E7900)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
