@@ -4,7 +4,7 @@ Begin MobileContainer ButtonContainer
    AccessibilityLabel=   ""
    Compatibility   =   ""
    Enabled         =   True
-   Height          =   410
+   Height          =   364
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -99,7 +99,7 @@ Begin MobileContainer ButtonContainer
       LockTop         =   True
       Scope           =   2
       TimeCaption     =   "Choose a Time"
-      Top             =   342
+      Top             =   290
       Visible         =   True
       Width           =   200
    End
@@ -145,13 +145,13 @@ Begin MobileContainer ButtonContainer
       Enabled         =   True
       Height          =   22
       Left            =   0
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   True
-      LockTop         =   True
+      LockTop         =   False
       Scope           =   2
-      Top             =   385
+      Top             =   342
       Visible         =   True
       Width           =   360
    End

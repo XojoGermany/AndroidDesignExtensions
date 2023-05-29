@@ -34,6 +34,7 @@ Module=ProgressBar;AndroidDesignExtensions/ProgressBar.xojo_code;&h000000006B098
 Module=ProgressWheel;AndroidDesignExtensions/ProgressWheel.xojo_code;&h0000000067675FFF;&h000000004BEA7FFF;false
 Module=Screen;AndroidDesignExtensions/Screen.xojo_code;&h000000005D140FFF;&h000000004BEA7FFF;false
 Module=ScrollableArea;AndroidDesignExtensions/ScrollableArea.xojo_code;&h000000007696EFFF;&h000000004BEA7FFF;false
+Module=SegmentedButton;AndroidDesignExtensions/SegmentedButton.xojo_code;&h0000000031611FFF;&h000000004BEA7FFF;false
 Module=Separator;AndroidDesignExtensions/Separator.xojo_code;&h0000000054179FFF;&h000000004BEA7FFF;false
 Module=Slider;AndroidDesignExtensions/Slider.xojo_code;&h0000000043053FFF;&h000000004BEA7FFF;false
 Module=Switch;AndroidDesignExtensions/Switch.xojo_code;&h000000006B849FFF;&h000000004BEA7FFF;false

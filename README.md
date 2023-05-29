@@ -71,7 +71,9 @@ A set of UI extensions for Xojo Android framework.
 * Smooth Scroll To Position
 
 ### MobileButton / MobileDateTimePicker
-* Corner Radius
+* SetCornerRadiusXC
+* SetInsetBottomXC
+* SetInsetTopXC
 
 ### MobileContainer
 * SetBackgroundColorXC
@@ -143,6 +145,11 @@ A set of UI extensions for Xojo Android framework.
 ### MobileScrollableArea
 * Smooth Scroll By
 * Smooth Scroll To
+
+### MobileSegmentedButton
+* ClearCheckedXC
+* SetSelectionRequiredXC
+* SetSingleSelectionXC
 
 ### MobileSeparator
 
