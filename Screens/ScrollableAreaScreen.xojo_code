@@ -126,14 +126,14 @@ End
 #tag Events SmoothScrollByButton
 	#tag Event
 		Sub Pressed()
-		  ScrollableArea1.SmoothScrollBy(0, 50)
+		  ScrollableArea1.SmoothScrollByXC(0, 50)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events SmoothScrollToButton
 	#tag Event
 		Sub Pressed()
-		  ScrollableArea1.SmoothScrollTo(0, 400)
+		  ScrollableArea1.SmoothScrollToXC(0, 400)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

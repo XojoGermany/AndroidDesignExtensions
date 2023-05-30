@@ -67,7 +67,7 @@ Begin TemplateScreen LabelScreen
       Visible         =   True
       Width           =   200
    End
-   Begin MobileLabel ShadowLabel
+   Begin MobileLabel BackgroundShadowLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -84,6 +84,26 @@ Begin TemplateScreen LabelScreen
       Text            =   "With Green Shadow"
       TextColor       =   &c00000000
       Top             =   202
+      Visible         =   True
+      Width           =   200
+   End
+   Begin MobileLabel ShadowLabel
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   1
+      Enabled         =   True
+      Height          =   40
+      Left            =   80
+      LineBreakMode   =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Text            =   "Shadow Label"
+      TextColor       =   &c00000000
+      Top             =   266
       Visible         =   True
       Width           =   200
    End
@@ -113,11 +133,21 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events ShadowLabel
+#tag Events BackgroundShadowLabel
 	#tag Event
 		Sub Opening()
 		  Me.SetBackgroundColorXC(Color.White)
 		  Me.SetOutlineSpotShadowColorXC(Color.Green)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events ShadowLabel
+	#tag Event
+		Sub Opening()
+		  Me.TextFont = Font.SystemFont(18)
+		  Me.TextColor = &cFF9F0A00
+		  
+		  Me.SetShadowLayerXC(10, 1, 1, &cFF375F00)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

@@ -202,11 +202,11 @@ End
 		    
 		  Case "scrollBy"
 		    
-		    Me.SmoothScrollBy(120, 2000) ' 2000 ms
+		    Me.SmoothScrollByXC(120, 2000) ' 2000 ms
 		    
 		  Case "scrollTo"
 		    
-		    Me.SmoothScrollToPosition(32)
+		    Me.SmoothScrollToPositionXC(32)
 		    
 		  Case "transparent"
 		    

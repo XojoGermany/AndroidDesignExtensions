@@ -67,8 +67,13 @@ A set of UI extensions for Xojo Android framework.
 * ToStringXC
 
 ### AndroidMobileTable
-* Smooth Scroll By
-* Smooth Scroll To Position
+* SetChoiceModeXC
+* SetDrawSelectorOnTopXC
+* SetFastScrollAlwaysVisibleXC
+* SetFastScrollEnabledXC
+* SetItemCheckedXC
+* SmoothScrollByXC
+* SmoothScrollToPositionXC
 
 ### MobileButton / MobileDateTimePicker
 * SetCornerRadiusXC
@@ -123,6 +128,7 @@ A set of UI extensions for Xojo Android framework.
 * SetImageAlphaXC
 
 ### MobileLabel
+* SetShadowLayerXC
 
 ### MobileOval
 
@@ -180,6 +186,7 @@ A set of UI extensions for Xojo Android framework.
 * Highlight Color
 * Input Type
 * Padding
+* SetShowSoftInputOnFocusXC
 
 ## ToDo
 

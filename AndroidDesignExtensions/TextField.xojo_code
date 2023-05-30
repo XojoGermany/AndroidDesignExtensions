@@ -72,6 +72,23 @@ Protected Module TextField
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 5365747320776865746865722074686520736F667420696E707574206D6574686F642077696C6C206265206D6164652076697369626C65207768656E2074686973205465787456696577206765747320666F63757365642E205468652064656661756C7420697320747275652E
+		Sub SetShowSoftInputOnFocusXC(Extends ctrl As MobileTextField, show As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setShowSoftInputOnFocus Lib "Object:ctrl:MobileLabel" (myShow As Boolean)
+		    setShowSoftInputOnFocus(show)
+		    
+		  #Else
+		    
+		    #Pragma Unused show
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 
 	#tag Constant, Name = kTYPE_CLASS_DATETIME, Type = Double, Dynamic = False, Default = \"4", Scope = Public
 	#tag EndConstant
