@@ -67,11 +67,16 @@ A set of UI extensions for Xojo Android framework.
 * ToStringXC
 
 ### AndroidMobileTable
+* ScrollListByXC
 * SetChoiceModeXC
 * SetDrawSelectorOnTopXC
 * SetFastScrollAlwaysVisibleXC
 * SetFastScrollEnabledXC
 * SetItemCheckedXC
+* SetScrollingCacheEnabledXC
+* SetSelectionFromTopXC
+* SetSmoothScrollbarEnabledXC
+* SetStackFromBottomXC
 * SmoothScrollByXC
 * SmoothScrollToPositionXC
 
