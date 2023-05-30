@@ -144,10 +144,10 @@ End
 #tag Events ShadowLabel
 	#tag Event
 		Sub Opening()
-		  Me.TextFont = Font.SystemFont(18)
-		  Me.TextColor = &cFF9F0A00
+		  Me.TextFont = Font.BoldSystemFont(24)
+		  Me.TextColor = Color.Red
 		  
-		  Me.SetShadowLayerXC(10, 1, 1, &cFF375F00)
+		  Me.SetShadowLayerXC(10, 1, 1, Color.Blue)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

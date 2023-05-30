@@ -78,7 +78,7 @@ Protected Module TextField
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setShowSoftInputOnFocus Lib "Object:ctrl:MobileLabel" (myShow As Boolean)
+		    Declare Sub setShowSoftInputOnFocus Lib "Object:ctrl:MobileTextField" (myShow As Boolean)
 		    setShowSoftInputOnFocus(show)
 		    
 		  #Else
