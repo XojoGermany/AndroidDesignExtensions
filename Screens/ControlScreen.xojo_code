@@ -1,5 +1,5 @@
 #tag MobileScreen
-Begin TemplateScreen TextAreaScreen
+Begin TemplateScreen ControlScreen
    Compatibility   =   ""
    HasNavigationBar=   False
    Modal           =   False
@@ -27,7 +27,7 @@ Begin TemplateScreen TextAreaScreen
       Visible         =   True
       Width           =   360
    End
-   Begin MobileScrollableArea ScrollableArea1
+   Begin MobileScrollableArea ControlScrollableArea
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
@@ -39,7 +39,7 @@ Begin TemplateScreen TextAreaScreen
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      ScrollContent   =   1683423231
+      ScrollContent   =   448548863
       Top             =   56
       Visible         =   True
       Width           =   360
@@ -53,7 +53,7 @@ End
 #tag Events NavigationBarContainer1
 	#tag Event
 		Sub Opening()
-		  Me.Text = "Text Areas"
+		  Me.Text = "Controls"
 		End Sub
 	#tag EndEvent
 	#tag Event

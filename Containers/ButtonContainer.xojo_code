@@ -4,7 +4,7 @@ Begin MobileContainer ButtonContainer
    AccessibilityLabel=   ""
    Compatibility   =   ""
    Enabled         =   True
-   Height          =   364
+   Height          =   378
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -145,13 +145,13 @@ Begin MobileContainer ButtonContainer
       Enabled         =   True
       Height          =   22
       Left            =   0
-      LockBottom      =   True
+      LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   True
-      LockTop         =   False
+      LockTop         =   True
       Scope           =   2
-      Top             =   342
+      Top             =   356
       Visible         =   True
       Width           =   360
    End

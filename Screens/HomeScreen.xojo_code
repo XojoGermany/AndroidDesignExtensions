@@ -139,6 +139,9 @@ End
 		  Me.RowTextFont = Font.SystemFont(17)
 		  Me.SeparatorColor = &cCACACC00
 		  
+		  AddSection("Control Extensions")
+		  AddRow("Controls", "control", GetPicture("crop_rotate", &cFF260000))
+		  
 		  AddSection("Button Extensions")
 		  AddRow("Buttons", "button", GetPicture("checkbox_blank", &c419CFF00))
 		  
@@ -190,6 +193,10 @@ End
 		  Case "button"
 		    
 		    ButtonScreen.Show
+		    
+		  Case "control"
+		    
+		    ControlScreen.Show
 		    
 		  Case "donate"
 		    

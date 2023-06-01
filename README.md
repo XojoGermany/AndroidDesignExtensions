@@ -179,12 +179,61 @@ A set of UI extensions for Xojo Android framework.
 * SetTabTextColorsXC
 
 ### MobileTextArea
-* Character Spacing
-* First Baseline To Top Height
-* Highlight Color
-* Last Baseline To Bottom Height
-* Line Height
-* Padding
+* GetBaselineXC
+* GetBreakStrategyXC
+* GetCompoundDrawablePaddingXC
+* GetCompoundPaddingBottomXC
+* GetCompoundPaddingEndXC
+* GetCompoundPaddingLeftXC
+* GetCompoundPaddingRightXC
+* GetCompoundPaddingStartXC
+* GetExtendedPaddingBottomXC
+* GetExtendedPaddingTopXC
+* GetFirstBaselineToTopHeightXC
+* GetHyphenationFrequencyXC
+* GetImeOptionsXC
+* GetIncludeFontPaddingXC
+* GetJustificationModeXC
+* GetLastBaselineToBottomHeightXC
+* GetLineCountXC
+* GetLineHeightXC
+* GetPaintFlagsXC
+* GetShowSoftInputOnFocusXC
+* GetTotalPaddingBottomXC
+* GetTotalPaddingEndXC
+* GetTotalPaddingLeftXC
+* GetTotalPaddingRightXC
+* GetTotalPaddingStartXC
+* GetTotalPaddingTopXC
+* SetAllCapsXC
+* SetAutoLinkMaskXC
+* SetBreakStrategyXC
+* SetCompoundDrawablePaddingXC
+* SetCursorVisibleXC
+* SetFallbackLineSpacingXC
+* SetFirstBaselineToTopHeightXC
+* SetGravityXC
+* SetHighlightColorXC
+* SetHorizontallyScrollingXC
+* SetHyphenationFrequencyXC
+* SetImeOptionsXC
+* SetIncludeFontPaddingXC
+* SetJustificationModeXC
+* SetLastBaselineToBottomHeightXC
+* SetLetterSpacingXC
+* SetLineHeightXC
+* SetLineSpacingXC
+* SetLinesXC
+* SetLinksClickableXC
+* SetLinkTextColorXC
+* SetPaintFlagsXC
+* SetRawInputTypeXC
+* SetSelectAllOnFocusXC
+* SetShadowLayerXC
+* SetShowSoftInputOnFocusXC
+* SetSingleLineXC
+* SetTextIsSelectableXC
+* SetTextScaleXXC
 
 ### MobileTextField
 * Character Spacing
