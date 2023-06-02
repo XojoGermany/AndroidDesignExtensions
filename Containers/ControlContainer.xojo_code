@@ -6,9 +6,9 @@ Begin MobileContainer ControlContainer
    Enabled         =   True
    Height          =   454
    LockBottom      =   False
-   LockLeft        =   False
-   LockRight       =   False
-   LockTop         =   False
+   LockLeft        =   True
+   LockRight       =   True
+   LockTop         =   True
    Visible         =   True
    Width           =   360
    Begin MobileCanvas FixBottomPaddingCanvas
