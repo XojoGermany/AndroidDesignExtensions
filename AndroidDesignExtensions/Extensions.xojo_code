@@ -2266,6 +2266,5310 @@ Protected Module Extensions
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileButton" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileOval" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073637265656E2073686F756C642072656D61696E206F6E2C20636F72726573706F6E64696E6720746F207468652063757272656E742076616C7565206F66204B4545505F53435245454E5F4F4E2E
+		Function GetKeepScreenOnXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return getKeepScreenOn
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileButton" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileOval" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
+		Function GetLayoutDirectionXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileButton" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileOval" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D20686569676874206F662074686520766965772E
+		Function GetMinimumHeightXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getMinimumHeight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileButton" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileOval" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D696E696D756D207769647468206F662074686520766965772E
+		Function GetMinimumWidthXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getMinimumWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileButton" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileOval" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
+		Function GetOverScrollModeXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getOverScrollMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileButton" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileOval" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F74746F6D2070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingBottomXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getPaddingBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileButton" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileOval" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520656E642070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingEndXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getPaddingEnd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileButton" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileOval" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingLeftXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getPaddingLeft
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652072696768742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileButton" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileOval" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingRightXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingRight Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getPaddingRight
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073746172742070616464696E67206F662074686973207669657720646570656E64696E67206F6E20697473207265736F6C766564206C61796F757420646972656374696F6E2E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileButton" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileOval" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingStartXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingStart Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getPaddingStart
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520746F702070616464696E67206F66207468697320766965772E
+		Function GetPaddingTopXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileButton" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileOval" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206C6566742070616464696E67206F66207468697320766965772E2049662074686572652061726520696E73657420616E6420656E61626C6564207363726F6C6C626172732C20746869732076616C7565206D617920696E636C7564652074686520737061636520726571756972656420746F20646973706C617920746865207363726F6C6C626172732061732077656C6C2E
+		Function GetPaddingTopXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPaddingTop Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileButton" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileOval" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732076696577277320707265666572656E636520666F722072657665616C206265686176696F72207768656E206974206761696E7320666F6375732E0A0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetRevealOnFocusHintXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return getRevealOnFocusHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileButton" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileOval" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656C6179206265666F7265207363726F6C6C6261727320666164652E0A5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarDefaultDelayBeforeFadeXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getScrollBarDefaultDelayBeforeFade
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileButton" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileOval" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722066616465206475726174696F6E2E5768656E2074686973206D6574686F642072657475726E73207472756520666F722061206368696C6420766965772072657175657374696E6720666F6375732C20616E636573746F7220766965777320726573706F6E64696E6720746F206120666F637573206368616E676520696E2056696577506172656E7423726571756573744368696C64466F63757328566965772C2056696577292073686F756C64206D616B6520612062657374206566666F727420746F206D616B6520746865206E65776C7920666F6375736564206368696C642066756C6C792076697369626C6520746F2074686520757365722E205768656E2069742072657475726E732066616C73652C20616E636573746F722076696577732073686F756C642070726566657261626C79206E6F742064697372757074207363726F6C6C20706F736974696F6E696E67206F72206F746865722070726F7065727469657320616666656374696E67207669736962696C69747920746F2074686520757365722061732070617274206F662074686520666F637573206368616E67652E
+		Function GetScrollBarFadeDurationXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getScrollBarFadeDuration
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileButton" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileOval" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207363726F6C6C6261722073697A652E
+		Function GetScrollBarSizeXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getScrollBarSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileButton" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileOval" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
+		Function GetScrollBarStyleXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getScrollBarStyle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileButton" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileOval" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C20636170747572652068696E7420666F72207468697320766965772E
+		Function GetScrollCaptureHintXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getScrollCaptureHint
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileButton" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileOval" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732061206269746D61736B20726570726573656E74696E672074686520656E61626C6564207363726F6C6C20696E64696361746F72732E0A0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollIndicatorsXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getScrollIndicators
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileButton" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileOval" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C6564206C65667420706F736974696F6E206F66207468697320766965772E205468697320697320746865206C6566742065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732066617274686572206C6566742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E0A466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollXXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollX Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getScrollX
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileButton" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileOval" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207363726F6C6C656420746F7020706F736974696F6E206F66207468697320766965772E20546869732069732074686520746F702065646765206F662074686520646973706C617965642070617274206F6620796F757220766965772E20596F7520646F206E6F74206E65656420746F206472617720616E7920706978656C732061626F76652069742C2073696E63652074686F736520617265206F757473696465206F6620746865206672616D65206F6620796F75722076696577206F6E2073637265656E2E466F72206578616D706C652C2069662074686520746F7020616E64206C656674207363726F6C6C20696E64696361746F72732061726520656E61626C656420616E6420616C6C206F7468657220696E64696361746F7273206172652064697361626C65642C207468652072657475726E2076616C75652077696C6C20626520566965772E5343524F4C4C5F494E44494341544F525F544F50207C20566965772E5343524F4C4C5F494E44494341544F525F4C4546542E0A0A546F20636865636B20776865746865722074686520626F74746F6D207363726F6C6C20696E64696361746F7220697320656E61626C65642C20757365207468652076616C7565206F6620286765745363726F6C6C496E64696361746F72732829202620566965772E5343524F4C4C5F494E44494341544F525F424F54544F4D2920213D20302E
+		Function GetScrollYXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getScrollY Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getScrollY
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileButton" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileOval" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
+		Function GetTextAlignmentXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextAlignment Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileButton" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileOval" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
+		Function GetTextDirectionXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextDirection Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileButton" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileOval" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652073697A65206F662074686520766572746963616C206661646564206564676573207573656420746F20696E6469636174652074686174206D6F726520636F6E74656E7420696E207468697320766965772069732076697369626C652E
+		Function GetVerticalFadingEdgeLengthXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getVerticalFadingEdgeLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileButton" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileCanvas) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileCanvas" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileHTMLViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileImageViewer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileLabel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileLabel" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileOval) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileOval" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileProgressBar) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileProgressWheel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileProgressWheel" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileRectangle) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileRectangle" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileScrollableArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileSlider) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileSlider" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileSwitch) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileSwitch" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileTabPanel) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileTextField" As Integer
+		    Return getVerticalScrollbarPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
 		Sub SetAlphaXC(Extends ctrl As AndroidMobileTable, alpha As Single)
 		  #Pragma Unused ctrl
