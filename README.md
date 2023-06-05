@@ -8,6 +8,16 @@ A set of UI extensions for Xojo Android framework.
 ## Currently implemented extensions
 
 ### All MobileUIControls
+* BringToFrontXC
+* GetBaselineXC
+* GetDefaultFocusHighlightEnabledXC
+* GetFocusableXC
+* GetForegroundGravityXC
+* GetHorizontalFadingEdgeLengthXC
+* GetIDXC
+* GetImportantForAccessibilityXC
+* GetImportantForAutofillXC
+* GetImportantForContentCaptureXC
 * SetAlphaXC
 * SetBackgroundColorXC
 * SetDefaultFocusHighlightEnabledXC
@@ -179,7 +189,6 @@ A set of UI extensions for Xojo Android framework.
 * SetTabTextColorsXC
 
 ### MobileTextArea
-* GetBaselineXC
 * GetBreakStrategyXC
 * GetCompoundDrawablePaddingXC
 * GetCompoundPaddingBottomXC

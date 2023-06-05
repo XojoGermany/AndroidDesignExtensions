@@ -34,7 +34,7 @@ Begin TemplateScreen TableScreen
       HasHeader       =   False
       Header          =   ""
       Height          =   676
-      InitialValue    =   "Background Color\n⭕️ Transparent\n⚪️ White\n🔴 Red\n🟢 Green\n🔵 Blue\nScrolling\nSmooth Scroll By\nSmooth Scroll To Position\nVertical Scrollbar Position\nDefault\nLeft\nRight\nScrollbar Style\nInside Inset\nInside Overlay\nOutside Inset\nOutside Overlay\nFruits\n🍏 Apple\n🍐 Pear\n🍋 Lemon\n🍌 Banana\n🍉 Melone\n🍇 Grapes\n🍓 Strawberry\n🫐 Blueberry\n🍒 Cherry\n🍑 Peach\n🥭 Mango\n🍍 Pineapple\n🥥 Coconut\n🥝 Kiwi\n🍅Tomato\n🥑 Avocado\n🥒 Cucumber\n🧅 Onion"
+      InitialValue    =   "Background Color\n⭕️ Transparent\n⚪️ White\n🔴 Red\n🟢 Green\n🔵 Blue\nScrolling\nSmooth Scroll By\nSmooth Scroll To Position\nVertical Scrollbar Position\nDefault\nLeft\nRight\nScrollbar Style\nInside Inset\nInside Overlay\nOutside Inset\nOutside Overlay\nScrollbar Type\nDefault\nFast\nFruits\n🍏 Apple\n🍐 Pear\n🍋 Lemon\n🍌 Banana\n🍉 Melone\n🍇 Grapes\n🍓 Strawberry\n🫐 Blueberry\n🍒 Cherry\n🍑 Peach\n🥭 Mango\n🍍 Pineapple\n🥥 Coconut\n🥝 Kiwi\n🍅Tomato\n🥑 Avocado\n🥒 Cucumber\n🧅 Onion"
       LastAddedRowIndex=   0
       Left            =   0
       LockBottom      =   True
@@ -106,7 +106,7 @@ End
 		  
 		  For row As Integer = 0 To Me.LastAddedRowIndex
 		    
-		    If row >= 19 And row <= 38 Then
+		    If row >= 22 And row <= Me.RowCount - 1 Then
 		      
 		      Me.RowPictureAt(row, True) = CheckBoxPicBlank
 		      Me.RowTagAt(row) = False
@@ -115,7 +115,7 @@ End
 		    
 		  Next
 		  
-		  Var headers() As Integer = Array(0, 6, 9, 13, 18)
+		  Var headers() As Integer = Array(0, 6, 9, 13, 18, 21)
 		  
 		  For Each header As Integer in headers
 		    
@@ -144,6 +144,10 @@ End
 		  Me.RowTagAt(15) = "insideOverlay"
 		  Me.RowTagAt(16) = "outsideInset"
 		  Me.RowTagAt(17) = "outsideOverlay"
+		  
+		  ' Scrollbar Types
+		  Me.RowTagAt(19) = "default"
+		  Me.RowTagAt(20) = "fast"
 		End Sub
 	#tag EndEvent
 	#tag Event
@@ -152,7 +156,7 @@ End
 		  
 		  If oRowTag = Nil Then Return
 		  
-		  If Me.SelectedRowIndex >= 19 And Me.SelectedRowIndex <= 38 Then
+		  If Me.SelectedRowIndex >= 22 And Me.SelectedRowIndex <= Me.RowCount - 1 Then
 		    
 		    Me.RowPictureAt(Me.SelectedRowIndex, True) = If(oRowTag.BooleanValue, CheckBoxPicBlank, CheckBoxPic)
 		    Me.RowTagAt(Me.SelectedRowIndex) = Not oRowTag.BooleanValue
@@ -163,6 +167,16 @@ End
 		  Case "blue"
 		    
 		    Me.SetBackgroundColorXC(&c0A84FF00)
+		    
+		  Case "default"
+		    
+		    Me.SetFastScrollAlwaysVisibleXC(False)
+		    Me.SetFastScrollEnabledXC(False)
+		    
+		  Case "fast"
+		    
+		    Me.SetFastScrollAlwaysVisibleXC(True)
+		    Me.SetFastScrollEnabledXC(True)
 		    
 		  Case "green"
 		    

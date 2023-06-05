@@ -1,19 +1,6 @@
 #tag Module
 Protected Module TextArea
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
-	#tag Method, Flags = &h0, Description = 52657475726E20746865206F6666736574206F6620746865207769646765742773207465787420626173656C696E652066726F6D2074686520776964676574277320746F7020626F756E646172792E20496620746869732077696467657420646F6573206E6F7420737570706F727420626173656C696E6520616C69676E6D656E742C2074686973206D6574686F642072657475726E73202D312E
-		Function GetBaselineXC(Extends ctrl As MobileTextArea) As Integer
-		  #Pragma Unused ctrl
-		  
-		  #If TargetAndroid
-		    
-		    Declare Function getBaseline Lib "Object:ctrl:MobileTextArea" As Integer
-		    Return getBaseline
-		    
-		  #EndIf
-		End Function
-	#tag EndMethod
-
 	#tag Method, Flags = &h0, Description = 47657473207468652063757272656E7420737472617465677920666F7220627265616B696E67207061726167726170687320696E746F206C696E65732E
 		Function GetBreakStrategyXC(Extends ctrl As MobileTextArea) As Integer
 		  #Pragma Unused ctrl
