@@ -313,8 +313,6 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events LoadProgress
-#tag EndEvents
 #tag ViewBehavior
 	#tag ViewProperty
 		Name="Name"

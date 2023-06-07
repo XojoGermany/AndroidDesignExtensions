@@ -42,6 +42,27 @@ A set of UI extensions for Xojo Android framework.
 * GetTextDirectionXC
 * GetVerticalFadingEdgeLengthXC
 * GetVerticalScrollbarPositionXC
+* IsAccessibilityFocusedXC
+* IsAccessibilityHeadingXC
+* IsClickableXC
+* IsDuplicateParentStateEnabledXC
+* IsFocusableInTouchModeXC
+* IsFocusableXC
+* IsFocusedByDefaultXC
+* IsFocusedXC
+* IsForceDarkAllowedXC
+* IsHapticFeedbackEnabledXC
+* IsHorizontalFadingEdgeEnabledXC
+* IsHorizontalScrollBarEnabledXC
+* IsImportantForAccessibilityXC
+* IsImportantForAutofillXC
+* IsImportantForContentCaptureXC
+* IsNestedScrollingEnabledXC
+* IsPaddingRelativeXC
+* IsPivotSetXC
+* IsScrollbarFadingEnabledXC
+* IsVerticalFadingEdgeEnabledXC
+* IsVerticalScrollBarEnabledXC
 * SetAlphaXC
 * SetBackgroundColorXC
 * SetDefaultFocusHighlightEnabledXC
@@ -177,15 +198,25 @@ A set of UI extensions for Xojo Android framework.
 ### MobileProgressWheel
 
 ### MobileScreen
+* GetRequestedOrientationXC
+* IsLocalVoiceInteractionSupportedXC
+* MoveTaskToBackXC
+* RequestShowKeyboardShortcutsXC
 * SetBackgroundBlurRadiusXC
 * SetBackgroundColorXC
+* SetDecorCaptionShadeXC
+* SetDecorFitsSystemWindowsXC
+* SetInheritShowWhenLockedXC
 * SetNavigationBarColorXC
+* SetNavigationBarContrastEnforcedXC
 * SetNavigationBarDividerColorXC
 * SetRequestedOrientationXC
 * SetShowWhenLockedXC
 * SetStatusBarColorXC
+* SetStatusBarContrastEnforcedXC
 * SetTransitionBackgroundFadeDurationXC
 * SetTranslucentXC
+* SetTurnScreenOnXC
 
 ### MobileScrollableArea
 * Smooth Scroll By

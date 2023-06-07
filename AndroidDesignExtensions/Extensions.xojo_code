@@ -7570,6 +7570,4647 @@ Protected Module Extensions
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732056696577206973206163636573736962696C69747920666F63757365642E
+		Function IsAccessibilityFocusedXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isAccessibilityFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686973207669657720697320612068656164696E6720666F72206163636573736962696C69747920707572706F7365732E
+		Function IsAccessibilityHeadingXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isAccessibilityHeading
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E646963617465732077686574686572207468697320766965772072656163747320746F20636C69636B206576656E7473206F72206E6F742E
+		Function IsClickableXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isClickable Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E6469636174657320776865746865722074686973206475706C69636174657320697473206472617761626C652073746174652066726F6D2069747320706172656E742E
+		Function IsDuplicateParentStateEnabledXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isDuplicateParentStateEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5768656E2061207669657720697320666F63757361626C652C206974206D6179206E6F742077616E7420746F2074616B6520666F637573207768656E20696E20746F756368206D6F64652E20466F72206578616D706C652C206120627574746F6E20776F756C64206C696B6520666F637573207768656E207468652075736572206973206E617669676174696E6720766961206120442D70616420736F20746861742074686520757365722063616E20636C69636B206F6E2069742C20627574206F6E63652074686520757365722073746172747320746F756368696E67207468652073637265656E2C2074686520627574746F6E2073686F756C646E27742074616B6520666F637573
+		Function IsFocusableInTouchModeXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isFocusableInTouchMode
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772069732063757272656E746C792061626C6520746F2074616B6520666F6375732E
+		Function IsFocusableXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusable Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isFocusable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320566965772073686F756C64207265636569766520666F637573207768656E2074686520666F63757320697320726573746F72656420666F722074686520766965772068696572617263687920636F6E7461696E696E67207468697320766965772E0A0A466F637573206765747320726573746F72656420666F722061207669657720686965726172636879207768656E2074686520726F6F74206F662074686520686965726172636879206765747320616464656420746F20612077696E646F77206F7220736572766573206173206120746172676574206F6620636C7573746572206E617669676174696F6E2E
+		Function IsFocusedByDefaultXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isFocusedByDefault
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468697320766965772068617320666F6375732E
+		Function IsFocusedXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFocused Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isFocused
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207472756520696620666F726365206461726B20697320616C6C6F776564202864656661756C74292C2066616C73652069662069742069732064697361626C65642E
+		Function IsForceDarkAllowedXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isForceDarkAllowed
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468697320766965772073686F756C6420686176652068617074696320666565646261636B20656E61626C656420666F72206576656E74732073756368206173206C6F6E6720707265737365732E
+		Function IsHapticFeedbackEnabledXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isHapticFeedbackEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsHorizontalFadingEdgeEnabledXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isHorizontalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520686F72697A6F6E74616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsHorizontalScrollBarEnabledXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isHorizontalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6D70757465732077686574686572207468697320766965772073686F756C64206265206578706F73656420666F72206163636573736962696C6974792E20496E2067656E6572616C2C20766965777320746861742061726520696E746572616374697665206F722070726F7669646520696E666F726D6174696F6E20617265206578706F736564207768696C652076696577732074686174207365727665206F6E6C7920617320636F6E7461696E657273206172652068696464656E2E
+		Function IsImportantForAccessibilityXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isImportantForAccessibility
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D207768657468657220746865204173736973745374727563747572652E566965774E6F6465206173736F63696174656420776974682074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F72206175746F66696C6C20707572706F7365732E
+		Function IsImportantForAutofillXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isImportantForAutofill
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 48696E74732074686520416E64726F69642053797374656D20776865746865722074686973207669657720697320636F6E7369646572656420696D706F7274616E7420666F7220636F6E74656E7420636170747572652C206261736564206F6E207468652076616C7565206578706C696369746C792073657420627920736574496D706F7274616E74466F72436F6E74656E744361707475726528696E742920616E642068657572697374696373207768656E206974277320494D504F5254414E545F464F525F434F4E54454E545F434150545552455F4155544F2E
+		Function IsImportantForContentCaptureXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isImportantForContentCapture
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966206E6573746564207363726F6C6C696E6720697320656E61626C656420666F72207468697320766965772E0A0A4966206E6573746564207363726F6C6C696E6720697320656E61626C656420616E642074686973205669657720636C61737320696D706C656D656E746174696F6E20737570706F7274732069742C207468697320766965772077696C6C206163742061732061206E6573746564207363726F6C6C696E67206368696C642076696577207768656E206170706C696361626C652C20666F7277617264696E6720646174612061626F757420746865207363726F6C6C206F7065726174696F6E20696E2070726F677265737320746F206120636F6D70617469626C6520616E6420636F6F7065726174696E67206E6573746564207363726F6C6C696E6720706172656E742E
+		Function IsNestedScrollingEnabledXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isNestedScrollingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E206966207468652070616464696E6720686173206265656E20736574207468726F7567682072656C61746976652076616C7565732073657450616464696E6752656C617469766528696E742C20696E742C20696E742C20696E7429206F72207468726F756768
+		Function IsPaddingRelativeXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isPaddingRelative
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742061207069766F7420686173206265656E2073657420627920612063616C6C20746F207365745069766F745828666C6F617429206F72207365745069766F745928666C6F6174292E204966206E6F207069766F7420686173206265656E20736574207468656E20746865207069766F742077696C6C206265207468652063656E746572206F662074686520766965772E
+		Function IsPivotSetXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isPivotSet Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isPivotSet
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207363726F6C6C626172732077696C6C2066616465207768656E20746869732076696577206973206E6F74207363726F6C6C696E672E
+		Function IsScrollbarFadingEnabledXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isScrollbarFadingEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C20656467657320617265206661646564207768656E207468652076696577206973207363726F6C6C656420686F72697A6F6E74616C6C792E
+		Function IsVerticalFadingEdgeEnabledXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isVerticalFadingEdgeEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileButton) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileButton" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileCanvas) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileCanvas" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileImageViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileLabel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileLabel" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileOval) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileOval" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileProgressBar) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileProgressWheel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileProgressWheel" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileRectangle) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileRectangle" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileScrollableArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileSlider) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileSlider" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileSwitch) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileSwitch" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746520776865746865722074686520766572746963616C207363726F6C6C6261722073686F756C6420626520647261776E206F72206E6F742E20546865207363726F6C6C626172206973206E6F7420647261776E2062792064656661756C742E
+		Function IsVerticalScrollBarEnabledXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileTextField" As Boolean
+		    Return isVerticalScrollBarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 5365747320746865206F706163697479206F6620746865207669657720746F20612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E
 		Sub SetAlphaXC(Extends ctrl As AndroidMobileTable, alpha As Single)
 		  #Pragma Unused ctrl
@@ -24623,11 +29264,19 @@ Protected Module Extensions
 
 	#tag Method, Flags = &h0
 		Function ToInteger(Extends c As Color) As Integer
-		  Var colorInput As Variant = c
-		  Var alpha As Integer = 255 - colorInput.ColorValue.Alpha
-		  Var alphaHex As String = alpha.ToHex(2)
-		  
-		  Return Integer.FromHex(alphaHex + colorInput.StringValue.Right(6))
+		  If c = Color.Clear Then
+		    
+		    Return 0
+		    
+		  Else
+		    
+		    Var colorInput As Variant = c
+		    Var alpha As Integer = 255 - colorInput.ColorValue.Alpha
+		    Var alphaHex As String = alpha.ToHex(2)
+		    
+		    Return Integer.FromHex(alphaHex + colorInput.StringValue.Right(6))
+		    
+		  End If
 		End Function
 	#tag EndMethod
 

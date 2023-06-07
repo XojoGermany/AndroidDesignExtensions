@@ -323,6 +323,24 @@ Begin MobileContainer ScreenContainer
       Visible         =   True
       Width           =   360
    End
+   Begin ColorButton ColorButton16
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "None"
+      CaptionColor    =   &c00000000
+      Enabled         =   True
+      Height          =   74
+      Left            =   248
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   False
+      Scope           =   2
+      Top             =   427
+      Visible         =   True
+      Width           =   68
+   End
 End
 #tag EndMobileContainer
 
@@ -491,6 +509,13 @@ End
 		  Me.RowTagAt(Self.SelectedRowIndex) = Not oRowTag.BooleanValue
 		  
 		  App.BackgroundMode = Self.SelectedRowIndex
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events ColorButton16
+	#tag Event
+		Sub Opening()
+		  Me.MyBackgroundColor = Color.Clear
 		End Sub
 	#tag EndEvent
 #tag EndEvents
