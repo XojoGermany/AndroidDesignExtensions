@@ -14,6 +14,32 @@ Protected Module Screen
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 526574726965766573207468652072657175657374656420617070656172616E6365206F662073797374656D20626172732E
+		Function GetSystemBarsAppearanceXC(Extends myScreen As MobileScreen) As Integer
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getSystemBarsAppearance Lib "Object:myScreen:MobileScreen" Alias "getWindow().getInsetsController()!!.getSystemBarsAppearance()" As Integer
+		    Return getSystemBarsAppearance
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5265747269657665732074686520726571756573746564206265686176696F72206F662073797374656D20626172732E
+		Function GetSystemBarsBehaviorXC(Extends myScreen As MobileScreen) As Integer
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getSystemBarsBehavior Lib "Object:myScreen:MobileScreen" Alias "getWindow().getInsetsController()!!.getSystemBarsBehavior()" As Integer
+		    Return getSystemBarsBehavior
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 517565726965732077686574686572207468652063757272656E746C7920656E61626C656420766F69636520696E746572616374696F6E207365727669636520737570706F7274732072657475726E696E67206120766F69636520696E7465726163746F7220666F7220757365206279207468652061637469766974792E20546869732069732076616C6964206F6E6C7920666F7220746865206475726174696F6E206F66207468652061637469766974792E
 		Function IsLocalVoiceInteractionSupportedXC(Extends myScreen As MobileScreen) As Boolean
 		  #Pragma Unused myScreen
@@ -241,24 +267,6 @@ Protected Module Screen
 		    #Pragma Unused ensureContrast
 		    
 		  #EndIf
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0
-		Sub SetSystemBarAppearance(Extends myScreen As MobileScreen, myAppearance As Integer, myMask As Integer)
-		  ' #Pragma Unused myScreen
-		  ' 
-		  ' #If TargetAndroid
-		  ' 
-		  ' Declare Sub setSystemBarAppearance Lib "Object:myScreen:MobileScreen" Alias "getWindow().getInsetController()!!.setSystemBarAppearance" (aAppearance As Integer, aMask As Integer)
-		  ' setSystemBarAppearance(myAppearance, myMask)
-		  ' 
-		  ' #Else
-		  ' 
-		  ' #Pragma Unused myAppearance
-		  ' #Pragma Unused myMask
-		  ' 
-		  ' #EndIf
 		End Sub
 	#tag EndMethod
 

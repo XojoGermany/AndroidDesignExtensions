@@ -199,6 +199,8 @@ A set of UI extensions for Xojo Android framework.
 
 ### MobileScreen
 * GetRequestedOrientationXC
+* GetSystemBarsAppearanceXC
+* GetSystemBarsBehaviorXC
 * IsLocalVoiceInteractionSupportedXC
 * MoveTaskToBackXC
 * RequestShowKeyboardShortcutsXC
@@ -214,7 +216,6 @@ A set of UI extensions for Xojo Android framework.
 * SetShowWhenLockedXC
 * SetStatusBarColorXC
 * SetStatusBarContrastEnforcedXC
-* SetTransitionBackgroundFadeDurationXC
 * SetTranslucentXC
 * SetTurnScreenOnXC
 

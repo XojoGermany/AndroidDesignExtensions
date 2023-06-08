@@ -1474,6 +1474,19 @@ Protected Module Extensions
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 52657475726E73207468697320766965772773206964656E7469666965722E
+		Function GetIDXC(Extends ctrl As MobileMoviePlayer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getId Lib "Object:ctrl:MobileMoviePlayer" As Integer
+		    Return getId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468697320766965772773206964656E7469666965722E
 		Function GetIDXC(Extends ctrl As MobileOval) As Integer
 		  #Pragma Unused ctrl
 		  
@@ -1532,6 +1545,32 @@ Protected Module Extensions
 		  #If TargetAndroid
 		    
 		    Declare Function getId Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Return getId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468697320766965772773206964656E7469666965722E
+		Function GetIDXC(Extends ctrl As MobileSegmentedButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getId Lib "Object:ctrl:MobileSegmentedButton" As Integer
+		    Return getId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468697320766965772773206964656E7469666965722E
+		Function GetIDXC(Extends ctrl As MobileSeparator) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getId Lib "Object:ctrl:MobileSeparator" As Integer
 		    Return getId
 		    
 		  #EndIf
