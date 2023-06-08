@@ -198,6 +198,8 @@ A set of UI extensions for Xojo Android framework.
 ### MobileProgressWheel
 
 ### MobileScreen
+* GetCurrentFocusedControlXC
+* GetCurrentFocusIDXC
 * GetRequestedOrientationXC
 * GetSystemBarsAppearanceXC
 * GetSystemBarsBehaviorXC
