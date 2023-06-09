@@ -200,9 +200,13 @@ A set of UI extensions for Xojo Android framework.
 ### MobileScreen
 * GetCurrentFocusedControlXC
 * GetCurrentFocusIDXC
+* GetDisplayIDXC
+* GetDisplayRotationXC
+* GetDisplayStateXC
 * GetRequestedOrientationXC
 * GetSystemBarsAppearanceXC
 * GetSystemBarsBehaviorXC
+* IsDisplayHdrXC
 * IsLocalVoiceInteractionSupportedXC
 * MoveTaskToBackXC
 * RequestShowKeyboardShortcutsXC
