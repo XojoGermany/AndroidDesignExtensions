@@ -231,8 +231,11 @@ A set of UI extensions for Xojo Android framework.
 * SetTurnScreenOnXC
 
 ### MobileScrollableArea
-* Smooth Scroll By
-* Smooth Scroll To
+* ScrollToXC
+* SetFillViewportXC
+* SetSmoothScrollingEnabledXC
+* SmoothScrollByXC
+* SmoothScrollToXC
 
 ### MobileSegmentedButton
 * ClearCheckedXC
