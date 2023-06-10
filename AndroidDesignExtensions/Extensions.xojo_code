@@ -861,6 +861,266 @@ Protected Module Extensions
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As AndroidMobileTable) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:AndroidMobileTable" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileButton) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileButton" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileCanvas) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileCanvas" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileDateTimePicker) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileDateTimePicker" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileHTMLViewer) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileHTMLViewer" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileImageViewer) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileImageViewer" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileLabel) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileLabel" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileMoviePlayer) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileMoviePlayer" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileOval) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileOval" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileProgressBar) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileProgressBar" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileProgressWheel) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileProgressWheel" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileRectangle) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileRectangle" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileScrollableArea) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileScrollableArea" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileSegmentedButton) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileSegmentedButton" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileSeparator) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileSeparator" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileSlider) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileSlider" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileSwitch) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileSwitch" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileTabPanel) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileTabPanel" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileTextArea) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileTextArea" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074696D6520696E206D696C6C697365636F6E6473206174207768696368207468652064726177696E67206F662074686520766965772068696572617263687920737461727465642E
+		Function GetDrawingTimeXC(Extends ctrl As MobileTextField) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDrawingTime Lib "Object:ctrl:MobileTextField" As Int64
+		    Return getDrawingTime
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52657475726E732074686520666F63757361626C652073657474696E6720666F72207468697320766965772E
 		Function GetFocusableXC(Extends ctrl As AndroidMobileTable) As Integer
 		  #Pragma Unused ctrl
@@ -7291,6 +7551,266 @@ Protected Module Extensions
 		    
 		    Declare Function getTextDirection Lib "Object:ctrl:MobileTextField" As Integer
 		    Return getTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As AndroidMobileTable) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:AndroidMobileTable" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileButton) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileButton" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileCanvas) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileCanvas" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileDateTimePicker) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileDateTimePicker" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileHTMLViewer) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileHTMLViewer" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileImageViewer) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileImageViewer" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileLabel) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileLabel" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileMoviePlayer) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileMoviePlayer" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileOval) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileOval" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileProgressBar) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileProgressBar" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileProgressWheel) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileProgressWheel" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileRectangle) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileRectangle" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileScrollableArea) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileScrollableArea" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileSegmentedButton) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileSegmentedButton" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileSeparator) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileSeparator" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileSlider) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileSlider" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileSwitch) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileSwitch" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileTabPanel) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileTabPanel" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileTextArea) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileTextArea" As Int64
+		    Return getUniqueDrawingId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520756E69717565206964656E746966696572207573656420666F7220746869732076696577206279207468652064726177696E672073797374656D2E
+		Function GetUniqueDrawingIDXC(Extends ctrl As MobileTextField) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileTextField" As Int64
+		    Return getUniqueDrawingId
 		    
 		  #EndIf
 		End Function

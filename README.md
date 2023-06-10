@@ -11,6 +11,7 @@ A set of UI extensions for Xojo Android framework.
 * BringToFrontXC
 * GetBaselineXC
 * GetDefaultFocusHighlightEnabledXC
+* GetDrawingTimeXC
 * GetFocusableXC
 * GetForegroundGravityXC
 * GetHorizontalFadingEdgeLengthXC
@@ -40,6 +41,7 @@ A set of UI extensions for Xojo Android framework.
 * GetScrollYXC
 * GetTextAlignmentXC
 * GetTextDirectionXC
+* GetUniqueDrawingIDXC
 * GetVerticalFadingEdgeLengthXC
 * GetVerticalScrollbarPositionXC
 * IsAccessibilityFocusedXC
