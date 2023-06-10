@@ -12968,7 +12968,7 @@ Protected Module Extensions
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackgroundColor Lib "Object:myScreen:MobileScreen" Alias "getWindow().getDecorView().setBackgroundColor" (myColor As Integer)
+		    Declare Sub setBackgroundColor Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().setBackgroundColor" (myColor As Integer)
 		    setBackgroundColor(c.ToInteger)
 		    
 		  #Else

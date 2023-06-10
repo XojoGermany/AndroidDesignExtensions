@@ -29,7 +29,7 @@ Protected Module Screen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDisplayId Lib "Object:myScreen:MobileScreen" Alias "getWindow().getContext().getDisplay()!!.getDisplayId()" As Integer
+		    Declare Function getDisplayId Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.getDisplayId()" As Integer
 		    Return getDisplayId
 		    
 		  #EndIf
@@ -42,7 +42,7 @@ Protected Module Screen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getRotation Lib "Object:myScreen:MobileScreen" Alias "getWindow().getContext().getDisplay()!!.getRotation()" As Integer
+		    Declare Function getRotation Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.getRotation()" As Integer
 		    Return getRotation
 		    
 		  #EndIf
@@ -55,7 +55,7 @@ Protected Module Screen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getState Lib "Object:myScreen:MobileScreen" Alias "getWindow().getContext().getDisplay()!!.getState()" As Integer
+		    Declare Function getState Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.getState()" As Integer
 		    Return getState
 		    
 		  #EndIf
@@ -81,7 +81,7 @@ Protected Module Screen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getSystemBarsAppearance Lib "Object:myScreen:MobileScreen" Alias "getWindow().getInsetsController()!!.getSystemBarsAppearance()" As Integer
+		    Declare Function getSystemBarsAppearance Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getInsetsController()!!.getSystemBarsAppearance()" As Integer
 		    Return getSystemBarsAppearance
 		    
 		  #EndIf
@@ -94,8 +94,21 @@ Protected Module Screen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getSystemBarsBehavior Lib "Object:myScreen:MobileScreen" Alias "getWindow().getInsetsController()!!.getSystemBarsBehavior()" As Integer
+		    Declare Function getSystemBarsBehavior Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getInsetsController()!!.getSystemBarsBehavior()" As Integer
 		    Return getSystemBarsBehavior
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206475726174696F6E2C20696E206D696C6C697365636F6E64732C206F66207468652077696E646F77206261636B67726F756E642066616465207768656E207472616E736974696F6E696E6720696E746F206F7220617761792066726F6D20616E204163746976697479207768656E2063616C6C6564207769746820616E204163746976697479205472616E736974696F6E2E0A0A5768656E20657865637574696E672074686520656E746572207472616E736974696F6E2C20746865206261636B67726F756E6420737461727473207472616E73706172656E7420616E6420666164657320696E2E205468697320726571756972657320464541545552455F41435449564954595F5452414E534954494F4E532E205468652064656661756C7420697320333030206D696C6C697365636F6E64732E
+		Function GetTransitionBackgroundFadeDurationXC(Extends myScreen As MobileScreen) As Int64
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTransitionBackgroundFadeDuration Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getTransitionBackgroundFadeDuration()" As Int64
+		    Return getTransitionBackgroundFadeDuration
 		    
 		  #EndIf
 		End Function
@@ -107,7 +120,7 @@ Protected Module Screen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isHdr Lib "Object:myScreen:MobileScreen" Alias "getWindow().getContext().getDisplay()!!.isHdr()" As Boolean
+		    Declare Function isHdr Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.isHdr()" As Boolean
 		    Return isHdr
 		    
 		  #EndIf
@@ -163,7 +176,7 @@ Protected Module Screen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackgroundBlurRadius Lib "Object:myScreen:MobileScreen" Alias "getWindow().setBackgroundBlurRadius" (myBlurRadius As Integer)
+		    Declare Sub setBackgroundBlurRadius Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setBackgroundBlurRadius" (myBlurRadius As Integer)
 		    setBackgroundBlurRadius(blurRadius)
 		    
 		  #Else
@@ -180,7 +193,7 @@ Protected Module Screen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDecorCaptionShade Lib "Object:myScreen:MobileScreen" Alias "getWindow().setDecorCaptionShade" (myDecorCaptionShade As Integer)
+		    Declare Sub setDecorCaptionShade Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setDecorCaptionShade" (myDecorCaptionShade As Integer)
 		    setDecorCaptionShade(decorCaptionShade)
 		    
 		  #Else
@@ -197,7 +210,7 @@ Protected Module Screen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDecorFitsSystemWindows Lib "Object:myScreen:MobileScreen" Alias "getWindow().setDecorFitsSystemWindows" (myDecorFitsSystemWindows As Boolean)
+		    Declare Sub setDecorFitsSystemWindows Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setDecorFitsSystemWindows" (myDecorFitsSystemWindows As Boolean)
 		    setDecorFitsSystemWindows(decorFitsSystemWindows)
 		    
 		  #Else
@@ -231,7 +244,7 @@ Protected Module Screen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setNavigationBarColor Lib "Object:myScreen:MobileScreen" Alias "getWindow().setNavigationBarColor" (myColor As Integer)
+		    Declare Sub setNavigationBarColor Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setNavigationBarColor" (myColor As Integer)
 		    setNavigationBarColor(c.ToInteger)
 		    
 		  #Else
@@ -248,7 +261,7 @@ Protected Module Screen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setNavigationBarContrastEnforced Lib "Object:myScreen:MobileScreen" Alias "getWindow().setDecorFitsSystemWindows" (myEnforceContrast As Boolean)
+		    Declare Sub setNavigationBarContrastEnforced Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setDecorFitsSystemWindows" (myEnforceContrast As Boolean)
 		    setNavigationBarContrastEnforced(enforceContrast)
 		    
 		  #Else
@@ -265,7 +278,7 @@ Protected Module Screen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setNavigationBarDividerColor Lib "Object:myScreen:MobileScreen" Alias "getWindow().setNavigationBarDividerColor" (myColor As Integer)
+		    Declare Sub setNavigationBarDividerColor Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setNavigationBarDividerColor" (myColor As Integer)
 		    setNavigationBarDividerColor(c.ToInteger)
 		    
 		  #Else
@@ -316,7 +329,7 @@ Protected Module Screen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStatusBarColor Lib "Object:myScreen:MobileScreen" Alias "getWindow().setStatusBarColor" (myColor As Integer)
+		    Declare Sub setStatusBarColor Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setStatusBarColor" (myColor As Integer)
 		    setStatusBarColor(c.ToInteger)
 		    
 		  #Else
@@ -333,12 +346,29 @@ Protected Module Screen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStatusBarContrastEnforced Lib "Object:myScreen:MobileScreen" Alias "getWindow().setDecorFitsSystemWindows" (myEnsureContrast As Boolean)
+		    Declare Sub setStatusBarContrastEnforced Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setDecorFitsSystemWindows" (myEnsureContrast As Boolean)
 		    setStatusBarContrastEnforced(ensureContrast)
 		    
 		  #Else
 		    
 		    #Pragma Unused ensureContrast
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206475726174696F6E2C20696E206D696C6C697365636F6E64732C206F66207468652077696E646F77206261636B67726F756E642066616465207768656E207472616E736974696F6E696E6720696E746F206F7220617761792066726F6D20616E204163746976697479207768656E2063616C6C6564207769746820616E204163746976697479205472616E736974696F6E2E0A0A5768656E20657865637574696E672074686520656E746572207472616E736974696F6E2C20746865206261636B67726F756E6420737461727473207472616E73706172656E7420616E6420666164657320696E2E205468697320726571756972657320464541545552455F41435449564954595F5452414E534954494F4E532E205468652064656661756C7420697320333030206D696C6C697365636F6E64732E
+		Sub SetTransitionBackgroundFadeDurationXC(Extends myScreen As MobileScreen, fadeDurationMillis As Int64)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTransitionBackgroundFadeDuration Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setTransitionBackgroundFadeDuration" (myFadeDurationMillis As Int64)
+		    setTransitionBackgroundFadeDuration(fadeDurationMillis)
+		    
+		  #Else
+		    
+		    #Pragma Unused fadeDurationMillis
 		    
 		  #EndIf
 		End Sub

@@ -206,6 +206,7 @@ A set of UI extensions for Xojo Android framework.
 * GetRequestedOrientationXC
 * GetSystemBarsAppearanceXC
 * GetSystemBarsBehaviorXC
+* GetTransitionBackgroundFadeDurationXC
 * IsDisplayHdrXC
 * IsLocalVoiceInteractionSupportedXC
 * MoveTaskToBackXC
@@ -222,6 +223,7 @@ A set of UI extensions for Xojo Android framework.
 * SetShowWhenLockedXC
 * SetStatusBarColorXC
 * SetStatusBarContrastEnforcedXC
+* SetTransitionBackgroundFadeDurationXC
 * SetTranslucentXC
 * SetTurnScreenOnXC
 
