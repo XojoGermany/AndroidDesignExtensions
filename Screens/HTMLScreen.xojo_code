@@ -234,7 +234,6 @@ End
 #tag ScreenCode
 	#tag Event
 		Sub Opening()
-		  MessageBox(HTMLViewer1.GetUserAgentStringXC)
 		End Sub
 	#tag EndEvent
 
