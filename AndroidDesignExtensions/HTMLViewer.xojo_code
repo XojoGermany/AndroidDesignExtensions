@@ -219,21 +219,8 @@ Protected Module HTMLViewer
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTextZoom Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getTextZoom" As Integer
+		    Declare Function getTextZoom Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getTextZoom()" As Integer
 		    Return getTextZoom
-		    
-		  #EndIf
-		End Function
-	#tag EndMethod
-
-	#tag Method, Flags = &h0, Description = 47657473207468652057656256696577277320757365722D6167656E7420737472696E672E
-		Function GetUserAgentStringXC(Extends ctrl As MobileHTMLViewer) As String
-		  #Pragma Unused ctrl
-		  
-		  #If TargetAndroid
-		    
-		    Declare Function getUserAgentString Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getUserAgentString" As CString
-		    Return getUserAgentString
 		    
 		  #EndIf
 		End Function

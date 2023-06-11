@@ -163,7 +163,6 @@ A set of 275+ UI extensions for Xojo Android framework.
 * GetRendererPriorityWaivedWhenNotVisibleXC
 * GetRendererRequestedPriorityXC
 * GetTextZoomXC
-* GetUserAgentStringXC
 * GoBackOrForwardXC
 * GoBackXC
 * GoForwardXC
@@ -178,6 +177,7 @@ A set of 275+ UI extensions for Xojo Android framework.
 * SetBlockNetworkImageXC
 * SetBlockNetworkLoadsXC
 * SetBuiltInZoomControlsXC
+* SetCacheModeXC
 * SetDefaultFixedFontSizeXC
 * SetDefaultFontSizeXC
 * SetDisplayZoomControlsXC
