@@ -8,7 +8,7 @@ Protected Module Table
 		  #If TargetAndroid
 		    
 		    Declare Function pointToRowId Lib "Object:ctrl:AndroidMobileTable" (myX As Integer, myY As Integer) As Int64
-		    pointToRowId(x, y)
+		    Return pointToRowId(x, y)
 		    
 		  #Else
 		    

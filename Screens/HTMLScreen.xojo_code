@@ -31,7 +31,7 @@ Begin TemplateScreen HTMLScreen
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
-      Height          =   578
+      Height          =   541
       Left            =   0
       LockBottom      =   True
       LockedInPosition=   False
@@ -189,10 +189,56 @@ Begin TemplateScreen HTMLScreen
       Visible         =   False
       Width           =   360
    End
+   Begin MobileSlider TextZoomSlider
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   30
+      Left            =   10
+      LockBottom      =   True
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   False
+      MaximumValue    =   250.0
+      MinimumValue    =   10.0
+      Scope           =   2
+      Top             =   664
+      Value           =   50.0
+      Visible         =   True
+      Width           =   281
+   End
+   Begin MobileLabel TextZoomLabel
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   2
+      Enabled         =   True
+      Height          =   28
+      Left            =   299
+      LineBreakMode   =   0
+      LockBottom      =   True
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   False
+      Scope           =   2
+      Text            =   "100 %"
+      TextColor       =   &c00000000
+      Top             =   668
+      Visible         =   True
+      Width           =   51
+   End
 End
 #tag EndMobileScreen
 
 #tag ScreenCode
+	#tag Event
+		Sub Opening()
+		  MessageBox(HTMLViewer1.GetUserAgentStringXC)
+		End Sub
+	#tag EndEvent
+
+
 #tag EndScreenCode
 
 #tag Events NavigationBarContainer1
@@ -213,6 +259,7 @@ End
 		  ' Me.SetBackgroundColor(&cFFD60A00)
 		  Me.LoadURL("https://www.xojo.com")
 		  Me.SetOverScrollModeXC(2) ' Always = 0, IfContentScrolls = 1, Never = 2
+		  Me.SetBuiltInZoomControlsXC(False)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -310,6 +357,14 @@ End
 		  End If
 		  
 		  LoadProgress.Value = HTMLViewer1.GetProgressXC
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events TextZoomSlider
+	#tag Event
+		Sub ValueChanged()
+		  HTMLViewer1.SetTextZoomXC(Me.Value)
+		  TextZoomLabel.Text = HTMLViewer1.GetTextZoomXC.ToString + " %"
 		End Sub
 	#tag EndEvent
 #tag EndEvents
