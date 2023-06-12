@@ -139,6 +139,7 @@ A set of 275+ UI extensions for Xojo Android framework.
 * SmoothScrollToPositionXC
 
 ### MobileButton / MobileDateTimePicker
+* SetBackgroundResourceXC
 * SetCornerRadiusXC
 * SetInsetBottomXC
 * SetInsetTopXC
