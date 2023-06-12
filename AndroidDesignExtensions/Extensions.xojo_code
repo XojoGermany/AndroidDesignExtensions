@@ -13607,7 +13607,7 @@ Protected Module Extensions
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackgroundResource Lib "Object:ctrl:MobileButton" (myResId As Single)
+		    Declare Sub setBackgroundResource Lib "Object:ctrl:MobileButton" (myResId As Integer)
 		    setBackgroundResource(resid)
 		    
 		  #Else
