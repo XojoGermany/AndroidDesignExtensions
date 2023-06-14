@@ -21,6 +21,7 @@ MobileScreen=HomeScreen;Screens/HomeScreen.xojo_code;&h0000000071055FFF;&h000000
 MobileScreen=HTMLScreen;Screens/HTMLScreen.xojo_code;&h0000000005434FFF;&h000000005B965FFF;false
 MobileScreen=ImageScreen;Screens/ImageScreen.xojo_code;&h0000000053FD6FFF;&h000000005B965FFF;false
 MobileScreen=LabelScreen;Screens/LabelScreen.xojo_code;&h00000000413A97FF;&h000000005B965FFF;false
+MobileScreen=ModalScreen;Screens/ModalScreen.xojo_code;&h000000006E06B7FF;&h000000005B965FFF;false
 MobileScreen=ScrollableAreaScreen;Screens/ScrollableAreaScreen.xojo_code;&h000000001565D7FF;&h000000005B965FFF;false
 MobileScreen=SystemImagesScreen;Screens/SystemImagesScreen.xojo_code;&h0000000043B157FF;&h000000005B965FFF;false
 MobileScreen=TableScreen;Screens/TableScreen.xojo_code;&h00000000419F9FFF;&h000000005B965FFF;false

@@ -27,47 +27,11 @@ Begin TemplateScreen ActivityScreen
       Visible         =   True
       Width           =   360
    End
-   Begin MobileButton LandscapeButton
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Landscape"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      Scope           =   2
-      Top             =   64
-      Visible         =   True
-      Width           =   150
-   End
-   Begin MobileButton PortraitButton
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Portrait"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   190
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   64
-      Visible         =   True
-      Width           =   150
-   End
    Begin MobileScrollableArea ScrollableArea1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
-      Height          =   484
+      Height          =   700
       Left            =   0
       LockBottom      =   True
       LockedInPosition=   False
@@ -76,81 +40,9 @@ Begin TemplateScreen ActivityScreen
       LockTop         =   True
       Scope           =   2
       ScrollContent   =   724957183
-      Top             =   272
+      Top             =   56
       Visible         =   True
       Width           =   360
-   End
-   Begin MobileButton TranslucentButton
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Translucent (False)"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   116
-      Visible         =   True
-      Width           =   320
-   End
-   Begin MobileButton MoveTaskToBackButton
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Move Task To Back"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      Scope           =   2
-      Top             =   168
-      Visible         =   True
-      Width           =   150
-   End
-   Begin MobileButton KeyboardShortcutsButton1
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Keyboard Shortcuts"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   190
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   168
-      Visible         =   True
-      Width           =   150
-   End
-   Begin MobileButton DecorFitsSystemWindowsButton
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Decor Fits System Windows"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   220
-      Visible         =   True
-      Width           =   320
    End
 End
 #tag EndMobileScreen
@@ -187,57 +79,7 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events LandscapeButton
-	#tag Event
-		Sub Pressed()
-		  Self.SetRequestedOrientationXC(0) ' Landscape
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events PortraitButton
-	#tag Event
-		Sub Pressed()
-		  Self.SetRequestedOrientationXC(1) ' Portrait
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events TranslucentButton
-	#tag Event
-		Sub Pressed()
-		  Static value As Boolean
-		  
-		  value = Not value
-		  
-		  Call Self.SetTranslucentXC(value)
-		  
-		  Me.Caption = "Translucent (" + value.ToString + ")"
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events MoveTaskToBackButton
-	#tag Event
-		Sub Pressed()
-		  Call Self.MoveTaskToBackXC(True) ' App is still running in the background
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events KeyboardShortcutsButton1
-	#tag Event
-		Sub Pressed()
-		  Self.RequestShowKeyboardShortcutsXC
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events DecorFitsSystemWindowsButton
-	#tag Event
-		Sub Pressed()
-		  Static v As Boolean
-		  
-		  Self.SetDecorFitsSystemWindowsXC(v)
-		  
-		  v = Not v
-		End Sub
-	#tag EndEvent
+#tag Events ScrollableArea1
 #tag EndEvents
 #tag ViewBehavior
 	#tag ViewProperty

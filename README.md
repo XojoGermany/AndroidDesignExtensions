@@ -9,9 +9,11 @@ A set of 275+ UI extensions for Xojo Android framework.
 
 ### All MobileUIControls
 * BringToFrontXC
+* GetAlphaXC
 * GetBaselineXC
 * GetDefaultFocusHighlightEnabledXC
 * GetDrawingTimeXC
+* GetElevationXC
 * GetFocusableXC
 * GetForegroundGravityXC
 * GetHorizontalFadingEdgeLengthXC
@@ -30,7 +32,14 @@ A set of 275+ UI extensions for Xojo Android framework.
 * GetPaddingRightXC
 * GetPaddingStartXC
 * GetPaddingTopXC
+* GetPivotYXC
+* GetPivotYXC
 * GetRevealOnFocusHintXC
+* GetRotationXC
+* GetRotationXXC
+* GetRotationYXC
+* GetScaleXXC
+* GetScaleYXC
 * GetScrollBarDefaultDelayBeforeFadeXC
 * GetScrollBarFadeDurationXC
 * GetScrollBarSizeXC
@@ -41,6 +50,9 @@ A set of 275+ UI extensions for Xojo Android framework.
 * GetScrollYXC
 * GetTextAlignmentXC
 * GetTextDirectionXC
+* GetTranslationXXC
+* GetTranslationYXC
+* GetTranslationZXC
 * GetUniqueDrawingIDXC
 * GetVerticalFadingEdgeLengthXC
 * GetVerticalScrollbarPositionXC
@@ -121,7 +133,6 @@ A set of 275+ UI extensions for Xojo Android framework.
 * SetVerticalFadingEdgeEnabledXC
 * SetVerticalScrollBarEnabledXC
 * SetVerticalScrollBarPositionXC
-* ToStringXC
 
 ### AndroidMobileTable
 * PointToRowIDXC
@@ -233,10 +244,12 @@ A set of 275+ UI extensions for Xojo Android framework.
 * GetDisplayIDXC
 * GetDisplayRotationXC
 * GetDisplayStateXC
+* GetHeightXC
 * GetRequestedOrientationXC
 * GetSystemBarsAppearanceXC
 * GetSystemBarsBehaviorXC
 * GetTransitionBackgroundFadeDurationXC
+* GetWidthXC
 * IsDisplayHdrXC
 * IsLocalVoiceInteractionSupportedXC
 * MoveTaskToBackXC
@@ -245,7 +258,10 @@ A set of 275+ UI extensions for Xojo Android framework.
 * SetBackgroundColorXC
 * SetDecorCaptionShadeXC
 * SetDecorFitsSystemWindowsXC
+* SetDimAmountXC
+* SetElevationXC
 * SetInheritShowWhenLockedXC
+* SetLayoutXC
 * SetNavigationBarColorXC
 * SetNavigationBarContrastEnforcedXC
 * SetNavigationBarDividerColorXC

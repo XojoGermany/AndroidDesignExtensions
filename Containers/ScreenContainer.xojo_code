@@ -4,7 +4,7 @@ Begin MobileContainer ScreenContainer
    AccessibilityLabel=   ""
    Compatibility   =   ""
    Enabled         =   True
-   Height          =   542
+   Height          =   846
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -25,7 +25,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   181
+      Top             =   421
       Visible         =   True
       Width           =   68
    End
@@ -43,7 +43,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   181
+      Top             =   421
       Visible         =   True
       Width           =   68
    End
@@ -61,7 +61,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   181
+      Top             =   421
       Visible         =   True
       Width           =   68
    End
@@ -79,7 +79,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   181
+      Top             =   421
       Visible         =   True
       Width           =   68
    End
@@ -97,7 +97,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   263
+      Top             =   503
       Visible         =   True
       Width           =   68
    End
@@ -115,7 +115,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   263
+      Top             =   503
       Visible         =   True
       Width           =   68
    End
@@ -133,7 +133,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   263
+      Top             =   503
       Visible         =   True
       Width           =   68
    End
@@ -151,7 +151,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   263
+      Top             =   503
       Visible         =   True
       Width           =   68
    End
@@ -169,7 +169,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   345
+      Top             =   585
       Visible         =   True
       Width           =   68
    End
@@ -187,7 +187,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   345
+      Top             =   585
       Visible         =   True
       Width           =   68
    End
@@ -205,7 +205,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   345
+      Top             =   585
       Visible         =   True
       Width           =   68
    End
@@ -223,7 +223,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   345
+      Top             =   585
       Visible         =   True
       Width           =   68
    End
@@ -241,7 +241,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   427
+      Top             =   667
       Visible         =   True
       Width           =   68
    End
@@ -259,7 +259,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   427
+      Top             =   667
       Visible         =   True
       Width           =   68
    End
@@ -277,7 +277,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   427
+      Top             =   667
       Visible         =   True
       Width           =   68
    End
@@ -303,7 +303,7 @@ Begin MobileContainer ScreenContainer
       SelectedRowText =   ""
       SeparatorColor  =   &c00000000
       SeparatorThickness=   0
-      Top             =   30
+      Top             =   270
       Visible         =   True
       Width           =   320
    End
@@ -319,7 +319,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   509
+      Top             =   749
       Visible         =   True
       Width           =   360
    End
@@ -337,9 +337,135 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   427
+      Top             =   667
       Visible         =   True
       Width           =   68
+   End
+   Begin MobileButton ModalScreenButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Modal Screen Parameters"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   218
+      Visible         =   True
+      Width           =   320
+   End
+   Begin MobileButton DecorFitsSystemWindowsButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Decor Fits System Windows"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   166
+      Visible         =   True
+      Width           =   320
+   End
+   Begin MobileButton KeyboardShortcutsButton1
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Keyboard Shortcuts"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   190
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   114
+      Visible         =   True
+      Width           =   150
+   End
+   Begin MobileButton LandscapeButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Landscape"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      Scope           =   2
+      Top             =   10
+      Visible         =   True
+      Width           =   150
+   End
+   Begin MobileButton MoveTaskToBackButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Move Task To Back"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      Scope           =   2
+      Top             =   114
+      Visible         =   True
+      Width           =   150
+   End
+   Begin MobileButton PortraitButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Portrait"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   190
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   10
+      Visible         =   True
+      Width           =   150
+   End
+   Begin MobileButton TranslucentButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Translucent (False)"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   62
+      Visible         =   True
+      Width           =   320
    End
 End
 #tag EndMobileContainer
@@ -516,6 +642,65 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.MyBackgroundColor = Color.Clear
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events ModalScreenButton
+	#tag Event
+		Sub Pressed()
+		  ModalScreen.ShowModal
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events DecorFitsSystemWindowsButton
+	#tag Event
+		Sub Pressed()
+		  Static v As Boolean
+		  
+		  App.CurrentScreen.SetDecorFitsSystemWindowsXC(v)
+		  
+		  v = Not v
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events KeyboardShortcutsButton1
+	#tag Event
+		Sub Pressed()
+		  App.CurrentScreen.RequestShowKeyboardShortcutsXC
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events LandscapeButton
+	#tag Event
+		Sub Pressed()
+		  App.CurrentScreen.SetRequestedOrientationXC(0) ' Landscape
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events MoveTaskToBackButton
+	#tag Event
+		Sub Pressed()
+		  Call App.CurrentScreen.MoveTaskToBackXC(True) ' App is still running in the background
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events PortraitButton
+	#tag Event
+		Sub Pressed()
+		  App.CurrentScreen.SetRequestedOrientationXC(1) ' Portrait
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events TranslucentButton
+	#tag Event
+		Sub Pressed()
+		  Static value As Boolean
+		  
+		  value = Not value
+		  
+		  Call App.CurrentScreen.SetTranslucentXC(value)
+		  
+		  Me.Caption = "Translucent (" + value.ToString + ")"
 		End Sub
 	#tag EndEvent
 #tag EndEvents
