@@ -184,31 +184,31 @@ End
 		    
 		  Case "insideInset"
 		    
-		    Me.SetScrollBarStyleXC(16777216)
+		    Me.SetScrollBarStyleXC(ScrollbarStylesXC.InsideInset)
 		    
 		  Case "insideOverlay"
 		    
-		    Me.SetScrollBarStyleXC(0)
+		    Me.SetScrollBarStyleXC(ScrollbarStylesXC.InsideOverlay)
 		    
 		  Case "outsideInset"
 		    
-		    Me.SetScrollBarStyleXC(50331648)
+		    Me.SetScrollBarStyleXC(ScrollbarStylesXC.OutsideInset)
 		    
 		  Case "outsideOverlay"
 		    
-		    Me.SetScrollBarStyleXC(33554432)
+		    Me.SetScrollBarStyleXC(ScrollbarStylesXC.OutsideOverlay)
 		    
 		  Case "positionDefault"
 		    
-		    Me.SetVerticalScrollBarPositionXC(0)
+		    Me.SetVerticalScrollBarPositionXC(ScrollbarPositionsXC.Default)
 		    
 		  Case "positionLeft"
 		    
-		    Me.SetVerticalScrollBarPositionXC(1)
+		    Me.SetVerticalScrollBarPositionXC(ScrollbarPositionsXC.Left)
 		    
 		  Case "positionRight"
 		    
-		    Me.SetVerticalScrollBarPositionXC(2)
+		    Me.SetVerticalScrollBarPositionXC(ScrollbarPositionsXC.Right)
 		    
 		  Case "red"
 		    

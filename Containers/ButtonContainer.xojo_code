@@ -11,7 +11,7 @@ Begin MobileContainer ButtonContainer
    LockTop         =   True
    Visible         =   True
    Width           =   360
-   Begin MobileButton BackgroundColorButton
+   Begin TestButton BackgroundColorButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Background Color"
@@ -47,7 +47,7 @@ Begin MobileContainer ButtonContainer
       Visible         =   True
       Width           =   200
    End
-   Begin MobileButton CornerRadiusButton
+   Begin TestButton CornerRadiusButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Corner Radius"
@@ -65,7 +65,7 @@ Begin MobileContainer ButtonContainer
       Visible         =   True
       Width           =   200
    End
-   Begin MobileButton CornerRadiusButton2
+   Begin TestButton CornerRadiusButton2
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Corner Radius"
@@ -103,7 +103,7 @@ Begin MobileContainer ButtonContainer
       Visible         =   True
       Width           =   200
    End
-   Begin MobileButton DefaultButton
+   Begin TestButton DefaultButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Default Button"
@@ -121,7 +121,7 @@ Begin MobileContainer ButtonContainer
       Visible         =   True
       Width           =   200
    End
-   Begin MobileButton ShadowButton
+   Begin TestButton ShadowButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Without Shadow"
@@ -155,7 +155,7 @@ Begin MobileContainer ButtonContainer
       Visible         =   True
       Width           =   360
    End
-   Begin MobileButton TransparentButton
+   Begin TestButton TransparentButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Transparent Button"
@@ -173,7 +173,7 @@ Begin MobileContainer ButtonContainer
       Visible         =   True
       Width           =   200
    End
-   Begin MobileButton TextShadowButton
+   Begin TestButton TextShadowButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Text Shadow"

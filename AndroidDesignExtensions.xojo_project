@@ -56,6 +56,7 @@ MobileContainer=ScrollableContainer;Containers/ScrollableContainer.xojo_code;&h0
 Class=ColorButton;Controls/ColorButton.xojo_code;&h00000000229F67FF;&h000000001E06E7FF;false
 MobileContainer=ScreenContainer;Containers/ScreenContainer.xojo_code;&h000000002B35F7FF;&h000000003BC167FF;false
 MobileContainer=TextAreaContainer;Containers/TextAreaContainer.xojo_code;&h000000006456FFFF;&h000000003BC167FF;false
+Class=TestButton;Controls/TestButton.xojo_code;&h000000003389C7FF;&h000000001E06E7FF;false
 DefaultMobileView=HomeScreen
 MajorVersion=1
 MinorVersion=0
