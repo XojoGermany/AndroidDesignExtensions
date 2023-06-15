@@ -235,7 +235,14 @@ A set of 320+ UI extensions for Xojo Android framework.
 ### MobileOval
 
 ### MobileProgressBar
+* GetSecondaryProgressXC
+* IncrementProgressByXC
+* IncrementSecondaryProgressByXC
+* IsAnimatingXC
+* IsIndeterminateXC
 * SetIndeterminateXC
+* SetProgressXC
+* SetSecondaryProgressXC
 
 ### MobileProgressWheel
 
