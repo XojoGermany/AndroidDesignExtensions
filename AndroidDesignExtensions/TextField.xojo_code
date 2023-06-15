@@ -1,72 +1,52 @@
 #tag Module
 Protected Module TextField
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
-	#tag Method, Flags = &h0
-		Sub CharacterSpacing(Extends myTextField As MobileTextField, Assigns letterSpacing As Double)
-		  #Pragma Unused myTextField
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72207573656420746F20646973706C6179207468652073656C656374696F6E20686967686C696768742E
+		Sub SetHighlightColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setLetterSpacing Lib "Object:myTextField:MobileTextField" (aLetterSpacing As Single)
+		    Declare Sub setHighlightColor Lib "Object:ctrl:MobileTextField" (myColor As Integer)
+		    setHighlightColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652074797065206F662074686520636F6E74656E742077697468206120636F6E7374616E7420617320646566696E656420666F7220456469746F72496E666F23696E707574547970652E20546869732077696C6C2074616B652063617265206F66206368616E67696E6720746865206B6579206C697374656E65722C2062792063616C6C696E67207365744B65794C697374656E657228616E64726F69642E746578742E6D6574686F642E4B65794C697374656E6572292C20746F206D617463682074686520676976656E20636F6E74656E7420747970652E2049662074686520676976656E20636F6E74656E74207479706520697320456469746F72496E666F23545950455F4E554C4C207468656E206120736F6674206B6579626F6172642077696C6C206E6F7420626520646973706C6179656420666F722074686973207465787420766965772E204E6F7465207468617420746865206D6178696D756D206E756D626572206F6620646973706C61796564206C696E65732028736565207365744D61784C696E657328696E7429292077696C6C206265206D6F64696669656420696620796F75206368616E67652074686520456469746F72496E666F23545950455F544558545F464C41475F4D554C54495F4C494E4520666C6167206F662074686520696E70757420747970652E
+		Sub SetInputTypeXC(Extends ctrl As MobileTextField, type As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setInputType Lib "Object:ctrl:MobileTextField" (myType As Integer)
+		    setInputType(type)
+		    
+		  #Else
+		    
+		    #Pragma Unused type
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074657874206C65747465722D73706163696E6720696E20656D20756E6974732E205479706963616C2076616C75657320666F7220736C6967687420657870616E73696F6E2077696C6C2062652061726F756E6420302E30352E204E656761746976652076616C756573207469676874656E20746578742E
+		Sub SetLetterSpacingXC(Extends ctrl As MobileTextField, letterSpacing As Single)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLetterSpacing Lib "Object:ctrl:MobileTextField" (myLetterSpacing As Single)
 		    setLetterSpacing(letterSpacing)
 		    
 		  #Else
 		    
 		    #Pragma Unused letterSpacing
-		    
-		  #EndIf
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0
-		Sub HighlightColor(Extends myTextField As MobileTextField, Assigns myColor As Color)
-		  #Pragma Unused myTextField
-		  
-		  #If TargetAndroid
-		    
-		    Declare Sub setHighlightColor Lib "Object:myTextField:MobileTextField" (aColor As Integer)
-		    setHighlightColor(myColor.ToInteger)
-		    
-		  #Else
-		    
-		    #Pragma Unused myColor
-		    
-		  #EndIf
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0
-		Sub SetInputType(Extends myTextField As MobileTextField, myValue As Integer)
-		  #Pragma Unused myTextField
-		  
-		  #If TargetAndroid
-		    
-		    Declare Sub setInputType Lib "Object:myTextField:MobileTextField" (aValue As Integer)
-		    setInputType(myValue)
-		    
-		  #Else
-		    
-		    #Pragma Unused myValue
-		    
-		  #EndIf
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0
-		Sub SetPadding(Extends myTextField As MobileTextField, left As Integer, top As Integer, right As Integer, bottom As Integer)
-		  #Pragma Unused myTextField
-		  
-		  #If TargetAndroid
-		    
-		    Declare Sub setPadding Lib "Object:myTextField:MobileTextField" (aLeft As Integer, aTop As Integer, aRight As Integer, aBottom As Integer)
-		    setPadding(left, top, right, bottom)
-		    
-		  #Else
-		    
-		    #Pragma Unused left
-		    #Pragma Unused top
-		    #Pragma Unused right
-		    #Pragma Unused bottom
 		    
 		  #EndIf
 		End Sub

@@ -267,7 +267,7 @@ End
 #tag Events DefaultField
 	#tag Event
 		Sub Opening()
-		  Me.CharacterSpacing = 0.25
+		  Me.SetLetterSpacingXC(0.25)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -288,21 +288,21 @@ End
 #tag Events PaddingField
 	#tag Event
 		Sub Opening()
-		  Me.SetPadding(0, 20, 0, 10)
+		  Me.SetPaddingXC(0, 20, 0, 10)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events HighlightColorField
 	#tag Event
 		Sub Opening()
-		  Me.HighlightColor = Color.Red
+		  Me.SetHighlightColorXC(Color.Red)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events MultilineField
 	#tag Event
 		Sub Opening()
-		  Me.SetInputType(kTYPE_CLASS_TEXT + _
+		  Me.SetInputTypeXC(kTYPE_CLASS_TEXT + _
 		  kTYPE_TEXT_FLAG_MULTI_LINE)
 		End Sub
 	#tag EndEvent
@@ -310,7 +310,7 @@ End
 #tag Events PasswordSwitch
 	#tag Event
 		Sub ValueChanged()
-		  MultilineField.SetInputType(kTYPE_CLASS_TEXT + _
+		  MultilineField.SetInputTypeXC(kTYPE_CLASS_TEXT + _
 		  kTYPE_TEXT_FLAG_MULTI_LINE + _
 		  If(PasswordSwitch.Value, kTYPE_TEXT_VARIATION_PASSWORD, 0))
 		End Sub

@@ -359,10 +359,9 @@ A set of 320+ UI extensions for Xojo Android framework.
 * SetTextScaleXXC
 
 ### MobileTextField
-* Character Spacing
-* Highlight Color
-* Input Type
-* Padding
+* SetHighlightColorXC
+* SetInputTypeXC
+* SetLetterSpacingXC
 * SetShowSoftInputOnFocusXC
 
 ## ToDo

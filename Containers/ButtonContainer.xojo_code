@@ -29,7 +29,7 @@ Begin MobileContainer ButtonContainer
       Visible         =   True
       Width           =   200
    End
-   Begin MobileButton ColoredShadowButton
+   Begin TestButton ColoredShadowButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Colored Shadow"
@@ -99,7 +99,7 @@ Begin MobileContainer ButtonContainer
       LockTop         =   True
       Scope           =   2
       TimeCaption     =   "Choose a Time"
-      Top             =   394
+      Top             =   446
       Visible         =   True
       Width           =   200
    End
@@ -151,7 +151,7 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   460
+      Top             =   498
       Visible         =   True
       Width           =   360
    End
