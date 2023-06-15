@@ -214,13 +214,13 @@ Protected Module Screen
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 536574207768617420636F6C6F722073686F756C64207468652063617074696F6E20636F6E74726F6C732062652E2042792064656661756C74207468652073797374656D2077696C6C2074727920746F2064657465726D696E652074686520636F6C6F722066726F6D20746865207468656D652E20596F752063616E206F76657277726974652074686973206279207573696E67204445434F525F43415054494F4E5F53484144455F4441524B2C204445434F525F43415054494F4E5F53484144455F4C494748542C206F72204445434F525F43415054494F4E5F53484144455F4155544F2E
-		Sub SetDecorCaptionShadeXC(Extends myScreen As MobileScreen, decorCaptionShade As Integer)
+		Sub SetDecorCaptionShadeXC(Extends myScreen As MobileScreen, decorCaptionShade As DecorCaptionShadesXC)
 		  #Pragma Unused myScreen
 		  
 		  #If TargetAndroid
 		    
 		    Declare Sub setDecorCaptionShade Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setDecorCaptionShade" (myDecorCaptionShade As Integer)
-		    setDecorCaptionShade(decorCaptionShade)
+		    setDecorCaptionShade(Integer(decorCaptionShade))
 		    
 		  #Else
 		    
@@ -368,13 +368,13 @@ Protected Module Screen
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 4368616E6765207468652064657369726564206F7269656E746174696F6E206F6620746869732061637469766974792E204966207468652061637469766974792069732063757272656E746C7920696E2074686520666F726567726F756E64206F72206F746865727769736520696D70616374696E67207468652073637265656E206F7269656E746174696F6E2C207468652073637265656E2077696C6C20696D6D6564696174656C79206265206368616E6765642028706F737369626C792063617573696E672074686520616374697669747920746F20626520726573746172746564292E204F74686572776973652C20746869732077696C6C206265207573656420746865206E6578742074696D65207468652061637469766974792069732076697369626C652E
-		Sub SetRequestedOrientationXC(Extends myScreen As MobileScreen, requestedOrientation As Integer)
+		Sub SetRequestedOrientationXC(Extends myScreen As MobileScreen, requestedOrientation As ScreenOrientationsXC)
 		  #Pragma Unused myScreen
 		  
 		  #If TargetAndroid
 		    
 		    Declare Sub setRequestedOrientation Lib "Object:myScreen:MobileScreen" (myRequestedOrientation As Integer)
-		    setRequestedOrientation(requestedOrientation)
+		    setRequestedOrientation(Integer(requestedOrientation))
 		    
 		  #Else
 		    
@@ -486,6 +486,32 @@ Protected Module Screen
 		  #EndIf
 		End Sub
 	#tag EndMethod
+
+
+	#tag Enum, Name = DecorCaptionShadesXC, Type = Integer, Flags = &h0
+		Auto = 0
+		  Light = 1
+		Dark = 2
+	#tag EndEnum
+
+	#tag Enum, Name = ScreenOrientationsXC, Type = Integer, Flags = &h0
+		Unspecified = -1
+		  Landscape = 0
+		  Portrait = 1
+		  User = 2
+		  Behind = 3
+		  Sensor = 4
+		  NoSensor = 5
+		  SensorLandscape = 6
+		  SensorPortrait = 7
+		  ReverseLandscape = 8
+		  ReversePortrait = 9
+		  FullSensor = 10
+		  UserLandscape = 11
+		  UserPortrait = 12
+		  FullUser = 13
+		Locked = 14
+	#tag EndEnum
 
 
 	#tag ViewBehavior

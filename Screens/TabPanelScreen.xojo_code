@@ -100,7 +100,7 @@ End
 		  Me.SetInlineLabelXC(False)
 		  Me.SetTabTextColorsXC(Color.White, Color.AccentThemeColor)
 		  Me.SetSelectedTabIndicatorColorXC(&c94175100)
-		  Me.SetSelectedTabIndicatorGravityXC(2)
+		  Me.SetSelectedTabIndicatorGravityXC(TabIndicatorGravityXC.Top)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -108,7 +108,7 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.SetTabTextColorsXC(Color.LightGray, Color.Black)
-		  Me.SetTabModeXC(0)
+		  Me.SetTabModeXC(TabModesXC.Scrollable)
 		  Me.SetTabBackgroundColorAtXC(1, &cFF7E7900)
 		End Sub
 	#tag EndEvent

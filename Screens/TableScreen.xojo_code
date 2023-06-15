@@ -96,7 +96,7 @@ End
 		  CheckBoxPic = Picture.SystemImage("checkbox_marked_circle", Picture.SystemImageSizes.dp24, Color.AccentThemeColor)
 		  
 		  Me.SetScrollBarSizeXC(20)
-		  Me.SetOverScrollModeXC(2) ' Always = 0, IfContentScrolls = 1, Never = 2
+		  Me.SetOverScrollModeXC(OverScrollModesXC.Never)
 		  
 		  Me.SetOutlineSpotShadowColorXC(Color.Clear) ' no shadow
 		  Me.SetScrollBarFadeDurationXC(0) ' make Scrollbar always visible

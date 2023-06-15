@@ -673,7 +673,7 @@ End
 #tag Events LandscapeButton
 	#tag Event
 		Sub Pressed()
-		  App.CurrentScreen.SetRequestedOrientationXC(0) ' Landscape
+		  App.CurrentScreen.SetRequestedOrientationXC(ScreenOrientationsXC.Landscape)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -687,7 +687,7 @@ End
 #tag Events PortraitButton
 	#tag Event
 		Sub Pressed()
-		  App.CurrentScreen.SetRequestedOrientationXC(1) ' Portrait
+		  App.CurrentScreen.SetRequestedOrientationXC(ScreenOrientationsXC.Portrait)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

@@ -257,7 +257,7 @@ End
 		Sub Opening()
 		  ' Me.SetBackgroundColor(&cFFD60A00)
 		  Me.LoadURL("https://www.xojo.com")
-		  Me.SetOverScrollModeXC(2) ' Always = 0, IfContentScrolls = 1, Never = 2
+		  Me.SetOverScrollModeXC(OverScrollModesXC.Never)
 		  Me.SetBuiltInZoomControlsXC(False)
 		End Sub
 	#tag EndEvent
