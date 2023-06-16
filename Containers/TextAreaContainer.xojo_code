@@ -430,6 +430,7 @@ End
 		Sub Opening()
 		  Me.SetBackgroundColorXC(Color.Clear)
 		  Me.SetHighlightColorXC(&cFF2F9200)
+		  Me.SetErrorXC("Error Description 💩")
 		  
 		  If Color.IsDarkMode Then
 		    

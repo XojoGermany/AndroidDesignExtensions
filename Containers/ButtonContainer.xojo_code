@@ -4,7 +4,7 @@ Begin MobileContainer ButtonContainer
    AccessibilityLabel=   ""
    Compatibility   =   ""
    Enabled         =   True
-   Height          =   538
+   Height          =   704
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -25,7 +25,7 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   186
+      Top             =   238
       Visible         =   True
       Width           =   200
    End
@@ -43,7 +43,7 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   394
+      Top             =   446
       Visible         =   True
       Width           =   200
    End
@@ -61,7 +61,7 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   238
+      Top             =   290
       Visible         =   True
       Width           =   200
    End
@@ -79,7 +79,7 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   290
+      Top             =   342
       Visible         =   True
       Width           =   200
    End
@@ -99,7 +99,7 @@ Begin MobileContainer ButtonContainer
       LockTop         =   True
       Scope           =   2
       TimeCaption     =   "Choose a Time"
-      Top             =   446
+      Top             =   498
       Visible         =   True
       Width           =   200
    End
@@ -135,7 +135,7 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   342
+      Top             =   394
       Visible         =   True
       Width           =   200
    End
@@ -151,7 +151,7 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   498
+      Top             =   550
       Visible         =   True
       Width           =   360
    End
@@ -169,7 +169,7 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   82
+      Top             =   134
       Visible         =   True
       Width           =   200
    End
@@ -187,7 +187,25 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   134
+      Top             =   186
+      Visible         =   True
+      Width           =   200
+   End
+   Begin TestButton TooltipButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Press long for Tooltip"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   80
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   82
       Visible         =   True
       Width           =   200
    End
@@ -262,6 +280,13 @@ End
 		Sub Opening()
 		  Me.CaptionColor = Color.Yellow
 		  Me.SetShadowLayerXC(5, 2, 2, Color.Red)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events TooltipButton
+	#tag Event
+		Sub Opening()
+		  Me.SetTooltipTextXC("This is my MobileButton tooltip.")
 		End Sub
 	#tag EndEvent
 #tag EndEvents

@@ -126,6 +126,7 @@ A set of 320+ UI extensions for Xojo Android framework.
 * SetSoundEffectsEnabledXC
 * SetTextAlignmentXC
 * SetTextDirectionXC
+* SetTooltipTextXC
 * SetTransitionAlphaXC
 * SetTranslationXXC
 * SetTranslationYXC
@@ -309,6 +310,12 @@ A set of 320+ UI extensions for Xojo Android framework.
 * SetTabModeXC
 * SetTabTextColorsXC
 
+### MobileTextArea / MobileTextField
+* SetErrorXC
+* SetHighlightColorXC
+* SetLetterSpacingXC
+* SetShowSoftInputOnFocusXC
+
 ### MobileTextArea
 * GetBreakStrategyXC
 * GetCompoundDrawablePaddingXC
@@ -343,14 +350,12 @@ A set of 320+ UI extensions for Xojo Android framework.
 * SetFallbackLineSpacingXC
 * SetFirstBaselineToTopHeightXC
 * SetGravityXC
-* SetHighlightColorXC
 * SetHorizontallyScrollingXC
 * SetHyphenationFrequencyXC
 * SetImeOptionsXC
 * SetIncludeFontPaddingXC
 * SetJustificationModeXC
 * SetLastBaselineToBottomHeightXC
-* SetLetterSpacingXC
 * SetLineHeightXC
 * SetLineSpacingXC
 * SetLinesXC
@@ -360,16 +365,12 @@ A set of 320+ UI extensions for Xojo Android framework.
 * SetRawInputTypeXC
 * SetSelectAllOnFocusXC
 * SetShadowLayerXC
-* SetShowSoftInputOnFocusXC
 * SetSingleLineXC
 * SetTextIsSelectableXC
 * SetTextScaleXXC
 
 ### MobileTextField
-* SetHighlightColorXC
 * SetInputTypeXC
-* SetLetterSpacingXC
-* SetShowSoftInputOnFocusXC
 
 ## ToDo
 

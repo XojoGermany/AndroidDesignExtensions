@@ -75,7 +75,7 @@ Begin TemplateScreen TextFieldScreen
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
-      Top             =   184
+      Top             =   236
       Visible         =   True
       Width           =   200
    End
@@ -101,7 +101,7 @@ Begin TemplateScreen TextFieldScreen
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
-      Top             =   236
+      Top             =   288
       Visible         =   True
       Width           =   200
    End
@@ -127,7 +127,7 @@ Begin TemplateScreen TextFieldScreen
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
-      Top             =   288
+      Top             =   340
       Visible         =   True
       Width           =   200
    End
@@ -153,7 +153,7 @@ Begin TemplateScreen TextFieldScreen
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
-      Top             =   132
+      Top             =   184
       Visible         =   True
       Width           =   200
    End
@@ -179,7 +179,7 @@ Begin TemplateScreen TextFieldScreen
       SelectionStart  =   0
       Text            =   "Since MobileTextArea has no Hint property, we simply use MobileTextField and enable Multiline."
       TextColor       =   &c00000000
-      Top             =   347
+      Top             =   399
       Visible         =   True
       Width           =   320
    End
@@ -188,14 +188,14 @@ Begin TemplateScreen TextFieldScreen
       AccessibilityLabel=   ""
       Enabled         =   True
       Height          =   30
-      Left            =   290
+      Left            =   288
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   False
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   503
+      Top             =   555
       Value           =   False
       Visible         =   True
       Width           =   50
@@ -216,7 +216,7 @@ Begin TemplateScreen TextFieldScreen
       Scope           =   2
       Text            =   "Password"
       TextColor       =   &c00000000
-      Top             =   506
+      Top             =   557
       Visible         =   True
       Width           =   100
    End
@@ -228,7 +228,7 @@ Begin TemplateScreen TextFieldScreen
       Height          =   44
       Hint            =   "Default TextField"
       InputType       =   0
-      Left            =   80
+      Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -242,8 +242,34 @@ Begin TemplateScreen TextFieldScreen
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
-      Top             =   541
+      Top             =   555
       Visible         =   False
+      Width           =   200
+   End
+   Begin MobileTextField ErrorField
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   0
+      Enabled         =   True
+      Height          =   44
+      Hint            =   "Error TextField"
+      InputType       =   0
+      Left            =   80
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   2
+      SelectedText    =   ""
+      SelectionLength =   0
+      SelectionStart  =   0
+      Text            =   "Hello World"
+      TextColor       =   &c00000000
+      Top             =   132
+      Visible         =   True
       Width           =   200
    End
 End
@@ -323,6 +349,13 @@ End
 		  
 		  ' Declare Sub setImeOptions Lib "Object:DefaultField1:MobileTextField" (options As Integer)
 		  ' setImeOptions(3)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events ErrorField
+	#tag Event
+		Sub Opening()
+		  Me.SetErrorXC("My Error Message")
 		End Sub
 	#tag EndEvent
 #tag EndEvents
