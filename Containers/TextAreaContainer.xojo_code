@@ -4,7 +4,7 @@ Begin MobileContainer TextAreaContainer
    AccessibilityLabel=   ""
    Compatibility   =   ""
    Enabled         =   True
-   Height          =   674
+   Height          =   700
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -30,7 +30,7 @@ Begin MobileContainer TextAreaContainer
       SelectionStart  =   0
       Text            =   "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
       TextColor       =   &c00000000
-      Top             =   30
+      Top             =   101
       Visible         =   True
       Width           =   320
    End
@@ -50,7 +50,7 @@ Begin MobileContainer TextAreaContainer
       Scope           =   0
       Text            =   "Bold"
       TextColor       =   &c00000000
-      Top             =   380
+      Top             =   451
       Visible         =   True
       Width           =   39
    End
@@ -66,7 +66,7 @@ Begin MobileContainer TextAreaContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   378
+      Top             =   449
       Value           =   False
       Visible         =   True
       Width           =   50
@@ -83,7 +83,7 @@ Begin MobileContainer TextAreaContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   427
+      Top             =   498
       Value           =   False
       Visible         =   True
       Width           =   50
@@ -104,7 +104,7 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Underline"
       TextColor       =   &c00000000
-      Top             =   429
+      Top             =   500
       Visible         =   True
       Width           =   75
    End
@@ -124,7 +124,7 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Strikethrough"
       TextColor       =   &c00000000
-      Top             =   478
+      Top             =   549
       Visible         =   True
       Width           =   93
    End
@@ -140,7 +140,7 @@ Begin MobileContainer TextAreaContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   476
+      Top             =   547
       Value           =   False
       Visible         =   True
       Width           =   50
@@ -167,7 +167,7 @@ Begin MobileContainer TextAreaContainer
       SelectionStart  =   0
       Text            =   "1.0"
       TextColor       =   &c00000000
-      Top             =   368
+      Top             =   439
       Visible         =   True
       Width           =   63
    End
@@ -187,7 +187,7 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Line Spacing"
       TextColor       =   &c00000000
-      Top             =   380
+      Top             =   451
       Visible         =   True
       Width           =   90
    End
@@ -207,7 +207,7 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Line Height"
       TextColor       =   &c00000000
-      Top             =   430
+      Top             =   501
       Visible         =   True
       Width           =   100
    End
@@ -233,7 +233,7 @@ Begin MobileContainer TextAreaContainer
       SelectionStart  =   0
       Text            =   "100"
       TextColor       =   &c00000000
-      Top             =   416
+      Top             =   487
       Visible         =   True
       Width           =   63
    End
@@ -259,7 +259,7 @@ Begin MobileContainer TextAreaContainer
       SelectionStart  =   0
       Text            =   "0.25"
       TextColor       =   &c00000000
-      Top             =   465
+      Top             =   536
       Visible         =   True
       Width           =   63
    End
@@ -279,7 +279,7 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Letter Spacing"
       TextColor       =   &c00000000
-      Top             =   479
+      Top             =   550
       Visible         =   True
       Width           =   100
    End
@@ -295,7 +295,7 @@ Begin MobileContainer TextAreaContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   607
+      Top             =   678
       Visible         =   True
       Width           =   360
    End
@@ -315,7 +315,7 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Cursor Visible"
       TextColor       =   &c00000000
-      Top             =   519
+      Top             =   590
       Visible         =   True
       Width           =   93
    End
@@ -331,7 +331,7 @@ Begin MobileContainer TextAreaContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   517
+      Top             =   588
       Value           =   True
       Visible         =   True
       Width           =   50
@@ -352,7 +352,7 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Scroll Horiz."
       TextColor       =   &c00000000
-      Top             =   519
+      Top             =   590
       Visible         =   True
       Width           =   93
    End
@@ -368,7 +368,7 @@ Begin MobileContainer TextAreaContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   517
+      Top             =   588
       Value           =   False
       Visible         =   True
       Width           =   50
@@ -395,7 +395,7 @@ Begin MobileContainer TextAreaContainer
       SelectionStart  =   0
       Text            =   "1.0"
       TextColor       =   &c00000000
-      Top             =   555
+      Top             =   626
       Visible         =   True
       Width           =   63
    End
@@ -415,9 +415,32 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Text Scale X"
       TextColor       =   &c00000000
-      Top             =   569
+      Top             =   640
       Visible         =   True
       Width           =   100
+   End
+   Begin MobileTextArea HintArea
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   0
+      Enabled         =   True
+      Height          =   63
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      ReadOnly        =   False
+      Scope           =   2
+      SelectedText    =   ""
+      SelectionLength =   0
+      SelectionStart  =   0
+      Text            =   ""
+      TextColor       =   &c00000000
+      Top             =   30
+      Visible         =   True
+      Width           =   320
    End
 End
 #tag EndMobileContainer
@@ -512,6 +535,13 @@ End
 	#tag Event
 		Sub TextChanged()
 		  DefaultArea.SetTextScaleXXC(Me.Text.ToDouble)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events HintArea
+	#tag Event
+		Sub Opening()
+		  Me.SetHintXC("This is TextAreas Hint.")
 		End Sub
 	#tag EndEvent
 #tag EndEvents

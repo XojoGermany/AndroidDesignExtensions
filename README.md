@@ -350,6 +350,7 @@ A set of 320+ UI extensions for Xojo Android framework.
 * SetFallbackLineSpacingXC
 * SetFirstBaselineToTopHeightXC
 * SetGravityXC
+* SetHintXC
 * SetHorizontallyScrollingXC
 * SetHyphenationFrequencyXC
 * SetImeOptionsXC

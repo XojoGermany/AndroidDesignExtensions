@@ -517,6 +517,23 @@ Protected Module TextArea
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 5365747320746865207465787420746F20626520646973706C61796564207768656E207468652074657874206F662074686520546578745669657720697320656D7074792E
+		Sub SetHintXC(Extends ctrl As MobileTextArea, hint As String)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHint Lib "Object:ctrl:MobileTextArea" (myHint As CString)
+		    setHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 5365747320776865746865722074686520746578742073686F756C6420626520616C6C6F77656420746F206265207769646572207468616E2074686520566965772069732E2049662066616C73652C2069742077696C6C206265207772617070656420746F20746865207769647468206F662074686520566965772E
 		Sub SetHorizontallyScrollingXC(Extends ctrl As MobileTextArea, whether As Boolean)
 		  #Pragma Unused ctrl
