@@ -141,6 +141,14 @@ Inherits MobileApplication
 			Type="Color"
 			EditorType=""
 		#tag EndViewProperty
+		#tag ViewProperty
+			Name="BackgroundMode"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
 	#tag EndViewBehavior
 End Class
 #tag EndClass
