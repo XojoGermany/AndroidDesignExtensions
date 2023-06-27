@@ -4,7 +4,7 @@ Begin MobileContainer ControlContainer
    AccessibilityLabel=   ""
    Compatibility   =   ""
    Enabled         =   True
-   Height          =   454
+   Height          =   588
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -23,7 +23,7 @@ Begin MobileContainer ControlContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   414
+      Top             =   524
       Visible         =   True
       Width           =   360
    End
@@ -64,7 +64,7 @@ Begin MobileContainer ControlContainer
       Top             =   30
       Value           =   0.0
       Visible         =   True
-      Width           =   200
+      Width           =   210
    End
    Begin MobileLabel DegreeLabel
       AccessibilityHint=   ""
@@ -123,7 +123,7 @@ Begin MobileContainer ControlContainer
       Top             =   68
       Value           =   100.0
       Visible         =   True
-      Width           =   200
+      Width           =   210
    End
    Begin MobileLabel AlphaPercentageLabel
       AccessibilityHint=   ""
@@ -202,7 +202,7 @@ Begin MobileContainer ControlContainer
       Top             =   110
       Value           =   100.0
       Visible         =   True
-      Width           =   200
+      Width           =   210
    End
    Begin MobileLabel PlaygroundLabel
       AccessibilityHint=   ""
@@ -220,9 +220,9 @@ Begin MobileContainer ControlContainer
       Scope           =   2
       Text            =   "Playground"
       TextColor       =   &c00000000
-      Top             =   203
+      Top             =   244
       Visible         =   True
-      Width           =   146
+      Width           =   137
    End
    Begin MobileButton PlaygroundButton
       AccessibilityHint=   ""
@@ -231,14 +231,14 @@ Begin MobileContainer ControlContainer
       CaptionColor    =   &cFFFFFF00
       Enabled         =   True
       Height          =   44
-      Left            =   93
+      Left            =   92
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   301
+      Top             =   358
       Visible         =   True
       Width           =   175
    End
@@ -299,7 +299,66 @@ Begin MobileContainer ControlContainer
       Top             =   152
       Value           =   100.0
       Visible         =   True
-      Width           =   200
+      Width           =   210
+   End
+   Begin MobileLabel ElevationLabel
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   0
+      Enabled         =   True
+      Height          =   28
+      Left            =   20
+      LineBreakMode   =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   False
+      Scope           =   2
+      Text            =   "Elevation"
+      TextColor       =   &c00000000
+      Top             =   200
+      Visible         =   True
+      Width           =   72
+   End
+   Begin MobileLabel ElevationValueLabel
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   2
+      Enabled         =   True
+      Height          =   28
+      Left            =   298
+      LineBreakMode   =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Text            =   "0"
+      TextColor       =   &c00000000
+      Top             =   200
+      Visible         =   True
+      Width           =   42
+   End
+   Begin MobileSlider ElevationSlider
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   30
+      Left            =   90
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      MaximumValue    =   400.0
+      MinimumValue    =   0.0
+      Scope           =   2
+      Top             =   194
+      Value           =   0.0
+      Visible         =   True
+      Width           =   210
    End
 End
 #tag EndMobileContainer
@@ -349,6 +408,20 @@ End
 		  ScaleYPercentageLabel.Text = Me.Value.ToString + "%"
 		  
 		  PlaygroundButton.SetScaleYXC(Me.Value / 100)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events ElevationSlider
+	#tag Event
+		Sub ValueChanged()
+		  ElevationValueLabel.Text = Me.Value.ToString
+		  
+		  PlaygroundButton.SetElevationXC(Me.Value)
+		End Sub
+	#tag EndEvent
+	#tag Event
+		Sub Opening()
+		  Me.Value = PlaygroundButton.GetElevationXC
 		End Sub
 	#tag EndEvent
 #tag EndEvents

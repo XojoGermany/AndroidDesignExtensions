@@ -1,6 +1,110 @@
 #tag Module
 Protected Module Button
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
+	#tag Method, Flags = &h0, Description = 476574732074686520636F726E65722072616469757320666F72207468697320627574746F6E2E
+		Function GetCornerRadiusXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getCornerRadius Lib "Object:ctrl:MobileButton" As Integer
+		    Return getCornerRadius
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 476574732074686520636F726E65722072616469757320666F72207468697320627574746F6E2E
+		Function GetCornerRadiusXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getCornerRadius Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getCornerRadius
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 476574732074686520626F74746F6D20696E73657420666F72207468697320627574746F6E2E
+		Function GetInsetBottomXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getInsetBottom Lib "Object:ctrl:MobileButton" As Integer
+		    Return getInsetBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 476574732074686520626F74746F6D20696E73657420666F72207468697320627574746F6E2E
+		Function GetInsetBottomXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getInsetBottom Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getInsetBottom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 476574732074686520746F7020696E73657420666F72207468697320627574746F6E2E
+		Function GetInsetTopXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getInsetTop Lib "Object:ctrl:MobileButton" As Integer
+		    Return getInsetTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 476574732074686520746F7020696E73657420666F72207468697320627574746F6E2E
+		Function GetInsetTopXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getInsetTop Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getInsetTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320746865207374726F6B6520776964746820666F72207468697320627574746F6E2E
+		Function GetStrokeWidthXC(Extends ctrl As MobileButton) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getStrokeWidth Lib "Object:ctrl:MobileButton" As Integer
+		    Return getStrokeWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320746865207374726F6B6520776964746820666F72207468697320627574746F6E2E
+		Function GetStrokeWidthXC(Extends ctrl As MobileDateTimePicker) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getStrokeWidth Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Return getStrokeWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 536574732074686520636F726E65722072616469757320666F72207468697320627574746F6E2E
 		Sub SetCornerRadiusXC(Extends ctrl As MobileButton, radius As Integer)
 		  #Pragma Unused ctrl
