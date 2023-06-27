@@ -214,7 +214,7 @@ Protected Module Button
 		  #If TargetAndroid
 		    
 		    Declare Sub setShadowLayer Lib "Object:ctrl:MobileButton" (myRadius As Single, mydX As Single, mydY As Single, myColor As Integer)
-		    setShadowLayer(radius, dX, dX, c.ToInteger)
+		    setShadowLayer(radius, dX, dY, c.ToInteger)
 		    
 		  #Else
 		    
@@ -234,7 +234,7 @@ Protected Module Button
 		  #If TargetAndroid
 		    
 		    Declare Sub setShadowLayer Lib "Object:ctrl:MobileDateTimePicker" (myRadius As Single, mydX As Single, mydY As Single, myColor As Integer)
-		    setShadowLayer(radius, dX, dX, c.ToInteger)
+		    setShadowLayer(radius, dX, dY, c.ToInteger)
 		    
 		  #Else
 		    

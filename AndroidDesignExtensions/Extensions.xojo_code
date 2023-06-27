@@ -950,6 +950,8 @@ Protected Module Extensions
 		      
 		      Var cc As  MobileContainer = MobileContainer(ctrl)
 		      
+		      #Pragma Unused cc
+		      
 		      Declare Sub setBackgroundColor Lib "Object:cc:MobileContainer" Alias "getView()!!.setBackgroundColor" (myColor As Integer)
 		      setBackgroundColor(c.ToInteger)
 		      

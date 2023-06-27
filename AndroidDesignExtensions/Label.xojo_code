@@ -8,7 +8,7 @@ Protected Module Label
 		  #If TargetAndroid
 		    
 		    Declare Sub setShadowLayer Lib "Object:ctrl:MobileLabel" (myRadius As Single, mydX As Single, mydY As Single, myColor As Integer)
-		    setShadowLayer(radius, dX, dX, c.ToInteger)
+		    setShadowLayer(radius, dX, dY, c.ToInteger)
 		    
 		  #Else
 		    
