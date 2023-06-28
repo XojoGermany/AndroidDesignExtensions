@@ -311,6 +311,22 @@ Begin MobileContainer FontContainer
       Visible         =   True
       Width           =   300
    End
+   Begin MobileCanvas FixBottomPaddingCanvas
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   22
+      Left            =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   735
+      Visible         =   True
+      Width           =   360
+   End
 End
 #tag EndMobileContainer
 

@@ -274,6 +274,19 @@ Protected Module HTMLViewer
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 4765747320746865206375727369766520666F6E742066616D696C79206E616D652E
+		Function GetCursiveFontFamilyXC(Extends ctrl As MobileHTMLViewer) As String
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getCursiveFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getCursiveFontFamily" As CString
+		    Return getCursiveFontFamily
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 47657473207468652064656661756C7420666978656420666F6E742073697A65202861206E6F6E2D6E6567617469766520696E7465676572206265747765656E203120616E64203732292E
 		Function GetDefaultFixedFontSizeXC(Extends ctrl As MobileHTMLViewer) As Integer
 		  #Pragma Unused ctrl
@@ -295,6 +308,19 @@ Protected Module HTMLViewer
 		    
 		    Declare Function getDefaultFontSize Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getDefaultFontSize" As Integer
 		    Return getDefaultFontSize
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 47657473207468652064656661756C74207465787420656E636F64696E67206E616D652E
+		Function GetDefaultTextEncodingNameXC(Extends ctrl As MobileHTMLViewer) As String
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDefaultTextEncodingName Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getDefaultTextEncodingName" As CString
+		    Return getDefaultTextEncodingName
 		    
 		  #EndIf
 		End Function
@@ -334,6 +360,32 @@ Protected Module HTMLViewer
 		    
 		    Declare Function getDomStorageEnabled Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getDomStorageEnabled" As Boolean
 		    Return getDomStorageEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 47657473207468652066616E7461737920666F6E742066616D696C79206E616D652E
+		Function GetFantasyFontFamilyXC(Extends ctrl As MobileHTMLViewer) As String
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getFantasyFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getFantasyFontFamily" As CString
+		    Return getFantasyFontFamily
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 476574732074686520666978656420666F6E742066616D696C79206E616D652E
+		Function GetFixedFontFamilyXC(Extends ctrl As MobileHTMLViewer) As String
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getFixedFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getFixedFontFamily" As CString
+		    Return getFixedFontFamily
 		    
 		  #EndIf
 		End Function
@@ -456,6 +508,19 @@ Protected Module HTMLViewer
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 4765747320746865206F726967696E616C2055524C20666F72207468652063757272656E7420706167652E2054686973206973206E6F7420616C77617973207468652073616D65206173207468652055524C2070617373656420746F2057656256696577436C69656E742E6F6E5061676553746172746564206265636175736520616C74686F75676820746865206C6F616420666F7220746861742055524C2068617320626567756E2C207468652063757272656E742070616765206D6179206E6F742068617665206368616E6765642E20416C736F2C207468657265206D61792068617665206265656E2072656469726563747320726573756C74696E6720696E206120646966666572656E742055524C20746F2074686174206F726967696E616C6C79207265717565737465642E
+		Function GetOriginalUrlXC(Extends ctrl As MobileHTMLViewer) As String
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOriginalUrl Lib "Object:ctrl:MobileHTMLViewer" As CString
+		    Return getOriginalUrl
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 47657473207468652070726F677265737320666F72207468652063757272656E7420706167652E
 		Function GetProgressXC(Extends ctrl As MobileHTMLViewer) As Integer
 		  #Pragma Unused ctrl
@@ -499,6 +564,45 @@ Protected Module HTMLViewer
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 47657473207468652073616E732D736572696620666F6E742066616D696C79206E616D652E
+		Function GetSansSerifFontFamilyXC(Extends ctrl As MobileHTMLViewer) As String
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getSansSerifFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getSansSerifFontFamily" As CString
+		    Return getSansSerifFontFamily
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 476574732074686520736572696620666F6E742066616D696C79206E616D652E205468652064656661756C7420697320227365726966222E
+		Function GetSerifFontFamilyXC(Extends ctrl As MobileHTMLViewer) As String
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getSerifFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getSerifFontFamily" As CString
+		    Return getSerifFontFamily
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320746865207374616E6461726420666F6E742066616D696C79206E616D652E
+		Function GetStandardFontFamilyXC(Extends ctrl As MobileHTMLViewer) As String
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getStandardFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getStandardFontFamily" As CString
+		    Return getStandardFontFamily
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 47657473207468652074657874207A6F6F6D206F6620746865207061676520696E2070657263656E742E
 		Function GetTextZoomXC(Extends ctrl As MobileHTMLViewer) As Integer
 		  #Pragma Unused ctrl
@@ -507,6 +611,45 @@ Protected Module HTMLViewer
 		    
 		    Declare Function getTextZoom Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getTextZoom()" As Integer
 		    Return getTextZoom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765747320746865207469746C6520666F72207468652063757272656E7420706167652E205468697320697320746865207469746C65206F66207468652063757272656E74207061676520756E74696C2057656256696577436C69656E742E6F6E52656365697665645469746C652069732063616C6C65642E
+		Function GetTitleXC(Extends ctrl As MobileHTMLViewer) As String
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTitle Lib "Object:ctrl:MobileHTMLViewer" As CString
+		    Return getTitle
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 47657473207468652055524C20666F72207468652063757272656E7420706167652E2054686973206973206E6F7420616C77617973207468652073616D65206173207468652055524C2070617373656420746F2057656256696577436C69656E742E6F6E5061676553746172746564206265636175736520616C74686F75676820746865206C6F616420666F7220746861742055524C2068617320626567756E2C207468652063757272656E742070616765206D6179206E6F742068617665206368616E6765642E
+		Function GetUrlXC(Extends ctrl As MobileHTMLViewer) As String
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUrl Lib "Object:ctrl:MobileHTMLViewer" As CString
+		    Return getUrl
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 47657473207468652057656256696577277320757365722D6167656E7420737472696E672E
+		Function GetUserAgentStringXC(Extends ctrl As MobileHTMLViewer) As String
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getUserAgentString Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getUserAgentString" As CString
+		    Return getUserAgentString
 		    
 		  #EndIf
 		End Function

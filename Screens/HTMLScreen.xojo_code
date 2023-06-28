@@ -232,12 +232,6 @@ End
 #tag EndMobileScreen
 
 #tag ScreenCode
-	#tag Event
-		Sub Opening()
-		End Sub
-	#tag EndEvent
-
-
 #tag EndScreenCode
 
 #tag Events NavigationBarContainer1
@@ -308,6 +302,7 @@ End
 		    LoadProgress.Visible = True
 		    LoadTimer.RunMode = Timer.RunModes.Multiple
 		    HTMLViewer1.GoBackXC
+		    Search.Text = HTMLViewer1.GetOriginalUrlXC
 		    
 		  End If
 		  
@@ -330,6 +325,7 @@ End
 		    LoadProgress.Visible = True
 		    LoadTimer.RunMode = Timer.RunModes.Multiple
 		    HTMLViewer1.GoForwardXC
+		    Search.Text = HTMLViewer1.GetOriginalUrlXC
 		    
 		  End If
 		  
