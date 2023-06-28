@@ -135,6 +135,7 @@ A set of 360+ UI extensions for Xojo Android framework.
 * SetVerticalFadingEdgeEnabledXC
 * SetVerticalScrollBarEnabledXC
 * SetVerticalScrollBarPositionXC
+* ToStringXC
 
 ### AndroidMobileTable
 * PointToRowIDXC
@@ -163,6 +164,8 @@ A set of 360+ UI extensions for Xojo Android framework.
 * SetShadowLayerXC
 
 ### MobileContainer
+* GetCurrentFocusedControlXC
+* GetCurrentFocusIDXC
 * SetBackgroundColorXC
 * SetOutlineSpotShadowColorXC
 

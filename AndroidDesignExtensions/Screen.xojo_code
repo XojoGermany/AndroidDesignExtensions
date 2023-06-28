@@ -1,7 +1,37 @@
 #tag Module
 Protected Module Screen
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
-	#tag Method, Flags = &h0, Description = 52657475726E207468652063757272656E7420726571756573746564206F7269656E746174696F6E206F66207468652061637469766974792E20546869732077696C6C2065697468657220626520746865206F7269656E746174696F6E2072657175657374656420696E2069747320636F6D706F6E656E742773206D616E69666573742C206F7220746865206C61737420726571756573746564206F7269656E746174696F6E20676976656E20746F207365745265717565737465644F7269656E746174696F6E28696E74292E
+	#tag Method, Flags = &h0
+		Function GetCurrentFocusedControlXC(Extends myScreen As MobileScreen) As MobileUIControl
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Var iCurrentFocusObjID As Integer = myScreen.GetCurrentFocusIDXC
+		    Var iObjID As Integer
+		    
+		    For Each obj As MobileControl In myScreen.Controls
+		      
+		      '  Check for MobileUIControl
+		      If Not (obj IsA MobileUIControl) Then Continue
+		      
+		      iObjID = MobileUIControl(obj).GetIDXC
+		      
+		      If iCurrentFocusObjID = iObjID Then
+		        
+		        Return MobileUIControl(obj)
+		        
+		      End If
+		      
+		    Next
+		    
+		    Return Nil
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E7420666F637573656420766965772773206964656E7469666965722E
 		Function GetCurrentFocusIDXC(Extends myScreen As MobileScreen) As Integer
 		  #Pragma Unused myScreen
 		  

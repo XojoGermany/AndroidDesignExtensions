@@ -471,6 +471,23 @@ End
 #tag EndMobileContainer
 
 #tag ScreenCode
+	#tag Event
+		Sub Opening()
+		  For Each ctrl As MobileControl In Self.Controls
+		    
+		    If Not (ctrl IsA MobileUIControl) Then Continue
+		    
+		    If ctrl IsA MobileButton Then
+		      
+		      MobileButton(ctrl).SetElevationXC(0)
+		      
+		    End If
+		    
+		  Next
+		End Sub
+	#tag EndEvent
+
+
 	#tag Property, Flags = &h21
 		Private CheckBoxPic As Picture
 	#tag EndProperty
