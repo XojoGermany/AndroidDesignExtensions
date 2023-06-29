@@ -3,12 +3,24 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
 # AndroidDesignExtensions
-A set of 360+ UI extensions for Xojo Android framework.
+A set of 400+ UI extensions for Xojo Android framework.
 
 ## Currently implemented extensions
 
 ### Device
 * GetUidXC
+
+### MobileApplication
+* ClassNameXC
+* DataDirXC
+* DeviceProtectedDataDirXC
+* MinSdkVersionXC
+* NativeLibraryDirXC
+* ProcessNameXC
+* PublicSourceDirXC
+* SourceDirXC
+* TargetSdkVersionXC
+* UidXC
 
 ### All MobileUIControls
 * BringToFrontXC
