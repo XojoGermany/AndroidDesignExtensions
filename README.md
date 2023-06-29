@@ -7,6 +7,9 @@ A set of 360+ UI extensions for Xojo Android framework.
 
 ## Currently implemented extensions
 
+### Device
+* GetUidXC
+
 ### All MobileUIControls
 * BringToFrontXC
 * GetAlphaXC

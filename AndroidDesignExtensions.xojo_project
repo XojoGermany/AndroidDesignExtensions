@@ -28,6 +28,7 @@ MobileScreen=TableScreen;Screens/TableScreen.xojo_code;&h00000000419F9FFF;&h0000
 MobileScreen=TabPanelScreen;Screens/TabPanelScreen.xojo_code;&h000000005B27F7FF;&h000000005B965FFF;false
 Module=Button;AndroidDesignExtensions/Button.xojo_code;&h0000000033503FFF;&h000000004BEA7FFF;false
 Module=Container;AndroidDesignExtensions/Container.xojo_code;&h00000000696C97FF;&h000000004BEA7FFF;false
+Module=Device;AndroidDesignExtensions/Device.xojo_code;&h000000006343FFFF;&h000000004BEA7FFF;false
 Module=Extensions;AndroidDesignExtensions/Extensions.xojo_code;&h000000006782AFFF;&h000000004BEA7FFF;false
 Module=HTMLViewer;AndroidDesignExtensions/HTMLViewer.xojo_code;&h00000000594D07FF;&h000000004BEA7FFF;false
 Module=ImageViewer;AndroidDesignExtensions/ImageViewer.xojo_code;&h000000002435A7FF;&h000000004BEA7FFF;false
