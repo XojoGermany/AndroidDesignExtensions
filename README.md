@@ -138,6 +138,11 @@ A set of 360+ UI extensions for Xojo Android framework.
 * ToStringXC
 
 ### AndroidMobileTable
+* GetFirstVisiblePositionXC
+* GetItemIdAtPositionXC
+* GetLastVisiblePositionXC
+* GetSelectedItemIdXC
+* GetSelectedItemPositionXC
 * PointToRowIDXC
 * ScrollListByXC
 * SetChoiceModeXC
@@ -151,6 +156,7 @@ A set of 360+ UI extensions for Xojo Android framework.
 * SetStackFromBottomXC
 * SmoothScrollByXC
 * SmoothScrollToPositionXC
+* StartLayoutAnimationXC
 
 ### MobileButton / MobileDateTimePicker
 * GetCornerRadiusXC

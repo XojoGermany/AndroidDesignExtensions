@@ -1,6 +1,71 @@
 #tag Module
 Protected Module Table
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520706F736974696F6E2077697468696E207468652061646170746572277320646174612073657420666F7220746865206669727374206974656D20646973706C61796564206F6E2073637265656E2E
+		Function GetFirstVisiblePositionXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getFirstVisiblePosition Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getFirstVisiblePosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Function GetItemIdAtPositionXC(Extends ctrl As AndroidMobileTable, position As Integer) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getItemIdAtPosition Lib "Object:ctrl:AndroidMobileTable" (myPosition As Integer) As Int64
+		    Return getItemIdAtPosition(position)
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520706F736974696F6E2077697468696E207468652061646170746572277320646174612073657420666F7220746865206C617374206974656D20646973706C61796564206F6E2073637265656E2E
+		Function GetLastVisiblePositionXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLastVisiblePosition Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getLastVisiblePosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 54686520696420636F72726573706F6E64696E6720746F207468652063757272656E746C792073656C6563746564206974656D2C206F7220494E56414C49445F524F575F4944206966206E6F7468696E672069732073656C65637465642E
+		Function GetSelectedItemIdXC(Extends ctrl As AndroidMobileTable) As Int64
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getSelectedItemId Lib "Object:ctrl:AndroidMobileTable" As Int64
+		    Return getSelectedItemId
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E2074686520706F736974696F6E206F66207468652063757272656E746C792073656C6563746564206974656D2077697468696E2074686520616461707465722773206461746120736574207374617274696E6720617420302C206F7220494E56414C49445F504F534954494F4E206966207468657265206973206E6F7468696E672073656C65637465642E
+		Function GetSelectedItemPositionXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getSelectedItemPosition Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getSelectedItemPosition
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 4D617073206120706F696E7420746F20612074686520726F776C64206F6620746865206974656D20776869636820696E7465727365637473207468617420706F696E742E0A0A54686520726F776C64206F6620746865206974656D20776869636820636F6E7461696E73207468652073706563696669656420706F696E742C206F722041646170746572566965772E20494E56414C49445F20524F575F49442069662074686520706F696E7420646F6573206E6F7420696E7465727365637420616E206974656D2E
 		Function PointToRowIDXC(Extends ctrl As AndroidMobileTable, x As Integer, y As Integer) As Int64
 		  #Pragma Unused ctrl
@@ -221,6 +286,19 @@ Protected Module Table
 		  #Else
 		    
 		    #Pragma Unused position
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52756E7320746865206C61796F757420616E696D6174696F6E2E2043616C6C696E672074686973206D6574686F6420747269676765727320612072656C61796F7574206F66207468697320766965772067726F75702E
+		Sub StartLayoutAnimationXC(Extends ctrl As AndroidMobileTable)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub startLayoutAnimation Lib "Object:ctrl:AndroidMobileTable"
+		    startLayoutAnimation
 		    
 		  #EndIf
 		End Sub
