@@ -24,6 +24,12 @@ A set of 400+ UI extensions for Xojo Android framework.
 
 ### All MobileUIControls
 * BringToFrontXC
+* CancelLongPressXC
+* CanResolveLayoutDirectionXC
+* CanResolveTextAlignmentXC
+* CanResolveTextDirectionXC
+* CanScrollHorizontallyXC
+* CanScrollVerticallyXC
 * GetAlphaXC
 * GetBaselineXC
 * GetDefaultFocusHighlightEnabledXC

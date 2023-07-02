@@ -14,6 +14,92 @@ Protected Module Extensions
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 43616E63656C7320612070656E64696E67206C6F6E672070726573732E20596F757220737562636C6173732063616E20757365207468697320696620796F752077616E742074686520636F6E74657874206D656E7520746F20636F6D65207570206966207468652075736572207072657373657320616E6420686F6C6473206174207468652073616D6520706C6163652C2062757420796F7520646F6E27742077616E7420697420746F20636F6D65207570206966207468657920707265737320616E64207468656E206D6F76652061726F756E6420656E6F75676820746F206361757365207363726F6C6C696E672E
+		Sub CancelLongPressXC(Extends ctrl As MobileUIControl)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub cancelLongPress Lib "Object:ctrl:MobileUIControl"
+		    cancelLongPress
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436865636B206966206C61796F757420646972656374696F6E207265736F6C7574696F6E2063616E20626520646F6E652E
+		Function CanResolveLayoutDirectionXC(Extends ctrl As MobileUIControl) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function canResolveLayoutDirection Lib "Object:ctrl:MobileUIControl" As Boolean
+		    Return canResolveLayoutDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436865636B206966207465787420616C69676E6D656E74207265736F6C7574696F6E2063616E20626520646F6E652E
+		Function CanResolveTextAlignmentXC(Extends ctrl As MobileUIControl) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function canResolveTextAlignment Lib "Object:ctrl:MobileUIControl" As Boolean
+		    Return canResolveTextAlignment
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436865636B206966207465787420646972656374696F6E207265736F6C7574696F6E2063616E20626520646F6E652E
+		Function CanResolveTextDirectionXC(Extends ctrl As MobileUIControl) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function canResolveTextDirection Lib "Object:ctrl:MobileUIControl" As Boolean
+		    Return canResolveTextDirection
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436865636B206966207468697320766965772063616E206265207363726F6C6C656420686F72697A6F6E74616C6C7920696E2061206365727461696E20646972656374696F6E2E0A0A5468697320697320776974686F75742072656761726420746F207768657468657220746865207669657720697320656E61626C6564206F72206E6F742C206F722069662069742077696C6C207363726F6C6C20696E20726573706F6E736520746F207573657220696E707574206F72206E6F742E
+		Function CanScrollHorizontallyXC(Extends ctrl As MobileUIControl, direction As Integer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function canScrollHorizontally Lib "Object:ctrl:MobileUIControl" (myDirection As Integer) As Boolean
+		    Return canScrollHorizontally(direction)
+		    
+		  #Else
+		    
+		    #Pragma Unused direction
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436865636B206966207468697320766965772063616E206265207363726F6C6C656420766572746963616C6C7920696E2061206365727461696E20646972656374696F6E2E0A0A5468697320697320776974686F75742072656761726420746F207768657468657220746865207669657720697320656E61626C6564206F72206E6F742C206F722069662069742077696C6C207363726F6C6C20696E20726573706F6E736520746F207573657220696E707574206F72206E6F742E
+		Function CanScrollVerticallyXC(Extends ctrl As MobileUIControl, direction As Integer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function canScrollVertically Lib "Object:ctrl:MobileUIControl" (myDirection As Integer) As Boolean
+		    Return canScrollVertically(direction)
+		    
+		  #Else
+		    
+		    #Pragma Unused direction
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 546865206F706163697479206F662074686520766965772E205468697320697320612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E0A0A42792064656661756C74207468697320697320312E302E
 		Function GetAlphaXC(Extends ctrl As MobileUIControl) As Single
 		  #Pragma Unused ctrl
