@@ -28,7 +28,7 @@ Begin MobileContainer TextAreaContainer
       SelectedText    =   ""
       SelectionLength =   0
       SelectionStart  =   0
-      Text            =   "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+      Text            =   "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. www.xojo.com At vero eos et accusam et justo duo dolores et ea rebum. noreply@xojo.com Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
       TextColor       =   &c00000000
       Top             =   101
       Visible         =   True
@@ -451,6 +451,8 @@ End
 #tag Events DefaultArea
 	#tag Event
 		Sub Opening()
+		  Me.SetAutoLinkMaskXC(AutoLinkMaskXC.All)
+		  Me.SetLinkTextColorXC(Color.Red)
 		  Me.SetBackgroundColorXC(Color.Clear)
 		  Me.SetHighlightColorXC(&cFF2F9200)
 		  Me.SetErrorXC("Error Description 💩")

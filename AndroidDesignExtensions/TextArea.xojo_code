@@ -1,6 +1,19 @@
 #tag Module
 Protected Module TextArea
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
+	#tag Method, Flags = &h0, Description = 4765747320746865206175746F6C696E6B206D61736B206F662074686520746578742E
+		Function GetAutoLinkMaskXC(Extends ctrl As MobileTextArea) As AutoLinkMaskXC
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getAutoLinkMask Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return AutoLinkMaskXC(getAutoLinkMask)
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 47657473207468652063757272656E7420737472617465677920666F7220627265616B696E67207061726167726170687320696E746F206C696E65732E
 		Function GetBreakStrategyXC(Extends ctrl As MobileTextArea) As Integer
 		  #Pragma Unused ctrl
@@ -239,6 +252,19 @@ Protected Module TextArea
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746865206D6F76656D656E74206D6574686F642077696C6C206175746F6D61746963616C6C792062652073657420746F204C696E6B4D6F76656D656E744D6574686F64206966207365744175746F4C696E6B4D61736B28696E742920686173206265656E2073657420746F206E6F6E7A65726F20616E64206C696E6B732061726520646574656374656420696E207365745465787428636861722C20696E742C20696E74292E205468652064656661756C7420697320747275652E
+		Function GetLinksClickableXC(Extends ctrl As MobileTextArea) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLinksClickable Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Return getLinksClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 476574732074686520666C616773206F6E20746865205061696E74206265696E67207573656420746F20646973706C61792074686520746578742E
 		Function GetPaintFlagsXC(Extends ctrl As MobileTextArea) As Integer
 		  #Pragma Unused ctrl
@@ -365,16 +391,17 @@ Protected Module TextArea
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 5365747320746865206175746F6C696E6B206D61736B206F662074686520746578742E20536565204C696E6B6966792E414C4C20616E6420706565727320666F7220706F737369626C652076616C7565732E
-		Sub SetAutoLinkMaskXC(Extends ctrl As MobileTextArea, mask As Integer)
-		  #Pragma Unused ctrl
-		  
+		Sub SetAutoLinkMaskXC(Extends ctrl As MobileTextArea, mask As AutoLinkMaskXC)
 		  #If TargetAndroid
 		    
 		    Declare Sub setAutoLinkMask Lib "Object:ctrl:MobileTextArea" (myMask As Integer)
-		    setAutoLinkMask(mask)
+		    setAutoLinkMask(Integer(mask))
+		    
+		    ctrl.Text = ctrl.Text ' otherwise Links won't shown
 		    
 		  #Else
 		    
+		    #Pragma Unused ctrl
 		    #Pragma Unused mask
 		    
 		  #EndIf
@@ -891,6 +918,15 @@ Protected Module TextArea
 		End Sub
 	#tag EndMethod
 
+
+	#tag Enum, Name = AutoLinkMaskXC, Type = Integer, Flags = &h0
+		None = 0
+		  Web = 1
+		  eMail = 2
+		  Phone = 4
+		  Map = 8
+		All = 15
+	#tag EndEnum
 
 	#tag Enum, Name = BreakStrategyXC, Type = Integer, Flags = &h0
 		Simple = 0

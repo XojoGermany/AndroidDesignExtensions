@@ -395,6 +395,7 @@ A set of 400+ UI extensions for Xojo Android framework.
 * SetShowSoftInputOnFocusXC
 
 ### MobileTextArea
+* GetAutoLinkMaskXC
 * GetBreakStrategyXC
 * GetCompoundDrawablePaddingXC
 * GetCompoundPaddingBottomXC
@@ -412,6 +413,7 @@ A set of 400+ UI extensions for Xojo Android framework.
 * GetLastBaselineToBottomHeightXC
 * GetLineCountXC
 * GetLineHeightXC
+* GetLinksClickableXC
 * GetPaintFlagsXC
 * GetShowSoftInputOnFocusXC
 * GetTotalPaddingBottomXC
