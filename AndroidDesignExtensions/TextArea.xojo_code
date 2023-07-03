@@ -14,6 +14,19 @@ Protected Module TextArea
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206E756D626572206F6620657874726120706978656C73206F662064657363656E742070616464696E6720696E2074686520626F74746F6D206C696E65206F6620746865204C61796F75742E
+		Function GetBottomPaddingXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getBottomPadding Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getBottomPadding" As Integer
+		    Return getBottomPadding
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 47657473207468652063757272656E7420737472617465677920666F7220627265616B696E67207061726167726170687320696E746F206C696E65732E
 		Function GetBreakStrategyXC(Extends ctrl As MobileTextArea) As Integer
 		  #Pragma Unused ctrl
@@ -226,6 +239,74 @@ Protected Module TextArea
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 4765742074686520617363656E74206F66207468652074657874206F6E2074686520737065636966696564206C696E652E205468652072657475726E2076616C7565206973206E6567617469766520746F206D6174636820746865205061696E742E617363656E74282920636F6E76656E74696F6E2E
+		Function GetLineAscentXC(Extends ctrl As MobileTextArea, line As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLineAscent Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineAscent" (myLine As Integer) As Integer
+		    Return getLineAscent(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E2074686520766572746963616C20706F736974696F6E206F662074686520626173656C696E65206F662074686520737065636966696564206C696E652E
+		Function GetLineBaselineXC(Extends ctrl As MobileTextArea, line As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLineBaseline Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineBaseline" (myLine As Integer) As Integer
+		    Return getLineBaseline(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E2074686520766572746963616C20706F736974696F6E206F662074686520626F74746F6D206F662074686520737065636966696564206C696E652E
+		Function GetLineBottomXC(Extends ctrl As MobileTextArea, line As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLineBottom Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineBottom" (myLine As Integer) As Integer
+		    Return getLineBottom(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320776865746865722074686520737065636966696564206C696E6520636F6E7461696E73206F6E65206F72206D6F726520636861726163746572732074686174206E65656420746F2062652068616E646C6564207370656369616C6C792C206C696B6520746162732E
+		Function GetLineContainsTabXC(Extends ctrl As MobileTextArea, line As Integer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLineContainsTab Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineContainsTab" (myLine As Integer) As Boolean
+		    Return getLineContainsTab(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52657475726E20746865206E756D626572206F66206C696E6573206F6620746578742C206F7220302069662074686520696E7465726E616C204C61796F757420686173206E6F74206265656E206275696C742E
 		Function GetLineCountXC(Extends ctrl As MobileTextArea) As Integer
 		  #Pragma Unused ctrl
@@ -234,6 +315,74 @@ Protected Module TextArea
 		    
 		    Declare Function getLineCount Lib "Object:ctrl:MobileTextArea" As Integer
 		    Return getLineCount
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652064657363656E74206F662074686520737065636966696564206C696E652830E280A66765744C696E65436F756E742829202D2031292E
+		Function GetLineDescentXC(Extends ctrl As MobileTextArea, line As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLineDescent Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineDescent" (myLine As Integer) As Integer
+		    Return getLineDescent(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074657874206F666673657420616674657220746865206C61737420636861726163746572206F6E2074686520737065636966696564206C696E652E
+		Function GetLineEndXC(Extends ctrl As MobileTextArea, line As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLineEnd Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineEnd" (myLine As Integer) As Integer
+		    Return getLineEnd(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 47657420746865206C696E65206E756D626572206F6E20776869636820746865207370656369666965642074657874206F666673657420617070656172732E20496620796F752061736B20666F72206120706F736974696F6E206265666F726520302C20796F752067657420303B20696620796F752061736B20666F72206120706F736974696F6E206265796F6E642074686520656E64206F662074686520746578742C20796F752067657420746865206C617374206C696E652E
+		Function GetLineForOffsetXC(Extends ctrl As MobileTextArea, line As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLineForOffset Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineForOffset" (myLine As Integer) As Integer
+		    Return getLineForOffset(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 47657420746865206C696E65206E756D62657220636F72726573706F6E64696E6720746F207468652073706563696669656420766572746963616C20706F736974696F6E2E20496620796F752061736B20666F72206120706F736974696F6E2061626F766520302C20796F752067657420303B20696620796F752061736B20666F72206120706F736974696F6E2062656C6F772074686520626F74746F6D206F662074686520746578742C20796F752067657420746865206C617374206C696E652E
+		Function GetLineForVerticalXC(Extends ctrl As MobileTextArea, vertical As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLineForVertical Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineForVertical" (myVertical As Integer) As Integer
+		    Return getLineForVertical(vertical)
+		    
+		  #Else
+		    
+		    #Pragma Unused vertical
 		    
 		  #EndIf
 		End Function
@@ -252,6 +401,125 @@ Protected Module TextArea
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 47657420746865206C6566746D6F737420706F736974696F6E20746861742073686F756C64206265206578706F73656420666F7220686F72697A6F6E74616C207363726F6C6C696E67206F6E2074686520737065636966696564206C696E652E
+		Function GetLineLeftXC(Extends ctrl As MobileTextArea, line As Integer) As Single
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLineLeft Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineLeft" (myLine As Integer) As Single
+		    Return getLineLeft(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 476574207468652072696768746D6F737420706F736974696F6E20746861742073686F756C64206265206578706F73656420666F7220686F72697A6F6E74616C207363726F6C6C696E67206F6E2074686520737065636966696564206C696E652E
+		Function GetLineMaxXC(Extends ctrl As MobileTextArea, line As Integer) As Single
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLineMax Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineMax" (myLine As Integer) As Single
+		    Return getLineMax(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 476574732074686520756E7369676E656420686F72697A6F6E74616C20657874656E74206F662074686520737065636966696564206C696E652C20696E636C7564696E67206C656164696E67206D617267696E20696E64656E742C20627574206578636C7564696E6720747261696C696E6720776869746573706163652E
+		Function GetLineRightXC(Extends ctrl As MobileTextArea, line As Integer) As Single
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLineRight Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineRight" (myLine As Integer) As Single
+		    Return getLineRight(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074657874206F6666736574206F662074686520626567696E6E696E67206F662074686520737065636966696564206C696E6520282030E280A66765744C696E65436F756E742829292E2049662074686520737065636966696564206C696E6520697320657175616C20746F20746865206C696E6520636F756E742C2072657475726E7320746865206C656E677468206F662074686520746578742E
+		Function GetLineStartXC(Extends ctrl As MobileTextArea, line As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLineStart Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineStart" (myLine As Integer) As Integer
+		    Return getLineStart(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E2074686520766572746963616C20706F736974696F6E206F662074686520746F70206F662074686520737065636966696564206C696E65202830E280A66765744C696E65436F756E742829292E2049662074686520737065636966696564206C696E6520697320657175616C20746F20746865206C696E6520636F756E742C2072657475726E732074686520626F74746F6D206F6620746865206C617374206C696E652E
+		Function GetLineTopXC(Extends ctrl As MobileTextArea, line As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLineTop Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineTop" (myLine As Integer) As Integer
+		    Return getLineTop(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074657874206F666673657420616674657220746865206C6173742076697369626C65206368617261637465722028736F2077686974657370616365206973206E6F7420636F756E74656429206F6E2074686520737065636966696564206C696E652E
+		Function GetLineVisibleEndXC(Extends ctrl As MobileTextArea, line As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLineVisibleEnd Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineVisibleEnd" (myLine As Integer) As Integer
+		    Return getLineVisibleEnd(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 476574732074686520756E7369676E656420686F72697A6F6E74616C20657874656E74206F662074686520737065636966696564206C696E652C20696E636C7564696E67206C656164696E67206D617267696E20696E64656E7420616E6420747261696C696E6720776869746573706163652E
+		Function GetLineWidthXC(Extends ctrl As MobileTextArea, line As Integer) As Single
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLineWidth Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineWidth" (myLine As Integer) As Single
+		    Return getLineWidth(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746865206D6F76656D656E74206D6574686F642077696C6C206175746F6D61746963616C6C792062652073657420746F204C696E6B4D6F76656D656E744D6574686F64206966207365744175746F4C696E6B4D61736B28696E742920686173206265656E2073657420746F206E6F6E7A65726F20616E64206C696E6B732061726520646574656374656420696E207365745465787428636861722C20696E742C20696E74292E205468652064656661756C7420697320747275652E
 		Function GetLinksClickableXC(Extends ctrl As MobileTextArea) As Boolean
 		  #Pragma Unused ctrl
@@ -260,6 +528,58 @@ Protected Module TextArea
 		    
 		    Declare Function getLinksClickable Lib "Object:ctrl:MobileTextArea" As Boolean
 		    Return getLinksClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742074686520636861726163746572206F6666736574206F6E2074686520737065636966696564206C696E652077686F736520706F736974696F6E20697320636C6F7365737420746F207468652073706563696669656420686F72697A6F6E74616C20706F736974696F6E2E
+		Function GetOffsetForHorizontalXC(Extends ctrl As MobileTextArea, line As Integer, horiz As Single) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOffsetForHorizontal Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getOffsetForHorizontal" (myLine As Integer, myHoriz As Single) As Integer
+		    Return getOffsetForHorizontal(line, horiz)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    #Pragma Unused horiz
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Function GetOffsetToLeftOfXC(Extends ctrl As MobileTextArea, line As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOffsetToLeftOf Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getOffsetToLeftOf" (myLine As Integer) As Integer
+		    Return getOffsetToLeftOf(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Function GetOffsetToRightOfXC(Extends ctrl As MobileTextArea, line As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOffsetToRightOf Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getOffsetToRightOf" (myLine As Integer) As Integer
+		    Return getOffsetToRightOf(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
 		    
 		  #EndIf
 		End Function
@@ -278,6 +598,91 @@ Protected Module TextArea
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207072696D61727920646972656374696F6E616C697479206F66207468652070617261677261706820636F6E7461696E696E672074686520737065636966696564206C696E652C20656974686572203120666F72206C6566742D746F2D7269676874206C696E65732C206F72202D3120666F722072696768742D746F2D6C656674206C696E65732028736565204449525F4C4546545F544F5F52494748542C204449525F52494748545F544F5F4C454654292E
+		Function GetParagraphDirectionXC(Extends ctrl As MobileTextArea, line As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getParagraphDirection Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getParagraphDirection" (myLine As Integer) As Integer
+		    Return getParagraphDirection(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 47657420746865206C6566742065646765206F662074686520737065636966696564207061726167726170682C20696E736574206279206C656674206D617267696E732E
+		Function GetParagraphLeftXC(Extends ctrl As MobileTextArea, line As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getParagraphLeft Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getParagraphLeft" (myLine As Integer) As Integer
+		    Return getParagraphLeft(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 476574207468652072696768742065646765206F662074686520737065636966696564207061726167726170682C20696E736574206279207269676874206D617267696E732E
+		Function GetParagraphRightXC(Extends ctrl As MobileTextArea, line As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getParagraphRight Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getParagraphRight" (myLine As Integer) As Integer
+		    Return getParagraphRight(line)
+		    
+		  #Else
+		    
+		    #Pragma Unused line
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 47657420746865207072696D61727920686F72697A6F6E74616C20706F736974696F6E20666F7220746865207370656369666965642074657874206F66667365742E205468697320697320746865206C6F636174696F6E2077686572652061206E65772063686172616374657220776F756C6420626520696E73657274656420696E20746865207061726167726170682773207072696D61727920646972656374696F6E2E
+		Function GetPrimaryHorizontalXC(Extends ctrl As MobileTextArea, offset As Integer) As Single
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getPrimaryHorizontal Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getPrimaryHorizontal" (myOffset As Integer) As Single
+		    Return getPrimaryHorizontal(offset)
+		    
+		  #Else
+		    
+		    #Pragma Unused offset
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 47657420746865207365636F6E6461727920686F72697A6F6E74616C20706F736974696F6E20666F7220746865207370656369666965642074657874206F66667365742E205468697320697320746865206C6F636174696F6E2077686572652061206E65772063686172616374657220776F756C6420626520696E73657274656420696E2074686520646972656374696F6E206F74686572207468616E20746865207061726167726170682773207072696D61727920646972656374696F6E2E
+		Function GetSecondaryHorizontalXC(Extends ctrl As MobileTextArea, offset As Integer) As Single
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getSecondaryHorizontal Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getSecondaryHorizontal" (myOffset As Integer) As Single
+		    Return getSecondaryHorizontal(offset)
+		    
+		  #Else
+		    
+		    #Pragma Unused offset
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52657475726E7320776865746865722074686520736F667420696E707574206D6574686F642077696C6C206265206D6164652076697369626C65207768656E2074686973205465787456696577206765747320666F63757365642E205468652064656661756C7420697320747275652E
 		Function GetShowSoftInputOnFocusXC(Extends ctrl As MobileTextArea) As Boolean
 		  #Pragma Unused ctrl
@@ -290,6 +695,45 @@ Protected Module TextArea
 		  #Else
 		    
 		    Return False
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E20746865206E756D626572206F6620756E697473206F66206C656164696E6720746861742061726520616464656420746F2065616368206C696E652E
+		Function GetSpacingAddXC(Extends ctrl As MobileTextArea) As Single
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getSpacingAdd Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getSpacingAdd" As Single
+		    Return getSpacingAdd
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207768617420746865207465787420686569676874206973206D756C7469706C69656420627920746F2067657420746865206C696E65206865696768742E
+		Function GetSpacingMultiplierXC(Extends ctrl As MobileTextArea) As Single
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getSpacingMultiplier Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getSpacingMultiplier" As Single
+		    Return getSpacingMultiplier
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520286E6567617469766529206E756D626572206F6620657874726120706978656C73206F6620617363656E742070616464696E6720696E2074686520746F70206C696E65206F6620746865204C61796F75742E
+		Function GetTopPaddingXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTopPadding Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getTopPadding" As Integer
+		    Return getTopPadding
 		    
 		  #EndIf
 		End Function
@@ -368,6 +812,23 @@ Protected Module TextArea
 		    
 		    Declare Function getTotalPaddingTop Lib "Object:ctrl:MobileTextArea" As Integer
 		    Return getTotalPaddingTop
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320747275652069662074686520636861726163746572206174206F666673657420697320726967687420746F206C656674202852544C292E
+		Function IsRtlCharAtXC(Extends ctrl As MobileTextArea, offset As Integer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isRtlCharAt Lib "Object:ctrl:MobileTextArea" Alias "getLayout().isRtlCharAt" (myOffset As Integer) As Boolean
+		    Return isRtlCharAt(offset)
+		    
+		  #Else
+		    
+		    #Pragma Unused offset
 		    
 		  #EndIf
 		End Function

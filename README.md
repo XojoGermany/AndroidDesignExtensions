@@ -3,7 +3,7 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
 # AndroidDesignExtensions
-A set of 400+ UI extensions for Xojo Android framework.
+A set of 430+ UI extensions for Xojo Android framework.
 
 ## Currently implemented extensions
 
@@ -396,6 +396,7 @@ A set of 400+ UI extensions for Xojo Android framework.
 
 ### MobileTextArea
 * GetAutoLinkMaskXC
+* GetBottomPaddingXC
 * GetBreakStrategyXC
 * GetCompoundDrawablePaddingXC
 * GetCompoundPaddingBottomXC
@@ -411,17 +412,44 @@ A set of 400+ UI extensions for Xojo Android framework.
 * GetIncludeFontPaddingXC
 * GetJustificationModeXC
 * GetLastBaselineToBottomHeightXC
+* GetLineAscentXC
+* GetLineBaselineXC
+* GetLineBottomXC
+* GetLineContainsTabXC
 * GetLineCountXC
+* GetLineDescentXC
+* GetLineEndXC
+* GetLineForOffsetXC
+* GetLineForVerticalXC
 * GetLineHeightXC
+* GetLineLeftXC
+* GetLineMaxXC
+* GetLineRightXC
+* GetLineStartXC
+* GetLineTopXC
+* GetLineVisibleEndXC
+* GetLineWidthXC
 * GetLinksClickableXC
+* GetOffsetForHorizontalXC
+* GetOffsetToLeftOfXC
+* GetOffsetToRightOfXC
 * GetPaintFlagsXC
+* GetParagraphDirectionXC
+* GetParagraphLeftXC
+* GetParagraphRightXC
+* GetPrimaryHorizontalXC
+* GetSecondaryHorizontalXC
 * GetShowSoftInputOnFocusXC
+* GetSpacingAddXC
+* GetSpacingMultiplierXC
+* GetTopPaddingXC
 * GetTotalPaddingBottomXC
 * GetTotalPaddingEndXC
 * GetTotalPaddingLeftXC
 * GetTotalPaddingRightXC
 * GetTotalPaddingStartXC
 * GetTotalPaddingTopXC
+* IsRtlCharAtXC
 * SetAllCapsXC
 * SetAutoLinkMaskXC
 * SetBreakStrategyXC
