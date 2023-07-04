@@ -332,7 +332,9 @@ A set of 430+ UI extensions for Xojo Android framework.
 * GetDisplayRotationXC
 * GetDisplayStateXC
 * GetHeightXC
+* GetNavigationBarColorXC
 * GetRequestedOrientationXC
+* GetStatusBarColorXC
 * GetSystemBarsAppearanceXC
 * GetSystemBarsBehaviorXC
 * GetTransitionBackgroundFadeDurationXC
@@ -407,6 +409,7 @@ A set of 430+ UI extensions for Xojo Android framework.
 * GetExtendedPaddingBottomXC
 * GetExtendedPaddingTopXC
 * GetFirstBaselineToTopHeightXC
+* GetHighlightColorXC
 * GetHyphenationFrequencyXC
 * GetImeOptionsXC
 * GetIncludeFontPaddingXC
@@ -430,6 +433,7 @@ A set of 430+ UI extensions for Xojo Android framework.
 * GetLineVisibleEndXC
 * GetLineWidthXC
 * GetLinksClickableXC
+* GetLinkTextColorXC
 * GetOffsetForHorizontalXC
 * GetOffsetToLeftOfXC
 * GetOffsetToRightOfXC

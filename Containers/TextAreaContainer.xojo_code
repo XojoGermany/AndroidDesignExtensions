@@ -381,7 +381,7 @@ Begin MobileContainer TextAreaContainer
       Height          =   44
       Hint            =   ""
       InputType       =   0
-      Left            =   118
+      Left            =   277
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   False
@@ -395,7 +395,7 @@ Begin MobileContainer TextAreaContainer
       SelectionStart  =   0
       Text            =   "1.0"
       TextColor       =   &c00000000
-      Top             =   626
+      Top             =   617
       Visible         =   True
       Width           =   63
    End
@@ -405,7 +405,7 @@ Begin MobileContainer TextAreaContainer
       Alignment       =   0
       Enabled         =   True
       Height          =   31
-      Left            =   20
+      Left            =   179
       LineBreakMode   =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -415,7 +415,7 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Text Scale X"
       TextColor       =   &c00000000
-      Top             =   640
+      Top             =   631
       Visible         =   True
       Width           =   100
    End
@@ -441,6 +441,43 @@ Begin MobileContainer TextAreaContainer
       Top             =   30
       Visible         =   True
       Width           =   320
+   End
+   Begin MobileLabel KeyboardLabel
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   0
+      Enabled         =   True
+      Height          =   39
+      Left            =   20
+      LineBreakMode   =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   False
+      Scope           =   2
+      Text            =   "Show Keyboard"
+      TextColor       =   &c00000000
+      Top             =   631
+      Visible         =   True
+      Width           =   108
+   End
+   Begin MobileSwitch KeyboardSwitch
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   30
+      Left            =   121
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   False
+      Scope           =   2
+      Top             =   626
+      Value           =   True
+      Visible         =   True
+      Width           =   50
    End
 End
 #tag EndMobileContainer
@@ -544,6 +581,13 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.SetHintXC("This is TextAreas Hint.")
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events KeyboardSwitch
+	#tag Event
+		Sub ValueChanged()
+		  DefaultArea.SetShowSoftInputOnFocusXC(Me.Value)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

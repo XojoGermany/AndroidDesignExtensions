@@ -2046,6 +2046,15 @@ Protected Module Extensions
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
+		Function ToColor(Extends value As Integer) As Color
+		  Var mb As New MemoryBlock(4)
+		  mb.Int32Value(0) = value
+		  
+		  Return mb.ColorValue(0, 4)
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
 		Function ToInteger(Extends c As Color) As Integer
 		  If c = Color.Clear Then
 		    

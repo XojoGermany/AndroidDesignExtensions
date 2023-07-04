@@ -170,6 +170,19 @@ Protected Module TextArea
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520636F6C6F72207573656420746F20646973706C6179207468652073656C656374696F6E20686967686C696768742E
+		Function GetHighlightColorXC(Extends ctrl As MobileTextArea) As Color
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getHighlightColor Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getHighlightColor.ToColor
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52657475726E73207468652064697374616E6365206265747765656E20746865206669727374207465787420626173656C696E6520616E642074686520746F70206F6620746869732054657874566965772E
 		Function GetHyphenationFrequencyXC(Extends ctrl As MobileTextArea) As Integer
 		  #Pragma Unused ctrl
@@ -528,6 +541,19 @@ Protected Module TextArea
 		    
 		    Declare Function getLinksClickable Lib "Object:ctrl:MobileTextArea" As Boolean
 		    Return getLinksClickable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520636F6C6F72206F66206C696E6B7320696E2074686520746578742E
+		Function GetLinkTextColorXC(Extends ctrl As MobileTextArea) As Color
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getLinkTextColors Lib "Object:ctrl:MobileTextArea" Alias "getLinkTextColors().getDefaultColor" As Integer
+		    Return getLinkTextColors.ToColor
 		    
 		  #EndIf
 		End Function

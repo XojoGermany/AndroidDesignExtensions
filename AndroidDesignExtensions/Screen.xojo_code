@@ -105,6 +105,19 @@ Protected Module Screen
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520636F6C6F72206F6620746865206E617669676174696F6E206261722E
+		Function GetNavigationBarColorXC(Extends myScreen As MobileScreen) As Color
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getNavigationBarColor Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getNavigationBarColor" As Integer
+		    Return getNavigationBarColor.ToColor
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52657475726E207468652063757272656E7420726571756573746564206F7269656E746174696F6E206F66207468652061637469766974792E20546869732077696C6C2065697468657220626520746865206F7269656E746174696F6E2072657175657374656420696E2069747320636F6D706F6E656E742773206D616E69666573742C206F7220746865206C61737420726571756573746564206F7269656E746174696F6E20676976656E20746F207365745265717565737465644F7269656E746174696F6E28696E74292E
 		Function GetRequestedOrientationXC(Extends myScreen As MobileScreen) As Integer
 		  #Pragma Unused myScreen
@@ -113,6 +126,19 @@ Protected Module Screen
 		    
 		    Declare Function getRequestedOrientation Lib "Object:myScreen:MobileScreen" As Integer
 		    Return getRequestedOrientation
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520636F6C6F72206F662074686520737461747573206261722E
+		Function GetStatusBarColorXC(Extends myScreen As MobileScreen) As Color
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getStatusBarColor Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getStatusBarColor" As Integer
+		    Return getStatusBarColor.ToColor
 		    
 		  #EndIf
 		End Function
