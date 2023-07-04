@@ -183,6 +183,19 @@ Protected Module TextArea
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520636F6C6F72206F66207468652068696E7420746578742E
+		Function GetHintTextColorXC(Extends ctrl As MobileTextArea) As Color
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getHintTextColors Lib "Object:ctrl:MobileTextArea" Alias "getHintTextColors().getDefaultColor" As Integer
+		    Return getHintTextColors.ToColor
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52657475726E73207468652064697374616E6365206265747765656E20746865206669727374207465787420626173656C696E6520616E642074686520746F70206F6620746869732054657874566965772E
 		Function GetHyphenationFrequencyXC(Extends ctrl As MobileTextArea) As Integer
 		  #Pragma Unused ctrl
@@ -1022,6 +1035,23 @@ Protected Module TextArea
 		    
 		    Declare Sub setHighlightColor Lib "Object:ctrl:MobileTextArea" (myColor As Integer)
 		    setHighlightColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F66207468652068696E74207465787420666F7220616C6C2074686520737461746573202864697361626C65642C20666F6375737365642C2073656C65637465642E2E2E29206F6620746869732054657874566965772E
+		Sub SetHintTextColorXC(Extends ctrl As MobileTextArea, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHintTextColor Lib "Object:ctrl:MobileTextArea" (myColor As Integer)
+		    setHintTextColor(c.ToInteger)
 		    
 		  #Else
 		    

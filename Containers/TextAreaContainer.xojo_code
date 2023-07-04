@@ -580,6 +580,7 @@ End
 #tag Events HintArea
 	#tag Event
 		Sub Opening()
+		  Me.SetHintTextColorXC(&c0096FF00)
 		  Me.SetHintXC("This is TextAreas Hint.")
 		End Sub
 	#tag EndEvent

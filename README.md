@@ -193,8 +193,6 @@ A set of 430+ UI extensions for Xojo Android framework.
 ### MobileContainer
 * GetCurrentFocusedControlXC
 * GetCurrentFocusIDXC
-* SetBackgroundColorXC
-* SetOutlineSpotShadowColorXC
 
 ### MobileHTMLViewer
 * CanGoBackXC
@@ -410,6 +408,7 @@ A set of 430+ UI extensions for Xojo Android framework.
 * GetExtendedPaddingTopXC
 * GetFirstBaselineToTopHeightXC
 * GetHighlightColorXC
+* GetHintTextColorXC
 * GetHyphenationFrequencyXC
 * GetImeOptionsXC
 * GetIncludeFontPaddingXC
@@ -463,6 +462,7 @@ A set of 430+ UI extensions for Xojo Android framework.
 * SetFirstBaselineToTopHeightXC
 * SetGravityXC
 * SetHintXC
+* SetHintTextColorXC
 * SetHorizontallyScrollingXC
 * SetHyphenationFrequencyXC
 * SetImeOptionsXC
