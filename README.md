@@ -359,6 +359,9 @@ A set of 430+ UI extensions for Xojo Android framework.
 * SetTransitionBackgroundFadeDurationXC
 * SetTranslucentXC
 * SetTurnScreenOnXC
+* ShowLockTaskEscapeMessageXC
+* StartLockTaskXC
+* StopLockTaskXC
 
 ### MobileScrollableArea
 * ScrollToXC
