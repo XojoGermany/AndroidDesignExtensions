@@ -5,7 +5,7 @@
 # AndroidDesignExtensions
 A set of 430+ UI extensions for Xojo Android framework.
 
-![Light Mode](https://blog.xojo.com/wp-content/uploads/2023/08/202079C2-5C79-41C6-BE46-5D6261082B39-996x2048.png | width=200) ![Dark Mode](https://blog.xojo.com/wp-content/uploads/2023/08/F920EDA3-5709-42F3-A1DA-2C7D5FC86009-996x2048.png | width=200)
+![Light Mode](https://blog.xojo.com/wp-content/uploads/2023/08/202079C2-5C79-41C6-BE46-5D6261082B39-996x2048.png){: width="50%"} ![Dark Mode](https://blog.xojo.com/wp-content/uploads/2023/08/F920EDA3-5709-42F3-A1DA-2C7D5FC86009-996x2048.png){: width="50%"}
 
 ## Currently implemented extensions
 
