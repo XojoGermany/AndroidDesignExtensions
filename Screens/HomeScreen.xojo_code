@@ -1,6 +1,6 @@
 #tag MobileScreen
 Begin TemplateScreen HomeScreen
-   Compatibility   =   ""
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    HasNavigationBar=   False
    Modal           =   False
    Orientation     =   0
@@ -51,7 +51,7 @@ Begin TemplateScreen HomeScreen
       Visible         =   True
       Width           =   360
    End
-   Begin MobileLabel HeaderLabel
+   Begin AppearanceLabel HeaderLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -77,14 +77,14 @@ End
 #tag ScreenCode
 	#tag Event
 		Sub Opening()
-		  Self.SetNavigationBarColorXC(&cF2F2F7)
-		  Self.SetNavigationBarDividerColorXC(&cF2F2F7)
+		  Self.SetNavigationBarColorXC(If(Color.IsDarkMode, &c121212, &cF2F2F7))
+		  Self.SetNavigationBarDividerColorXC(If(Color.IsDarkMode, &c121212, &cF2F2F7))
 		End Sub
 	#tag EndEvent
 
 
 	#tag Method, Flags = &h21
-		Private Sub AddRow(title As String, tag As String, pic As Picture = Nil)
+		Private Sub AddRow(title As String, tag As String, picName As String = "", picColor As Color = &c000000FF)
 		  Static oChevronPic As Picture
 		  
 		  If oChevronPic = Nil Then
@@ -97,9 +97,9 @@ End
 		  Table1.RowPictureAt(Table1.LastAddedRowIndex, True) = oChevronPic
 		  Table1.RowTagAt(Table1.LastAddedRowIndex) = tag
 		  
-		  If pic <> Nil Then
+		  If Not picName.IsEmpty Then
 		    
-		    Table1.RowPictureAt(Table1.LastAddedRowIndex) = pic
+		    Table1.RowPictureAt(Table1.LastAddedRowIndex) = GetPicture(picName, picColor)
 		    
 		  End If
 		End Sub
@@ -107,9 +107,19 @@ End
 
 	#tag Method, Flags = &h21
 		Private Sub AddSection(section As String)
-		  Table1.AddRow("", section.Uppercase)
-		  Table1.RowBackgroundColorAt(Table1.LastAddedRowIndex) = &cF2F2F7
-		  Table1.RowDetailColorAt(Table1.LastAddedRowIndex) = &c85858A
+		  Table1.AddRow("", EndOfLine + section.Uppercase)
+		  
+		  If Color.IsDarkMode Then
+		    
+		    Table1.RowDetailColorAt(Table1.LastAddedRowIndex) = &c91919100
+		    
+		  Else
+		    
+		    
+		    Table1.RowBackgroundColorAt(Table1.LastAddedRowIndex) = &cF2F2F7
+		    Table1.RowDetailColorAt(Table1.LastAddedRowIndex) = &c85858A
+		    
+		  End If
 		End Sub
 	#tag EndMethod
 
@@ -137,46 +147,63 @@ End
 		Sub Opening()
 		  Me.RowDetailFont = Font.SystemFont(13.5)
 		  Me.RowTextFont = Font.SystemFont(17)
-		  Me.SeparatorColor = &cCACACC00
+		  Me.SeparatorColor = If(Color.IsDarkMode, &c21212100, &cCACACC00)
 		  
 		  AddSection("Control Extensions")
-		  AddRow("Controls", "control", GetPicture("crop_rotate", &cFF260000))
+		  AddRow("Controls", "control", "crop_rotate", &cFF260000)
 		  
 		  AddSection("Button Extensions")
-		  AddRow("Buttons", "button", GetPicture("checkbox_blank", &c419CFF00))
+		  AddRow("Buttons", "button", "checkbox_blank", &c419CFF00)
 		  
 		  AddSection("Label Extensions")
-		  AddRow("Labels", "label", GetPicture("format_color_text", &c419CFF00))
+		  AddRow("Labels", "label", "format_color_text", &c419CFF00)
 		  
 		  AddSection("HTMLViewer Extensions")
-		  AddRow("HTMLViewer Examples", "htmlviewer", GetPicture("code_tags", &cFF453A00))
+		  AddRow("HTMLViewer Examples", "htmlviewer", "code_tags", &cFF453A00)
 		  
 		  AddSection("TabPanel Extensions")
-		  AddRow("TabPanel Examples", "tabpanel", GetPicture("tab", &c32D74B00))
+		  AddRow("TabPanel Examples", "tabpanel", "tab", &c32D74B00)
 		  
 		  AddSection("Image Extensions")
-		  AddRow("Image Examples", "imageviewer", GetPicture("image", &c5E5CE600))
+		  AddRow("Image Examples", "imageviewer", "image", &c5E5CE600)
+		  
+		  AddSection("Indicator Extensions")
+		  AddRow("Indicator Examples", "indicator", "ray_vertex", &cFF40FF00)
 		  
 		  AddSection("Screen Extensions")
-		  AddRow("Screen Examples", "screen", GetPicture("cellphone_android", &cFFD60A00))
+		  AddRow("Screen Examples", "screen", "cellphone_android", &cFFD60A00)
 		  
 		  AddSection("Scroll Extensions")
-		  AddRow("Scroll Examples", "scrollablearea", GetPicture("arrow_expand_vertical", &cFC800700))
+		  AddRow("Scroll Examples", "scrollablearea", "arrow_expand_vertical", &cFC800700)
 		  
 		  AddSection("Table Extensions")
-		  AddRow("Table Examples", "androidmobiletable", GetPicture("format_list_bulleted", &c78D2FE00))
+		  AddRow("Table Examples", "androidmobiletable", "format_list_bulleted", &c78D2FE00)
 		  
 		  AddSection("TextControl Extensions")
-		  AddRow("TextField Examples", "textfield", GetPicture("comment_processing_outline", &cCC66FE00))
-		  AddRow("TextArea Examples", "textarea", GetPicture("comment_text_outline", &c6AC4DC00))
+		  AddRow("TextField Examples", "textfield", "comment_processing_outline", &cCC66FE00)
+		  AddRow("TextArea Examples", "textarea", "comment_text_outline", &c6AC4DC00)
 		  
 		  AddSection("Framework")
-		  AddRow("Fonts Examples", "font", GetPicture("format_font", &c34343400))
-		  AddRow("System Images", "systemimages", GetPicture("image_area", &cFF2F9200))
+		  AddRow("Fonts Examples", "font", "format_font", If(Color.IsDarkMode, Color.White, &c34343400))
+		  AddRow("System Images", "systemimages", "image_area", &cFF2F9200)
 		  
 		  AddSection("About")
-		  AddRow("Donate", "donate", GetPicture("paypal", &c049BE5))
+		  AddRow("Donate", "donate", "paypal", &c049BE5)
 		  AddSection("") ' footer (empty row)
+		  
+		  If Color.IsDarkMode Then
+		    
+		    For index As Integer = 0 To Me.LastAddedRowIndex
+		      
+		      If Me.RowPictureAt(index) <> Nil Then
+		        
+		        Me.RowTextColorAt(index) = Color.White
+		        
+		      End If
+		      
+		    Next
+		    
+		  End If
 		End Sub
 	#tag EndEvent
 	#tag Event
@@ -214,6 +241,10 @@ End
 		    
 		    ImageScreen.Show
 		    
+		  Case "indicator"
+		    
+		    IndicatorScreen.Show
+		    
 		  Case "label"
 		    
 		    LabelScreen.Show
@@ -243,6 +274,17 @@ End
 		    TextFieldScreen.Show
 		    
 		  End Select
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events HeaderBackground
+	#tag Event
+		Sub Opening()
+		  If Color.IsDarkMode Then
+		    
+		    Me.FillColor = Color.Clear
+		    
+		  End If
 		End Sub
 	#tag EndEvent
 #tag EndEvents

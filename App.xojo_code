@@ -10,7 +10,8 @@ Inherits MobileApplication
 
 	#tag Event
 		Function UnhandledException(exc As RuntimeException) As Boolean
-		  Break
+		  MessageBox(exc.Message)
+		  Return True
 		End Function
 	#tag EndEvent
 

@@ -1,5 +1,5 @@
 #tag Module
-Protected Module SegmentedButton
+Protected Module SegmentedButtonXC
 	#tag Method, Flags = &h0, Description = 436C65617273207468652073656C656374696F6E732E205768656E207468652073656C656374696F6E732061726520636C65617265642C206E6F204D6174657269616C427574746F6E20696E20746869732067726F757020697320636865636B656420616E6420676574436865636B6564427574746F6E49647328292072657475726E7320616E20656D707479206C6973742E
 		Sub ClearCheckedXC(Extends ctrl As MobileSegmentedButton)
 		  #Pragma Unused ctrl
@@ -49,6 +49,46 @@ Protected Module SegmentedButton
 
 
 	#tag ViewBehavior
+		#tag ViewProperty
+			Name="Name"
+			Visible=true
+			Group="ID"
+			InitialValue=""
+			Type="String"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Index"
+			Visible=true
+			Group="ID"
+			InitialValue="-2147483648"
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Super"
+			Visible=true
+			Group="ID"
+			InitialValue=""
+			Type="String"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Left"
+			Visible=true
+			Group="Position"
+			InitialValue="0"
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Top"
+			Visible=true
+			Group="Position"
+			InitialValue="0"
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
 	#tag EndViewBehavior
 End Module
 #tag EndModule

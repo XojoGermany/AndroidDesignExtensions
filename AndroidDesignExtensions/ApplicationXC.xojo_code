@@ -1,5 +1,5 @@
 #tag Module
-Protected Module Application
+Protected Module ApplicationXC
 	#tag Method, Flags = &h0, Description = 436C61737320696D706C656D656E74696E6720746865204170706C69636174696F6E206F626A6563742E2046726F6D207468652022636C61737322206174747269627574652E
 		Function ClassNameXC(Extends myApp As MobileApplication) As String
 		  #Pragma Unused myApp
@@ -172,6 +172,46 @@ Protected Module Application
 
 
 	#tag ViewBehavior
+		#tag ViewProperty
+			Name="Name"
+			Visible=true
+			Group="ID"
+			InitialValue=""
+			Type="String"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Index"
+			Visible=true
+			Group="ID"
+			InitialValue="-2147483648"
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Super"
+			Visible=true
+			Group="ID"
+			InitialValue=""
+			Type="String"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Left"
+			Visible=true
+			Group="Position"
+			InitialValue="0"
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Top"
+			Visible=true
+			Group="Position"
+			InitialValue="0"
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
 	#tag EndViewBehavior
 End Module
 #tag EndModule

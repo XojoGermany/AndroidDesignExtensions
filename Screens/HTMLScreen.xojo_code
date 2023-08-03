@@ -1,6 +1,6 @@
 #tag MobileScreen
 Begin TemplateScreen HTMLScreen
-   Compatibility   =   ""
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    HasNavigationBar=   False
    Modal           =   False
    Orientation     =   0
@@ -43,7 +43,7 @@ Begin TemplateScreen HTMLScreen
       Visible         =   True
       Width           =   360
    End
-   Begin MobileTextField Search
+   Begin AppearanceTextField Search
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -208,7 +208,7 @@ Begin TemplateScreen HTMLScreen
       Visible         =   True
       Width           =   281
    End
-   Begin MobileLabel TextZoomLabel
+   Begin AppearanceLabel TextZoomLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   2

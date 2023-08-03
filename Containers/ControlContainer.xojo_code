@@ -2,7 +2,7 @@
 Begin MobileContainer ControlContainer
    AccessibilityHint=   ""
    AccessibilityLabel=   ""
-   Compatibility   =   ""
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
    Height          =   588
    LockBottom      =   False
@@ -27,7 +27,7 @@ Begin MobileContainer ControlContainer
       Visible         =   True
       Width           =   360
    End
-   Begin MobileLabel RotationLabel
+   Begin AppearanceLabel RotationLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -66,7 +66,7 @@ Begin MobileContainer ControlContainer
       Visible         =   True
       Width           =   210
    End
-   Begin MobileLabel DegreeLabel
+   Begin AppearanceLabel DegreeLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   2
@@ -86,7 +86,7 @@ Begin MobileContainer ControlContainer
       Visible         =   True
       Width           =   42
    End
-   Begin MobileLabel AlphaLabel
+   Begin AppearanceLabel AlphaLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -125,7 +125,7 @@ Begin MobileContainer ControlContainer
       Visible         =   True
       Width           =   210
    End
-   Begin MobileLabel AlphaPercentageLabel
+   Begin AppearanceLabel AlphaPercentageLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   2
@@ -145,7 +145,7 @@ Begin MobileContainer ControlContainer
       Visible         =   True
       Width           =   42
    End
-   Begin MobileLabel ScaleXLabel
+   Begin AppearanceLabel ScaleXLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -165,7 +165,7 @@ Begin MobileContainer ControlContainer
       Visible         =   True
       Width           =   62
    End
-   Begin MobileLabel ScaleXPercentageLabel
+   Begin AppearanceLabel ScaleXPercentageLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   2
@@ -204,7 +204,7 @@ Begin MobileContainer ControlContainer
       Visible         =   True
       Width           =   210
    End
-   Begin MobileLabel PlaygroundLabel
+   Begin AppearanceLabel PlaygroundLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -242,7 +242,7 @@ Begin MobileContainer ControlContainer
       Visible         =   True
       Width           =   175
    End
-   Begin MobileLabel ScaleYLabel
+   Begin AppearanceLabel ScaleYLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -262,7 +262,7 @@ Begin MobileContainer ControlContainer
       Visible         =   True
       Width           =   62
    End
-   Begin MobileLabel ScaleYPercentageLabel
+   Begin AppearanceLabel ScaleYPercentageLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   2
@@ -301,7 +301,7 @@ Begin MobileContainer ControlContainer
       Visible         =   True
       Width           =   210
    End
-   Begin MobileLabel ElevationLabel
+   Begin AppearanceLabel ElevationLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -321,7 +321,7 @@ Begin MobileContainer ControlContainer
       Visible         =   True
       Width           =   72
    End
-   Begin MobileLabel ElevationValueLabel
+   Begin AppearanceLabel ElevationValueLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   2
@@ -364,6 +364,21 @@ End
 #tag EndMobileContainer
 
 #tag ScreenCode
+	#tag Event
+		Sub Opening()
+		  For Each ctrl As MobileUIControl In Self.Controls
+		    
+		    If ctrl IsA MobileButton Then
+		      
+		      ctrl.SetElevationXC(0)
+		      
+		    End If
+		    
+		  Next
+		End Sub
+	#tag EndEvent
+
+
 #tag EndScreenCode
 
 #tag Events DegreeSlider

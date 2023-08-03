@@ -1,5 +1,5 @@
 #tag Module
-Protected Module Container
+Protected Module ContainerXC
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0
 		Function GetCurrentFocusedControlXC(Extends myContainer As MobileContainer) As MobileUIControl

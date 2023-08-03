@@ -1,6 +1,6 @@
 #tag MobileScreen
 Begin TemplateScreen ScrollableAreaScreen
-   Compatibility   =   ""
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    HasNavigationBar=   False
    Modal           =   False
    Orientation     =   0
@@ -120,6 +120,7 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.SetBackgroundColorXC(&cAC8E6800)
+		  Me.SetVerticalScrollbarThumbColor(&c008F0000)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

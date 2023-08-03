@@ -1,6 +1,6 @@
 #tag MobileScreen
 Begin TemplateScreen LabelScreen
-   Compatibility   =   ""
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    HasNavigationBar=   False
    Modal           =   False
    Orientation     =   0
@@ -27,7 +27,7 @@ Begin TemplateScreen LabelScreen
       Visible         =   True
       Width           =   360
    End
-   Begin MobileLabel DefaultLabel
+   Begin AppearanceLabel DefaultLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -47,7 +47,7 @@ Begin TemplateScreen LabelScreen
       Visible         =   True
       Width           =   200
    End
-   Begin MobileLabel BackgroundColorLabel
+   Begin AppearanceLabel BackgroundColorLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -67,7 +67,7 @@ Begin TemplateScreen LabelScreen
       Visible         =   True
       Width           =   200
    End
-   Begin MobileLabel BackgroundShadowLabel
+   Begin AppearanceLabel BackgroundShadowLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -87,7 +87,7 @@ Begin TemplateScreen LabelScreen
       Visible         =   True
       Width           =   200
    End
-   Begin MobileLabel ShadowLabel
+   Begin AppearanceLabel ShadowLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1

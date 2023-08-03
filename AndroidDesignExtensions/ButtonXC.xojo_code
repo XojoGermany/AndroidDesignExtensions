@@ -1,5 +1,5 @@
 #tag Module
-Protected Module Button
+Protected Module ButtonXC
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0, Description = 476574732074686520636F726E65722072616469757320666F72207468697320627574746F6E2E
 		Function GetCornerRadiusXC(Extends ctrl As MobileButton) As Integer

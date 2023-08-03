@@ -2,7 +2,7 @@
 Begin MobileContainer NavigationBarContainer
    AccessibilityHint=   ""
    AccessibilityLabel=   ""
-   Compatibility   =   ""
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
    Height          =   56
    LockBottom      =   False
@@ -72,7 +72,7 @@ End
 		  ' Call Opening-Event
 		  RaiseEvent Opening
 		  
-		  If HasBackgroundColor Then
+		  If HasBackgroundColor And Not Color.IsDarkMode Then
 		    
 		    Self.BackgroundColor = BackgroundColor
 		    
@@ -145,27 +145,35 @@ End
 #tag Events GradientCanvas
 	#tag Event
 		Sub Paint(g As Graphics)
-		  Var cStartColor As Color = &cF2F2F7
-		  Var cEndColor As Color = Color.White
-		  Var dStartAmt, dEndAmt As Double
-		  
-		  For i As Integer = 0 To g.Height
+		  If Not Color.IsDarkMode Then
 		    
-		    dStartAmt = 1 - (i / g.Height)
-		    dEndAmt = i / g.Height
-		    g.DrawingColor = Color.RGB((cStartColor.Red * dStartAmt) + (cEndColor.Red * dEndAmt), _
-		    (cStartColor.Green *dStartAmt) + (cEndColor.Green * dEndAmt), _
-		    (cStartColor.Blue * dStartAmt) + (cEndColor.Blue * dEndAmt))
-		    g.FillRectangle(0, i, g.Width, 1)
+		    Var cStartColor As Color = &cF2F2F7
+		    Var cEndColor As Color = Color.White
+		    Var dStartAmt, dEndAmt As Double
 		    
-		  Next
+		    For i As Integer = 0 To g.Height
+		      
+		      dStartAmt = 1 - (i / g.Height)
+		      dEndAmt = i / g.Height
+		      g.DrawingColor = Color.RGB((cStartColor.Red * dStartAmt) + (cEndColor.Red * dEndAmt), _
+		      (cStartColor.Green *dStartAmt) + (cEndColor.Green * dEndAmt), _
+		      (cStartColor.Blue * dStartAmt) + (cEndColor.Blue * dEndAmt))
+		      g.FillRectangle(0, i, g.Width, 1)
+		      
+		    Next
+		    
+		  End If
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events TitleLabel
 	#tag Event
 		Sub Opening()
-		  ' Me.TextFont = Font.BoldSystemFont(17.5)
+		  If Color.IsDarkMode Then
+		    
+		    Me.TextColor = &cD3D3D3
+		    
+		  End If
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -193,7 +201,7 @@ End
 	#tag EndEvent
 	#tag Event
 		Sub Paint(g As Graphics)
-		  Static oPic As Picture = Picture.SystemImage("chevron_left", Picture.SystemImageSizes.dp36, Color.PrimaryThemeColor)
+		  Static oPic As Picture = Picture.SystemImage("chevron_left", Picture.SystemImageSizes.dp36, If(Color.IsDarkMode, &cD3D3D3, Color.PrimaryThemeColor))
 		  Static oPicPressed As Picture = Picture.SystemImage("chevron_left", Picture.SystemImageSizes.dp36, _
 		  Color.RGB(Color.PrimaryThemeColor.Red, Color.PrimaryThemeColor.Green, Color.PrimaryThemeColor.Blue, 125))
 		  

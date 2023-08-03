@@ -1,6 +1,6 @@
 #tag MobileScreen
 Begin TemplateScreen TableScreen
-   Compatibility   =   ""
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    HasNavigationBar=   False
    Modal           =   False
    Orientation     =   0
@@ -100,9 +100,10 @@ End
 		  
 		  Me.SetOutlineSpotShadowColorXC(Color.Clear) ' no shadow
 		  Me.SetScrollBarFadeDurationXC(0) ' make Scrollbar always visible
+		  Me.SetVerticalScrollbarThumbColor(Color.Orange)
 		  
 		  Me.RowTextFont = Font.SystemFont(17)
-		  Me.SeparatorColor = &cCACACC00
+		  Me.SeparatorColor = If(Color.IsDarkMode, &c21212100, &cCACACC00)
 		  
 		  For row As Integer = 0 To Me.LastAddedRowIndex
 		    
@@ -148,6 +149,20 @@ End
 		  ' Scrollbar Types
 		  Me.RowTagAt(19) = "default"
 		  Me.RowTagAt(20) = "fast"
+		  
+		  If Color.IsDarkMode Then
+		    
+		    For index As Integer = 0 To Me.LastAddedRowIndex
+		      
+		      If Me.RowBackgroundColorAt(index) = Color.Clear Then
+		        
+		        Me.RowTextColorAt(index) = &cD3D3D3
+		        
+		      End If
+		      
+		    Next
+		    
+		  End If
 		End Sub
 	#tag EndEvent
 	#tag Event

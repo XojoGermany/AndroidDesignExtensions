@@ -2,7 +2,7 @@
 Begin MobileContainer ButtonContainer
    AccessibilityHint=   ""
    AccessibilityLabel=   ""
-   Compatibility   =   ""
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
    Height          =   704
    LockBottom      =   False
@@ -213,6 +213,29 @@ End
 #tag EndMobileContainer
 
 #tag ScreenCode
+	#tag Event
+		Sub Opening()
+		  For Each ctrl As MobileUIControl In Self.Controls
+		    
+		    If ctrl IsA MobileButton Then
+		      
+		      If ctrl.Name = "ColoredShadowButton" Then
+		        
+		        ctrl.SetElevationXC(5.5)
+		        
+		      Else
+		        
+		        ctrl.SetElevationXC(0)
+		        
+		      End If
+		      
+		    End If
+		    
+		  Next
+		End Sub
+	#tag EndEvent
+
+
 #tag EndScreenCode
 
 #tag Events BackgroundColorButton
@@ -225,7 +248,7 @@ End
 #tag Events ColoredShadowButton
 	#tag Event
 		Sub Opening()
-		  Me.SetOutlineSpotShadowColorXC(Color.Red)
+		  Me.SetOutlineSpotShadowColorXC(&c94110000)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

@@ -1,5 +1,17 @@
 #tag Module
-Protected Module Switch
+Protected Module DeviceXC
+	#tag Method, Flags = &h0, Description = 47657473207468652075696420666F722074686973206465766963652E
+		Function GetUidXC() As Integer
+		  #If TargetAndroid
+		    
+		    Declare Function getuid Lib "android.system.Os" As Integer
+		    Return getuid
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+
 	#tag ViewBehavior
 		#tag ViewProperty
 			Name="Name"

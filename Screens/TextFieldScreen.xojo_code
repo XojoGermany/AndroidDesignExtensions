@@ -1,6 +1,6 @@
 #tag MobileScreen
 Begin TemplateScreen TextFieldScreen
-   Compatibility   =   ""
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    HasNavigationBar=   False
    Modal           =   False
    Orientation     =   0
@@ -27,7 +27,7 @@ Begin TemplateScreen TextFieldScreen
       Visible         =   True
       Width           =   360
    End
-   Begin MobileTextField DefaultField
+   Begin AppearanceTextField DefaultField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -53,7 +53,7 @@ Begin TemplateScreen TextFieldScreen
       Visible         =   True
       Width           =   200
    End
-   Begin MobileTextField BackgroundColorField
+   Begin AppearanceTextField BackgroundColorField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -105,7 +105,7 @@ Begin TemplateScreen TextFieldScreen
       Visible         =   True
       Width           =   200
    End
-   Begin MobileTextField PaddingField
+   Begin AppearanceTextField PaddingField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -131,7 +131,7 @@ Begin TemplateScreen TextFieldScreen
       Visible         =   True
       Width           =   200
    End
-   Begin MobileTextField HighlightColorField
+   Begin AppearanceTextField HighlightColorField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -157,7 +157,7 @@ Begin TemplateScreen TextFieldScreen
       Visible         =   True
       Width           =   200
    End
-   Begin MobileTextField MultilineField
+   Begin AppearanceTextField MultilineField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -200,7 +200,7 @@ Begin TemplateScreen TextFieldScreen
       Visible         =   True
       Width           =   50
    End
-   Begin MobileLabel PasswordLabel
+   Begin AppearanceLabel PasswordLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   2
@@ -220,33 +220,7 @@ Begin TemplateScreen TextFieldScreen
       Visible         =   True
       Width           =   100
    End
-   Begin MobileTextField DefaultField1
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   0
-      Enabled         =   True
-      Height          =   44
-      Hint            =   "Default TextField"
-      InputType       =   0
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   2
-      SelectedText    =   ""
-      SelectionLength =   0
-      SelectionStart  =   0
-      Text            =   ""
-      TextColor       =   &c00000000
-      Top             =   555
-      Visible         =   False
-      Width           =   200
-   End
-   Begin MobileTextField ErrorField
+   Begin AppearanceTextField ErrorField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -294,6 +268,7 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.SetLetterSpacingXC(0.25)
+		  Me.SetTintXC(Color.Green)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -339,16 +314,6 @@ End
 		  MultilineField.SetInputTypeXC(kTYPE_CLASS_TEXT + _
 		  kTYPE_TEXT_FLAG_MULTI_LINE + _
 		  If(PasswordSwitch.Value, kTYPE_TEXT_VARIATION_PASSWORD, 0))
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events DefaultField1
-	#tag Event
-		Sub Opening()
-		  #Pragma Warning "Nur ein Test"
-		  
-		  ' Declare Sub setImeOptions Lib "Object:DefaultField1:MobileTextField" (options As Integer)
-		  ' setImeOptions(3)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

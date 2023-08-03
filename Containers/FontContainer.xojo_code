@@ -2,7 +2,7 @@
 Begin MobileContainer FontContainer
    AccessibilityHint=   ""
    AccessibilityLabel=   ""
-   Compatibility   =   ""
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
    Height          =   779
    LockBottom      =   False
@@ -11,7 +11,7 @@ Begin MobileContainer FontContainer
    LockTop         =   True
    Visible         =   True
    Width           =   360
-   Begin MobileLabel DefaultLabel
+   Begin AppearanceLabel DefaultLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -31,7 +31,7 @@ Begin MobileContainer FontContainer
       Visible         =   True
       Width           =   300
    End
-   Begin MobileLabel MonospaceLabel
+   Begin FontLabel MonospaceLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -51,7 +51,7 @@ Begin MobileContainer FontContainer
       Visible         =   True
       Width           =   300
    End
-   Begin MobileLabel SerifLabel
+   Begin FontLabel SerifLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -71,7 +71,7 @@ Begin MobileContainer FontContainer
       Visible         =   True
       Width           =   300
    End
-   Begin MobileLabel SansSerifLabel
+   Begin FontLabel SansSerifLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -91,7 +91,7 @@ Begin MobileContainer FontContainer
       Visible         =   True
       Width           =   300
    End
-   Begin MobileLabel CasualLabel
+   Begin FontLabel CasualLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -111,7 +111,7 @@ Begin MobileContainer FontContainer
       Visible         =   True
       Width           =   300
    End
-   Begin MobileLabel CursiveLabel
+   Begin FontLabel CursiveLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -131,7 +131,7 @@ Begin MobileContainer FontContainer
       Visible         =   True
       Width           =   300
    End
-   Begin MobileLabel SansSerifBlackLabel
+   Begin FontLabel SansSerifBlackLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -151,7 +151,7 @@ Begin MobileContainer FontContainer
       Visible         =   True
       Width           =   300
    End
-   Begin MobileLabel SansSerifCondensedLabel
+   Begin FontLabel SansSerifCondensedLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -171,7 +171,7 @@ Begin MobileContainer FontContainer
       Visible         =   True
       Width           =   300
    End
-   Begin MobileLabel SansSerifCondensedLightLabel
+   Begin FontLabel SansSerifCondensedLightLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -191,7 +191,7 @@ Begin MobileContainer FontContainer
       Visible         =   True
       Width           =   300
    End
-   Begin MobileLabel SansSerifCondensedMediumLabel
+   Begin FontLabel SansSerifCondensedMediumLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -211,7 +211,7 @@ Begin MobileContainer FontContainer
       Visible         =   True
       Width           =   300
    End
-   Begin MobileLabel SansSerifLightLabel
+   Begin FontLabel SansSerifLightLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -231,7 +231,7 @@ Begin MobileContainer FontContainer
       Visible         =   True
       Width           =   300
    End
-   Begin MobileLabel SansSerifMediumLabel
+   Begin FontLabel SansSerifMediumLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -251,7 +251,7 @@ Begin MobileContainer FontContainer
       Visible         =   True
       Width           =   300
    End
-   Begin MobileLabel SansSerifSmallcapsLabel
+   Begin FontLabel SansSerifSmallcapsLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -271,7 +271,7 @@ Begin MobileContainer FontContainer
       Visible         =   True
       Width           =   300
    End
-   Begin MobileLabel SansSerifThinLabel
+   Begin FontLabel SansSerifThinLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -291,7 +291,7 @@ Begin MobileContainer FontContainer
       Visible         =   True
       Width           =   300
    End
-   Begin MobileLabel SerifMonospaceLabel
+   Begin FontLabel SerifMonospaceLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -331,116 +331,42 @@ End
 #tag EndMobileContainer
 
 #tag ScreenCode
-	#tag Constant, Name = kFontSize, Type = Double, Dynamic = False, Default = \"20", Scope = Private
-	#tag EndConstant
-
-
 #tag EndScreenCode
 
 #tag Events DefaultLabel
 	#tag Event
 		Sub Opening()
-		  Me.TextFont = Font.SystemFont(kFontSize)
+		  Me.TextFont = Font.SystemFont(20)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events MonospaceLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("monospace", kFontSize)
-		End Sub
-	#tag EndEvent
 #tag EndEvents
 #tag Events SerifLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("serif", kFontSize)
-		End Sub
-	#tag EndEvent
 #tag EndEvents
 #tag Events SansSerifLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("sans-serif", kFontSize)
-		End Sub
-	#tag EndEvent
 #tag EndEvents
 #tag Events CasualLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("casual", kFontSize)
-		End Sub
-	#tag EndEvent
 #tag EndEvents
 #tag Events CursiveLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("cursive", kFontSize)
-		End Sub
-	#tag EndEvent
 #tag EndEvents
 #tag Events SansSerifBlackLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("sans-serif-black", kFontSize)
-		End Sub
-	#tag EndEvent
 #tag EndEvents
 #tag Events SansSerifCondensedLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("sans-serif-condensed", kFontSize)
-		End Sub
-	#tag EndEvent
 #tag EndEvents
 #tag Events SansSerifCondensedLightLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("sans-serif-condensed-light", kFontSize)
-		End Sub
-	#tag EndEvent
 #tag EndEvents
 #tag Events SansSerifCondensedMediumLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("sans-serif-condensed-medium", kFontSize)
-		End Sub
-	#tag EndEvent
 #tag EndEvents
 #tag Events SansSerifLightLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("sans-serif-light", kFontSize)
-		End Sub
-	#tag EndEvent
 #tag EndEvents
 #tag Events SansSerifMediumLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("sans-serif-medium", kFontSize)
-		End Sub
-	#tag EndEvent
 #tag EndEvents
 #tag Events SansSerifSmallcapsLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("sans-serif-smallcaps", kFontSize)
-		End Sub
-	#tag EndEvent
 #tag EndEvents
 #tag Events SansSerifThinLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("sans-serif-thin", kFontSize)
-		End Sub
-	#tag EndEvent
 #tag EndEvents
 #tag Events SerifMonospaceLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = New Font("serif-monospace", kFontSize)
-		End Sub
-	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
 	#tag ViewProperty

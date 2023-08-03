@@ -1,6 +1,6 @@
 #tag MobileScreen
 Begin TemplateScreen ImageScreen
-   Compatibility   =   ""
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    HasNavigationBar=   False
    Modal           =   False
    Orientation     =   0
@@ -64,7 +64,7 @@ Begin TemplateScreen ImageScreen
       Visible         =   True
       Width           =   177
    End
-   Begin MobileLabel AlphaLabel
+   Begin AppearanceLabel AlphaLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1

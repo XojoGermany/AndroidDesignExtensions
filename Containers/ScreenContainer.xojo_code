@@ -2,7 +2,7 @@
 Begin MobileContainer ScreenContainer
    AccessibilityHint=   ""
    AccessibilityLabel=   ""
-   Compatibility   =   ""
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
    Height          =   846
    LockBottom      =   False
@@ -473,13 +473,11 @@ End
 #tag ScreenCode
 	#tag Event
 		Sub Opening()
-		  For Each ctrl As MobileControl In Self.Controls
-		    
-		    If Not (ctrl IsA MobileUIControl) Then Continue
+		  For Each ctrl As MobileUIControl In Self.Controls
 		    
 		    If ctrl IsA MobileButton Then
 		      
-		      MobileButton(ctrl).SetElevationXC(0)
+		      ctrl.SetElevationXC(0)
 		      
 		    End If
 		    
@@ -604,7 +602,7 @@ End
 #tag Events ColorButton15
 	#tag Event
 		Sub Opening()
-		  Me.MyBackgroundColor = &cF2F2F7
+		  Me.MyBackgroundColor = If(Color.IsDarkMode, &c121212, &cF2F2F7)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -616,7 +614,7 @@ End
 		  
 		  Me.SetOutlineSpotShadowColorXC(Color.Clear) ' no shadow
 		  Me.RowTextFont = Font.SystemFont(17)
-		  Me.SeparatorColor = &cCACACC00
+		  Me.SeparatorColor = If(Color.IsDarkMode, &c21212100, &cCACACC00)
 		  
 		  For index As Integer = 0 To Me.LastAddedRowIndex
 		    
@@ -629,6 +627,12 @@ End
 		      
 		      Me.RowPictureAt(index, True) = CheckBoxPicBlank
 		      Me.RowTagAt(index) = False
+		      
+		    End If
+		    
+		    If Color.IsDarkMode Then
+		      
+		      Me.RowTextColorAt(index) = Color.White
 		      
 		    End If
 		    

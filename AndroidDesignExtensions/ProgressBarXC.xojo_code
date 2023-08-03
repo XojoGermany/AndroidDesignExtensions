@@ -1,5 +1,5 @@
 #tag Module
-Protected Module ProgressBar
+Protected Module ProgressBarXC
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0, Description = 476574207468652070726F67726573732062617227732063757272656E74206C6576656C206F66207365636F6E646172792070726F67726573732E2052657475726E2030207768656E207468652070726F67726573732062617220697320696E20696E64657465726D696E617465206D6F64652E
 		Function GetSecondaryProgressXC(Extends ctrl As MobileProgressBar) As Integer
@@ -121,6 +121,23 @@ Protected Module ProgressBar
 		  #Else
 		    
 		    #Pragma Unused secondaryProgress
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369666965732074696E7420636F6C6F7220666F722074686973206472617761626C652E
+		Sub SetTintXC(Extends ctrl As MobileProgressBar, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTint Lib "Object:ctrl:MobileProgressBar" Alias "getProgressDrawable()!!.setTint" (myTintColor As Integer)
+		    setTint(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
 		    
 		  #EndIf
 		End Sub

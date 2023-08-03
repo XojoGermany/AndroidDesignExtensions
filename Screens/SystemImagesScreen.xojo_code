@@ -1,6 +1,6 @@
 #tag MobileScreen
 Begin TemplateScreen SystemImagesScreen
-   Compatibility   =   ""
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    HasNavigationBar=   False
    Modal           =   False
    Orientation     =   0
@@ -53,7 +53,7 @@ Begin TemplateScreen SystemImagesScreen
       Visible         =   True
       Width           =   360
    End
-   Begin MobileLabel CountLabel
+   Begin AppearanceLabel CountLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   1
@@ -89,7 +89,8 @@ End
 		  For Each sImageName As String In App.SystemImages
 		    
 		    Table1.AddRow(sImageName)
-		    Table1.RowPictureAt(Table1.LastAddedRowIndex) = Picture.SystemImage(sImageName, Picture.SystemImageSizes.dp48)
+		    Table1.RowTextColorAt(Table1.LastAddedRowIndex) = If(Color.IsDarkMode, Color.White, Color.Black)
+		    Table1.RowPictureAt(Table1.LastAddedRowIndex) = Picture.SystemImage(sImageName, Picture.SystemImageSizes.dp48, If(Color.IsDarkMode, Color.White, Color.Black))
 		    
 		  Next
 		  
@@ -115,7 +116,7 @@ End
 #tag Events Table1
 	#tag Event
 		Sub Opening()
-		  Me.SeparatorColor = Color.LightGray
+		  Me.SeparatorColor = If(Color.IsDarkMode, &c21212100, &cCACACC00)
 		End Sub
 	#tag EndEvent
 	#tag Event

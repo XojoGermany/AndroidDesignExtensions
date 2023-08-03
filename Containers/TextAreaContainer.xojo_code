@@ -2,7 +2,7 @@
 Begin MobileContainer TextAreaContainer
    AccessibilityHint=   ""
    AccessibilityLabel=   ""
-   Compatibility   =   ""
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
    Height          =   700
    LockBottom      =   False
@@ -34,7 +34,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   320
    End
-   Begin MobileLabel BoldLabel
+   Begin AppearanceLabel BoldLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -47,7 +47,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
-      Scope           =   0
+      Scope           =   2
       Text            =   "Bold"
       TextColor       =   &c00000000
       Top             =   451
@@ -88,7 +88,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   50
    End
-   Begin MobileLabel BoldLabel1
+   Begin AppearanceLabel UnderlineLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -108,7 +108,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   75
    End
-   Begin MobileLabel BoldLabel2
+   Begin AppearanceLabel StrikethroughLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -145,7 +145,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   50
    End
-   Begin MobileTextField LineSpacingField
+   Begin AppearanceTextField LineSpacingField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -171,7 +171,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   63
    End
-   Begin MobileLabel LineSpacingLabel
+   Begin AppearanceLabel LineSpacingLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -191,7 +191,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   90
    End
-   Begin MobileLabel LineHeightLabel
+   Begin AppearanceLabel LineHeightLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -211,7 +211,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   100
    End
-   Begin MobileTextField LineHeightField
+   Begin AppearanceTextField LineHeightField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -237,7 +237,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   63
    End
-   Begin MobileTextField LetterSpacingField
+   Begin AppearanceTextField LetterSpacingField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -263,7 +263,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   63
    End
-   Begin MobileLabel LetterSpacingLabel
+   Begin AppearanceLabel LetterSpacingLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -299,7 +299,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   360
    End
-   Begin MobileLabel CursorLabel
+   Begin AppearanceLabel CursorLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -336,7 +336,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   50
    End
-   Begin MobileLabel ScrollHLabel
+   Begin AppearanceLabel ScrollHLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -373,7 +373,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   50
    End
-   Begin MobileTextField TextScaleXField
+   Begin AppearanceTextField TextScaleXField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -399,7 +399,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   63
    End
-   Begin MobileLabel TextScaleXLabel
+   Begin AppearanceLabel TextScaleXLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -442,7 +442,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   320
    End
-   Begin MobileLabel KeyboardLabel
+   Begin AppearanceLabel KeyboardLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -489,6 +489,7 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.SetAutoLinkMaskXC(AutoLinkMaskXC.All)
+		  Me.SetLinksClickableXC(True)
 		  Me.SetLinkTextColorXC(Color.Red)
 		  Me.SetBackgroundColorXC(Color.Clear)
 		  Me.SetHighlightColorXC(&cFF2F9200)

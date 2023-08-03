@@ -309,8 +309,6 @@ A set of 430+ UI extensions for Xojo Android framework.
 ### MobileLabel
 * SetShadowLayerXC
 
-### MobileOval
-
 ### MobileProgressBar
 * GetSecondaryProgressXC
 * IncrementProgressByXC
@@ -320,8 +318,7 @@ A set of 430+ UI extensions for Xojo Android framework.
 * SetIndeterminateXC
 * SetProgressXC
 * SetSecondaryProgressXC
-
-### MobileProgressWheel
+* SetTintXC
 
 ### MobileScreen
 * GetCurrentFocusedControlXC
@@ -375,11 +372,13 @@ A set of 430+ UI extensions for Xojo Android framework.
 * SetSelectionRequiredXC
 * SetSingleSelectionXC
 
-### MobileSeparator
-
 ### MobileSlider
+* SetThumbColorXC
+* SetTintXC
 
 ### MobileSwitch
+* SetThumbColorXC
+* SetTrackColorXC
 
 ### MobileTabPanel
 * SetInlineLabelXC
@@ -487,6 +486,7 @@ A set of 430+ UI extensions for Xojo Android framework.
 
 ### MobileTextField
 * SetInputTypeXC
+* SetTintXC (API 29+)
 
 ## ToDo
 

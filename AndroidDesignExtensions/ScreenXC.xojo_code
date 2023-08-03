@@ -1,5 +1,5 @@
 #tag Module
-Protected Module Screen
+Protected Module ScreenXC
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0
 		Function GetCurrentFocusedControlXC(Extends myScreen As MobileScreen) As MobileUIControl

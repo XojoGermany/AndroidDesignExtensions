@@ -1,5 +1,5 @@
 #tag Module
-Protected Module ImageViewer
+Protected Module ImageViewerXC
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0, Description = 52656D6F7665732074686520696D616765277320436F6C6F7246696C7465722E
 		Sub ClearColorFilterXC(Extends ctrl As MobileImageViewer)

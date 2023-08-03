@@ -1,5 +1,5 @@
 #tag Module
-Protected Module Table
+Protected Module TableXC
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0, Description = 52657475726E732074686520706F736974696F6E2077697468696E207468652061646170746572277320646174612073657420666F7220746865206669727374206974656D20646973706C61796564206F6E2073637265656E2E
 		Function GetFirstVisiblePositionXC(Extends ctrl As AndroidMobileTable) As Integer

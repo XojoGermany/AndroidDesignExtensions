@@ -1,5 +1,5 @@
 #tag Module
-Protected Module TextArea
+Protected Module TextAreaXC
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0, Description = 4765747320746865206175746F6C696E6B206D61736B206F662074686520746578742E
 		Function GetAutoLinkMaskXC(Extends ctrl As MobileTextArea) As AutoLinkMaskXC

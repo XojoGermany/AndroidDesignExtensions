@@ -1,5 +1,5 @@
 #tag Module
-Protected Module HTMLViewer
+Protected Module HTMLViewerXC
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0, Description = 4765747320776865746865722074686520706167652063616E20676F206261636B206F7220666F72776172642074686520676976656E206E756D626572206F662073746570732E
 		Function CanGoBackOrForwardXC(Extends ctrl As MobileHTMLViewer, steps As Integer) As Boolean

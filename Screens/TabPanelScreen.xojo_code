@@ -1,6 +1,6 @@
 #tag MobileScreen
 Begin TemplateScreen TabPanelScreen
-   Compatibility   =   ""
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    HasNavigationBar=   False
    Modal           =   False
    Orientation     =   0
@@ -30,10 +30,9 @@ Begin TemplateScreen TabPanelScreen
    Begin MobileTabPanel BackgroundColorPanel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
-      Count           =   0
       Enabled         =   True
       Height          =   140
-      LastAddedTabIndex=   0
+      LastAddedPanelIndex=   0
       LayoutTabIndex  =   0
       Left            =   20
       LockBottom      =   False
@@ -41,8 +40,9 @@ Begin TemplateScreen TabPanelScreen
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      PanelCount      =   0
       Scope           =   2
-      SelectedTabIndex=   0
+      SelectedPanelIndex=   0
       Tabs            =   "Background\n0\n1309796351\rColor\n0\n91045887"
       Top             =   80
       Visible         =   True
@@ -51,10 +51,9 @@ Begin TemplateScreen TabPanelScreen
    Begin MobileTabPanel TabModePanel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
-      Count           =   0
       Enabled         =   True
       Height          =   140
-      LastAddedTabIndex=   0
+      LastAddedPanelIndex=   0
       LayoutTabIndex  =   0
       Left            =   20
       LockBottom      =   False
@@ -62,8 +61,9 @@ Begin TemplateScreen TabPanelScreen
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      PanelCount      =   0
       Scope           =   2
-      SelectedTabIndex=   0
+      SelectedPanelIndex=   0
       Tabs            =   "Tab 1\n0\n1309796351\rTab 2\n0\n91045887\rTab 3\n0\n\rTab 4\n0\n\rTab 5\n0\n\rTab 6\n0\n\rTab 7\n0\n\rTab 8\n0\n"
       Top             =   245
       Visible         =   True
@@ -93,13 +93,10 @@ End
 		  Me.IconAt(0) = Picture.SystemImage("format_paint", Picture.SystemImageSizes.dp18, Color.AccentThemeColor)
 		  Me.IconAt(1) = Picture.SystemImage("format_color_fill", Picture.SystemImageSizes.dp18, Color.AccentThemeColor)
 		  
-		  ' Me.IconAt(0) = Picture.SystemImage("format_paint", Picture.SystemImageSizes.dp36, Color.AccentThemeColor)
-		  ' Me.IconAt(1) = Picture.SystemImage("format_color_fill", Picture.SystemImageSizes.dp36, Color.AccentThemeColor)
-		  
-		  Me.SetBackgroundColorXC(&c76D6FF00)
+		  Me.SetBackgroundColorXC(If(Color.IsDarkMode, &c46464600, &c76D6FF00))
 		  Me.SetInlineLabelXC(False)
 		  Me.SetTabTextColorsXC(Color.White, Color.AccentThemeColor)
-		  Me.SetSelectedTabIndicatorColorXC(&c94175100)
+		  Me.SetSelectedTabIndicatorColorXC(If(Color.IsDarkMode, Color.Red, &c94175100))
 		  Me.SetSelectedTabIndicatorGravityXC(TabIndicatorGravityXC.Top)
 		End Sub
 	#tag EndEvent
@@ -107,9 +104,9 @@ End
 #tag Events TabModePanel
 	#tag Event
 		Sub Opening()
-		  Me.SetTabTextColorsXC(Color.LightGray, Color.Black)
+		  Me.SetTabTextColorsXC(Color.LightGray, If(Color.IsDarkMode, Color.Orange, Color.Black))
 		  Me.SetTabModeXC(TabModesXC.Scrollable)
-		  Me.SetTabBackgroundColorAtXC(1, &cFF7E7900)
+		  Me.SetTabBackgroundColorAtXC(1, If(Color.IsDarkMode, Color.Yellow, &cFF7E7900))
 		End Sub
 	#tag EndEvent
 #tag EndEvents
