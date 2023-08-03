@@ -156,6 +156,7 @@ A set of 430+ UI extensions for Xojo Android framework.
 * SetVerticalFadingEdgeEnabledXC
 * SetVerticalScrollBarEnabledXC
 * SetVerticalScrollBarPositionXC
+* SetVerticalScrollbarThumbColor (API 29+)
 * ToStringXC
 
 ### AndroidMobileTable
