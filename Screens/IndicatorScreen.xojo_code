@@ -99,7 +99,7 @@ Begin TemplateScreen IndicatorScreen
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Text            =   "Custom"
+      Text            =   "Global Custom Styles"
       TextColor       =   &c00000000
       Top             =   206
       Visible         =   True
@@ -177,6 +177,84 @@ Begin TemplateScreen IndicatorScreen
       Visible         =   True
       Width           =   50
    End
+   Begin AppearanceLabel CustomLabel1
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   1
+      Enabled         =   True
+      Height          =   30
+      Left            =   20
+      LineBreakMode   =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Text            =   "Individual Custom Styles"
+      TextColor       =   &c00000000
+      Top             =   348
+      Visible         =   True
+      Width           =   320
+   End
+   Begin MobileProgressBar CustomProgressBar1
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   20
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      MaximumValue    =   100.0
+      MinimumValue    =   0.0
+      Scope           =   2
+      Top             =   386
+      Value           =   50.0
+      Visible         =   True
+      Width           =   320
+   End
+   Begin MobileSlider CustomSlider1
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   30
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      MaximumValue    =   100.0
+      MinimumValue    =   0.0
+      Scope           =   2
+      Top             =   414
+      Value           =   50.0
+      Visible         =   True
+      Width           =   320
+   End
+   Begin AppearanceLabel InfoLabel
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   0
+      Enabled         =   True
+      Height          =   76
+      Left            =   20
+      LineBreakMode   =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   False
+      Scope           =   2
+      Text            =   "Since Xojo does not currently support dynamically generated Declares, these examples have no extension methods and the declares must be created manually in the Opening-Event."
+      TextColor       =   &c00000000
+      Top             =   452
+      Visible         =   True
+      Width           =   320
+   End
 End
 #tag EndMobileScreen
 
@@ -194,10 +272,6 @@ End
 		  Close
 		End Sub
 	#tag EndEvent
-#tag EndEvents
-#tag Events DefaultProgressBar
-#tag EndEvents
-#tag Events DefaultSlider
 #tag EndEvents
 #tag Events CustomProgressBar
 	#tag Event
@@ -219,6 +293,33 @@ End
 		Sub Opening()
 		  Me.SetTrackColorXC(&cFFD47900)
 		  Me.SetThumbColorXC(&c94175100)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events CustomProgressBar1
+	#tag Event
+		Sub Opening()
+		  Declare Sub setProgressBackgroundTintList Lib "Object:Me:MobileProgressBar" Alias "setProgressBackgroundTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.GREEN))"
+		  setProgressBackgroundTintList
+		  
+		  Declare Sub setProgressTintList Lib "Object:Me:MobileProgressBar" Alias "setProgressTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.BLUE))"
+		  setProgressTintList
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events CustomSlider1
+	#tag Event
+		Sub Opening()
+		  Declare Sub setProgressBackgroundTintList Lib "Object:Me:MobileSlider" Alias "setProgressBackgroundTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.CYAN))"
+		  setProgressBackgroundTintList
+		  
+		  Declare Sub setProgressTintList Lib "Object:Me:MobileSlider" Alias "setProgressTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.MAGENTA))"
+		  setProgressTintList
+		  
+		  Var c As Color = &cFFD47900
+		  
+		  Declare Sub setTint Lib "Object:Me:MobileSlider" Alias "getThumb()!!.setTint" (tintColor As Integer)
+		  setTint(c.ToInteger)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
