@@ -60,6 +60,7 @@ MultiImage=mwxlogoclear;Resources/mwxlogoclear.xojo_image;&h000000000E67BFFF;&h0
 MobileContainer=ScrollableContainer;Containers/ScrollableContainer.xojo_code;&h0000000043B16FFF;&h000000003BC167FF;false
 Class=ColorButton;Controls/ColorButton.xojo_code;&h00000000229F67FF;&h000000001E06E7FF;false
 Class=FontLabel;Controls/FontLabel.xojo_code;&h000000001FD3F7FF;&h000000001E06E7FF;false
+Class=PropertyLabel;Controls/PropertyLabel.xojo_code;&h00000000767EDFFF;&h000000001E06E7FF;false
 MobileContainer=ScreenContainer;Containers/ScreenContainer.xojo_code;&h000000002B35F7FF;&h000000003BC167FF;false
 MobileContainer=TabPanelContainer;Containers/TabPanelContainer.xojo_code;&h000000001E3657FF;&h000000003BC167FF;false
 MobileContainer=TextAreaContainer;Containers/TextAreaContainer.xojo_code;&h000000006456FFFF;&h000000003BC167FF;false
