@@ -27,224 +27,22 @@ Begin TemplateScreen TextFieldScreen
       Visible         =   True
       Width           =   360
    End
-   Begin AppearanceTextField DefaultField
+   Begin MobileScrollableArea ScrollableArea1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
-      Alignment       =   0
       Enabled         =   True
-      Height          =   44
-      Hint            =   "Default TextField"
-      InputType       =   0
-      Left            =   80
-      LockBottom      =   False
+      Height          =   700
+      Left            =   0
+      LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
-      Password        =   False
-      ReadOnly        =   False
       Scope           =   2
-      SelectedText    =   ""
-      SelectionLength =   0
-      SelectionStart  =   0
-      Text            =   ""
-      TextColor       =   &c00000000
-      Top             =   80
+      ScrollContent   =   303894527
+      Top             =   56
       Visible         =   True
-      Width           =   200
-   End
-   Begin AppearanceTextField BackgroundColorField
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   0
-      Enabled         =   True
-      Height          =   44
-      Hint            =   "Background Color"
-      InputType       =   0
-      Left            =   80
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   2
-      SelectedText    =   ""
-      SelectionLength =   0
-      SelectionStart  =   0
-      Text            =   ""
-      TextColor       =   &c00000000
-      Top             =   236
-      Visible         =   True
-      Width           =   200
-   End
-   Begin MobileTextField TransparentField
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   0
-      Enabled         =   True
-      Height          =   44
-      Hint            =   "Transparent"
-      InputType       =   0
-      Left            =   80
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   2
-      SelectedText    =   ""
-      SelectionLength =   0
-      SelectionStart  =   0
-      Text            =   ""
-      TextColor       =   &c00000000
-      Top             =   288
-      Visible         =   True
-      Width           =   200
-   End
-   Begin AppearanceTextField PaddingField
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   0
-      Enabled         =   True
-      Height          =   44
-      Hint            =   "Padding"
-      InputType       =   0
-      Left            =   80
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   2
-      SelectedText    =   ""
-      SelectionLength =   0
-      SelectionStart  =   0
-      Text            =   ""
-      TextColor       =   &c00000000
-      Top             =   340
-      Visible         =   True
-      Width           =   200
-   End
-   Begin AppearanceTextField HighlightColorField
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   0
-      Enabled         =   True
-      Height          =   44
-      Hint            =   "Highlight Color"
-      InputType       =   0
-      Left            =   80
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   2
-      SelectedText    =   ""
-      SelectionLength =   0
-      SelectionStart  =   0
-      Text            =   ""
-      TextColor       =   &c00000000
-      Top             =   184
-      Visible         =   True
-      Width           =   200
-   End
-   Begin AppearanceTextField MultilineField
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   0
-      Enabled         =   True
-      Height          =   148
-      Hint            =   "Multiline"
-      InputType       =   0
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   2
-      SelectedText    =   ""
-      SelectionLength =   0
-      SelectionStart  =   0
-      Text            =   "Since MobileTextArea has no Hint property, we simply use MobileTextField and enable Multiline."
-      TextColor       =   &c00000000
-      Top             =   399
-      Visible         =   True
-      Width           =   320
-   End
-   Begin MobileSwitch PasswordSwitch
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Enabled         =   True
-      Height          =   30
-      Left            =   288
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   555
-      Value           =   False
-      Visible         =   True
-      Width           =   50
-   End
-   Begin AppearanceLabel PasswordLabel
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   2
-      Enabled         =   True
-      Height          =   26
-      Left            =   188
-      LineBreakMode   =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Text            =   "Password"
-      TextColor       =   &c00000000
-      Top             =   557
-      Visible         =   True
-      Width           =   100
-   End
-   Begin AppearanceTextField ErrorField
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   0
-      Enabled         =   True
-      Height          =   44
-      Hint            =   "Error TextField"
-      InputType       =   0
-      Left            =   80
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   2
-      SelectedText    =   ""
-      SelectionLength =   0
-      SelectionStart  =   0
-      Text            =   "Hello World"
-      TextColor       =   &c00000000
-      Top             =   132
-      Visible         =   True
-      Width           =   200
+      Width           =   360
    End
 End
 #tag EndMobileScreen
@@ -261,66 +59,6 @@ End
 	#tag Event
 		Sub Pressed()
 		  Close
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events DefaultField
-	#tag Event
-		Sub Opening()
-		  Me.SetLetterSpacingXC(0.25)
-		  Me.SetTintXC(Color.Green)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events BackgroundColorField
-	#tag Event
-		Sub Opening()
-		  Me.SetBackgroundColorXC(&cD6D6D600)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events TransparentField
-	#tag Event
-		Sub Opening()
-		  Me.SetBackgroundColorXC(Color.Clear)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events PaddingField
-	#tag Event
-		Sub Opening()
-		  Me.SetPaddingXC(0, 20, 0, 10)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events HighlightColorField
-	#tag Event
-		Sub Opening()
-		  Me.SetHighlightColorXC(Color.Red)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events MultilineField
-	#tag Event
-		Sub Opening()
-		  Me.SetInputTypeXC(kTYPE_CLASS_TEXT + _
-		  kTYPE_TEXT_FLAG_MULTI_LINE)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events PasswordSwitch
-	#tag Event
-		Sub ValueChanged()
-		  MultilineField.SetInputTypeXC(kTYPE_CLASS_TEXT + _
-		  kTYPE_TEXT_FLAG_MULTI_LINE + _
-		  If(PasswordSwitch.Value, kTYPE_TEXT_VARIATION_PASSWORD, 0))
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ErrorField
-	#tag Event
-		Sub Opening()
-		  Me.SetErrorXC("My Error Message")
 		End Sub
 	#tag EndEvent
 #tag EndEvents

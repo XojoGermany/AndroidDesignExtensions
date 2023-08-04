@@ -27,152 +27,22 @@ Begin TemplateScreen ImageScreen
       Visible         =   True
       Width           =   360
    End
-   Begin MobileImageViewer Image1
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      DisplayMode     =   1
-      Enabled         =   True
-      Height          =   240
-      Image           =   241680383
-      Left            =   91
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Top             =   80
-      Visible         =   True
-      Width           =   177
-   End
-   Begin MobileSlider AlphaSlider
+   Begin MobileScrollableArea ScrollableArea1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
-      Height          =   30
-      Left            =   91
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      MaximumValue    =   255.0
-      MinimumValue    =   0.0
-      Scope           =   2
-      Top             =   328
-      Value           =   255.0
-      Visible         =   True
-      Width           =   177
-   End
-   Begin AppearanceLabel AlphaLabel
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   1
-      Enabled         =   True
-      Height          =   40
-      Left            =   91
-      LineBreakMode   =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      Scope           =   2
-      Text            =   "Alpha: 255"
-      TextColor       =   &c00000000
-      Top             =   358
-      Visible         =   True
-      Width           =   177
-   End
-   Begin MobileButton BackgroundColor1Button
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Yellow Background Color"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   80
-      LockBottom      =   False
+      Height          =   700
+      Left            =   0
+      LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   458
+      ScrollContent   =   966637567
+      Top             =   56
       Visible         =   True
-      Width           =   200
-   End
-   Begin MobileButton BackgroundColor2Button
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Red Background Color"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   80
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   406
-      Visible         =   True
-      Width           =   200
-   End
-   Begin MobileButton ShadowColorButton
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Orange Shadow"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   80
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   510
-      Visible         =   True
-      Width           =   200
-   End
-   Begin MobileButton TintColorButton
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Red Tint Color"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   80
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   562
-      Visible         =   True
-      Width           =   200
-   End
-   Begin MobileButton ClearTintColorButton
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Caption         =   "Clear Tint Color"
-      CaptionColor    =   &cFFFFFF00
-      Enabled         =   True
-      Height          =   44
-      Left            =   80
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   614
-      Visible         =   True
-      Width           =   200
+      Width           =   360
    End
 End
 #tag EndMobileScreen
@@ -189,49 +59,6 @@ End
 	#tag Event
 		Sub Pressed()
 		  Close
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events AlphaSlider
-	#tag Event
-		Sub ValueChanged()
-		  Image1.SetImageAlphaXC(Me.Value)
-		  AlphaLabel.Text = "Alpha: " + Me.Value.ToString
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events BackgroundColor1Button
-	#tag Event
-		Sub Pressed()
-		  Image1.SetBackgroundColorXC(Color.Yellow)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events BackgroundColor2Button
-	#tag Event
-		Sub Pressed()
-		  Image1.SetBackgroundColorXC(Color.Red)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ShadowColorButton
-	#tag Event
-		Sub Pressed()
-		  Image1.SetOutlineSpotShadowColorXC(Color.Orange)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events TintColorButton
-	#tag Event
-		Sub Pressed()
-		  Image1.SetColorFilterXC(Color.Red)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ClearTintColorButton
-	#tag Event
-		Sub Pressed()
-		  Image1.ClearColorFilterXC
 		End Sub
 	#tag EndEvent
 #tag EndEvents

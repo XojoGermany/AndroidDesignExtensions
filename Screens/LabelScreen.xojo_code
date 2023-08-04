@@ -27,85 +27,22 @@ Begin TemplateScreen LabelScreen
       Visible         =   True
       Width           =   360
    End
-   Begin AppearanceLabel DefaultLabel
+   Begin MobileScrollableArea ScrollableArea1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
-      Alignment       =   1
       Enabled         =   True
-      Height          =   40
-      Left            =   80
-      LineBreakMode   =   0
-      LockBottom      =   False
+      Height          =   700
+      Left            =   0
+      LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Text            =   "Default Label"
-      TextColor       =   &c00000000
-      Top             =   80
+      ScrollContent   =   2120970239
+      Top             =   56
       Visible         =   True
-      Width           =   200
-   End
-   Begin AppearanceLabel BackgroundColorLabel
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   1
-      Enabled         =   True
-      Height          =   40
-      Left            =   80
-      LineBreakMode   =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Text            =   "Background Color"
-      TextColor       =   &c00000000
-      Top             =   128
-      Visible         =   True
-      Width           =   200
-   End
-   Begin AppearanceLabel BackgroundShadowLabel
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   1
-      Enabled         =   True
-      Height          =   40
-      Left            =   80
-      LineBreakMode   =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Text            =   "With Green Shadow"
-      TextColor       =   &c00000000
-      Top             =   202
-      Visible         =   True
-      Width           =   200
-   End
-   Begin AppearanceLabel ShadowLabel
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   1
-      Enabled         =   True
-      Height          =   40
-      Left            =   80
-      LineBreakMode   =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Text            =   "Shadow Label"
-      TextColor       =   &c00000000
-      Top             =   266
-      Visible         =   True
-      Width           =   200
+      Width           =   360
    End
 End
 #tag EndMobileScreen
@@ -122,32 +59,6 @@ End
 	#tag Event
 		Sub Pressed()
 		  Close
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events BackgroundColorLabel
-	#tag Event
-		Sub Opening()
-		  Me.SetBackgroundColorXC(&cFFD60A00)
-		  Me.SetOutlineSpotShadowColorXC(Color.Clear)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events BackgroundShadowLabel
-	#tag Event
-		Sub Opening()
-		  Me.SetBackgroundColorXC(Color.White)
-		  Me.SetOutlineSpotShadowColorXC(Color.Green)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ShadowLabel
-	#tag Event
-		Sub Opening()
-		  Me.TextFont = Font.BoldSystemFont(24)
-		  Me.TextColor = Color.Red
-		  
-		  Me.SetShadowLayerXC(10, 1, 1, Color.Blue)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
