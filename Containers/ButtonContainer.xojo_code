@@ -151,7 +151,7 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   550
+      Top             =   617
       Visible         =   True
       Width           =   360
    End
@@ -208,6 +208,25 @@ Begin MobileContainer ButtonContainer
       Top             =   82
       Visible         =   True
       Width           =   200
+   End
+   Begin MobileSegmentedButton SegmentedButton1
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   44
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      SegmentCount    =   0
+      Segments        =   "Blue\n\nFalse\rCyan\n\nFalse\rGreen\n\nFalse\rMagenta\n\nFalse\rRed\n\nFalse\rYellow\n\nFalse"
+      SelectedSegmentIndex=   0
+      Top             =   560
+      Visible         =   True
+      Width           =   320
    End
 End
 #tag EndMobileContainer
@@ -310,6 +329,29 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.SetTooltipTextXC("This is my MobileButton tooltip.")
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events SegmentedButton1
+	#tag Event
+		Sub Opening()
+		  Declare Sub setBackgroundColor0 Lib "Object:Me:MobileSegmentedButton" Alias "getChildAt(0).setBackgroundColor(android.graphics.Color.BLUE)"
+		  setBackgroundColor0
+		  
+		  Declare Sub setBackgroundColor1 Lib "Object:Me:MobileSegmentedButton" Alias "getChildAt(1).setBackgroundColor(android.graphics.Color.CYAN)"
+		  setBackgroundColor1
+		  
+		  Declare Sub setBackgroundColor2 Lib "Object:Me:MobileSegmentedButton" Alias "getChildAt(2).setBackgroundColor(android.graphics.Color.GREEN)"
+		  setBackgroundColor2
+		  
+		  Declare Sub setBackgroundColor3 Lib "Object:Me:MobileSegmentedButton" Alias "getChildAt(3).setBackgroundColor(android.graphics.Color.MAGENTA)"
+		  setBackgroundColor3
+		  
+		  Declare Sub setBackgroundColor4 Lib "Object:Me:MobileSegmentedButton" Alias "getChildAt(4).setBackgroundColor(android.graphics.Color.RED)"
+		  setBackgroundColor4
+		  
+		  Declare Sub setBackgroundColor5 Lib "Object:Me:MobileSegmentedButton" Alias "getChildAt(5).setBackgroundColor(android.graphics.Color.YELLOW)"
+		  setBackgroundColor5
 		End Sub
 	#tag EndEvent
 #tag EndEvents
