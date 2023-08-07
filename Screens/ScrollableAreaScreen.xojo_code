@@ -31,16 +31,16 @@ Begin TemplateScreen ScrollableAreaScreen
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
-      Height          =   320
+      Height          =   506
       Left            =   20
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
       ScrollContent   =   1135702015
-      Top             =   80
+      Top             =   220
       Visible         =   True
       Width           =   320
    End
@@ -58,7 +58,7 @@ Begin TemplateScreen ScrollableAreaScreen
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   408
+      Top             =   64
       Visible         =   True
       Width           =   200
    End
@@ -76,14 +76,14 @@ Begin TemplateScreen ScrollableAreaScreen
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   460
+      Top             =   116
       Visible         =   True
       Width           =   200
    End
    Begin MobileButton ShadowColorButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
-      Caption         =   "Green Shadow Color"
+      Caption         =   "Green Shadow"
       CaptionColor    =   &cFFFFFF00
       Enabled         =   True
       Height          =   44
@@ -94,7 +94,7 @@ Begin TemplateScreen ScrollableAreaScreen
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   512
+      Top             =   168
       Visible         =   True
       Width           =   200
    End
@@ -119,6 +119,7 @@ End
 #tag Events ScrollableArea1
 	#tag Event
 		Sub Opening()
+		  Me.SetElevationXC(12)
 		  Me.SetBackgroundColorXC(&cAC8E6800)
 		  Me.SetVerticalScrollbarThumbColor(&c008F0000)
 		End Sub
@@ -141,7 +142,7 @@ End
 #tag Events ShadowColorButton
 	#tag Event
 		Sub Pressed()
-		  ScrollableArea1.SetOutlineSpotShadowColorXC(Color.Green)
+		  ScrollableArea1.SetOutlineSpotShadowColorXC(&c008F0000)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

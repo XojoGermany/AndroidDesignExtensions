@@ -176,7 +176,7 @@ Begin TemplateScreen HTMLScreen
       Enabled         =   True
       Height          =   14
       Left            =   0
-      LockBottom      =   True
+      LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   True

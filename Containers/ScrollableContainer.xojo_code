@@ -4,7 +4,7 @@ Begin MobileContainer ScrollableContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   661
+   Height          =   1000
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -70,7 +70,7 @@ Begin MobileContainer ScrollableContainer
       LockTop         =   True
       Scope           =   2
       TimeCaption     =   "Choose a Time"
-      Top             =   587
+      Top             =   926
       Visible         =   True
       Width           =   320
    End
@@ -86,7 +86,7 @@ Begin MobileContainer ScrollableContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   639
+      Top             =   978
       Visible         =   True
       Width           =   360
    End
