@@ -4,7 +4,7 @@ Begin MobileContainer LabelContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   316
+   Height          =   360
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -103,9 +103,29 @@ Begin MobileContainer LabelContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   264
+      Top             =   328
       Visible         =   True
       Width           =   360
+   End
+   Begin AppearanceLabel EditableLabel
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   1
+      Enabled         =   True
+      Height          =   40
+      Left            =   80
+      LineBreakMode   =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Text            =   "Click me to edit Text"
+      TextColor       =   &c00000000
+      Top             =   280
+      Visible         =   True
+      Width           =   200
    End
 End
 #tag EndMobileContainer
@@ -136,6 +156,16 @@ End
 		  Me.TextColor = Color.Red
 		  
 		  Me.SetShadowLayerXC(10, 1, 1, Color.Blue)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events EditableLabel
+	#tag Event
+		Sub Opening()
+		  Me.SetInputTypeXC(1) ' Text
+		  Me.SetShowSoftInputOnFocusXC(True)
+		  Me.SetTextIsSelectableXC(True)
+		  Me.SetErrorXC("Error")
 		End Sub
 	#tag EndEvent
 #tag EndEvents

@@ -239,6 +239,19 @@ Protected Module TextAreaXC
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 476574207468652074797065206F6620746865206564697461626C6520636F6E74656E742E
+		Function GetInputTypeXC(Extends ctrl As MobileTextArea) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getInputType Lib "Object:ctrl:MobileTextArea" As Integer
+		    Return getInputType
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0
 		Function GetJustificationModeXC(Extends ctrl As MobileTextArea) As Integer
 		  #Pragma Unused ctrl

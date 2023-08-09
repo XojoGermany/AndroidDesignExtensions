@@ -310,7 +310,13 @@ A set of 430+ UI extensions for Xojo Android framework.
 * SetImageAlphaXC
 
 ### MobileLabel
+* GetInputTypeXC
+* GetShowSoftInputOnFocusXC
+* SetInputTypeXC
+* SetErrorXC
 * SetShadowLayerXC
+* SetShowSoftInputOnFocusXC
+* SetTextIsSelectableXC
 
 ### MobileProgressBar
 * GetSecondaryProgressXC
@@ -394,6 +400,7 @@ A set of 430+ UI extensions for Xojo Android framework.
 * SetTabTextColorsXC
 
 ### MobileTextArea / MobileTextField
+* GetInputTypeXC
 * SetErrorXC
 * SetHighlightColorXC
 * SetLetterSpacingXC
