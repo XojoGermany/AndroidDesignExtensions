@@ -1434,6 +1434,19 @@ Protected Module HTMLViewerXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 47657473207768657468657220746865205765625669657720737570706F727473207A6F6F6D2E
+		Function SupportZoomXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function supportZoom Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().supportZoom" As Boolean
+		    Return supportZoom
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 506572666F726D732061207A6F6F6D206F7065726174696F6E20696E207468697320576562566965772E0A546869732076616C7565206D75737420626520696E207468652072616E676520302E303120746F203130302E3020696E636C75736976652E
 		Sub ZoomByXC(Extends ctrl As MobileHTMLViewer, zoomFactor As Single)
 		  #Pragma Unused ctrl

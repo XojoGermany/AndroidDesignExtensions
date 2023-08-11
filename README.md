@@ -293,6 +293,7 @@ A set of 440+ UI extensions for Xojo Android framework.
 * SetUserAgentStringXC
 * SetUseWideViewPortXC
 * StopLoadingXC
+* SupportZoomXC
 * ZoomByXC
 * ZoomInXC
 * ZoomOutXC
