@@ -391,7 +391,11 @@ A set of 440+ UI extensions for Xojo Android framework.
 * SetTrackColorXC
 
 ### MobileTabPanel
+* HasUnboundedRippleXC
+* IsInlineLabelXC
+* IsTabIndicatorFullWidthXC
 * SetInlineLabelXC
+* SetScrollPositionXC
 * SetSelectedTabIndicatorColorXC
 * SetSelectedTabIndicatorGravityXC
 * SetTabGravityXC
@@ -399,6 +403,7 @@ A set of 440+ UI extensions for Xojo Android framework.
 * SetTabIndicatorFullWidthXC
 * SetTabModeXC
 * SetTabTextColorsXC
+* SetUnboundedRippleXC
 
 ### MobileTextArea / MobileTextField
 * GetInputTypeXC
