@@ -95,6 +95,7 @@ End
 		  Me.SetTabTextColorsXC(Color.LightGray, If(Color.IsDarkMode, Color.Orange, Color.Black))
 		  Me.SetTabModeXC(TabModesXC.Scrollable)
 		  Me.SetTabBackgroundColorAtXC(1, If(Color.IsDarkMode, Color.Yellow, &cFF7E7900))
+		  Me.SetUnboundedRippleXC(True)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

@@ -1,6 +1,45 @@
 #tag Module
 Protected Module TabPanelXC
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
+	#tag Method, Flags = &h0, Description = 52657475726E7320776865746865722074686973205461624C61796F75742068617320616E20756E626F756E64656420726970706C65206566666563742C206F7220696620726970706C6520697320626F756E6420746F2074686520746162206974656D2073697A652E
+		Function HasUnboundedRippleXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function hasUnboundedRipple Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return hasUnboundedRipple
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746162206C6162656C732077696C6C20626520646973706C6179656420696E6C696E652077697468207461622069636F6E732C206F7220696620746865792077696C6C20626520646973706C6179656420756E6465726E65617468207461622069636F6E732E
+		Function IsInlineLabelXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isInlineLabel Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isInlineLabel
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4765742077686574686572206F72206E6F742073656C656374696F6E20696E64696361746F722077696474682069732066697420746F2066756C6C207769647468206F662074686520746162206974656D2C206F722066697420746F2074686520746162206974656D277320636F6E74656E742E
+		Function IsTabIndicatorFullWidthXC(Extends ctrl As MobileTabPanel) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isTabIndicatorFullWidth Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Return isTabIndicatorFullWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 536574207768657468657220746162206C6162656C732077696C6C20626520646973706C6179656420696E6C696E652077697468207461622069636F6E732C206F7220696620746865792077696C6C20626520646973706C6179656420756E6465726E65617468207461622069636F6E732E
 		Sub SetInlineLabelXC(Extends ctrl As MobileTabPanel, value As Boolean)
 		  #Pragma Unused ctrl
@@ -13,6 +52,45 @@ Protected Module TabPanelXC
 		  #Else
 		    
 		    #Pragma Unused value
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207363726F6C6C20706F736974696F6E206F6620746865205461624C61796F75742E
+		Sub SetScrollPositionXC(Extends ctrl As MobileTabPanel, position As Integer, positionOffset As Single, updateSelectedTabView As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollPosition Lib "Object:ctrl:MobileTabPanel" (myPosition As Integer, myPositionOffset As Single, myUpdateSelectedTabView As Boolean)
+		    setScrollPosition(position, positionOffset, updateSelectedTabView)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    #Pragma Unused positionOffset
+		    #Pragma Unused updateSelectedTabView
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865207363726F6C6C20706F736974696F6E206F6620746865205461624C61796F75742E
+		Sub SetScrollPositionXC(Extends ctrl As MobileTabPanel, position As Integer, positionOffset As Single, updateSelectedTabView As Boolean, updateIndicatorPosition As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setScrollPosition Lib "Object:ctrl:MobileTabPanel" (myPosition As Integer, myPositionOffset As Single, myUpdateSelectedTabView As Boolean, myUpdateIndicatorPosition As Boolean)
+		    setScrollPosition(position, positionOffset, updateSelectedTabView, updateIndicatorPosition)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    #Pragma Unused positionOffset
+		    #Pragma Unused updateSelectedTabView
+		    #Pragma Unused updateIndicatorPosition
 		    
 		  #EndIf
 		End Sub
@@ -150,6 +228,23 @@ Protected Module TabPanelXC
 		    
 		    #Pragma Unused normalColor
 		    #Pragma Unused selectedColor
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420776865746865722074686973205461624C61796F75742077696C6C206861766520616E20756E626F756E64656420726970706C6520656666656374206F7220696620726970706C652077696C6C20626520626F756E6420746F2074686520746162206974656D2073697A652E0A0A44656661756C747320746F2066616C73652E
+		Sub SetUnboundedRippleXC(Extends ctrl As MobileTabPanel, unboundedRipple As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setUnboundedRipple Lib "Object:ctrl:MobileTabPanel" (myUnboundedRipple As Boolean)
+		    setUnboundedRipple(unboundedRipple)
+		    
+		  #Else
+		    
+		    #Pragma Unused unboundedRipple
 		    
 		  #EndIf
 		End Sub
