@@ -1,6 +1,19 @@
 #tag Module
 Protected Module TableXC
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
+	#tag Method, Flags = &h0, Description = 57686574686572207468652064726177696E67206F6620746865206469766964657220666F722068656164657220766965777320697320656E61626C65642E
+		Function AreHeaderDividersEnabledXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function areHeaderDividersEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return areHeaderDividersEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52657475726E732074686520706F736974696F6E2077697468696E207468652061646170746572277320646174612073657420666F7220746865206669727374206974656D20646973706C61796564206F6E2073637265656E2E
 		Function GetFirstVisiblePositionXC(Extends ctrl As AndroidMobileTable) As Integer
 		  #Pragma Unused ctrl
@@ -40,6 +53,19 @@ Protected Module TableXC
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 546865206D6178696D756D20616D6F756E742061206C69737420766965772077696C6C207363726F6C6C20696E20726573706F6E736520746F20616E206172726F77206576656E742E
+		Function GetMaxScrollAmountXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMaxScrollAmount Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getMaxScrollAmount
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 54686520696420636F72726573706F6E64696E6720746F207468652063757272656E746C792073656C6563746564206974656D2C206F7220494E56414C49445F524F575F4944206966206E6F7468696E672069732073656C65637465642E
 		Function GetSelectedItemIdXC(Extends ctrl As AndroidMobileTable) As Int64
 		  #Pragma Unused ctrl
@@ -66,6 +92,115 @@ Protected Module TableXC
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207472616E736372697074206D6F64652E
+		Function GetTranscriptModeXC(Extends ctrl As AndroidMobileTable) As TranscriptModes
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTranscriptMode Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return TranscriptModes(getTranscriptMode)
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865207769647468206F662074686520766572746963616C207363726F6C6C6261722E
+		Function GetVerticalScrollbarWidthXC(Extends ctrl As AndroidMobileTable) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalScrollbarWidth Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Return getVerticalScrollbarWidth
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 43617573657320616C6C2074686520766965777320746F2062652072656275696C7420616E64207265647261776E2E
+		Sub InvalidateViewsXC(Extends ctrl As AndroidMobileTable)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub invalidateViews Lib "Object:ctrl:AndroidMobileTable"
+		    invalidateViews
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468652066617374207363726F6C6C65722069732073657420746F20616C776179732073686F77206F6E207468697320766965772E
+		Function IsFastScrollAlwaysVisibleXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFastScrollAlwaysVisible Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isFastScrollAlwaysVisible
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074727565206966207468652066617374207363726F6C6C657220697320656E61626C65642E
+		Function IsFastScrollEnabledXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isFastScrollEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isFastScrollEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 496E64696361746573207768657468657220746865206368696C6472656E27732064726177696E67206361636865206973207573656420647572696E672061207363726F6C6C2E2042792064656661756C742C207468652064726177696E6720636163686520697320656E61626C65642062757420746869732077696C6C20636F6E73756D65206D6F7265206D656D6F72792E
+		Function IsScrollingCacheEnabledXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isScrollingCacheEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isScrollingCacheEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207374617465206F66207468652066617374207363726F6C6C20666561747572652E
+		Function IsSmoothScrollbarEnabledXC(Extends ctrl As AndroidMobileTable) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isSmoothScrollbarEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Return isSmoothScrollbarEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4D617073206120706F696E7420746F206120706F736974696F6E20696E20746865206C6973742E
+		Function PointToPositionXC(Extends ctrl As AndroidMobileTable, x As Integer, y As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function pointToPosition Lib "Object:ctrl:AndroidMobileTable" (myX As Integer, myY As Integer) As Integer
+		    Return pointToPosition(x, y)
+		    
+		  #Else
+		    
+		    #Pragma Unused x
+		    #Pragma Unused y
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 4D617073206120706F696E7420746F20612074686520726F776C64206F6620746865206974656D20776869636820696E7465727365637473207468617420706F696E742E0A0A54686520726F776C64206F6620746865206974656D20776869636820636F6E7461696E73207468652073706563696669656420706F696E742C206F722041646170746572566965772E20494E56414C49445F20524F575F49442069662074686520706F696E7420646F6573206E6F7420696E7465727365637420616E206974656D2E
 		Function PointToRowIDXC(Extends ctrl As AndroidMobileTable, x As Integer, y As Integer) As Int64
 		  #Pragma Unused ctrl
@@ -82,6 +217,23 @@ Protected Module TableXC
 		    
 		  #EndIf
 		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 43616C6C6564207768656E2061206368696C6420646F6573206E6F742077616E74207468697320706172656E7420616E642069747320616E636573746F727320746F20696E7465726365707420746F756368206576656E74732077697468205669657747726F7570236F6E496E74657263657074546F7563684576656E74284D6F74696F6E4576656E74292E0A0A5468697320706172656E742073686F756C64207061737320746869732063616C6C206F6E746F2069747320706172656E74732E205468697320706172656E74206D757374206F6265792074686973207265717565737420666F7220746865206475726174696F6E206F662074686520746F7563682028746861742069732C206F6E6C7920636C6561722074686520666C6167206166746572207468697320706172656E742068617320726563656976656420616E207570206F7220612063616E63656C2E
+		Sub RequestDisallowInterceptTouchEventXC(Extends ctrl As AndroidMobileTable, disallowIntercept As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub requestDisallowInterceptTouchEvent Lib "Object:ctrl:AndroidMobileTable" (myDisallowIntercept As Boolean)
+		    requestDisallowInterceptTouchEvent(disallowIntercept)
+		    
+		  #Else
+		    
+		    #Pragma Unused disallowIntercept
+		    
+		  #EndIf
+		End Sub
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 5363726F6C6C7320746865206C697374206974656D732077697468696E207468652076696577206279206120737065636966696564206E756D626572206F6620706978656C732E0A0A5468652061637475616C20616D6F756E74206F66207363726F6C6C2069732063617070656420627920746865206C69737420636F6E74656E742076696577706F72742068656967687420776869636820697320746865206C69737420686569676874206D696E757320746F7020616E6420626F74746F6D2070616464696E6773206D696E7573206F6E6520706978656C2E
@@ -169,6 +321,23 @@ Protected Module TableXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C6573207468652064726177696E67206F6620746865206469766964657220666F72206865616465722076696577732E
+		Sub SetHeaderDividersEnabledXC(Extends ctrl As AndroidMobileTable, headerDividersEnabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHeaderDividersEnabled Lib "Object:ctrl:AndroidMobileTable" (myHeaderDividersEnabled As Boolean)
+		    setHeaderDividersEnabled(headerDividersEnabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused headerDividersEnabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 536574732074686520636865636B6564207374617465206F66207468652073706563696669656420706F736974696F6E2E20546865206973206F6E6C792076616C6964206966207468652063686F696365206D6F646520686173206265656E2073657420746F2043484F4943455F4D4F44455F53494E474C45206F722043484F4943455F4D4F44455F4D554C5449504C452E
 		Sub SetItemCheckedXC(Extends ctrl As AndroidMobileTable, position As Integer, value As Boolean)
 		  #Pragma Unused ctrl
@@ -199,6 +368,19 @@ Protected Module TableXC
 		  #Else
 		    
 		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652073656C656374696F6E20746F20626520746865206669727374206C697374206974656D20616674657220746865206865616465722076696577732E
+		Sub SetSelectionAfterHeaderViewXC(Extends ctrl As AndroidMobileTable)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelectionAfterHeaderView Lib "Object:ctrl:AndroidMobileTable"
+		    setSelectionAfterHeaderView
 		    
 		  #EndIf
 		End Sub
@@ -256,6 +438,23 @@ Protected Module TableXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 5075747320746865206C697374206F72206772696420696E746F207472616E736372697074206D6F64652E20496E2074686973206D6F646520746865206C697374206F7220677269642077696C6C20616C77617973207363726F6C6C20746F2074686520626F74746F6D20746F2073686F77206E6577206974656D732E
+		Sub SetTranscriptModeXC(Extends ctrl As AndroidMobileTable, mode As TranscriptModes)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTranscriptMode Lib "Object:ctrl:AndroidMobileTable" (myMode As Integer)
+		    setTranscriptMode(Integer(mode))
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 536D6F6F74686C79207363726F6C6C2062792064697374616E636520706978656C73206F766572206475726174696F6E206D696C6C697365636F6E64732E
 		Sub SmoothScrollByXC(Extends ctrl As AndroidMobileTable, distance As Integer, duration As Integer)
 		  #Pragma Unused ctrl
@@ -268,6 +467,43 @@ Protected Module TableXC
 		  #Else
 		    
 		    #Pragma Unused distance
+		    #Pragma Unused duration
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536D6F6F74686C79207363726F6C6C20746F2074686520737065636966696564206164617074657220706F736974696F6E2E2054686520766965772077696C6C207363726F6C6C207375636820746861742074686520696E6469636174656420706F736974696F6E20697320646973706C61796564206F666673657420706978656C732062656C6F772074686520746F702065646765206F662074686520766965772E204966207468697320697320696D706F737369626C652C2028652E672E20746865206F666673657420776F756C64207363726F6C6C20746865206669727374206F72206C617374206974656D206265796F6E642074686520626F756E646172696573206F6620746865206C697374292069742077696C6C2067657420617320636C6F736520617320706F737369626C652E
+		Sub SmoothScrollToPositionFromTopXC(Extends ctrl As AndroidMobileTable, position As Integer, offset As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub smoothScrollToPositionFromTop Lib "Object:ctrl:AndroidMobileTable" (myPosition As Integer, myOffset As Integer)
+		    smoothScrollToPositionFromTop(position, offset)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    #Pragma Unused offset
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536D6F6F74686C79207363726F6C6C20746F2074686520737065636966696564206164617074657220706F736974696F6E2E2054686520766965772077696C6C207363726F6C6C207375636820746861742074686520696E6469636174656420706F736974696F6E20697320646973706C61796564206F666673657420706978656C732062656C6F772074686520746F702065646765206F662074686520766965772E204966207468697320697320696D706F737369626C652C2028652E672E20746865206F666673657420776F756C64207363726F6C6C20746865206669727374206F72206C617374206974656D206265796F6E642074686520626F756E646172696573206F6620746865206C697374292069742077696C6C2067657420617320636C6F736520617320706F737369626C652E20546865207363726F6C6C2077696C6C2074616B65206475726174696F6E206D696C6C697365636F6E647320746F20636F6D706C6574652E
+		Sub SmoothScrollToPositionFromTopXC(Extends ctrl As AndroidMobileTable, position As Integer, offset As Integer, duration As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub smoothScrollToPositionFromTop Lib "Object:ctrl:AndroidMobileTable" (myPosition As Integer, myOffset As Integer, myDuration As Integer)
+		    smoothScrollToPositionFromTop(position, offset, duration)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    #Pragma Unused offset
 		    #Pragma Unused duration
 		    
 		  #EndIf
@@ -291,6 +527,24 @@ Protected Module TableXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 536D6F6F74686C79207363726F6C6C20746F2074686520737065636966696564206164617074657220706F736974696F6E2E2054686520766965772077696C6C207363726F6C6C207375636820746861742074686520696E6469636174656420706F736974696F6E20697320646973706C617965642C206275742069742077696C6C2073746F70206561726C79206966207363726F6C6C696E67206675727468657220776F756C64207363726F6C6C20626F756E64506F736974696F6E206F7574206F6620766965772E
+		Sub SmoothScrollToPositionXC(Extends ctrl As AndroidMobileTable, position As Integer, boundPosition As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub smoothScrollToPosition Lib "Object:ctrl:AndroidMobileTable" (myPosition As Integer, myBoundPosition As Integer)
+		    smoothScrollToPosition(position, boundPosition)
+		    
+		  #Else
+		    
+		    #Pragma Unused position
+		    #Pragma Unused boundPosition
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52756E7320746865206C61796F757420616E696D6174696F6E2E2043616C6C696E672074686973206D6574686F6420747269676765727320612072656C61796F7574206F66207468697320766965772067726F75702E
 		Sub StartLayoutAnimationXC(Extends ctrl As AndroidMobileTable)
 		  #Pragma Unused ctrl
@@ -303,6 +557,13 @@ Protected Module TableXC
 		  #EndIf
 		End Sub
 	#tag EndMethod
+
+
+	#tag Enum, Name = TranscriptModes, Type = Integer, Flags = &h0
+		Disabled = 0
+		  Normal = 1
+		AllwaysScroll = 2
+	#tag EndEnum
 
 
 	#tag ViewBehavior
