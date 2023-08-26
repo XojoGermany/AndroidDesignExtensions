@@ -3,7 +3,7 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
 # AndroidDesignExtensions
-A set of 470+ UI extensions for Xojo Android framework.
+A set of 480+ UI extensions for Xojo Android framework.
 
 <img src="https://blog.xojo.com/wp-content/uploads/2023/08/202079C2-5C79-41C6-BE46-5D6261082B39-996x2048.png" alt="Light Mode" width="35%" height="35%"> <img src="https://blog.xojo.com/wp-content/uploads/2023/08/F920EDA3-5709-42F3-A1DA-2C7D5FC86009-996x2048.png" alt="Dark Mode" width="35%" height="35%">
 
@@ -421,11 +421,20 @@ A set of 470+ UI extensions for Xojo Android framework.
 * SetUnboundedRippleXC
 
 ### MobileTextArea / MobileTextField
+* AppendXC
 * GetInputTypeXC
+* HasSelectionXC
+* IsCursorVisibleXC
+* IsTextSelectableXC
+* SetElegantTextHeightXC
 * SetErrorXC
 * SetHighlightColorXC
 * SetLetterSpacingXC
+* SetSelectedXC
+* SetSelectionXC
+* SetShadowLayerXC
 * SetShowSoftInputOnFocusXC
+* SetTextIsSelectableXC
 
 ### MobileTextArea
 * GetAutoLinkMaskXC
@@ -466,6 +475,8 @@ A set of 470+ UI extensions for Xojo Android framework.
 * GetLineWidthXC
 * GetLinksClickableXC
 * GetLinkTextColorXC
+* GetMaxLinesXC
+* GetMinLinesXC
 * GetOffsetForHorizontalXC
 * GetOffsetToLeftOfXC
 * GetOffsetToRightOfXC
@@ -507,12 +518,12 @@ A set of 470+ UI extensions for Xojo Android framework.
 * SetLinesXC
 * SetLinksClickableXC
 * SetLinkTextColorXC
+* SetMaxLinesXC
+* SetMinLinesXC
 * SetPaintFlagsXC
 * SetRawInputTypeXC
 * SetSelectAllOnFocusXC
-* SetShadowLayerXC
 * SetSingleLineXC
-* SetTextIsSelectableXC
 * SetTextScaleXXC
 
 ### MobileTextField
