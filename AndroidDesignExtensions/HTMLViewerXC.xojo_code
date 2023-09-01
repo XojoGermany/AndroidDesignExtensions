@@ -129,17 +129,17 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    ' #If XojoVersion < 2023.03
-		    ' 
-		    ' Declare Sub findAllAsync Lib "Object:ctrl:MobileHTMLViewer" (myFind As CString)
-		    ' 
-		    ' #Else
-		    ' 
-		    ' Declare Sub findAllAsync Lib "Object:ctrl:MobileHTMLViewer" Alias "findAllAsync(myfind.toString())}//" (myFind As CString)
-		    ' 
-		    ' #EndIf
-		    ' 
-		    ' findAllAsync(find)
+		    #If XojoVersion < 2023.03
+		      
+		      Declare Sub findAllAsync Lib "Object:ctrl:MobileHTMLViewer" (myFind As CString)
+		      
+		    #Else
+		      
+		      Declare Sub findAllAsync Lib "Object:ctrl:MobileHTMLViewer" Alias "findAllAsync(myfind.toString())}//" (myFind As CString)
+		      
+		    #EndIf
+		    
+		    findAllAsync(find)
 		    
 		  #Else
 		    
@@ -807,17 +807,17 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    ' #If XojoVersion < 2023.03
-		    ' 
-		    ' Declare Sub saveWebArchive Lib "Object:ctrl:MobileHTMLViewer" (myFilename As CString)
-		    ' 
-		    ' #Else
-		    ' 
-		    ' Declare Sub saveWebArchive Lib "Object:ctrl:MobileHTMLViewer" Alias "saveWebArchive(myfilename.toString())}//" (myFilename As CString)
-		    ' 
-		    ' #EndIf
-		    ' 
-		    ' saveWebArchive(filename)
+		    #If XojoVersion < 2023.03
+		      
+		      Declare Sub saveWebArchive Lib "Object:ctrl:MobileHTMLViewer" (myFilename As CString)
+		      
+		    #Else
+		      
+		      Declare Sub saveWebArchive Lib "Object:ctrl:MobileHTMLViewer" Alias "saveWebArchive(myfilename.toString())}//" (myFilename As CString)
+		      
+		    #EndIf
+		    
+		    saveWebArchive(filename)
 		    
 		  #Else
 		    
