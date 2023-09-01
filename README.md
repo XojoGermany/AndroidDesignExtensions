@@ -7,6 +7,12 @@ A set of 480+ UI extensions for Xojo Android framework.
 
 <img src="https://blog.xojo.com/wp-content/uploads/2023/08/202079C2-5C79-41C6-BE46-5D6261082B39-996x2048.png" alt="Light Mode" width="35%" height="35%"> <img src="https://blog.xojo.com/wp-content/uploads/2023/08/F920EDA3-5709-42F3-A1DA-2C7D5FC86009-996x2048.png" alt="Dark Mode" width="35%" height="35%">
 
+## System requirements
+
+| **Extensions** |                                       **Xojo Version**                                       |
+|:--------------:|:--------------------------------------------------------------------------------------------:|
+|       1.0      | [![XOJO 2023r2](https://img.shields.io/badge/Xojo-2023r2+-green.svg)](https://www.xojo.com/) |
+
 ## Currently implemented extensions
 
 ### Device
@@ -531,8 +537,6 @@ A set of 480+ UI extensions for Xojo Android framework.
 * SetTintXC (API 29+)
 
 ## ToDo
-
-## History
 
 Copy-paste the AndroidDesignExtensions Folder into your project.
 
