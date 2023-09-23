@@ -236,7 +236,7 @@ End
 		Sub Opening()
 		  For Each ctrl As MobileUIControl In Self.Controls
 		    
-		    If ctrl IsA MobileButton Then
+		    If ctrl IsA MobileButton Or ctrl IsA MobileDateTimePicker Then
 		      
 		      If ctrl.Name = "ColoredShadowButton" Then
 		        

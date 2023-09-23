@@ -4,7 +4,7 @@ Begin MobileContainer ControlContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   588
+   Height          =   662
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -23,7 +23,7 @@ Begin MobileContainer ControlContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   524
+      Top             =   610
       Visible         =   True
       Width           =   360
    End
@@ -45,7 +45,7 @@ Begin MobileContainer ControlContainer
       TextColor       =   &c00000000
       Top             =   36
       Visible         =   True
-      Width           =   62
+      Width           =   65
    End
    Begin MobileSlider DegreeSlider
       AccessibilityHint=   ""
@@ -102,9 +102,9 @@ Begin MobileContainer ControlContainer
       Scope           =   2
       Text            =   "Alpha"
       TextColor       =   &c00000000
-      Top             =   74
+      Top             =   158
       Visible         =   True
-      Width           =   62
+      Width           =   65
    End
    Begin MobileSlider AlphaSlider
       AccessibilityHint=   ""
@@ -120,7 +120,7 @@ Begin MobileContainer ControlContainer
       MaximumValue    =   100.0
       MinimumValue    =   0.0
       Scope           =   2
-      Top             =   68
+      Top             =   152
       Value           =   100.0
       Visible         =   True
       Width           =   210
@@ -141,7 +141,7 @@ Begin MobileContainer ControlContainer
       Scope           =   2
       Text            =   "100%"
       TextColor       =   &c00000000
-      Top             =   74
+      Top             =   158
       Visible         =   True
       Width           =   42
    End
@@ -161,9 +161,9 @@ Begin MobileContainer ControlContainer
       Scope           =   2
       Text            =   "Scale X"
       TextColor       =   &c00000000
-      Top             =   116
+      Top             =   200
       Visible         =   True
-      Width           =   62
+      Width           =   65
    End
    Begin AppearanceLabel ScaleXPercentageLabel
       AccessibilityHint=   ""
@@ -181,7 +181,7 @@ Begin MobileContainer ControlContainer
       Scope           =   2
       Text            =   "100%"
       TextColor       =   &c00000000
-      Top             =   116
+      Top             =   200
       Visible         =   True
       Width           =   42
    End
@@ -199,7 +199,7 @@ Begin MobileContainer ControlContainer
       MaximumValue    =   400.0
       MinimumValue    =   25.0
       Scope           =   2
-      Top             =   110
+      Top             =   194
       Value           =   100.0
       Visible         =   True
       Width           =   210
@@ -220,7 +220,7 @@ Begin MobileContainer ControlContainer
       Scope           =   2
       Text            =   "Playground"
       TextColor       =   &c00000000
-      Top             =   244
+      Top             =   327
       Visible         =   True
       Width           =   137
    End
@@ -238,7 +238,7 @@ Begin MobileContainer ControlContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   358
+      Top             =   441
       Visible         =   True
       Width           =   175
    End
@@ -258,9 +258,9 @@ Begin MobileContainer ControlContainer
       Scope           =   2
       Text            =   "Scale Y"
       TextColor       =   &c00000000
-      Top             =   158
+      Top             =   242
       Visible         =   True
-      Width           =   62
+      Width           =   65
    End
    Begin AppearanceLabel ScaleYPercentageLabel
       AccessibilityHint=   ""
@@ -278,7 +278,7 @@ Begin MobileContainer ControlContainer
       Scope           =   2
       Text            =   "100%"
       TextColor       =   &c00000000
-      Top             =   158
+      Top             =   242
       Visible         =   True
       Width           =   42
    End
@@ -296,7 +296,7 @@ Begin MobileContainer ControlContainer
       MaximumValue    =   400.0
       MinimumValue    =   25.0
       Scope           =   2
-      Top             =   152
+      Top             =   236
       Value           =   100.0
       Visible         =   True
       Width           =   210
@@ -317,7 +317,7 @@ Begin MobileContainer ControlContainer
       Scope           =   2
       Text            =   "Elevation"
       TextColor       =   &c00000000
-      Top             =   200
+      Top             =   284
       Visible         =   True
       Width           =   72
    End
@@ -337,7 +337,7 @@ Begin MobileContainer ControlContainer
       Scope           =   2
       Text            =   "0"
       TextColor       =   &c00000000
-      Top             =   200
+      Top             =   284
       Visible         =   True
       Width           =   42
    End
@@ -355,10 +355,128 @@ Begin MobileContainer ControlContainer
       MaximumValue    =   400.0
       MinimumValue    =   0.0
       Scope           =   2
-      Top             =   194
+      Top             =   278
       Value           =   0.0
       Visible         =   True
       Width           =   210
+   End
+   Begin AppearanceLabel RotationXLabel
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   0
+      Enabled         =   True
+      Height          =   28
+      Left            =   20
+      LineBreakMode   =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   False
+      Scope           =   2
+      Text            =   "Rotate X"
+      TextColor       =   &c00000000
+      Top             =   74
+      Visible         =   True
+      Width           =   65
+   End
+   Begin MobileSlider DegreeXSlider
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   30
+      Left            =   90
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      MaximumValue    =   360.0
+      MinimumValue    =   0.0
+      Scope           =   2
+      Top             =   68
+      Value           =   0.0
+      Visible         =   True
+      Width           =   210
+   End
+   Begin AppearanceLabel DegreeXLabel
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   2
+      Enabled         =   True
+      Height          =   28
+      Left            =   298
+      LineBreakMode   =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Text            =   "0°"
+      TextColor       =   &c00000000
+      Top             =   74
+      Visible         =   True
+      Width           =   42
+   End
+   Begin AppearanceLabel RotationYLabel
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   0
+      Enabled         =   True
+      Height          =   28
+      Left            =   20
+      LineBreakMode   =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   False
+      Scope           =   2
+      Text            =   "Rotate Y"
+      TextColor       =   &c00000000
+      Top             =   116
+      Visible         =   True
+      Width           =   65
+   End
+   Begin MobileSlider DegreeYSlider
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   30
+      Left            =   90
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      MaximumValue    =   360.0
+      MinimumValue    =   0.0
+      Scope           =   2
+      Top             =   110
+      Value           =   0.0
+      Visible         =   True
+      Width           =   210
+   End
+   Begin AppearanceLabel DegreeYLabel
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   2
+      Enabled         =   True
+      Height          =   28
+      Left            =   298
+      LineBreakMode   =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Text            =   "0°"
+      TextColor       =   &c00000000
+      Top             =   116
+      Visible         =   True
+      Width           =   42
    End
 End
 #tag EndMobileContainer
@@ -437,6 +555,24 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.Value = PlaygroundButton.GetElevationXC
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events DegreeXSlider
+	#tag Event
+		Sub ValueChanged()
+		  DegreeXLabel.Text = Me.Value.ToString + "°"
+		  
+		  PlaygroundButton.SetRotationXXC(Me.Value)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events DegreeYSlider
+	#tag Event
+		Sub ValueChanged()
+		  DegreeYLabel.Text = Me.Value.ToString + "°"
+		  
+		  PlaygroundButton.SetRotationYXC(Me.Value)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
