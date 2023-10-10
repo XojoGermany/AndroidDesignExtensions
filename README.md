@@ -1,4 +1,4 @@
-[![XOJO 2023r2](https://img.shields.io/badge/Xojo-2023r2-green.svg)](https://www.xojo.com/)
+[![XOJO 2023r2](https://img.shields.io/badge/Xojo-2023r2+-green.svg)](https://www.xojo.com/)
 [![Platforms Android](https://img.shields.io/badge/Platforms-Android-lightgrey.svg?style=flat)](https://www.android.com)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
