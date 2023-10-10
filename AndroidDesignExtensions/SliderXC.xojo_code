@@ -1,5 +1,6 @@
 #tag Module
 Protected Module SliderXC
+	#tag CompatibilityFlags = (TargetAndroid and (Target64Bit))
 	#tag Method, Flags = &h0, Description = 5370656369666965732074696E7420636F6C6F7220666F722074686973206472617761626C652E
 		Sub SetThumbColorXC(Extends ctrl As MobileSlider, c As Color)
 		  #Pragma Unused ctrl

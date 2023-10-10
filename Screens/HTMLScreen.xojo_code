@@ -1,6 +1,7 @@
 #tag MobileScreen
 Begin TemplateScreen HTMLScreen
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
+   HasBackButton   =   False
    HasNavigationBar=   False
    Modal           =   False
    Orientation     =   0
@@ -30,6 +31,8 @@ Begin TemplateScreen HTMLScreen
    Begin MobileHTMLViewer HTMLViewer1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      CanGoBack       =   False
+      CanGoForward    =   False
       Enabled         =   True
       Height          =   541
       Left            =   0
@@ -47,6 +50,7 @@ Begin TemplateScreen HTMLScreen
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
+      AllowSpellChecking=   False
       Enabled         =   True
       Height          =   44
       Hint            =   "URL or Search on page"
@@ -364,6 +368,14 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="HasBackButton"
+		Visible=true
+		Group="Behavior"
+		InitialValue="False"
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Name"
 		Visible=true

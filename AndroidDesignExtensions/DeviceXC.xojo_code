@@ -1,5 +1,6 @@
 #tag Module
 Protected Module DeviceXC
+	#tag CompatibilityFlags = (TargetAndroid and (Target64Bit))
 	#tag Method, Flags = &h0, Description = 47657473207468652075696420666F722074686973206465766963652E
 		Function GetUidXC() As Integer
 		  #If TargetAndroid

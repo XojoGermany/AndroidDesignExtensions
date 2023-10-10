@@ -3,7 +3,7 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
 # AndroidDesignExtensions
-A set of 490+ UI extensions for Xojo Android framework.
+A set of 530+ UI extensions for Xojo Android framework.
 
 <img src="https://blog.xojo.com/wp-content/uploads/2023/08/202079C2-5C79-41C6-BE46-5D6261082B39-996x2048.png" alt="Light Mode" width="35%" height="35%"> <img src="https://blog.xojo.com/wp-content/uploads/2023/08/F920EDA3-5709-42F3-A1DA-2C7D5FC86009-996x2048.png" alt="Dark Mode" width="35%" height="35%">
 
@@ -11,6 +11,7 @@ A set of 490+ UI extensions for Xojo Android framework.
 
 | **Extensions** |                                       **Xojo Version**                                       |
 |:--------------:|:--------------------------------------------------------------------------------------------:|
+|       1.5      | [![XOJO 2023r3](https://img.shields.io/badge/Xojo-2023r3+-green.svg)](https://www.xojo.com/) |
 |       1.0      | [![XOJO 2023r2](https://img.shields.io/badge/Xojo-2023r2+-green.svg)](https://www.xojo.com/) |
 
 ## Currently implemented extensions
@@ -353,6 +354,20 @@ A set of 490+ UI extensions for Xojo Android framework.
 * SetShowSoftInputOnFocusXC
 * SetTextIsSelectableXC
 
+### MobileMoviePlayer
+* CanPauseXC
+* CanSeekBackwardXC
+* CanSeekForwardXC
+* GetBufferPercentageXC
+* GetCurrentPositionXC
+* IsPlayingXC
+* ResolveAdjustedSizeXC
+* ResumeXC
+* SeekToXC
+* SetAudioFocusRequestXC
+* StopPlaybackXC
+* SuspendXC
+
 ### MobileProgressBar
 * GetSecondaryProgressXC
 * IncrementProgressByXC
@@ -363,6 +378,15 @@ A set of 490+ UI extensions for Xojo Android framework.
 * SetProgressXC
 * SetSecondaryProgressXC
 * SetTintXC
+
+### MobilePopupMenu (Xojo 2023r3+)
+* GetDropDownHorizontalOffsetXC
+* GetDropDownVerticalOffsetXC
+* GetDropDownWidthXC
+* PerformClickXC
+* SetDropDownHorizontalOffsetXC
+* SetDropDownVerticalOffsetXC
+* SetDropDownWidthXC
 
 ### MobileScreen
 * GetCurrentFocusedControlXC
@@ -405,11 +429,26 @@ A set of 490+ UI extensions for Xojo Android framework.
 * StopLockTaskXC
 
 ### MobileScrollableArea
+* GetChildCountXC
+* GetChildDrawingOrderXC
+* GetMaxScrollAmountXC
+* GetNestedScrollAxesXC
+* HasNestedScrollingParentXC
+* IsFillViewportXC
+* IsNestedScrollingEnabledXC
+* IsSmoothScrollingEnabledXC
+* PageScrollXC
+* RemoveAllViews
+* RemoveViewAtXC
+* RemoveViewsXC
 * ScrollToXC
 * SetFillViewportXC
+* SetNestedScrollingEnabledXC
 * SetSmoothScrollingEnabledXC
 * SmoothScrollByXC
 * SmoothScrollToXC
+* StartNestedScrollXC
+* StopNestedScrollXC
 
 ### MobileSegmentedButton
 * ClearCheckedXC
@@ -421,8 +460,10 @@ A set of 490+ UI extensions for Xojo Android framework.
 * SetTintXC
 
 ### MobileSwitch
+* IsUseMaterialThemeColorsXC
 * SetThumbColorXC
 * SetTrackColorXC
+* SetUseMaterialThemeColorsXC
 
 ### MobileTabPanel
 * HasUnboundedRippleXC

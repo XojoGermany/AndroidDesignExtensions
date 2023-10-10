@@ -1,5 +1,6 @@
 #tag Module
 Protected Module ApplicationXC
+	#tag CompatibilityFlags = (TargetAndroid and (Target64Bit))
 	#tag Method, Flags = &h0, Description = 436C61737320696D706C656D656E74696E6720746865204170706C69636174696F6E206F626A6563742E2046726F6D207468652022636C61737322206174747269627574652E
 		Function ClassNameXC(Extends myApp As MobileApplication) As String
 		  #Pragma Unused myApp

@@ -15,6 +15,7 @@ Begin MobileContainer TextFieldContainer
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
+      AllowSpellChecking=   False
       Enabled         =   True
       Height          =   44
       Hint            =   "Background Color"
@@ -41,6 +42,7 @@ Begin MobileContainer TextFieldContainer
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
+      AllowSpellChecking=   False
       Enabled         =   True
       Height          =   44
       Hint            =   "Default TextField"
@@ -67,6 +69,7 @@ Begin MobileContainer TextFieldContainer
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
+      AllowSpellChecking=   False
       Enabled         =   True
       Height          =   44
       Hint            =   "Error TextField"
@@ -93,6 +96,7 @@ Begin MobileContainer TextFieldContainer
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
+      AllowSpellChecking=   False
       Enabled         =   True
       Height          =   44
       Hint            =   "Highlight Color"
@@ -119,6 +123,7 @@ Begin MobileContainer TextFieldContainer
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
+      AllowSpellChecking=   False
       Enabled         =   True
       Height          =   148
       Hint            =   "Multiline"
@@ -145,6 +150,7 @@ Begin MobileContainer TextFieldContainer
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
+      AllowSpellChecking=   False
       Enabled         =   True
       Height          =   44
       Hint            =   "Padding"
@@ -208,6 +214,7 @@ Begin MobileContainer TextFieldContainer
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
+      AllowSpellChecking=   False
       Enabled         =   True
       Height          =   44
       Hint            =   "Transparent"
@@ -250,6 +257,15 @@ End
 #tag EndMobileContainer
 
 #tag ScreenCode
+	#tag Method, Flags = &h21
+		Private Sub MultilineFieldFix()
+		  ' Toggle
+		  PasswordSwitch.Value = True
+		  PasswordSwitch.Value = False
+		End Sub
+	#tag EndMethod
+
+
 #tag EndScreenCode
 
 #tag Events BackgroundColorField
@@ -286,6 +302,14 @@ End
 		Sub Opening()
 		  Me.SetInputTypeXC(kTYPE_CLASS_TEXT + _
 		  kTYPE_TEXT_FLAG_MULTI_LINE)
+		  
+		  #If XojoVersion >= 2023.03
+		    
+		    ' 2023r3+ : Fix the initial visual state the control after SetInputTypeXC was called.
+		    Timer.CallLater(100, AddressOf MultilineFieldFix)
+		    
+		  #EndIf
+		  
 		End Sub
 	#tag EndEvent
 #tag EndEvents

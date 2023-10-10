@@ -1,6 +1,7 @@
 #tag MobileScreen
 Begin TemplateScreen HomeScreen
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
+   HasBackButton   =   False
    HasNavigationBar=   False
    Modal           =   False
    Orientation     =   0
@@ -84,7 +85,7 @@ End
 
 
 	#tag Method, Flags = &h21
-		Private Sub AddRow(title As String, tag As String, picName As String = "", picColor As Color = &c000000FF)
+		Private Sub AddRow(title As String, tag As String, picName As String = "", picColor As Color = &c000000FF, hasChevron As Boolean = True)
 		  Static oChevronPic As Picture
 		  
 		  If oChevronPic = Nil Then
@@ -94,7 +95,13 @@ End
 		  End If
 		  
 		  Table1.AddRow(title)
-		  Table1.RowPictureAt(Table1.LastAddedRowIndex, True) = oChevronPic
+		  
+		  If hasChevron Then
+		    
+		    Table1.RowPictureAt(Table1.LastAddedRowIndex, True) = oChevronPic
+		    
+		  End If
+		  
 		  Table1.RowTagAt(Table1.LastAddedRowIndex) = tag
 		  
 		  If Not picName.IsEmpty Then
@@ -188,6 +195,7 @@ End
 		  AddRow("System Images", "systemimages", "image_area", &cFF2F9200)
 		  
 		  AddSection("About")
+		  AddRow("About", "about", "information_outline", &c049BE5, False)
 		  AddRow("Donate", "donate", "paypal", &c049BE5)
 		  AddSection("") ' footer (empty row)
 		  
@@ -213,6 +221,15 @@ End
 		  If oRowTag = Nil Then Return
 		  
 		  Select Case oRowTag
+		  Case "about"
+		    
+		    Static eol As String = EndOfLine + EndOfLine
+		    
+		    MessageBox("Android Design Extensions" + eol + _
+		    "Version " + App.kVersion.ToString + " (Xojo " + XojoVersionString + "+)" + eol + _
+		    "https://github.com/XojoGermany/AndroidDesignExtensions" + eol + _
+		    "Copyright © 2023" + If(DateTime.Now.Year > 2023, " - " + DateTime.Now.Year.ToString, ""))
+		    
 		  Case "androidmobiletable"
 		    
 		    TableScreen.Show
@@ -296,6 +313,14 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="HasBackButton"
+		Visible=true
+		Group="Behavior"
+		InitialValue="False"
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Name"
 		Visible=true

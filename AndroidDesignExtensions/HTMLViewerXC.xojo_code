@@ -135,7 +135,7 @@ Protected Module HTMLViewerXC
 		      
 		    #Else
 		      
-		      Declare Sub findAllAsync Lib "Object:ctrl:MobileHTMLViewer" Alias "findAllAsync(myfind.toString())}//" (myFind As CString)
+		      Declare Sub findAllAsync Lib "Object:ctrl:MobileHTMLViewer:Kotlin" Alias "findAllAsync(myfind.toString())" (myFind As CString)
 		      
 		    #EndIf
 		    
@@ -813,7 +813,7 @@ Protected Module HTMLViewerXC
 		      
 		    #Else
 		      
-		      Declare Sub saveWebArchive Lib "Object:ctrl:MobileHTMLViewer" Alias "saveWebArchive(myfilename.toString())}//" (myFilename As CString)
+		      Declare Sub saveWebArchive Lib "Object:ctrl:MobileHTMLViewer:Kotlin" Alias "saveWebArchive(myfilename.toString())" (myFilename As CString)
 		      
 		    #EndIf
 		    
