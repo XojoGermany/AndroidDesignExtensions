@@ -87,6 +87,7 @@ AppIcon=AndroidDesignExtensions.xojo_resources;&h0
 OSXBundleID=com.xojo.androiddesignextensions
 DebuggerCommandLine=
 UseBuildsFolder=True
+DarkMode=True
 MobileName=AndroidDesignExtensions
 MobileThemeColorName=Custom
 MobileThemePrimaryColor=&h00419CFF
