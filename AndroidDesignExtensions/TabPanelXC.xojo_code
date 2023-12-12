@@ -1,6 +1,142 @@
 #tag Module
 Protected Module TabPanelXC
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
+	#tag Method, Flags = &h0, Description = 436C65617273207468652062616467652773206E756D6265722E
+		Sub ClearBadgeNumberAtXC(Extends ctrl As MobileTabPanel, index As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub clearNumber Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().clearNumber()" (myIndex As Integer)
+		    clearNumber(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Function GetBadgeAlphaAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getAlpha Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getAlpha().tointeger()" (myIndex As Integer) As Integer
+		    Return getAlpha(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732062616467652773206261636B67726F756E6420636F6C6F722E
+		Function GetBadgeBackgroundColorAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Color
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getBackgroundColor Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getBackgroundColor().tointeger()" (myIndex As Integer) As Integer
+		    Return getBackgroundColor(index).ToColor
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Function GetBadgeGravityAtXC(Extends ctrl As MobileTabPanel, index As Integer) As BadgeGravityXC
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getBadgeGravity Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getBadgeGravity().tointeger()" (myIndex As Integer) As Integer
+		    Return BadgeGravityXC(getBadgeGravity(index))
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320686F77206D7563682028696E20706978656C73292074686973206261646765206973206265696E6720686F72697A6F6E74616C6C79206F666673657420746F7761726473207468652063656E746572206F662069747320616E63686F722E0A0A546869732072657475726E732074686520686F72697A6F6E74616C206F666673657420666F722062616467657320776974686F757420746578742E204966206F666673657420666F72206261646765732077697468207465787420616E6420776974686F757420746578742061726520646966666572656E7420636F6E7369646572207573696E6720676574486F72697A6F6E74616C4F6666736574576974686F7574546578742829206F7220676574486F72697A6F6E74616C4F6666736574576974685465787428292E
+		Function GetBadgeHorizontalOffsetAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getHorizontalOffset Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getHorizontalOffset().tointeger()" (myIndex As Integer) As Integer
+		    Return getHorizontalOffset(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320686F77206D7563682028696E20706978656C73292074686973206261646765206973206265696E6720686F72697A6F6E74616C6C79206F666673657420746F7761726473207468652063656E746572206F662069747320616E63686F722E0A0A546869732072657475726E732074686520686F72697A6F6E74616C206F666673657420666F722062616467657320776974686F757420746578742E204966206F666673657420666F72206261646765732077697468207465787420616E6420776974686F757420746578742061726520646966666572656E7420636F6E7369646572207573696E6720676574486F72697A6F6E74616C4F6666736574576974686F7574546578742829206F7220676574486F72697A6F6E74616C4F6666736574576974685465787428292E
+		Function GetBadgeNumberAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getNumber Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getNumber().tointeger()" (myIndex As Integer) As Integer
+		    Return getNumber(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732062616467652773207465787420636F6C6F722E
+		Function GetBadgeTextColorAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Color
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getBadgeTextColor Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getBadgeTextColor().tointeger()" (myIndex As Integer) As Integer
+		    Return getBadgeTextColor(index).ToColor
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320686F77206D7563682028696E20706978656C73292074686973206261646765206973206265696E6720766572746963616C6C79206D6F76656420746F7761726473207468652063656E746572206F662069747320616E63686F722E0A0A546869732072657475726E732074686520766572746963616C206F666673657420666F722062616467657320776974686F757420746578742E204966206F666673657420666F72206261646765732077697468207465787420616E6420776974686F757420746578742061726520646966666572656E7420636F6E7369646572207573696E6720676574566572746963616C4F6666736574576974686F7574546578742829206F7220676574566572746963616C4F6666736574576974685465787428292E
+		Function GetBadgeVerticalOffsetAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalOffset Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getVerticalOffset().tointeger()" (myIndex As Integer) As Integer
+		    Return getVerticalOffset(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52657475726E7320776865746865722074686973205461624C61796F75742068617320616E20756E626F756E64656420726970706C65206566666563742C206F7220696620726970706C6520697320626F756E6420746F2074686520746162206974656D2073697A652E
 		Function HasUnboundedRippleXC(Extends ctrl As MobileTabPanel) As Boolean
 		  #Pragma Unused ctrl
@@ -38,6 +174,142 @@ Protected Module TabPanelXC
 		    
 		  #EndIf
 		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub SetBadgeAlphaAtXC(Extends ctrl As MobileTabPanel, index As Integer, alpha As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlpha Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().setAlpha(myalpha.toInt())" (myIndex As Integer, myAlpha As Integer)
+		    setAlpha(index, alpha)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused alpha
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732062616467652773206261636B67726F756E6420636F6C6F722E
+		Sub SetBadgeBackgroundColorAtXC(Extends ctrl As MobileTabPanel, index As Integer, backgroundColor As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setBackgroundColor(mybackgroundcolor.toInt())" _
+		    (myIndex As Integer, myBackgroundColor As Integer)
+		    setBackgroundColor(index, backgroundColor.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused backgroundColor
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686973206261646765277320677261766974792077697468207265737065637420746F2069747320616E63686F7220766965772E
+		Sub SetBadgeGravityAtXC(Extends ctrl As MobileTabPanel, index As Integer, gravity As BadgeGravityXC)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBadgeGravity Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().setBadgeGravity(mygravity.toInt())" (myIndex As Integer, myGravity As Integer)
+		    setBadgeGravity(index, Integer(gravity))
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused gravity
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F77206D7563682028696E20706978656C732920746F20686F72697A6F6E74616C6C79206D6F7665207468697320626164676520746F7761726473207468652063656E746572206F662069747320616E63686F722E0A0A5468697320736574732074686520686F72697A6F6E74616C206F666673657420666F722062616467657320776974686F757420746578742028646F74732920616E64207769746820746578742E
+		Sub SetBadgeHorizontalOffsetAtXC(Extends ctrl As MobileTabPanel, index As Integer, px As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalOffset Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setHorizontalOffset(mypx.toInt())" _
+		    (myIndex As Integer, myPX As Integer)
+		    setHorizontalOffset(index, px)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused px
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652062616467652773206E756D6265722E204F6E6C79206E6F6E2D6E6567617469766520696E7465676572206E756D626572732061726520737570706F727465642E20496620746865206E756D626572206973206E656761746976652C2069742077696C6C20626520636C616D70656420746F20302E20546865207370656369666965642076616C75652077696C6C20626520646973706C617965642C20756E6C65737320697473206E756D626572206F66206469676974732065786365656473206D6178436861726163746572436F756E7420696E20776869636820636173652061207472756E63617465642076657273696F6E2077696C6C2062652073686F776E2E
+		Sub SetBadgeNumberAtXC(Extends ctrl As MobileTabPanel, index As Integer, number As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNumber Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setNumber(mynumber.toInt())" _
+		    (myIndex As Integer, myNumber As Integer)
+		    setNumber(index, number)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused number
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732062616467652773207465787420636F6C6F722E
+		Sub SetBadgeTextColorAtXC(Extends ctrl As MobileTabPanel, index As Integer, badgeTextColor As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBadgeTextColor Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setBadgeTextColor(mybadgetextcolor.toInt())" _
+		    (myIndex As Integer, myBadgeTextColor As Integer)
+		    setBadgeTextColor(index, badgeTextColor.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused badgeTextColor
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F77206D7563682028696E20706978656C732920746F20766572746963616C6C79206D6F7665207468697320626164676520746F7761726473207468652063656E746572206F662069747320616E63686F722E0A0A5468697320736574732074686520766572746963616C206F666673657420666F722062616467657320626F746820776974686F757420746578742028646F74732920616E64207769746820746578742E
+		Sub SetBadgeVerticalOffsetAtXC(Extends ctrl As MobileTabPanel, index As Integer, px As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalOffset Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setVerticalOffset(mypx.toInt())" _
+		    (myIndex As Integer, myPX As Integer)
+		    setVerticalOffset(index, px)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused px
+		    
+		  #EndIf
+		End Sub
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 536574207768657468657220746162206C6162656C732077696C6C20626520646973706C6179656420696E6C696E652077697468207461622069636F6E732C206F7220696620746865792077696C6C20626520646973706C6179656420756E6465726E65617468207461622069636F6E732E
@@ -136,11 +408,12 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileTabPanel" Alias "getTabAt(2)!!.view.setBackgroundColor" (myColor As Integer)
-		    setBackgroundColor(c.ToInteger)
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.view.setBackgroundColor(mycolor.toInt())" (myIndex As Integer, myColor As Integer)
+		    setBackgroundColor(index, c.ToInteger)
 		    
 		  #Else
 		    
+		    #Pragma Unused index
 		    #Pragma Unused c
 		    
 		  #EndIf
@@ -250,6 +523,28 @@ Protected Module TabPanelXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 456E61626C65206F722064697361626C65207573657220696E69746961746564207363726F6C6C696E672E205468697320696E636C7564657320746F75636820696E70757420287363726F6C6C20616E6420666C696E672067657374757265732920616E64206163636573736962696C69747920696E7075742E2044697361626C696E67206B6579626F61726420696E707574206973206E6F742079657420737570706F727465642E205768656E207573657220696E69746961746564207363726F6C6C696E672069732064697361626C65642C2070726F6772616D6D61746963207363726F6C6C73207468726F7567682073657443757272656E744974656D207374696C6C20776F726B2E2042792064656661756C742C207573657220696E69746961746564207363726F6C6C696E6720697320656E61626C65642E
+		Sub SetUserInputEnabledXC(Extends ctrl As MobileTabPanel, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setUserInputEnabled Lib "Object:ctrl:MobileTabPanel" Alias "_tabPager!!.setUserInputEnabled" (myEnabled As Boolean)
+		    setUserInputEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+
+	#tag Enum, Name = BadgeGravityXC, Type = Integer, Flags = &h0
+		TopStart = 8388659
+		TopEnd = 8388661
+	#tag EndEnum
 
 	#tag Enum, Name = TabGravityXC, Type = Integer, Flags = &h0
 		Fill = 0

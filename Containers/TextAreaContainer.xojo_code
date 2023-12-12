@@ -15,6 +15,7 @@ Begin MobileContainer TextAreaContainer
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
+      AllowSpellChecking=   False
       Enabled         =   True
       Height          =   330
       Left            =   20
@@ -149,6 +150,7 @@ Begin MobileContainer TextAreaContainer
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
+      AllowSpellChecking=   False
       Enabled         =   True
       Height          =   44
       Hint            =   ""
@@ -215,6 +217,7 @@ Begin MobileContainer TextAreaContainer
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
+      AllowSpellChecking=   False
       Enabled         =   True
       Height          =   44
       Hint            =   ""
@@ -241,6 +244,7 @@ Begin MobileContainer TextAreaContainer
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
+      AllowSpellChecking=   False
       Enabled         =   True
       Height          =   44
       Hint            =   ""
@@ -377,6 +381,7 @@ Begin MobileContainer TextAreaContainer
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
+      AllowSpellChecking=   False
       Enabled         =   True
       Height          =   44
       Hint            =   ""
@@ -423,6 +428,7 @@ Begin MobileContainer TextAreaContainer
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
+      AllowSpellChecking=   False
       Enabled         =   True
       Height          =   63
       Left            =   20

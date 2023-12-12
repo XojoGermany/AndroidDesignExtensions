@@ -1,6 +1,7 @@
 #tag MobileScreen
 Begin TemplateScreen TableScreen
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
+   HasBackButton   =   False
    HasNavigationBar=   False
    Modal           =   False
    Orientation     =   0
@@ -169,14 +170,15 @@ End
 		Sub SelectionChanged()
 		  Var oRowTag As Variant = Me.RowTagAt(Me.SelectedRowIndex)
 		  
-		  If oRowTag = Nil Then Return
-		  
 		  If Me.SelectedRowIndex >= 22 And Me.SelectedRowIndex <= Me.RowCount - 1 Then
 		    
 		    Me.RowPictureAt(Me.SelectedRowIndex, True) = If(oRowTag.BooleanValue, CheckBoxPicBlank, CheckBoxPic)
 		    Me.RowTagAt(Me.SelectedRowIndex) = Not oRowTag.BooleanValue
+		    Return
 		    
 		  End If
+		  
+		  If oRowTag = Nil Then Return
 		  
 		  Select Case oRowTag
 		  Case "blue"
@@ -250,6 +252,14 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="HasBackButton"
+		Visible=true
+		Group="Behavior"
+		InitialValue="False"
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Name"
 		Visible=true

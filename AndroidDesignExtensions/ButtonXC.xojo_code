@@ -105,6 +105,19 @@ Protected Module ButtonXC
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0
+		Function PerformClickXC(Extends ctrl As MobileDateTimePicker) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function performClick Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Return performClick
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 536574732074686520636F726E65722072616469757320666F72207468697320627574746F6E2E
 		Sub SetCornerRadiusXC(Extends ctrl As MobileButton, radius As Integer)
 		  #Pragma Unused ctrl
@@ -207,6 +220,38 @@ Protected Module ButtonXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 536574732074686520726970706C6520636F6C6F7220666F72207468697320627574746F6E2E
+		Sub SetRippleColorXC(Extends ctrl As MobileButton, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRippleColor Lib "Object:ctrl:MobileButton:Kotlin" Alias _
+		    "setRippleColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    
+		    setRippleColor(255 - c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520726970706C6520636F6C6F7220666F72207468697320627574746F6E2E
+		Sub SetRippleColorXC(Extends ctrl As MobileDateTimePicker, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setRippleColor Lib "Object:ctrl:MobileDateTimePicker:Kotlin" Alias _
+		    "setRippleColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    
+		    setRippleColor(255 - c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 4769766573207468652074657874206120736861646F77206F66207468652073706563696669656420626C75722072616469757320616E6420636F6C6F722C20746865207370656369666965642064697374616E63652066726F6D2069747320647261776E20706F736974696F6E2E0A0A546865207465787420736861646F772070726F647563656420646F6573206E6F7420696E7465726163742077697468207468652070726F70657274696573206F6E207669657720746861742061726520726573706F6E7369626C6520666F72207265616C2074696D6520736861646F77732C20656C65766174696F6E20616E64207472616E736C6174696F6E5A2E
 		Sub SetShadowLayerXC(Extends ctrl As MobileButton, radius As Single, dX As Single, dY As Single, c As Color)
 		  #Pragma Unused ctrl
@@ -242,6 +287,80 @@ Protected Module ButtonXC
 		    #Pragma Unused dX
 		    #Pragma Unused dY
 		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374726F6B6520636F6C6F7220666F72207468697320627574746F6E2E20426F7468207374726F6B6520636F6C6F7220616E64207374726F6B65207769647468206D7573742062652073657420666F722061207374726F6B6520746F20626520647261776E2E
+		Sub SetStrokeColorXC(Extends ctrl As MobileButton, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setStrokeColor Lib "Object:ctrl:MobileButton:Kotlin" Alias _
+		    "setStrokeColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    
+		    setStrokeColor(255 - c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374726F6B6520636F6C6F7220666F72207468697320627574746F6E2E20426F7468207374726F6B6520636F6C6F7220616E64207374726F6B65207769647468206D7573742062652073657420666F722061207374726F6B6520746F20626520647261776E2E
+		Sub SetStrokeColorXC(Extends ctrl As MobileDateTimePicker, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setStrokeColor Lib "Object:ctrl:MobileDateTimePicker:Kotlin" _
+		    Alias "setStrokeColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    
+		    setStrokeColor(255 - c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F726E65722072616469757320666F72207468697320627574746F6E2E
+		Sub SetStrokeWidthXC(Extends ctrl As MobileButton, strokeWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setStrokeWidth Lib "Object:ctrl:MobileButton" (myStrokeWidth As Integer)
+		    setStrokeWidth(strokeWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused strokeWidth
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F726E65722072616469757320666F72207468697320627574746F6E2E
+		Sub SetStrokeWidthXC(Extends ctrl As MobileDateTimePicker, strokeWidth As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setStrokeWidth Lib "Object:ctrl:MobileDateTimePicker" (myStrokeWidth As Integer)
+		    setStrokeWidth(strokeWidth)
+		    
+		  #Else
+		    
+		    #Pragma Unused strokeWidth
 		    
 		  #EndIf
 		End Sub

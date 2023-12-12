@@ -4,7 +4,7 @@ Begin MobileContainer TextFieldContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   593
+   Height          =   749
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -142,7 +142,7 @@ Begin MobileContainer TextFieldContainer
       SelectionStart  =   0
       Text            =   "Since MobileTextArea has no Hint property, we simply use MobileTextField and enable Multiline."
       TextColor       =   &c00000000
-      Top             =   349
+      Top             =   505
       Visible         =   True
       Width           =   320
    End
@@ -169,7 +169,7 @@ Begin MobileContainer TextFieldContainer
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
-      Top             =   290
+      Top             =   446
       Visible         =   True
       Width           =   200
    End
@@ -189,7 +189,7 @@ Begin MobileContainer TextFieldContainer
       Scope           =   2
       Text            =   "Password"
       TextColor       =   &c00000000
-      Top             =   507
+      Top             =   663
       Visible         =   True
       Width           =   100
    End
@@ -198,14 +198,14 @@ Begin MobileContainer TextFieldContainer
       AccessibilityLabel=   ""
       Enabled         =   True
       Height          =   30
-      Left            =   288
+      Left            =   296
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   False
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   505
+      Top             =   661
       Value           =   False
       Visible         =   True
       Width           =   50
@@ -249,9 +249,90 @@ Begin MobileContainer TextFieldContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   541
+      Top             =   697
       Visible         =   True
       Width           =   360
+   End
+   Begin MobileTextField BorderField
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   0
+      AllowSpellChecking=   False
+      Enabled         =   True
+      Height          =   44
+      Hint            =   "Border Color/Width"
+      InputType       =   0
+      Left            =   80
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   2
+      SelectedText    =   ""
+      SelectionLength =   0
+      SelectionStart  =   0
+      Text            =   ""
+      TextColor       =   &c00000000
+      Top             =   290
+      Visible         =   True
+      Width           =   200
+   End
+   Begin MobileTextField CustomField
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   0
+      AllowSpellChecking=   False
+      Enabled         =   True
+      Height          =   44
+      Hint            =   "Custom Box"
+      InputType       =   0
+      Left            =   80
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   2
+      SelectedText    =   ""
+      SelectionLength =   0
+      SelectionStart  =   0
+      Text            =   ""
+      TextColor       =   &c00000000
+      Top             =   342
+      Visible         =   True
+      Width           =   200
+   End
+   Begin MobileTextField PasswordField
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   0
+      AllowSpellChecking=   False
+      Enabled         =   True
+      Height          =   44
+      Hint            =   "Password Box"
+      InputType       =   0
+      Left            =   80
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   2
+      SelectedText    =   ""
+      SelectionLength =   0
+      SelectionStart  =   0
+      Text            =   ""
+      TextColor       =   &c00000000
+      Top             =   394
+      Visible         =   True
+      Width           =   200
    End
 End
 #tag EndMobileContainer
@@ -271,7 +352,7 @@ End
 #tag Events BackgroundColorField
 	#tag Event
 		Sub Opening()
-		  Me.SetBackgroundColorXC(&cD6D6D600)
+		  Me.SetBoxBackgroundColorXC(&cD6D6D600)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -332,7 +413,36 @@ End
 #tag Events TransparentField
 	#tag Event
 		Sub Opening()
-		  Me.SetBackgroundColorXC(Color.Clear)
+		  Me.SetBoxStrokeWidthXC(0)
+		  Me.SetBoxBackgroundColorXC(Color.Clear)
+		  
+		  If Color.IsDarkMode Then Me.TextColor = Color.TextColor
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events BorderField
+	#tag Event
+		Sub Opening()
+		  Me.SetBoxStrokeWidthXC(5)
+		  Me.SetBoxStrokeColorXC(Color.Orange)
+		  If Color.IsDarkMode Then Me.SetBoxBackgroundColorXC(Color.Clear)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events CustomField
+	#tag Event
+		Sub Opening()
+		  Me.SetBoxStrokeWidthXC(0)
+		  Me.SetBoxBackgroundColorXC(&cEBEBEB00)
+		  Me.SetBoxCornerRadiiXC(30, 30, 0, 0)
+		  Me.SetEndIconModeXC(EndIconModes.ClearText)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events PasswordField
+	#tag Event
+		Sub Opening()
+		  Me.SetEndIconModeXC(EndIconModes.PasswordToggle)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

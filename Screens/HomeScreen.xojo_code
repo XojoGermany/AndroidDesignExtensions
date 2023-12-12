@@ -226,7 +226,7 @@ End
 		    Static eol As String = EndOfLine + EndOfLine
 		    
 		    MessageBox("Android Design Extensions" + eol + _
-		    "Version " + App.kVersion.ToString + " (Xojo " + XojoVersionString + "+)" + eol + _
+		    "Version " + App.kVersion.ToString("0.0") + " (Xojo " + App.SupportedByXojoVersion + "+)" + eol + _
 		    "https://github.com/XojoGermany/AndroidDesignExtensions" + eol + _
 		    "Copyright © 2023" + If(DateTime.Now.Year > 2023, " - " + DateTime.Now.Year.ToString, ""))
 		    

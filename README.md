@@ -3,7 +3,7 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
 # AndroidDesignExtensions
-A set of 530+ UI extensions for Xojo Android framework.
+A set of 610+ UI extensions for Xojo Android framework.
 
 <img src="https://blog.xojo.com/wp-content/uploads/2023/08/202079C2-5C79-41C6-BE46-5D6261082B39-996x2048.png" alt="Light Mode" width="35%" height="35%"> <img src="https://blog.xojo.com/wp-content/uploads/2023/08/F920EDA3-5709-42F3-A1DA-2C7D5FC86009-996x2048.png" alt="Dark Mode" width="35%" height="35%">
 
@@ -11,6 +11,7 @@ A set of 530+ UI extensions for Xojo Android framework.
 
 | **Extensions** |                                       **Xojo Version**                                       |
 |:--------------:|:--------------------------------------------------------------------------------------------:|
+|       2.0      | [![XOJO 2023r3](https://img.shields.io/badge/Xojo-2023r3+-green.svg)](https://www.xojo.com/) |
 |       1.5      | [![XOJO 2023r3](https://img.shields.io/badge/Xojo-2023r3+-green.svg)](https://www.xojo.com/) |
 |       1.0      | [![XOJO 2023r2](https://img.shields.io/badge/Xojo-2023r2+-green.svg)](https://www.xojo.com/) |
 
@@ -226,11 +227,17 @@ A set of 530+ UI extensions for Xojo Android framework.
 * SetCornerRadiusXC
 * SetInsetBottomXC
 * SetInsetTopXC
+* SetRippleColorXC
 * SetShadowLayerXC
+* SetStrokeColorXC
+* SetStrokeWidthXC
 
 ### MobileContainer
 * GetCurrentFocusedControlXC
 * GetCurrentFocusIDXC
+
+### MobileDateTimePicker
+* PerformClickXC
 
 ### MobileHTMLViewer
 * CanGoBackXC
@@ -375,6 +382,8 @@ A set of 530+ UI extensions for Xojo Android framework.
 * IsAnimatingXC
 * IsIndeterminateXC
 * SetIndeterminateXC
+* SetProgressBackgroundTintListXC
+* SetProgressTintListXC
 * SetProgressXC
 * SetSecondaryProgressXC
 * SetTintXC
@@ -400,6 +409,7 @@ A set of 530+ UI extensions for Xojo Android framework.
 * GetStatusBarColorXC
 * GetSystemBarsAppearanceXC
 * GetSystemBarsBehaviorXC
+* GetSystemUiVisibilityXC
 * GetTransitionBackgroundFadeDurationXC
 * GetWidthXC
 * IsDisplayHdrXC
@@ -421,6 +431,8 @@ A set of 530+ UI extensions for Xojo Android framework.
 * SetShowWhenLockedXC
 * SetStatusBarColorXC
 * SetStatusBarContrastEnforcedXC
+* SetSystemBarsAppearanceXC
+* SetSystemUiVisibilityXC
 * SetTransitionBackgroundFadeDurationXC
 * SetTranslucentXC
 * SetTurnScreenOnXC
@@ -452,10 +464,14 @@ A set of 530+ UI extensions for Xojo Android framework.
 
 ### MobileSegmentedButton
 * ClearCheckedXC
+* RemoveSegmentsInRangeXC
+* SetBackgroundColorAtXC
 * SetSelectionRequiredXC
 * SetSingleSelectionXC
 
 ### MobileSlider
+* SetProgressBackgroundTintListXC
+* SetProgressTintListXC
 * SetThumbColorXC
 * SetTintXC
 
@@ -466,9 +482,25 @@ A set of 530+ UI extensions for Xojo Android framework.
 * SetUseMaterialThemeColorsXC
 
 ### MobileTabPanel
+* ClearBadgeNumberAtXC
+* GetBadgeAlphaAtXC
+* GetBadgeBackgroundColorAtXC
+* GetBadgeGravityAtXC
+* GetBadgeHorizontalOffsetAtXC
+* GetBadgeNumberAtXC
+* GetBadgeTextColorAtXC
+* GetBadgeVerticalOffsetAtXC
 * HasUnboundedRippleXC
 * IsInlineLabelXC
 * IsTabIndicatorFullWidthXC
+* SetBackgroundColorXC
+* SetBadgeAlphaAtXC
+* SetBadgeBackgroundColorAtXC
+* SetBadgeGravityAtXC
+* SetBadgeHorizontalOffsetAtXC
+* SetBadgeNumberAtXC
+* SetBadgeTextColorAtXC
+* SetBadgeVerticalOffsetAtXC
 * SetInlineLabelXC
 * SetScrollPositionXC
 * SetSelectedTabIndicatorColorXC
@@ -479,6 +511,7 @@ A set of 530+ UI extensions for Xojo Android framework.
 * SetTabModeXC
 * SetTabTextColorsXC
 * SetUnboundedRippleXC
+* SetUserInputEnabledXC
 
 ### MobileTextArea / MobileTextField
 * AppendXC
@@ -571,6 +604,7 @@ A set of 530+ UI extensions for Xojo Android framework.
 * SetHyphenationFrequencyXC
 * SetImeOptionsXC
 * SetIncludeFontPaddingXC
+* SetInputTypeXC
 * SetJustificationModeXC
 * SetLastBaselineToBottomHeightXC
 * SetLineHeightXC
@@ -584,10 +618,60 @@ A set of 530+ UI extensions for Xojo Android framework.
 * SetRawInputTypeXC
 * SetSelectAllOnFocusXC
 * SetSingleLineXC
+* SetTextFromHtmlXC
 * SetTextScaleXXC
 
 ### MobileTextField
-* SetInputTypeXC
+* GetBoxBackgroundColorXC
+* GetBoxBackgroundModeXC
+* GetBoxCornerRadiusBottomEndXC
+* GetBoxCornerRadiusBottomStartXC
+* GetBoxCornerRadiusTopEndXC
+* GetBoxCornerRadiusTopStartXC
+* GetBoxStrokeColorXC
+* GetBoxStrokeWidthFocusedXC
+* GetBoxStrokeWidthXC
+* GetEndIconContentDescriptionXC
+* GetEndIconModeXC
+* GetErrorCurrentTextColorsXC
+* GetErrorXC
+* GetHelperTextCurrentTextColorXC
+* GetHelperTextXC
+* GetPrefixTextXC
+* GetStartIconContentDescriptionXC
+* GetSuffixTextXC
+* IsCounterEnabledXC
+* IsEndIconCheckableXC
+* IsEndIconVisibleXC
+* IsErrorEnabledXC
+* IsExpandedHintEnabledXC
+* IsHelperTextEnabledXC
+* IsHintAnimationEnabledXC
+* IsStartIconCheckableXC
+* IsStartIconVisibleXC
+* SetBoxBackgroundColorXC
+* SetBoxBackgroundModeXC
+* SetBoxCornerRadiiXC
+* SetBoxStrokeWidthFocusedXC
+* SetBoxStrokeWidthXC
+* SetCounterEnabledXC
+* SetCounterMaxLengthXC
+* SetEndIconActivatedXC
+* SetEndIconCheckableXC
+* SetEndIconContentDescriptionXC
+* SetEndIconModeXC
+* SetEndIconVisibleXC
+* SetErrorContentDescriptionXC
+* SetErrorEnabledXC
+* SetExpandedHintEnabledXC
+* SetHelperTextEnabledXC
+* SetHelperTextXC
+* SetHintAnimationEnabledXC
+* SetPrefixTextXC
+* SetStartIconCheckableXC
+* SetStartIconContentDescriptionXC
+* SetStartIconVisibleXC
+* SetSuffixTextXC
 * SetTintXC (API 29+)
 
 ## ToDo

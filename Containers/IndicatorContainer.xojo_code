@@ -4,7 +4,7 @@ Begin MobileContainer IndicatorContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   566
+   Height          =   470
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -219,26 +219,6 @@ Begin MobileContainer IndicatorContainer
       Visible         =   True
       Width           =   50
    End
-   Begin AppearanceLabel InfoLabel
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   0
-      Enabled         =   True
-      Height          =   76
-      Left            =   20
-      LineBreakMode   =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Text            =   "Since Xojo does not currently support dynamically generated Declares, these examples have no extension methods and the declares must be created manually in the Opening-Event."
-      TextColor       =   &c00000000
-      Top             =   418
-      Visible         =   True
-      Width           =   320
-   End
    Begin MobileCanvas FixBottomPaddingCanvas
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
@@ -251,7 +231,7 @@ Begin MobileContainer IndicatorContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   514
+      Top             =   418
       Visible         =   True
       Width           =   360
    End
@@ -271,11 +251,8 @@ End
 #tag Events CustomProgressBar1
 	#tag Event
 		Sub Opening()
-		  Declare Sub setProgressBackgroundTintList Lib "Object:Me:MobileProgressBar" Alias "setProgressBackgroundTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.GREEN))"
-		  setProgressBackgroundTintList
-		  
-		  Declare Sub setProgressTintList Lib "Object:Me:MobileProgressBar" Alias "setProgressTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.BLUE))"
-		  setProgressTintList
+		  Me.SetProgressBackgroundTintListXC(Color.Green)
+		  Me.SetProgressTintListXC(Color.Blue)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -290,16 +267,9 @@ End
 #tag Events CustomSlider1
 	#tag Event
 		Sub Opening()
-		  Declare Sub setProgressBackgroundTintList Lib "Object:Me:MobileSlider" Alias "setProgressBackgroundTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.CYAN))"
-		  setProgressBackgroundTintList
-		  
-		  Declare Sub setProgressTintList Lib "Object:Me:MobileSlider" Alias "setProgressTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.MAGENTA))"
-		  setProgressTintList
-		  
-		  Var c As Color = &cFFD47900
-		  
-		  Declare Sub setTint Lib "Object:Me:MobileSlider" Alias "getThumb()!!.setTint" (tintColor As Integer)
-		  setTint(c.ToInteger)
+		  Me.SetProgressBackgroundTintListXC(Color.Cyan)
+		  Me.SetProgressTintListXC(Color.Magenta)
+		  Me.SetThumbColorXC(&cFFD47900)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

@@ -1,6 +1,6 @@
 #tag Module
 Protected Module SegmentedButtonXC
-	#tag CompatibilityFlags = (TargetAndroid and (Target64Bit))
+	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0, Description = 436C65617273207468652073656C656374696F6E732E205768656E207468652073656C656374696F6E732061726520636C65617265642C206E6F204D6174657269616C427574746F6E20696E20746869732067726F757020697320636865636B656420616E6420676574436865636B6564427574746F6E49647328292072657475726E7320616E20656D707479206C6973742E
 		Sub ClearCheckedXC(Extends ctrl As MobileSegmentedButton)
 		  #Pragma Unused ctrl
@@ -9,6 +9,42 @@ Protected Module SegmentedButtonXC
 		    
 		    Declare Sub clearChecked Lib "Object:ctrl:MobileSegmentedButton"
 		    clearChecked
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52656D6F76657320612072616E6765206F6620766965777320647572696E67206C61796F75742E20546869732069732075736566756C20696620696E20796F7572206F6E4C61796F75742829206D6574686F642C20796F75206E65656420746F2072656D6F7665206D6F72652076696577732E
+		Sub RemoveSegmentsInRangeXC(Extends ctrl As MobileSegmentedButton, start As Integer, count As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub removeViewsInLayout Lib "Object:ctrl:MobileSegmentedButton" (myStart As Integer, myCount As integer)
+		    removeViewsInLayout(start, count)
+		    
+		  #Else
+		    
+		    #Pragma Unused start
+		    #Pragma Unused count
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F72206F662074686520627574746F6E2061742074686520726563656976656420696E6465782E
+		Sub SetBackgroundColorAtXC(Extends ctrl As MobileSegmentedButton, index As Integer, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileSegmentedButton:Kotlin" Alias "getChildAt(myindex.toInt()).setBackgroundColor(mycolor.toInt())" (myIndex As Integer, myColor As Integer)
+		    setBackgroundColor(index, c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused c
 		    
 		  #EndIf
 		End Sub

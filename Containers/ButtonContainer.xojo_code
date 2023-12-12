@@ -4,7 +4,7 @@ Begin MobileContainer ButtonContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   704
+   Height          =   723
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -43,7 +43,7 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   446
+      Top             =   498
       Visible         =   True
       Width           =   200
    End
@@ -99,7 +99,7 @@ Begin MobileContainer ButtonContainer
       LockTop         =   True
       Scope           =   2
       TimeCaption     =   "Choose a Time"
-      Top             =   498
+      Top             =   550
       Visible         =   True
       Width           =   200
    End
@@ -135,7 +135,7 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   394
+      Top             =   446
       Visible         =   True
       Width           =   200
    End
@@ -151,7 +151,7 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   617
+      Top             =   671
       Visible         =   True
       Width           =   360
    End
@@ -222,11 +222,29 @@ Begin MobileContainer ButtonContainer
       LockTop         =   True
       Scope           =   2
       SegmentCount    =   0
-      Segments        =   "Blue\n\nFalse\rCyan\n\nFalse\rGreen\n\nFalse\rMagenta\n\nFalse\rRed\n\nFalse\rYellow\n\nFalse"
+      Segments        =   "\n\nFalse\r\n\nFalse\r\n\nFalse\r\n\nFalse\r\n\nFalse"
       SelectedSegmentIndex=   0
-      Top             =   560
+      Top             =   614
       Visible         =   True
       Width           =   320
+   End
+   Begin TestButton BorderedButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Border & Ripple Color"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   80
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   394
+      Visible         =   True
+      Width           =   200
    End
 End
 #tag EndMobileContainer
@@ -335,23 +353,23 @@ End
 #tag Events SegmentedButton1
 	#tag Event
 		Sub Opening()
-		  Declare Sub setBackgroundColor0 Lib "Object:Me:MobileSegmentedButton" Alias "getChildAt(0).setBackgroundColor(android.graphics.Color.BLUE)"
-		  setBackgroundColor0
-		  
-		  Declare Sub setBackgroundColor1 Lib "Object:Me:MobileSegmentedButton" Alias "getChildAt(1).setBackgroundColor(android.graphics.Color.CYAN)"
-		  setBackgroundColor1
-		  
-		  Declare Sub setBackgroundColor2 Lib "Object:Me:MobileSegmentedButton" Alias "getChildAt(2).setBackgroundColor(android.graphics.Color.GREEN)"
-		  setBackgroundColor2
-		  
-		  Declare Sub setBackgroundColor3 Lib "Object:Me:MobileSegmentedButton" Alias "getChildAt(3).setBackgroundColor(android.graphics.Color.MAGENTA)"
-		  setBackgroundColor3
-		  
-		  Declare Sub setBackgroundColor4 Lib "Object:Me:MobileSegmentedButton" Alias "getChildAt(4).setBackgroundColor(android.graphics.Color.RED)"
-		  setBackgroundColor4
-		  
-		  Declare Sub setBackgroundColor5 Lib "Object:Me:MobileSegmentedButton" Alias "getChildAt(5).setBackgroundColor(android.graphics.Color.YELLOW)"
-		  setBackgroundColor5
+		  Me.SetBackgroundColorAtXC(0, &cFFBE0B)
+		  Me.SetBackgroundColorAtXC(1, &cFB5607)
+		  Me.SetBackgroundColorAtXC(2, &cFF006E)
+		  Me.SetBackgroundColorAtXC(3, &c8338EC)
+		  Me.SetBackgroundColorAtXC(4, &c3A86FF)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events BorderedButton
+	#tag Event
+		Sub Opening()
+		  Me.CaptionColor = &c007AFF00
+		  Me.SetBackgroundColorXC(Color.White)
+		  Me.SetCornerRadiusXC(40)
+		  Me.SetStrokeColorXC(Me.CaptionColor)
+		  Me.SetStrokeWidthXC(5)
+		  Me.SetRippleColorXC(&cFF006E80)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
