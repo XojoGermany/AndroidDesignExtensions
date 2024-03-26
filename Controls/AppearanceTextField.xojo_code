@@ -7,7 +7,7 @@ Inherits MobileTextField
 		  If Color.IsDarkMode Then
 		    
 		    Me.TextColor = &cD3D3D3
-		    Me.SetBackgroundColorXC(&c303034)
+		    Me.SetBoxBackgroundColorXC(&c303034)
 		    
 		  End If
 		  

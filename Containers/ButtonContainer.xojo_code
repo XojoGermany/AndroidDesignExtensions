@@ -294,6 +294,9 @@ End
 		Sub Opening()
 		  Me.SetBackgroundColorXC(&cFF375F00)
 		  Me.SetCornerRadiusXC(0)
+		  
+		  Me.SetIconXC(SaveSystemImage("android"))
+		  Me.SetIconGravityXC(IconGravity.TextStart)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -310,6 +313,10 @@ End
 		Sub Opening()
 		  Me.SetBackgroundColorXC(&cFFD60A00)
 		  Me.SetCornerRadiusXC(0)
+		  
+		  Me.SetIconXC(SaveSystemImage("calendar_clock", Picture.SystemImageSizes.dp48, Color.Blue))
+		  Me.SetIconGravityXC(IconGravity.TextStart)
+		  me.SetIconTintModeXC(PorterDuffModes.DST)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

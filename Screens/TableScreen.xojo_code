@@ -164,6 +164,8 @@ End
 		    Next
 		    
 		  End If
+		  
+		  Me.SetDividerXC(SpecialFolder.Resource("Divider.png"))
 		End Sub
 	#tag EndEvent
 	#tag Event

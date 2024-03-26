@@ -260,7 +260,7 @@ Begin MobileContainer TextFieldContainer
       AllowSpellChecking=   False
       Enabled         =   True
       Height          =   44
-      Hint            =   "Border Color/Width"
+      Hint            =   "Border Color/Width/Family"
       InputType       =   0
       Left            =   80
       LockBottom      =   False
@@ -280,7 +280,7 @@ Begin MobileContainer TextFieldContainer
       Visible         =   True
       Width           =   200
    End
-   Begin MobileTextField CustomField
+   Begin AppearanceTextField CustomField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -307,7 +307,7 @@ Begin MobileContainer TextFieldContainer
       Visible         =   True
       Width           =   200
    End
-   Begin MobileTextField PasswordField
+   Begin AppearanceTextField PasswordField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -359,8 +359,15 @@ End
 #tag Events DefaultField
 	#tag Event
 		Sub Opening()
-		  Me.SetLetterSpacingXC(0.25)
+		  Me.SetLetterSpacingXC(0.15)
 		  Me.SetTintXC(Color.Green)
+		  Me.SetHintEnabledXC(False)
+		  
+		  Me.SetStartIconXC(SaveSystemImage("account_outline", Picture.SystemImageSizes.dp48, Color.Purple))
+		  Me.SetStartIconTintModeXC(PorterDuffModes.DST)
+		  
+		  Me.SetEndIconModeXC(EndIconModes.Custom)
+		  Me.SetEndIconXC(SaveSystemImage("pencil"))
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -368,6 +375,8 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.SetErrorXC("My Error Message")
+		  
+		  Me.SetStartIconXC(SaveSystemImage("lock_outline"))
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -423,6 +432,8 @@ End
 #tag Events BorderField
 	#tag Event
 		Sub Opening()
+		  Me.SetBoxCornerRadiiXC(25, 25, 25, 25)
+		  Me.SetBoxCornerFamilyXC(BoxCornerFamily.Cut)
 		  Me.SetBoxStrokeWidthXC(5)
 		  Me.SetBoxStrokeColorXC(Color.Orange)
 		  If Color.IsDarkMode Then Me.SetBoxBackgroundColorXC(Color.Clear)
@@ -433,7 +444,7 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.SetBoxStrokeWidthXC(0)
-		  Me.SetBoxBackgroundColorXC(&cEBEBEB00)
+		  If Not Color.IsDarkMode Then Me.SetBoxBackgroundColorXC(&cEBEBEB00)
 		  Me.SetBoxCornerRadiiXC(30, 30, 0, 0)
 		  Me.SetEndIconModeXC(EndIconModes.ClearText)
 		End Sub

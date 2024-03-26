@@ -4,7 +4,7 @@ Begin MobileContainer IndicatorContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   470
+   Height          =   500
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -231,9 +231,45 @@ Begin MobileContainer IndicatorContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   418
+      Top             =   478
       Visible         =   True
       Width           =   360
+   End
+   Begin MobileSlider CustomSlider2
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   30
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      MaximumValue    =   100.0
+      MinimumValue    =   0.0
+      Scope           =   2
+      Top             =   418
+      Value           =   50.0
+      Visible         =   True
+      Width           =   320
+   End
+   Begin MobileSwitch CustomSwitch2
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   30
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   False
+      Scope           =   2
+      Top             =   447
+      Value           =   False
+      Visible         =   True
+      Width           =   50
    End
 End
 #tag EndMobileContainer
@@ -278,6 +314,22 @@ End
 		Sub Opening()
 		  Me.SetTrackColorXC(&cFFD47900)
 		  Me.SetThumbColorXC(&c94175100)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events CustomSlider2
+	#tag Event
+		Sub Opening()
+		  Me.SetThumbXC(SaveSystemImage("star_circle", Picture.SystemImageSizes.dp48, &cFF260000))
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events CustomSwitch2
+	#tag Event
+		Sub Opening()
+		  Me.SetThumbXC(SaveSystemImage("star_circle", Picture.SystemImageSizes.dp48, &cFF260000))
+		  
+		  
 		End Sub
 	#tag EndEvent
 #tag EndEvents

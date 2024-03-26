@@ -154,6 +154,19 @@ Protected Module TextFieldXC
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206D6178206C656E6774682073686F776E206174207468652063686172616374657220636F756E7465722E
+		Function GetCounterMaxLengthXC(Extends ctrl As MobileTextField) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getCounterMaxLength Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getCounterMaxLength" As Integer
+		    Return getCounterMaxLength
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 657475726E73207468652063757272656E746C7920636F6E6669677572656420636F6E74656E74206465736372697074696F6E20666F722074686520656E642069636F6E2E0A0A546869732077696C6C206265207573656420746F20646573637269626520746865206E617669676174696F6E20616374696F6E20746F207573657273207468726F756768206D656368616E69736D7320737563682061732073637265656E20726561646572732E
 		Function GetEndIconContentDescriptionXC(Extends ctrl As MobileTextField) As CString
 		  #Pragma Unused ctrl
@@ -401,6 +414,19 @@ Protected Module TextFieldXC
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 52657475726E7320776865746865722074686520666C6F6174696E67206C6162656C2066756E6374696F6E616C69747920697320656E61626C6564206F72206E6F7420696E2074686973206C61796F75742E
+		Function IsHintEnabledXC(Extends ctrl As MobileTextField) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isHintEnabled Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.isHintEnabled" As Boolean
+		    Return isHintEnabled
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652073746172742069636F6E20697320636865636B61626C652E
 		Function IsStartIconCheckableXC(Extends ctrl As MobileTextField) As Boolean
 		  #Pragma Unused ctrl
@@ -474,6 +500,23 @@ Protected Module TextFieldXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 536574732074686520626F78277320636F726E65722066616D696C7920666F7220616C6C20636F726E657273206F66207468652074657874206669656C642E
+		Sub SetBoxCornerFamilyXC(Extends ctrl As MobileTextField, cornerFamily As BoxCornerFamily)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBoxCornerFamily Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setBoxCornerFamily" (myCornerFamily As Integer)
+		    setBoxCornerFamily(Integer(cornerFamily))
+		    
+		  #Else
+		    
+		    #Pragma Unused cornerFamily
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 5365742074686520626F78277320636F726E65722072616469692E
 		Sub SetBoxCornerRadiiXC(Extends ctrl As MobileTextField, boxCornerRadiusTopStart As Single, boxCornerRadiusTopEnd As Single, boxCornerRadiusBottomStart As Single, boxCornerRadiusBottomEnd As Single)
 		  #Pragma Unused ctrl
@@ -503,6 +546,24 @@ Protected Module TextFieldXC
 		    
 		    Declare Sub setBoxStrokeColor Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setBoxStrokeColor" (myColor As Integer)
 		    setBoxStrokeColor(c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206F75746C696E6520626F782773207374726F6B6520636F6C6F72207768656E20616E206572726F72206973206265696E6720646973706C617965642E0A0A43616C6C696E672074686973206D6574686F64207768656E206E6F7420696E206F75746C696E6520626F78206D6F64652077696C6C20646F206E6F7468696E672E
+		Sub SetBoxStrokeErrorColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBoxStrokeErrorColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setBoxStrokeErrorColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    setBoxStrokeErrorColor(c.Alpha, c.Red, c.Green, c.Blue)
 		    
 		  #Else
 		    
@@ -580,6 +641,96 @@ Protected Module TextFieldXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 5365747320746865207465787420636F6C6F7220666F7220746865206F766572666C6F7765642063686172616374657220636F756E746572207573696E67206120436F6C6F7253746174654C6973742E0A0A54686973207465787420636F6C6F722074616B657320707265636564656E6365206F7665722061207465787420636F6C6F722073657420696E20636F756E7465724F766572666C6F7754657874417070656172616E63652E
+		Sub SetCounterOverflowTextColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setCounterOverflowTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setCounterOverflowTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    setCounterOverflowTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207465787420636F6C6F7220666F72207468652063686172616374657220636F756E746572207573696E67206120436F6C6F7253746174654C6973742E0A0A54686973207465787420636F6C6F722074616B657320707265636564656E6365206F7665722061207465787420636F6C6F722073657420696E20636F756E74657254657874417070656172616E63652E
+		Sub SetCounterTextColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setCounterTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setCounterTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    setCounterTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520637572736F7220636F6C6F722E205573696E672074686973206D6574686F642077696C6C2074616B6520707265636564656E6365206F766572207573696E67207468652076616C7565206F66203F617474722F636F6C6F72436F6E74726F6C4163746976617465642E0A0A4E6F74653A2054686973206D6574686F64206F6E6C792068617320656666656374206F6E20415049206C6576656C732032382B2E204F6E206C6F77657220415049206C6576656C73203F617474722F636F6C6F72436F6E74726F6C4163746976617465642077696C6C206265207573656420666F722074686520637572736F7220636F6C6F722E
+		Sub SetCursorColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setCursorColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setCursorColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    setCursorColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520637572736F7220636F6C6F72207768656E20616E206572726F72206973206265696E6720646973706C617965642E204966206E756C6C2C2074686520637572736F7220646F65736E2774206368616E67652069747320636F6C6F72207768656E207468652074657874206669656C6420697320696E20616E206572726F722073746174652E0A0A4E6F74653A2054686973206D6574686F64206F6E6C792068617320656666656374206F6E20415049206C6576656C732032382B2E204F6E206C6F77657220415049206C6576656C73203F617474722F636F6C6F72436F6E74726F6C4163746976617465642077696C6C206265207573656420666F722074686520637572736F7220636F6C6F722E
+		Sub SetCursorErrorColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setCursorErrorColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setCursorErrorColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    setCursorErrorColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207465787420636F6C6F722075736564206279207468652068696E7420696E20626F74682074686520636F6C6C617073656420616E6420657870616E646564207374617465732E
+		Sub SetDefaultHintTextColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDefaultHintTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setDefaultHintTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    setDefaultHintTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 53657420746865205465787456696577277320656C6567616E7420686569676874206D65747269637320666C61672E20546869732073657474696E672073656C6563747320666F6E742076617269616E747320746861742068617665206E6F74206265656E20636F6D70616374656420746F20666974204C6174696E2D626173656420766572746963616C206D6574726963732C20616E6420616C736F20696E6372656173657320746F7020616E6420626F74746F6D20626F756E647320746F2070726F76696465206D6F72652073706163652E
 		Sub SetElegantTextHeightXC(Extends ctrl As MobileTextField, elegant As Boolean)
 		  #Pragma Unused ctrl
@@ -648,6 +799,23 @@ Protected Module TextFieldXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 536574732074686520776964746820616E6420686569676874206F662074686520656E642069636F6E2E
+		Sub SetEndIconMinSizeXC(Extends ctrl As MobileTextField, iconSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setEndIconMinSize Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setEndIconMinSize" (myIconSize As Integer)
+		    setEndIconMinSize(iconSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused iconSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 5365742075702074686520656E642069636F6E206D6F64652E205768656E207365742C206120627574746F6E20697320706C616365642061742074686520656E64206F662074686520456469745465787420776869636820656E61626C657320746865207573657220746F20706572666F726D207468652073706563696669632069636F6E27732066756E6374696F6E616C6974792E
 		Sub SetEndIconModeXC(Extends ctrl As MobileTextField, mode As EndIconModes)
 		  #Pragma Unused ctrl
@@ -656,6 +824,41 @@ Protected Module TextFieldXC
 		    
 		    Declare Sub setEndIconMode Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setEndIconMode" (myEndIconMode As Integer)
 		    setEndIconMode(Integer(mode))
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4170706C69657320612074696E7420746F2074686520656E642069636F6E206472617761626C652E20446F6573206E6F74206D6F64696679207468652063757272656E742074696E74206D6F64652C20776869636820697320506F72746572447566662E4D6F64652E5352435F494E2062792064656661756C742E0A0A53756273657175656E742063616C6C7320746F20736574456E6449636F6E4472617761626C65284472617761626C65292077696C6C206175746F6D61746963616C6C79206D757461746520746865206472617761626C6520616E64206170706C7920746865207370656369666965642074696E7420616E642074696E74206D6F6465207573696E67204472617761626C65436F6D7061742E73657454696E744C697374284472617761626C652C20436F6C6F7253746174654C697374292E
+		Sub SetEndIconTintListXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setEndIconTintList Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setEndIconTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    setEndIconTintList(c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369666965732074686520626C656E64696E67206D6F6465207573656420746F206170706C79207468652074696E742073706563696669656420627920736574456E6449636F6E54696E744C69737428436F6C6F7253746174654C6973742920746F2074686520656E642069636F6E206472617761626C652E205468652064656661756C74206D6F646520697320506F72746572447566662E4D6F64652E5352435F494E2E
+		Sub SetEndIconTintModeXC(Extends ctrl As MobileTextField, mode As PorterDuffModes)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setEndIconTintMode Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setEndIconTintMode(android.graphics.PorterDuff.Mode.valueOf(mymode.toString()))" (myMode As CString)
+		    setEndIconTintMode(mode.ToString)
 		    
 		  #Else
 		    
@@ -677,6 +880,23 @@ Protected Module TextFieldXC
 		  #Else
 		    
 		    #Pragma Unused visible
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652069636F6E20746F2075736520666F722074686520656E642069636F6E2E2054686973206D6574686F642073686F756C642062652063616C6C65642061667465722073706563696679696E6720616E2054657874496E7075744C61796F75742E456E6449636F6E4D6F64652076696120736574456E6449636F6E4D6F646528696E74292E0A0A496620796F752075736520616E2069636F6E20796F752073686F756C6420616C736F207365742061206465736372697074696F6E20666F722069747320616374696F6E207573696E6720736574456E6449636F6E436F6E74656E744465736372697074696F6E284368617253657175656E6365292E2054686973206973207573656420666F72206163636573736962696C6974792E
+		Sub SetEndIconXC(Extends ctrl As MobileTextField, file As FolderItem)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setEndIconDrawable Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setEndIconDrawable(android.graphics.drawable.Drawable.createFromPath(myicon.toString()))" (myIcon As CString)
+		    setEndIconDrawable(file.NativePath)
+		    
+		  #Else
+		    
+		    #Pragma Unused file
 		    
 		  #EndIf
 		End Sub
@@ -716,6 +936,41 @@ Protected Module TextFieldXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 53657473207468652073746172742069636F6E2E0A0A496620796F752075736520616E2069636F6E20796F752073686F756C6420616C736F207365742061206465736372697074696F6E20666F722069747320616374696F6E207573696E6720736574537461727449636F6E436F6E74656E744465736372697074696F6E284368617253657175656E6365292E2054686973206973207573656420666F72206163636573736962696C6974792E
+		Sub SetErrorIconXC(Extends ctrl As MobileTextField, file As FolderItem)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setErrorIconDrawable Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setErrorIconDrawable(android.graphics.drawable.Drawable.createFromPath(myicon.toString()))" (myIcon As CString)
+		    setErrorIconDrawable(file.NativePath)
+		    
+		  #Else
+		    
+		    #Pragma Unused file
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207465787420636F6C6F72207573656420627920746865206572726F72206D65737361676520696E20616C6C207374617465732E
+		Sub SetErrorTextColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setErrorTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setErrorTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    setErrorTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 53657473207468652072696768742D68616E6420636F6D706F756E64206472617761626C65206F662074686520546578745669657720746F2074686520226572726F72222069636F6E20616E64207365747320616E206572726F72206D65737361676520746861742077696C6C20626520646973706C6179656420696E206120706F707570207768656E207468652054657874566965772068617320666F6375732E205468652069636F6E20616E64206572726F72206D6573736167652077696C6C20626520726573657420746F206E756C6C207768656E20616E79206B6579206576656E7473206361757365206368616E67657320746F20746865205465787456696577277320746578742E20496620746865206572726F72206973206E756C6C2C20746865206572726F72206D65737361676520616E642069636F6E2077696C6C20626520636C65617265642E
 		Sub SetErrorXC(Extends ctrl As MobileTextField, error As CString)
 		  #Pragma Unused ctrl
@@ -745,6 +1000,24 @@ Protected Module TextFieldXC
 		  #Else
 		    
 		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207465787420636F6C6F722075736564206279207468652068656C706572207465787420696E20616C6C207374617465732E
+		Sub SetHelperTextColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHelperTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setHelperTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    setHelperTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
 		    
 		  #EndIf
 		End Sub
@@ -818,6 +1091,58 @@ Protected Module TextFieldXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 5365747320776865746865722074686520666C6F6174696E67206C6162656C2066756E6374696F6E616C69747920697320656E61626C6564206F72206E6F7420696E2074686973206C61796F75742E0A0A496620656E61626C65642C20616E79206E6F6E2D656D7074792068696E7420696E20746865206368696C642045646974546578742077696C6C206265206D6F76656420696E746F2074686520666C6F6174696E672068696E742C20616E6420697473206578697374696E672068696E742077696C6C20626520636C65617265642E2049662064697361626C65642C207468656E20616E79206E6F6E2D656D70747920666C6F6174696E672068696E7420696E2074686973206C61796F75742077696C6C206265206D6F76656420696E746F207468652045646974546578742C20616E642074686973206C61796F757427732068696E742077696C6C20626520636C65617265642E
+		Sub SetHintEnabledXC(Extends ctrl As MobileTextField, enabled As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHintEnabled Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setHintEnabled" (myEnabled As Boolean)
+		    setHintEnabled(enabled)
+		    
+		  #Else
+		    
+		    #Pragma Unused enabled
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6C61707365642068696E74207465787420636F6C6F722066726F6D207468652073706563696669656420436F6C6F7253746174654C697374207265736F757263652E
+		Sub SetHintTextColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHintTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setHintTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    setHintTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652068696E7420746F20626520646973706C6179656420696E2074686520666C6F6174696E67206C6162656C2C20696620656E61626C65642E
+		Sub SetHintXC(Extends ctrl As MobileTextField, hint As CString)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHint Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setHint" (myHint As CString)
+		    setHint(hint)
+		    
+		  #Else
+		    
+		    #Pragma Unused hint
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 536574207468652074797065206F662074686520636F6E74656E742077697468206120636F6E7374616E7420617320646566696E656420666F7220456469746F72496E666F23696E707574547970652E20546869732077696C6C2074616B652063617265206F66206368616E67696E6720746865206B6579206C697374656E65722C2062792063616C6C696E67207365744B65794C697374656E657228616E64726F69642E746578742E6D6574686F642E4B65794C697374656E6572292C20746F206D617463682074686520676976656E20636F6E74656E7420747970652E2049662074686520676976656E20636F6E74656E74207479706520697320456469746F72496E666F23545950455F4E554C4C207468656E206120736F6674206B6579626F6172642077696C6C206E6F7420626520646973706C6179656420666F722074686973207465787420766965772E204E6F7465207468617420746865206D6178696D756D206E756D626572206F6620646973706C61796564206C696E65732028736565207365744D61784C696E657328696E7429292077696C6C206265206D6F64696669656420696620796F75206368616E67652074686520456469746F72496E666F23545950455F544558545F464C41475F4D554C54495F4C494E4520666C6167206F662074686520696E70757420747970652E
 		Sub SetInputTypeXC(Extends ctrl As MobileTextField, type As Integer)
 		  #Pragma Unused ctrl
@@ -847,6 +1172,42 @@ Protected Module TextFieldXC
 		  #Else
 		    
 		    #Pragma Unused letterSpacing
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207465787420636F6C6F7220757365642062792074686520706C616365686F6C646572207465787420696E20616C6C207374617465732E
+		Sub SetPlaceholderTextColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPlaceholderTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setPlaceholderTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    setPlaceholderTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207465787420636F6C6F7220757365642062792074686520707265666978207465787420696E20616C6C207374617465732E
+		Sub SetPrefixTextColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setPrefixTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setPrefixTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    setPrefixTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
 		    
 		  #EndIf
 		End Sub
@@ -975,6 +1336,58 @@ Protected Module TextFieldXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 536574732074686520776964746820616E6420686569676874206F66207468652073746172742069636F6E2E
+		Sub SetStartIconMinSizeXC(Extends ctrl As MobileTextField, iconSize As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setStartIconMinSize Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setStartIconMinSize" (myIconSize As Integer)
+		    setStartIconMinSize(iconSize)
+		    
+		  #Else
+		    
+		    #Pragma Unused iconSize
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4170706C69657320612074696E7420746F207468652073746172742069636F6E206472617761626C652E20446F6573206E6F74206D6F64696679207468652063757272656E742074696E74206D6F64652C20776869636820697320506F72746572447566662E4D6F64652E5352435F494E2062792064656661756C742E0A0A53756273657175656E742063616C6C7320746F20736574537461727449636F6E4472617761626C65284472617761626C65292077696C6C206175746F6D61746963616C6C79206D757461746520746865206472617761626C6520616E64206170706C7920746865207370656369666965642074696E7420616E642074696E74206D6F6465207573696E67204472617761626C65436F6D7061742E73657454696E744C697374284472617761626C652C20436F6C6F7253746174654C697374292E
+		Sub SetStartIconTintListXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setStartIconTintList Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setStartIconTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    setStartIconTintList(c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369666965732074686520626C656E64696E67206D6F6465207573656420746F206170706C79207468652074696E742073706563696669656420627920736574456E6449636F6E54696E744C69737428436F6C6F7253746174654C6973742920746F207468652073746172742069636F6E206472617761626C652E205468652064656661756C74206D6F646520697320506F72746572447566662E4D6F64652E5352435F494E2E
+		Sub SetStartIconTintModeXC(Extends ctrl As MobileTextField, mode As PorterDuffModes)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setStartIconTintMode Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setStartIconTintMode(android.graphics.PorterDuff.Mode.valueOf(mymode.toString()))" (myMode As CString)
+		    setStartIconTintMode(mode.ToString)
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 53657473207468652073746172742069636F6E20746F2062652056495349424C45206F7220474F4E452E
 		Sub SetStartIconVisibleXC(Extends ctrl As MobileTextField, visible As Boolean)
 		  #Pragma Unused ctrl
@@ -987,6 +1400,41 @@ Protected Module TextFieldXC
 		  #Else
 		    
 		    #Pragma Unused visible
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652073746172742069636F6E2E0A0A496620796F752075736520616E2069636F6E20796F752073686F756C6420616C736F207365742061206465736372697074696F6E20666F722069747320616374696F6E207573696E6720736574537461727449636F6E436F6E74656E744465736372697074696F6E284368617253657175656E6365292E2054686973206973207573656420666F72206163636573736962696C6974792E
+		Sub SetStartIconXC(Extends ctrl As MobileTextField, file As FolderItem)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setStartIconDrawable Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setStartIconDrawable(android.graphics.drawable.Drawable.createFromPath(myicon.toString()))" (myIcon As CString)
+		    setStartIconDrawable(file.NativePath)
+		    
+		  #Else
+		    
+		    #Pragma Unused file
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207465787420636F6C6F7220757365642062792074686520737566666978207465787420696E20616C6C207374617465732E
+		Sub SetSuffixTextColorXC(Extends ctrl As MobileTextField, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSuffixTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setSuffixTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
+		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
+		    setSuffixTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
 		    
 		  #EndIf
 		End Sub
@@ -1168,8 +1616,14 @@ Protected Module TextFieldXC
 		Outline = 2
 	#tag EndEnum
 
+	#tag Enum, Name = BoxCornerFamily, Type = Integer, Flags = &h0
+		Rounded = 0
+		Cut = 1
+	#tag EndEnum
+
 	#tag Enum, Name = EndIconModes, Type = Integer, Flags = &h0
-		None = 0
+		Custom = -1
+		  None = 0
 		  PasswordToggle = 1
 		ClearText = 2
 	#tag EndEnum

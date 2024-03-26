@@ -18,6 +18,23 @@ Protected Module TabPanelXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 436C6561727320746865206261646765277320746578742E
+		Sub ClearBadgeTextAtXC(Extends ctrl As MobileTabPanel, index As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub clearText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().clearText()" (myIndex As Integer)
+		    clearText(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0
 		Function GetBadgeAlphaAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Integer
 		  #Pragma Unused ctrl
@@ -86,6 +103,91 @@ Protected Module TabPanelXC
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 52657475726E7320686F77206D7563682028696E20706978656C73292074686973206261646765206973206265696E6720686F72697A6F6E74616C6C79206F666673657420746F7761726473207468652063656E746572206F662069747320616E63686F72207768656E207468697320626164676520646F6573206E6F742068617665207465787420286973206120646F74292E
+		Function GetBadgeHorizontalOffsetWithoutTextAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getHorizontalOffsetWithoutText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getHorizontalOffsetWithoutText().tointeger()" (myIndex As Integer) As Integer
+		    Return getHorizontalOffsetWithoutText(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320686F77206D7563682028696E20706978656C73292074686973206261646765206973206265696E6720686F72697A6F6E74616C6C79206F666673657420746F7761726473207468652063656E746572206F662069747320616E63686F72207768656E20746869732062616467652068617320746578742E
+		Function GetBadgeHorizontalOffsetWithTextAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getHorizontalOffsetWithText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getHorizontalOffsetWithText().tointeger()" (myIndex As Integer) As Integer
+		    Return getHorizontalOffsetWithText(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626164676520686F72697A6F6E74616C2070616464696E6720696E20706978656C732E
+		Function GetBadgeHorizontalPaddingAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getHorizontalPadding Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getHorizontalPadding().tointeger()" (myIndex As Integer) As Integer
+		    Return getHorizontalPadding(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732062616467652773206D61782063686172616374657220636F756E742E
+		Function GetBadgeMaxCharacterCountAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMaxCharacterCount Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getMaxCharacterCount().tointeger()" (myIndex As Integer) As Integer
+		    Return getMaxCharacterCount(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746869732062616467652773206D6178206E756D6265722E204966206D6178436861726163746572436F756E74206973207365742C2069742077696C6C206F766572726964652074686973206E756D6265722E
+		Function GetBadgeMaxNumberAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getMaxNumber Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getMaxNumber().tointeger()" (myIndex As Integer) As Integer
+		    Return getMaxNumber(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52657475726E7320686F77206D7563682028696E20706978656C73292074686973206261646765206973206265696E6720686F72697A6F6E74616C6C79206F666673657420746F7761726473207468652063656E746572206F662069747320616E63686F722E0A0A546869732072657475726E732074686520686F72697A6F6E74616C206F666673657420666F722062616467657320776974686F757420746578742E204966206F666673657420666F72206261646765732077697468207465787420616E6420776974686F757420746578742061726520646966666572656E7420636F6E7369646572207573696E6720676574486F72697A6F6E74616C4F6666736574576974686F7574546578742829206F7220676574486F72697A6F6E74616C4F6666736574576974685465787428292E
 		Function GetBadgeNumberAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Integer
 		  #Pragma Unused ctrl
@@ -94,6 +196,40 @@ Protected Module TabPanelXC
 		    
 		    Declare Function getNumber Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getNumber().tointeger()" (myIndex As Integer) As Integer
 		    Return getNumber(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Function GetBadgeOpacityAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getOpacity Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getOpacity().tointeger()" (myIndex As Integer) As Integer
+		    Return getOpacity(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E207468652074657874206F662074686973207461622E
+		Function GetBadgeTextAtXC(Extends ctrl As MobileTabPanel, index As Integer) As String
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getText().toString()" (myIndex As Integer) As CString
+		    Return getText(index)
 		    
 		  #Else
 		    
@@ -128,6 +264,91 @@ Protected Module TabPanelXC
 		    
 		    Declare Function getVerticalOffset Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getVerticalOffset().tointeger()" (myIndex As Integer) As Integer
 		    Return getVerticalOffset(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320686F77206D7563682028696E20706978656C73292074686973206261646765206973206265696E6720766572746963616C6C79206F666673657420746F7761726473207468652063656E746572206F662069747320616E63686F72207768656E207468697320626164676520646F6573206E6F742068617665207465787420286973206120646F74292E
+		Function GetBadgeVerticalOffsetWithoutTextAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalOffsetWithoutText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getVerticalOffsetWithoutText().tointeger()" (myIndex As Integer) As Integer
+		    Return getVerticalOffsetWithoutText(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320686F77206D7563682028696E20706978656C73292074686973206261646765206973206265696E6720766572746963616C6C79206D6F76656420746F7761726473207468652063656E746572206F662069747320616E63686F72207768656E207468652062616467652068617320746578742E
+		Function GetBadgeVerticalOffsetWithTextAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalOffsetWithText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getVerticalOffsetWithText().tointeger()" (myIndex As Integer) As Integer
+		    Return getVerticalOffsetWithText(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626164676520766572746963616C2070616464696E6720696E20706978656C732E
+		Function GetBadgeVerticalPaddingAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Integer
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getVerticalPadding Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getVerticalPadding().tointeger()" (myIndex As Integer) As Integer
+		    Return getVerticalPadding(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732062616467652077696C6C20646973706C61792061206E756D6265722E
+		Function HasBadgeNumberAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function hasNumber Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().hasNumber()" (myIndex As Integer) As Boolean
+		    Return hasNumber(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572207468652062616467652077696C6C20646973706C6179206120746578742E
+		Function HasBadgeTextAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function hasText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().hasText()" (myIndex As Integer) As Boolean
+		    Return hasText(index)
 		    
 		  #Else
 		    
@@ -176,6 +397,41 @@ Protected Module TabPanelXC
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 52656D6F766573207468652042616467654472617761626C652E20446F206E6F7468696E67206966206E6F6E65206578697374732E20436F6E7369646572206368616E67696E6720746865207669736962696C697479206F66207468652042616467654472617761626C6520696620796F75206F6E6C792077616E7420746F20686964652069742074656D706F726172696C792E
+		Sub RemoveBadgeAtXC(Extends ctrl As MobileTabPanel, index As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub removeBadge Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.removeBadge()" (myIndex As Integer)
+		    removeBadge(index)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732077686574686572206F72206E6F7420746F206175746F2061646A7573742074686520626164676520706C6163656D656E7420746F2077697468696E2074686520626164676520616E63686F722773206772616E64706172656E7420766965772E
+		Sub SetAutoAdjustToWithinGrandparentBoundsXC(Extends ctrl As MobileTabPanel, index As Integer, autoAdjustToWithinGrandparentBounds As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAutoAdjustToWithinGrandparentBounds Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().setAutoAdjustToWithinGrandparentBounds(myvalue)" (myIndex As Integer, myValue As Boolean)
+		    setAutoAdjustToWithinGrandparentBounds(index, autoAdjustToWithinGrandparentBounds)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused autoAdjustToWithinGrandparentBounds
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0
 		Sub SetBadgeAlphaAtXC(Extends ctrl As MobileTabPanel, index As Integer, alpha As Integer)
 		  #Pragma Unused ctrl
@@ -209,6 +465,46 @@ Protected Module TabPanelXC
 		    
 		    #Pragma Unused index
 		    #Pragma Unused backgroundColor
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369666965732074686520636F6E74656E74206465736372697074696F6E2069662074686520746578742069732073657420666F72207468652062616467652E2049662074686520746578742069732073657420666F722074686520626164676520616E642074686520636F6E74656E74206465736372697074696F6E206973206E756C6C2C2074686520626164676520746578742077696C6C20626520757365642061732074686520636F6E74656E74206465736372697074696F6E2062792064656661756C742E
+		Sub SetBadgeContentDescriptionForTextAtXC(Extends ctrl As MobileTabPanel, index As Integer, text As CString)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setContentDescriptionForText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setContentDescriptionForText(mytext.toString())" _
+		    (myIndex As Integer, myText As CString)
+		    setContentDescriptionForText(index, text)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused text
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5370656369666965732074686520636F6E74656E74206465736372697074696F6E206966206E6F2074657874206F72206E756D6265722069732073657420666F72207468652062616467652E
+		Sub SetBadgeContentDescriptionNumberlessXC(Extends ctrl As MobileTabPanel, index As Integer, text As CString)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setContentDescriptionNumberless Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setContentDescriptionNumberless(mytext.toString())" _
+		    (myIndex As Integer, myText As CString)
+		    setContentDescriptionNumberless(index, text)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused text
 		    
 		  #EndIf
 		End Sub
@@ -252,6 +548,126 @@ Protected Module TabPanelXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 5365747320686F77206D7563682028696E20706978656C732920746F20686F72697A6F6E74616C6C79206D6F7665207468697320626164676520746F7761726473207468652063656E746572206F662069747320616E63686F72207768656E207468697320626164676520646F6573206E6F742068617665207465787420286973206120646F74292E
+		Sub SetBadgeHorizontalOffsetWithoutTextAtXC(Extends ctrl As MobileTabPanel, index As Integer, px As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalOffsetWithoutText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setHorizontalOffsetWithoutText(mypx.toInt())" _
+		    (myIndex As Integer, myPX As Integer)
+		    setHorizontalOffsetWithoutText(index, px)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused px
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F77206D7563682028696E20706978656C732920746F20686F72697A6F6E74616C6C79206D6F7665207468697320626164676520746F7761726473207468652063656E746572206F662069747320616E63686F72207768656E20746869732062616467652068617320746578742E
+		Sub SetBadgeHorizontalOffsetWithTextAtXC(Extends ctrl As MobileTabPanel, index As Integer, px As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalOffsetWithText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setHorizontalOffsetWithText(mypx.toInt())" _
+		    (myIndex As Integer, myPX As Integer)
+		    setHorizontalOffsetWithText(index, px)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused px
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F77206D7563682028696E20706978656C732920686F72697A6F6E74616C2070616464696E6720746F2061646420746F20746865206261646765207768656E20697420686173206C6162656C20636F6E74656E74732E204E6F746520746861742062616467657320686176652061206D696E696D756D2077696474682061732073706563696669656420627920636F6D2E676F6F676C652E616E64726F69642E6D6174657269616C2E522E7374796C6561626C652342616467655F626164676557696474682E
+		Sub SetBadgeHorizontalPaddingAtXC(Extends ctrl As MobileTabPanel, index As Integer, horizontalPadding As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setHorizontalPadding Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setHorizontalPadding(myhorizontalpadding.toInt())" _
+		    (myIndex As Integer, myHorizontalPadding As Integer)
+		    setHorizontalPadding(index, horizontalPadding)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused horizontalPadding
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F77206D7563682028696E20706978656C732920746F20766572746963616C6C79206D6F766520746869732062616467652061776179207468652063656E746572206F662069747320616E63686F72207768656E207468697320626164676520686173207465787420616E642074686520666F6E74207363616C65206973206174206D61782073697A652E205468697320697320696E20636F6E6A756E6374696F6E20776974682074686520766572746963616C206F6666736574207769746820746578742E
+		Sub SetBadgeLargeFontVerticalOffsetAdjustmentXC(Extends ctrl As MobileTabPanel, index As Integer, px As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLargeFontVerticalOffsetAdjustment Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setLargeFontVerticalOffsetAdjustment(mypx.toInt())" _
+		    (myIndex As Integer, myPX As Integer)
+		    setLargeFontVerticalOffsetAdjustment(index, px)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused px
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732062616467652773206D61782063686172616374657220636F756E742E
+		Sub SetBadgeMaxCharacterCountAtXC(Extends ctrl As MobileTabPanel, index As Integer, maxCharacterCount As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMaxCharacterCount Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setMaxCharacterCount(mymaxcharactercount.toInt())" _
+		    (myIndex As Integer, myMaxCharacterCount As Integer)
+		    setMaxCharacterCount(index, maxCharacterCount)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused maxCharacterCount
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746869732062616467652773206D6178206E756D6265722E204966206D6178436861726163746572436F756E74206973207365742C2069742077696C6C206F766572726964652074686973206E756D6265722E
+		Sub SetBadgeMaxNumberAtXC(Extends ctrl As MobileTabPanel, index As Integer, maxNumber As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMaxNumber Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setMaxNumber(mymaxnumber.toInt())" _
+		    (myIndex As Integer, myMaxNumber As Integer)
+		    setMaxNumber(index, maxNumber)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused maxNumber
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 53657473207468652062616467652773206E756D6265722E204F6E6C79206E6F6E2D6E6567617469766520696E7465676572206E756D626572732061726520737570706F727465642E20496620746865206E756D626572206973206E656761746976652C2069742077696C6C20626520636C616D70656420746F20302E20546865207370656369666965642076616C75652077696C6C20626520646973706C617965642C20756E6C65737320697473206E756D626572206F66206469676974732065786365656473206D6178436861726163746572436F756E7420696E20776869636820636173652061207472756E63617465642076657273696F6E2077696C6C2062652073686F776E2E
 		Sub SetBadgeNumberAtXC(Extends ctrl As MobileTabPanel, index As Integer, number As Integer)
 		  #Pragma Unused ctrl
@@ -267,6 +683,26 @@ Protected Module TabPanelXC
 		    
 		    #Pragma Unused index
 		    #Pragma Unused number
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261646765277320746578742E205468652073706563696669656420746578742077696C6C20626520646973706C617965642C20756E6C65737320697473206C656E6774682065786365656473206D6178436861726163746572436F756E7420696E20776869636820636173652061207472756E63617465642076657273696F6E2077696C6C2062652073686F776E2E
+		Sub SetBadgeTextAtXC(Extends ctrl As MobileTabPanel, index As Integer, text As String)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setText(mytext.toString())" _
+		    (myIndex As Integer, myText As CString)
+		    setText(index, text)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused text
 		    
 		  #EndIf
 		End Sub
@@ -307,6 +743,66 @@ Protected Module TabPanelXC
 		    
 		    #Pragma Unused index
 		    #Pragma Unused px
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F77206D7563682028696E20706978656C732920746F20766572746963616C6C79206D6F7665207468697320626164676520746F7761726473207468652063656E746572206F662069747320616E63686F72207768656E207468697320626164676520646F6573206E6F742068617665207465787420286973206120646F74292E
+		Sub SetBadgeVerticalOffsetWithoutTextAtXC(Extends ctrl As MobileTabPanel, index As Integer, px As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalOffsetWithoutText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setVerticalOffsetWithoutText(mypx.toInt())" _
+		    (myIndex As Integer, myPX As Integer)
+		    setVerticalOffsetWithoutText(index, px)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused px
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F77206D7563682028696E20706978656C732920746F20766572746963616C6C79206D6F7665207468697320626164676520746F7761726473207468652063656E746572206F662069747320616E63686F72207768656E20746869732062616467652068617320746578742E
+		Sub SetBadgeVerticalOffsetWithTextAtXC(Extends ctrl As MobileTabPanel, index As Integer, px As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalOffsetWithText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setVerticalOffsetWithText(mypx.toInt())" _
+		    (myIndex As Integer, myPX As Integer)
+		    setVerticalOffsetWithText(index, px)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused px
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320686F77206D7563682028696E20706978656C732920686F72697A6F6E74616C2070616464696E6720746F2061646420746F20746865206261646765207768656E20697420686173206C6162656C20636F6E74656E74732E204E6F746520746861742062616467657320686176652061206D696E696D756D2077696474682061732073706563696669656420627920636F6D2E676F6F676C652E616E64726F69642E6D6174657269616C2E522E7374796C6561626C652342616467655F626164676557696474682E
+		Sub SetBadgeVerticalPaddingAtXC(Extends ctrl As MobileTabPanel, index As Integer, verticalPadding As Integer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setVerticalPadding Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
+		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setVerticalPadding(myverticalpadding.toInt())" _
+		    (myIndex As Integer, myVerticalPadding As Integer)
+		    setVerticalPadding(index, verticalPadding)
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused verticalPadding
 		    
 		  #EndIf
 		End Sub

@@ -31,6 +31,23 @@ Protected Module SwitchXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 53657420746865206472617761626C65207573656420666F72207468652073776974636820227468756D6222202D2074686520706965636520746861742074686520757365722063616E20706879736963616C6C7920746F75636820616E64206472616720616C6F6E672074686520747261636B2E
+		Sub SetThumbXC(Extends ctrl As MobileSwitch, file As FolderItem)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setThumbDrawable Lib "Object:ctrl:MobileSwitch:Kotlin" Alias "setThumbDrawable(android.graphics.drawable.Drawable.createFromPath(myicon.toString()))" (myIcon As CString)
+		    setThumbDrawable(file.NativePath)
+		    
+		  #Else
+		    
+		    #Pragma Unused file
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 5370656369666965732074696E7420636F6C6F7220666F722074686973206472617761626C652E
 		Sub SetTrackColorXC(Extends ctrl As MobileSwitch, c As Color)
 		  #Pragma Unused ctrl

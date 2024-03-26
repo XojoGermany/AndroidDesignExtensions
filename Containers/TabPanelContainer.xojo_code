@@ -97,6 +97,8 @@ End
 		  Me.SetTabBackgroundColorAtXC(1, If(Color.IsDarkMode, Color.Yellow, &cFF7E7900))
 		  Me.SetUnboundedRippleXC(True)
 		  
+		  Me.SetBadgeTextAtXC(0, "Xojo")
+		  
 		  Me.SetBadgeBackgroundColorAtXC(1, &c4F8F0000)
 		  Me.SetBadgeNumberAtXC(1, 12)
 		  Me.SetBadgeTextColorAtXC(1, &c73FA7900)

@@ -1199,18 +1199,18 @@ Protected Module ExtensionsXC
 		End Sub
 	#tag EndMethod
 
-	#tag Method, Flags = &h0, Description = 53657420746865206261636B67726F756E6420746F206120676976656E207265736F757263652E20546865207265736F757263652073686F756C6420726566657220746F2061204472617761626C65206F626A656374206F72203020746F2072656D6F766520746865206261636B67726F756E642E
-		Sub SetBackgroundResourceXC(Extends ctrl As MobileButton, resid As Integer)
+	#tag Method, Flags = &h0, Description = 53657420746865206261636B67726F756E6420746F206120676976656E204472617761626C652C206F722072656D6F766520746865206261636B67726F756E642E20496620746865206261636B67726F756E64206861732070616464696E672C2074686973205669657727732070616464696E672069732073657420746F20746865206261636B67726F756E6427732070616464696E672E20486F77657665722C207768656E2061206261636B67726F756E642069732072656D6F7665642C2074686973205669657727732070616464696E672069736E277420746F75636865642E2049662073657474696E67207468652070616464696E6720697320646573697265642C20706C65617365207573652073657450616464696E6728696E742C20696E742C20696E742C20696E74292E
+		Sub SetBackgroundXC(Extends ctrl As MobileUIControl, file As FolderItem)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackgroundResource Lib "Object:ctrl:MobileButton" (myResId As Integer)
-		    setBackgroundResource(resid)
+		    Declare Sub setBackground Lib "Object:ctrl:MobileUIControl:Kotlin" Alias "setBackground(android.graphics.drawable.Drawable.createFromPath(myfile.toString()))" (myFile As CString)
+		    setBackground(file.NativePath)
 		    
 		  #Else
 		    
-		    #Pragma Unused resid
+		    #Pragma Unused file
 		    
 		  #EndIf
 		End Sub
@@ -2269,6 +2269,49 @@ Protected Module ExtensionsXC
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0
+		Function ToString(Extends value As PorterDuffModes) As String
+		  ' https://developer.android.com/reference/android/graphics/PorterDuff.Mode
+		  
+		  Select Case value
+		  Case PorterDuffModes.ADD
+		    Return "ADD"
+		  Case PorterDuffModes.CLEAR
+		    Return "CLEAR"
+		  Case PorterDuffModes.DARKEN
+		    Return "DARKEN"
+		  Case PorterDuffModes.DST
+		    Return "DST"
+		  Case PorterDuffModes.DST_ATOP
+		    Return "DST_ATOP"
+		  Case PorterDuffModes.DST_IN
+		    Return "DST_IN"
+		  Case PorterDuffModes.DST_OUT
+		    Return "DST_OUT"
+		  Case PorterDuffModes.DST_OVER
+		    Return "DST_OVER"
+		  Case PorterDuffModes.LIGHTEN
+		    Return "LIGHTEN"
+		  Case PorterDuffModes.MULTIPLY
+		    Return "MULTIPLY"
+		  Case PorterDuffModes.OVERLAY
+		    Return "OVERLAY"
+		  Case PorterDuffModes.SCREEN
+		    Return "SCREEN"
+		  Case PorterDuffModes.SRC
+		    Return "SRC"
+		  Case PorterDuffModes.SRC_ATOP
+		    Return "SRC_ATOP"
+		  Case PorterDuffModes.SRC_IN
+		    Return "SRC_IN"
+		  Case PorterDuffModes.SRC_OUT
+		    Return "SRC_OUT"
+		  Case PorterDuffModes.XOR_
+		    Return "XOR"
+		  End Select
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52657475726E73206120737472696E6720726570726573656E746174696F6E206F6620746865206F626A6563742E20496E2067656E6572616C2C2074686520746F537472696E67206D6574686F642072657475726E73206120737472696E67207468617420227465787475616C6C7920726570726573656E7473222074686973206F626A6563742E2054686520726573756C742073686F756C64206265206120636F6E636973652062757420696E666F726D617469766520726570726573656E746174696F6E2074686174206973206561737920666F72206120706572736F6E20746F20726561642E204974206973207265636F6D6D656E646564207468617420616C6C20737562636C6173736573206F766572726964652074686973206D6574686F642E
 		Function ToStringXC(Extends ctrl As MobileUIControl) As String
 		  #Pragma Unused ctrl
@@ -2294,6 +2337,26 @@ Protected Module ExtensionsXC
 		Always = 0
 		  IfContentScrolls = 1
 		Never = 2
+	#tag EndEnum
+
+	#tag Enum, Name = PorterDuffModes, Type = Integer, Flags = &h0
+		ADD
+		  CLEAR
+		  DARKEN
+		  DST
+		  DST_ATOP
+		  DST_IN
+		  DST_OUT
+		  DST_OVER
+		  LIGHTEN
+		  MULTIPLY
+		  OVERLAY
+		  SCREEN
+		  SRC
+		  SRC_ATOP
+		  SRC_IN
+		  SRC_OUT
+		XOR_
 	#tag EndEnum
 
 	#tag Enum, Name = ScrollbarPositionsXC, Type = Integer, Flags = &h0

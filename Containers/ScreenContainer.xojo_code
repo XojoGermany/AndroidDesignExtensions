@@ -25,7 +25,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   421
+      Top             =   470
       Visible         =   True
       Width           =   68
    End
@@ -43,7 +43,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   421
+      Top             =   470
       Visible         =   True
       Width           =   68
    End
@@ -61,7 +61,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   421
+      Top             =   470
       Visible         =   True
       Width           =   68
    End
@@ -79,7 +79,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   421
+      Top             =   470
       Visible         =   True
       Width           =   68
    End
@@ -97,7 +97,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   503
+      Top             =   552
       Visible         =   True
       Width           =   68
    End
@@ -115,7 +115,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   503
+      Top             =   552
       Visible         =   True
       Width           =   68
    End
@@ -133,7 +133,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   503
+      Top             =   552
       Visible         =   True
       Width           =   68
    End
@@ -151,7 +151,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   503
+      Top             =   552
       Visible         =   True
       Width           =   68
    End
@@ -169,7 +169,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   585
+      Top             =   634
       Visible         =   True
       Width           =   68
    End
@@ -187,7 +187,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   585
+      Top             =   634
       Visible         =   True
       Width           =   68
    End
@@ -205,7 +205,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   585
+      Top             =   634
       Visible         =   True
       Width           =   68
    End
@@ -223,7 +223,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   585
+      Top             =   634
       Visible         =   True
       Width           =   68
    End
@@ -241,7 +241,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   667
+      Top             =   716
       Visible         =   True
       Width           =   68
    End
@@ -259,7 +259,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   667
+      Top             =   716
       Visible         =   True
       Width           =   68
    End
@@ -277,7 +277,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   667
+      Top             =   716
       Visible         =   True
       Width           =   68
    End
@@ -287,8 +287,8 @@ Begin MobileContainer ScreenContainer
       Enabled         =   True
       HasHeader       =   False
       Header          =   ""
-      Height          =   143
-      InitialValue    =   "Status Bar\nBackground\nNavigation Bar\nNavigation Bar Divider"
+      Height          =   192
+      InitialValue    =   "Status Bar\nBackground Color\nBackground Picture\nNavigation Bar\nNavigation Bar Divider"
       LastAddedRowIndex=   0
       Left            =   20
       LockBottom      =   False
@@ -319,7 +319,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   749
+      Top             =   798
       Visible         =   True
       Width           =   360
    End
@@ -337,7 +337,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   667
+      Top             =   716
       Visible         =   True
       Width           =   68
    End
@@ -656,6 +656,12 @@ End
 		  Me.RowTagAt(Self.SelectedRowIndex) = Not oRowTag.BooleanValue
 		  
 		  App.BackgroundMode = Self.SelectedRowIndex
+		  
+		  If Me.SelectedRowIndex = 2 Then
+		    
+		    App.CurrentScreen.SetBackgroundXC(SpecialFolder.Resource("Background.jpg"))
+		    
+		  End If
 		End Sub
 	#tag EndEvent
 #tag EndEvents

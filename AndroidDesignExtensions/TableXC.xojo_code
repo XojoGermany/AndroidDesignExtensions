@@ -270,6 +270,23 @@ Protected Module TableXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 5365747320746865206472617761626C6520746861742077696C6C20626520647261776E206265747765656E2065616368206974656D20696E20746865206C6973742E0A0A4E6F74653A20496620746865206472617761626C6520646F6573206E6F74206861766520616E20696E7472696E736963206865696768742C20796F752073686F756C6420616C736F2063616C6C207365744469766964657248656967687428696E74292E
+		Sub SetDividerXC(Extends ctrl As AndroidMobileTable, file As FolderItem)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDivider Lib "Object:ctrl:AndroidMobileTable:Kotlin" Alias "setDivider(android.graphics.drawable.Drawable.createFromPath(mydivider.toString()))" (myDivider As CString)
+		    setDivider(file.NativePath)
+		    
+		  #Else
+		    
+		    #Pragma Unused file
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 436F6E74726F6C732077686574686572207468652073656C656374696F6E20686967686C69676874206472617761626C652073686F756C6420626520647261776E206F6E20746F70206F6620746865206974656D206F7220626568696E642069742E
 		Sub SetDrawSelectorOnTopXC(Extends ctrl As AndroidMobileTable, onTop As Boolean)
 		  #Pragma Unused ctrl
@@ -399,6 +416,23 @@ Protected Module TableXC
 		    
 		    #Pragma Unused position
 		    #Pragma Unused y
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742061204472617761626C6520746861742073686F756C64206265207573656420746F20686967686C69676874207468652063757272656E746C792073656C6563746564206974656D2E
+		Sub SetSelectorXC(Extends ctrl As AndroidMobileTable, file As FolderItem)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelector Lib "Object:ctrl:AndroidMobileTable:Kotlin" Alias "setSelector(android.graphics.drawable.Drawable.createFromPath(myselector.toString()))" (mySelector As CString)
+		    setSelector(file.NativePath)
+		    
+		  #Else
+		    
+		    #Pragma Unused file
 		    
 		  #EndIf
 		End Sub

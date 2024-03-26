@@ -23,9 +23,13 @@ Inherits MobileButton
 		    
 		  Case 2
 		    
-		    App.CurrentScreen.SetNavigationBarColorXC(MyColor)
+		    ' do nothing
 		    
 		  Case 3
+		    
+		    App.CurrentScreen.SetNavigationBarColorXC(MyColor)
+		    
+		  Case 4
 		    
 		    App.CurrentScreen.SetNavigationBarDividerColorXC(MyColor)
 		    

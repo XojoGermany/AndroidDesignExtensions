@@ -50,6 +50,23 @@ Protected Module SliderXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 5365747320746865207468756D6220746861742077696C6C20626520647261776E2061742074686520656E64206F66207468652070726F6772657373206D657465722077697468696E20746865205365656B4261722E0A0A496620746865207468756D6220697320612076616C6964206472617761626C652028692E652E206E6F74206E756C6C292C2068616C66206974732077696474682077696C6C206265207573656420617320746865206E6577207468756D62206F666673657420284073656520237365745468756D624F666673657428696E7429292E
+		Sub SetThumbXC(Extends ctrl As MobileSlider, file As FolderItem)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setThumb Lib "Object:ctrl:MobileSlider:Kotlin" Alias "setThumb(android.graphics.drawable.Drawable.createFromPath(myicon.toString()))" (myIcon As CString)
+		    setThumb(file.NativePath)
+		    
+		  #Else
+		    
+		    #Pragma Unused file
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 5370656369666965732074696E7420636F6C6F7220666F722074686973206472617761626C652E
 		Sub SetTintXC(Extends ctrl As MobileSlider, c As Color)
 		  #Pragma Unused ctrl
