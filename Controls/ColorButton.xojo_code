@@ -1,6 +1,7 @@
 #tag Class
 Protected Class ColorButton
 Inherits MobileButton
+	#tag CompatibilityFlags = (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))
 	#tag Event
 		Sub Opening()
 		  ' Call Opening-Event

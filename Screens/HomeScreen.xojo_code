@@ -65,6 +65,7 @@ Begin TemplateScreen HomeScreen
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Android Design Extensions"
       TextColor       =   &c00000000
@@ -156,6 +157,9 @@ End
 		  Me.RowTextFont = Font.SystemFont(17)
 		  Me.SeparatorColor = If(Color.IsDarkMode, &c21212100, &cCACACC00)
 		  
+		  AddSection("Application Extensions")
+		  AddRow("Application Examples", "application", "android_head", &c3DDB85)
+		  
 		  AddSection("Control Extensions")
 		  AddRow("Controls", "control", "crop_rotate", &cFF260000)
 		  
@@ -234,6 +238,10 @@ End
 		    
 		    TableScreen.Show
 		    
+		  Case "application"
+		    
+		    AppScreen.Show
+		    
 		  Case "button"
 		    
 		    ButtonScreen.Show
@@ -308,6 +316,7 @@ End
 #tag Events HeaderLabel
 	#tag Event
 		Sub Opening()
+		  Me.Text = Me.Text + " " + App.kVersion.ToString
 		  Me.TextFont = Font.BoldSystemFont(17.5)
 		End Sub
 	#tag EndEvent

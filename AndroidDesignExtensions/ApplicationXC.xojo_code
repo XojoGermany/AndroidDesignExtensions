@@ -1,6 +1,6 @@
 #tag Module
 Protected Module ApplicationXC
-	#tag CompatibilityFlags = (TargetAndroid and (Target64Bit))
+	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0, Description = 436C61737320696D706C656D656E74696E6720746865204170706C69636174696F6E206F626A6563742E2046726F6D207468652022636C61737322206174747269627574652E
 		Function ClassNameXC(Extends myApp As MobileApplication) As String
 		  #Pragma Unused myApp
@@ -11,7 +11,7 @@ Protected Module ApplicationXC
 		    
 		    #Pragma Unused oCurrentScreen
 		    
-		    Declare Function className Lib "Object:oCurrentScreen:MobileScreen" Alias "getWindow()!!.getContext()!!.getApplicationInfo().className()" As CString
+		    Declare Function className Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationInfo().className" As CString
 		    Return className
 		    
 		  #EndIf
@@ -28,7 +28,7 @@ Protected Module ApplicationXC
 		    
 		    #Pragma Unused oCurrentScreen
 		    
-		    Declare Function dataDir Lib "Object:oCurrentScreen:MobileScreen" Alias "getWindow()!!.getContext()!!.getApplicationInfo().dataDir()" As CString
+		    Declare Function dataDir Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationInfo().dataDir" As CString
 		    Return dataDir
 		    
 		  #EndIf
@@ -45,8 +45,144 @@ Protected Module ApplicationXC
 		    
 		    #Pragma Unused oCurrentScreen
 		    
-		    Declare Function deviceProtectedDataDir Lib "Object:oCurrentScreen:MobileScreen" Alias "getWindow()!!.getContext()!!.getApplicationInfo().deviceProtectedDataDir()" As CString
+		    Declare Function deviceProtectedDataDir Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationInfo().deviceProtectedDataDir" As CString
 		    Return deviceProtectedDataDir
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206162736F6C757465207061746820746F20746865206170706C69636174696F6E207370656369666963206361636865206469726563746F7279206F6E207468652066696C6573797374656D2E0A0A5468652073797374656D2077696C6C206175746F6D61746963616C6C792064656C6574652066696C657320696E2074686973206469726563746F7279206173206469736B207370616365206973206E656564656420656C73657768657265206F6E20746865206465766963652E205468652073797374656D2077696C6C20616C776179732064656C657465206F6C6465722066696C65732066697273742C206173207265706F727465642062792046696C65236C6173744D6F64696669656428292E20496620646573697265642C20796F752063616E206578657274206D6F726520636F6E74726F6C206F76657220686F772066696C6573206172652064656C65746564207573696E672053746F726167654D616E616765722373657443616368654265686176696F7247726F75702846696C652C20626F6F6C65616E2920616E642053746F726167654D616E616765722373657443616368654265686176696F72546F6D6273746F6E652846696C652C20626F6F6C65616E292E0A0A4170707320617265207374726F6E676C7920656E636F75726167656420746F206B656570207468656972207573616765206F662063616368652073706163652062656C6F77207468652071756F74612072657475726E65642062792053746F726167654D616E6167657223676574436163686551756F74614279746573286A6176612E7574696C2E55554944292E20496620796F75722061707020676F65732061626F766520746869732071756F74612C20796F7572206361636865642066696C65732077696C6C20626520736F6D65206F662074686520666972737420746F2062652064656C65746564207768656E206164646974696F6E616C206469736B207370616365206973206E65656465642E20436F6E76657273656C792C20696620796F75722061707020737461797320756E64657220746869732071756F74612C20796F7572206361636865642066696C65732077696C6C20626520736F6D65206F6620746865206C61737420746F2062652064656C65746564207768656E206164646974696F6E616C206469736B207370616365206973206E65656465642E0A0A4E6F7465207468617420796F75722063616368652071756F74612077696C6C206368616E6765206F7665722074696D6520646570656E64696E67206F6E20686F77206672657175656E746C7920746865207573657220696E74657261637473207769746820796F7572206170702C20616E6420646570656E64696E67206F6E20686F77206D7563682073797374656D2D77696465206469736B20737061636520697320757365642E0A0A5468652072657475726E65642070617468206D6179206368616E6765206F7665722074696D65206966207468652063616C6C696E6720617070206973206D6F76656420746F20616E2061646F707465642073746F72616765206465766963652C20736F206F6E6C792072656C61746976652070617468732073686F756C64206265207065727369737465642E0A0A417070732072657175697265206E6F206578747261207065726D697373696F6E7320746F2072656164206F7220777269746520746F207468652072657475726E656420706174682C2073696E636520746869732070617468206C6976657320696E20746865697220707269766174652073746F726167652E
+		Function GetCacheDirXC(Extends myApp As MobileApplication) As String
+		  #Pragma Unused myApp
+		  
+		  #If TargetAndroid
+		    
+		    Var oCurrentScreen As MobileScreen = myApp.CurrentScreen
+		    
+		    #Pragma Unused oCurrentScreen
+		    
+		    Declare Function getCacheDir Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationContext()!!.getCacheDir()!!.toString()" As CString
+		    Return getCacheDir
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206162736F6C757465207061746820746F20746865206170706C69636174696F6E207370656369666963206361636865206469726563746F7279206F6E207468652066696C6573797374656D2064657369676E656420666F722073746F72696E672063616368656420636F64652E0A0A5468652073797374656D2077696C6C2064656C65746520616E792066696C65732073746F72656420696E2074686973206C6F636174696F6E20626F7468207768656E20796F7572207370656369666963206170706C69636174696F6E2069732075706772616465642C20616E64207768656E2074686520656E7469726520706C6174666F726D2069732075706772616465642E0A0A54686973206C6F636174696F6E206973206F7074696D616C20666F722073746F72696E6720636F6D70696C6564206F72206F7074696D697A656420636F64652067656E65726174656420627920796F7572206170706C69636174696F6E2061742072756E74696D652E0A0A5468652072657475726E65642070617468206D6179206368616E6765206F7665722074696D65206966207468652063616C6C696E6720617070206973206D6F76656420746F20616E2061646F707465642073746F72616765206465766963652C20736F206F6E6C792072656C61746976652070617468732073686F756C64206265207065727369737465642E0A0A417070732072657175697265206E6F206578747261207065726D697373696F6E7320746F2072656164206F7220777269746520746F207468652072657475726E656420706174682C2073696E636520746869732070617468206C6976657320696E20746865697220707269766174652073746F726167652E
+		Function GetCodeCacheDirXC(Extends myApp As MobileApplication) As String
+		  #Pragma Unused myApp
+		  
+		  #If TargetAndroid
+		    
+		    Var oCurrentScreen As MobileScreen = myApp.CurrentScreen
+		    
+		    #Pragma Unused oCurrentScreen
+		    
+		    Declare Function getCodeCacheDir Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationContext()!!.getCodeCacheDir()!!.toString()" As CString
+		    Return getCodeCacheDir
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206162736F6C757465207061746820746F20746865206469726563746F7279206F6E207468652066696C6573797374656D20776865726520616C6C20707269766174652066696C65732062656C6F6E67696E6720746F207468697320617070206172652073746F7265642E20417070732073686F756C64206E6F742075736520746869732070617468206469726563746C793B20746865792073686F756C6420696E7374656164207573652067657446696C657344697228292C20676574436163686544697228292C20676574446972286A6176612E6C616E672E537472696E672C696E74292C206F72206F746865722073746F726167652041504973206F6E207468697320636C6173732E0A0A5468652072657475726E65642070617468206D6179206368616E6765206F7665722074696D65206966207468652063616C6C696E6720617070206973206D6F76656420746F20616E2061646F707465642073746F72616765206465766963652C20736F206F6E6C792072656C61746976652070617468732073686F756C64206265207065727369737465642E0A0A4E6F206164646974696F6E616C207065726D697373696F6E732061726520726571756972656420666F72207468652063616C6C696E672061707020746F2072656164206F722077726974652066696C657320756E646572207468652072657475726E656420706174682E
+		Function GetDataDirXC(Extends myApp As MobileApplication) As String
+		  #Pragma Unused myApp
+		  
+		  #If TargetAndroid
+		    
+		    Var oCurrentScreen As MobileScreen = myApp.CurrentScreen
+		    
+		    #Pragma Unused oCurrentScreen
+		    
+		    Declare Function getDataDir Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationContext()!!.getDataDir()!!.toString()" As CString
+		    Return getDataDir
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73206162736F6C757465207061746820746F206170706C69636174696F6E2D7370656369666963206469726563746F7279206F6E20746865207072696D617279207368617265642F65787465726E616C2073746F726167652064657669636520776865726520746865206170706C69636174696F6E2063616E20706C6163652063616368652066696C6573206974206F776E732E2054686573652066696C65732061726520696E7465726E616C20746F20746865206170706C69636174696F6E2C20616E64206E6F74207479706963616C6C792076697369626C6520746F207468652075736572206173206D656469612E
+		Function GetExternalCacheDirXC(Extends myApp As MobileApplication) As String
+		  #Pragma Unused myApp
+		  
+		  #If TargetAndroid
+		    
+		    Var oCurrentScreen As MobileScreen = myApp.CurrentScreen
+		    
+		    #Pragma Unused oCurrentScreen
+		    
+		    Declare Function getExternalCacheDir Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationContext()!!.getExternalCacheDir()!!.toString()" As CString
+		    Return getExternalCacheDir
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865206162736F6C757465207061746820746F20746865206469726563746F7279206F6E207468652066696C6573797374656D2077686572652066696C657320637265617465642077697468206F70656E46696C654F7574707574206172652073746F7265642E0A0A5468652072657475726E65642070617468206D6179206368616E6765206F7665722074696D65206966207468652063616C6C696E6720617070206973206D6F76656420746F20616E2061646F707465642073746F72616765206465766963652C20736F206F6E6C792072656C61746976652070617468732073686F756C64206265207065727369737465642E0A0A4E6F206164646974696F6E616C207065726D697373696F6E732061726520726571756972656420666F72207468652063616C6C696E672061707020746F2072656164206F722077726974652066696C657320756E646572207468652072657475726E656420706174682E
+		Function GetFilesDirXC(Extends myApp As MobileApplication) As String
+		  #Pragma Unused myApp
+		  
+		  #If TargetAndroid
+		    
+		    Var oCurrentScreen As MobileScreen = myApp.CurrentScreen
+		    
+		    #Pragma Unused oCurrentScreen
+		    
+		    Declare Function getFilesDir Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationContext()!!.getFilesDir()!!.toString()" As CString
+		    Return getFilesDir
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E2077686574686572207468652073637265656E20686173206120686967682064796E616D69632072616E67652E
+		Function IsScreenHdrXC(Extends myApp As MobileApplication) As Boolean
+		  #Pragma Unused myApp
+		  
+		  #If TargetAndroid
+		    
+		    Var oCurrentScreen As MobileScreen = myApp.CurrentScreen
+		    
+		    #Pragma Unused oCurrentScreen
+		    
+		    Declare Function isScreenHdr Lib "Object:oCurrentScreen:MobileScreen" Alias "getResources().getConfiguration().isScreenHdr" As Boolean
+		    Return isScreenHdr
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E2077686574686572207468652073637265656E20686173206120726F756E642073686170652E2041707073206D61792063686F6F736520746F206368616E6765207374796C696E67206261736564206F6E20746869732070726F70657274792C20737563682061732074686520616C69676E6D656E74206F72206C61796F7574206F662074657874206F7220696E666F726D6174696F6E616C2069636F6E732E
+		Function IsScreenRoundXC(Extends myApp As MobileApplication) As Boolean
+		  #Pragma Unused myApp
+		  
+		  #If TargetAndroid
+		    
+		    Var oCurrentScreen As MobileScreen = myApp.CurrentScreen
+		    
+		    #Pragma Unused oCurrentScreen
+		    
+		    Declare Function isScreenRound Lib "Object:oCurrentScreen:MobileScreen" Alias "getResources().getConfiguration().isScreenRound" As Boolean
+		    Return isScreenRound
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E732077686574686572206F72206E6F742074686973206170706C69636174696F6E2077617320696E7374616C6C65642061732061207669727475616C207072656C6F61642E
+		Function IsVirtualPreloadXC(Extends myApp As MobileApplication) As Boolean
+		  #Pragma Unused myApp
+		  
+		  #If TargetAndroid
+		    
+		    Var oCurrentScreen As MobileScreen = myApp.CurrentScreen
+		    
+		    #Pragma Unused oCurrentScreen
+		    
+		    Declare Function isVirtualPreload Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationInfo().isVirtualPreload" As Boolean
+		    Return isVirtualPreload
 		    
 		  #EndIf
 		End Function
@@ -62,7 +198,7 @@ Protected Module ApplicationXC
 		    
 		    #Pragma Unused oCurrentScreen
 		    
-		    Declare Function minSdkVersion Lib "Object:oCurrentScreen:MobileScreen" Alias "getWindow()!!.getContext()!!.getApplicationInfo().minSdkVersion()" As Integer
+		    Declare Function minSdkVersion Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationInfo().minSdkVersion" As Integer
 		    Return minSdkVersion
 		    
 		  #EndIf
@@ -79,7 +215,7 @@ Protected Module ApplicationXC
 		    
 		    #Pragma Unused oCurrentScreen
 		    
-		    Declare Function nativeLibraryDir Lib "Object:oCurrentScreen:MobileScreen" Alias "getWindow()!!.getContext()!!.getApplicationInfo().nativeLibraryDir()" As CString
+		    Declare Function nativeLibraryDir Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationInfo().nativeLibraryDir" As CString
 		    Return nativeLibraryDir
 		    
 		  #EndIf
@@ -96,7 +232,7 @@ Protected Module ApplicationXC
 		    
 		    #Pragma Unused oCurrentScreen
 		    
-		    Declare Function processName Lib "Object:oCurrentScreen:MobileScreen" Alias "getWindow()!!.getContext()!!.getApplicationInfo().processName()" As CString
+		    Declare Function processName Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationInfo().processName" As CString
 		    Return processName
 		    
 		  #EndIf
@@ -113,7 +249,7 @@ Protected Module ApplicationXC
 		    
 		    #Pragma Unused oCurrentScreen
 		    
-		    Declare Function publicSourceDir Lib "Object:oCurrentScreen:MobileScreen" Alias "getWindow()!!.getContext()!!.getApplicationInfo().publicSourceDir()" As CString
+		    Declare Function publicSourceDir Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationInfo().publicSourceDir" As CString
 		    Return publicSourceDir
 		    
 		  #EndIf
@@ -130,7 +266,7 @@ Protected Module ApplicationXC
 		    
 		    #Pragma Unused oCurrentScreen
 		    
-		    Declare Function sourceDir Lib "Object:oCurrentScreen:MobileScreen" Alias "getWindow()!!.getContext()!!.getApplicationInfo().sourceDir()" As CString
+		    Declare Function sourceDir Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationInfo().sourceDir" As CString
 		    Return sourceDir
 		    
 		  #EndIf
@@ -147,8 +283,25 @@ Protected Module ApplicationXC
 		    
 		    #Pragma Unused oCurrentScreen
 		    
-		    Declare Function targetSdkVersion Lib "Object:oCurrentScreen:MobileScreen" Alias "getWindow()!!.getContext()!!.getApplicationInfo().targetSdkVersion()" As Integer
+		    Declare Function targetSdkVersion Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationInfo().targetSdkVersion" As Integer
 		    Return targetSdkVersion
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44656661756C74207461736B20616666696E697479206F6620616C6C206163746976697469657320696E2074686973206170706C69636174696F6E2E20536565204163746976697479496E666F237461736B416666696E69747920666F72206D6F726520696E666F726D6174696F6E2E205468697320636F6D65732066726F6D2074686520227461736B416666696E69747922206174747269627574652E
+		Function TaskAffinityXC(Extends myApp As MobileApplication) As String
+		  #Pragma Unused myApp
+		  
+		  #If TargetAndroid
+		    
+		    Var oCurrentScreen As MobileScreen = myApp.CurrentScreen
+		    
+		    #Pragma Unused oCurrentScreen
+		    
+		    Declare Function taskAffinity Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationInfo().taskAffinity" As CString
+		    Return taskAffinity
 		    
 		  #EndIf
 		End Function
@@ -164,12 +317,103 @@ Protected Module ApplicationXC
 		    
 		    #Pragma Unused oCurrentScreen
 		    
-		    Declare Function uid Lib "Object:oCurrentScreen:MobileScreen" Alias "getWindow()!!.getContext()!!.getApplicationInfo().uid()" As Integer
+		    Declare Function uid Lib "Object:oCurrentScreen:MobileScreen" Alias "getApplicationInfo().uid" As Integer
 		    Return uid
 		    
 		  #EndIf
 		End Function
 	#tag EndMethod
+
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit)), Description = 546865207461726765742073637265656E2064656E73697479206265696E672072656E646572656420746F2C20636F72726573706F6E64696E6720746F2064656E73697479207265736F75726365207175616C69666965722E
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    Var oCurrentScreen As MobileScreen = App.CurrentScreen
+			    
+			    #Pragma Unused oCurrentScreen
+			    
+			    Declare Function densityDpi Lib "Object:oCurrentScreen:MobileScreen" Alias "getResources().getConfiguration().densityDpi" As Single
+			    Return densityDpi
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		DensityDpiXC As Single
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit)), Description = 43757272656E74207573657220707265666572656E636520666F7220746865207363616C696E6720666163746F7220666F7220666F6E74732C2072656C617469766520746F2074686520626173652064656E73697479207363616C696E672E0A0A4E6F74653A20506C6561736520646F206E6F7420757365207468697320746F2068617264636F646520666F6E742073697A65206571756174696F6E732E20546865206571756174696F6E20666F7220666F6E74207363616C696E67206973206E6F77206E6F6E2D6C696E6561723B207468697320636F656666696369656E74206973206E6F206C6F6E6765722075736564206173206120646972656374206D756C7469706C69657220746F2064657465726D696E6520666F6E742073697A652E2049742065786973747320666F7220696E666F726D6174696F6E616C20707572706F736573206F6E6C792E
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    Var oCurrentScreen As MobileScreen = App.CurrentScreen
+			    
+			    #Pragma Unused oCurrentScreen
+			    
+			    Declare Function fontScale Lib "Object:oCurrentScreen:MobileScreen" Alias "getResources().getConfiguration().fontScale" As Single
+			    Return fontScale
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		FontScaleXC As Single
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit)), Description = 54686520686569676874206F662074686520617661696C61626C652073637265656E20737061636520696E20647020756E6974732E
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    Var oCurrentScreen As MobileScreen = App.CurrentScreen
+			    
+			    #Pragma Unused oCurrentScreen
+			    
+			    Declare Function screenHeightDp Lib "Object:oCurrentScreen:MobileScreen" Alias "getResources().getConfiguration().screenHeightDp" As Single
+			    Return screenHeightDp
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		ScreenHeightDpXC As Integer
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit)), Description = 546865207769647468206F662074686520617661696C61626C652073637265656E20737061636520696E20647020756E6974732E
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    Var oCurrentScreen As MobileScreen = App.CurrentScreen
+			    
+			    #Pragma Unused oCurrentScreen
+			    
+			    Declare Function screenWidthDp Lib "Object:oCurrentScreen:MobileScreen" Alias "getResources().getConfiguration().screenWidthDp" As Single
+			    Return screenWidthDp
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		ScreenWidthDpXC As Integer
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit)), Description = 54686520736D616C6C6573742073637265656E2073697A6520616E206170706C69636174696F6E2077696C6C2073656520696E206E6F726D616C206F7065726174696F6E2E20436F72726573706F6E647320746F2074686520736D616C6C657374207769647468207265736F75726365207175616C69666965722E20546869732069732074686520736D616C6C6573742076616C7565206F662073637265656E5769647468447020616E642073637265656E486569676874447020696E20626F746820706F72747261697420616E64206C616E647363617065206F7269656E746174696F6E732E2044656661756C747320746F20534D414C4C4553545F53435245454E5F57494454485F44505F554E444546494E4544206966206E6F207769647468206973207370656369666965642E
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    Var oCurrentScreen As MobileScreen = App.CurrentScreen
+			    
+			    #Pragma Unused oCurrentScreen
+			    
+			    Declare Function smallestScreenWidthDp Lib "Object:oCurrentScreen:MobileScreen" Alias "getResources().getConfiguration().smallestScreenWidthDp" As Single
+			    Return smallestScreenWidthDp
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		SmallestScreenWidthDpXC As Integer
+	#tag EndComputedProperty
 
 
 	#tag ViewBehavior
@@ -210,6 +454,46 @@ Protected Module ApplicationXC
 			Visible=true
 			Group="Position"
 			InitialValue="0"
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="DensityDpiXC"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Single"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="FontScaleXC"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Single"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="ScreenHeightDpXC"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="ScreenWidthDpXC"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="SmallestScreenWidthDpXC"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
 			Type="Integer"
 			EditorType=""
 		#tag EndViewProperty

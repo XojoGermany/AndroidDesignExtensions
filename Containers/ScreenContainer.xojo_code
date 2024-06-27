@@ -4,7 +4,7 @@ Begin MobileContainer ScreenContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   846
+   Height          =   902
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -25,7 +25,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   470
+      Top             =   522
       Visible         =   True
       Width           =   68
    End
@@ -43,7 +43,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   470
+      Top             =   522
       Visible         =   True
       Width           =   68
    End
@@ -61,7 +61,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   470
+      Top             =   522
       Visible         =   True
       Width           =   68
    End
@@ -79,7 +79,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   470
+      Top             =   522
       Visible         =   True
       Width           =   68
    End
@@ -97,7 +97,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   552
+      Top             =   604
       Visible         =   True
       Width           =   68
    End
@@ -115,7 +115,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   552
+      Top             =   604
       Visible         =   True
       Width           =   68
    End
@@ -133,7 +133,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   552
+      Top             =   604
       Visible         =   True
       Width           =   68
    End
@@ -151,7 +151,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   552
+      Top             =   604
       Visible         =   True
       Width           =   68
    End
@@ -169,7 +169,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   634
+      Top             =   686
       Visible         =   True
       Width           =   68
    End
@@ -187,7 +187,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   634
+      Top             =   686
       Visible         =   True
       Width           =   68
    End
@@ -205,7 +205,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   634
+      Top             =   686
       Visible         =   True
       Width           =   68
    End
@@ -223,7 +223,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   634
+      Top             =   686
       Visible         =   True
       Width           =   68
    End
@@ -241,7 +241,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   716
+      Top             =   768
       Visible         =   True
       Width           =   68
    End
@@ -259,7 +259,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   716
+      Top             =   768
       Visible         =   True
       Width           =   68
    End
@@ -277,7 +277,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   716
+      Top             =   768
       Visible         =   True
       Width           =   68
    End
@@ -303,7 +303,7 @@ Begin MobileContainer ScreenContainer
       SelectedRowText =   ""
       SeparatorColor  =   &c00000000
       SeparatorThickness=   0
-      Top             =   270
+      Top             =   322
       Visible         =   True
       Width           =   320
    End
@@ -319,7 +319,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   798
+      Top             =   850
       Visible         =   True
       Width           =   360
    End
@@ -337,7 +337,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   716
+      Top             =   768
       Visible         =   True
       Width           =   68
    End
@@ -464,6 +464,24 @@ Begin MobileContainer ScreenContainer
       LockTop         =   True
       Scope           =   2
       Top             =   62
+      Visible         =   True
+      Width           =   320
+   End
+   Begin MobileButton FullScreenMode
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Fullscreen Mode"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   270
       Visible         =   True
       Width           =   320
    End
@@ -669,6 +687,7 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.MyBackgroundColor = Color.Clear
+		  Me.CaptionFont = Font.BoldSystemFont(12)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -728,6 +747,13 @@ End
 		  Call App.CurrentScreen.SetTranslucentXC(value)
 		  
 		  Me.Caption = "Translucent (" + value.ToString + ")"
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events FullScreenMode
+	#tag Event
+		Sub Pressed()
+		  App.CurrentScreen.SetWindowInsetsTypeHideXC(WindowInsetsCompatTypes.SystemBars)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

@@ -324,6 +324,45 @@ Protected Module TabPanelXC
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 476574207468652063757272656E7420696E64696361746F7220616E696D6174696F6E206D6F6465207573656420746F20616E696D617465207468652073656C656374696F6E20696E64696361746F72206265747765656E2064657374696E6174696F6E732E
+		Function GetTabIndicatorAnimationModeXC(Extends ctrl As MobileTabPanel) As TabIndicatorAnimationModesXC
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTabIndicatorAnimationMode Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return TabIndicatorAnimationModesXC(getTabIndicatorAnimationMode)
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 476574207468652063757272656E7420696E64696361746F722067726176697479207573656420746F20616C69676E20746865207461622073656C656374696F6E20696E64696361746F7220696E20746865205461624C61796F75742E
+		Function GetTabIndicatorGravityXC(Extends ctrl As MobileTabPanel) As TabGravityXC
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTabIndicatorGravity Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return TabGravityXC(getTabIndicatorGravity)
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74206D6F646520757365642062792074686973205461624C61796F75742E
+		Function GetTabModeXC(Extends ctrl As MobileTabPanel) As TabModesXC
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTabMode Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Return TabModesXC(getTabMode)
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746869732062616467652077696C6C20646973706C61792061206E756D6265722E
 		Function HasBadgeNumberAtXC(Extends ctrl As MobileTabPanel, index As Integer) As Boolean
 		  #Pragma Unused ctrl

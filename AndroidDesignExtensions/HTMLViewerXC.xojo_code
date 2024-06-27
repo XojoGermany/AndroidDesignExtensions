@@ -618,7 +618,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTextZoom Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getTextZoom()" As Integer
+		    Declare Function getTextZoom Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getTextZoom" As Integer
 		    Return getTextZoom
 		    
 		  #EndIf

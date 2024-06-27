@@ -1,6 +1,23 @@
 #tag Module
 Protected Module ScreenXC
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F756E6473206F66207468652061726561206173736F636961746564207769746820746869732077696E646F77206F72205569436F6E746578742E0A0A4E6F74652074686174207468652073697A65206F6620746865207265706F7274656420626F756E64732063616E206861766520646966666572656E742073697A65207468616E20446973706C61792367657453697A6528506F696E74292E2054686973206D6574686F64207265706F727473207468652077696E646F772073697A6520696E636C7564696E6720616C6C2073797374656D206261722061726561732C207768696C6520446973706C61792367657453697A6528506F696E7429207265706F727473207468652061726561206578636C7564696E67206E617669676174696F6E206261727320616E6420646973706C6179206375746F75742061726561732E
+		Function GetBoundsXC(Extends myScreen As MobileScreen) As Rect
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function left Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getWindowManager().getCurrentWindowMetrics().getBounds().left" As Integer
+		    Declare Function top Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getWindowManager().getCurrentWindowMetrics().getBounds().top" As Integer
+		    Declare Function width Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getWindowManager().getCurrentWindowMetrics().getBounds().width()" As Integer
+		    Declare Function height Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getWindowManager().getCurrentWindowMetrics().getBounds().height()" As Integer
+		    
+		    Return New Rect(left, top, width, height)
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0
 		Function GetCurrentFocusedControlXC(Extends myScreen As MobileScreen) As MobileUIControl
 		  #Pragma Unused myScreen
@@ -37,7 +54,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCurrentFocusID Lib "Object:myScreen:MobileScreen" Alias "getCurrentFocus()!!.getId()" As Integer
+		    Declare Function getCurrentFocusID Lib "Object:myScreen:MobileScreen" Alias "getCurrentFocus()!!.getId" As Integer
 		    
 		    Try
 		      
@@ -53,13 +70,26 @@ Protected Module ScreenXC
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652064656E73697479206F66207468652061726561206173736F636961746564207769746820746869732077696E646F77206F72205569436F6E746578742C2077686963682075736573207468652073616D6520756E69747320617320446973706C61794D6574726963732E64656E736974792E
+		Function GetDensityXC(Extends myScreen As MobileScreen) As Single
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getDensity Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getWindowManager().getCurrentWindowMetrics().getDensity()" As Single
+		    Return getDensity
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 476574732074686520646973706C61792069642E0A0A45616368206C6F676963616C20646973706C617920686173206120756E697175652069642E205468652064656661756C7420646973706C6179206861732069642044454641554C545F444953504C41592E
 		Function GetDisplayIDXC(Extends myScreen As MobileScreen) As Integer
 		  #Pragma Unused myScreen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDisplayId Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.getDisplayId()" As Integer
+		    Declare Function getDisplayId Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.getDisplayId" As Integer
 		    Return getDisplayId
 		    
 		  #EndIf
@@ -72,7 +102,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getRotation Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.getRotation()" As Integer
+		    Declare Function getRotation Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.getRotation" As Integer
 		    Return getRotation
 		    
 		  #EndIf
@@ -85,7 +115,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getState Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.getState()" As Integer
+		    Declare Function getState Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.getState" As Integer
 		    Return getState
 		    
 		  #EndIf
@@ -98,7 +128,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getHeight Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().getHeight()" As Integer
+		    Declare Function getHeight Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().getHeight" As Integer
 		    Return getHeight
 		    
 		  #EndIf
@@ -150,8 +180,17 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getSystemBarsAppearance Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getInsetsController()!!.getSystemBarsAppearance()" As Integer
-		    Return getSystemBarsAppearance
+		    ' Working for API 30+ (Android 11+)
+		    If System.Version.MajorVersion >= 11 Then
+		      
+		      Declare Function getSystemBarsAppearance Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getInsetsController()!!.getSystemBarsAppearance" As Integer
+		      Return getSystemBarsAppearance
+		      
+		    Else
+		      
+		      Raise New AndroidException(CurrentMethodName + EndOfLine + "This is only working for API 30+ (Android 11+).")
+		      
+		    End If
 		    
 		  #EndIf
 		End Function
@@ -163,8 +202,17 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getSystemBarsBehavior Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getInsetsController()!!.getSystemBarsBehavior()" As Integer
-		    Return getSystemBarsBehavior
+		    ' Working for API 30+ (Android 11+)
+		    If System.Version.MajorVersion >= 11 Then
+		      
+		      Declare Function getSystemBarsBehavior Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getInsetsController()!!.getSystemBarsBehavior" As Integer
+		      Return getSystemBarsBehavior
+		      
+		    Else
+		      
+		      Raise New AndroidException(CurrentMethodName + EndOfLine + "This is only working for API 30+ (Android 11+).")
+		      
+		    End If
 		    
 		  #EndIf
 		End Function
@@ -189,7 +237,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTransitionBackgroundFadeDuration Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getTransitionBackgroundFadeDuration()" As Int64
+		    Declare Function getTransitionBackgroundFadeDuration Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getTransitionBackgroundFadeDuration" As Int64
 		    Return getTransitionBackgroundFadeDuration
 		    
 		  #EndIf
@@ -202,7 +250,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getWidth Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().getWidth()" As Integer
+		    Declare Function getWidth Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().getWidth" As Integer
 		    Return getWidth
 		    
 		  #EndIf
@@ -215,7 +263,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isHdr Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.isHdr()" As Boolean
+		    Declare Function isHdr Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.isHdr" As Boolean
 		    Return isHdr
 		    
 		  #EndIf
@@ -527,13 +575,48 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSystemBarsAppearance Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().getWindowInsetsController()!!.setSystemBarsAppearance" (myAppearance As Integer, myMask As Integer)
-		    setSystemBarsAppearance(appearance, mask)
+		    ' Working for API 30+ (Android 11+)
+		    If System.Version.MajorVersion >= 11 Then
+		      
+		      Declare Sub setSystemBarsAppearance Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().getWindowInsetsController()!!.setSystemBarsAppearance" (myAppearance As Integer, myMask As Integer)
+		      setSystemBarsAppearance(appearance, mask)
+		      
+		    Else
+		      
+		      Raise New AndroidException(CurrentMethodName + EndOfLine + "This is only working for API 30+ (Android 11+).")
+		      
+		    End If
 		    
 		  #Else
 		    
 		    #Pragma Unused appearance
 		    #Pragma Unused mask
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C7320746865206265686176696F72206F662073797374656D20626172732E
+		Sub SetSystemBarsBehaviorXC(Extends myScreen As MobileScreen, behavior As Integer)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    ' Working for API 30+ (Android 11+)
+		    If System.Version.MajorVersion >= 11 Then
+		      
+		      Declare Sub setSystemBarsBehavior Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().getWindowInsetsController()!!.setSystemBarsBehavior" (myBehavior As Integer)
+		      setSystemBarsBehavior(behavior)
+		      
+		    Else
+		      
+		      Raise New AndroidException(CurrentMethodName + EndOfLine + "This is only working for API 30+ (Android 11+).")
+		      
+		    End If
+		    
+		  #Else
+		    
+		    #Pragma Unused behavior
 		    
 		  #EndIf
 		End Sub
@@ -603,6 +686,58 @@ Protected Module ScreenXC
 		  #Else
 		    
 		    #Pragma Unused turnScreenOn
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4D616B6573206120736574206F662077696E646F77732063617573696E6720696E73657473206469736170706561722E0A0A4E6F74652074686174206966207468652077696E646F772063757272656E746C7920646F65736E2774206861766520636F6E74726F6C206F7665722061206365727461696E20747970652C2069742077696C6C206170706C7920746865206368616E676520617320736F6F6E206173207468652077696E646F77206761696E7320636F6E74726F6C2E20546865206170702063616E206C697374656E20746F20746865206576656E74206279206F6273657276696E672056696577236F6E4170706C7957696E646F77496E7365747320616E6420636865636B696E67207669736962696C69747920776974682057696E646F77496E7365747323697356697369626C652E
+		Sub SetWindowInsetsTypeHideXC(Extends myScreen As MobileScreen, types As Integer)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    ' Working for API 30+ (Android 11+)
+		    If System.Version.MajorVersion >= 11 Then
+		      
+		      Declare Sub hide Lib "Object:myScreen:MobileScreen:Kotlin" Alias "getWindow()!!.getDecorView().getWindowInsetsController()!!.hide(mytypes.toInt())" (myTypes As Integer)
+		      hide(types)
+		      
+		    Else
+		      
+		      Raise New AndroidException(CurrentMethodName + EndOfLine + "This is only working for API 30+ (Android 11+).")
+		      
+		    End If
+		    
+		  #Else
+		    
+		    #Pragma Unused types
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 4D616B6573206120736574206F662077696E646F7773207468617420636175736520696E7365747320617070656172206F6E2073637265656E2E0A0A4E6F74652074686174206966207468652077696E646F772063757272656E746C7920646F65736E2774206861766520636F6E74726F6C206F7665722061206365727461696E20747970652C2069742077696C6C206170706C7920746865206368616E676520617320736F6F6E206173207468652077696E646F77206761696E7320636F6E74726F6C2E20546865206170702063616E206C697374656E20746F20746865206576656E74206279206F6273657276696E672056696577236F6E4170706C7957696E646F77496E7365747320616E6420636865636B696E67207669736962696C69747920776974682057696E646F77496E7365747323697356697369626C652E
+		Sub SetWindowInsetsTypeShowXC(Extends myScreen As MobileScreen, types As Integer)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    ' Working for API 30+ (Android 11+)
+		    If System.Version.MajorVersion >= 11 Then
+		      
+		      Declare Sub show Lib "Object:myScreen:MobileScreen:Kotlin" Alias "getWindow()!!.getDecorView().getWindowInsetsController()!!.show(mytypes.toInt())" (myTypes As Integer)
+		      show(types)
+		      
+		    Else
+		      
+		      Raise New AndroidException(CurrentMethodName + EndOfLine + "This is only working for API 30+ (Android 11+).")
+		      
+		    End If
+		    
+		  #Else
+		    
+		    #Pragma Unused types
 		    
 		  #EndIf
 		End Sub

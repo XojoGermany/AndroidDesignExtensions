@@ -37,7 +37,7 @@ Protected Module ContainerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCurrentFocusID Lib "Object:myContainer:MobileContainer" Alias "getActivity()!!.getCurrentFocus()!!.getId()" As Integer
+		    Declare Function getCurrentFocusID Lib "Object:myContainer:MobileContainer" Alias "getActivity()!!.getCurrentFocus()!!.getId" As Integer
 		    
 		    Try
 		      

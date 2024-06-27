@@ -3,14 +3,15 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
 # AndroidDesignExtensions
-A set of 681+ UI extensions for Xojo Android framework.
+A set of 700+ UI extensions for Xojo Android framework.
 
-<img src="https://blog.xojo.com/wp-content/uploads/2023/08/202079C2-5C79-41C6-BE46-5D6261082B39-996x2048.png" alt="Light Mode" width="35%" height="35%"> <img src="https://blog.xojo.com/wp-content/uploads/2023/08/F920EDA3-5709-42F3-A1DA-2C7D5FC86009-996x2048.png" alt="Dark Mode" width="35%" height="35%">
+![Android Design Extensions](Pictures/Screenshot.jpg)
 
 ## System requirements
 
 | **Extensions** |                                       **Xojo Version**                                       |
 |:--------------:|:--------------------------------------------------------------------------------------------:|
+|       2.6      | [![XOJO 2024r2](https://img.shields.io/badge/Xojo-2024r2+-green.svg)](https://www.xojo.com/) |
 |       2.5      | [![XOJO 2024r1](https://img.shields.io/badge/Xojo-2024r1+-green.svg)](https://www.xojo.com/) |
 |       2.0      | [![XOJO 2023r3](https://img.shields.io/badge/Xojo-2023r3+-green.svg)](https://www.xojo.com/) |
 |       1.5      | [![XOJO 2023r3](https://img.shields.io/badge/Xojo-2023r3+-green.svg)](https://www.xojo.com/) |
@@ -24,13 +25,27 @@ A set of 681+ UI extensions for Xojo Android framework.
 ### MobileApplication
 * ClassNameXC
 * DataDirXC
+* DensityDpiXC
 * DeviceProtectedDataDirXC
+* FontScaleXC
+* GetCacheDirXC
+* GetCodeCacheDirXC
+* GetDataDirXC
+* GetExternalCacheDirXC
+* GetFilesDirXC
+* IsScreenHdrXC
+* IsScreenRoundXC
+* IsVirtualPreloadXC
 * MinSdkVersionXC
 * NativeLibraryDirXC
 * ProcessNameXC
 * PublicSourceDirXC
+* ScreenHeightDpXC
+* ScreenWidthDpXC
+* SmallestScreenWidthDpXC
 * SourceDirXC
 * TargetSdkVersionXC
+* TaskAffinityXC
 * UidXC
 
 ### All MobileUIControls
@@ -259,6 +274,7 @@ A set of 681+ UI extensions for Xojo Android framework.
 * ClearFormDataXC
 * ClearFormDataXC
 * ClearHistoryXC
+* ClearMatchesXC
 * ClearSSLPreferencesXC
 * FindAllAsyncXC
 * FindNextXC
@@ -410,8 +426,10 @@ A set of 681+ UI extensions for Xojo Android framework.
 * SetDropDownWidthXC
 
 ### MobileScreen
+* GetBoundsXC
 * GetCurrentFocusedControlXC
 * GetCurrentFocusIDXC
+* GetDensityXC
 * GetDisplayIDXC
 * GetDisplayRotationXC
 * GetDisplayStateXC
@@ -445,10 +463,13 @@ A set of 681+ UI extensions for Xojo Android framework.
 * SetStatusBarColorXC
 * SetStatusBarContrastEnforcedXC
 * SetSystemBarsAppearanceXC
+* SetSystemBarsBehaviorXC
 * SetSystemUiVisibilityXC
 * SetTransitionBackgroundFadeDurationXC
 * SetTranslucentXC
 * SetTurnScreenOnXC
+* SetWindowInsetsTypeHideXC
+* SetWindowInsetsTypeShowXC
 * ShowLockTaskEscapeMessageXC
 * StartLockTaskXC
 * StopLockTaskXC
@@ -516,6 +537,9 @@ A set of 681+ UI extensions for Xojo Android framework.
 * GetBadgeVerticalOffsetWithoutTextAtXC
 * GetBadgeVerticalOffsetWithTextAtXC
 * GetBadgeVerticalPaddingAtXC
+* GetTabIndicatorAnimationModeXC
+* GetTabIndicatorGravityXC
+* GetTabModeXC
 * HasBadgeNumberAtXC
 * HasBadgeTextAtXC
 * HasUnboundedRippleXC
