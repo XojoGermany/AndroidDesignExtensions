@@ -7,7 +7,7 @@ Protected Module ImageViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub clearColorFilter Lib "Object:ctrl:MobileImageViewer"
+		    Declare Sub clearColorFilter Lib kMobileImageViewer
 		    clearColorFilter
 		    
 		  #EndIf
@@ -20,7 +20,7 @@ Protected Module ImageViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getAdjustViewBounds Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Declare Function getAdjustViewBounds Lib kMobileImageViewer As Boolean
 		    Return getAdjustViewBounds
 		    
 		  #Else
@@ -37,7 +37,7 @@ Protected Module ImageViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCropToPadding Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Declare Function getCropToPadding Lib kMobileImageViewer As Boolean
 		    Return getCropToPadding
 		    
 		  #Else
@@ -54,7 +54,7 @@ Protected Module ImageViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getImageAlpha Lib "Object:ctrl:MobileImageViewer" As Integer
+		    Declare Function getImageAlpha Lib kMobileImageViewer As Int32
 		    Return getImageAlpha
 		    
 		  #Else
@@ -71,7 +71,7 @@ Protected Module ImageViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function hasOverlappingRendering Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Declare Function hasOverlappingRendering Lib kMobileImageViewer As Boolean
 		    Return hasOverlappingRendering
 		    
 		  #EndIf
@@ -84,7 +84,7 @@ Protected Module ImageViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isOpaque Lib "Object:ctrl:MobileImageViewer" As Boolean
+		    Declare Function isOpaque Lib kMobileImageViewer As Boolean
 		    Return isOpaque
 		    
 		  #EndIf
@@ -97,7 +97,7 @@ Protected Module ImageViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setAdjustViewBounds Lib "Object:ctrl:MobileImageViewer" (myAdjustViewBounds As Boolean)
+		    Declare Sub setAdjustViewBounds Lib kMobileImageViewer (myAdjustViewBounds As Boolean)
 		    setAdjustViewBounds(adjustViewBounds)
 		    
 		  #Else
@@ -114,7 +114,7 @@ Protected Module ImageViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setColorFilter Lib "Object:ctrl:MobileImageViewer" (myColor As Integer)
+		    Declare Sub setColorFilter Lib kMobileImageViewer (myColor As Int32)
 		    setColorFilter(c.ToInteger)
 		    
 		  #Else
@@ -131,7 +131,7 @@ Protected Module ImageViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setCropToPadding Lib "Object:ctrl:MobileImageViewer" (myCropToPadding As Boolean)
+		    Declare Sub setCropToPadding Lib kMobileImageViewer (myCropToPadding As Boolean)
 		    setCropToPadding(cropToPadding)
 		    
 		  #Else
@@ -148,7 +148,7 @@ Protected Module ImageViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setImageAlpha Lib "Object:ctrl:MobileImageViewer" (myAlpha As Integer)
+		    Declare Sub setImageAlpha Lib kMobileImageViewer (myAlpha As Int32)
 		    setImageAlpha(alpha)
 		    
 		  #Else
@@ -158,6 +158,10 @@ Protected Module ImageViewerXC
 		  #EndIf
 		End Sub
 	#tag EndMethod
+
+
+	#tag Constant, Name = kMobileImageViewer, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileImageViewer", Scope = Private
+	#tag EndConstant
 
 
 	#tag ViewBehavior

@@ -9,9 +9,10 @@ Begin MobileContainer TextAreaContainer
    LockLeft        =   True
    LockRight       =   True
    LockTop         =   True
+   Orientation     =   0
    Visible         =   True
    Width           =   360
-   Begin MobileTextArea DefaultArea
+   Begin AppearanceTextArea DefaultArea
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -24,6 +25,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       ReadOnly        =   False
       Scope           =   2
       SelectedText    =   ""
@@ -48,6 +50,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Bold"
       TextColor       =   &c00000000
@@ -55,7 +58,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   110
    End
-   Begin MobileSwitch BoldSwitch
+   Begin AppearanceSwitch BoldSwitch
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
@@ -72,7 +75,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   50
    End
-   Begin MobileSwitch UnderlineSwitch
+   Begin AppearanceSwitch UnderlineSwitch
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
@@ -102,6 +105,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Underline"
       TextColor       =   &c00000000
@@ -122,6 +126,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Strikethrough"
       TextColor       =   &c00000000
@@ -129,7 +134,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   110
    End
-   Begin MobileSwitch StrikethroughSwitch
+   Begin AppearanceSwitch StrikethroughSwitch
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
@@ -161,6 +166,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   False
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
@@ -186,6 +192,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   False
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Line Spacing"
       TextColor       =   &c00000000
@@ -206,6 +213,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   False
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Line Height"
       TextColor       =   &c00000000
@@ -228,6 +236,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   False
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
@@ -255,6 +264,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   False
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
@@ -280,6 +290,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   False
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Letter Spacing"
       TextColor       =   &c00000000
@@ -316,6 +327,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Cursor Visible"
       TextColor       =   &c00000000
@@ -323,7 +335,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   110
    End
-   Begin MobileSwitch CursorSwitch
+   Begin AppearanceSwitch CursorSwitch
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
@@ -353,6 +365,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   False
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Scroll Horiz."
       TextColor       =   &c00000000
@@ -360,7 +373,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   100
    End
-   Begin MobileSwitch ScrollHSwitch
+   Begin AppearanceSwitch ScrollHSwitch
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
@@ -392,6 +405,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   False
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
@@ -417,6 +431,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   False
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Text Scale X"
       TextColor       =   &c00000000
@@ -424,7 +439,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   100
    End
-   Begin MobileTextArea HintArea
+   Begin AppearanceTextArea HintArea
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -437,6 +452,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       ReadOnly        =   False
       Scope           =   2
       SelectedText    =   ""
@@ -461,6 +477,7 @@ Begin MobileContainer TextAreaContainer
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Show Keyboard"
       TextColor       =   &c00000000
@@ -468,7 +485,7 @@ Begin MobileContainer TextAreaContainer
       Visible         =   True
       Width           =   110
    End
-   Begin MobileSwitch KeyboardSwitch
+   Begin AppearanceSwitch KeyboardSwitch
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
@@ -497,7 +514,6 @@ End
 		  Me.SetAutoLinkMaskXC(AutoLinkMaskXC.All)
 		  Me.SetLinksClickableXC(True)
 		  Me.SetLinkTextColorXC(Color.Red)
-		  Me.SetBackgroundColorXC(Color.Clear)
 		  Me.SetHighlightColorXC(&cFF2F9200)
 		  Me.SetErrorXC("Error Description 💩")
 		  

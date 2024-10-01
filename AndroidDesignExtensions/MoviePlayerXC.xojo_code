@@ -1,13 +1,13 @@
 #tag Module
 Protected Module MoviePlayerXC
-	#tag CompatibilityFlags = (TargetAndroid and (Target64Bit))
+	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0
 		Function CanPauseXC(Extends ctrl As MobileMoviePlayer) As Boolean
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function canPause Lib "Object:ctrl:MobileMoviePlayer" As Boolean
+		    Declare Function canPause Lib kLibMobileMoviePlayer As Boolean
 		    Return canPause
 		    
 		  #EndIf
@@ -20,7 +20,7 @@ Protected Module MoviePlayerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function canSeekBackward Lib "Object:ctrl:MobileMoviePlayer" As Boolean
+		    Declare Function canSeekBackward Lib kLibMobileMoviePlayer As Boolean
 		    Return canSeekBackward
 		    
 		  #EndIf
@@ -33,7 +33,7 @@ Protected Module MoviePlayerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function canSeekForward Lib "Object:ctrl:MobileMoviePlayer" As Boolean
+		    Declare Function canSeekForward Lib kLibMobileMoviePlayer As Boolean
 		    Return canSeekForward
 		    
 		  #EndIf
@@ -46,7 +46,7 @@ Protected Module MoviePlayerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBufferPercentage Lib "Object:ctrl:MobileMoviePlayer" As Integer
+		    Declare Function getBufferPercentage Lib kLibMobileMoviePlayer As Int32
 		    Return getBufferPercentage
 		    
 		  #EndIf
@@ -59,7 +59,7 @@ Protected Module MoviePlayerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCurrentPosition Lib "Object:ctrl:MobileMoviePlayer" As Integer
+		    Declare Function getCurrentPosition Lib kLibMobileMoviePlayer As Int32
 		    Return getCurrentPosition
 		    
 		  #EndIf
@@ -72,7 +72,7 @@ Protected Module MoviePlayerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isPlaying Lib "Object:ctrl:MobileMoviePlayer" As Boolean
+		    Declare Function isPlaying Lib kLibMobileMoviePlayer As Boolean
 		    Return isPlaying
 		    
 		  #EndIf
@@ -85,7 +85,7 @@ Protected Module MoviePlayerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function resolveAdjustedSize Lib "Object:ctrl:MobileMoviePlayer" (myDesiredSize As Integer, myMeasureSpec As Integer) As Integer
+		    Declare Function resolveAdjustedSize Lib kLibMobileMoviePlayer (myDesiredSize As Int32, myMeasureSpec As Int32) As Int32
 		    Return resolveAdjustedSize(desiredSize, measureSpec)
 		    
 		  #Else
@@ -103,7 +103,7 @@ Protected Module MoviePlayerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub resume Lib "Object:ctrl:MobileMoviePlayer"
+		    Declare Sub resume Lib kLibMobileMoviePlayer
 		    resume
 		    
 		  #EndIf
@@ -116,7 +116,7 @@ Protected Module MoviePlayerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub seekTo Lib "Object:ctrl:MobileMoviePlayer" (myMsec As Integer)
+		    Declare Sub seekTo Lib kLibMobileMoviePlayer (myMsec As Int32)
 		    seekTo(msec)
 		    
 		  #Else
@@ -133,7 +133,7 @@ Protected Module MoviePlayerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setAudioFocusRequest Lib "Object:ctrl:MobileMoviePlayer" (myFocusGain As Integer)
+		    Declare Sub setAudioFocusRequest Lib kLibMobileMoviePlayer (myFocusGain As Int32)
 		    setAudioFocusRequest(focusGain)
 		    
 		  #Else
@@ -150,7 +150,7 @@ Protected Module MoviePlayerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub stopPlayback Lib "Object:ctrl:MobileMoviePlayer"
+		    Declare Sub stopPlayback Lib kLibMobileMoviePlayer
 		    stopPlayback
 		    
 		  #EndIf
@@ -163,12 +163,16 @@ Protected Module MoviePlayerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub suspend Lib "Object:ctrl:MobileMoviePlayer"
+		    Declare Sub suspend Lib kLibMobileMoviePlayer
 		    suspend
 		    
 		  #EndIf
 		End Sub
 	#tag EndMethod
+
+
+	#tag Constant, Name = kLibMobileMoviePlayer, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileMoviePlayer", Scope = Private
+	#tag EndConstant
 
 
 	#tag ViewBehavior

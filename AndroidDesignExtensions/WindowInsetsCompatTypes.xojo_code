@@ -1,12 +1,12 @@
 #tag Class
 Protected Class WindowInsetsCompatTypes
-	#tag CompatibilityFlags = (TargetAndroid and (Target64Bit))
+	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit)), Description = 416E20696E73657473207479706520726570726573656E74696E67207468652077696E646F77206F6620612063617074696F6E206261722E
 		#tag Getter
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function captionBar Lib "androidx.core.view" Alias "WindowInsetsCompat.Type.captionBar" As Integer
+			    Declare Function captionBar Lib kLibCoreView Alias "WindowInsetsCompat.Type.captionBar" As Int32
 			    Return captionBar
 			    
 			  #EndIf
@@ -20,7 +20,7 @@ Protected Class WindowInsetsCompatTypes
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function displayCutout Lib "androidx.core.view" Alias "WindowInsetsCompat.Type.displayCutout" As Integer
+			    Declare Function displayCutout Lib kLibCoreView Alias "WindowInsetsCompat.Type.displayCutout" As Int32
 			    Return displayCutout
 			    
 			  #EndIf
@@ -34,7 +34,7 @@ Protected Class WindowInsetsCompatTypes
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function ime Lib "androidx.core.view" Alias "WindowInsetsCompat.Type.ime" As Integer
+			    Declare Function ime Lib kLibCoreView Alias "WindowInsetsCompat.Type.ime" As Int32
 			    Return ime
 			    
 			  #EndIf
@@ -48,7 +48,7 @@ Protected Class WindowInsetsCompatTypes
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function mandatorySystemGestures Lib "androidx.core.view" Alias "WindowInsetsCompat.Type.mandatorySystemGestures" As Integer
+			    Declare Function mandatorySystemGestures Lib kLibCoreView Alias "WindowInsetsCompat.Type.mandatorySystemGestures" As Int32
 			    Return mandatorySystemGestures
 			    
 			  #EndIf
@@ -62,7 +62,7 @@ Protected Class WindowInsetsCompatTypes
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function navigationBars Lib "androidx.core.view" Alias "WindowInsetsCompat.Type.navigationBars" As Integer
+			    Declare Function navigationBars Lib kLibCoreView Alias "WindowInsetsCompat.Type.navigationBars" As Int32
 			    Return navigationBars
 			    
 			  #EndIf
@@ -76,7 +76,7 @@ Protected Class WindowInsetsCompatTypes
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function statusBars Lib "androidx.core.view" Alias "WindowInsetsCompat.Type.statusBars" As Integer
+			    Declare Function statusBars Lib kLibCoreView Alias "WindowInsetsCompat.Type.statusBars" As Int32
 			    Return statusBars
 			    
 			  #EndIf
@@ -90,7 +90,7 @@ Protected Class WindowInsetsCompatTypes
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function systemBars Lib "androidx.core.view" Alias "WindowInsetsCompat.Type.systemBars" As Integer
+			    Declare Function systemBars Lib kLibCoreView Alias "WindowInsetsCompat.Type.systemBars" As Int32
 			    Return systemBars
 			    
 			  #EndIf
@@ -104,7 +104,7 @@ Protected Class WindowInsetsCompatTypes
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function systemGestures Lib "androidx.core.view" Alias "WindowInsetsCompat.Type.systemGestures" As Integer
+			    Declare Function systemGestures Lib kLibCoreView Alias "WindowInsetsCompat.Type.systemGestures" As Int32
 			    Return systemGestures
 			    
 			  #EndIf
@@ -118,7 +118,7 @@ Protected Class WindowInsetsCompatTypes
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function tappableElement Lib "androidx.core.view" Alias "WindowInsetsCompat.Type.tappableElement" As Integer
+			    Declare Function tappableElement Lib kLibCoreView Alias "WindowInsetsCompat.Type.tappableElement" As Int32
 			    Return tappableElement
 			    
 			  #EndIf
@@ -126,6 +126,10 @@ Protected Class WindowInsetsCompatTypes
 		#tag EndGetter
 		Shared TappableElement As Integer
 	#tag EndComputedProperty
+
+
+	#tag Constant, Name = kLibCoreView, Type = String, Dynamic = False, Default = \"androidx.core.view", Scope = Private
+	#tag EndConstant
 
 
 	#tag ViewBehavior

@@ -1,12 +1,13 @@
 #tag Class
-Protected Class AppearanceLabel
-Inherits MobileLabel
-	#tag CompatibilityFlags = ( TargetIOS and ( Target64Bit ) ) or ( TargetAndroid and ( Target64Bit ) )
+Protected Class AppearanceButton
+Inherits MobileButton
 	#tag Event
 		Sub Opening()
 		  If Color.IsDarkMode Then
 		    
-		    Me.TextColor = &cF1F0F7
+		    Me.SetBackgroundColorXC(&cB2C5FF)
+		    Me.SetCornerRadiusXC(40)
+		    Me.CaptionColor = &c182E60
 		    
 		  End If
 		  
@@ -22,14 +23,6 @@ Inherits MobileLabel
 
 
 	#tag ViewBehavior
-		#tag ViewProperty
-			Name="MaximumCharactersAllowed"
-			Visible=true
-			Group="Behavior"
-			InitialValue=""
-			Type="Integer"
-			EditorType=""
-		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Name"
 			Visible=true
@@ -74,7 +67,7 @@ Inherits MobileLabel
 			Name="Height"
 			Visible=true
 			Group="Position"
-			InitialValue="30"
+			InitialValue="44"
 			Type="Integer"
 			EditorType=""
 		#tag EndViewProperty
@@ -85,53 +78,6 @@ Inherits MobileLabel
 			InitialValue="100"
 			Type="Integer"
 			EditorType=""
-		#tag EndViewProperty
-		#tag ViewProperty
-			Name="Text"
-			Visible=true
-			Group="Text Control"
-			InitialValue="Untitled"
-			Type="String"
-			EditorType="MultiLineEditor"
-		#tag EndViewProperty
-		#tag ViewProperty
-			Name="Alignment"
-			Visible=true
-			Group="Text Control"
-			InitialValue=""
-			Type="MobileTextControl.Alignments"
-			EditorType="Enum"
-			#tag EnumValues
-				"0 - Left"
-				"1 - Center"
-				"2 - Right"
-				"3 - Justified"
-				"4 - Natural"
-			#tag EndEnumValues
-		#tag EndViewProperty
-		#tag ViewProperty
-			Name="TextColor"
-			Visible=true
-			Group="Text Control"
-			InitialValue="&c000000"
-			Type="Color"
-			EditorType=""
-		#tag EndViewProperty
-		#tag ViewProperty
-			Name="AccessibilityHint"
-			Visible=true
-			Group="UI Control"
-			InitialValue=""
-			Type="String"
-			EditorType="MultiLineEditor"
-		#tag EndViewProperty
-		#tag ViewProperty
-			Name="AccessibilityLabel"
-			Visible=true
-			Group="UI Control"
-			InitialValue=""
-			Type="String"
-			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="LockLeft"
@@ -166,6 +112,22 @@ Inherits MobileLabel
 			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
+			Name="AccessibilityHint"
+			Visible=true
+			Group="UI Control"
+			InitialValue=""
+			Type="String"
+			EditorType="MultiLineEditor"
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="AccessibilityLabel"
+			Visible=true
+			Group="UI Control"
+			InitialValue=""
+			Type="String"
+			EditorType="MultiLineEditor"
+		#tag EndViewProperty
+		#tag ViewProperty
 			Name="Enabled"
 			Visible=true
 			Group="UI Control"
@@ -182,20 +144,20 @@ Inherits MobileLabel
 			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
-			Name="LineBreakMode"
+			Name="Caption"
 			Visible=true
-			Group="Label"
-			InitialValue="0"
-			Type="MobileLabel.LineBreakModes"
-			EditorType="Enum"
-			#tag EnumValues
-				"0 - WordWrap"
-				"1 - CharacterWrap"
-				"2 - Clip"
-				"3 - TruncateStart"
-				"4 - TruncateEnd"
-				"5 - TruncateMiddle"
-			#tag EndEnumValues
+			Group="Button"
+			InitialValue="Button"
+			Type="String"
+			EditorType="MultiLineEditor"
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="CaptionColor"
+			Visible=true
+			Group="Button"
+			InitialValue="&cffffff"
+			Type="Color"
+			EditorType=""
 		#tag EndViewProperty
 	#tag EndViewBehavior
 End Class

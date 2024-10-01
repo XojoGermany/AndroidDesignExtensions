@@ -1,12 +1,14 @@
 #tag Class
 Protected Class AppearanceTextField
 Inherits MobileTextField
-	#tag CompatibilityFlags = (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))
+	#tag CompatibilityFlags = ( TargetIOS and ( Target64Bit ) ) or ( TargetAndroid and ( Target64Bit ) )
 	#tag Event
 		Sub Opening()
 		  If Color.IsDarkMode Then
 		    
-		    Me.TextColor = &cD3D3D3
+		    Me.SetDefaultHintTextColorXC(&cC5C6D0)
+		    Me.SetHintTextColorXC(&cC5C6D0)
+		    Me.TextColor = &cF1F0F7
 		    Me.SetBoxBackgroundColorXC(&c303034)
 		    
 		  End If

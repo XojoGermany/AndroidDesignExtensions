@@ -7,7 +7,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function areHeaderDividersEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Declare Function areHeaderDividersEnabled Lib kLibAndroidMobileTable As Boolean
 		    Return areHeaderDividersEnabled
 		    
 		  #EndIf
@@ -20,7 +20,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getFirstVisiblePosition Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Declare Function getFirstVisiblePosition Lib kLibAndroidMobileTable As Int32
 		    Return getFirstVisiblePosition
 		    
 		  #EndIf
@@ -33,7 +33,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getItemIdAtPosition Lib "Object:ctrl:AndroidMobileTable" (myPosition As Integer) As Int64
+		    Declare Function getItemIdAtPosition Lib kLibAndroidMobileTable (myPosition As Int32) As Int64
 		    Return getItemIdAtPosition(position)
 		    
 		  #EndIf
@@ -46,7 +46,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLastVisiblePosition Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Declare Function getLastVisiblePosition Lib kLibAndroidMobileTable As Int32
 		    Return getLastVisiblePosition
 		    
 		  #EndIf
@@ -59,7 +59,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getMaxScrollAmount Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Declare Function getMaxScrollAmount Lib kLibAndroidMobileTable As Int32
 		    Return getMaxScrollAmount
 		    
 		  #EndIf
@@ -72,7 +72,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getSelectedItemId Lib "Object:ctrl:AndroidMobileTable" As Int64
+		    Declare Function getSelectedItemId Lib kLibAndroidMobileTable As Int64
 		    Return getSelectedItemId
 		    
 		  #EndIf
@@ -85,7 +85,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getSelectedItemPosition Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Declare Function getSelectedItemPosition Lib kLibAndroidMobileTable As Int32
 		    Return getSelectedItemPosition
 		    
 		  #EndIf
@@ -93,13 +93,13 @@ Protected Module TableXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207472616E736372697074206D6F64652E
-		Function GetTranscriptModeXC(Extends ctrl As AndroidMobileTable) As TranscriptModes
+		Function GetTranscriptModeXC(Extends ctrl As AndroidMobileTable) As TranscriptModesXC
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTranscriptMode Lib "Object:ctrl:AndroidMobileTable" As Integer
-		    Return TranscriptModes(getTranscriptMode)
+		    Declare Function getTranscriptMode Lib kLibAndroidMobileTable As Integer
+		    Return TranscriptModesXC(getTranscriptMode)
 		    
 		  #EndIf
 		End Function
@@ -111,7 +111,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getVerticalScrollbarWidth Lib "Object:ctrl:AndroidMobileTable" As Integer
+		    Declare Function getVerticalScrollbarWidth Lib kLibAndroidMobileTable As Int32
 		    Return getVerticalScrollbarWidth
 		    
 		  #EndIf
@@ -124,7 +124,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub invalidateViews Lib "Object:ctrl:AndroidMobileTable"
+		    Declare Sub invalidateViews Lib kLibAndroidMobileTable
 		    invalidateViews
 		    
 		  #EndIf
@@ -137,7 +137,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isFastScrollAlwaysVisible Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Declare Function isFastScrollAlwaysVisible Lib kLibAndroidMobileTable As Boolean
 		    Return isFastScrollAlwaysVisible
 		    
 		  #EndIf
@@ -150,7 +150,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isFastScrollEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Declare Function isFastScrollEnabled Lib kLibAndroidMobileTable As Boolean
 		    Return isFastScrollEnabled
 		    
 		  #EndIf
@@ -163,7 +163,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isScrollingCacheEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Declare Function isScrollingCacheEnabled Lib kLibAndroidMobileTable As Boolean
 		    Return isScrollingCacheEnabled
 		    
 		  #EndIf
@@ -176,7 +176,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isSmoothScrollbarEnabled Lib "Object:ctrl:AndroidMobileTable" As Boolean
+		    Declare Function isSmoothScrollbarEnabled Lib kLibAndroidMobileTable As Boolean
 		    Return isSmoothScrollbarEnabled
 		    
 		  #EndIf
@@ -189,7 +189,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function pointToPosition Lib "Object:ctrl:AndroidMobileTable" (myX As Integer, myY As Integer) As Integer
+		    Declare Function pointToPosition Lib kLibAndroidMobileTable (myX As Int32, myY As Int32) As Int32
 		    Return pointToPosition(x, y)
 		    
 		  #Else
@@ -207,7 +207,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function pointToRowId Lib "Object:ctrl:AndroidMobileTable" (myX As Integer, myY As Integer) As Int64
+		    Declare Function pointToRowId Lib kLibAndroidMobileTable (myX As Int32, myY As Int32) As Int64
 		    Return pointToRowId(x, y)
 		    
 		  #Else
@@ -225,7 +225,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub requestDisallowInterceptTouchEvent Lib "Object:ctrl:AndroidMobileTable" (myDisallowIntercept As Boolean)
+		    Declare Sub requestDisallowInterceptTouchEvent Lib kLibAndroidMobileTable (myDisallowIntercept As Boolean)
 		    requestDisallowInterceptTouchEvent(disallowIntercept)
 		    
 		  #Else
@@ -242,7 +242,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub scrollListBy Lib "Object:ctrl:AndroidMobileTable" (myY As Integer)
+		    Declare Sub scrollListBy Lib kLibAndroidMobileTable (myY As Int32)
 		    scrollListBy(y)
 		    
 		  #Else
@@ -259,7 +259,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setChoiceMode Lib "Object:ctrl:AndroidMobileTable" (myChoiceMode As Integer)
+		    Declare Sub setChoiceMode Lib kLibAndroidMobileTable (myChoiceMode As Int32)
 		    setChoiceMode(choiceMode)
 		    
 		  #Else
@@ -271,17 +271,34 @@ Protected Module TableXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 5365747320746865206472617761626C6520746861742077696C6C20626520647261776E206265747765656E2065616368206974656D20696E20746865206C6973742E0A0A4E6F74653A20496620746865206472617761626C6520646F6573206E6F74206861766520616E20696E7472696E736963206865696768742C20796F752073686F756C6420616C736F2063616C6C207365744469766964657248656967687428696E74292E
-		Sub SetDividerXC(Extends ctrl As AndroidMobileTable, file As FolderItem)
+		Attributes( Deprecated = "SetDividerXC(divider As Picture)" )  Sub SetDividerXC(Extends ctrl As AndroidMobileTable, file As FolderItem)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDivider Lib "Object:ctrl:AndroidMobileTable:Kotlin" Alias "setDivider(android.graphics.drawable.Drawable.createFromPath(mydivider.toString()))" (myDivider As CString)
+		    Declare Sub setDivider Lib kLibAndroidMobileTableKotlin Alias "setDivider(android.graphics.drawable.Drawable.createFromPath(mydivider.toString()))" (myDivider As CString)
 		    setDivider(file.NativePath)
 		    
 		  #Else
 		    
 		    #Pragma Unused file
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206472617761626C6520746861742077696C6C20626520647261776E206265747765656E2065616368206974656D20696E20746865206C6973742E0A0A4E6F74653A20496620746865206472617761626C6520646F6573206E6F74206861766520616E20696E7472696E736963206865696768742C20796F752073686F756C6420616C736F2063616C6C207365744469766964657248656967687428696E74292E
+		Sub SetDividerXC(Extends ctrl As AndroidMobileTable, divider As Picture)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setDivider Lib kLibAndroidMobileTableKotlin Alias "setDivider(divider as android.graphics.drawable.Drawable)" (divider As Ptr)
+		    setDivider(divider.ToDrawable)
+		    
+		  #Else
+		    
+		    #Pragma Unused divider
 		    
 		  #EndIf
 		End Sub
@@ -293,7 +310,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDrawSelectorOnTop Lib "Object:ctrl:AndroidMobileTable" (myOnTop As Boolean)
+		    Declare Sub setDrawSelectorOnTop Lib kLibAndroidMobileTable (myOnTop As Boolean)
 		    setDrawSelectorOnTop(onTop)
 		    
 		  #Else
@@ -310,7 +327,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setFastScrollAlwaysVisible Lib "Object:ctrl:AndroidMobileTable" (myAlwaysShow As Boolean)
+		    Declare Sub setFastScrollAlwaysVisible Lib kLibAndroidMobileTable (myAlwaysShow As Boolean)
 		    setFastScrollAlwaysVisible(alwaysShow)
 		    
 		  #Else
@@ -327,7 +344,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setFastScrollEnabled Lib "Object:ctrl:AndroidMobileTable" (myEnabled As Boolean)
+		    Declare Sub setFastScrollEnabled Lib kLibAndroidMobileTable (myEnabled As Boolean)
 		    setFastScrollEnabled(enabled)
 		    
 		  #Else
@@ -344,7 +361,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHeaderDividersEnabled Lib "Object:ctrl:AndroidMobileTable" (myHeaderDividersEnabled As Boolean)
+		    Declare Sub setHeaderDividersEnabled Lib kLibAndroidMobileTable (myHeaderDividersEnabled As Boolean)
 		    setHeaderDividersEnabled(headerDividersEnabled)
 		    
 		  #Else
@@ -361,7 +378,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setItemChecked Lib "Object:ctrl:AndroidMobileTable" (myPosition As Integer, myValue As Boolean)
+		    Declare Sub setItemChecked Lib kLibAndroidMobileTable (myPosition As Int32, myValue As Boolean)
 		    setItemChecked(position, value)
 		    
 		  #Else
@@ -379,7 +396,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setScrollingCacheEnabled Lib "Object:ctrl:AndroidMobileTable" (myEnabled As Boolean)
+		    Declare Sub setScrollingCacheEnabled Lib kLibAndroidMobileTable (myEnabled As Boolean)
 		    setScrollingCacheEnabled(enabled)
 		    
 		  #Else
@@ -396,7 +413,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSelectionAfterHeaderView Lib "Object:ctrl:AndroidMobileTable"
+		    Declare Sub setSelectionAfterHeaderView Lib kLibAndroidMobileTable
 		    setSelectionAfterHeaderView
 		    
 		  #EndIf
@@ -409,7 +426,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSelectionFromTop Lib "Object:ctrl:AndroidMobileTable" (myPosition As Integer, myY As Integer)
+		    Declare Sub setSelectionFromTop Lib kLibAndroidMobileTable (myPosition As Int32, myY As Int32)
 		    setSelectionFromTop(position, y)
 		    
 		  #Else
@@ -422,17 +439,34 @@ Protected Module TableXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 5365742061204472617761626C6520746861742073686F756C64206265207573656420746F20686967686C69676874207468652063757272656E746C792073656C6563746564206974656D2E
-		Sub SetSelectorXC(Extends ctrl As AndroidMobileTable, file As FolderItem)
+		Attributes( Deprecated = "SetSelectorXC(sel As Picture)" )  Sub SetSelectorXC(Extends ctrl As AndroidMobileTable, file As FolderItem)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSelector Lib "Object:ctrl:AndroidMobileTable:Kotlin" Alias "setSelector(android.graphics.drawable.Drawable.createFromPath(myselector.toString()))" (mySelector As CString)
+		    Declare Sub setSelector Lib kLibAndroidMobileTableKotlin Alias "setSelector(android.graphics.drawable.Drawable.createFromPath(myselector.toString()))" (mySelector As CString)
 		    setSelector(file.NativePath)
 		    
 		  #Else
 		    
 		    #Pragma Unused file
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742061204472617761626C6520746861742073686F756C64206265207573656420746F20686967686C69676874207468652063757272656E746C792073656C6563746564206974656D2E
+		Sub SetSelectorXC(Extends ctrl As AndroidMobileTable, sel As Picture)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setSelector Lib kLibAndroidMobileTableKotlin Alias "setSelector(sel as android.graphics.drawable.Drawable)" (sel As Ptr)
+		    setSelector(sel.ToDrawable)
+		    
+		  #Else
+		    
+		    #Pragma Unused sel
 		    
 		  #EndIf
 		End Sub
@@ -444,7 +478,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSmoothScrollbarEnabled Lib "Object:ctrl:AndroidMobileTable" (myEnabled As Boolean)
+		    Declare Sub setSmoothScrollbarEnabled Lib kLibAndroidMobileTable (myEnabled As Boolean)
 		    setSmoothScrollbarEnabled(enabled)
 		    
 		  #Else
@@ -461,7 +495,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStackFromBottom Lib "Object:ctrl:AndroidMobileTable" (myStackFromBottom As Boolean)
+		    Declare Sub setStackFromBottom Lib kLibAndroidMobileTable (myStackFromBottom As Boolean)
 		    setStackFromBottom(stackFromBottom)
 		    
 		  #Else
@@ -473,12 +507,12 @@ Protected Module TableXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 5075747320746865206C697374206F72206772696420696E746F207472616E736372697074206D6F64652E20496E2074686973206D6F646520746865206C697374206F7220677269642077696C6C20616C77617973207363726F6C6C20746F2074686520626F74746F6D20746F2073686F77206E6577206974656D732E
-		Sub SetTranscriptModeXC(Extends ctrl As AndroidMobileTable, mode As TranscriptModes)
+		Sub SetTranscriptModeXC(Extends ctrl As AndroidMobileTable, mode As TranscriptModesXC)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTranscriptMode Lib "Object:ctrl:AndroidMobileTable" (myMode As Integer)
+		    Declare Sub setTranscriptMode Lib kLibAndroidMobileTable (myMode As Int32)
 		    setTranscriptMode(Integer(mode))
 		    
 		  #Else
@@ -495,7 +529,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub smoothScrollBy Lib "Object:ctrl:AndroidMobileTable" (myDistance As Integer, myDuration As Integer)
+		    Declare Sub smoothScrollBy Lib kLibAndroidMobileTable (myDistance As Int32, myDuration As Int32)
 		    smoothScrollBy(distance, duration)
 		    
 		  #Else
@@ -513,7 +547,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub smoothScrollToPositionFromTop Lib "Object:ctrl:AndroidMobileTable" (myPosition As Integer, myOffset As Integer)
+		    Declare Sub smoothScrollToPositionFromTop Lib kLibAndroidMobileTable (myPosition As Int32, myOffset As Int32)
 		    smoothScrollToPositionFromTop(position, offset)
 		    
 		  #Else
@@ -531,7 +565,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub smoothScrollToPositionFromTop Lib "Object:ctrl:AndroidMobileTable" (myPosition As Integer, myOffset As Integer, myDuration As Integer)
+		    Declare Sub smoothScrollToPositionFromTop Lib kLibAndroidMobileTable (myPosition As Int32, myOffset As Int32, myDuration As Int32)
 		    smoothScrollToPositionFromTop(position, offset, duration)
 		    
 		  #Else
@@ -550,7 +584,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub smoothScrollToPosition Lib "Object:ctrl:AndroidMobileTable" (myPosition As Integer)
+		    Declare Sub smoothScrollToPosition Lib kLibAndroidMobileTable (myPosition As Int32)
 		    smoothScrollToPosition(position)
 		    
 		  #Else
@@ -567,7 +601,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub smoothScrollToPosition Lib "Object:ctrl:AndroidMobileTable" (myPosition As Integer, myBoundPosition As Integer)
+		    Declare Sub smoothScrollToPosition Lib kLibAndroidMobileTable (myPosition As Int32, myBoundPosition As Int32)
 		    smoothScrollToPosition(position, boundPosition)
 		    
 		  #Else
@@ -585,7 +619,7 @@ Protected Module TableXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub startLayoutAnimation Lib "Object:ctrl:AndroidMobileTable"
+		    Declare Sub startLayoutAnimation Lib kLibAndroidMobileTable
 		    startLayoutAnimation
 		    
 		  #EndIf
@@ -593,7 +627,14 @@ Protected Module TableXC
 	#tag EndMethod
 
 
-	#tag Enum, Name = TranscriptModes, Type = Integer, Flags = &h0
+	#tag Constant, Name = kLibAndroidMobileTable, Type = String, Dynamic = False, Default = \"Object:ctrl:AndroidMobileTable", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibAndroidMobileTableKotlin, Type = String, Dynamic = False, Default = \"Object:ctrl:AndroidMobileTable:Kotlin", Scope = Private
+	#tag EndConstant
+
+
+	#tag Enum, Name = TranscriptModesXC, Type = Integer, Flags = &h0
 		Disabled = 0
 		  Normal = 1
 		AllwaysScroll = 2

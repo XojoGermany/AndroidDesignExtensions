@@ -1,32 +1,12 @@
 #tag MobileScreen
-Begin TemplateScreen ActivityScreen
+Begin TemplateScreenWithBackButton ActivityScreen
    Compatibility   =   ""
-   HasNavigationBar=   False
+   Device          =   1
+   HasBackButton   =   True
+   HasNavigationBar=   True
    Modal           =   False
    Orientation     =   0
    Title           =   "Screens"
-   Begin NavigationBarContainer NavigationBarContainer1
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      BackgroundColor =   &c00000000
-      ControlCount    =   0
-      Enabled         =   True
-      HasBackButton   =   False
-      HasBackgroundColor=   False
-      HasGradient     =   True
-      Height          =   56
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Text            =   ""
-      Top             =   0
-      Visible         =   True
-      Width           =   360
-   End
    Begin MobileScrollableArea ScrollableArea1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
@@ -40,7 +20,7 @@ Begin TemplateScreen ActivityScreen
       LockTop         =   True
       Scope           =   2
       ScrollContent   =   724957183
-      Top             =   56
+      Top             =   0
       Visible         =   True
       Width           =   360
    End
@@ -50,38 +30,50 @@ End
 #tag ScreenCode
 	#tag Event
 		Sub Opening()
-		  ' // Add items to bottom toolbar
-		  ' Var notifyIcon As Picture = Picture.SystemImage("notifications")
-		  ' Var notifyItem As New MobileToolbarButton(MobileToolbarButton.Types.Plain, "Notify", notifyIcon)
-		  ' Toolbar.AddButton(notifyItem)
-		  ' 
-		  ' Var androidIcon As Picture = Picture.SystemImage("android")
-		  ' Var androidItem As New MobileToolbarButton(MobileToolbarButton.Types.Plain, "Android", androidIcon)
-		  ' Toolbar.AddButton(androidItem)
+		  Var oBottomToolbarItem1 As New MobileToolbarButton(MobileToolbarButton.Types.Plain, "Add", Picture.SystemImage("arrow_left", Picture.SystemImageSizes.dp48, If(Color.IsDarkMode, Color.White, &c419CFF)))
+		  Var oBottomToolbarItem2 As New MobileToolbarButton(MobileToolbarButton.Types.Plain, "Remove", Picture.SystemImage("arrow_right", Picture.SystemImageSizes.dp48, If(Color.IsDarkMode, Color.White, &c419CFF)))
 		  
-		  ' Self.SystemUiVisibility = 
+		  Self.Toolbar.AddButton(oBottomToolbarItem1)
+		  Self.Toolbar.AddButton(oBottomToolbarItem2)
 		End Sub
 	#tag EndEvent
 
 
 #tag EndScreenCode
 
-#tag Events NavigationBarContainer1
-	#tag Event
-		Sub Opening()
-		  Me.Text = "Screens"
-		  Me.HasGradient = False
-		End Sub
-	#tag EndEvent
-	#tag Event
-		Sub Pressed()
-		  Close
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events ScrollableArea1
-#tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ToolbarColor"
+		Visible=false
+		Group="Behavior"
+		InitialValue="&c000000"
+		Type="Color"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="TitleCentered"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="StatusBarColor"
+		Visible=false
+		Group="Behavior"
+		InitialValue="Color.Clear"
+		Type="Color"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="HasBackButton"
+		Visible=true
+		Group="Behavior"
+		InitialValue="False"
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Name"
 		Visible=true

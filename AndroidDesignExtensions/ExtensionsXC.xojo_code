@@ -1,14 +1,14 @@
 #tag Module
 Protected Module ExtensionsXC
-	#tag CompatibilityFlags = (TargetAndroid and (Target64Bit))
+	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0, Description = 4368616E67652074686520766965772773207A206F7264657220696E2074686520747265652C20736F2069742773206F6E20746F70206F66206F74686572207369626C696E672076696577732E2054686973206F72646572696E67206368616E6765206D617920616666656374206C61796F75742C2069662074686520706172656E7420636F6E7461696E6572207573657320616E206F726465722D646570656E64656E74206C61796F757420736368656D652028652E672E2C204C696E6561724C61796F7574292E205072696F7220746F204275696C642E56455253494F4E5F434F4445532E4B49544B41542074686973206D6574686F642073686F756C6420626520666F6C6C6F7765642062792063616C6C7320746F20726571756573744C61796F7574282920616E64205669657723696E76616C69646174652829206F6E207468652076696577277320706172656E7420746F20666F7263652074686520706172656E7420746F20726564726177207769746820746865206E6577206368696C64206F72646572696E672E
 		Sub BringToFrontXC(Extends ctrl As MobileUIControl)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub bringToFront Lib "Object:ctrl:MobileUIControl"
-		    bringToFront
+		    Declare Sub bringToFront Lib kLibView (view As Ptr)
+		    bringToFront(ctrl.Handle)
 		    
 		  #EndIf
 		End Sub
@@ -20,8 +20,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub cancelLongPress Lib "Object:ctrl:MobileUIControl"
-		    cancelLongPress
+		    Declare Sub cancelLongPress Lib kLibView (view As Ptr)
+		    cancelLongPress(ctrl.Handle)
 		    
 		  #EndIf
 		End Sub
@@ -33,8 +33,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function canResolveLayoutDirection Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return canResolveLayoutDirection
+		    Declare Function canResolveLayoutDirection Lib kLibView (view As Ptr) As Boolean
+		    Return canResolveLayoutDirection(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -46,8 +46,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function canResolveTextAlignment Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return canResolveTextAlignment
+		    Declare Function canResolveTextAlignment Lib kLibView (view As Ptr) As Boolean
+		    Return canResolveTextAlignment(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -59,8 +59,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function canResolveTextDirection Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return canResolveTextDirection
+		    Declare Function canResolveTextDirection Lib kLibView (view As Ptr) As Boolean
+		    Return canResolveTextDirection(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -72,8 +72,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function canScrollHorizontally Lib "Object:ctrl:MobileUIControl" (myDirection As Integer) As Boolean
-		    Return canScrollHorizontally(direction)
+		    Declare Function canScrollHorizontally Lib kLibView (view As Ptr, myDirection As Int32) As Boolean
+		    Return canScrollHorizontally(ctrl.Handle, direction)
 		    
 		  #Else
 		    
@@ -89,8 +89,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function canScrollVertically Lib "Object:ctrl:MobileUIControl" (myDirection As Integer) As Boolean
-		    Return canScrollVertically(direction)
+		    Declare Function canScrollVertically Lib kLibView (view As Ptr, myDirection As Int32) As Boolean
+		    Return canScrollVertically(ctrl.Handle, direction)
 		    
 		  #Else
 		    
@@ -100,14 +100,101 @@ Protected Module ExtensionsXC
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 44726177732074686520636F6E74656E7473206F66207468652073637265656E20696E746F207468652073706563696669656420477261706869637320636F6E746578742E2054686520706172616D6574657273207820616E642079206172652074686520636F6F7264696E61746573206F662074686520746F702C206C65667420636F726E65722E
+		Sub DrawIntoXC(Extends myScreen As MobileScreen, g As Graphics, x As Double, y As Double)
+		  #If TargetAndroid
+		    
+		    Var bitmap As Ptr
+		    Var viewCanvas As Ptr
+		    
+		    ' Create a new Bitmap object with the desired width and height
+		    Declare Function createBitmap Lib "android.graphics.Bitmap:Kotlin" Alias _
+		    "createBitmap(width.toInt(), height.toInt(), android.graphics.Bitmap.Config.ARGB_8888)" (width As Double, height As Double) As Ptr
+		    bitmap = createBitmap(myScreen.Size.Width * ScaleFactorXC, myScreen.Size.Height * ScaleFactorXC)
+		    
+		    ' Create a new Canvas object using the Bitmap
+		    Declare Function Canvas Lib "android.graphics.Canvas:Kotlin" Alias "android.graphics.Canvas(bitmap as android.graphics.Bitmap)" (bitmap As Ptr) As Ptr
+		    viewCanvas = Canvas(bitmap)
+		    
+		    ' Draw the View into the Bitmap's Canvas
+		    Declare Sub draw Lib "Object:myScreen:MobileScreen:Kotlin" Alias "getWindow()!!.getDecorView().draw(canvas as android.graphics.Canvas)" (canvas As Ptr)
+		    draw(viewCanvas)
+		    
+		    ' Draw the Bitmap into the Canvas
+		    Declare Sub drawBitmap Lib "android.graphics.Canvas.instance:Kotlin" Alias _
+		    "drawBitmap(bitmap as android.graphics.Bitmap, x.toFloat(), y.toFloat(), paint as android.graphics.Paint)" _
+		    (canvas As Ptr, bitmap As Ptr, x As Single, y As Single, paint As Ptr)
+		    drawBitmap(g.Handle(Graphics.HandleTypes.AndroidCanvas), bitmap, x, y, g.Handle(Graphics.HandleTypes.AndroidPaint))
+		    
+		  #Else
+		    
+		    #Pragma Unused ctrl
+		    #Pragma Unused g
+		    #Pragma Unused x
+		    #Pragma Unused y
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 44726177732074686520636F6E74656E7473206F662074686520636F6E74726F6C20696E746F207468652073706563696669656420477261706869637320636F6E746578742E2054686520706172616D6574657273207820616E642079206172652074686520636F6F7264696E61746573206F662074686520746F702C206C65667420636F726E65722E
+		Sub DrawIntoXC(Extends ctrl As MobileUIControl, g As Graphics, x As Double, y As Double)
+		  #If TargetAndroid
+		    
+		    Var bitmap As Ptr
+		    Var viewCanvas As Ptr
+		    
+		    ' Create a new Bitmap object with the desired width and height
+		    Declare Function createBitmap Lib "android.graphics.Bitmap:Kotlin" Alias _
+		    "createBitmap(width.toInt(), height.toInt(), android.graphics.Bitmap.Config.ARGB_8888)" (width As Double, height As Double) As Ptr
+		    bitmap = createBitmap(ctrl.Width * ScaleFactorXC, ctrl.Height * ScaleFactorXC)
+		    
+		    ' Create a new Canvas object using the Bitmap
+		    Declare Function Canvas Lib "android.graphics.Canvas:Kotlin" Alias "android.graphics.Canvas(bitmap as android.graphics.Bitmap)" (bitmap As Ptr) As Ptr
+		    viewCanvas = Canvas(bitmap)
+		    
+		    ' Draw the View into the Bitmap's Canvas
+		    If ctrl IsA MobileContainer Then
+		      
+		      Var cc As MobileContainer = MobileContainer(ctrl)
+		      
+		      #Pragma Unused cc
+		      
+		      Declare Sub draw Lib "Object:cc:MobileContainer:Kotlin" Alias "getView()!!.draw(canvas as android.graphics.Canvas)" (canvas As Ptr)
+		      draw(viewCanvas)
+		      
+		    Else
+		      
+		      Declare Sub draw Lib kLibViewKotlin Alias "draw(canvas as android.graphics.Canvas)" (view As Ptr, canvas As Ptr)
+		      draw(ctrl.Handle, viewCanvas)
+		      
+		    End If
+		    
+		    ' Draw the Bitmap into the Canvas
+		    Declare Sub drawBitmap Lib "android.graphics.Canvas.instance:Kotlin" Alias _
+		    "drawBitmap(bitmap as android.graphics.Bitmap, x.toFloat(), y.toFloat(), paint as android.graphics.Paint)" _
+		    (canvas As Ptr, bitmap As Ptr, x As Single, y As Single, paint As Ptr)
+		    drawBitmap(g.Handle(Graphics.HandleTypes.AndroidCanvas), bitmap, x, y, g.Handle(Graphics.HandleTypes.AndroidPaint))
+		    
+		  #Else
+		    
+		    #Pragma Unused ctrl
+		    #Pragma Unused g
+		    #Pragma Unused x
+		    #Pragma Unused y
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 546865206F706163697479206F662074686520766965772E205468697320697320612076616C75652066726F6D203020746F20312C2077686572652030206D65616E7320746865207669657720697320636F6D706C6574656C79207472616E73706172656E7420616E642031206D65616E7320746865207669657720697320636F6D706C6574656C79206F70617175652E0A0A42792064656661756C74207468697320697320312E302E
 		Function GetAlphaXC(Extends ctrl As MobileUIControl) As Single
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getAlpha Lib "Object:ctrl:MobileUIControl" As Single
-		    Return getAlpha
+		    Declare Function getAlpha Lib kLibView (view As Ptr) As Single
+		    Return getAlpha(ctrl.Handle)
 		    
 		  #Else
 		    
@@ -123,8 +210,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBaseline Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getBaseline
+		    Declare Function getBaseline Lib kLibView (view As Ptr) As Int32
+		    Return getBaseline(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -136,8 +223,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return getDefaultFocusHighlightEnabled
+		    Declare Function getDefaultFocusHighlightEnabled Lib kLibView (view As Ptr) As Boolean
+		    Return getDefaultFocusHighlightEnabled(ctrl.Handle)
 		    
 		  #Else
 		    
@@ -153,8 +240,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDrawingTime Lib "Object:ctrl:MobileUIControl" As Int64
-		    Return getDrawingTime
+		    Declare Function getDrawingTime Lib kLibView (view As Ptr) As Int64
+		    Return getDrawingTime(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -166,8 +253,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getElevation Lib "Object:ctrl:MobileUIControl" As Single
-		    Return getElevation
+		    Declare Function getElevation Lib kLibView (view As Ptr) As Single
+		    Return getElevation(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -179,8 +266,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getFocusable Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getFocusable
+		    Declare Function getFocusable Lib kLibView (view As Ptr) As Int32
+		    Return getFocusable(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -192,8 +279,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getForegroundGravity Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getForegroundGravity
+		    Declare Function getForegroundGravity Lib kLibView (view As Ptr) As Int32
+		    Return getForegroundGravity(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -205,8 +292,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getHorizontalFadingEdgeLength Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getHorizontalFadingEdgeLength
+		    Declare Function getHorizontalFadingEdgeLength Lib kLibView (view As Ptr) As Int32
+		    Return getHorizontalFadingEdgeLength(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -218,8 +305,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getId Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getId
+		    Declare Function getId Lib kLibView (view As Ptr) As Int32
+		    Return getId(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -231,8 +318,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getImportantForAccessibility Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getImportantForAccessibility
+		    Declare Function getImportantForAccessibility Lib kLibView (view As Ptr) As Int32
+		    Return getImportantForAccessibility(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -244,8 +331,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getImportantForAutofill Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getImportantForAutofill
+		    Declare Function getImportantForAutofill Lib kLibView (view As Ptr) As Int32
+		    Return getImportantForAutofill(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -257,8 +344,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getImportantForContentCapture Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getImportantForContentCapture
+		    Declare Function getImportantForContentCapture Lib kLibView (view As Ptr) As Int32
+		    Return getImportantForContentCapture(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -270,21 +357,21 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getKeepScreenOn Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return getKeepScreenOn
+		    Declare Function getKeepScreenOn Lib kLibView (view As Ptr) As Boolean
+		    Return getKeepScreenOn(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 52657475726E7320746865207265736F6C766564206C61796F757420646972656374696F6E20666F72207468697320766965772E
-		Function GetLayoutDirectionXC(Extends ctrl As MobileUIControl) As Integer
+		Function GetLayoutDirectionXC(Extends ctrl As MobileUIControl) As LayoutDirectionsXC
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLayoutDirection Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getLayoutDirection
+		    Declare Function getLayoutDirection Lib kLibView (view As Ptr) As Integer
+		    Return LayoutDirectionsXC(getLayoutDirection(ctrl.Handle))
 		    
 		  #EndIf
 		End Function
@@ -296,8 +383,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getMinimumHeight Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getMinimumHeight
+		    Declare Function getMinimumHeight Lib kLibView (view As Ptr) As Int32
+		    Return getMinimumHeight(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -309,21 +396,21 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getMinimumWidth Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getMinimumWidth
+		    Declare Function getMinimumWidth Lib kLibView (view As Ptr) As Int32
+		    Return getMinimumWidth(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 52657475726E7320746865206F7665722D7363726F6C6C206D6F646520666F72207468697320766965772E2054686520726573756C742077696C6C206265206F6E65206F66204F5645525F5343524F4C4C5F414C574159532C204F5645525F5343524F4C4C5F49465F434F4E54454E545F5343524F4C4C532028616C6C6F77206F7665722D7363726F6C6C696E67206F6E6C7920696620746865207669657720636F6E74656E74206973206C6172676572207468616E2074686520636F6E7461696E6572292C206F72204F5645525F5343524F4C4C5F4E455645522E
-		Function GetOverScrollModeXC(Extends ctrl As MobileUIControl) As Integer
+		Function GetOverScrollModeXC(Extends ctrl As MobileUIControl) As OverScrollModesXC
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getOverScrollMode Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getOverScrollMode
+		    Declare Function getOverScrollMode Lib kLibView (view As Ptr) As Integer
+		    Return OverScrollModesXC(getOverScrollMode(ctrl.Handle))
 		    
 		  #EndIf
 		End Function
@@ -335,8 +422,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getPaddingBottom Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getPaddingBottom
+		    Declare Function getPaddingBottom Lib kLibView (view As Ptr) As Int32
+		    Return getPaddingBottom(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -348,8 +435,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getPaddingEnd Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getPaddingEnd
+		    Declare Function getPaddingEnd Lib kLibView (view As Ptr) As Int32
+		    Return getPaddingEnd(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -361,8 +448,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getPaddingLeft Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getPaddingLeft
+		    Declare Function getPaddingLeft Lib kLibView (view As Ptr) As Int32
+		    Return getPaddingLeft(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -374,8 +461,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getPaddingRight Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getPaddingRight
+		    Declare Function getPaddingRight Lib kLibView (view As Ptr) As Int32
+		    Return getPaddingRight(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -387,8 +474,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getPaddingStart Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getPaddingStart
+		    Declare Function getPaddingStart Lib kLibView (view As Ptr) As Int32
+		    Return getPaddingStart(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -400,8 +487,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getPaddingTop Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getPaddingTop
+		    Declare Function getPaddingTop Lib kLibView (view As Ptr) As Int32
+		    Return getPaddingTop(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -413,8 +500,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getPivotX Lib "Object:ctrl:MobileUIControl" As Single
-		    Return getPivotX
+		    Declare Function getPivotX Lib kLibView (view As Ptr) As Single
+		    Return getPivotX(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -426,8 +513,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getPivotY Lib "Object:ctrl:MobileUIControl" As Single
-		    Return getPivotY
+		    Declare Function getPivotY Lib kLibView (view As Ptr) As Single
+		    Return getPivotY(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -439,8 +526,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getRevealOnFocusHint Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return getRevealOnFocusHint
+		    Declare Function getRevealOnFocusHint Lib kLibView (view As Ptr) As Boolean
+		    Return getRevealOnFocusHint(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -452,8 +539,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getRotation Lib "Object:ctrl:MobileUIControl" As Single
-		    Return getRotation
+		    Declare Function getRotation Lib kLibView (view As Ptr) As Single
+		    Return getRotation(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -465,8 +552,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getRotationX Lib "Object:ctrl:MobileUIControl" As Single
-		    Return getRotationX
+		    Declare Function getRotationX Lib kLibView (view As Ptr) As Single
+		    Return getRotationX(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -478,8 +565,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getRotationY Lib "Object:ctrl:MobileUIControl" As Single
-		    Return getRotationY
+		    Declare Function getRotationY Lib kLibView (view As Ptr) As Single
+		    Return getRotationY(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -491,8 +578,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getScaleX Lib "Object:ctrl:MobileUIControl" As Single
-		    Return getScaleX
+		    Declare Function getScaleX Lib kLibView (view As Ptr) As Single
+		    Return getScaleX(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -504,8 +591,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getScaleY Lib "Object:ctrl:MobileUIControl" As Single
-		    Return getScaleY
+		    Declare Function getScaleY Lib kLibView (view As Ptr) As Single
+		    Return getScaleY(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -517,8 +604,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getScrollBarDefaultDelayBeforeFade
+		    Declare Function getScrollBarDefaultDelayBeforeFade Lib kLibView (view As Ptr) As Int32
+		    Return getScrollBarDefaultDelayBeforeFade(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -530,8 +617,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getScrollBarFadeDuration Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getScrollBarFadeDuration
+		    Declare Function getScrollBarFadeDuration Lib kLibView (view As Ptr) As Int32
+		    Return getScrollBarFadeDuration(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -543,21 +630,21 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getScrollBarSize Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getScrollBarSize
+		    Declare Function getScrollBarSize Lib kLibView (view As Ptr) As Int32
+		    Return getScrollBarSize(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 52657475726E73207468652063757272656E74207363726F6C6C626172207374796C652E
-		Function GetScrollBarStyleXC(Extends ctrl As MobileUIControl) As Integer
+		Function GetScrollBarStyleXC(Extends ctrl As MobileUIControl) As ScrollbarStylesXC
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getScrollBarStyle Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getScrollBarStyle
+		    Declare Function getScrollBarStyle Lib kLibView (view As Ptr) As Integer
+		    Return ScrollbarStylesXC(getScrollBarStyle(ctrl.Handle))
 		    
 		  #EndIf
 		End Function
@@ -569,8 +656,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getScrollCaptureHint Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getScrollCaptureHint
+		    Declare Function getScrollCaptureHint Lib kLibView (view As Ptr) As Int32
+		    Return getScrollCaptureHint(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -582,8 +669,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getScrollIndicators Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getScrollIndicators
+		    Declare Function getScrollIndicators Lib kLibView (view As Ptr) As Int32
+		    Return getScrollIndicators(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -595,8 +682,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getScrollX Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getScrollX
+		    Declare Function getScrollX Lib kLibView (view As Ptr) As Int32
+		    Return getScrollX(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -608,34 +695,34 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getScrollY Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getScrollY
+		    Declare Function getScrollY Lib kLibView (view As Ptr) As Int32
+		    Return getScrollY(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420616C69676E6D656E742E
-		Function GetTextAlignmentXC(Extends ctrl As MobileUIControl) As Integer
+		Function GetTextAlignmentXC(Extends ctrl As MobileUIControl) As TextAlignmentsXC
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTextAlignment Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getTextAlignment
+		    Declare Function getTextAlignment Lib kLibView (view As Ptr) As Integer
+		    Return TextAlignmentsXC(getTextAlignment(ctrl.Handle))
 		    
 		  #EndIf
 		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 52657475726E20746865207265736F6C766564207465787420646972656374696F6E2E
-		Function GetTextDirectionXC(Extends ctrl As MobileUIControl) As Integer
+		Function GetTextDirectionXC(Extends ctrl As MobileUIControl) As TextDirectionsXC
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTextDirection Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getTextDirection
+		    Declare Function getTextDirection Lib kLibView (view As Ptr) As Integer
+		    Return TextDirectionsXC(getTextDirection(ctrl.Handle))
 		    
 		  #EndIf
 		End Function
@@ -647,8 +734,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTransitionName Lib "Object:ctrl:MobileUIControl" As CString
-		    Return getTransitionName
+		    Declare Function getTransitionName Lib kLibView (view As Ptr) As CString
+		    Return getTransitionName(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -660,8 +747,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTranslationX Lib "Object:ctrl:MobileUIControl" As Single
-		    Return getTranslationX
+		    Declare Function getTranslationX Lib kLibView (view As Ptr) As Single
+		    Return getTranslationX(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -673,8 +760,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTranslationY Lib "Object:ctrl:MobileUIControl" As Single
-		    Return getTranslationY
+		    Declare Function getTranslationY Lib kLibView (view As Ptr) As Single
+		    Return getTranslationY(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -686,8 +773,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTranslationZ Lib "Object:ctrl:MobileUIControl" As Single
-		    Return getTranslationZ
+		    Declare Function getTranslationZ Lib kLibView (view As Ptr) As Single
+		    Return getTranslationZ(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -699,8 +786,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getUniqueDrawingId Lib "Object:ctrl:MobileUIControl" As Int64
-		    Return getUniqueDrawingId
+		    Declare Function getUniqueDrawingId Lib kLibView (view As Ptr) As Int64
+		    Return getUniqueDrawingId(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -712,21 +799,21 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getVerticalFadingEdgeLength Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getVerticalFadingEdgeLength
+		    Declare Function getVerticalFadingEdgeLength Lib kLibView (view As Ptr) As Int32
+		    Return getVerticalFadingEdgeLength(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 54686520706F736974696F6E2077686572652074686520766572746963616C207363726F6C6C206261722077696C6C2073686F772C206966206170706C696361626C652E
-		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileUIControl) As Integer
+		Function GetVerticalScrollbarPositionXC(Extends ctrl As MobileUIControl) As ScrollbarPositionsXC
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getVerticalScrollbarPosition Lib "Object:ctrl:MobileUIControl" As Integer
-		    Return getVerticalScrollbarPosition
+		    Declare Function getVerticalScrollbarPosition Lib kLibView (view As Ptr) As Integer
+		    Return ScrollbarPositionsXC(getVerticalScrollbarPosition(ctrl.Handle))
 		    
 		  #EndIf
 		End Function
@@ -738,8 +825,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getX Lib "Object:ctrl:MobileUIControl" As Single
-		    Return getX
+		    Declare Function getX Lib kLibView (view As Ptr) As Single
+		    Return getX(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -751,8 +838,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getY Lib "Object:ctrl:MobileUIControl" As Single
-		    Return getY
+		    Declare Function getY Lib kLibView (view As Ptr) As Single
+		    Return getY(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -764,8 +851,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getZ Lib "Object:ctrl:MobileUIControl" As Single
-		    Return getZ
+		    Declare Function getZ Lib kLibView (view As Ptr) As Single
+		    Return getZ(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -777,8 +864,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function hasExplicitFocusable Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return hasExplicitFocusable
+		    Declare Function hasExplicitFocusable Lib kLibView (view As Ptr) As Boolean
+		    Return hasExplicitFocusable(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -790,8 +877,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function hasFocusable Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return hasFocusable
+		    Declare Function hasFocusable Lib kLibView (view As Ptr) As Boolean
+		    Return hasFocusable(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -803,8 +890,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function hasFocus Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return hasFocus
+		    Declare Function hasFocus Lib kLibView (view As Ptr) As Boolean
+		    Return hasFocus(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -816,8 +903,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function hasNestedScrollingParent Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return hasNestedScrollingParent
+		    Declare Function hasNestedScrollingParent Lib kLibView (view As Ptr) As Boolean
+		    Return hasNestedScrollingParent(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -829,8 +916,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function hasOverlappingRendering Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return hasOverlappingRendering
+		    Declare Function hasOverlappingRendering Lib kLibView (view As Ptr) As Boolean
+		    Return hasOverlappingRendering(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -842,8 +929,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function hasTransientState Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return hasTransientState
+		    Declare Function hasTransientState Lib kLibView (view As Ptr) As Boolean
+		    Return hasTransientState(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -855,8 +942,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function hasWindowFocus Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return hasWindowFocus
+		    Declare Function hasWindowFocus Lib kLibView (view As Ptr) As Boolean
+		    Return hasWindowFocus(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -868,8 +955,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isAccessibilityFocused Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isAccessibilityFocused
+		    Declare Function isAccessibilityFocused Lib kLibView (view As Ptr) As Boolean
+		    Return isAccessibilityFocused(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -881,8 +968,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isAccessibilityHeading Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isAccessibilityHeading
+		    Declare Function isAccessibilityHeading Lib kLibView (view As Ptr) As Boolean
+		    Return isAccessibilityHeading(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -894,8 +981,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isClickable Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isClickable
+		    Declare Function isClickable Lib kLibView (view As Ptr) As Boolean
+		    Return isClickable(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -907,8 +994,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isDuplicateParentStateEnabled Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isDuplicateParentStateEnabled
+		    Declare Function isDuplicateParentStateEnabled Lib kLibView (view As Ptr) As Boolean
+		    Return isDuplicateParentStateEnabled(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -920,8 +1007,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isFocusableInTouchMode Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isFocusableInTouchMode
+		    Declare Function isFocusableInTouchMode Lib kLibView (view As Ptr) As Boolean
+		    Return isFocusableInTouchMode(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -933,8 +1020,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isFocusable Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isFocusable
+		    Declare Function isFocusable Lib kLibView (view As Ptr) As Boolean
+		    Return isFocusable(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -946,8 +1033,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isFocusedByDefault Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isFocusedByDefault
+		    Declare Function isFocusedByDefault Lib kLibView (view As Ptr) As Boolean
+		    Return isFocusedByDefault(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -959,8 +1046,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isFocused Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isFocused
+		    Declare Function isFocused Lib kLibView (view As Ptr) As Boolean
+		    Return isFocused(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -972,8 +1059,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isForceDarkAllowed Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isForceDarkAllowed
+		    Declare Function isForceDarkAllowed Lib kLibView (view As Ptr) As Boolean
+		    Return isForceDarkAllowed(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -985,8 +1072,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isHapticFeedbackEnabled Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isHapticFeedbackEnabled
+		    Declare Function isHapticFeedbackEnabled Lib kLibView (view As Ptr) As Boolean
+		    Return isHapticFeedbackEnabled(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -998,8 +1085,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isHorizontalFadingEdgeEnabled
+		    Declare Function isHorizontalFadingEdgeEnabled Lib kLibView (view As Ptr) As Boolean
+		    Return isHorizontalFadingEdgeEnabled(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -1011,8 +1098,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isHorizontalScrollBarEnabled Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isHorizontalScrollBarEnabled
+		    Declare Function isHorizontalScrollBarEnabled Lib kLibView (view As Ptr) As Boolean
+		    Return isHorizontalScrollBarEnabled(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -1024,8 +1111,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isImportantForAccessibility Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isImportantForAccessibility
+		    Declare Function isImportantForAccessibility Lib kLibView (view As Ptr) As Boolean
+		    Return isImportantForAccessibility(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -1037,8 +1124,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isImportantForAutofill Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isImportantForAutofill
+		    Declare Function isImportantForAutofill Lib kLibView (view As Ptr) As Boolean
+		    Return isImportantForAutofill(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -1050,8 +1137,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isImportantForContentCapture Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isImportantForContentCapture
+		    Declare Function isImportantForContentCapture Lib kLibView (view As Ptr) As Boolean
+		    Return isImportantForContentCapture(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -1063,8 +1150,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isNestedScrollingEnabled
+		    Declare Function isNestedScrollingEnabled Lib kLibView (view As Ptr) As Boolean
+		    Return isNestedScrollingEnabled(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -1076,8 +1163,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isPaddingRelative Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isPaddingRelative
+		    Declare Function isPaddingRelative Lib kLibView (view As Ptr) As Boolean
+		    Return isPaddingRelative(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -1089,8 +1176,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isPivotSet Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isPivotSet
+		    Declare Function isPivotSet Lib kLibView (view As Ptr) As Boolean
+		    Return isPivotSet(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -1102,8 +1189,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isScrollbarFadingEnabled Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isScrollbarFadingEnabled
+		    Declare Function isScrollbarFadingEnabled Lib kLibView (view As Ptr) As Boolean
+		    Return isScrollbarFadingEnabled(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -1115,8 +1202,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isVerticalFadingEdgeEnabled
+		    Declare Function isVerticalFadingEdgeEnabled Lib kLibView (view As Ptr) As Boolean
+		    Return isVerticalFadingEdgeEnabled(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -1128,8 +1215,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isVerticalScrollBarEnabled Lib "Object:ctrl:MobileUIControl" As Boolean
-		    Return isVerticalScrollBarEnabled
+		    Declare Function isVerticalScrollBarEnabled Lib kLibView (view As Ptr) As Boolean
+		    Return isVerticalScrollBarEnabled(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -1141,8 +1228,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setAlpha Lib "Object:ctrl:MobileUIControl" (myAlpha As Single)
-		    setAlpha(alpha)
+		    Declare Sub setAlpha Lib kLibView (view As Ptr, myAlpha As Single)
+		    setAlpha(ctrl.Handle, alpha)
 		    
 		  #Else
 		    
@@ -1158,7 +1245,7 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackgroundColor Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().setBackgroundColor" (myColor As Integer)
+		    Declare Sub setBackgroundColor Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().setBackgroundColor" (myColor As Int32)
 		    setBackgroundColor(c.ToInteger)
 		    
 		  #Else
@@ -1177,17 +1264,17 @@ Protected Module ExtensionsXC
 		    
 		    If ctrl IsA MobileContainer Then
 		      
-		      Var cc As  MobileContainer = MobileContainer(ctrl)
+		      Var cc As MobileContainer = MobileContainer(ctrl)
 		      
 		      #Pragma Unused cc
 		      
-		      Declare Sub setBackgroundColor Lib "Object:cc:MobileContainer" Alias "getView()!!.setBackgroundColor" (myColor As Integer)
+		      Declare Sub setBackgroundColor Lib "Object:cc:MobileContainer" Alias "getView()!!.setBackgroundColor" (myColor As Int32)
 		      setBackgroundColor(c.ToInteger)
 		      
 		    Else
 		      
-		      Declare Sub setBackgroundColor Lib "Object:ctrl:MobileUIControl" (myColor As Integer)
-		      setBackgroundColor(c.ToInteger)
+		      Declare Sub setBackgroundColor Lib "android.view.View.instance" (view As Ptr, myColor As Int32)
+		      setBackgroundColor(ctrl.Handle, c.ToInteger)
 		      
 		    End If
 		    
@@ -1199,18 +1286,52 @@ Protected Module ExtensionsXC
 		End Sub
 	#tag EndMethod
 
-	#tag Method, Flags = &h0, Description = 53657420746865206261636B67726F756E6420746F206120676976656E204472617761626C652C206F722072656D6F766520746865206261636B67726F756E642E20496620746865206261636B67726F756E64206861732070616464696E672C2074686973205669657727732070616464696E672069732073657420746F20746865206261636B67726F756E6427732070616464696E672E20486F77657665722C207768656E2061206261636B67726F756E642069732072656D6F7665642C2074686973205669657727732070616464696E672069736E277420746F75636865642E2049662073657474696E67207468652070616464696E6720697320646573697265642C20706C65617365207573652073657450616464696E6728696E742C20696E742C20696E742C20696E74292E
-		Sub SetBackgroundXC(Extends ctrl As MobileUIControl, file As FolderItem)
+	#tag Method, Flags = &h0, Description = 53657420746865206261636B67726F756E6420746F206120676976656E207265736F757263652E20546865207265736F757263652073686F756C6420726566657220746F2061204472617761626C65206F626A656374206F72203020746F2072656D6F766520746865206261636B67726F756E642E
+		Sub SetBackgroundResourceXC(Extends ctrl As MobileUIControl, resID As Integer)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackground Lib "Object:ctrl:MobileUIControl:Kotlin" Alias "setBackground(android.graphics.drawable.Drawable.createFromPath(myfile.toString()))" (myFile As CString)
-		    setBackground(file.NativePath)
+		    Declare Sub setBackgroundResource Lib kLibView (view As Ptr, myResID As Int32)
+		    setBackgroundResource(ctrl.Handle, resID)
+		    
+		  #Else
+		    
+		    #Pragma Unused resID
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206261636B67726F756E6420746F206120676976656E204472617761626C652C206F722072656D6F766520746865206261636B67726F756E642E20496620746865206261636B67726F756E64206861732070616464696E672C2074686973205669657727732070616464696E672069732073657420746F20746865206261636B67726F756E6427732070616464696E672E20486F77657665722C207768656E2061206261636B67726F756E642069732072656D6F7665642C2074686973205669657727732070616464696E672069736E277420746F75636865642E2049662073657474696E67207468652070616464696E6720697320646573697265642C20706C65617365207573652073657450616464696E6728696E742C20696E742C20696E742C20696E74292E
+		Attributes( Deprecated = "SetBackgroundXC(background As Picture)" )  Sub SetBackgroundXC(Extends ctrl As MobileUIControl, file As FolderItem)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackground Lib kLibViewKotlin Alias "setBackground(android.graphics.drawable.Drawable.createFromPath(myfile.toString()))" (view As Ptr, myFile As CString)
+		    setBackground(ctrl.Handle, file.NativePath)
 		    
 		  #Else
 		    
 		    #Pragma Unused file
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206261636B67726F756E6420746F206120676976656E204472617761626C652C206F722072656D6F766520746865206261636B67726F756E642E20496620746865206261636B67726F756E64206861732070616464696E672C2074686973205669657727732070616464696E672069732073657420746F20746865206261636B67726F756E6427732070616464696E672E20486F77657665722C207768656E2061206261636B67726F756E642069732072656D6F7665642C2074686973205669657727732070616464696E672069736E277420746F75636865642E2049662073657474696E67207468652070616464696E6720697320646573697265642C20706C65617365207573652073657450616464696E6728696E742C20696E742C20696E742C20696E74292E
+		Sub SetBackgroundXC(Extends ctrl As MobileUIControl, background As Picture)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackground Lib kLibViewKotlin Alias "setBackground(background as android.graphics.drawable.Drawable)" (view As Ptr, background As Ptr)
+		    setBackground(ctrl.Handle, background.ToDrawable)
+		    
+		  #Else
+		    
+		    #Pragma Unused background
 		    
 		  #EndIf
 		End Sub
@@ -1222,8 +1343,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDefaultFocusHighlightEnabled Lib "Object:ctrl:MobileUIControl" (myDefaultFocusHighlightEnabled As Boolean)
-		    setDefaultFocusHighlightEnabled(defaultFocusHighlightEnabled)
+		    Declare Sub setDefaultFocusHighlightEnabled Lib kLibView (view As Ptr, myDefaultFocusHighlightEnabled As Boolean)
+		    setDefaultFocusHighlightEnabled(ctrl.Handle, defaultFocusHighlightEnabled)
 		    
 		  #Else
 		    
@@ -1239,8 +1360,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDuplicateParentStateEnabled Lib "Object:ctrl:MobileUIControl" (myEnabled As Boolean)
-		    setDuplicateParentStateEnabled(enabled)
+		    Declare Sub setDuplicateParentStateEnabled Lib kLibView (view As Ptr, myEnabled As Boolean)
+		    setDuplicateParentStateEnabled(ctrl.Handle, enabled)
 		    
 		  #Else
 		    
@@ -1256,8 +1377,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setElevation Lib "Object:ctrl:MobileUIControl" (myElevation As Single)
-		    setElevation(elevation)
+		    Declare Sub setElevation Lib kLibView (view As Ptr, myElevation As Single)
+		    setElevation(ctrl.Handle, elevation)
 		    
 		  #Else
 		    
@@ -1273,8 +1394,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setFadingEdgeLength Lib "Object:ctrl:MobileUIControl" (myElevation As Integer)
-		    setFadingEdgeLength(length)
+		    Declare Sub setFadingEdgeLength Lib kLibView (view As Ptr, myElevation As Int32)
+		    setFadingEdgeLength(ctrl.Handle, length)
 		    
 		  #Else
 		    
@@ -1290,8 +1411,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setFocusableInTouchMode Lib "Object:ctrl:MobileUIControl" (myFocusableInTouchMode As Boolean)
-		    setFocusableInTouchMode(focusableInTouchMode)
+		    Declare Sub setFocusableInTouchMode Lib kLibView (view As Ptr, myFocusableInTouchMode As Boolean)
+		    setFocusableInTouchMode(ctrl.Handle, focusableInTouchMode)
 		    
 		  #Else
 		    
@@ -1307,8 +1428,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setFocusable Lib "Object:ctrl:MobileUIControl" (myFocusable As Boolean)
-		    setFocusable(focusable)
+		    Declare Sub setFocusable Lib kLibView (view As Ptr, myFocusable As Boolean)
+		    setFocusable(ctrl.Handle, focusable)
 		    
 		  #Else
 		    
@@ -1324,8 +1445,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setFocusedByDefault Lib "Object:ctrl:MobileUIControl" (myIsFocusedByDefault As Boolean)
-		    setFocusedByDefault(isFocusedByDefault)
+		    Declare Sub setFocusedByDefault Lib kLibView (view As Ptr, myIsFocusedByDefault As Boolean)
+		    setFocusedByDefault(ctrl.Handle, isFocusedByDefault)
 		    
 		  #Else
 		    
@@ -1341,8 +1462,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setForceDarkAllowed Lib "Object:ctrl:MobileUIControl" (myAllow As Boolean)
-		    setForceDarkAllowed(allow)
+		    Declare Sub setForceDarkAllowed Lib kLibView (view As Ptr, myAllow As Boolean)
+		    setForceDarkAllowed(ctrl.Handle, allow)
 		    
 		  #Else
 		    
@@ -1358,8 +1479,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setForegroundGravity Lib "Object:ctrl:MobileUIControl" (myGravity As Integer)
-		    setForegroundGravity(gravity)
+		    Declare Sub setForegroundGravity Lib kLibView (view As Ptr, myGravity As Int32)
+		    setForegroundGravity(ctrl.Handle, gravity)
 		    
 		  #Else
 		    
@@ -1375,8 +1496,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHapticFeedbackEnabled Lib "Object:ctrl:MobileUIControl" (myHapticFeedbackEnabled As Boolean)
-		    setHapticFeedbackEnabled(hapticFeedbackEnabled)
+		    Declare Sub setHapticFeedbackEnabled Lib kLibView (view As Ptr, myHapticFeedbackEnabled As Boolean)
+		    setHapticFeedbackEnabled(ctrl.Handle, hapticFeedbackEnabled)
 		    
 		  #Else
 		    
@@ -1392,8 +1513,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHasTransientState Lib "Object:ctrl:MobileUIControl" (myHasTransientState As Boolean)
-		    setHasTransientState(hasTransientState)
+		    Declare Sub setHasTransientState Lib kLibView (view As Ptr, myHasTransientState As Boolean)
+		    setHasTransientState(ctrl.Handle, hasTransientState)
 		    
 		  #Else
 		    
@@ -1409,8 +1530,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHorizontalFadingEdgeEnabled Lib "Object:ctrl:MobileUIControl" (myHorizontalFadingEdgeEnabled As Boolean)
-		    setHorizontalFadingEdgeEnabled(horizontalFadingEdgeEnabled)
+		    Declare Sub setHorizontalFadingEdgeEnabled Lib kLibView (view As Ptr, myHorizontalFadingEdgeEnabled As Boolean)
+		    setHorizontalFadingEdgeEnabled(ctrl.Handle, horizontalFadingEdgeEnabled)
 		    
 		  #Else
 		    
@@ -1426,8 +1547,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHorizontalScrollBarEnabled Lib "Object:ctrl:MobileUIControl" (myHorizontalScrollBarEnabled As Boolean)
-		    setHorizontalScrollBarEnabled(horizontalScrollBarEnabled)
+		    Declare Sub setHorizontalScrollBarEnabled Lib kLibView (view As Ptr, myHorizontalScrollBarEnabled As Boolean)
+		    setHorizontalScrollBarEnabled(ctrl.Handle, horizontalScrollBarEnabled)
 		    
 		  #Else
 		    
@@ -1443,8 +1564,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setImportantForAccessibility Lib "Object:ctrl:MobileUIControl" (myMode As Integer)
-		    setImportantForAccessibility(mode)
+		    Declare Sub setImportantForAccessibility Lib kLibView (view As Ptr, myMode As Int32)
+		    setImportantForAccessibility(ctrl.Handle, mode)
 		    
 		  #Else
 		    
@@ -1460,8 +1581,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setImportantForAutofill Lib "Object:ctrl:MobileUIControl" (myMode As Integer)
-		    setImportantForAutofill(mode)
+		    Declare Sub setImportantForAutofill Lib kLibView (view As Ptr, myMode As Int32)
+		    setImportantForAutofill(ctrl.Handle, mode)
 		    
 		  #Else
 		    
@@ -1477,8 +1598,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setImportantForContentCapture Lib "Object:ctrl:MobileUIControl" (myMode As Integer)
-		    setImportantForContentCapture(mode)
+		    Declare Sub setImportantForContentCapture Lib kLibView (view As Ptr, myMode As Int32)
+		    setImportantForContentCapture(ctrl.Handle, mode)
 		    
 		  #Else
 		    
@@ -1494,8 +1615,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setKeepScreenOn Lib "Object:ctrl:MobileUIControl" (myKeepScreenOn As Boolean)
-		    setKeepScreenOn(keepScreenOn)
+		    Declare Sub setKeepScreenOn Lib kLibView (view As Ptr, myKeepScreenOn As Boolean)
+		    setKeepScreenOn(ctrl.Handle, keepScreenOn)
 		    
 		  #Else
 		    
@@ -1511,8 +1632,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setLayoutDirection Lib "Object:ctrl:MobileUIControl" (myLayoutDirection As Integer)
-		    setLayoutDirection(Integer(layoutDirection))
+		    Declare Sub setLayoutDirection Lib kLibView (view As Ptr, myLayoutDirection As Int32)
+		    setLayoutDirection(ctrl.Handle, Integer(layoutDirection))
 		    
 		  #Else
 		    
@@ -1528,8 +1649,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setMinimumHeight Lib "Object:ctrl:MobileUIControl" (myMinHeight As Integer)
-		    setMinimumHeight(minHeight)
+		    Declare Sub setMinimumHeight Lib kLibView (view As Ptr, myMinHeight As Int32)
+		    setMinimumHeight(ctrl.Handle, minHeight)
 		    
 		  #Else
 		    
@@ -1545,8 +1666,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setMinimumWidth Lib "Object:ctrl:MobileUIControl" (myMinWidth As Integer)
-		    setMinimumWidth(minWidth)
+		    Declare Sub setMinimumWidth Lib kLibView (view As Ptr, myMinWidth As Int32)
+		    setMinimumWidth(ctrl.Handle, minWidth)
 		    
 		  #Else
 		    
@@ -1562,8 +1683,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileUIControl" (myEnabled As Boolean)
-		    setNestedScrollingEnabled(enabled)
+		    Declare Sub setNestedScrollingEnabled Lib kLibView (view As Ptr, myEnabled As Boolean)
+		    setNestedScrollingEnabled(ctrl.Handle, enabled)
 		    
 		  #Else
 		    
@@ -1579,8 +1700,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setOutlineAmbientShadowColor Lib "Object:ctrl:MobileUIControl" (myColor As Integer)
-		    setOutlineAmbientShadowColor(c.ToInteger)
+		    Declare Sub setOutlineAmbientShadowColor Lib kLibView (view As Ptr, myColor As Int32)
+		    setOutlineAmbientShadowColor(ctrl.Handle, c.ToInteger)
 		    
 		  #Else
 		    
@@ -1596,8 +1717,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setOutlineSpotShadowColor Lib "Object:ctrl:MobileUIControl" (myColor As Integer)
-		    setOutlineSpotShadowColor(c.ToInteger)
+		    Declare Sub setOutlineSpotShadowColor Lib kLibView (view As Ptr, myColor As Int32)
+		    setOutlineSpotShadowColor(ctrl.Handle, c.ToInteger)
 		    
 		  #Else
 		    
@@ -1613,8 +1734,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setOverScrollMode Lib "Object:ctrl:MobileUIControl" (myOverScrollMode As Integer)
-		    setOverScrollMode(Integer(overScrollMode))
+		    Declare Sub setOverScrollMode Lib kLibView (view As Ptr, myOverScrollMode As Int32)
+		    setOverScrollMode(ctrl.Handle, Integer(overScrollMode))
 		    
 		  #Else
 		    
@@ -1630,8 +1751,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setPaddingRelative Lib "Object:ctrl:MobileUIControl" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
-		    setPaddingRelative(left, top, right, bottom)
+		    Declare Sub setPaddingRelative Lib kLibView (view As Ptr, myLeft As Int32, myTop As Int32, myRight As Int32, myBottom As Int32)
+		    setPaddingRelative(ctrl.Handle, left, top, right, bottom)
 		    
 		  #Else
 		    
@@ -1650,8 +1771,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setPadding Lib "Object:ctrl:MobileUIControl" (myLeft As Integer, myTop As Integer, myRight As Integer, myBottom As Integer)
-		    setPadding(left, top, right, bottom)
+		    Declare Sub setPadding Lib kLibView (view As Ptr, myLeft As Int32, myTop As Int32, myRight As Int32, myBottom As Int32)
+		    setPadding(ctrl.Handle, left, top, right, bottom)
 		    
 		  #Else
 		    
@@ -1670,8 +1791,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setPivotX Lib "Object:ctrl:MobileUIControl" (myPivotX As Single)
-		    setPivotX(pivotX)
+		    Declare Sub setPivotX Lib kLibView (view As Ptr, myPivotX As Single)
+		    setPivotX(ctrl.Handle, pivotX)
 		    
 		  #Else
 		    
@@ -1687,8 +1808,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setPivotY Lib "Object:ctrl:MobileUIControl" (myPivotY As Single)
-		    setPivotY(pivotY)
+		    Declare Sub setPivotY Lib kLibView (view As Ptr, myPivotY As Single)
+		    setPivotY(ctrl.Handle, pivotY)
 		    
 		  #Else
 		    
@@ -1704,8 +1825,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setRevealOnFocusHint Lib "Object:ctrl:MobileUIControl" (myRevealOnFocus As Boolean)
-		    setRevealOnFocusHint(revealOnFocus)
+		    Declare Sub setRevealOnFocusHint Lib kLibView (view As Ptr, myRevealOnFocus As Boolean)
+		    setRevealOnFocusHint(ctrl.Handle, revealOnFocus)
 		    
 		  #Else
 		    
@@ -1721,8 +1842,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setRotation Lib "Object:ctrl:MobileUIControl" (myRotation As Single)
-		    setRotation(rotation)
+		    Declare Sub setRotation Lib kLibView (view As Ptr, myRotation As Single)
+		    setRotation(ctrl.Handle, rotation)
 		    
 		  #Else
 		    
@@ -1738,8 +1859,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setRotationX Lib "Object:ctrl:MobileUIControl" (myRotationX As Single)
-		    setRotationX(rotationX)
+		    Declare Sub setRotationX Lib kLibView (view As Ptr, myRotationX As Single)
+		    setRotationX(ctrl.Handle, rotationX)
 		    
 		  #Else
 		    
@@ -1755,8 +1876,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setRotationY Lib "Object:ctrl:MobileUIControl" (myRotationY As Single)
-		    setRotationY(rotationY)
+		    Declare Sub setRotationY Lib kLibView (view As Ptr, myRotationY As Single)
+		    setRotationY(ctrl.Handle, rotationY)
 		    
 		  #Else
 		    
@@ -1772,8 +1893,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setScaleX Lib "Object:ctrl:MobileUIControl" (myScaleX As Single)
-		    setScaleX(scaleX)
+		    Declare Sub setScaleX Lib kLibView (view As Ptr, myScaleX As Single)
+		    setScaleX(ctrl.Handle, scaleX)
 		    
 		  #Else
 		    
@@ -1789,8 +1910,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setScaleY Lib "Object:ctrl:MobileUIControl" (myScaleY As Single)
-		    setScaleY(scaleY)
+		    Declare Sub setScaleY Lib kLibView (view As Ptr, myScaleY As Single)
+		    setScaleY(ctrl.Handle, scaleY)
 		    
 		  #Else
 		    
@@ -1806,8 +1927,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setScreenReaderFocusable Lib "Object:ctrl:MobileUIControl" (myScreenReaderFocusable As Boolean)
-		    setScreenReaderFocusable(screenReaderFocusable)
+		    Declare Sub setScreenReaderFocusable Lib kLibView (view As Ptr, myScreenReaderFocusable As Boolean)
+		    setScreenReaderFocusable(ctrl.Handle, screenReaderFocusable)
 		    
 		  #Else
 		    
@@ -1823,8 +1944,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib "Object:ctrl:MobileUIControl" (myScrollBarDefaultDelayBeforeFade As Integer)
-		    setScrollBarDefaultDelayBeforeFade(scrollBarDefaultDelayBeforeFade)
+		    Declare Sub setScrollBarDefaultDelayBeforeFade Lib kLibView (view As Ptr, myScrollBarDefaultDelayBeforeFade As Int32)
+		    setScrollBarDefaultDelayBeforeFade(ctrl.Handle, scrollBarDefaultDelayBeforeFade)
 		    
 		  #Else
 		    
@@ -1840,8 +1961,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setScrollBarFadeDuration Lib "Object:ctrl:MobileUIControl" (myScrollBarFadeDuration As Integer)
-		    setScrollBarFadeDuration(scrollBarFadeDuration)
+		    Declare Sub setScrollBarFadeDuration Lib kLibView (view As Ptr, myScrollBarFadeDuration As Int32)
+		    setScrollBarFadeDuration(ctrl.Handle, scrollBarFadeDuration)
 		    
 		  #Else
 		    
@@ -1857,8 +1978,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setScrollbarFadingEnabled Lib "Object:ctrl:MobileUIControl" (myFadeScrollbars As Boolean)
-		    setScrollbarFadingEnabled(fadeScrollbars)
+		    Declare Sub setScrollbarFadingEnabled Lib kLibView (view As Ptr, myFadeScrollbars As Boolean)
+		    setScrollbarFadingEnabled(ctrl.Handle, fadeScrollbars)
 		    
 		  #Else
 		    
@@ -1874,8 +1995,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setScrollBarSize Lib "Object:ctrl:MobileUIControl" (myScrollBarSize As Integer)
-		    setScrollBarSize(scrollBarSize)
+		    Declare Sub setScrollBarSize Lib kLibView (view As Ptr, myScrollBarSize As Int32)
+		    setScrollBarSize(ctrl.Handle, scrollBarSize)
 		    
 		  #Else
 		    
@@ -1891,8 +2012,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setScrollBarStyle Lib "Object:ctrl:MobileUIControl" (myStyle As Integer)
-		    setScrollBarStyle(Integer(style))
+		    Declare Sub setScrollBarStyle Lib kLibView (view As Ptr, myStyle As Int32)
+		    setScrollBarStyle(ctrl.Handle, Integer(style))
 		    
 		  #Else
 		    
@@ -1908,8 +2029,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setScrollCaptureHint Lib "Object:ctrl:MobileUIControl" (myHint As Integer)
-		    setScrollCaptureHint(hint)
+		    Declare Sub setScrollCaptureHint Lib kLibView (view As Ptr, myHint As Int32)
+		    setScrollCaptureHint(ctrl.Handle, hint)
 		    
 		  #Else
 		    
@@ -1925,8 +2046,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setScrollContainer Lib "Object:ctrl:MobileUIControl" (myIsScrollContainer As Boolean)
-		    setScrollContainer(isScrollContainer)
+		    Declare Sub setScrollContainer Lib kLibView (view As Ptr, myIsScrollContainer As Boolean)
+		    setScrollContainer(ctrl.Handle, isScrollContainer)
 		    
 		  #Else
 		    
@@ -1942,8 +2063,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileUIControl" (myIndicators As Integer)
-		    setScrollIndicators(indicators)
+		    Declare Sub setScrollIndicators Lib kLibView (view As Ptr, myIndicators As Int32)
+		    setScrollIndicators(ctrl.Handle, indicators)
 		    
 		  #Else
 		    
@@ -1959,8 +2080,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setScrollIndicators Lib "Object:ctrl:MobileUIControl" (myIndicators As Integer, myMask As Integer)
-		    setScrollIndicators(indicators, mask)
+		    Declare Sub setScrollIndicators Lib kLibView (view As Ptr, myIndicators As Int32, myMask As Int32)
+		    setScrollIndicators(ctrl.Handle, indicators, mask)
 		    
 		  #Else
 		    
@@ -1977,8 +2098,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSelected Lib "Object:ctrl:MobileUIControl" (mySelected As Boolean)
-		    setSelected(selected)
+		    Declare Sub setSelected Lib kLibView (view As Ptr, mySelected As Boolean)
+		    setSelected(ctrl.Handle, selected)
 		    
 		  #Else
 		    
@@ -1994,8 +2115,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSoundEffectsEnabled Lib "Object:ctrl:MobileUIControl" (mySoundEffectsEnabled As Boolean)
-		    setSoundEffectsEnabled(soundEffectsEnabled)
+		    Declare Sub setSoundEffectsEnabled Lib kLibView (view As Ptr, mySoundEffectsEnabled As Boolean)
+		    setSoundEffectsEnabled(ctrl.Handle, soundEffectsEnabled)
 		    
 		  #Else
 		    
@@ -2011,8 +2132,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTextAlignment Lib "Object:ctrl:MobileUIControl" (myTextAlignment As Integer)
-		    setTextAlignment(Integer(textAlignment))
+		    Declare Sub setTextAlignment Lib kLibView (view As Ptr, myTextAlignment As Int32)
+		    setTextAlignment(ctrl.Handle, Integer(textAlignment))
 		    
 		  #Else
 		    
@@ -2028,8 +2149,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTextDirection Lib "Object:ctrl:MobileUIControl" (myTextDirection As Integer)
-		    setTextDirection(Integer(textDirection))
+		    Declare Sub setTextDirection Lib kLibView (view As Ptr, myTextDirection As Int32)
+		    setTextDirection(ctrl.Handle, Integer(textDirection))
 		    
 		  #Else
 		    
@@ -2045,8 +2166,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTooltipText Lib "Object:ctrl:MobileUIControl" (myTooltipText As CString)
-		    setTooltipText(tooltipText)
+		    Declare Sub setTooltipText Lib kLibView (view As Ptr, myTooltipText As CString)
+		    setTooltipText(ctrl.Handle, tooltipText)
 		    
 		  #Else
 		    
@@ -2062,8 +2183,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTransitionAlpha Lib "Object:ctrl:MobileUIControl" (myAlpha As Single)
-		    setTransitionAlpha(alpha)
+		    Declare Sub setTransitionAlpha Lib kLibView (view As Ptr, myAlpha As Single)
+		    setTransitionAlpha(ctrl.Handle, alpha)
 		    
 		  #Else
 		    
@@ -2079,8 +2200,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTranslationX Lib "Object:ctrl:MobileUIControl" (myTranslationX As Single)
-		    setTranslationX(translationX)
+		    Declare Sub setTranslationX Lib kLibView (view As Ptr, myTranslationX As Single)
+		    setTranslationX(ctrl.Handle, translationX)
 		    
 		  #Else
 		    
@@ -2096,8 +2217,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTranslationY Lib "Object:ctrl:MobileUIControl" (myTranslationY As Single)
-		    setTranslationY(translationY)
+		    Declare Sub setTranslationY Lib kLibView (view As Ptr, myTranslationY As Single)
+		    setTranslationY(ctrl.Handle, translationY)
 		    
 		  #Else
 		    
@@ -2113,8 +2234,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTranslationZ Lib "Object:ctrl:MobileUIControl" (myTranslationZ As Single)
-		    setTranslationZ(translationZ)
+		    Declare Sub setTranslationZ Lib kLibView (view As Ptr, myTranslationZ As Single)
+		    setTranslationZ(ctrl.Handle, translationZ)
 		    
 		  #Else
 		    
@@ -2130,8 +2251,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setVerticalFadingEdgeEnabled Lib "Object:ctrl:MobileUIControl" (myVerticalFadingEdgeEnabled As Boolean)
-		    setVerticalFadingEdgeEnabled(verticalFadingEdgeEnabled)
+		    Declare Sub setVerticalFadingEdgeEnabled Lib kLibView (view As Ptr, myVerticalFadingEdgeEnabled As Boolean)
+		    setVerticalFadingEdgeEnabled(ctrl.Handle, verticalFadingEdgeEnabled)
 		    
 		  #Else
 		    
@@ -2147,8 +2268,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setVerticalScrollBarEnabled Lib "Object:ctrl:MobileUIControl" (myVerticalScrollBarEnabled As Boolean)
-		    setVerticalScrollBarEnabled(verticalScrollBarEnabled)
+		    Declare Sub setVerticalScrollBarEnabled Lib kLibView (view As Ptr, myVerticalScrollBarEnabled As Boolean)
+		    setVerticalScrollBarEnabled(ctrl.Handle, verticalScrollBarEnabled)
 		    
 		  #Else
 		    
@@ -2164,8 +2285,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setVerticalScrollbarPosition Lib "Object:ctrl:MobileUIControl" (myPosition As Integer)
-		    setVerticalScrollbarPosition(Integer(position))
+		    Declare Sub setVerticalScrollbarPosition Lib kLibView (view As Ptr, myPosition As Int32)
+		    setVerticalScrollbarPosition(ctrl.Handle, Integer(position))
 		    
 		  #Else
 		    
@@ -2181,8 +2302,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTint Lib "Object:ctrl:MobileUIControl" Alias "getVerticalScrollbarThumbDrawable()!!.setTint" (myTintColor As Integer)
-		    setTint(c.ToInteger)
+		    Declare Sub setTint Lib kLibView Alias "getVerticalScrollbarThumbDrawable()!!.setTint" (view As Ptr, myTintColor As Int32)
+		    setTint(ctrl.Handle, c.ToInteger)
 		    
 		  #Else
 		    
@@ -2198,8 +2319,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setX Lib "Object:ctrl:MobileUIControl" (myX As Single)
-		    setX(x)
+		    Declare Sub setX Lib kLibView (view As Ptr, myX As Single)
+		    setX(ctrl.Handle, x)
 		    
 		  #Else
 		    
@@ -2215,8 +2336,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setY Lib "Object:ctrl:MobileUIControl" (myY As Single)
-		    setY(y)
+		    Declare Sub setY Lib kLibView (view As Ptr, myY As Single)
+		    setY(ctrl.Handle, y)
 		    
 		  #Else
 		    
@@ -2232,8 +2353,8 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setZ Lib "Object:ctrl:MobileUIControl" (myZ As Single)
-		    setZ(z)
+		    Declare Sub setZ Lib kLibView (view As Ptr, myZ As Single)
+		    setZ(ctrl.Handle, z)
 		    
 		  #Else
 		    
@@ -2244,11 +2365,32 @@ Protected Module ExtensionsXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Function ToColor(Extends value As Integer) As Color
+		Function ToColor(Extends value As Int32) As Color
 		  Var mb As New MemoryBlock(4)
 		  mb.Int32Value(0) = value
 		  
 		  Return mb.ColorValue(0, 4)
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436F6E7665727473206120436F6C6F7220746F206120436F6C6F7253746174654C6973742E
+		Function ToColorStateList(Extends c As Color) As Ptr
+		  #If TargetAndroid
+		    
+		    Declare Function argb Lib "android.graphics.Color" (alpha As Int32, r As Int32, g As Int32, b As Int32) As Int32
+		    Declare Function valueOf Lib "android.content.res.ColorStateList" (c As Int32) As Ptr
+		    
+		    Var iColor As Int32 = argb(255 - c.Alpha, c.Red, c.Green, c.Blue)
+		    
+		    Return valueOf(iColor)
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Function ToDrawable(Extends image As Picture) As Ptr
+		  Return image.Handle(Picture.HandleTypes.AndroidDrawable)
 		End Function
 	#tag EndMethod
 
@@ -2270,43 +2412,43 @@ Protected Module ExtensionsXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Function ToString(Extends value As PorterDuffModes) As String
+		Function ToString(Extends value As PorterDuffModesXC) As String
 		  ' https://developer.android.com/reference/android/graphics/PorterDuff.Mode
 		  
 		  Select Case value
-		  Case PorterDuffModes.ADD
+		  Case PorterDuffModesXC.ADD
 		    Return "ADD"
-		  Case PorterDuffModes.CLEAR
+		  Case PorterDuffModesXC.CLEAR
 		    Return "CLEAR"
-		  Case PorterDuffModes.DARKEN
+		  Case PorterDuffModesXC.DARKEN
 		    Return "DARKEN"
-		  Case PorterDuffModes.DST
+		  Case PorterDuffModesXC.DST
 		    Return "DST"
-		  Case PorterDuffModes.DST_ATOP
+		  Case PorterDuffModesXC.DST_ATOP
 		    Return "DST_ATOP"
-		  Case PorterDuffModes.DST_IN
+		  Case PorterDuffModesXC.DST_IN
 		    Return "DST_IN"
-		  Case PorterDuffModes.DST_OUT
+		  Case PorterDuffModesXC.DST_OUT
 		    Return "DST_OUT"
-		  Case PorterDuffModes.DST_OVER
+		  Case PorterDuffModesXC.DST_OVER
 		    Return "DST_OVER"
-		  Case PorterDuffModes.LIGHTEN
+		  Case PorterDuffModesXC.LIGHTEN
 		    Return "LIGHTEN"
-		  Case PorterDuffModes.MULTIPLY
+		  Case PorterDuffModesXC.MULTIPLY
 		    Return "MULTIPLY"
-		  Case PorterDuffModes.OVERLAY
+		  Case PorterDuffModesXC.OVERLAY
 		    Return "OVERLAY"
-		  Case PorterDuffModes.SCREEN
+		  Case PorterDuffModesXC.Screen
 		    Return "SCREEN"
-		  Case PorterDuffModes.SRC
+		  Case PorterDuffModesXC.SRC
 		    Return "SRC"
-		  Case PorterDuffModes.SRC_ATOP
+		  Case PorterDuffModesXC.SRC_ATOP
 		    Return "SRC_ATOP"
-		  Case PorterDuffModes.SRC_IN
+		  Case PorterDuffModesXC.SRC_IN
 		    Return "SRC_IN"
-		  Case PorterDuffModes.SRC_OUT
+		  Case PorterDuffModesXC.SRC_OUT
 		    Return "SRC_OUT"
-		  Case PorterDuffModes.XOR_
+		  Case PorterDuffModesXC.XOR_
 		    Return "XOR"
 		  End Select
 		End Function
@@ -2318,12 +2460,43 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function toString Lib "Object:ctrl:MobileUIControl" As CString
+		    Declare Function toString Lib kLibMobileUIControl As CString
 		    Return toString
 		    
 		  #EndIf
 		End Function
 	#tag EndMethod
+
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit)), Description = 52657475726E732061205265736F757263657320696E7374616E636520666F7220746865206170706C69636174696F6E2773207061636B6167652E0A0A4E6F74653A20496D706C656D656E746174696F6E73206F662074686973206D6574686F642073686F756C642072657475726E2061205265736F757263657320696E7374616E6365207468617420697320636F6E73697374656E742077697468207468652041737365744D616E6167657220696E7374616E63652072657475726E65642062792067657441737365747328292E20466F72206578616D706C652C20746865792073686F756C64207368617265207468652073616D6520436F6E66696775726174696F6E206F626A6563742E
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    Declare Function getResources Lib "Object:oCurrentScreen:MobileScreen" As Ptr
+			    Return getResources
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		Resources As Ptr
+	#tag EndComputedProperty
+
+
+	#tag Constant, Name = kLibMobileUIControl, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileUIControl", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibMobileUIControlKotlin, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileUIControl:Kotlin", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibView, Type = String, Dynamic = False, Default = \"android.view.View.instance", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibViewKotlin, Type = String, Dynamic = False, Default = \"android.view.View.instance:Kotlin", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kResourcesLib, Type = String, Dynamic = False, Default = \"android.content.res.Resources.instance", Scope = Public
+	#tag EndConstant
 
 
 	#tag Enum, Name = LayoutDirectionsXC, Type = Integer, Flags = &h0
@@ -2339,7 +2512,7 @@ Protected Module ExtensionsXC
 		Never = 2
 	#tag EndEnum
 
-	#tag Enum, Name = PorterDuffModes, Type = Integer, Flags = &h0
+	#tag Enum, Name = PorterDuffModesXC, Type = Integer, Flags = &h0
 		ADD
 		  CLEAR
 		  DARKEN

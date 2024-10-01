@@ -9,6 +9,7 @@ Begin MobileContainer ButtonContainer
    LockLeft        =   True
    LockRight       =   True
    LockTop         =   True
+   Orientation     =   0
    Visible         =   True
    Width           =   360
    Begin TestButton BackgroundColorButton
@@ -214,6 +215,7 @@ Begin MobileContainer ButtonContainer
       AccessibilityLabel=   ""
       Enabled         =   True
       Height          =   44
+      LastSegmentIndex=   0
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -295,8 +297,8 @@ End
 		  Me.SetBackgroundColorXC(&cFF375F00)
 		  Me.SetCornerRadiusXC(0)
 		  
-		  Me.SetIconXC(SaveSystemImage("android"))
-		  Me.SetIconGravityXC(IconGravity.TextStart)
+		  Me.SetIconXC(Picture.SystemImage("android", Picture.SystemImageSizes.dp24, Color.White))
+		  Me.SetIconGravityXC(IconGravityXC.TextStart)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -314,9 +316,9 @@ End
 		  Me.SetBackgroundColorXC(&cFFD60A00)
 		  Me.SetCornerRadiusXC(0)
 		  
-		  Me.SetIconXC(SaveSystemImage("calendar_clock", Picture.SystemImageSizes.dp48, Color.Blue))
-		  Me.SetIconGravityXC(IconGravity.TextStart)
-		  me.SetIconTintModeXC(PorterDuffModes.DST)
+		  Me.SetIconXC(Picture.SystemImage("calendar_clock", Picture.SystemImageSizes.dp24, Color.Blue))
+		  Me.SetIconGravityXC(IconGravityXC.TextStart)
+		  Me.SetIconTintModeXC(PorterDuffModesXC.DST)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

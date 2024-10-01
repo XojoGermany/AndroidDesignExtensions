@@ -15,6 +15,9 @@ Protected Module ContainerXC
 		      '  Check for MobileUIControl
 		      If Not (obj IsA MobileUIControl) Then Continue
 		      
+		      '  Check for MobileContainer
+		      If obj IsA MobileContainer Then Continue
+		      
 		      iObjID = MobileUIControl(obj).GetIDXC
 		      
 		      If iCurrentFocusObjID = iObjID Then
@@ -37,7 +40,7 @@ Protected Module ContainerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCurrentFocusID Lib "Object:myContainer:MobileContainer" Alias "getActivity()!!.getCurrentFocus()!!.getId" As Integer
+		    Declare Function getCurrentFocusID Lib "Object:myContainer:MobileContainer" Alias "getActivity()!!.getCurrentFocus()!!.getId" As Int32
 		    
 		    Try
 		      

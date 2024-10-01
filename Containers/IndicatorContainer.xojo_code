@@ -9,6 +9,7 @@ Begin MobileContainer IndicatorContainer
    LockLeft        =   True
    LockRight       =   True
    LockTop         =   True
+   Orientation     =   0
    Visible         =   True
    Width           =   360
    Begin AppearanceLabel CustomLabel
@@ -24,6 +25,7 @@ Begin MobileContainer IndicatorContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Global Custom Styles"
       TextColor       =   &c00000000
@@ -44,6 +46,7 @@ Begin MobileContainer IndicatorContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Individual Custom Styles"
       TextColor       =   &c00000000
@@ -157,6 +160,7 @@ Begin MobileContainer IndicatorContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Default"
       TextColor       =   &c00000000
@@ -164,7 +168,7 @@ Begin MobileContainer IndicatorContainer
       Visible         =   True
       Width           =   320
    End
-   Begin MobileProgressBar DefaultProgressBar
+   Begin AppearanceProgressBar DefaultProgressBar
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
@@ -183,7 +187,7 @@ Begin MobileContainer IndicatorContainer
       Visible         =   True
       Width           =   320
    End
-   Begin MobileSlider DefaultSlider
+   Begin AppearanceSlider DefaultSlider
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
@@ -202,7 +206,7 @@ Begin MobileContainer IndicatorContainer
       Visible         =   True
       Width           =   320
    End
-   Begin MobileSwitch DefaultSwitch
+   Begin AppearanceSwitch DefaultSwitch
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
@@ -235,7 +239,7 @@ Begin MobileContainer IndicatorContainer
       Visible         =   True
       Width           =   360
    End
-   Begin MobileSlider CustomSlider2
+   Begin AppearanceSlider CustomSlider2
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
@@ -320,16 +324,14 @@ End
 #tag Events CustomSlider2
 	#tag Event
 		Sub Opening()
-		  Me.SetThumbXC(SaveSystemImage("star_circle", Picture.SystemImageSizes.dp48, &cFF260000))
+		  Me.SetThumbXC(Picture.SystemImage("star_circle", Picture.SystemImageSizes.dp24, &cFF260000))
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events CustomSwitch2
 	#tag Event
 		Sub Opening()
-		  Me.SetThumbXC(SaveSystemImage("star_circle", Picture.SystemImageSizes.dp48, &cFF260000))
-		  
-		  
+		  Me.SetThumbXC(Picture.SystemImage("star_circle", Picture.SystemImageSizes.dp24, &cFF260000))
 		End Sub
 	#tag EndEvent
 #tag EndEvents

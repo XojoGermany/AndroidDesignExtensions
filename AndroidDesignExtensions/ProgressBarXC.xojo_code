@@ -7,7 +7,7 @@ Protected Module ProgressBarXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getSecondaryProgress Lib "Object:ctrl:MobileProgressBar" As Integer
+		    Declare Function getSecondaryProgress Lib kLibMobileProgressBar As Int32
 		    Return getSecondaryProgress
 		    
 		  #EndIf
@@ -20,7 +20,7 @@ Protected Module ProgressBarXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub incrementProgressBy Lib "Object:ctrl:MobileProgressBar" (myDiff As Integer)
+		    Declare Sub incrementProgressBy Lib kLibMobileProgressBar (myDiff As Int32)
 		    incrementProgressBy(diff)
 		    
 		  #Else
@@ -37,7 +37,7 @@ Protected Module ProgressBarXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub incrementSecondaryProgressBy Lib "Object:ctrl:MobileProgressBar" (myDiff As Integer)
+		    Declare Sub incrementSecondaryProgressBy Lib kLibMobileProgressBar (myDiff As Int32)
 		    incrementSecondaryProgressBy(diff)
 		    
 		  #Else
@@ -54,7 +54,7 @@ Protected Module ProgressBarXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isAnimating Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Declare Function isAnimating Lib kLibMobileProgressBar As Boolean
 		    Return isAnimating
 		    
 		  #EndIf
@@ -67,7 +67,7 @@ Protected Module ProgressBarXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isIndeterminate Lib "Object:ctrl:MobileProgressBar" As Boolean
+		    Declare Function isIndeterminate Lib kLibMobileProgressBar As Boolean
 		    Return isIndeterminate
 		    
 		  #EndIf
@@ -80,7 +80,7 @@ Protected Module ProgressBarXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIndeterminate Lib "Object:ctrl:MobileProgressBar" (myIndeterminate As Boolean)
+		    Declare Sub setIndeterminate Lib kLibMobileProgressBar (myIndeterminate As Boolean)
 		    setIndeterminate(indeterminate)
 		    
 		  #Else
@@ -98,10 +98,8 @@ Protected Module ProgressBarXC
 		  #If TargetAndroid
 		    
 		    Declare Sub setProgressBackgroundTintList Lib "Object:ctrl:MobileProgressBar:Kotlin" Alias _
-		    "setProgressBackgroundTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    
-		    setProgressBackgroundTintList(255 - c.Alpha, c.Red, c.Green, c.Blue)
+		    "setProgressBackgroundTintList(tint as android.content.res.ColorStateList)" (tint As Ptr)
+		    setProgressBackgroundTintList(c.ToColorStateList)
 		    
 		  #EndIf
 		End Sub
@@ -114,10 +112,8 @@ Protected Module ProgressBarXC
 		  #If TargetAndroid
 		    
 		    Declare Sub setProgressTintList Lib "Object:ctrl:MobileProgressBar:Kotlin" Alias _
-		    "setProgressTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    
-		    setProgressTintList(255 - c.Alpha, c.Red, c.Green, c.Blue)
+		    "setProgressTintList(tint as android.content.res.ColorStateList)" (tint As Ptr)
+		    setProgressTintList(c.ToColorStateList)
 		    
 		  #EndIf
 		End Sub
@@ -129,7 +125,7 @@ Protected Module ProgressBarXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setProgress Lib "Object:ctrl:MobileProgressBar" (myProgress As Integer, myAnimate As Boolean)
+		    Declare Sub setProgress Lib kLibMobileProgressBar (myProgress As Int32, myAnimate As Boolean)
 		    setProgress(progress, animate)
 		    
 		  #Else
@@ -147,7 +143,7 @@ Protected Module ProgressBarXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSecondaryProgress Lib "Object:ctrl:MobileProgressBar" (mySecondaryProgress As Integer)
+		    Declare Sub setSecondaryProgress Lib kLibMobileProgressBar (mySecondaryProgress As Int32)
 		    setSecondaryProgress(secondaryProgress)
 		    
 		  #Else
@@ -164,7 +160,7 @@ Protected Module ProgressBarXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTint Lib "Object:ctrl:MobileProgressBar" Alias "getProgressDrawable()!!.setTint" (myTintColor As Integer)
+		    Declare Sub setTint Lib kLibMobileProgressBar Alias "getProgressDrawable()!!.setTint" (myTintColor As Int32)
 		    setTint(c.ToInteger)
 		    
 		  #Else
@@ -174,6 +170,10 @@ Protected Module ProgressBarXC
 		  #EndIf
 		End Sub
 	#tag EndMethod
+
+
+	#tag Constant, Name = kLibMobileProgressBar, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileProgressBar", Scope = Private
+	#tag EndConstant
 
 
 	#tag ViewBehavior

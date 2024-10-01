@@ -9,6 +9,7 @@ Begin MobileContainer TextFieldContainer
    LockLeft        =   True
    LockRight       =   True
    LockTop         =   True
+   Orientation     =   0
    Visible         =   True
    Width           =   360
    Begin AppearanceTextField BackgroundColorField
@@ -26,6 +27,7 @@ Begin MobileContainer TextFieldContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
@@ -53,6 +55,7 @@ Begin MobileContainer TextFieldContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
@@ -80,6 +83,7 @@ Begin MobileContainer TextFieldContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
@@ -107,6 +111,7 @@ Begin MobileContainer TextFieldContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
@@ -134,6 +139,7 @@ Begin MobileContainer TextFieldContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
@@ -161,6 +167,7 @@ Begin MobileContainer TextFieldContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
@@ -186,6 +193,7 @@ Begin MobileContainer TextFieldContainer
       LockLeft        =   False
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Password"
       TextColor       =   &c00000000
@@ -193,7 +201,7 @@ Begin MobileContainer TextFieldContainer
       Visible         =   True
       Width           =   100
    End
-   Begin MobileSwitch PasswordSwitch
+   Begin AppearanceSwitch PasswordSwitch
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
@@ -210,7 +218,7 @@ Begin MobileContainer TextFieldContainer
       Visible         =   True
       Width           =   50
    End
-   Begin MobileTextField TransparentField
+   Begin AppearanceTextField TransparentField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -225,6 +233,7 @@ Begin MobileContainer TextFieldContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
@@ -253,7 +262,7 @@ Begin MobileContainer TextFieldContainer
       Visible         =   True
       Width           =   360
    End
-   Begin MobileTextField BorderField
+   Begin AppearanceTextField BorderField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
@@ -268,6 +277,7 @@ Begin MobileContainer TextFieldContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
@@ -295,6 +305,7 @@ Begin MobileContainer TextFieldContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
@@ -322,6 +333,7 @@ Begin MobileContainer TextFieldContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
@@ -352,7 +364,7 @@ End
 #tag Events BackgroundColorField
 	#tag Event
 		Sub Opening()
-		  Me.SetBoxBackgroundColorXC(&cD6D6D600)
+		  Me.SetBoxBackgroundColorXC(If(Color.IsDarkMode, &cFF375F00, &cD6D6D600))
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -363,11 +375,11 @@ End
 		  Me.SetTintXC(Color.Green)
 		  Me.SetHintEnabledXC(False)
 		  
-		  Me.SetStartIconXC(SaveSystemImage("account_outline", Picture.SystemImageSizes.dp48, Color.Purple))
-		  Me.SetStartIconTintModeXC(PorterDuffModes.DST)
+		  Me.SetStartIconXC(Picture.SystemImage("account_outline", Picture.SystemImageSizes.dp24, Color.Purple))
+		  Me.SetStartIconTintModeXC(PorterDuffModesXC.DST)
 		  
-		  Me.SetEndIconModeXC(EndIconModes.Custom)
-		  Me.SetEndIconXC(SaveSystemImage("pencil"))
+		  Me.SetEndIconModeXC(EndIconModesXC.Custom)
+		  Me.SetEndIconXC(Picture.SystemImage("pencil", Picture.SystemImageSizes.dp24, Color.TextColor))
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -376,7 +388,7 @@ End
 		Sub Opening()
 		  Me.SetErrorXC("My Error Message")
 		  
-		  Me.SetStartIconXC(SaveSystemImage("lock_outline"))
+		  Me.SetStartIconXC(Picture.SystemImage("lock_outline", Picture.SystemImageSizes.dp24, Color.TextColor))
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -433,7 +445,7 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.SetBoxCornerRadiiXC(25, 25, 25, 25)
-		  Me.SetBoxCornerFamilyXC(BoxCornerFamily.Cut)
+		  Me.SetBoxCornerFamilyXC(BoxCornerFamilyXC.Cut)
 		  Me.SetBoxStrokeWidthXC(5)
 		  Me.SetBoxStrokeColorXC(Color.Orange)
 		  If Color.IsDarkMode Then Me.SetBoxBackgroundColorXC(Color.Clear)
@@ -446,14 +458,15 @@ End
 		  Me.SetBoxStrokeWidthXC(0)
 		  If Not Color.IsDarkMode Then Me.SetBoxBackgroundColorXC(&cEBEBEB00)
 		  Me.SetBoxCornerRadiiXC(30, 30, 0, 0)
-		  Me.SetEndIconModeXC(EndIconModes.ClearText)
+		  Me.SetEndIconModeXC(EndIconModesXC.ClearText)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events PasswordField
 	#tag Event
 		Sub Opening()
-		  Me.SetEndIconModeXC(EndIconModes.PasswordToggle)
+		  Me.SetDefaultHintTextColorXC(&cFF930000)
+		  Me.SetEndIconModeXC(EndIconModesXC.PasswordToggle)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

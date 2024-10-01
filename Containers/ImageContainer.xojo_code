@@ -4,11 +4,12 @@ Begin MobileContainer ImageContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   668
+   Height          =   650
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
    LockTop         =   True
+   Orientation     =   0
    Visible         =   True
    Width           =   360
    Begin AppearanceLabel AlphaLabel
@@ -24,6 +25,7 @@ Begin MobileContainer ImageContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Alpha: 255"
       TextColor       =   &c00000000
@@ -31,7 +33,7 @@ Begin MobileContainer ImageContainer
       Visible         =   True
       Width           =   177
    End
-   Begin MobileSlider AlphaSlider
+   Begin AppearanceSlider AlphaSlider
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
@@ -50,7 +52,7 @@ Begin MobileContainer ImageContainer
       Visible         =   True
       Width           =   177
    End
-   Begin MobileButton BackgroundColor1Button
+   Begin AppearanceButton BackgroundColor1Button
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Yellow Background Color"
@@ -68,7 +70,7 @@ Begin MobileContainer ImageContainer
       Visible         =   True
       Width           =   200
    End
-   Begin MobileButton BackgroundColor2Button
+   Begin AppearanceButton BackgroundColor2Button
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Red Background Color"
@@ -86,7 +88,7 @@ Begin MobileContainer ImageContainer
       Visible         =   True
       Width           =   200
    End
-   Begin MobileButton ClearTintColorButton
+   Begin AppearanceButton ClearTintColorButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Clear Tint Color"
@@ -117,12 +119,12 @@ Begin MobileContainer ImageContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
-      Scope           =   2
+      Scope           =   0
       Top             =   30
       Visible         =   True
       Width           =   177
    End
-   Begin MobileButton ShadowColorButton
+   Begin AppearanceButton ShadowColorButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Orange Shadow"
@@ -140,7 +142,7 @@ Begin MobileContainer ImageContainer
       Visible         =   True
       Width           =   200
    End
-   Begin MobileButton TintColorButton
+   Begin AppearanceButton TintColorButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Red Tint Color"

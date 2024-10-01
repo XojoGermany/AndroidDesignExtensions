@@ -7,7 +7,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function canGoBackOrForward Lib "Object:ctrl:MobileHTMLViewer" (mySteps As Integer) As Boolean
+		    Declare Function canGoBackOrForward Lib kLibMobileHTMLViewer (mySteps As Int32) As Boolean
 		    Return canGoBackOrForward(steps)
 		    
 		  #Else
@@ -26,7 +26,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function canGoBack Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Declare Function canGoBack Lib kLibMobileHTMLViewer As Boolean
 		    Return canGoBack
 		    
 		  #Else
@@ -43,7 +43,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function canGoForward Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Declare Function canGoForward Lib kLibMobileHTMLViewer As Boolean
 		    Return canGoForward
 		    
 		  #Else
@@ -60,7 +60,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub clearCache Lib "Object:ctrl:MobileHTMLViewer" (myIncludeDiskFiles As Boolean)
+		    Declare Sub clearCache Lib kLibMobileHTMLViewer (myIncludeDiskFiles As Boolean)
 		    clearCache(includeDiskFiles)
 		    
 		  #Else
@@ -77,7 +77,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub clearFormData Lib "Object:ctrl:MobileHTMLViewer"
+		    Declare Sub clearFormData Lib kLibMobileHTMLViewer
 		    clearFormData
 		    
 		  #EndIf
@@ -90,7 +90,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub clearHistory Lib "Object:ctrl:MobileHTMLViewer"
+		    Declare Sub clearHistory Lib kLibMobileHTMLViewer
 		    clearHistory
 		    
 		  #EndIf
@@ -103,7 +103,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub clearMatches Lib "Object:ctrl:MobileHTMLViewer"
+		    Declare Sub clearMatches Lib kLibMobileHTMLViewer
 		    clearMatches
 		    
 		  #EndIf
@@ -116,7 +116,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub clearSslPreferences Lib "Object:ctrl:MobileHTMLViewer"
+		    Declare Sub clearSslPreferences Lib kLibMobileHTMLViewer
 		    clearSslPreferences
 		    
 		  #EndIf
@@ -131,7 +131,7 @@ Protected Module HTMLViewerXC
 		    
 		    #If XojoVersion < 2023.03
 		      
-		      Declare Sub findAllAsync Lib "Object:ctrl:MobileHTMLViewer" (myFind As CString)
+		      Declare Sub findAllAsync Lib kLibMobileHTMLViewer (myFind As CString)
 		      
 		    #Else
 		      
@@ -155,7 +155,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub findNext Lib "Object:ctrl:MobileHTMLViewer" (myForward As Boolean)
+		    Declare Sub findNext Lib kLibMobileHTMLViewer (myForward As Boolean)
 		    findNext(forward)
 		    
 		  #Else
@@ -172,8 +172,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getAllowContentAccess Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getAllowContentAccess" As Boolean
-		    Return getAllowContentAccess
+		    Declare Function getAllowContentAccess Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getAllowContentAccess(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -185,8 +185,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getAllowFileAccessFromFileURLs Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getAllowFileAccessFromFileURLs" As Boolean
-		    Return getAllowFileAccessFromFileURLs
+		    Declare Function getAllowFileAccessFromFileURLs Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getAllowFileAccessFromFileURLs(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -198,8 +198,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getAllowFileAccess Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getAllowFileAccess" As Boolean
-		    Return getAllowFileAccess
+		    Declare Function getAllowFileAccess Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getAllowFileAccess(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -211,8 +211,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getAllowUniversalAccessFromFileURLs Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getAllowUniversalAccessFromFileURLs" As Boolean
-		    Return getAllowUniversalAccessFromFileURLs
+		    Declare Function getAllowUniversalAccessFromFileURLs Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getAllowUniversalAccessFromFileURLs(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -224,8 +224,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBlockNetworkImage Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getBlockNetworkImage" As Boolean
-		    Return getBlockNetworkImage
+		    Declare Function getBlockNetworkImage Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getBlockNetworkImage(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -237,8 +237,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBlockNetworkLoads Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getBlockNetworkLoads" As Boolean
-		    Return getBlockNetworkLoads
+		    Declare Function getBlockNetworkLoads Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getBlockNetworkLoads(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -250,8 +250,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBuiltInZoomControls Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getBuiltInZoomControls" As Boolean
-		    Return getBuiltInZoomControls
+		    Declare Function getBuiltInZoomControls Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getBuiltInZoomControls(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -263,8 +263,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCacheMode Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getCacheMode" As Integer
-		    Return getCacheMode
+		    Declare Function getCacheMode Lib kLibWebSettingsInstance (obj As Ptr) As Int32
+		    Return getCacheMode(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -276,7 +276,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getContentHeight Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Declare Function getContentHeight Lib kLibMobileHTMLViewer As Int32
 		    Return getContentHeight
 		    
 		  #EndIf
@@ -289,8 +289,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCursiveFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getCursiveFontFamily" As CString
-		    Return getCursiveFontFamily
+		    Declare Function getCursiveFontFamily Lib kLibWebSettingsInstance (obj As Ptr) As CString
+		    Return getCursiveFontFamily(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -302,8 +302,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDefaultFixedFontSize Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getDefaultFixedFontSize" As Integer
-		    Return getDefaultFixedFontSize
+		    Declare Function getDefaultFixedFontSize Lib kLibWebSettingsInstance (obj As Ptr) As Int32
+		    Return getDefaultFixedFontSize(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -315,8 +315,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDefaultFontSize Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getDefaultFontSize" As Integer
-		    Return getDefaultFontSize
+		    Declare Function getDefaultFontSize Lib kLibWebSettingsInstance (obj As Ptr) As Int32
+		    Return getDefaultFontSize(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -328,8 +328,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDefaultTextEncodingName Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getDefaultTextEncodingName" As CString
-		    Return getDefaultTextEncodingName
+		    Declare Function getDefaultTextEncodingName Lib kLibWebSettingsInstance (obj As Ptr) As CString
+		    Return getDefaultTextEncodingName(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -341,8 +341,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDisabledActionModeMenuItems Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getDisabledActionModeMenuItems" As Integer
-		    Return getDisabledActionModeMenuItems
+		    Declare Function getDisabledActionModeMenuItems Lib kLibWebSettingsInstance (obj As Ptr) As Int32
+		    Return getDisabledActionModeMenuItems(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -354,8 +354,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDisplayZoomControls Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getDisplayZoomControls" As Boolean
-		    Return getDisplayZoomControls
+		    Declare Function getDisplayZoomControls Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getDisplayZoomControls(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -367,8 +367,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDomStorageEnabled Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getDomStorageEnabled" As Boolean
-		    Return getDomStorageEnabled
+		    Declare Function getDomStorageEnabled Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getDomStorageEnabled(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -380,8 +380,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getFantasyFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getFantasyFontFamily" As CString
-		    Return getFantasyFontFamily
+		    Declare Function getFantasyFontFamily Lib kLibWebSettingsInstance (obj As Ptr) As CString
+		    Return getFantasyFontFamily(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -393,8 +393,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getFixedFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getFixedFontFamily" As CString
-		    Return getFixedFontFamily
+		    Declare Function getFixedFontFamily Lib kLibWebSettingsInstance (obj As Ptr) As CString
+		    Return getFixedFontFamily(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -406,8 +406,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getJavaScriptCanOpenWindowsAutomatically Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getJavaScriptCanOpenWindowsAutomatically" As Boolean
-		    Return getJavaScriptCanOpenWindowsAutomatically
+		    Declare Function getJavaScriptCanOpenWindowsAutomatically Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getJavaScriptCanOpenWindowsAutomatically(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -419,8 +419,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getJavaScriptEnabled Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getJavaScriptEnabled" As Boolean
-		    Return getJavaScriptEnabled
+		    Declare Function getJavaScriptEnabled Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getJavaScriptEnabled(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -432,8 +432,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLoadsImagesAutomatically Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getLoadsImagesAutomatically" As Boolean
-		    Return getLoadsImagesAutomatically
+		    Declare Function getLoadsImagesAutomatically Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getLoadsImagesAutomatically(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -445,8 +445,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLoadWithOverviewMode Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getLoadWithOverviewMode" As Boolean
-		    Return getLoadWithOverviewMode
+		    Declare Function getLoadWithOverviewMode Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getLoadWithOverviewMode(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -458,8 +458,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getMediaPlaybackRequiresUserGesture Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getMediaPlaybackRequiresUserGesture" As Boolean
-		    Return getMediaPlaybackRequiresUserGesture
+		    Declare Function getMediaPlaybackRequiresUserGesture Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getMediaPlaybackRequiresUserGesture(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -471,8 +471,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getMinimumFontSize Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getMinimumFontSize" As Integer
-		    Return getMinimumFontSize
+		    Declare Function getMinimumFontSize Lib kLibWebSettingsInstance (obj As Ptr) As Int32
+		    Return getMinimumFontSize(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -484,8 +484,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getMinimumLogicalFontSize Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getMinimumLogicalFontSize" As Integer
-		    Return getMinimumLogicalFontSize
+		    Declare Function getMinimumLogicalFontSize Lib kLibWebSettingsInstance (obj As Ptr) As Int32
+		    Return getMinimumLogicalFontSize(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -497,8 +497,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getMixedContentMode Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getMixedContentMode" As Integer
-		    Return getMixedContentMode
+		    Declare Function getMixedContentMode Lib kLibWebSettingsInstance (obj As Ptr) As Int32
+		    Return getMixedContentMode(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -510,8 +510,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getOffscreenPreRaster Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getOffscreenPreRaster" As Boolean
-		    Return getOffscreenPreRaster
+		    Declare Function getOffscreenPreRaster Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getOffscreenPreRaster(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -523,7 +523,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getOriginalUrl Lib "Object:ctrl:MobileHTMLViewer" As CString
+		    Declare Function getOriginalUrl Lib kLibMobileHTMLViewer As CString
 		    Return getOriginalUrl
 		    
 		  #EndIf
@@ -536,7 +536,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getProgress Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Declare Function getProgress Lib kLibMobileHTMLViewer As Int32
 		    Return getProgress
 		    
 		  #EndIf
@@ -549,7 +549,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getRendererPriorityWaivedWhenNotVisible Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Declare Function getRendererPriorityWaivedWhenNotVisible Lib kLibMobileHTMLViewer As Boolean
 		    Return getRendererPriorityWaivedWhenNotVisible
 		    
 		  #Else
@@ -566,7 +566,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getRendererRequestedPriority Lib "Object:ctrl:MobileHTMLViewer" As Integer
+		    Declare Function getRendererRequestedPriority Lib kLibMobileHTMLViewer As Int32
 		    Return getRendererRequestedPriority
 		    
 		  #EndIf
@@ -579,8 +579,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getSansSerifFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getSansSerifFontFamily" As CString
-		    Return getSansSerifFontFamily
+		    Declare Function getSansSerifFontFamily Lib kLibWebSettingsInstance (obj As Ptr) As CString
+		    Return getSansSerifFontFamily(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -592,8 +592,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getSerifFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getSerifFontFamily" As CString
-		    Return getSerifFontFamily
+		    Declare Function getSerifFontFamily Lib kLibWebSettingsInstance (obj As Ptr) As CString
+		    Return getSerifFontFamily(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -605,8 +605,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getStandardFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getStandardFontFamily" As CString
-		    Return getStandardFontFamily
+		    Declare Function getStandardFontFamily Lib kLibWebSettingsInstance (obj As Ptr) As CString
+		    Return getStandardFontFamily(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -618,8 +618,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTextZoom Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getTextZoom" As Integer
-		    Return getTextZoom
+		    Declare Function getTextZoom Lib kLibWebSettingsInstance (obj As Ptr) As Int32
+		    Return getTextZoom(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -631,7 +631,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTitle Lib "Object:ctrl:MobileHTMLViewer" As CString
+		    Declare Function getTitle Lib kLibMobileHTMLViewer As CString
 		    Return getTitle
 		    
 		  #EndIf
@@ -644,7 +644,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getUrl Lib "Object:ctrl:MobileHTMLViewer" As CString
+		    Declare Function getUrl Lib kLibMobileHTMLViewer As CString
 		    Return getUrl
 		    
 		  #EndIf
@@ -657,8 +657,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getUserAgentString Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getUserAgentString" As CString
-		    Return getUserAgentString
+		    Declare Function getUserAgentString Lib kLibWebSettingsInstance (obj As Ptr) As CString
+		    Return getUserAgentString(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -670,8 +670,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getUseWideViewPort Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().getUseWideViewPort" As Boolean
-		    Return getUseWideViewPort
+		    Declare Function getUseWideViewPort Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return getUseWideViewPort(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -683,7 +683,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub goBackOrForward Lib "Object:ctrl:MobileHTMLViewer" (mySteps As Integer)
+		    Declare Sub goBackOrForward Lib kLibMobileHTMLViewer (mySteps As Int32)
 		    goBackOrForward(steps)
 		    
 		  #Else
@@ -700,7 +700,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub goBack Lib "Object:ctrl:MobileHTMLViewer"
+		    Declare Sub goBack Lib kLibMobileHTMLViewer
 		    goBack
 		    
 		  #EndIf
@@ -713,7 +713,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub goForward Lib "Object:ctrl:MobileHTMLViewer"
+		    Declare Sub goForward Lib kLibMobileHTMLViewer
 		    goForward
 		    
 		  #EndIf
@@ -726,11 +726,28 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub invokeZoomPicker Lib "Object:ctrl:MobileHTMLViewer"
+		    Declare Sub invokeZoomPicker Lib kLibMobileHTMLViewer
 		    invokeZoomPicker
 		    
 		  #EndIf
 		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 47657420696620616C676F726974686D6963206461726B656E696E6720697320616C6C6F776564206F72206E6F7420666F72207468697320576562566965772E205468652064656661756C742069732066616C73652E
+		Function IsAlgorithmicDarkeningAllowedXC(Extends ctrl As MobileHTMLViewer) As Boolean
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isAlgorithmicDarkeningAllowed Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return isAlgorithmicDarkeningAllowed(ctrl.Settings)
+		    
+		  #Else
+		    
+		    Return False
+		    
+		  #EndIf
+		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 47657473207768657468657220707269766174652062726F7773696E6720697320656E61626C656420696E207468697320576562566965772E
@@ -739,7 +756,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isPrivateBrowsingEnabled Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Declare Function isPrivateBrowsingEnabled Lib kLibMobileHTMLViewer As Boolean
 		    Return isPrivateBrowsingEnabled
 		    
 		  #Else
@@ -756,7 +773,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function pageDown Lib "Object:ctrl:MobileHTMLViewer" (myBottom As Boolean) As Boolean
+		    Declare Function pageDown Lib kLibMobileHTMLViewer (myBottom As Boolean) As Boolean
 		    Return pageDown(bottom)
 		    
 		  #Else
@@ -775,7 +792,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function pageUp Lib "Object:ctrl:MobileHTMLViewer" (myTop As Boolean) As Boolean
+		    Declare Function pageUp Lib kLibMobileHTMLViewer (myTop As Boolean) As Boolean
 		    Return pageUp(top)
 		    
 		  #Else
@@ -788,13 +805,40 @@ Protected Module HTMLViewerXC
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 5072696E74732074686520636F6E74656E7473206F6620746865204D6F62696C6548544D4C5669657765722E20
+		Sub PrintXC(Extends ctrl As MobileHTMLViewer)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Const kPrintManager As String = "android.print.PrintManager.instance:Kotlin"
+		    
+		    Declare Function printManager Lib "android.content.Context.instance:Kotlin" Alias _
+		    "getSystemService(android.content.Context.PRINT_SERVICE)" (context As Ptr) As Ptr
+		    
+		    Declare Function createPrintDocumentAdapter Lib "Object:ctrl:MobileHTMLViewer" (documentName As CString) As Ptr
+		    
+		    Declare Function print Lib kPrintManager Alias _
+		    "print(title.toString(), adapter as android.print.PrintDocumentAdapter, android.print.PrintAttributes.Builder().build())" _
+		    (printManager As Ptr, title As CString, adapter As Ptr) As Ptr
+		    
+		    Var oPrintManager As Ptr = printManager(oCurrentScreen.Handle)
+		    Var adapter As Ptr = createPrintDocumentAdapter("Xojo Print")
+		    
+		    Call print(oPrintManager, "Xojo Print", adapter)
+		    
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52656C6F616473207468652063757272656E742055524C2E
 		Sub ReloadXC(Extends ctrl As MobileHTMLViewer)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub reload Lib "Object:ctrl:MobileHTMLViewer"
+		    Declare Sub reload Lib kLibMobileHTMLViewer
 		    reload
 		    
 		  #EndIf
@@ -809,7 +853,7 @@ Protected Module HTMLViewerXC
 		    
 		    #If XojoVersion < 2023.03
 		      
-		      Declare Sub saveWebArchive Lib "Object:ctrl:MobileHTMLViewer" (myFilename As CString)
+		      Declare Sub saveWebArchive Lib kLibMobileHTMLViewer (myFilename As CString)
 		      
 		    #Else
 		      
@@ -827,14 +871,31 @@ Protected Module HTMLViewerXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 436F6E74726F6C207768657468657220616C676F726974686D6963206461726B656E696E6720697320616C6C6F7765642E
+		Sub SetAlgorithmicDarkeningAllowedXC(Extends ctrl As MobileHTMLViewer, allow As Boolean)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setAlgorithmicDarkeningAllowed Lib kLibWebSettingsInstance (obj As Ptr, myAllow As Boolean)
+		    setAlgorithmicDarkeningAllowed(ctrl.Settings, allow)
+		    
+		  #Else
+		    
+		    #Pragma Unused
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 456E61626C6573206F722064697361626C657320636F6E74656E742055524C206163636573732077697468696E20576562566965772E20436F6E74656E742055524C2061636365737320616C6C6F7773205765625669657720746F206C6F616420636F6E74656E742066726F6D206120636F6E74656E742070726F766964657220696E7374616C6C656420696E207468652073797374656D2E205468652064656661756C7420697320656E61626C65642E
 		Sub SetAllowContentAccessXC(Extends ctrl As MobileHTMLViewer, allow As Boolean)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setAllowContentAccess Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setAllowContentAccess" (myAllow As Boolean)
-		    setAllowContentAccess(allow)
+		    Declare Sub setAllowContentAccess Lib kLibWebSettingsInstance (obj As Ptr, myAllow As Boolean)
+		    setAllowContentAccess(ctrl.Settings, allow)
 		    
 		  #Else
 		    
@@ -850,8 +911,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setAllowFileAccess Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setAllowFileAccess" (myAllow As Boolean)
-		    setAllowFileAccess(allow)
+		    Declare Sub setAllowFileAccess Lib kLibWebSettingsInstance (obj As Ptr, myAllow As Boolean)
+		    setAllowFileAccess(ctrl.Settings, allow)
 		    
 		  #Else
 		    
@@ -867,8 +928,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBlockNetworkImage Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setBlockNetworkImage" (myFlag As Boolean)
-		    setBlockNetworkImage(flag)
+		    Declare Sub setBlockNetworkImage Lib kLibWebSettingsInstance (obj As Ptr, myFlag As Boolean)
+		    setBlockNetworkImage(ctrl.Settings, flag)
 		    
 		  #Else
 		    
@@ -884,8 +945,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBlockNetworkLoads Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setBlockNetworkLoads" (myFlag As Boolean)
-		    setBlockNetworkLoads(flag)
+		    Declare Sub setBlockNetworkLoads Lib kLibWebSettingsInstance (obj As Ptr, myFlag As Boolean)
+		    setBlockNetworkLoads(ctrl.Settings, flag)
 		    
 		  #Else
 		    
@@ -901,8 +962,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBuiltInZoomControls Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setBuiltInZoomControls" (myEnabled As Boolean)
-		    setBuiltInZoomControls(enabled)
+		    Declare Sub setBuiltInZoomControls Lib kLibWebSettingsInstance (obj As Ptr, myEnabled As Boolean)
+		    setBuiltInZoomControls(ctrl.Settings, enabled)
 		    
 		  #Else
 		    
@@ -918,8 +979,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setCacheMode Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setCacheMode" (myMode As Integer)
-		    setCacheMode(mode)
+		    Declare Sub setCacheMode Lib kLibWebSettingsInstance (obj As Ptr, myMode As Int32)
+		    setCacheMode(ctrl.Settings, mode)
 		    
 		  #Else
 		    
@@ -935,8 +996,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDefaultFixedFontSize Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setDefaultFixedFontSize" (mySize As Integer)
-		    setDefaultFixedFontSize(size)
+		    Declare Sub setDefaultFixedFontSize Lib kLibWebSettingsInstance (obj As Ptr, mySize As Int32)
+		    setDefaultFixedFontSize(ctrl.Settings, size)
 		    
 		  #Else
 		    
@@ -952,8 +1013,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDefaultFontSize Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setDefaultFontSize" (mySize As Integer)
-		    setDefaultFontSize(size)
+		    Declare Sub setDefaultFontSize Lib kLibWebSettingsInstance (obj As Ptr, mySize As Int32)
+		    setDefaultFontSize(ctrl.Settings, size)
 		    
 		  #Else
 		    
@@ -969,8 +1030,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDefaultTextEncodingName Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setDefaultTextEncodingName" (myEncoding As CString)
-		    setDefaultTextEncodingName(encoding)
+		    Declare Sub setDefaultTextEncodingName Lib kLibWebSettingsInstance (obj As Ptr,myEncoding As CString)
+		    setDefaultTextEncodingName(ctrl.Settings, encoding)
 		    
 		  #Else
 		    
@@ -986,8 +1047,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDisabledActionModeMenuItems Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setDisabledActionModeMenuItems" (myMenuItems As Integer)
-		    setDisabledActionModeMenuItems(menuItems)
+		    Declare Sub setDisabledActionModeMenuItems Lib kLibWebSettingsInstance (obj As Ptr, myMenuItems As Int32)
+		    setDisabledActionModeMenuItems(ctrl.Settings, menuItems)
 		    
 		  #Else
 		    
@@ -1003,8 +1064,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDisplayZoomControls Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setDisplayZoomControls" (myEnabled As Boolean)
-		    setDisplayZoomControls(enabled)
+		    Declare Sub setDisplayZoomControls Lib kLibWebSettingsInstance (obj As Ptr, myEnabled As Boolean)
+		    setDisplayZoomControls(ctrl.Settings, enabled)
 		    
 		  #Else
 		    
@@ -1020,8 +1081,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDomStorageEnabled Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setDomStorageEnabled" (myFlag As Boolean)
-		    setDomStorageEnabled(flag)
+		    Declare Sub setDomStorageEnabled Lib kLibWebSettingsInstance (obj As Ptr, myFlag As Boolean)
+		    setDomStorageEnabled(ctrl.Settings, flag)
 		    
 		  #Else
 		    
@@ -1037,8 +1098,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setFantasyFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setFantasyFontFamily" (myFont As CString)
-		    setFantasyFontFamily(font)
+		    Declare Sub setFantasyFontFamily Lib kLibWebSettingsInstance (obj As Ptr, myFont As CString)
+		    setFantasyFontFamily(ctrl.Settings, font)
 		    
 		  #Else
 		    
@@ -1054,8 +1115,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setFixedFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setFixedFontFamily" (myFont As CString)
-		    setFixedFontFamily(font)
+		    Declare Sub setFixedFontFamily Lib kLibWebSettingsInstance (obj As Ptr, myFont As CString)
+		    setFixedFontFamily(ctrl.Settings, font)
 		    
 		  #Else
 		    
@@ -1071,8 +1132,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setGeolocationEnabled Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setGeolocationEnabled" (myFlag As Boolean)
-		    setGeolocationEnabled(flag)
+		    Declare Sub setGeolocationEnabled Lib kLibWebSettingsInstance (obj As Ptr, myFlag As Boolean)
+		    setGeolocationEnabled(ctrl.Settings, flag)
 		    
 		  #Else
 		    
@@ -1088,7 +1149,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setInitialScale Lib "Object:ctrl:MobileHTMLViewer" (myScaleInPercent As Integer)
+		    Declare Sub setInitialScale Lib kLibMobileHTMLViewer (myScaleInPercent As Int32)
 		    setInitialScale(scaleInPercent)
 		    
 		  #Else
@@ -1105,8 +1166,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setJavaScriptCanOpenWindowsAutomatically Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setJavaScriptCanOpenWindowsAutomatically" (myFlag As Boolean)
-		    setJavaScriptCanOpenWindowsAutomatically(flag)
+		    Declare Sub setJavaScriptCanOpenWindowsAutomatically Lib kLibWebSettingsInstance (obj As Ptr, myFlag As Boolean)
+		    setJavaScriptCanOpenWindowsAutomatically(ctrl.Settings, flag)
 		    
 		  #Else
 		    
@@ -1122,8 +1183,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setJavaScriptEnabled Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setJavaScriptEnabled" (myFlag As Boolean)
-		    setJavaScriptEnabled(flag)
+		    Declare Sub setJavaScriptEnabled Lib kLibWebSettingsInstance (obj As Ptr, myFlag As Boolean)
+		    setJavaScriptEnabled(ctrl.Settings, flag)
 		    
 		  #Else
 		    
@@ -1139,8 +1200,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setLoadsImagesAutomatically Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setLoadsImagesAutomatically" (myFlag As Boolean)
-		    setLoadsImagesAutomatically(flag)
+		    Declare Sub setLoadsImagesAutomatically Lib kLibWebSettingsInstance (obj As Ptr, myFlag As Boolean)
+		    setLoadsImagesAutomatically(ctrl.Settings, flag)
 		    
 		  #Else
 		    
@@ -1156,8 +1217,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setLoadWithOverviewMode Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setLoadWithOverviewMode" (myOverview As Boolean)
-		    setLoadWithOverviewMode(overview)
+		    Declare Sub setLoadWithOverviewMode Lib kLibWebSettingsInstance (obj As Ptr, myOverview As Boolean)
+		    setLoadWithOverviewMode(ctrl.Settings, overview)
 		    
 		  #Else
 		    
@@ -1173,8 +1234,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setMediaPlaybackRequiresUserGesture Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setMediaPlaybackRequiresUserGesture" (myRequire As Boolean)
-		    setMediaPlaybackRequiresUserGesture(require)
+		    Declare Sub setMediaPlaybackRequiresUserGesture Lib kLibWebSettingsInstance (obj As Ptr, myRequire As Boolean)
+		    setMediaPlaybackRequiresUserGesture(ctrl.Settings, require)
 		    
 		  #Else
 		    
@@ -1190,8 +1251,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setMinimumFontSize Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setMinimumFontSize" (mySize As Integer)
-		    setMinimumFontSize(size)
+		    Declare Sub setMinimumFontSize Lib kLibWebSettingsInstance (obj As Ptr, mySize As Int32)
+		    setMinimumFontSize(ctrl.Settings, size)
 		    
 		  #Else
 		    
@@ -1207,8 +1268,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setMinimumLogicalFontSize Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setMinimumLogicalFontSize" (mySize As Integer)
-		    setMinimumLogicalFontSize(size)
+		    Declare Sub setMinimumLogicalFontSize Lib kLibWebSettingsInstance (obj As Ptr, mySize As Int32)
+		    setMinimumLogicalFontSize(ctrl.Settings, size)
 		    
 		  #Else
 		    
@@ -1224,8 +1285,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setMixedContentMode Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setMixedContentMode" (myMode As Integer)
-		    setMixedContentMode(mode)
+		    Declare Sub setMixedContentMode Lib kLibWebSettingsInstance (obj As Ptr, myMode As Int32)
+		    setMixedContentMode(ctrl.Settings, mode)
 		    
 		  #Else
 		    
@@ -1241,8 +1302,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setNeedInitialFocus Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setNeedInitialFocus" (myFlag As Boolean)
-		    setNeedInitialFocus(flag)
+		    Declare Sub setNeedInitialFocus Lib kLibWebSettingsInstance (obj As Ptr, myFlag As Boolean)
+		    setNeedInitialFocus(ctrl.Settings, flag)
 		    
 		  #Else
 		    
@@ -1258,7 +1319,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setNetworkAvailable Lib "Object:ctrl:MobileHTMLViewer" (myNetworkUp As Boolean)
+		    Declare Sub setNetworkAvailable Lib kLibMobileHTMLViewer (myNetworkUp As Boolean)
 		    setNetworkAvailable(networkUp)
 		    
 		  #Else
@@ -1275,8 +1336,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setOffscreenPreRaster Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setOffscreenPreRaster" (myEnabled As Boolean)
-		    setOffscreenPreRaster(enabled)
+		    Declare Sub setOffscreenPreRaster Lib kLibWebSettingsInstance (obj As Ptr, myEnabled As Boolean)
+		    setOffscreenPreRaster(ctrl.Settings, enabled)
 		    
 		  #Else
 		    
@@ -1292,8 +1353,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSafeBrowsingEnabled Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setSafeBrowsingEnabled" (myEnabled As Boolean)
-		    setSafeBrowsingEnabled(enabled)
+		    Declare Sub setSafeBrowsingEnabled Lib kLibWebSettingsInstance (obj As Ptr, myEnabled As Boolean)
+		    setSafeBrowsingEnabled(ctrl.Settings, enabled)
 		    
 		  #Else
 		    
@@ -1309,8 +1370,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSansSerifFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setSansSerifFontFamily" (myFont As CString)
-		    setSansSerifFontFamily(font)
+		    Declare Sub setSansSerifFontFamily Lib kLibWebSettingsInstance (obj As Ptr, myFont As CString)
+		    setSansSerifFontFamily(ctrl.Settings, font)
 		    
 		  #Else
 		    
@@ -1326,8 +1387,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSerifFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setSerifFontFamily" (myFont As CString)
-		    setSerifFontFamily(font)
+		    Declare Sub setSerifFontFamily Lib kLibWebSettingsInstance (obj As Ptr, myFont As CString)
+		    setSerifFontFamily(ctrl.Settings, font)
 		    
 		  #Else
 		    
@@ -1343,8 +1404,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStandardFontFamily Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setStandardFontFamily" (myFont As CString)
-		    setStandardFontFamily(font)
+		    Declare Sub setStandardFontFamily Lib kLibWebSettingsInstance (obj As Ptr, myFont As CString)
+		    setStandardFontFamily(ctrl.Settings, font)
 		    
 		  #Else
 		    
@@ -1360,8 +1421,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSupportMultipleWindows Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setSupportMultipleWindows" (mySupport As Boolean)
-		    setSupportMultipleWindows(support)
+		    Declare Sub setSupportMultipleWindows Lib kLibWebSettingsInstance (obj As Ptr, mySupport As Boolean)
+		    setSupportMultipleWindows(ctrl.Settings, support)
 		    
 		  #Else
 		    
@@ -1377,8 +1438,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSupportZoom Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setSupportZoom" (mySupport As Boolean)
-		    setSupportZoom(support)
+		    Declare Sub setSupportZoom Lib kLibWebSettingsInstance (obj As Ptr, mySupport As Boolean)
+		    setSupportZoom(ctrl.Settings, support)
 		    
 		  #Else
 		    
@@ -1394,8 +1455,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTextZoom Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setTextZoom" (myTextZoom As Integer)
-		    setTextZoom(textZoom)
+		    Declare Sub setTextZoom Lib kLibWebSettingsInstance (obj As Ptr, myTextZoom As Int32)
+		    setTextZoom(ctrl.Settings, textZoom)
 		    
 		  #Else
 		    
@@ -1405,14 +1466,27 @@ Protected Module HTMLViewerXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h21, Description = 52657475726E73207468652057656253657474696E677320696E7374616E636520666F7220746865204D6F62696C6548544D4C5669657765722E
+		Private Function Settings(Extends ctrl As MobileHTMLViewer) As Ptr
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getSettings Lib kLibMobileHTMLViewer As Ptr
+		    Return getSettings
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 53657473207468652057656256696577277320757365722D6167656E7420737472696E672E2049662074686520737472696E67206973206E756C6C206F7220656D7074792C207468652073797374656D2064656661756C742076616C75652077696C6C20626520757365642E0A0A49662074686520757365722D6167656E74206973206F76657272696464656E20696E2074686973207761792C207468652076616C756573206F662074686520557365722D4167656E7420436C69656E742048696E7473206865616465727320616E64206E6176696761746F722E757365724167656E744461746120666F72207468697320576562566965772077696C6C20626520656D7074792E0A0A4E6F74652074686174207374617274696E672066726F6D204275696C642E56455253494F4E5F434F4445532E4B49544B415420416E64726F69642076657273696F6E2C206368616E67696E672074686520757365722D6167656E74207768696C65206C6F6164696E67206120776562207061676520636175736573205765625669657720746F20696E697469617465206C6F6164696E67206F6E636520616761696E2E
 		Sub SetUserAgentStringXC(Extends ctrl As MobileHTMLViewer, ua As CString)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setUserAgentString Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setUserAgentString" (myUA As CString)
-		    setUserAgentString(ua)
+		    Declare Sub setUserAgentString Lib kLibWebSettingsInstance (obj As Ptr, myUA As CString)
+		    setUserAgentString(ctrl.Settings, ua)
 		    
 		  #Else
 		    
@@ -1428,8 +1502,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setUseWideViewPort Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().setUseWideViewPort" (myUse As Boolean)
-		    setUseWideViewPort(use)
+		    Declare Sub setUseWideViewPort Lib kLibWebSettingsInstance (obj As Ptr, myUse As Boolean)
+		    setUseWideViewPort(ctrl.Settings, use)
 		    
 		  #Else
 		    
@@ -1445,7 +1519,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub stopLoading Lib "Object:ctrl:MobileHTMLViewer"
+		    Declare Sub stopLoading Lib kLibMobileHTMLViewer
 		    stopLoading
 		    
 		  #EndIf
@@ -1458,8 +1532,8 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function supportZoom Lib "Object:ctrl:MobileHTMLViewer" Alias "getSettings().supportZoom" As Boolean
-		    Return supportZoom
+		    Declare Function supportZoom Lib kLibWebSettingsInstance (obj As Ptr) As Boolean
+		    Return supportZoom(ctrl.Settings)
 		    
 		  #EndIf
 		End Function
@@ -1471,7 +1545,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub zoomBy Lib "Object:ctrl:MobileHTMLViewer" (myZoomFactor As Single)
+		    Declare Sub zoomBy Lib kLibMobileHTMLViewer (myZoomFactor As Single)
 		    zoomBy(zoomFactor)
 		    
 		  #Else
@@ -1488,7 +1562,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function zoomIn Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Declare Function zoomIn Lib kLibMobileHTMLViewer As Boolean
 		    Return zoomIn
 		    
 		  #Else
@@ -1505,7 +1579,7 @@ Protected Module HTMLViewerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function zoomOut Lib "Object:ctrl:MobileHTMLViewer" As Boolean
+		    Declare Function zoomOut Lib kLibMobileHTMLViewer As Boolean
 		    Return zoomOut
 		    
 		  #Else
@@ -1515,6 +1589,13 @@ Protected Module HTMLViewerXC
 		  #EndIf
 		End Function
 	#tag EndMethod
+
+
+	#tag Constant, Name = kLibMobileHTMLViewer, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileHTMLViewer", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibWebSettingsInstance, Type = String, Dynamic = False, Default = \"android.webkit.WebSettings.instance", Scope = Private
+	#tag EndConstant
 
 
 	#tag ViewBehavior

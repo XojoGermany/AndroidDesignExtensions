@@ -1,32 +1,12 @@
 #tag MobileScreen
-Begin TemplateScreen ControlScreen
+Begin TemplateScreenWithBackButton ControlScreen
    Compatibility   =   ""
-   HasNavigationBar=   False
+   Device          =   1
+   HasBackButton   =   True
+   HasNavigationBar=   True
    Modal           =   False
    Orientation     =   0
-   Title           =   "Untitled"
-   Begin NavigationBarContainer NavigationBarContainer1
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      BackgroundColor =   &c00000000
-      ControlCount    =   0
-      Enabled         =   True
-      HasBackButton   =   False
-      HasBackgroundColor=   False
-      HasGradient     =   True
-      Height          =   56
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Text            =   ""
-      Top             =   0
-      Visible         =   True
-      Width           =   360
-   End
+   Title           =   "Controls"
    Begin MobileScrollableArea ControlScrollableArea
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
@@ -40,7 +20,7 @@ Begin TemplateScreen ControlScreen
       LockTop         =   True
       Scope           =   2
       ScrollContent   =   448548863
-      Top             =   56
+      Top             =   0
       Visible         =   True
       Width           =   360
    End
@@ -50,19 +30,15 @@ End
 #tag ScreenCode
 #tag EndScreenCode
 
-#tag Events NavigationBarContainer1
-	#tag Event
-		Sub Opening()
-		  Me.Text = "Controls"
-		End Sub
-	#tag EndEvent
-	#tag Event
-		Sub Pressed()
-		  Close
-		End Sub
-	#tag EndEvent
-#tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="HasBackButton"
+		Visible=true
+		Group="Behavior"
+		InitialValue="False"
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Name"
 		Visible=true

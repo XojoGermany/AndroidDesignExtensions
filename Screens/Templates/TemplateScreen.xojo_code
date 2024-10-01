@@ -1,12 +1,13 @@
 #tag Class
 Protected Class TemplateScreen
 Inherits MobileScreen
-	#tag CompatibilityFlags = ( TargetConsole and ( Target32Bit or Target64Bit ) ) or ( TargetWeb and ( Target32Bit or Target64Bit ) ) or ( TargetDesktop and ( Target32Bit or Target64Bit ) ) or ( TargetIOS and ( Target64Bit ) ) or ( TargetAndroid and ( Target64Bit ) )
 	#tag Event
 		Sub Opening()
-		  Self.SetBackgroundColorXC(If(Color.IsDarkMode, &c121212, Color.White))
-		  Self.SetNavigationBarColorXC(If(Color.IsDarkMode, &c121212, Color.White))
-		  Self.SetNavigationBarDividerColorXC(If(Color.IsDarkMode, &c121212, Color.White))
+		  If Color.IsDarkMode Then
+		    
+		    Self.SetBackgroundColorXC(&c1A1B21)
+		    
+		  End If
 		  
 		  If Not Color.IsDarkMode Then
 		    
@@ -25,17 +26,21 @@ Inherits MobileScreen
 		      Self.SetSystemBarsAppearanceXC(kAPPEARANCE_LIGHT_STATUS_BARS, kAPPEARANCE_LIGHT_STATUS_BARS)
 		    End Select
 		    
-		    
 		  End If
 		  
-		  If Color.IsDarkMode Then
-		    
-		    Self.SetStatusBarColorXC(&c121212)
-		    
-		  End If
-		  
-		  ' Call Opening-Event
 		  RaiseEvent Opening
+		  
+		  Self.SetMaterialToolbarElevationXC(0) ' remove the toolbars shadow
+		  Self.SetMaterialToolbarBackgroundColorXC(ToolbarColor)
+		  Self.SetTitleCenteredXC(TitleCentered)
+		  Self.SetTitleTextColorXC(If(Color.IsDarkMode, &cF1F0F7, Color.Black))
+		  Self.SetTitleTextSizeXC(If(Self IsA TemplateScreenWithBackButton, 1, 0), 17.5)
+		  
+		  If StatusBarColor <> Color.Clear Then
+		    
+		    Self.SetStatusBarColorXC(StatusBarColor)
+		    
+		  End If
 		  
 		  For Each ctrl As MobileUIControl In Self.Controls
 		    
@@ -55,15 +60,20 @@ Inherits MobileScreen
 	#tag EndHook
 
 
+	#tag Property, Flags = &h0
+		StatusBarColor As Color = Color.Clear
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		TitleCentered As Boolean
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		ToolbarColor As Color
+	#tag EndProperty
+
+
 	#tag ViewBehavior
-		#tag ViewProperty
-			Name="HasBackButton"
-			Visible=true
-			Group="Behavior"
-			InitialValue="False"
-			Type="Boolean"
-			EditorType=""
-		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Name"
 			Visible=true
@@ -105,14 +115,6 @@ Inherits MobileScreen
 			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
-			Name="ControlCount"
-			Visible=false
-			Group="Behavior"
-			InitialValue=""
-			Type="Integer"
-			EditorType=""
-		#tag EndViewProperty
-		#tag ViewProperty
 			Name="Title"
 			Visible=true
 			Group="Behavior"
@@ -130,10 +132,26 @@ Inherits MobileScreen
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Modal"
+			Visible=true
+			Group="Behavior"
+			InitialValue="False"
+			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="HasBackButton"
+			Visible=true
+			Group="Behavior"
+			InitialValue="True"
+			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="ControlCount"
 			Visible=false
 			Group="Behavior"
 			InitialValue=""
-			Type="Boolean"
+			Type="Integer"
 			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
@@ -142,6 +160,30 @@ Inherits MobileScreen
 			Group="Behavior"
 			InitialValue=""
 			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="ToolbarColor"
+			Visible=false
+			Group="Behavior"
+			InitialValue="&c000000"
+			Type="Color"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="TitleCentered"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="StatusBarColor"
+			Visible=false
+			Group="Behavior"
+			InitialValue="Color.Clear"
+			Type="Color"
 			EditorType=""
 		#tag EndViewProperty
 	#tag EndViewBehavior

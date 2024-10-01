@@ -1,33 +1,12 @@
 #tag MobileScreen
-Begin TemplateScreen AppScreen
-   Compatibility   =   ""
-   HasBackButton   =   False
-   HasNavigationBar=   False
+Begin TemplateScreenWithBackButton AppScreen
+   Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
+   Device          =   1
+   HasBackButton   =   True
+   HasNavigationBar=   True
    Modal           =   False
    Orientation     =   0
-   Title           =   "Untitled"
-   Begin NavigationBarContainer NavigationBarContainer1
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      BackgroundColor =   &c00000000
-      ControlCount    =   0
-      Enabled         =   True
-      HasBackButton   =   False
-      HasBackgroundColor=   False
-      HasGradient     =   True
-      Height          =   56
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Text            =   ""
-      Top             =   0
-      Visible         =   True
-      Width           =   360
-   End
+   Title           =   "Application"
    Begin AndroidMobileTable Table1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
@@ -37,6 +16,7 @@ Begin TemplateScreen AppScreen
       Height          =   700
       InitialValue    =   ""
       LastAddedRowIndex=   0
+      LastRowIndex    =   0
       Left            =   0
       LockBottom      =   True
       LockedInPosition=   False
@@ -50,7 +30,7 @@ Begin TemplateScreen AppScreen
       SelectedRowText =   ""
       SeparatorColor  =   &c00000000
       SeparatorThickness=   0
-      Top             =   56
+      Top             =   0
       Visible         =   True
       Width           =   360
    End
@@ -62,47 +42,52 @@ End
 		Private Sub AddRow(value As String, detail As String = "")
 		  Table1.AddRow(value, detail)
 		  Table1.RowDetailColorAt(Table1.LastAddedRowIndex) = Color.TextColor
-		  Table1.RowTextColorAt(Table1.LastAddedRowIndex) = If(Color.IsDarkMode, &cD3D3D3, Color.PrimaryThemeColor)
+		  Table1.RowTextColorAt(Table1.LastAddedRowIndex) = If(Color.IsDarkMode, &cF1F0F7, Color.PrimaryThemeColor)
 		End Sub
 	#tag EndMethod
 
 
 #tag EndScreenCode
 
-#tag Events NavigationBarContainer1
-	#tag Event
-		Sub Opening()
-		  Me.Text = "Application"
-		End Sub
-	#tag EndEvent
-	#tag Event
-		Sub Pressed()
-		  Close
-		End Sub
-	#tag EndEvent
-#tag EndEvents
 #tag Events Table1
 	#tag Event
 		Sub Opening()
+		  If Color.IsDarkMode Then
+		    
+		    Me.SetVerticalScrollbarThumbColor(&c73737D)
+		    
+		  End If
+		  
 		  Me.RowDetailFont = Font.SystemFont(13.5)
 		  Me.RowTextFont = Font.BoldSystemFont
 		  Me.SeparatorColor = If(Color.IsDarkMode, &c21212100, &cCACACC00)
 		  
+		  AddRow("Scale Factor", ScaleFactorXC.ToString)
+		  
+		  AddRow("Font Scale Factor", FontScaleXC.ToString)
+		  
+		  ' Working for API 30+ (Android 11+)
+		  If System.Version.MajorVersion >= 11 Then
+		    
+		    AddRow("Night Mode Active", IsNightModeActiveXC.ToString)
+		    
+		  End If
+		  
 		  AddRow("Class Name", App.ClassNameXC)
 		  
-		  AddRow("Data Directory", App.DataDirXC)
+		  AddRow("Data Directory", "📂" + App.DataDirXC)
 		  
-		  AddRow("Device Protected Data Directory", App.DeviceProtectedDataDirXC)
+		  AddRow("Device Protected Data Directory", "📂" + App.DeviceProtectedDataDirXC)
 		  
-		  AddRow("Cache Directory", App.GetCacheDirXC)
+		  AddRow("Cache Directory", "📂" + App.GetCacheDirXC)
 		  
-		  AddRow("Code Cache Directory", App.GetCodeCacheDirXC)
+		  AddRow("Code Cache Directory", "📂" + App.GetCodeCacheDirXC)
 		  
-		  AddRow("Data Directory", App.GetDataDirXC)
+		  AddRow("Data Directory", "📂" + App.GetDataDirXC)
 		  
-		  AddRow("External Cache Directory", App.GetExternalCacheDirXC)
+		  AddRow("External Cache Directory", "📂" + App.GetExternalCacheDirXC)
 		  
-		  AddRow("Files Directory", App.GetFilesDirXC)
+		  AddRow("Files Directory", "📂" + App.GetFilesDirXC)
 		  
 		  AddRow("isScreenHdr", App.IsScreenHdrXC.ToString)
 		  
@@ -114,13 +99,13 @@ End
 		  
 		  AddRow("Target SDK Version", App.TargetSdkVersionXC.ToString)
 		  
-		  AddRow("Native Library Directory", App.NativeLibraryDirXC)
+		  AddRow("Native Library Directory", "📂" + App.NativeLibraryDirXC)
 		  
 		  AddRow("Process Name", App.ProcessNameXC)
 		  
-		  AddRow("Public Source Directory", App.PublicSourceDirXC)
+		  AddRow("Public Source Directory", "📂" + App.PublicSourceDirXC)
 		  
-		  AddRow("Source Directory", App.SourceDirXC)
+		  AddRow("Source Directory", "📂" + App.SourceDirXC)
 		  
 		  AddRow("Task Affinity", App.TaskAffinityXC)
 		  

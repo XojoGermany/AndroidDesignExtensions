@@ -7,7 +7,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub append Lib "Object:ctrl:MobileTextArea" (myText As CString, myStart As Integer, myStop As Integer)
+		    Declare Sub append Lib kLibMobileTextArea (myText As CString, myStart As Int32, myStop As Int32)
 		    append(text, start, stop)
 		    
 		  #Else
@@ -26,7 +26,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getAutoLinkMask Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getAutoLinkMask Lib kLibMobileTextArea As Integer
 		    Return AutoLinkMaskXC(getAutoLinkMask)
 		    
 		  #EndIf
@@ -39,7 +39,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBottomPadding Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getBottomPadding" As Integer
+		    Declare Function getBottomPadding Lib kLibMobileTextArea Alias "getLayout().getBottomPadding" As Int32
 		    Return getBottomPadding
 		    
 		  #EndIf
@@ -47,13 +47,13 @@ Protected Module TextAreaXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 47657473207468652063757272656E7420737472617465677920666F7220627265616B696E67207061726167726170687320696E746F206C696E65732E
-		Function GetBreakStrategyXC(Extends ctrl As MobileTextArea) As Integer
+		Function GetBreakStrategyXC(Extends ctrl As MobileTextArea) As BreakStrategyXC
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBreakStrategy Lib "Object:ctrl:MobileTextArea" As Integer
-		    Return getBreakStrategy
+		    Declare Function getBreakStrategy Lib kLibMobileTextArea As Integer
+		    Return BreakStrategyXC(getBreakStrategy)
 		    
 		  #EndIf
 		End Function
@@ -65,7 +65,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCompoundDrawablePadding Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getCompoundDrawablePadding Lib kLibMobileTextArea As Int32
 		    Return getCompoundDrawablePadding
 		    
 		  #EndIf
@@ -78,7 +78,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCompoundPaddingBottom Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getCompoundPaddingBottom Lib kLibMobileTextArea As Int32
 		    Return getCompoundPaddingBottom
 		    
 		  #EndIf
@@ -91,7 +91,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCompoundPaddingEnd Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getCompoundPaddingEnd Lib kLibMobileTextArea As Int32
 		    Return getCompoundPaddingEnd
 		    
 		  #EndIf
@@ -104,7 +104,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCompoundPaddingLeft Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getCompoundPaddingLeft Lib kLibMobileTextArea As Int32
 		    Return getCompoundPaddingLeft
 		    
 		  #EndIf
@@ -117,7 +117,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCompoundPaddingRight Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getCompoundPaddingRight Lib kLibMobileTextArea As Int32
 		    Return getCompoundPaddingRight
 		    
 		  #EndIf
@@ -130,7 +130,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCompoundPaddingStart Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getCompoundPaddingStart Lib kLibMobileTextArea As Int32
 		    Return getCompoundPaddingStart
 		    
 		  #EndIf
@@ -143,7 +143,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCompoundPaddingTop Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getCompoundPaddingTop Lib kLibMobileTextArea As Int32
 		    Return getCompoundPaddingTop
 		    
 		  #EndIf
@@ -156,7 +156,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getError Lib "Object:ctrl:MobileTextArea" As CString
+		    Declare Function getError Lib kLibMobileTextArea As CString
 		    Return getError
 		    
 		  #EndIf
@@ -169,7 +169,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getExtendedPaddingBottom Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getExtendedPaddingBottom Lib kLibMobileTextArea As Int32
 		    Return getExtendedPaddingBottom
 		    
 		  #EndIf
@@ -182,7 +182,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getExtendedPaddingTop Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getExtendedPaddingTop Lib kLibMobileTextArea As Int32
 		    Return getExtendedPaddingTop
 		    
 		  #EndIf
@@ -195,7 +195,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getFirstBaselineToTopHeight Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getFirstBaselineToTopHeight Lib kLibMobileTextArea As Int32
 		    Return getFirstBaselineToTopHeight
 		    
 		  #EndIf
@@ -208,7 +208,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getHighlightColor Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getHighlightColor Lib kLibMobileTextArea As Int32
 		    Return getHighlightColor.ToColor
 		    
 		  #EndIf
@@ -221,7 +221,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getHintTextColors Lib "Object:ctrl:MobileTextArea" Alias "getHintTextColors().getDefaultColor" As Integer
+		    Declare Function getHintTextColors Lib kLibMobileTextArea Alias "getHintTextColors().getDefaultColor" As Int32
 		    Return getHintTextColors.ToColor
 		    
 		  #EndIf
@@ -234,7 +234,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getHint Lib "Object:ctrl:MobileTextArea" As CString
+		    Declare Function getHint Lib kLibMobileTextArea As CString
 		    Return getHint
 		    
 		  #EndIf
@@ -242,13 +242,13 @@ Protected Module TextAreaXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 52657475726E73207468652064697374616E6365206265747765656E20746865206669727374207465787420626173656C696E6520616E642074686520746F70206F6620746869732054657874566965772E
-		Function GetHyphenationFrequencyXC(Extends ctrl As MobileTextArea) As Integer
+		Function GetHyphenationFrequencyXC(Extends ctrl As MobileTextArea) As HyphenationFrequencyXC
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getHyphenationFrequency Lib "Object:ctrl:MobileTextArea" As Integer
-		    Return getHyphenationFrequency
+		    Declare Function getHyphenationFrequency Lib kLibMobileTextArea As Integer
+		    Return HyphenationFrequencyXC(getHyphenationFrequency)
 		    
 		  #EndIf
 		End Function
@@ -260,7 +260,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getImeOptions Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getImeOptions Lib kLibMobileTextArea As Int32
 		    Return getImeOptions
 		    
 		  #EndIf
@@ -273,7 +273,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getIncludeFontPadding Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Declare Function getIncludeFontPadding Lib kLibMobileTextArea As Boolean
 		    Return getIncludeFontPadding
 		    
 		  #Else
@@ -290,7 +290,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getInputType Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getInputType Lib kLibMobileTextArea As Int32
 		    Return getInputType
 		    
 		  #EndIf
@@ -298,13 +298,13 @@ Protected Module TextAreaXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Function GetJustificationModeXC(Extends ctrl As MobileTextArea) As Integer
+		Function GetJustificationModeXC(Extends ctrl As MobileTextArea) As JustificationModesXC
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getJustificationMode Lib "Object:ctrl:MobileTextArea" As Integer
-		    Return getJustificationMode
+		    Declare Function getJustificationMode Lib kLibMobileTextArea As Integer
+		    Return JustificationModesXC(getJustificationMode)
 		    
 		  #EndIf
 		End Function
@@ -316,7 +316,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLastBaselineToBottomHeight Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getLastBaselineToBottomHeight Lib kLibMobileTextArea As Int32
 		    Return getLastBaselineToBottomHeight
 		    
 		  #EndIf
@@ -329,7 +329,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineAscent Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineAscent" (myLine As Integer) As Integer
+		    Declare Function getLineAscent Lib kLibMobileTextArea Alias "getLayout().getLineAscent" (myLine As Int32) As Int32
 		    Return getLineAscent(line)
 		    
 		  #Else
@@ -346,7 +346,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineBaseline Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineBaseline" (myLine As Integer) As Integer
+		    Declare Function getLineBaseline Lib kLibMobileTextArea Alias "getLayout().getLineBaseline" (myLine As Int32) As Int32
 		    Return getLineBaseline(line)
 		    
 		  #Else
@@ -363,7 +363,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineBottom Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineBottom" (myLine As Integer) As Integer
+		    Declare Function getLineBottom Lib kLibMobileTextArea Alias "getLayout().getLineBottom" (myLine As Int32) As Int32
 		    Return getLineBottom(line)
 		    
 		  #Else
@@ -380,7 +380,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineContainsTab Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineContainsTab" (myLine As Integer) As Boolean
+		    Declare Function getLineContainsTab Lib kLibMobileTextArea Alias "getLayout().getLineContainsTab" (myLine As Int32) As Boolean
 		    Return getLineContainsTab(line)
 		    
 		  #Else
@@ -397,7 +397,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineCount Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getLineCount Lib kLibMobileTextArea As Int32
 		    Return getLineCount
 		    
 		  #EndIf
@@ -410,7 +410,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineDescent Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineDescent" (myLine As Integer) As Integer
+		    Declare Function getLineDescent Lib kLibMobileTextArea Alias "getLayout().getLineDescent" (myLine As Int32) As Int32
 		    Return getLineDescent(line)
 		    
 		  #Else
@@ -427,7 +427,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineEnd Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineEnd" (myLine As Integer) As Integer
+		    Declare Function getLineEnd Lib kLibMobileTextArea Alias "getLayout().getLineEnd" (myLine As Int32) As Int32
 		    Return getLineEnd(line)
 		    
 		  #Else
@@ -444,7 +444,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineForOffset Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineForOffset" (myLine As Integer) As Integer
+		    Declare Function getLineForOffset Lib kLibMobileTextArea Alias "getLayout().getLineForOffset" (myLine As Int32) As Int32
 		    Return getLineForOffset(line)
 		    
 		  #Else
@@ -461,7 +461,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineForVertical Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineForVertical" (myVertical As Integer) As Integer
+		    Declare Function getLineForVertical Lib kLibMobileTextArea Alias "getLayout().getLineForVertical" (myVertical As Int32) As Int32
 		    Return getLineForVertical(vertical)
 		    
 		  #Else
@@ -478,7 +478,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineHeight Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getLineHeight Lib kLibMobileTextArea As Int32
 		    Return getLineHeight
 		    
 		  #EndIf
@@ -491,7 +491,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineLeft Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineLeft" (myLine As Integer) As Single
+		    Declare Function getLineLeft Lib kLibMobileTextArea Alias "getLayout().getLineLeft" (myLine As Int32) As Single
 		    Return getLineLeft(line)
 		    
 		  #Else
@@ -508,7 +508,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineMax Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineMax" (myLine As Integer) As Single
+		    Declare Function getLineMax Lib kLibMobileTextArea Alias "getLayout().getLineMax" (myLine As Int32) As Single
 		    Return getLineMax(line)
 		    
 		  #Else
@@ -525,7 +525,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineRight Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineRight" (myLine As Integer) As Single
+		    Declare Function getLineRight Lib kLibMobileTextArea Alias "getLayout().getLineRight" (myLine As Int32) As Single
 		    Return getLineRight(line)
 		    
 		  #Else
@@ -542,7 +542,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineStart Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineStart" (myLine As Integer) As Integer
+		    Declare Function getLineStart Lib kLibMobileTextArea Alias "getLayout().getLineStart" (myLine As Int32) As Int32
 		    Return getLineStart(line)
 		    
 		  #Else
@@ -559,7 +559,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineTop Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineTop" (myLine As Integer) As Integer
+		    Declare Function getLineTop Lib kLibMobileTextArea Alias "getLayout().getLineTop" (myLine As Int32) As Int32
 		    Return getLineTop(line)
 		    
 		  #Else
@@ -576,7 +576,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineVisibleEnd Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineVisibleEnd" (myLine As Integer) As Integer
+		    Declare Function getLineVisibleEnd Lib kLibMobileTextArea Alias "getLayout().getLineVisibleEnd" (myLine As Int32) As Int32
 		    Return getLineVisibleEnd(line)
 		    
 		  #Else
@@ -593,7 +593,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLineWidth Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getLineWidth" (myLine As Integer) As Single
+		    Declare Function getLineWidth Lib kLibMobileTextArea Alias "getLayout().getLineWidth" (myLine As Int32) As Single
 		    Return getLineWidth(line)
 		    
 		  #Else
@@ -610,7 +610,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLinksClickable Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Declare Function getLinksClickable Lib kLibMobileTextArea As Boolean
 		    Return getLinksClickable
 		    
 		  #EndIf
@@ -623,7 +623,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getLinkTextColors Lib "Object:ctrl:MobileTextArea" Alias "getLinkTextColors().getDefaultColor" As Integer
+		    Declare Function getLinkTextColors Lib kLibMobileTextArea Alias "getLinkTextColors().getDefaultColor" As Int32
 		    Return getLinkTextColors.ToColor
 		    
 		  #EndIf
@@ -636,7 +636,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getMaxLines Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getMaxLines Lib kLibMobileTextArea As Int32
 		    Return getMaxLines
 		    
 		  #EndIf
@@ -649,7 +649,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getMinLines Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getMinLines Lib kLibMobileTextArea As Int32
 		    Return getMinLines
 		    
 		  #EndIf
@@ -662,7 +662,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getOffsetForHorizontal Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getOffsetForHorizontal" (myLine As Integer, myHoriz As Single) As Integer
+		    Declare Function getOffsetForHorizontal Lib kLibMobileTextArea Alias "getLayout().getOffsetForHorizontal" (myLine As Int32, myHoriz As Single) As Int32
 		    Return getOffsetForHorizontal(line, horiz)
 		    
 		  #Else
@@ -680,7 +680,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getOffsetToLeftOf Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getOffsetToLeftOf" (myLine As Integer) As Integer
+		    Declare Function getOffsetToLeftOf Lib kLibMobileTextArea Alias "getLayout().getOffsetToLeftOf" (myLine As Int32) As Int32
 		    Return getOffsetToLeftOf(line)
 		    
 		  #Else
@@ -697,7 +697,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getOffsetToRightOf Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getOffsetToRightOf" (myLine As Integer) As Integer
+		    Declare Function getOffsetToRightOf Lib kLibMobileTextArea Alias "getLayout().getOffsetToRightOf" (myLine As Int32) As Int32
 		    Return getOffsetToRightOf(line)
 		    
 		  #Else
@@ -714,7 +714,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getPaintFlags Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getPaintFlags Lib kLibMobileTextArea As Int32
 		    Return getPaintFlags
 		    
 		  #EndIf
@@ -727,7 +727,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getParagraphDirection Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getParagraphDirection" (myLine As Integer) As Integer
+		    Declare Function getParagraphDirection Lib kLibMobileTextArea Alias "getLayout().getParagraphDirection" (myLine As Int32) As Int32
 		    Return getParagraphDirection(line)
 		    
 		  #Else
@@ -744,7 +744,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getParagraphLeft Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getParagraphLeft" (myLine As Integer) As Integer
+		    Declare Function getParagraphLeft Lib kLibMobileTextArea Alias "getLayout().getParagraphLeft" (myLine As Int32) As Int32
 		    Return getParagraphLeft(line)
 		    
 		  #Else
@@ -761,7 +761,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getParagraphRight Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getParagraphRight" (myLine As Integer) As Integer
+		    Declare Function getParagraphRight Lib kLibMobileTextArea Alias "getLayout().getParagraphRight" (myLine As Int32) As Int32
 		    Return getParagraphRight(line)
 		    
 		  #Else
@@ -778,7 +778,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getPrimaryHorizontal Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getPrimaryHorizontal" (myOffset As Integer) As Single
+		    Declare Function getPrimaryHorizontal Lib kLibMobileTextArea Alias "getLayout().getPrimaryHorizontal" (myOffset As Int32) As Single
 		    Return getPrimaryHorizontal(offset)
 		    
 		  #Else
@@ -795,7 +795,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getSecondaryHorizontal Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getSecondaryHorizontal" (myOffset As Integer) As Single
+		    Declare Function getSecondaryHorizontal Lib kLibMobileTextArea Alias "getLayout().getSecondaryHorizontal" (myOffset As Int32) As Single
 		    Return getSecondaryHorizontal(offset)
 		    
 		  #Else
@@ -812,7 +812,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getShowSoftInputOnFocus Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Declare Function getShowSoftInputOnFocus Lib kLibMobileTextArea As Boolean
 		    Return getShowSoftInputOnFocus
 		    
 		  #Else
@@ -829,7 +829,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getSpacingAdd Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getSpacingAdd" As Single
+		    Declare Function getSpacingAdd Lib kLibMobileTextArea Alias "getLayout().getSpacingAdd" As Single
 		    Return getSpacingAdd
 		    
 		  #EndIf
@@ -842,7 +842,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getSpacingMultiplier Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getSpacingMultiplier" As Single
+		    Declare Function getSpacingMultiplier Lib kLibMobileTextArea Alias "getLayout().getSpacingMultiplier" As Single
 		    Return getSpacingMultiplier
 		    
 		  #EndIf
@@ -855,7 +855,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTopPadding Lib "Object:ctrl:MobileTextArea" Alias "getLayout().getTopPadding" As Integer
+		    Declare Function getTopPadding Lib kLibMobileTextArea Alias "getLayout().getTopPadding" As Int32
 		    Return getTopPadding
 		    
 		  #EndIf
@@ -868,7 +868,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTotalPaddingBottom Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getTotalPaddingBottom Lib kLibMobileTextArea As Int32
 		    Return getTotalPaddingBottom
 		    
 		  #EndIf
@@ -881,7 +881,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTotalPaddingEnd Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getTotalPaddingEnd Lib kLibMobileTextArea As Int32
 		    Return getTotalPaddingEnd
 		    
 		  #EndIf
@@ -894,7 +894,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTotalPaddingLeft Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getTotalPaddingLeft Lib kLibMobileTextArea As Int32
 		    Return getTotalPaddingLeft
 		    
 		  #EndIf
@@ -907,7 +907,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTotalPaddingRight Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getTotalPaddingRight Lib kLibMobileTextArea As Int32
 		    Return getTotalPaddingRight
 		    
 		  #EndIf
@@ -920,7 +920,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTotalPaddingStart Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getTotalPaddingStart Lib kLibMobileTextArea As Int32
 		    Return getTotalPaddingStart
 		    
 		  #EndIf
@@ -933,7 +933,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTotalPaddingTop Lib "Object:ctrl:MobileTextArea" As Integer
+		    Declare Function getTotalPaddingTop Lib kLibMobileTextArea As Int32
 		    Return getTotalPaddingTop
 		    
 		  #EndIf
@@ -946,7 +946,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function hasSelection Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Declare Function hasSelection Lib kLibMobileTextArea As Boolean
 		    Return hasSelection
 		    
 		  #EndIf
@@ -959,7 +959,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isCursorVisible Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Declare Function isCursorVisible Lib kLibMobileTextArea As Boolean
 		    Return isCursorVisible
 		    
 		  #EndIf
@@ -972,7 +972,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isRtlCharAt Lib "Object:ctrl:MobileTextArea" Alias "getLayout().isRtlCharAt" (myOffset As Integer) As Boolean
+		    Declare Function isRtlCharAt Lib kLibMobileTextArea Alias "getLayout().isRtlCharAt" (myOffset As Int32) As Boolean
 		    Return isRtlCharAt(offset)
 		    
 		  #Else
@@ -989,8 +989,21 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isTextSelectable Lib "Object:ctrl:MobileTextArea" As Boolean
+		    Declare Function isTextSelectable Lib kLibMobileTextArea As Boolean
 		    Return isTextSelectable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h21, Description = 52657475726E73207468652054657874496E7075744C61796F757420696E7374616E636520666F7220746865204D6F62696C65546578744669656C642E
+		Private Function Layout(Extends ctrl As MobileTextArea) As Ptr
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextInputLayoutInstance Lib kLibMobileTextArea Alias "_parentLayout!!" As Ptr
+		    Return getTextInputLayoutInstance
 		    
 		  #EndIf
 		End Function
@@ -1002,7 +1015,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setAllCaps Lib "Object:ctrl:MobileTextArea" (myAllCaps As Boolean)
+		    Declare Sub setAllCaps Lib kLibMobileTextArea (myAllCaps As Boolean)
 		    setAllCaps(allCaps)
 		    
 		  #Else
@@ -1017,7 +1030,7 @@ Protected Module TextAreaXC
 		Sub SetAutoLinkMaskXC(Extends ctrl As MobileTextArea, mask As AutoLinkMaskXC)
 		  #If TargetAndroid
 		    
-		    Declare Sub setAutoLinkMask Lib "Object:ctrl:MobileTextArea" (myMask As Integer)
+		    Declare Sub setAutoLinkMask Lib kLibMobileTextArea (myMask As Int32)
 		    setAutoLinkMask(Integer(mask))
 		    
 		    ctrl.Text = ctrl.Text ' otherwise Links won't shown
@@ -1031,13 +1044,30 @@ Protected Module TextAreaXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 53657473207468652066696C6C656420626F7827732064656661756C74206261636B67726F756E6420636F6C6F722E2043616C6C696E672074686973206D6574686F642077696C6C206D616B6520746865206261636B67726F756E6420636F6C6F72206E6F7420626520737461746566756C2C20696620697420776173206265666F72652E0A0A4E6F74653A20546865206261636B67726F756E6420636F6C6F72206973206F6E6C7920737570706F7274656420666F722066696C6C656420626F7865732E205768656E2075736564207769746820626F782076617269616E7473206F74686572207468616E20424F585F4241434B47524F554E445F46494C4C45442C2074686520626F78206261636B67726F756E6420636F6C6F72206D6179206E6F7420776F726B20617320696E74656E6465642E
+		Sub SetBoxBackgroundColorXC(Extends ctrl As MobileTextArea, c As Color)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBoxBackgroundColor Lib kTextInputLayoutLib (obj As Ptr, myBoxBackgroundColor As Int32)
+		    setBoxBackgroundColor(ctrl.Layout, c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 536574732074686520627265616B20737472617465677920666F7220627265616B696E67207061726167726170687320696E746F206C696E65732E205468652064656661756C742076616C756520666F72205465787456696577206973204C61796F757423425245414B5F53545241544547595F484947485F5155414C4954592C20616E64207468652064656661756C742076616C756520666F72204564697454657874206973204C61796F757423425245414B5F53545241544547595F53494D504C452C20746865206C617474657220746F2061766F6964207468652074657874202264616E63696E6722207768656E206265696E67206564697465642E0A0A456E61626C696E672068797068656E6174696F6E207769746820656974686572207573696E67204C61796F75742348595048454E4154494F4E5F4652455155454E43595F4E4F524D414C206F72204C61796F75742348595048454E4154494F4E5F4652455155454E43595F46554C4C207768696C65206C696E6520627265616B696E672069732073657420746F206F6E65206F66204C61796F757423425245414B5F53545241544547595F42414C414E4345442C204C61796F757423425245414B5F53545241544547595F484947485F5155414C49545920696D70726F7665732074686520737472756374757265206F662074657874206C61796F757420686F77657665722068617320706572666F726D616E636520696D7061637420616E64207265717569726573206D6F72652074696D6520746F20646F207468652074657874206C61796F75742E0A0A436F6D70617265642077697468207365744C696E65427265616B5374796C6528696E74292C206C696E6520627265616B207374796C65207769746820646966666572656E74207374726963746E657373206973206576616C756174656420696E207468652049435520746F206964656E746966792074686520706F74656E7469616C20627265616B706F696E74732E20496E20736574427265616B537472617465677928696E74292C206C696E6520627265616B2073747261746567792068616E646C65732074686520706F73742070726F63657373696E67206F66204943552773206C696E6520627265616B20726573756C742E2049742061696D7320746F206576616C7561746520494355277320627265616B706F696E747320616E6420627265616B20746865206C696E6573206261736564206F6E2074686520636F6E73747261696E742E
 		Sub SetBreakStrategyXC(Extends ctrl As MobileTextArea, breakStrategy As BreakStrategyXC)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBreakStrategy Lib "Object:ctrl:MobileTextArea" (myBreakStrategy As Integer)
+		    Declare Sub setBreakStrategy Lib kLibMobileTextArea (myBreakStrategy As Int32)
 		    setBreakStrategy(Integer(breakStrategy))
 		    
 		  #Else
@@ -1054,7 +1084,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setCompoundDrawablePadding Lib "Object:ctrl:MobileTextArea" (myPad As Integer)
+		    Declare Sub setCompoundDrawablePadding Lib kLibMobileTextArea (myPad As Int32)
 		    setCompoundDrawablePadding(pad)
 		    
 		  #Else
@@ -1071,7 +1101,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setCursorVisible Lib "Object:ctrl:MobileTextArea" (myVisible As Boolean)
+		    Declare Sub setCursorVisible Lib kLibMobileTextArea (myVisible As Boolean)
 		    setCursorVisible(visible)
 		    
 		  #Else
@@ -1088,7 +1118,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setElegantTextHeight Lib "Object:ctrl:MobileTextArea" (myElegant As Boolean)
+		    Declare Sub setElegantTextHeight Lib kLibMobileTextArea (myElegant As Boolean)
 		    setElegantTextHeight(elegant)
 		    
 		  #Else
@@ -1105,7 +1135,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setError Lib "Object:ctrl:MobileTextArea" (myError As CString)
+		    Declare Sub setError Lib kLibMobileTextArea (myError As CString)
 		    setError(error)
 		    
 		  #Else
@@ -1122,7 +1152,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setFallbackLineSpacing Lib "Object:ctrl:MobileTextArea" (myEnabled As Boolean)
+		    Declare Sub setFallbackLineSpacing Lib kLibMobileTextArea (myEnabled As Boolean)
 		    setFallbackLineSpacing(enabled)
 		    
 		  #Else
@@ -1139,7 +1169,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setFirstBaselineToTopHeight Lib "Object:ctrl:MobileTextArea" (myFirstBaselineToTopHeight As Integer)
+		    Declare Sub setFirstBaselineToTopHeight Lib kLibMobileTextArea (myFirstBaselineToTopHeight As Int32)
 		    setFirstBaselineToTopHeight(firstBaselineToTopHeight)
 		    
 		  #Else
@@ -1156,7 +1186,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setGravity Lib "Object:ctrl:MobileTextArea" (myGravity As Integer)
+		    Declare Sub setGravity Lib kLibMobileTextArea (myGravity As Int32)
 		    setGravity(gravity)
 		    
 		  #Else
@@ -1173,7 +1203,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHighlightColor Lib "Object:ctrl:MobileTextArea" (myColor As Integer)
+		    Declare Sub setHighlightColor Lib kLibMobileTextArea (myColor As Int32)
 		    setHighlightColor(c.ToInteger)
 		    
 		  #Else
@@ -1190,7 +1220,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHintTextColor Lib "Object:ctrl:MobileTextArea" (myColor As Integer)
+		    Declare Sub setHintTextColor Lib kLibMobileTextArea (myColor As Int32)
 		    setHintTextColor(c.ToInteger)
 		    
 		  #Else
@@ -1207,7 +1237,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHint Lib "Object:ctrl:MobileTextArea" (myHint As CString)
+		    Declare Sub setHint Lib kLibMobileTextArea (myHint As CString)
 		    setHint(hint)
 		    
 		  #Else
@@ -1224,7 +1254,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHorizontallyScrolling Lib "Object:ctrl:MobileTextArea" (myWhether As Boolean)
+		    Declare Sub setHorizontallyScrolling Lib kLibMobileTextArea (myWhether As Boolean)
 		    setHorizontallyScrolling(whether)
 		    
 		  #Else
@@ -1241,7 +1271,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHyphenationFrequency Lib "Object:ctrl:MobileTextArea" (myHyphenationFrequency As Integer)
+		    Declare Sub setHyphenationFrequency Lib kLibMobileTextArea (myHyphenationFrequency As Int32)
 		    setHyphenationFrequency(Integer(hyphenationFrequency))
 		    
 		  #Else
@@ -1258,7 +1288,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setImeOptions Lib "Object:ctrl:MobileTextArea" (myImeOptions As Integer)
+		    Declare Sub setImeOptions Lib kLibMobileTextArea (myImeOptions As Int32)
 		    setImeOptions(imeOptions)
 		    
 		  #Else
@@ -1275,7 +1305,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIncludeFontPadding Lib "Object:ctrl:MobileTextArea" (myIncludePad As Boolean)
+		    Declare Sub setIncludeFontPadding Lib kLibMobileTextArea (myIncludePad As Boolean)
 		    setIncludeFontPadding(includePad)
 		    
 		  #Else
@@ -1292,7 +1322,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setJustificationMode Lib "Object:ctrl:MobileTextArea" (myJustificationMode As Integer)
+		    Declare Sub setJustificationMode Lib kLibMobileTextArea (myJustificationMode As Int32)
 		    setJustificationMode(Integer(justificationMode))
 		    
 		  #Else
@@ -1309,7 +1339,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setLastBaselineToBottomHeight Lib "Object:ctrl:MobileTextArea" (myLastBaselineToBottomHeight As Integer)
+		    Declare Sub setLastBaselineToBottomHeight Lib kLibMobileTextArea (myLastBaselineToBottomHeight As Int32)
 		    setLastBaselineToBottomHeight(lastBaselineToBottomHeight)
 		    
 		  #Else
@@ -1326,7 +1356,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setLetterSpacing Lib "Object:ctrl:MobileTextArea" (myLetterSpacing As Single)
+		    Declare Sub setLetterSpacing Lib kLibMobileTextArea (myLetterSpacing As Single)
 		    setLetterSpacing(letterSpacing)
 		    
 		  #Else
@@ -1343,7 +1373,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setLineHeight Lib "Object:ctrl:MobileTextArea" (myLineHeight As Integer)
+		    Declare Sub setLineHeight Lib kLibMobileTextArea (myLineHeight As Int32)
 		    setLineHeight(lineHeight)
 		    
 		  #Else
@@ -1360,7 +1390,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setLineSpacing Lib "Object:ctrl:MobileTextArea" (myAdd As Single, myMult As Single)
+		    Declare Sub setLineSpacing Lib kLibMobileTextArea (myAdd As Single, myMult As Single)
 		    setLineSpacing(add, mult)
 		    
 		  #Else
@@ -1378,7 +1408,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setLines Lib "Object:ctrl:MobileTextArea" (myLines As Integer)
+		    Declare Sub setLines Lib kLibMobileTextArea (myLines As Int32)
 		    setLines(lines)
 		    
 		  #Else
@@ -1395,7 +1425,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setLinksClickable Lib "Object:ctrl:MobileTextArea" (myWhether As Boolean)
+		    Declare Sub setLinksClickable Lib kLibMobileTextArea (myWhether As Boolean)
 		    setLinksClickable(whether)
 		    
 		  #Else
@@ -1412,7 +1442,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setLinkTextColor Lib "Object:ctrl:MobileTextArea" (myColor As Integer)
+		    Declare Sub setLinkTextColor Lib kLibMobileTextArea (myColor As Int32)
 		    setLinkTextColor(c.ToInteger)
 		    
 		  #Else
@@ -1429,7 +1459,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setMaxLines Lib "Object:ctrl:MobileTextArea" (myMaxLines As Integer)
+		    Declare Sub setMaxLines Lib kLibMobileTextArea (myMaxLines As Int32)
 		    setMaxLines(maxLines)
 		    
 		  #Else
@@ -1446,7 +1476,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setMinLines Lib "Object:ctrl:MobileTextArea" (myMinLines As Integer)
+		    Declare Sub setMinLines Lib kLibMobileTextArea (myMinLines As Int32)
 		    setMinLines(minLines)
 		    
 		  #Else
@@ -1463,7 +1493,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setPaintFlags Lib "Object:ctrl:MobileTextArea" (myFlags As Integer)
+		    Declare Sub setPaintFlags Lib kLibMobileTextArea (myFlags As Int32)
 		    setPaintFlags(flags)
 		    
 		  #Else
@@ -1480,7 +1510,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setRawInputType Lib "Object:ctrl:MobileTextArea" (myType As Integer)
+		    Declare Sub setRawInputType Lib kLibMobileTextArea (myType As Int32)
 		    setRawInputType(type)
 		    
 		  #Else
@@ -1497,7 +1527,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSelectAllOnFocus Lib "Object:ctrl:MobileTextArea" (mySelectAllOnFocus As Boolean)
+		    Declare Sub setSelectAllOnFocus Lib kLibMobileTextArea (mySelectAllOnFocus As Boolean)
 		    setSelectAllOnFocus(selectAllOnFocus)
 		    
 		  #Else
@@ -1514,7 +1544,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSelected Lib "Object:ctrl:MobileTextArea" (mySelected As Boolean)
+		    Declare Sub setSelected Lib kLibMobileTextArea (mySelected As Boolean)
 		    setSelected(selected)
 		    
 		  #Else
@@ -1531,7 +1561,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSelection Lib "Object:ctrl:MobileTextArea" (myStart As Integer, myStop As Integer)
+		    Declare Sub setSelection Lib kLibMobileTextArea (myStart As Int32, myStop As Int32)
 		    setSelection(start, stop)
 		    
 		  #Else
@@ -1549,7 +1579,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setShadowLayer Lib "Object:ctrl:MobileTextArea" (myRadius As Single, mydX As Single, mydY As Single, myColor As Integer)
+		    Declare Sub setShadowLayer Lib kLibMobileTextArea (myRadius As Single, mydX As Single, mydY As Single, myColor As Int32)
 		    setShadowLayer(radius, dX, dY, c.ToInteger)
 		    
 		  #Else
@@ -1569,7 +1599,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setShowSoftInputOnFocus Lib "Object:ctrl:MobileTextArea" (myShow As Boolean)
+		    Declare Sub setShowSoftInputOnFocus Lib kLibMobileTextArea (myShow As Boolean)
 		    setShowSoftInputOnFocus(show)
 		    
 		  #Else
@@ -1586,7 +1616,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSingleLine Lib "Object:ctrl:MobileTextArea"
+		    Declare Sub setSingleLine Lib kLibMobileTextArea
 		    setSingleLine
 		    
 		  #EndIf
@@ -1599,7 +1629,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSingleLine Lib "Object:ctrl:MobileTextArea" (mySingleLine As Boolean)
+		    Declare Sub setSingleLine Lib kLibMobileTextArea (mySingleLine As Boolean)
 		    setSingleLine(singleLine)
 		    
 		  #Else
@@ -1616,7 +1646,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub fromHTML Lib "Object:ctrl:MobileTextArea:Kotlin" Alias "setText(android.text.Html.fromHtml(mysource.toString(), myflags.toInt()))" (mySource As CString, myFlags As Integer)
+		    Declare Sub fromHTML Lib kLibMobileTextAreaKotlin Alias "setText(android.text.Html.fromHtml(mysource.toString(), myflags.toInt()))" (mySource As CString, myFlags As Int32)
 		    fromHTML(source, flags)
 		    
 		  #Else
@@ -1634,7 +1664,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTextIsSelectable Lib "Object:ctrl:MobileTextArea" (mySelectable As Boolean)
+		    Declare Sub setTextIsSelectable Lib kLibMobileTextArea (mySelectable As Boolean)
 		    setTextIsSelectable(selectable)
 		    
 		  #Else
@@ -1651,7 +1681,7 @@ Protected Module TextAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTextScaleX Lib "Object:ctrl:MobileTextArea" (mySize As Single)
+		    Declare Sub setTextScaleX Lib kLibMobileTextArea (mySize As Single)
 		    setTextScaleX(size)
 		    
 		  #Else
@@ -1661,6 +1691,16 @@ Protected Module TextAreaXC
 		  #EndIf
 		End Sub
 	#tag EndMethod
+
+
+	#tag Constant, Name = kLibMobileTextArea, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileTextArea", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibMobileTextAreaKotlin, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileTextArea:Kotlin", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kTextInputLayoutLib, Type = String, Dynamic = False, Default = \"com.google.android.material.textfield.TextInputLayout.instance", Scope = Private
+	#tag EndConstant
 
 
 	#tag Enum, Name = AutoLinkMaskXC, Type = Integer, Flags = &h0
@@ -1688,7 +1728,8 @@ Protected Module TextAreaXC
 
 	#tag Enum, Name = JustificationModesXC, Type = Integer, Flags = &h0
 		None = 0
-		InterWord = 1
+		  InterWord = 1
+		InterCharacter = 2
 	#tag EndEnum
 
 

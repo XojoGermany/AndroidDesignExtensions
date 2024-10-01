@@ -1,14 +1,41 @@
 #tag Module
 Protected Module TabPanelXC
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
+	#tag Method, Flags = &h21, Description = 52657475726E73206F72206372656174657320616E20696E7374616E6365206F662042616467654472617761626C65206966206E6F6E652065786973747320666F722074686520746162206174207468652073706563696669656420696E646578206F662061204D6F62696C6554616250616E656C2E
+		Private Function BadgeAt(Extends ctrl As MobileTabPanel, index As Integer, getOrCreateBadge As Boolean = True) As Ptr
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    If getOrCreateBadge Then
+		      
+		      Declare Function getOrCreateBadgeAt Lib kLibMobileTabPanelKotlin Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge()" (myIndex As Int32) As Ptr
+		      Return getOrCreateBadgeAt(index)
+		      
+		    Else
+		      
+		      Declare Function getTabAt Lib kLibMobileTabPanelKotlin Alias "getTabAt(myindex.toInt())!!" (myIndex As Int32) As Ptr
+		      Return getTabAt(index)
+		      
+		    End If
+		    
+		  #Else
+		    
+		    #Pragma Unused index
+		    #Pragma Unused getOrCreateBadge
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 436C65617273207468652062616467652773206E756D6265722E
 		Sub ClearBadgeNumberAtXC(Extends ctrl As MobileTabPanel, index As Integer)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub clearNumber Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().clearNumber()" (myIndex As Integer)
-		    clearNumber(index)
+		    Declare Sub clearNumber Lib kBadgeDrawableInstance (obj As Ptr)
+		    clearNumber(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -24,8 +51,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub clearText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().clearText()" (myIndex As Integer)
-		    clearText(index)
+		    Declare Sub clearText Lib kBadgeDrawableInstance (obj As Ptr)
+		    clearText(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -41,8 +68,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getAlpha Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getAlpha().tointeger()" (myIndex As Integer) As Integer
-		    Return getAlpha(index)
+		    Declare Function getAlpha Lib kBadgeDrawableInstance (obj As Ptr) As Int32
+		    Return getAlpha(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -58,8 +85,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBackgroundColor Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getBackgroundColor().tointeger()" (myIndex As Integer) As Integer
-		    Return getBackgroundColor(index).ToColor
+		    Declare Function getBackgroundColor Lib kBadgeDrawableInstance (obj As Ptr) As Int32
+		    Return getBackgroundColor(ctrl.BadgeAt(index)).ToColor
 		    
 		  #Else
 		    
@@ -75,8 +102,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBadgeGravity Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getBadgeGravity().tointeger()" (myIndex As Integer) As Integer
-		    Return BadgeGravityXC(getBadgeGravity(index))
+		    Declare Function getBadgeGravity Lib kBadgeDrawableInstance (obj As Ptr) As Integer
+		    Return BadgeGravityXC(getBadgeGravity(ctrl.BadgeAt(index)))
 		    
 		  #Else
 		    
@@ -92,8 +119,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getHorizontalOffset Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getHorizontalOffset().tointeger()" (myIndex As Integer) As Integer
-		    Return getHorizontalOffset(index)
+		    Declare Function getHorizontalOffset Lib kBadgeDrawableInstance (obj As Ptr) As Int32
+		    Return getHorizontalOffset(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -109,8 +136,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getHorizontalOffsetWithoutText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getHorizontalOffsetWithoutText().tointeger()" (myIndex As Integer) As Integer
-		    Return getHorizontalOffsetWithoutText(index)
+		    Declare Function getHorizontalOffsetWithoutText Lib kBadgeDrawableInstance (obj As Ptr) As Int32
+		    Return getHorizontalOffsetWithoutText(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -126,8 +153,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getHorizontalOffsetWithText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getHorizontalOffsetWithText().tointeger()" (myIndex As Integer) As Integer
-		    Return getHorizontalOffsetWithText(index)
+		    Declare Function getHorizontalOffsetWithText Lib kBadgeDrawableInstance (obj As Ptr) As Int32
+		    Return getHorizontalOffsetWithText(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -143,8 +170,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getHorizontalPadding Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getHorizontalPadding().tointeger()" (myIndex As Integer) As Integer
-		    Return getHorizontalPadding(index)
+		    Declare Function getHorizontalPadding Lib kBadgeDrawableInstance (obj As Ptr) As Int32
+		    Return getHorizontalPadding(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -160,8 +187,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getMaxCharacterCount Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getMaxCharacterCount().tointeger()" (myIndex As Integer) As Integer
-		    Return getMaxCharacterCount(index)
+		    Declare Function getMaxCharacterCount Lib kBadgeDrawableInstance (obj As Ptr) As Int32
+		    Return getMaxCharacterCount(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -177,8 +204,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getMaxNumber Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getMaxNumber().tointeger()" (myIndex As Integer) As Integer
-		    Return getMaxNumber(index)
+		    Declare Function getMaxNumber Lib kBadgeDrawableInstance (obj As Ptr) As Int32
+		    Return getMaxNumber(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -194,8 +221,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getNumber Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getNumber().tointeger()" (myIndex As Integer) As Integer
-		    Return getNumber(index)
+		    Declare Function getNumber Lib kBadgeDrawableInstance (obj As Ptr) As Int32
+		    Return getNumber(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -211,8 +238,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getOpacity Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getOpacity().tointeger()" (myIndex As Integer) As Integer
-		    Return getOpacity(index)
+		    Declare Function getOpacity Lib kBadgeDrawableInstance (obj As Ptr) As Int32
+		    Return getOpacity(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -228,8 +255,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getText().toString()" (myIndex As Integer) As CString
-		    Return getText(index)
+		    Declare Function getText Lib kBadgeDrawableInstance (obj As Ptr) As CString
+		    Return getText(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -245,8 +272,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBadgeTextColor Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getBadgeTextColor().tointeger()" (myIndex As Integer) As Integer
-		    Return getBadgeTextColor(index).ToColor
+		    Declare Function getBadgeTextColor Lib kBadgeDrawableInstance (obj As Ptr) As Int32
+		    Return getBadgeTextColor(ctrl.BadgeAt(index)).ToColor
 		    
 		  #Else
 		    
@@ -262,8 +289,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getVerticalOffset Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getVerticalOffset().tointeger()" (myIndex As Integer) As Integer
-		    Return getVerticalOffset(index)
+		    Declare Function getVerticalOffset Lib kBadgeDrawableInstance (obj As Ptr) As Int32
+		    Return getVerticalOffset(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -279,8 +306,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getVerticalOffsetWithoutText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getVerticalOffsetWithoutText().tointeger()" (myIndex As Integer) As Integer
-		    Return getVerticalOffsetWithoutText(index)
+		    Declare Function getVerticalOffsetWithoutText Lib kBadgeDrawableInstance (obj As Ptr) As Int32
+		    Return getVerticalOffsetWithoutText(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -296,8 +323,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getVerticalOffsetWithText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getVerticalOffsetWithText().tointeger()" (myIndex As Integer) As Integer
-		    Return getVerticalOffsetWithText(index)
+		    Declare Function getVerticalOffsetWithText Lib kBadgeDrawableInstance (obj As Ptr) As Int32
+		    Return getVerticalOffsetWithText(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -313,8 +340,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getVerticalPadding Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().getVerticalPadding().tointeger()" (myIndex As Integer) As Integer
-		    Return getVerticalPadding(index)
+		    Declare Function getVerticalPadding Lib kBadgeDrawableInstance (obj As Ptr) As Int32
+		    Return getVerticalPadding(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -330,7 +357,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTabIndicatorAnimationMode Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Declare Function getTabIndicatorAnimationMode Lib kLibMobileTabPanel As Integer
 		    Return TabIndicatorAnimationModesXC(getTabIndicatorAnimationMode)
 		    
 		  #EndIf
@@ -343,7 +370,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTabIndicatorGravity Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Declare Function getTabIndicatorGravity Lib kLibMobileTabPanel As Integer
 		    Return TabGravityXC(getTabIndicatorGravity)
 		    
 		  #EndIf
@@ -356,7 +383,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTabMode Lib "Object:ctrl:MobileTabPanel" As Integer
+		    Declare Function getTabMode Lib kLibMobileTabPanel As Integer
 		    Return TabModesXC(getTabMode)
 		    
 		  #EndIf
@@ -369,8 +396,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function hasNumber Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().hasNumber()" (myIndex As Integer) As Boolean
-		    Return hasNumber(index)
+		    Declare Function hasNumber Lib kBadgeDrawableInstance (obj As Ptr) As Boolean
+		    Return hasNumber(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -386,8 +413,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function hasText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().hasText()" (myIndex As Integer) As Boolean
-		    Return hasText(index)
+		    Declare Function hasText Lib kBadgeDrawableInstance (obj As Ptr) As Boolean
+		    Return hasText(ctrl.BadgeAt(index))
 		    
 		  #Else
 		    
@@ -403,7 +430,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function hasUnboundedRipple Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Declare Function hasUnboundedRipple Lib kLibMobileTabPanel As Boolean
 		    Return hasUnboundedRipple
 		    
 		  #EndIf
@@ -416,7 +443,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isInlineLabel Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Declare Function isInlineLabel Lib kLibMobileTabPanel As Boolean
 		    Return isInlineLabel
 		    
 		  #EndIf
@@ -429,7 +456,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isTabIndicatorFullWidth Lib "Object:ctrl:MobileTabPanel" As Boolean
+		    Declare Function isTabIndicatorFullWidth Lib kLibMobileTabPanel As Boolean
 		    Return isTabIndicatorFullWidth
 		    
 		  #EndIf
@@ -442,8 +469,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub removeBadge Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.removeBadge()" (myIndex As Integer)
-		    removeBadge(index)
+		    Declare Sub removeBadge Lib kTabLayoutInstance (obj As Ptr)
+		    removeBadge(ctrl.BadgeAt(index, False))
 		    
 		  #Else
 		    
@@ -459,8 +486,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setAutoAdjustToWithinGrandparentBounds Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().setAutoAdjustToWithinGrandparentBounds(myvalue)" (myIndex As Integer, myValue As Boolean)
-		    setAutoAdjustToWithinGrandparentBounds(index, autoAdjustToWithinGrandparentBounds)
+		    Declare Sub setAutoAdjustToWithinGrandparentBounds Lib kBadgeDrawableInstance (obj As Ptr, myValue As Boolean)
+		    setAutoAdjustToWithinGrandparentBounds(ctrl.BadgeAt(index), autoAdjustToWithinGrandparentBounds)
 		    
 		  #Else
 		    
@@ -477,8 +504,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setAlpha Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().setAlpha(myalpha.toInt())" (myIndex As Integer, myAlpha As Integer)
-		    setAlpha(index, alpha)
+		    Declare Sub setAlpha Lib kBadgeDrawableInstance (obj As Ptr, myAlpha As Int32)
+		    setAlpha(ctrl.BadgeAt(index), alpha)
 		    
 		  #Else
 		    
@@ -495,10 +522,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setBackgroundColor(mybackgroundcolor.toInt())" _
-		    (myIndex As Integer, myBackgroundColor As Integer)
-		    setBackgroundColor(index, backgroundColor.ToInteger)
+		    Declare Sub setBackgroundColor Lib kBadgeDrawableInstance (obj As Ptr, myBackgroundColor As Int32)
+		    setBackgroundColor(ctrl.BadgeAt(index), backgroundColor.ToInteger)
 		    
 		  #Else
 		    
@@ -515,10 +540,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setContentDescriptionForText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setContentDescriptionForText(mytext.toString())" _
-		    (myIndex As Integer, myText As CString)
-		    setContentDescriptionForText(index, text)
+		    Declare Sub setContentDescriptionForText Lib kBadgeDrawableInstance (obj As Ptr, myText As CString)
+		    setContentDescriptionForText(ctrl.BadgeAt(index), text)
 		    
 		  #Else
 		    
@@ -535,10 +558,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setContentDescriptionNumberless Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setContentDescriptionNumberless(mytext.toString())" _
-		    (myIndex As Integer, myText As CString)
-		    setContentDescriptionNumberless(index, text)
+		    Declare Sub setContentDescriptionNumberless Lib kBadgeDrawableInstance (obj As Ptr, myText As CString)
+		    setContentDescriptionNumberless(ctrl.BadgeAt(index), text)
 		    
 		  #Else
 		    
@@ -555,8 +576,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBadgeGravity Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.getOrCreateBadge().setBadgeGravity(mygravity.toInt())" (myIndex As Integer, myGravity As Integer)
-		    setBadgeGravity(index, Integer(gravity))
+		    Declare Sub setBadgeGravity Lib kBadgeDrawableInstance (obj As Ptr, myGravity As Int32)
+		    setBadgeGravity(ctrl.BadgeAt(index), Integer(gravity))
 		    
 		  #Else
 		    
@@ -573,10 +594,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHorizontalOffset Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setHorizontalOffset(mypx.toInt())" _
-		    (myIndex As Integer, myPX As Integer)
-		    setHorizontalOffset(index, px)
+		    Declare Sub setHorizontalOffset Lib kBadgeDrawableInstance (obj As Ptr, myPX As Int32)
+		    setHorizontalOffset(ctrl.BadgeAt(index), px)
 		    
 		  #Else
 		    
@@ -593,10 +612,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHorizontalOffsetWithoutText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setHorizontalOffsetWithoutText(mypx.toInt())" _
-		    (myIndex As Integer, myPX As Integer)
-		    setHorizontalOffsetWithoutText(index, px)
+		    Declare Sub setHorizontalOffsetWithoutText Lib kBadgeDrawableInstance (obj As Ptr, myPX As Int32)
+		    setHorizontalOffsetWithoutText(ctrl.BadgeAt(index), px)
 		    
 		  #Else
 		    
@@ -613,10 +630,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHorizontalOffsetWithText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setHorizontalOffsetWithText(mypx.toInt())" _
-		    (myIndex As Integer, myPX As Integer)
-		    setHorizontalOffsetWithText(index, px)
+		    Declare Sub setHorizontalOffsetWithText Lib kBadgeDrawableInstance (obj As Ptr, myPX As Int32)
+		    setHorizontalOffsetWithText(ctrl.BadgeAt(index), px)
 		    
 		  #Else
 		    
@@ -633,10 +648,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHorizontalPadding Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setHorizontalPadding(myhorizontalpadding.toInt())" _
-		    (myIndex As Integer, myHorizontalPadding As Integer)
-		    setHorizontalPadding(index, horizontalPadding)
+		    Declare Sub setHorizontalPadding Lib kBadgeDrawableInstance (obj As Ptr, myHorizontalPadding As Int32)
+		    setHorizontalPadding(ctrl.BadgeAt(index), horizontalPadding)
 		    
 		  #Else
 		    
@@ -653,10 +666,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setLargeFontVerticalOffsetAdjustment Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setLargeFontVerticalOffsetAdjustment(mypx.toInt())" _
-		    (myIndex As Integer, myPX As Integer)
-		    setLargeFontVerticalOffsetAdjustment(index, px)
+		    Declare Sub setLargeFontVerticalOffsetAdjustment Lib kBadgeDrawableInstance (obj As Ptr, myPX As Int32)
+		    setLargeFontVerticalOffsetAdjustment(ctrl.BadgeAt(index), px)
 		    
 		  #Else
 		    
@@ -673,10 +684,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setMaxCharacterCount Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setMaxCharacterCount(mymaxcharactercount.toInt())" _
-		    (myIndex As Integer, myMaxCharacterCount As Integer)
-		    setMaxCharacterCount(index, maxCharacterCount)
+		    Declare Sub setMaxCharacterCount Lib kBadgeDrawableInstance (obj As Ptr, myMaxCharacterCount As Int32)
+		    setMaxCharacterCount(ctrl.BadgeAt(index), maxCharacterCount)
 		    
 		  #Else
 		    
@@ -693,10 +702,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setMaxNumber Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setMaxNumber(mymaxnumber.toInt())" _
-		    (myIndex As Integer, myMaxNumber As Integer)
-		    setMaxNumber(index, maxNumber)
+		    Declare Sub setMaxNumber Lib kBadgeDrawableInstance (obj As Ptr, myMaxNumber As Int32)
+		    setMaxNumber(ctrl.BadgeAt(index), maxNumber)
 		    
 		  #Else
 		    
@@ -713,10 +720,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setNumber Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setNumber(mynumber.toInt())" _
-		    (myIndex As Integer, myNumber As Integer)
-		    setNumber(index, number)
+		    Declare Sub setNumber Lib kBadgeDrawableInstance (obj As Ptr, myNumber As Int32)
+		    setNumber(ctrl.BadgeAt(index), number)
 		    
 		  #Else
 		    
@@ -733,10 +738,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setText(mytext.toString())" _
-		    (myIndex As Integer, myText As CString)
-		    setText(index, text)
+		    Declare Sub setText Lib kBadgeDrawableInstance (obj As Ptr, myText As CString)
+		    setText(ctrl.BadgeAt(index), text)
 		    
 		  #Else
 		    
@@ -753,10 +756,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBadgeTextColor Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setBadgeTextColor(mybadgetextcolor.toInt())" _
-		    (myIndex As Integer, myBadgeTextColor As Integer)
-		    setBadgeTextColor(index, badgeTextColor.ToInteger)
+		    Declare Sub setBadgeTextColor Lib kBadgeDrawableInstance (obj As Ptr, myBadgeTextColor As Int32)
+		    setBadgeTextColor(ctrl.BadgeAt(index), badgeTextColor.ToInteger)
 		    
 		  #Else
 		    
@@ -773,10 +774,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setVerticalOffset Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setVerticalOffset(mypx.toInt())" _
-		    (myIndex As Integer, myPX As Integer)
-		    setVerticalOffset(index, px)
+		    Declare Sub setVerticalOffset Lib kBadgeDrawableInstance (obj As Ptr, myPX As Int32)
+		    setVerticalOffset(ctrl.BadgeAt(index), px)
 		    
 		  #Else
 		    
@@ -793,10 +792,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setVerticalOffsetWithoutText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setVerticalOffsetWithoutText(mypx.toInt())" _
-		    (myIndex As Integer, myPX As Integer)
-		    setVerticalOffsetWithoutText(index, px)
+		    Declare Sub setVerticalOffsetWithoutText Lib kBadgeDrawableInstance (obj As Ptr, myPX As Int32)
+		    setVerticalOffsetWithoutText(ctrl.BadgeAt(index), px)
 		    
 		  #Else
 		    
@@ -813,10 +810,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setVerticalOffsetWithText Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setVerticalOffsetWithText(mypx.toInt())" _
-		    (myIndex As Integer, myPX As Integer)
-		    setVerticalOffsetWithText(index, px)
+		    Declare Sub setVerticalOffsetWithText Lib kBadgeDrawableInstance (obj As Ptr, myPX As Int32)
+		    setVerticalOffsetWithText(ctrl.BadgeAt(index), px)
 		    
 		  #Else
 		    
@@ -833,10 +828,8 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setVerticalPadding Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias _
-		    "getTabAt(myindex.toInt())!!.getOrCreateBadge().setVerticalPadding(myverticalpadding.toInt())" _
-		    (myIndex As Integer, myVerticalPadding As Integer)
-		    setVerticalPadding(index, verticalPadding)
+		    Declare Sub setVerticalPadding Lib kBadgeDrawableInstance (obj As Ptr, myVerticalPadding As Int32)
+		    setVerticalPadding(ctrl.BadgeAt(index), verticalPadding)
 		    
 		  #Else
 		    
@@ -853,7 +846,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setInlineLabel Lib "Object:ctrl:MobileTabPanel" (myInline As Boolean)
+		    Declare Sub setInlineLabel Lib kLibMobileTabPanel (myInline As Boolean)
 		    setInlineLabel(value)
 		    
 		  #Else
@@ -870,7 +863,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setScrollPosition Lib "Object:ctrl:MobileTabPanel" (myPosition As Integer, myPositionOffset As Single, myUpdateSelectedTabView As Boolean)
+		    Declare Sub setScrollPosition Lib kLibMobileTabPanel (myPosition As Int32, myPositionOffset As Single, myUpdateSelectedTabView As Boolean)
 		    setScrollPosition(position, positionOffset, updateSelectedTabView)
 		    
 		  #Else
@@ -889,7 +882,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setScrollPosition Lib "Object:ctrl:MobileTabPanel" (myPosition As Integer, myPositionOffset As Single, myUpdateSelectedTabView As Boolean, myUpdateIndicatorPosition As Boolean)
+		    Declare Sub setScrollPosition Lib kLibMobileTabPanel (myPosition As Int32, myPositionOffset As Single, myUpdateSelectedTabView As Boolean, myUpdateIndicatorPosition As Boolean)
 		    setScrollPosition(position, positionOffset, updateSelectedTabView, updateIndicatorPosition)
 		    
 		  #Else
@@ -909,7 +902,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSelectedTabIndicatorColor Lib "Object:ctrl:MobileTabPanel" (myColor As Integer)
+		    Declare Sub setSelectedTabIndicatorColor Lib kLibMobileTabPanel (myColor As Int32)
 		    setSelectedTabIndicatorColor(c.ToInteger)
 		    
 		  #Else
@@ -926,7 +919,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSelectedTabIndicatorGravity Lib "Object:ctrl:MobileTabPanel" (myIndicatorGravity As Integer)
+		    Declare Sub setSelectedTabIndicatorGravity Lib kLibMobileTabPanel (myIndicatorGravity As Int32)
 		    setSelectedTabIndicatorGravity(Integer(indicatorGravity))
 		    
 		  #Else
@@ -943,7 +936,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileTabPanel:Kotlin" Alias "getTabAt(myindex.toInt())!!.view.setBackgroundColor(mycolor.toInt())" (myIndex As Integer, myColor As Integer)
+		    Declare Sub setBackgroundColor Lib kLibMobileTabPanelKotlin Alias "getTabAt(myindex.toInt())!!.view.setBackgroundColor(mycolor.toInt())" (myIndex As Int32, myColor As Int32)
 		    setBackgroundColor(index, c.ToInteger)
 		    
 		  #Else
@@ -961,7 +954,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTabGravity Lib "Object:ctrl:MobileTabPanel" (myGravity As Integer)
+		    Declare Sub setTabGravity Lib kLibMobileTabPanel (myGravity As Int32)
 		    setTabGravity(Integer(gravity))
 		    
 		  #Else
@@ -978,7 +971,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTabIndicatorAnimationMode Lib "Object:ctrl:MobileTabPanel" (myTabIndicatorAnimationMode As Integer)
+		    Declare Sub setTabIndicatorAnimationMode Lib kLibMobileTabPanel (myTabIndicatorAnimationMode As Int32)
 		    setTabIndicatorAnimationMode(Integer(tabIndicatorAnimationMode))
 		    
 		  #Else
@@ -995,7 +988,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTabIndicatorFullWidth Lib "Object:ctrl:MobileTabPanel" (myTabIndicatorFullWidth As Boolean)
+		    Declare Sub setTabIndicatorFullWidth Lib kLibMobileTabPanel (myTabIndicatorFullWidth As Boolean)
 		    setTabIndicatorFullWidth(tabIndicatorFullWidth)
 		    
 		  #Else
@@ -1012,7 +1005,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTabMode Lib "Object:ctrl:MobileTabPanel" (myMode As Integer)
+		    Declare Sub setTabMode Lib kLibMobileTabPanel (myMode As Int32)
 		    setTabMode(Integer(mode))
 		    
 		  #Else
@@ -1029,7 +1022,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTabTextColors Lib "Object:ctrl:MobileTabPanel" (myNormalColor As Integer, mySelectedColor As Integer)
+		    Declare Sub setTabTextColors Lib kLibMobileTabPanel (myNormalColor As Int32, mySelectedColor As Int32)
 		    setTabTextColors(normalColor.ToInteger, selectedColor.ToInteger)
 		    
 		  #Else
@@ -1047,7 +1040,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setUnboundedRipple Lib "Object:ctrl:MobileTabPanel" (myUnboundedRipple As Boolean)
+		    Declare Sub setUnboundedRipple Lib kLibMobileTabPanel (myUnboundedRipple As Boolean)
 		    setUnboundedRipple(unboundedRipple)
 		    
 		  #Else
@@ -1064,7 +1057,7 @@ Protected Module TabPanelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setUserInputEnabled Lib "Object:ctrl:MobileTabPanel" Alias "_tabPager!!.setUserInputEnabled" (myEnabled As Boolean)
+		    Declare Sub setUserInputEnabled Lib kLibMobileTabPanel Alias "_tabPager!!.setUserInputEnabled" (myEnabled As Boolean)
 		    setUserInputEnabled(enabled)
 		    
 		  #Else
@@ -1074,6 +1067,19 @@ Protected Module TabPanelXC
 		  #EndIf
 		End Sub
 	#tag EndMethod
+
+
+	#tag Constant, Name = kBadgeDrawableInstance, Type = String, Dynamic = False, Default = \"com.google.android.material.badge.BadgeDrawable.instance", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibMobileTabPanel, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileTabPanel", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibMobileTabPanelKotlin, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileTabPanel:Kotlin", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kTabLayoutInstance, Type = String, Dynamic = False, Default = \"com.google.android.material.tabs.TabLayout.Tab.instance", Scope = Private
+	#tag EndConstant
 
 
 	#tag Enum, Name = BadgeGravityXC, Type = Integer, Flags = &h0

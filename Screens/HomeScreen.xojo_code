@@ -1,11 +1,12 @@
 #tag MobileScreen
 Begin TemplateScreen HomeScreen
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
+   Device          =   1
    HasBackButton   =   False
-   HasNavigationBar=   False
+   HasNavigationBar=   True
    Modal           =   False
    Orientation     =   0
-   Title           =   "Android Design Extension"
+   Title           =   "Android Design Extension 3.0"
    Begin AndroidMobileTable Table1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
@@ -15,9 +16,10 @@ Begin TemplateScreen HomeScreen
       Height          =   700
       InitialValue    =   ""
       LastAddedRowIndex=   0
+      LastRowIndex    =   0
       Left            =   0
       LockBottom      =   True
-      LockedInPosition=   True
+      LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
@@ -28,48 +30,7 @@ Begin TemplateScreen HomeScreen
       SelectedRowText =   ""
       SeparatorColor  =   &c00000000
       SeparatorThickness=   0
-      Top             =   56
-      Visible         =   True
-      Width           =   360
-   End
-   Begin MobileRectangle HeaderBackground
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      BorderColor     =   &c00000000
-      BorderThickness =   0.0
-      CornerSize      =   0.0
-      Enabled         =   True
-      FillColor       =   &cF2F2F700
-      Height          =   56
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   True
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
       Top             =   0
-      Visible         =   True
-      Width           =   360
-   End
-   Begin AppearanceLabel HeaderLabel
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Alignment       =   1
-      Enabled         =   True
-      Height          =   30
-      Left            =   0
-      LineBreakMode   =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      MaximumCharactersAllowed=   0
-      Scope           =   2
-      Text            =   "Android Design Extensions"
-      TextColor       =   &c00000000
-      Top             =   26
       Visible         =   True
       Width           =   360
    End
@@ -79,8 +40,11 @@ End
 #tag ScreenCode
 	#tag Event
 		Sub Opening()
-		  Self.SetNavigationBarColorXC(If(Color.IsDarkMode, &c121212, &cF2F2F7))
-		  Self.SetNavigationBarDividerColorXC(If(Color.IsDarkMode, &c121212, &cF2F2F7))
+		  Self.SetNavigationBarColorXC(If(Color.IsDarkMode, &c1A1B21, &cF2F2F7))
+		  Self.SetNavigationBarDividerColorXC(If(Color.IsDarkMode, &c1A1B21, &cF2F2F7))
+		  StatusBarColor = If(Color.IsDarkMode, &c1A1B21, &cF2F2F7)
+		  TitleCentered = True
+		  ToolbarColor = StatusBarColor
 		End Sub
 	#tag EndEvent
 
@@ -119,13 +83,13 @@ End
 		  
 		  If Color.IsDarkMode Then
 		    
-		    Table1.RowDetailColorAt(Table1.LastAddedRowIndex) = &c91919100
+		    Table1.RowDetailColorAt(Table1.LastAddedRowIndex) = &cDAE2FF ' &c91919100
 		    
 		  Else
 		    
 		    
 		    Table1.RowBackgroundColorAt(Table1.LastAddedRowIndex) = &cF2F2F7
-		    Table1.RowDetailColorAt(Table1.LastAddedRowIndex) = &c85858A
+		    Table1.RowDetailColorAt(Table1.LastAddedRowIndex) = &c495D92 ' &c85858A
 		    
 		  End If
 		End Sub
@@ -153,6 +117,12 @@ End
 #tag Events Table1
 	#tag Event
 		Sub Opening()
+		  If Color.IsDarkMode Then
+		    
+		    Me.SetVerticalScrollbarThumbColor(&c73737D)
+		    
+		  End If
+		  
 		  Me.RowDetailFont = Font.SystemFont(13.5)
 		  Me.RowTextFont = Font.SystemFont(17)
 		  Me.SeparatorColor = If(Color.IsDarkMode, &c21212100, &cCACACC00)
@@ -195,7 +165,9 @@ End
 		  AddRow("TextArea Examples", "textarea", "comment_text_outline", &c6AC4DC00)
 		  
 		  AddSection("Framework")
+		  AddRow("Folders", "folders", "folder_outline", &cD9770600)
 		  AddRow("Fonts Examples", "font", "format_font", If(Color.IsDarkMode, Color.White, &c34343400))
+		  AddRow("System Colors", "colors", "format_color_fill", &c008F0000)
 		  AddRow("System Images", "systemimages", "image_area", &cFF2F9200)
 		  
 		  AddSection("About")
@@ -246,6 +218,10 @@ End
 		    
 		    ButtonScreen.Show
 		    
+		  Case "colors"
+		    
+		    ColorScreen.Show
+		    
 		  Case "control"
 		    
 		    ControlScreen.Show
@@ -253,6 +229,10 @@ End
 		  Case "donate"
 		    
 		    System.GotoURL("https://paypal.me/MTrippensee")
+		    
+		  Case "folders"
+		    
+		    FolderScreen.Show
 		    
 		  Case "font"
 		    
@@ -302,26 +282,31 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events HeaderBackground
-	#tag Event
-		Sub Opening()
-		  If Color.IsDarkMode Then
-		    
-		    Me.FillColor = Color.Clear
-		    
-		  End If
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events HeaderLabel
-	#tag Event
-		Sub Opening()
-		  Me.Text = Me.Text + " " + App.kVersion.ToString
-		  Me.TextFont = Font.BoldSystemFont(17.5)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ToolbarColor"
+		Visible=false
+		Group="Behavior"
+		InitialValue="&c000000"
+		Type="Color"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="TitleCentered"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="StatusBarColor"
+		Visible=false
+		Group="Behavior"
+		InitialValue="Color.Clear"
+		Type="Color"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="HasBackButton"
 		Visible=true

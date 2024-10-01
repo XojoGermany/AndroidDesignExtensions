@@ -7,7 +7,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getChildCount Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Declare Function getChildCount Lib kLibMobileScrollableArea As Int32
 		    Return getChildCount
 		    
 		  #EndIf
@@ -20,7 +20,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getChildDrawingOrder Lib "Object:ctrl:MobileScrollableArea" (myDrawingPosition As Integer) As Integer
+		    Declare Function getChildDrawingOrder Lib kLibMobileScrollableArea (myDrawingPosition As Int32) As Int32
 		    Return getChildDrawingOrder(drawingPosition)
 		    
 		  #Else
@@ -37,7 +37,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getMaxScrollAmount Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Declare Function getMaxScrollAmount Lib kLibMobileScrollableArea As Int32
 		    Return getMaxScrollAmount
 		    
 		  #EndIf
@@ -50,7 +50,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getNestedScrollAxes Lib "Object:ctrl:MobileScrollableArea" As Integer
+		    Declare Function getNestedScrollAxes Lib kLibMobileScrollableArea As Int32
 		    Return getNestedScrollAxes
 		    
 		  #EndIf
@@ -63,7 +63,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function hasNestedScrollingParent Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Declare Function hasNestedScrollingParent Lib kLibMobileScrollableArea As Boolean
 		    Return hasNestedScrollingParent
 		    
 		  #EndIf
@@ -76,7 +76,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isFillViewport Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Declare Function isFillViewport Lib kLibMobileScrollableArea As Boolean
 		    Return isFillViewport
 		    
 		  #EndIf
@@ -89,7 +89,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isNestedScrollingEnabled Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Declare Function isNestedScrollingEnabled Lib kLibMobileScrollableArea As Boolean
 		    Return isNestedScrollingEnabled
 		    
 		  #EndIf
@@ -102,7 +102,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isSmoothScrollingEnabled Lib "Object:ctrl:MobileScrollableArea" As Boolean
+		    Declare Function isSmoothScrollingEnabled Lib kLibMobileScrollableArea As Boolean
 		    Return isSmoothScrollingEnabled
 		    
 		  #EndIf
@@ -115,7 +115,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function pageScroll Lib "Object:ctrl:MobileScrollableArea" (myDirection As Integer) As Boolean
+		    Declare Function pageScroll Lib kLibMobileScrollableArea (myDirection As Int32) As Boolean
 		    Return pageScroll(direction)
 		    
 		  #Else
@@ -132,7 +132,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub removeAllViews Lib "Object:ctrl:MobileScrollableArea"
+		    Declare Sub removeAllViews Lib kLibMobileScrollableArea
 		    removeAllViews
 		    
 		  #EndIf
@@ -145,7 +145,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub removeViewAt Lib "Object:ctrl:MobileScrollableArea" (myIndex As Integer)
+		    Declare Sub removeViewAt Lib kLibMobileScrollableArea (myIndex As Int32)
 		    removeViewAt(index)
 		    
 		  #Else
@@ -162,7 +162,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub removeViews Lib "Object:ctrl:MobileScrollableArea" (myStart As Integer, myCount As Integer)
+		    Declare Sub removeViews Lib kLibMobileScrollableArea (myStart As Int32, myCount As Int32)
 		    removeViews(start, count)
 		    
 		  #Else
@@ -180,7 +180,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub scrollTo Lib "Object:ctrl:MobileScrollableArea" (myX As Integer, myY As Integer)
+		    Declare Sub scrollTo Lib kLibMobileScrollableArea (myX As Int32, myY As Int32)
 		    scrollTo(x, y)
 		    
 		  #Else
@@ -198,7 +198,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setFillViewport Lib "Object:ctrl:MobileScrollableArea" (myFillViewport As Boolean)
+		    Declare Sub setFillViewport Lib kLibMobileScrollableArea (myFillViewport As Boolean)
 		    setFillViewport(fillViewport)
 		    
 		  #Else
@@ -215,7 +215,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setNestedScrollingEnabled Lib "Object:ctrl:MobileScrollableArea" (myEnabled As Boolean)
+		    Declare Sub setNestedScrollingEnabled Lib kLibMobileScrollableArea (myEnabled As Boolean)
 		    setNestedScrollingEnabled(enabled)
 		    
 		  #Else
@@ -232,7 +232,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSmoothScrollingEnabled Lib "Object:ctrl:MobileScrollableArea" (mySmoothScrollingEnabled As Boolean)
+		    Declare Sub setSmoothScrollingEnabled Lib kLibMobileScrollableArea (mySmoothScrollingEnabled As Boolean)
 		    setSmoothScrollingEnabled(smoothScrollingEnabled)
 		    
 		  #Else
@@ -249,7 +249,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub smoothScrollBy Lib "Object:ctrl:MobileScrollableArea" (aX As Integer, aY As Integer)
+		    Declare Sub smoothScrollBy Lib kLibMobileScrollableArea (aX As Int32, aY As Int32)
 		    smoothScrollBy(x, y)
 		    
 		  #Else
@@ -267,7 +267,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub smoothScrollTo Lib "Object:ctrl:MobileScrollableArea" (aX As Integer, aY As Integer)
+		    Declare Sub smoothScrollTo Lib kLibMobileScrollableArea (aX As Int32, aY As Int32)
 		    smoothScrollTo(x, y)
 		    
 		  #Else
@@ -285,7 +285,7 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function startNestedScroll Lib "Object:ctrl:MobileScrollableArea" (axes As Integer) As Boolean
+		    Declare Function startNestedScroll Lib kLibMobileScrollableArea (axes As Int32) As Boolean
 		    Return startNestedScroll(axes)
 		    
 		  #Else
@@ -302,12 +302,16 @@ Protected Module ScrollableAreaXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub stopNestedScroll Lib "Object:ctrl:MobileScrollableArea"
+		    Declare Sub stopNestedScroll Lib kLibMobileScrollableArea
 		    stopNestedScroll
 		    
 		  #EndIf
 		End Sub
 	#tag EndMethod
+
+
+	#tag Constant, Name = kLibMobileScrollableArea, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileScrollableArea", Scope = Private
+	#tag EndConstant
 
 
 	#tag ViewBehavior

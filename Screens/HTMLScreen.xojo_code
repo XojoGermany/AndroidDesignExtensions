@@ -1,33 +1,12 @@
 #tag MobileScreen
-Begin TemplateScreen HTMLScreen
+Begin TemplateScreenWithBackButton HTMLScreen
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
-   HasBackButton   =   False
-   HasNavigationBar=   False
+   Device          =   1
+   HasBackButton   =   True
+   HasNavigationBar=   True
    Modal           =   False
    Orientation     =   0
-   Title           =   "Untitled"
-   Begin NavigationBarContainer NavigationBarContainer1
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      BackgroundColor =   &c00000000
-      ControlCount    =   0
-      Enabled         =   True
-      HasBackButton   =   False
-      HasBackgroundColor=   False
-      HasGradient     =   False
-      Height          =   56
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Text            =   ""
-      Top             =   0
-      Visible         =   True
-      Width           =   360
-   End
+   Title           =   "HTML Viewers"
    Begin MobileHTMLViewer HTMLViewer1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
@@ -42,7 +21,7 @@ Begin TemplateScreen HTMLScreen
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   116
+      Top             =   65
       Visible         =   True
       Width           =   360
    End
@@ -61,6 +40,7 @@ Begin TemplateScreen HTMLScreen
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Password        =   False
       ReadOnly        =   False
       Scope           =   2
@@ -69,11 +49,11 @@ Begin TemplateScreen HTMLScreen
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
-      Top             =   67
+      Top             =   16
       Visible         =   True
       Width           =   148
    End
-   Begin MobileButton SearchButton
+   Begin AppearanceButton SearchButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Search"
@@ -87,11 +67,11 @@ Begin TemplateScreen HTMLScreen
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   702
+      Top             =   651
       Visible         =   True
       Width           =   100
    End
-   Begin MobileButton SaveButton
+   Begin AppearanceButton SaveButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Save WebArchive"
@@ -105,11 +85,11 @@ Begin TemplateScreen HTMLScreen
       LockRight       =   True
       LockTop         =   False
       Scope           =   2
-      Top             =   701
+      Top             =   650
       Visible         =   True
       Width           =   170
    End
-   Begin MobileButton LoadButton
+   Begin AppearanceButton LoadButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Load"
@@ -123,7 +103,7 @@ Begin TemplateScreen HTMLScreen
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   67
+      Top             =   16
       Visible         =   True
       Width           =   100
    End
@@ -141,7 +121,7 @@ Begin TemplateScreen HTMLScreen
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   67
+      Top             =   16
       Visible         =   True
       Width           =   38
    End
@@ -159,7 +139,7 @@ Begin TemplateScreen HTMLScreen
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   67
+      Top             =   16
       Visible         =   True
       Width           =   38
    End
@@ -174,7 +154,7 @@ Begin TemplateScreen HTMLScreen
       Scope           =   2
       Top             =   0
    End
-   Begin MobileProgressBar LoadProgress
+   Begin AppearanceProgressBar LoadProgress
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
@@ -188,12 +168,12 @@ Begin TemplateScreen HTMLScreen
       MaximumValue    =   100.0
       MinimumValue    =   0.0
       Scope           =   2
-      Top             =   51
+      Top             =   0
       Value           =   0.0
       Visible         =   False
       Width           =   360
    End
-   Begin MobileSlider TextZoomSlider
+   Begin AppearanceSlider TextZoomSlider
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
@@ -207,7 +187,7 @@ Begin TemplateScreen HTMLScreen
       MaximumValue    =   250.0
       MinimumValue    =   10.0
       Scope           =   2
-      Top             =   664
+      Top             =   613
       Value           =   50.0
       Visible         =   True
       Width           =   281
@@ -225,10 +205,11 @@ Begin TemplateScreen HTMLScreen
       LockLeft        =   False
       LockRight       =   True
       LockTop         =   False
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "100 %"
       TextColor       =   &c00000000
-      Top             =   668
+      Top             =   617
       Visible         =   True
       Width           =   51
    End
@@ -236,20 +217,26 @@ End
 #tag EndMobileScreen
 
 #tag ScreenCode
-#tag EndScreenCode
-
-#tag Events NavigationBarContainer1
 	#tag Event
 		Sub Opening()
-		  Me.Text = "HTML Viewers"
+		  NavigationToolbar.AddButton(App.PrintButton)
 		End Sub
 	#tag EndEvent
+
 	#tag Event
-		Sub Pressed()
-		  Close
+		Sub ToolbarButtonPressed(button As MobileToolbarButton)
+		  Select Case button.Caption
+		  Case "Print"
+		    
+		    HTMLViewer1.PrintXC
+		    
+		  End Select
 		End Sub
 	#tag EndEvent
-#tag EndEvents
+
+
+#tag EndScreenCode
+
 #tag Events HTMLViewer1
 	#tag Event
 		Sub Opening()
@@ -368,6 +355,30 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ToolbarColor"
+		Visible=false
+		Group="Behavior"
+		InitialValue="&c000000"
+		Type="Color"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="TitleCentered"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="StatusBarColor"
+		Visible=false
+		Group="Behavior"
+		InitialValue="Color.Clear"
+		Type="Color"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="HasBackButton"
 		Visible=true

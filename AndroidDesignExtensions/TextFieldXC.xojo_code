@@ -7,7 +7,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub append Lib "Object:ctrl:MobileTextField" (myText As CString)
+		    Declare Sub append Lib kLibMobileTextField (myText As CString)
 		    append(text)
 		    
 		  #Else
@@ -24,7 +24,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub append Lib "Object:ctrl:MobileTextField" (myText As CString, myStart As Integer, myStop As Integer)
+		    Declare Sub append Lib kLibMobileTextField (myText As CString, myStart As Int32, myStop As Int32)
 		    append(text, start, stop)
 		    
 		  #Else
@@ -43,21 +43,21 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBoxBackgroundColor Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getBoxBackgroundColor" As Integer
-		    Return getBoxBackgroundColor.ToColor
+		    Declare Function getBoxBackgroundColor Lib kTextInputLayoutLib (obj As Ptr) As Int32
+		    Return getBoxBackgroundColor(ctrl.Layout).ToColor
 		    
 		  #EndIf
 		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 4765742074686520626F78206261636B67726F756E64206D6F6465202866696C6C65642C206F75746C696E652C206F72206E6F6E65292E
-		Function GetBoxBackgroundModeXC(Extends ctrl As MobileTextField) As BoxBackgroundModes
+		Function GetBoxBackgroundModeXC(Extends ctrl As MobileTextField) As BoxBackgroundModesXC
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBoxBackgroundMode Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getBoxBackgroundMode" As Integer
-		    Return BoxBackgroundModes(getBoxBackgroundMode)
+		    Declare Function getBoxBackgroundMode Lib kTextInputLayoutLib (obj As Ptr) As Integer
+		    Return BoxBackgroundModesXC(getBoxBackgroundMode(ctrl.Layout))
 		    
 		  #EndIf
 		End Function
@@ -69,8 +69,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBoxCornerRadiusBottomEnd Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getBoxCornerRadiusBottomEnd" As Integer
-		    Return getBoxCornerRadiusBottomEnd
+		    Declare Function getBoxCornerRadiusBottomEnd Lib kTextInputLayoutLib (obj As Ptr) As Single
+		    Return getBoxCornerRadiusBottomEnd(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -82,8 +82,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBoxCornerRadiusBottomStart Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getBoxCornerRadiusBottomStart" As Integer
-		    Return getBoxCornerRadiusBottomStart
+		    Declare Function getBoxCornerRadiusBottomStart Lib kTextInputLayoutLib (obj As Ptr) As Single
+		    Return getBoxCornerRadiusBottomStart(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -95,8 +95,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBoxCornerRadiusTopEnd Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getBoxCornerRadiusTopEnd" As Integer
-		    Return getBoxCornerRadiusTopEnd
+		    Declare Function getBoxCornerRadiusTopEnd Lib kTextInputLayoutLib (obj As Ptr) As Single
+		    Return getBoxCornerRadiusTopEnd(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -108,8 +108,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBoxCornerRadiusTopStart Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getBoxCornerRadiusTopStart" As Integer
-		    Return getBoxCornerRadiusTopStart
+		    Declare Function getBoxCornerRadiusTopStart Lib kTextInputLayoutLib (obj As Ptr) As Single
+		    Return getBoxCornerRadiusTopStart(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -121,8 +121,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBoxStrokeColor Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getBoxStrokeColor" As Integer
-		    Return getBoxStrokeColor.ToColor
+		    Declare Function getBoxStrokeColor Lib kTextInputLayoutLib (obj As Ptr) As Int32
+		    Return getBoxStrokeColor(ctrl.Layout).ToColor
 		    
 		  #EndIf
 		End Function
@@ -134,8 +134,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBoxStrokeWidthFocused Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getBoxStrokeWidthFocused" As Integer
-		    Return getBoxStrokeWidthFocused
+		    Declare Function getBoxStrokeWidthFocused Lib kTextInputLayoutLib (obj As Ptr) As Int32
+		    Return getBoxStrokeWidthFocused(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -147,8 +147,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getBoxStrokeWidth Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getBoxStrokeWidth" As Integer
-		    Return getBoxStrokeWidth
+		    Declare Function getBoxStrokeWidth Lib kTextInputLayoutLib (obj As Ptr) As Int32
+		    Return getBoxStrokeWidth(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -160,8 +160,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCounterMaxLength Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getCounterMaxLength" As Integer
-		    Return getCounterMaxLength
+		    Declare Function getCounterMaxLength Lib kTextInputLayoutLib (obj As Ptr) As Int32
+		    Return getCounterMaxLength(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -173,21 +173,21 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getEndIconContentDescription Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getEndIconContentDescription" As CString
-		    Return getEndIconContentDescription
+		    Declare Function getEndIconContentDescription Lib kTextInputLayoutLib (obj As Ptr) As CString
+		    Return getEndIconContentDescription(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F782773207374726F6B652077696474682E
-		Function GetEndIconModeXC(Extends ctrl As MobileTextField) As EndIconModes
+		Function GetEndIconModeXC(Extends ctrl As MobileTextField) As EndIconModesXC
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getEndIconMode Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getEndIconMode" As Integer
-		    Return EndIconModes(getEndIconMode)
+		    Declare Function getEndIconMode Lib kTextInputLayoutLib (obj As Ptr) As Integer
+		    Return EndIconModesXC(getEndIconMode(ctrl.Layout))
 		    
 		  #EndIf
 		End Function
@@ -199,8 +199,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getErrorCurrentTextColors Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getErrorCurrentTextColors" As Integer
-		    Return getErrorCurrentTextColors.ToColor
+		    Declare Function getErrorCurrentTextColors Lib kTextInputLayoutLib (obj As Ptr) As Int32
+		    Return getErrorCurrentTextColors(ctrl.Layout).ToColor
 		    
 		  #EndIf
 		End Function
@@ -212,8 +212,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getError Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getError" As CString
-		    Return getError
+		    Declare Function getError Lib kTextInputLayoutLib (obj As Ptr) As CString
+		    Return getError(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -225,8 +225,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getHelperTextCurrentTextColor Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getHelperTextCurrentTextColor" As Integer
-		    Return getHelperTextCurrentTextColor.ToColor
+		    Declare Function getHelperTextCurrentTextColor Lib kTextInputLayoutLib (obj As Ptr) As Int32
+		    Return getHelperTextCurrentTextColor(ctrl.Layout).ToColor
 		    
 		  #EndIf
 		End Function
@@ -238,8 +238,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getHelperText Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getHelperText" As CString
-		    Return getHelperText
+		    Declare Function getHelperText Lib kTextInputLayoutLib (obj As Ptr) As CString
+		    Return getHelperText(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -251,7 +251,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getInputType Lib "Object:ctrl:MobileTextField" As Integer
+		    Declare Function getInputType Lib kLibMobileTextField As Int32
 		    Return getInputType
 		    
 		  #EndIf
@@ -264,8 +264,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getPrefixText Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getPrefixText" As CString
-		    Return getPrefixText
+		    Declare Function getPrefixText Lib kTextInputLayoutLib (obj As Ptr) As CString
+		    Return getPrefixText(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -277,8 +277,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getStartIconContentDescription Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getStartIconContentDescription" As CString
-		    Return getStartIconContentDescription
+		    Declare Function getStartIconContentDescription Lib kTextInputLayoutLib (obj As Ptr) As CString
+		    Return getStartIconContentDescription(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -290,8 +290,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getSuffixText Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.getSuffixText" As CString
-		    Return getSuffixText
+		    Declare Function getSuffixText Lib kTextInputLayoutLib (obj As Ptr) As CString
+		    Return getSuffixText(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -303,7 +303,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function hasSelection Lib "Object:ctrl:MobileTextField" As Boolean
+		    Declare Function hasSelection Lib kLibMobileTextField As Boolean
 		    Return hasSelection
 		    
 		  #EndIf
@@ -316,8 +316,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isCounterEnabled Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.isCounterEnabled" As Boolean
-		    Return isCounterEnabled
+		    Declare Function isCounterEnabled Lib kTextInputLayoutLib (obj As Ptr) As Boolean
+		    Return isCounterEnabled(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -329,7 +329,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isCursorVisible Lib "Object:ctrl:MobileTextField" As Boolean
+		    Declare Function isCursorVisible Lib kLibMobileTextField As Boolean
 		    Return isCursorVisible
 		    
 		  #EndIf
@@ -342,8 +342,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isEndIconCheckable Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.isEndIconCheckable" As Boolean
-		    Return isEndIconCheckable
+		    Declare Function isEndIconCheckable Lib kTextInputLayoutLib (obj As Ptr) As Boolean
+		    Return isEndIconCheckable(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -355,8 +355,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isEndIconVisible Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.isEndIconVisible" As Boolean
-		    Return isEndIconVisible
+		    Declare Function isEndIconVisible Lib kTextInputLayoutLib (obj As Ptr) As Boolean
+		    Return isEndIconVisible(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -368,8 +368,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isErrorEnabled Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.isErrorEnabled" As Boolean
-		    Return isErrorEnabled
+		    Declare Function isErrorEnabled Lib kTextInputLayoutLib (obj As Ptr) As Boolean
+		    Return isErrorEnabled(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -381,8 +381,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isExpandedHintEnabled Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.isExpandedHintEnabled" As Boolean
-		    Return isExpandedHintEnabled
+		    Declare Function isExpandedHintEnabled Lib kTextInputLayoutLib (obj As Ptr) As Boolean
+		    Return isExpandedHintEnabled(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -394,8 +394,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isHelperTextEnabled Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.isHelperTextEnabled" As Boolean
-		    Return isHelperTextEnabled
+		    Declare Function isHelperTextEnabled Lib kTextInputLayoutLib (obj As Ptr) As Boolean
+		    Return isHelperTextEnabled(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -407,8 +407,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isHintAnimationEnabled Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.isHintAnimationEnabled" As Boolean
-		    Return isHintAnimationEnabled
+		    Declare Function isHintAnimationEnabled Lib kTextInputLayoutLib (obj As Ptr) As Boolean
+		    Return isHintAnimationEnabled(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -420,8 +420,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isHintEnabled Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.isHintEnabled" As Boolean
-		    Return isHintEnabled
+		    Declare Function isHintEnabled Lib kTextInputLayoutLib (obj As Ptr) As Boolean
+		    Return isHintEnabled(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -433,8 +433,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isStartIconCheckable Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.isStartIconCheckable" As Boolean
-		    Return isStartIconCheckable
+		    Declare Function isStartIconCheckable Lib kTextInputLayoutLib (obj As Ptr) As Boolean
+		    Return isStartIconCheckable(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -446,8 +446,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isStartIconVisible Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.isStartIconVisible" As Boolean
-		    Return isStartIconVisible
+		    Declare Function isStartIconVisible Lib kTextInputLayoutLib (obj As Ptr) As Boolean
+		    Return isStartIconVisible(ctrl.Layout)
 		    
 		  #EndIf
 		End Function
@@ -459,8 +459,21 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isTextSelectable Lib "Object:ctrl:MobileTextField" As Boolean
+		    Declare Function isTextSelectable Lib kLibMobileTextField As Boolean
 		    Return isTextSelectable
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h21, Description = 52657475726E73207468652054657874496E7075744C61796F757420696E7374616E636520666F7220746865204D6F62696C65546578744669656C642E
+		Private Function Layout(Extends ctrl As MobileTextField) As Ptr
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getTextInputLayoutInstance Lib kLibMobileTextField Alias "_parentLayout!!" As Ptr
+		    Return getTextInputLayoutInstance
 		    
 		  #EndIf
 		End Function
@@ -472,8 +485,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBoxBackgroundColor Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setBoxBackgroundColor" (myBoxBackgroundMode As Integer)
-		    setBoxBackgroundColor(c.ToInteger)
+		    Declare Sub setBoxBackgroundColor Lib kTextInputLayoutLib (obj As Ptr, myBoxBackgroundColor As Int32)
+		    setBoxBackgroundColor(ctrl.Layout, c.ToInteger)
 		    
 		  #Else
 		    
@@ -484,13 +497,13 @@ Protected Module TextFieldXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 5365742074686520626F78206261636B67726F756E64206D6F6465202866696C6C65642C206F75746C696E652C206F72206E6F6E65292E0A0A4D6179206265206F6E65206F6620424F585F4241434B47524F554E445F4E4F4E452C20424F585F4241434B47524F554E445F46494C4C45442C206F7220424F585F4241434B47524F554E445F4F55544C494E452E0A0A4E6F74653A2054686973206D6574686F6420646566696E65732054657874496E7075744C61796F7574277320696E7465726E616C206265686176696F722028666F72206578616D706C652C20697420616C6C6F7773207468652068696E7420746F20626520646973706C6179656420696E6C696E65207769746820746865207374726F6B6520696E2061206375746F7574292C2062757420646F65736E27742073657420616C6C20617474726962757465732074686174206172652073657420696E20746865207374796C65732070726F766964656420666F722074686520626F78206261636B67726F756E64206D6F6465732E20546F206163686965766520746865206C6F6F6B206F6620616E206F75746C696E6564206F722066696C6C65642074657874206669656C642C20737570706C656D656E742074686973206D6574686F642077697468206F74686572206D6574686F64732074686174206D6F646966792074686520626F782C207375636820617320736574426F785374726F6B65436F6C6F7228696E742920616E6420736574426F784261636B67726F756E64436F6C6F7228696E74292E
-		Sub SetBoxBackgroundModeXC(Extends ctrl As MobileTextField, mode As BoxBackgroundModes)
+		Sub SetBoxBackgroundModeXC(Extends ctrl As MobileTextField, mode As BoxBackgroundModesXC)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBoxBackgroundMode Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setBoxBackgroundMode" (myBoxBackgroundMode As Integer)
-		    setBoxBackgroundMode(Integer(mode))
+		    Declare Sub setBoxBackgroundMode Lib kTextInputLayoutLib (obj As Ptr, myBoxBackgroundMode As Int32)
+		    setBoxBackgroundMode(ctrl.Layout, Integer(mode))
 		    
 		  #Else
 		    
@@ -501,13 +514,13 @@ Protected Module TextFieldXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 536574732074686520626F78277320636F726E65722066616D696C7920666F7220616C6C20636F726E657273206F66207468652074657874206669656C642E
-		Sub SetBoxCornerFamilyXC(Extends ctrl As MobileTextField, cornerFamily As BoxCornerFamily)
+		Sub SetBoxCornerFamilyXC(Extends ctrl As MobileTextField, cornerFamily As BoxCornerFamilyXC)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBoxCornerFamily Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setBoxCornerFamily" (myCornerFamily As Integer)
-		    setBoxCornerFamily(Integer(cornerFamily))
+		    Declare Sub setBoxCornerFamily Lib kTextInputLayoutLib (obj As Ptr, myCornerFamily As Int32)
+		    setBoxCornerFamily(ctrl.Layout, Integer(cornerFamily))
 		    
 		  #Else
 		    
@@ -523,9 +536,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBoxCornerRadii Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setBoxCornerRadii" (myBoxCornerRadiusTopStart As Single, myBoxCornerRadiusTopEnd As Single, _
-		    myBoxCornerRadiusBottomStart As Single, myBoxCornerRadiusBottomEnd As Single)
-		    setBoxCornerRadii(boxCornerRadiusTopStart, boxCornerRadiusTopEnd, boxCornerRadiusBottomStart, boxCornerRadiusBottomEnd)
+		    Declare Sub setBoxCornerRadii Lib kTextInputLayoutLib (obj As Ptr,myBoxCornerRadiusTopStart As Single, myBoxCornerRadiusTopEnd As Single, myBoxCornerRadiusBottomStart As Single, myBoxCornerRadiusBottomEnd As Single)
+		    setBoxCornerRadii(ctrl.Layout, boxCornerRadiusTopStart, boxCornerRadiusTopEnd, boxCornerRadiusBottomStart, boxCornerRadiusBottomEnd)
 		    
 		  #Else
 		    
@@ -544,8 +556,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBoxStrokeColor Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setBoxStrokeColor" (myColor As Integer)
-		    setBoxStrokeColor(c.ToInteger)
+		    Declare Sub setBoxStrokeColor Lib kTextInputLayoutLib (obj As Ptr, myColor As Int32)
+		    setBoxStrokeColor(ctrl.Layout, c.ToInteger)
 		    
 		  #Else
 		    
@@ -561,9 +573,9 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBoxStrokeErrorColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setBoxStrokeErrorColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    setBoxStrokeErrorColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setBoxStrokeErrorColor Lib kLibMobileTextFieldKotlin Alias _
+		    "_parentLayout!!.setBoxStrokeErrorColor(strokeerrorcolor as android.content.res.ColorStateList)" (strokeErrorColor As Ptr)
+		    setBoxStrokeErrorColor(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -579,8 +591,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBoxStrokeWidthFocused Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setBoxStrokeWidthFocused" (myBoxStrokeWidthFocused As Integer)
-		    setBoxStrokeWidthFocused(boxStrokeWidthFocused)
+		    Declare Sub setBoxStrokeWidthFocused Lib kTextInputLayoutLib (obj As Ptr, myBoxStrokeWidthFocused As Int32)
+		    setBoxStrokeWidthFocused(ctrl.Layout, boxStrokeWidthFocused)
 		    
 		  #Else
 		    
@@ -596,8 +608,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBoxStrokeWidth Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setBoxStrokeWidth" (myBoxStrokeWidth As Integer)
-		    setBoxStrokeWidth(boxStrokeWidth)
+		    Declare Sub setBoxStrokeWidth Lib kTextInputLayoutLib (obj As Ptr, myBoxStrokeWidth As Int32)
+		    setBoxStrokeWidth(ctrl.Layout, boxStrokeWidth)
 		    
 		  #Else
 		    
@@ -613,8 +625,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setCounterEnabled Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setCounterEnabled" (myEnabled As Boolean)
-		    setCounterEnabled(enabled)
+		    Declare Sub setCounterEnabled Lib kTextInputLayoutLib (obj As Ptr, myEnabled As Boolean)
+		    setCounterEnabled(ctrl.Layout, enabled)
 		    
 		  #Else
 		    
@@ -630,8 +642,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setCounterMaxLength Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setCounterMaxLength" (myMaxLength As Integer)
-		    setCounterMaxLength(maxLength)
+		    Declare Sub setCounterMaxLength Lib kTextInputLayoutLib (obj As Ptr, myMaxLength As Int32)
+		    setCounterMaxLength(ctrl.Layout, maxLength)
 		    
 		  #Else
 		    
@@ -647,9 +659,9 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setCounterOverflowTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setCounterOverflowTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    setCounterOverflowTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setCounterOverflowTextColor Lib kLibMobileTextFieldKotlin Alias _
+		    "_parentLayout!!.setCounterOverflowTextColor(counteroverflowtextcolor as android.content.res.ColorStateList)" (counterOverflowTextColor As Ptr)
+		    setCounterOverflowTextColor(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -665,9 +677,9 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setCounterTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setCounterTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    setCounterTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setCounterTextColor Lib kLibMobileTextFieldKotlin Alias _
+		    "_parentLayout!!.setCounterTextColor(countertextcolor as android.content.res.ColorStateList)" (counterTextColor As Ptr)
+		    setCounterTextColor(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -683,9 +695,9 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setCursorColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setCursorColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    setCursorColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setCursorColor Lib kLibMobileTextFieldKotlin Alias _
+		    "_parentLayout!!.setCursorColor(cursorcolor as android.content.res.ColorStateList)" (cursorColor As Ptr)
+		    setCursorColor(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -701,9 +713,9 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setCursorErrorColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setCursorErrorColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    setCursorErrorColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setCursorErrorColor Lib kLibMobileTextFieldKotlin Alias _
+		    "_parentLayout!!.setCursorErrorColor(cursorerrorcolor as android.content.res.ColorStateList)" (cursorErrorColor As Ptr)
+		    setCursorErrorColor(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -719,9 +731,9 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDefaultHintTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setDefaultHintTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    setDefaultHintTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setDefaultHintTextColor Lib kLibMobileTextFieldKotlin Alias _
+		    "_parentLayout!!.setDefaultHintTextColor(textcolor as android.content.res.ColorStateList)" (textColor As Ptr)
+		    setDefaultHintTextColor(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -737,7 +749,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setElegantTextHeight Lib "Object:ctrl:MobileTextField" (myElegant As Boolean)
+		    Declare Sub setElegantTextHeight Lib kLibMobileTextField (myElegant As Boolean)
 		    setElegantTextHeight(elegant)
 		    
 		  #Else
@@ -754,8 +766,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setEndIconActivated Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setEndIconActivated" (myEndIconActivated As Boolean)
-		    setEndIconActivated(endIconActivated)
+		    Declare Sub setEndIconActivated Lib kTextInputLayoutLib (obj As Ptr, myEndIconActivated As Boolean)
+		    setEndIconActivated(ctrl.Layout, endIconActivated)
 		    
 		  #Else
 		    
@@ -771,8 +783,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setEndIconCheckable Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setEndIconCheckable" (myEndIconCheckable As Boolean)
-		    setEndIconCheckable(endIconCheckable)
+		    Declare Sub setEndIconCheckable Lib kTextInputLayoutLib (obj As Ptr, myEndIconCheckable As Boolean)
+		    setEndIconCheckable(ctrl.Layout, endIconCheckable)
 		    
 		  #Else
 		    
@@ -788,8 +800,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setEndIconContentDescription Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setEndIconContentDescription" (myEndIconContentDescription As CString)
-		    setEndIconContentDescription(endIconContentDescription)
+		    Declare Sub setEndIconContentDescription Lib kTextInputLayoutLib (obj As Ptr, myEndIconContentDescription As CString)
+		    setEndIconContentDescription(ctrl.Layout, endIconContentDescription)
 		    
 		  #Else
 		    
@@ -805,8 +817,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setEndIconMinSize Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setEndIconMinSize" (myIconSize As Integer)
-		    setEndIconMinSize(iconSize)
+		    Declare Sub setEndIconMinSize Lib kTextInputLayoutLib (obj As Ptr, myIconSize As Int32)
+		    setEndIconMinSize(ctrl.Layout, iconSize)
 		    
 		  #Else
 		    
@@ -817,13 +829,13 @@ Protected Module TextFieldXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 5365742075702074686520656E642069636F6E206D6F64652E205768656E207365742C206120627574746F6E20697320706C616365642061742074686520656E64206F662074686520456469745465787420776869636820656E61626C657320746865207573657220746F20706572666F726D207468652073706563696669632069636F6E27732066756E6374696F6E616C6974792E
-		Sub SetEndIconModeXC(Extends ctrl As MobileTextField, mode As EndIconModes)
+		Sub SetEndIconModeXC(Extends ctrl As MobileTextField, mode As EndIconModesXC)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setEndIconMode Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setEndIconMode" (myEndIconMode As Integer)
-		    setEndIconMode(Integer(mode))
+		    Declare Sub setEndIconMode Lib kTextInputLayoutLib (obj As Ptr, myEndIconMode As Int32)
+		    setEndIconMode(ctrl.Layout, Integer(mode))
 		    
 		  #Else
 		    
@@ -839,9 +851,9 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setEndIconTintList Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setEndIconTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    setEndIconTintList(c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setEndIconTintList Lib kLibMobileTextFieldKotlin Alias _
+		    "_parentLayout!!.setEndIconTintList(endicontintlist as android.content.res.ColorStateList)" (endIconTintList As Ptr)
+		    setEndIconTintList(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -852,12 +864,12 @@ Protected Module TextFieldXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 5370656369666965732074686520626C656E64696E67206D6F6465207573656420746F206170706C79207468652074696E742073706563696669656420627920736574456E6449636F6E54696E744C69737428436F6C6F7253746174654C6973742920746F2074686520656E642069636F6E206472617761626C652E205468652064656661756C74206D6F646520697320506F72746572447566662E4D6F64652E5352435F494E2E
-		Sub SetEndIconTintModeXC(Extends ctrl As MobileTextField, mode As PorterDuffModes)
+		Sub SetEndIconTintModeXC(Extends ctrl As MobileTextField, mode As PorterDuffModesXC)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setEndIconTintMode Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setEndIconTintMode(android.graphics.PorterDuff.Mode.valueOf(mymode.toString()))" (myMode As CString)
+		    Declare Sub setEndIconTintMode Lib kLibMobileTextFieldKotlin Alias "_parentLayout!!.setEndIconTintMode(android.graphics.PorterDuff.Mode.valueOf(mymode.toString()))" (myMode As CString)
 		    setEndIconTintMode(mode.ToString)
 		    
 		  #Else
@@ -874,8 +886,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setEndIconVisible Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setEndIconVisible" (myVisible As Boolean)
-		    setEndIconVisible(visible)
+		    Declare Sub setEndIconVisible Lib kTextInputLayoutLib (obj As Ptr, myVisible As Boolean)
+		    setEndIconVisible(ctrl.Layout, visible)
 		    
 		  #Else
 		    
@@ -886,17 +898,34 @@ Protected Module TextFieldXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 536574207468652069636F6E20746F2075736520666F722074686520656E642069636F6E2E2054686973206D6574686F642073686F756C642062652063616C6C65642061667465722073706563696679696E6720616E2054657874496E7075744C61796F75742E456E6449636F6E4D6F64652076696120736574456E6449636F6E4D6F646528696E74292E0A0A496620796F752075736520616E2069636F6E20796F752073686F756C6420616C736F207365742061206465736372697074696F6E20666F722069747320616374696F6E207573696E6720736574456E6449636F6E436F6E74656E744465736372697074696F6E284368617253657175656E6365292E2054686973206973207573656420666F72206163636573736962696C6974792E
-		Sub SetEndIconXC(Extends ctrl As MobileTextField, file As FolderItem)
+		Attributes( Deprecated = "SetEndIconXC(icon As Picture)" )  Sub SetEndIconXC(Extends ctrl As MobileTextField, file As FolderItem)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setEndIconDrawable Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setEndIconDrawable(android.graphics.drawable.Drawable.createFromPath(myicon.toString()))" (myIcon As CString)
+		    Declare Sub setEndIconDrawable Lib kLibMobileTextFieldKotlin Alias "_parentLayout!!.setEndIconDrawable(android.graphics.drawable.Drawable.createFromPath(myicon.toString()))" (myIcon As CString)
 		    setEndIconDrawable(file.NativePath)
 		    
 		  #Else
 		    
 		    #Pragma Unused file
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652069636F6E20746F2075736520666F722074686520656E642069636F6E2E2054686973206D6574686F642073686F756C642062652063616C6C65642061667465722073706563696679696E6720616E2054657874496E7075744C61796F75742E456E6449636F6E4D6F64652076696120736574456E6449636F6E4D6F646528696E74292E0A0A496620796F752075736520616E2069636F6E20796F752073686F756C6420616C736F207365742061206465736372697074696F6E20666F722069747320616374696F6E207573696E6720736574456E6449636F6E436F6E74656E744465736372697074696F6E284368617253657175656E6365292E2054686973206973207573656420666F72206163636573736962696C6974792E
+		Sub SetEndIconXC(Extends ctrl As MobileTextField, icon As Picture)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setEndIconDrawable Lib kLibMobileTextFieldKotlin Alias "_parentLayout!!.setEndIconDrawable(icon as android.graphics.drawable.Drawable)" (icon As Ptr)
+		    setEndIconDrawable(icon.ToDrawable)
+		    
+		  #Else
+		    
+		    #Pragma Unused icon
 		    
 		  #EndIf
 		End Sub
@@ -908,8 +937,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setErrorContentDescription Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setErrorContentDescription" (myErrorContentDescription As CString)
-		    setErrorContentDescription(errorContentDescription)
+		    Declare Sub setErrorContentDescription Lib kTextInputLayoutLib (obj As Ptr, myErrorContentDescription As CString)
+		    setErrorContentDescription(ctrl.Layout, errorContentDescription)
 		    
 		  #Else
 		    
@@ -925,8 +954,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setErrorEnabled Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setErrorEnabled" (myEnabled As Boolean)
-		    setErrorEnabled(enabled)
+		    Declare Sub setErrorEnabled Lib kTextInputLayoutLib (obj As Ptr, myEnabled As Boolean)
+		    setErrorEnabled(ctrl.Layout, enabled)
 		    
 		  #Else
 		    
@@ -937,17 +966,34 @@ Protected Module TextFieldXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 53657473207468652073746172742069636F6E2E0A0A496620796F752075736520616E2069636F6E20796F752073686F756C6420616C736F207365742061206465736372697074696F6E20666F722069747320616374696F6E207573696E6720736574537461727449636F6E436F6E74656E744465736372697074696F6E284368617253657175656E6365292E2054686973206973207573656420666F72206163636573736962696C6974792E
-		Sub SetErrorIconXC(Extends ctrl As MobileTextField, file As FolderItem)
+		Attributes( Deprecated = "SetErrorIconXC(icon As Picture)" )  Sub SetErrorIconXC(Extends ctrl As MobileTextField, file As FolderItem)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setErrorIconDrawable Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setErrorIconDrawable(android.graphics.drawable.Drawable.createFromPath(myicon.toString()))" (myIcon As CString)
+		    Declare Sub setErrorIconDrawable Lib kLibMobileTextFieldKotlin Alias "_parentLayout!!.setErrorIconDrawable(android.graphics.drawable.Drawable.createFromPath(myicon.toString()))" (myIcon As CString)
 		    setErrorIconDrawable(file.NativePath)
 		    
 		  #Else
 		    
 		    #Pragma Unused file
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652073746172742069636F6E2E0A0A496620796F752075736520616E2069636F6E20796F752073686F756C6420616C736F207365742061206465736372697074696F6E20666F722069747320616374696F6E207573696E6720736574537461727449636F6E436F6E74656E744465736372697074696F6E284368617253657175656E6365292E2054686973206973207573656420666F72206163636573736962696C6974792E
+		Sub SetErrorIconXC(Extends ctrl As MobileTextField, icon As Picture)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setErrorIconDrawable Lib kLibMobileTextFieldKotlin Alias "_parentLayout!!.setErrorIconDrawable(icon as android.graphics.drawable.Drawable)" (icon As Ptr)
+		    setErrorIconDrawable(icon.ToDrawable)
+		    
+		  #Else
+		    
+		    #Pragma Unused icon
 		    
 		  #EndIf
 		End Sub
@@ -959,9 +1005,9 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setErrorTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setErrorTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    setErrorTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setErrorTextColor Lib kLibMobileTextFieldKotlin Alias _
+		    "_parentLayout!!.setErrorTextColor(errortextcolor as android.content.res.ColorStateList)" (errorTextColor As Ptr)
+		    setErrorTextColor(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -977,7 +1023,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setError Lib "Object:ctrl:MobileTextField" (myError As CString)
+		    Declare Sub setError Lib kLibMobileTextField (myError As CString)
 		    setError(error)
 		    
 		  #Else
@@ -994,8 +1040,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setExpandedHintEnabled Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setExpandedHintEnabled" (myEnabled As Boolean)
-		    setExpandedHintEnabled(enabled)
+		    Declare Sub setExpandedHintEnabled Lib kTextInputLayoutLib (obj As Ptr, myEnabled As Boolean)
+		    setExpandedHintEnabled(ctrl.Layout, enabled)
 		    
 		  #Else
 		    
@@ -1011,9 +1057,9 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHelperTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setHelperTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    setHelperTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setHelperTextColor Lib kLibMobileTextFieldKotlin Alias _
+		    "_parentLayout!!.setHelperTextColor(helpertextcolor as android.content.res.ColorStateList)" (helperTextColor As Ptr)
+		    setHelperTextColor(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -1029,8 +1075,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHelperTextEnabled Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setHelperTextEnabled" (myEnabled As Boolean)
-		    setHelperTextEnabled(enabled)
+		    Declare Sub setHelperTextEnabled Lib kTextInputLayoutLib (obj As Ptr, myEnabled As Boolean)
+		    setHelperTextEnabled(ctrl.Layout, enabled)
 		    
 		  #Else
 		    
@@ -1046,8 +1092,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHelperText Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setHelperText" (myHelperText As CString)
-		    setHelperText(helperText)
+		    Declare Sub setHelperText Lib kTextInputLayoutLib (obj As Ptr, myHelperText As CString)
+		    setHelperText(ctrl.Layout, helperText)
 		    
 		  #Else
 		    
@@ -1063,7 +1109,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHighlightColor Lib "Object:ctrl:MobileTextField" (myColor As Integer)
+		    Declare Sub setHighlightColor Lib kLibMobileTextField (myColor As Int32)
 		    setHighlightColor(c.ToInteger)
 		    
 		  #Else
@@ -1080,8 +1126,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHintAnimationEnabled Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setHintAnimationEnabled" (myEnabled As Boolean)
-		    setHintAnimationEnabled(enabled)
+		    Declare Sub setHintAnimationEnabled Lib kTextInputLayoutLib (obj As Ptr, myEnabled As Boolean)
+		    setHintAnimationEnabled(ctrl.Layout, enabled)
 		    
 		  #Else
 		    
@@ -1097,8 +1143,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHintEnabled Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setHintEnabled" (myEnabled As Boolean)
-		    setHintEnabled(enabled)
+		    Declare Sub setHintEnabled Lib kTextInputLayoutLib (obj As Ptr, myEnabled As Boolean)
+		    setHintEnabled(ctrl.Layout, enabled)
 		    
 		  #Else
 		    
@@ -1114,9 +1160,9 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHintTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setHintTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    setHintTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setHintTextColor Lib kLibMobileTextFieldKotlin Alias _
+		    "_parentLayout!!.setHintTextColor(hinttextcolor as android.content.res.ColorStateList)" (hintTextColor As Ptr)
+		    setHintTextColor(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -1132,8 +1178,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setHint Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setHint" (myHint As CString)
-		    setHint(hint)
+		    Declare Sub setHint Lib kTextInputLayoutLib (obj As Ptr, myHint As CString)
+		    setHint(ctrl.Layout, hint)
 		    
 		  #Else
 		    
@@ -1149,7 +1195,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setInputType Lib "Object:ctrl:MobileTextField" (myType As Integer)
+		    Declare Sub setInputType Lib kLibMobileTextField (myType As Int32)
 		    setInputType(type)
 		    
 		  #Else
@@ -1166,7 +1212,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setLetterSpacing Lib "Object:ctrl:MobileTextField" (myLetterSpacing As Single)
+		    Declare Sub setLetterSpacing Lib kLibMobileTextField (myLetterSpacing As Single)
 		    setLetterSpacing(letterSpacing)
 		    
 		  #Else
@@ -1183,9 +1229,9 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setPlaceholderTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setPlaceholderTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    setPlaceholderTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setPlaceholderTextColor Lib kLibMobileTextFieldKotlin Alias _
+		    "_parentLayout!!.setPlaceholderTextColor(placeholdertextcolor as android.content.res.ColorStateList)" (placeholderTextColor As Ptr)
+		    setPlaceholderTextColor(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -1201,9 +1247,9 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setPrefixTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setPrefixTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    setPrefixTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setPrefixTextColor Lib kLibMobileTextFieldKotlin Alias _
+		    "_parentLayout!!.setPrefixTextColor(prefixtextcolor as android.content.res.ColorStateList)" (prefixTextColor As Ptr)
+		    setPrefixTextColor(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -1219,8 +1265,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setPrefixText Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setPrefixText" (myPrefixText As CString)
-		    setPrefixText(prefixText)
+		    Declare Sub setPrefixText Lib kTextInputLayoutLib (obj As Ptr, myPrefixText As CString)
+		    setPrefixText(ctrl.Layout, prefixText)
 		    
 		  #Else
 		    
@@ -1236,7 +1282,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSelected Lib "Object:ctrl:MobileTextField" (mySelected As Boolean)
+		    Declare Sub setSelected Lib kLibMobileTextField (mySelected As Boolean)
 		    setSelected(selected)
 		    
 		  #Else
@@ -1253,7 +1299,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSelection Lib "Object:ctrl:MobileTextField" (myStart As Integer, myStop As Integer)
+		    Declare Sub setSelection Lib kLibMobileTextField (myStart As Int32, myStop As Int32)
 		    setSelection(start, stop)
 		    
 		  #Else
@@ -1271,7 +1317,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setShadowLayer Lib "Object:ctrl:MobileTextField" (myRadius As Single, mydX As Single, mydY As Single, myColor As Integer)
+		    Declare Sub setShadowLayer Lib kLibMobileTextField (myRadius As Single, mydX As Single, mydY As Single, myColor As Int32)
 		    setShadowLayer(radius, dX, dY, c.ToInteger)
 		    
 		  #Else
@@ -1291,7 +1337,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setShowSoftInputOnFocus Lib "Object:ctrl:MobileTextField" (myShow As Boolean)
+		    Declare Sub setShowSoftInputOnFocus Lib kLibMobileTextField (myShow As Boolean)
 		    setShowSoftInputOnFocus(show)
 		    
 		  #Else
@@ -1308,8 +1354,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStartIconCheckable Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setStartIconCheckable" (myStartIconCheckable As Boolean)
-		    setStartIconCheckable(startIconCheckable)
+		    Declare Sub setStartIconCheckable Lib kTextInputLayoutLib (obj As Ptr, myStartIconCheckable As Boolean)
+		    setStartIconCheckable(ctrl.Layout, startIconCheckable)
 		    
 		  #Else
 		    
@@ -1325,8 +1371,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStartIconContentDescription Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setStartIconContentDescription" (myStartIconContentDescription As CString)
-		    setStartIconContentDescription(startIconContentDescription)
+		    Declare Sub setStartIconContentDescription Lib kTextInputLayoutLib (obj As Ptr, myStartIconContentDescription As CString)
+		    setStartIconContentDescription(ctrl.Layout, startIconContentDescription)
 		    
 		  #Else
 		    
@@ -1342,8 +1388,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStartIconMinSize Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setStartIconMinSize" (myIconSize As Integer)
-		    setStartIconMinSize(iconSize)
+		    Declare Sub setStartIconMinSize Lib kTextInputLayoutLib (obj As Ptr, myIconSize As Int32)
+		    setStartIconMinSize(ctrl.Layout, iconSize)
 		    
 		  #Else
 		    
@@ -1359,9 +1405,9 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStartIconTintList Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setStartIconTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    setStartIconTintList(c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setStartIconTintList Lib kLibMobileTextFieldKotlin Alias _
+		    "_parentLayout!!.setStartIconTintList(starticontintlist as android.content.res.ColorStateList)" (startIconTintList As Ptr)
+		    setStartIconTintList(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -1372,12 +1418,12 @@ Protected Module TextFieldXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 5370656369666965732074686520626C656E64696E67206D6F6465207573656420746F206170706C79207468652074696E742073706563696669656420627920736574456E6449636F6E54696E744C69737428436F6C6F7253746174654C6973742920746F207468652073746172742069636F6E206472617761626C652E205468652064656661756C74206D6F646520697320506F72746572447566662E4D6F64652E5352435F494E2E
-		Sub SetStartIconTintModeXC(Extends ctrl As MobileTextField, mode As PorterDuffModes)
+		Sub SetStartIconTintModeXC(Extends ctrl As MobileTextField, mode As PorterDuffModesXC)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStartIconTintMode Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setStartIconTintMode(android.graphics.PorterDuff.Mode.valueOf(mymode.toString()))" (myMode As CString)
+		    Declare Sub setStartIconTintMode Lib kLibMobileTextFieldKotlin Alias "_parentLayout!!.setStartIconTintMode(android.graphics.PorterDuff.Mode.valueOf(mymode.toString()))" (myMode As CString)
 		    setStartIconTintMode(mode.ToString)
 		    
 		  #Else
@@ -1394,8 +1440,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStartIconVisible Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setStartIconVisible" (myVisible As Boolean)
-		    setStartIconVisible(visible)
+		    Declare Sub setStartIconVisible Lib kTextInputLayoutLib (obj As Ptr, myVisible As Boolean)
+		    setStartIconVisible(ctrl.Layout, visible)
 		    
 		  #Else
 		    
@@ -1406,17 +1452,34 @@ Protected Module TextFieldXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 53657473207468652073746172742069636F6E2E0A0A496620796F752075736520616E2069636F6E20796F752073686F756C6420616C736F207365742061206465736372697074696F6E20666F722069747320616374696F6E207573696E6720736574537461727449636F6E436F6E74656E744465736372697074696F6E284368617253657175656E6365292E2054686973206973207573656420666F72206163636573736962696C6974792E
-		Sub SetStartIconXC(Extends ctrl As MobileTextField, file As FolderItem)
+		Attributes( Deprecated = "SetStartIconXC(icon As Picture)" )  Sub SetStartIconXC(Extends ctrl As MobileTextField, file As FolderItem)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStartIconDrawable Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setStartIconDrawable(android.graphics.drawable.Drawable.createFromPath(myicon.toString()))" (myIcon As CString)
+		    Declare Sub setStartIconDrawable Lib kLibMobileTextFieldKotlin Alias "_parentLayout!!.setStartIconDrawable(android.graphics.drawable.Drawable.createFromPath(myicon.toString()))" (myIcon As CString)
 		    setStartIconDrawable(file.NativePath)
 		    
 		  #Else
 		    
 		    #Pragma Unused file
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652073746172742069636F6E2E0A0A496620796F752075736520616E2069636F6E20796F752073686F756C6420616C736F207365742061206465736372697074696F6E20666F722069747320616374696F6E207573696E6720736574537461727449636F6E436F6E74656E744465736372697074696F6E284368617253657175656E6365292E2054686973206973207573656420666F72206163636573736962696C6974792E
+		Sub SetStartIconXC(Extends ctrl As MobileTextField, icon As Picture)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setStartIconDrawable Lib kLibMobileTextFieldKotlin Alias "_parentLayout!!.setStartIconDrawable(icon as android.graphics.drawable.Drawable)" (icon As Ptr)
+		    setStartIconDrawable(icon.ToDrawable)
+		    
+		  #Else
+		    
+		    #Pragma Unused icon
 		    
 		  #EndIf
 		End Sub
@@ -1428,9 +1491,9 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSuffixTextColor Lib "Object:ctrl:MobileTextField:Kotlin" Alias "_parentLayout!!.setSuffixTextColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    setSuffixTextColor(c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setSuffixTextColor Lib kLibMobileTextFieldKotlin Alias _
+		    "_parentLayout!!.setSuffixTextColor(suffixtextcolor as android.content.res.ColorStateList)" (suffixTextColor As Ptr)
+		    setSuffixTextColor(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -1446,8 +1509,8 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSuffixText Lib "Object:ctrl:MobileTextField" Alias "_parentLayout!!.setSuffixText" (mySuffixText As CString)
-		    setSuffixText(suffixText)
+		    Declare Sub setSuffixText Lib kTextInputLayoutLib (obj As Ptr, mySuffixText As CString)
+		    setSuffixText(ctrl.Layout, suffixText)
 		    
 		  #Else
 		    
@@ -1463,7 +1526,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTextIsSelectable Lib "Object:ctrl:MobileTextField" (mySelectable As Boolean)
+		    Declare Sub setTextIsSelectable Lib kLibMobileTextField (mySelectable As Boolean)
 		    setTextIsSelectable(selectable)
 		    
 		  #Else
@@ -1480,7 +1543,7 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTint Lib "Object:ctrl:MobileTextField" Alias "getTextCursorDrawable()!!.setTint" (myTintColor As Integer)
+		    Declare Sub setTint Lib kLibMobileTextField Alias "getTextCursorDrawable()!!.setTint" (myTintColor As Int32)
 		    setTint(c.ToInteger)
 		    
 		  #Else
@@ -1491,6 +1554,15 @@ Protected Module TextFieldXC
 		End Sub
 	#tag EndMethod
 
+
+	#tag Constant, Name = kLibMobileTextField, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileTextField", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibMobileTextFieldKotlin, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileTextField:Kotlin", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kTextInputLayoutLib, Type = String, Dynamic = False, Default = \"com.google.android.material.textfield.TextInputLayout.instance", Scope = Private
+	#tag EndConstant
 
 	#tag Constant, Name = kTYPE_CLASS_DATETIME, Type = Double, Dynamic = False, Default = \"4", Scope = Public
 	#tag EndConstant
@@ -1610,18 +1682,18 @@ Protected Module TextFieldXC
 	#tag EndConstant
 
 
-	#tag Enum, Name = BoxBackgroundModes, Type = Integer, Flags = &h0
+	#tag Enum, Name = BoxBackgroundModesXC, Type = Integer, Flags = &h0
 		None = 0
 		  Filled = 1
 		Outline = 2
 	#tag EndEnum
 
-	#tag Enum, Name = BoxCornerFamily, Type = Integer, Flags = &h0
+	#tag Enum, Name = BoxCornerFamilyXC, Type = Integer, Flags = &h0
 		Rounded = 0
 		Cut = 1
 	#tag EndEnum
 
-	#tag Enum, Name = EndIconModes, Type = Integer, Flags = &h0
+	#tag Enum, Name = EndIconModesXC, Type = Integer, Flags = &h0
 		Custom = -1
 		  None = 0
 		  PasswordToggle = 1

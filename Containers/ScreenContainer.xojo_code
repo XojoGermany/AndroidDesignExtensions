@@ -4,11 +4,12 @@ Begin MobileContainer ScreenContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   902
+   Height          =   1092
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
    LockTop         =   True
+   Orientation     =   0
    Visible         =   True
    Width           =   360
    Begin ColorButton ColorButton1
@@ -25,7 +26,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   522
+      Top             =   712
       Visible         =   True
       Width           =   68
    End
@@ -43,7 +44,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   522
+      Top             =   712
       Visible         =   True
       Width           =   68
    End
@@ -61,7 +62,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   522
+      Top             =   712
       Visible         =   True
       Width           =   68
    End
@@ -79,7 +80,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   522
+      Top             =   712
       Visible         =   True
       Width           =   68
    End
@@ -97,7 +98,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   604
+      Top             =   794
       Visible         =   True
       Width           =   68
    End
@@ -115,7 +116,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   604
+      Top             =   794
       Visible         =   True
       Width           =   68
    End
@@ -133,7 +134,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   604
+      Top             =   794
       Visible         =   True
       Width           =   68
    End
@@ -151,7 +152,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   604
+      Top             =   794
       Visible         =   True
       Width           =   68
    End
@@ -169,7 +170,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   686
+      Top             =   876
       Visible         =   True
       Width           =   68
    End
@@ -187,7 +188,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   686
+      Top             =   876
       Visible         =   True
       Width           =   68
    End
@@ -205,7 +206,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   686
+      Top             =   876
       Visible         =   True
       Width           =   68
    End
@@ -223,7 +224,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   686
+      Top             =   876
       Visible         =   True
       Width           =   68
    End
@@ -241,7 +242,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   768
+      Top             =   958
       Visible         =   True
       Width           =   68
    End
@@ -259,7 +260,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   768
+      Top             =   958
       Visible         =   True
       Width           =   68
    End
@@ -277,7 +278,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   768
+      Top             =   958
       Visible         =   True
       Width           =   68
    End
@@ -287,9 +288,10 @@ Begin MobileContainer ScreenContainer
       Enabled         =   True
       HasHeader       =   False
       Header          =   ""
-      Height          =   192
-      InitialValue    =   "Status Bar\nBackground Color\nBackground Picture\nNavigation Bar\nNavigation Bar Divider"
+      Height          =   330
+      InitialValue    =   "Status Bar\nToolbar\nToolbar Background Picture\nToolbar Title Color\nBackground Color\nBackground Picture\nBottom App Bar\nNavigation Bar\nNavigation Bar Divider"
       LastAddedRowIndex=   0
+      LastRowIndex    =   0
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -303,7 +305,7 @@ Begin MobileContainer ScreenContainer
       SelectedRowText =   ""
       SeparatorColor  =   &c00000000
       SeparatorThickness=   0
-      Top             =   322
+      Top             =   374
       Visible         =   True
       Width           =   320
    End
@@ -319,7 +321,7 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   850
+      Top             =   1040
       Visible         =   True
       Width           =   360
    End
@@ -337,11 +339,11 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
-      Top             =   768
+      Top             =   958
       Visible         =   True
       Width           =   68
    End
-   Begin MobileButton ModalScreenButton
+   Begin AppearanceButton ModalScreenButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Modal Screen Parameters"
@@ -359,7 +361,7 @@ Begin MobileContainer ScreenContainer
       Visible         =   True
       Width           =   320
    End
-   Begin MobileButton DecorFitsSystemWindowsButton
+   Begin AppearanceButton DecorFitsSystemWindowsButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Decor Fits System Windows"
@@ -377,7 +379,7 @@ Begin MobileContainer ScreenContainer
       Visible         =   True
       Width           =   320
    End
-   Begin MobileButton KeyboardShortcutsButton1
+   Begin AppearanceButton KeyboardShortcutsButton1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Keyboard Shortcuts"
@@ -395,7 +397,7 @@ Begin MobileContainer ScreenContainer
       Visible         =   True
       Width           =   150
    End
-   Begin MobileButton LandscapeButton
+   Begin AppearanceButton LandscapeButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Landscape"
@@ -413,7 +415,7 @@ Begin MobileContainer ScreenContainer
       Visible         =   True
       Width           =   150
    End
-   Begin MobileButton MoveTaskToBackButton
+   Begin AppearanceButton MoveTaskToBackButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Move Task To Back"
@@ -431,7 +433,7 @@ Begin MobileContainer ScreenContainer
       Visible         =   True
       Width           =   150
    End
-   Begin MobileButton PortraitButton
+   Begin AppearanceButton PortraitButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Portrait"
@@ -449,7 +451,7 @@ Begin MobileContainer ScreenContainer
       Visible         =   True
       Width           =   150
    End
-   Begin MobileButton TranslucentButton
+   Begin AppearanceButton TranslucentButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Translucent (False)"
@@ -467,7 +469,7 @@ Begin MobileContainer ScreenContainer
       Visible         =   True
       Width           =   320
    End
-   Begin MobileButton FullScreenMode
+   Begin AppearanceButton FullScreenMode
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Caption         =   "Fullscreen Mode"
@@ -482,6 +484,24 @@ Begin MobileContainer ScreenContainer
       LockTop         =   True
       Scope           =   2
       Top             =   270
+      Visible         =   True
+      Width           =   320
+   End
+   Begin AppearanceButton ToolbarFontButton
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Caption         =   "Toolbar Font"
+      CaptionColor    =   &cFFFFFF00
+      Enabled         =   True
+      Height          =   44
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      Scope           =   2
+      Top             =   322
       Visible         =   True
       Width           =   320
    End
@@ -628,7 +648,7 @@ End
 	#tag Event
 		Sub Opening()
 		  CheckBoxPicBlank = Picture.SystemImage("radiobox_blank", Picture.SystemImageSizes.dp24, Color.LightGray)
-		  CheckBoxPic = Picture.SystemImage("radiobox_marked", Picture.SystemImageSizes.dp24, Color.AccentThemeColor)
+		  CheckBoxPic = Picture.SystemImage("radiobox_marked", Picture.SystemImageSizes.dp24, If(Color.IsDarkMode, &cDAE2FF, Color.AccentThemeColor))
 		  
 		  Me.SetOutlineSpotShadowColorXC(Color.Clear) ' no shadow
 		  Me.RowTextFont = Font.SystemFont(17)
@@ -675,11 +695,16 @@ End
 		  
 		  App.BackgroundMode = Self.SelectedRowIndex
 		  
-		  If Me.SelectedRowIndex = 2 Then
+		  Select Case Me.SelectedRowIndex
+		  Case 2
 		    
-		    App.CurrentScreen.SetBackgroundXC(SpecialFolder.Resource("Background.jpg"))
+		    App.CurrentScreen.SetMaterialToolbarBackgroundXC(Background)
 		    
-		  End If
+		  Case 5
+		    
+		    App.CurrentScreen.SetBackgroundXC(Background)
+		    
+		  End Select
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -688,6 +713,12 @@ End
 		Sub Opening()
 		  Me.MyBackgroundColor = Color.Clear
 		  Me.CaptionFont = Font.BoldSystemFont(12)
+		  
+		  If Color.IsDarkMode Then
+		    
+		    Me.CaptionColor = &cC5C6D0
+		    
+		  End If
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -753,7 +784,27 @@ End
 #tag Events FullScreenMode
 	#tag Event
 		Sub Pressed()
-		  App.CurrentScreen.SetWindowInsetsTypeHideXC(WindowInsetsCompatTypes.SystemBars)
+		  ' Working for API 30+ (Android 11+)
+		  If System.Version.MajorVersion >= 11 Then
+		    
+		    App.CurrentScreen.SetWindowInsetsTypeHideXC(WindowInsetsCompatTypes.SystemBars)
+		    
+		  Else
+		    
+		    Const kSYSTEM_UI_FLAG_LOW_PROFILE As Integer = 1
+		    Const kSYSTEM_UI_FLAG_HIDE_NAVIGATION As Integer = 2
+		    Const kSYSTEM_UI_FLAG_FULLSCREEN As Integer = 4
+		    
+		    App.CurrentScreen.SetSystemUiVisibilityXC(kSYSTEM_UI_FLAG_LOW_PROFILE Or kSYSTEM_UI_FLAG_HIDE_NAVIGATION Or kSYSTEM_UI_FLAG_FULLSCREEN)
+		    
+		  End If
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events ToolbarFontButton
+	#tag Event
+		Sub Pressed()
+		  App.CurrentScreen.SetTitleTextFontXC(1, New Font("casual", Font.SystemFontSize))
 		End Sub
 	#tag EndEvent
 #tag EndEvents

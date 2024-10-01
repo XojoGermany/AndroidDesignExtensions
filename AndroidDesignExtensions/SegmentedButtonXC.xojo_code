@@ -7,7 +7,7 @@ Protected Module SegmentedButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub clearChecked Lib "Object:ctrl:MobileSegmentedButton"
+		    Declare Sub clearChecked Lib kLibMobileSegmentedButton
 		    clearChecked
 		    
 		  #EndIf
@@ -20,7 +20,7 @@ Protected Module SegmentedButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub removeViewsInLayout Lib "Object:ctrl:MobileSegmentedButton" (myStart As Integer, myCount As integer)
+		    Declare Sub removeViewsInLayout Lib kLibMobileSegmentedButton (myStart As Int32, myCount As Int32)
 		    removeViewsInLayout(start, count)
 		    
 		  #Else
@@ -38,7 +38,7 @@ Protected Module SegmentedButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackgroundColor Lib "Object:ctrl:MobileSegmentedButton:Kotlin" Alias "getChildAt(myindex.toInt()).setBackgroundColor(mycolor.toInt())" (myIndex As Integer, myColor As Integer)
+		    Declare Sub setBackgroundColor Lib kLibMobileSegmentedButtonKotlin Alias "getChildAt(myindex.toInt()).setBackgroundColor(mycolor.toInt())" (myIndex As Int32, myColor As Int32)
 		    setBackgroundColor(index, c.ToInteger)
 		    
 		  #Else
@@ -56,7 +56,7 @@ Protected Module SegmentedButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSelectionRequired Lib "Object:ctrl:MobileSegmentedButton" (mySelectionRequired As Boolean)
+		    Declare Sub setSelectionRequired Lib kLibMobileSegmentedButton (mySelectionRequired As Boolean)
 		    setSelectionRequired(selectionRequired)
 		    
 		  #Else
@@ -73,7 +73,7 @@ Protected Module SegmentedButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSingleSelection Lib "Object:ctrl:MobileSegmentedButton" (mySingleSelection As Boolean)
+		    Declare Sub setSingleSelection Lib kLibMobileSegmentedButton (mySingleSelection As Boolean)
 		    setSingleSelection(singleSelection)
 		    
 		  #Else
@@ -83,6 +83,13 @@ Protected Module SegmentedButtonXC
 		  #EndIf
 		End Sub
 	#tag EndMethod
+
+
+	#tag Constant, Name = kLibMobileSegmentedButton, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileSegmentedButton", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibMobileSegmentedButtonKotlin, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileSegmentedButton:Kotlin", Scope = Private
+	#tag EndConstant
 
 
 	#tag ViewBehavior

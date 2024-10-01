@@ -1,32 +1,12 @@
 #tag MobileScreen
-Begin TemplateScreen ImageScreen
+Begin TemplateScreenWithBackButton ImageScreen
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
-   HasNavigationBar=   False
+   Device          =   1
+   HasBackButton   =   True
+   HasNavigationBar=   True
    Modal           =   False
    Orientation     =   0
-   Title           =   "Untitled"
-   Begin NavigationBarContainer NavigationBarContainer1
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      BackgroundColor =   &c00000000
-      ControlCount    =   0
-      Enabled         =   True
-      HasBackButton   =   False
-      HasBackgroundColor=   False
-      HasGradient     =   False
-      Height          =   56
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Text            =   ""
-      Top             =   0
-      Visible         =   True
-      Width           =   360
-   End
+   Title           =   "Image Viewers"
    Begin MobileScrollableArea ScrollableArea1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
@@ -40,7 +20,7 @@ Begin TemplateScreen ImageScreen
       LockTop         =   True
       Scope           =   2
       ScrollContent   =   966637567
-      Top             =   56
+      Top             =   0
       Visible         =   True
       Width           =   360
    End
@@ -48,21 +28,59 @@ End
 #tag EndMobileScreen
 
 #tag ScreenCode
-#tag EndScreenCode
-
-#tag Events NavigationBarContainer1
 	#tag Event
 		Sub Opening()
-		  Me.Text = "Image Viewers"
+		  NavigationToolbar.AddButton(App.PrintButton)
 		End Sub
 	#tag EndEvent
+
 	#tag Event
-		Sub Pressed()
-		  Close
+		Sub ToolbarButtonPressed(button As MobileToolbarButton)
+		  Select Case button.Caption
+		  Case "Print"
+		    
+		    ImageContainer(ScrollableArea1.Container).Image1.Image.PrintXC
+		    
+		  End Select
 		End Sub
 	#tag EndEvent
-#tag EndEvents
+
+
+#tag EndScreenCode
+
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ToolbarColor"
+		Visible=false
+		Group="Behavior"
+		InitialValue="&c000000"
+		Type="Color"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="TitleCentered"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="StatusBarColor"
+		Visible=false
+		Group="Behavior"
+		InitialValue="Color.Clear"
+		Type="Color"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="HasBackButton"
+		Visible=true
+		Group="Behavior"
+		InitialValue="False"
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Name"
 		Visible=true

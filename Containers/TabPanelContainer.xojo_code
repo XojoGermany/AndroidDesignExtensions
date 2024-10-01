@@ -9,6 +9,7 @@ Begin MobileContainer TabPanelContainer
    LockLeft        =   True
    LockRight       =   True
    LockTop         =   True
+   Orientation     =   0
    Visible         =   True
    Width           =   360
    Begin MobileTabPanel BackgroundColorPanel

@@ -1,13 +1,13 @@
 #tag Module
 Protected Module PopupMenuXC
-	#tag CompatibilityFlags = (TargetAndroid and (Target64Bit))
+	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0, Description = 4765742074686520636F6E6669677572656420686F72697A6F6E74616C206F666673657420696E20706978656C7320666F7220746865207370696E6E6572277320706F7075702077696E646F77206F662063686F696365732E204F6E6C792076616C696420696E204D4F44455F44524F50444F574E3B206F74686572206D6F6465732077696C6C2072657475726E20302E
 		Function GetDropDownHorizontalOffsetXC(Extends ctrl As MobilePopupMenu) As Integer
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDropDownHorizontalOffset Lib "Object:ctrl:MobilePopupMenu" As Integer
+		    Declare Function getDropDownHorizontalOffset Lib kLibMobilePopupMenu As Int32
 		    Return getDropDownHorizontalOffset
 		    
 		  #EndIf
@@ -20,7 +20,7 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDropDownVerticalOffset Lib "Object:ctrl:MobilePopupMenu" As Integer
+		    Declare Function getDropDownVerticalOffset Lib kLibMobilePopupMenu As Int32
 		    Return getDropDownVerticalOffset
 		    
 		  #EndIf
@@ -33,7 +33,7 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDropDownWidth Lib "Object:ctrl:MobilePopupMenu" As Integer
+		    Declare Function getDropDownWidth Lib kLibMobilePopupMenu As Int32
 		    Return getDropDownWidth
 		    
 		  #EndIf
@@ -46,7 +46,7 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function performClick Lib "Object:ctrl:MobilePopupMenu" As Boolean
+		    Declare Function performClick Lib kLibMobilePopupMenu As Boolean
 		    Return performClick
 		    
 		  #EndIf
@@ -59,7 +59,7 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDropDownHorizontalOffset Lib "Object:ctrl:MobilePopupMenu" (myPixels As Integer)
+		    Declare Sub setDropDownHorizontalOffset Lib kLibMobilePopupMenu (myPixels As Int32)
 		    setDropDownHorizontalOffset(pixels)
 		    
 		  #Else
@@ -76,7 +76,7 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDropDownVerticalOffset Lib "Object:ctrl:MobilePopupMenu" (myPixels As Integer)
+		    Declare Sub setDropDownVerticalOffset Lib kLibMobilePopupMenu (myPixels As Int32)
 		    setDropDownVerticalOffset(pixels)
 		    
 		  #Else
@@ -93,7 +93,7 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDropDownWidth Lib "Object:ctrl:MobilePopupMenu" (myPixels As Integer)
+		    Declare Sub setDropDownWidth Lib kLibMobilePopupMenu (myPixels As Int32)
 		    setDropDownWidth(pixels)
 		    
 		  #Else
@@ -103,6 +103,10 @@ Protected Module PopupMenuXC
 		  #EndIf
 		End Sub
 	#tag EndMethod
+
+
+	#tag Constant, Name = kLibMobilePopupMenu, Type = String, Dynamic = False, Default = \"Object:ctrl:MobilePopupMenu", Scope = Private
+	#tag EndConstant
 
 
 	#tag ViewBehavior

@@ -7,7 +7,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCornerRadius Lib "Object:ctrl:MobileButton" As Integer
+		    Declare Function getCornerRadius Lib kLibMobileButton  As Int32
 		    Return getCornerRadius
 		    
 		  #EndIf
@@ -20,7 +20,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCornerRadius Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Declare Function getCornerRadius Lib kMobileDateTimePicker As Int32
 		    Return getCornerRadius
 		    
 		  #EndIf
@@ -28,26 +28,26 @@ Protected Module ButtonXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 47657473207468652069636F6E206772617669747920666F72207468697320627574746F6E2E
-		Function GetIconGravityXC(Extends ctrl As MobileButton) As IconGravity
+		Function GetIconGravityXC(Extends ctrl As MobileButton) As IconGravityXC
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getIconGravity Lib "Object:ctrl:MobileButton" As Integer
-		    Return IconGravity(getIconGravity)
+		    Declare Function getIconGravity Lib kLibMobileButton  As Integer
+		    Return IconGravityXC(getIconGravity)
 		    
 		  #EndIf
 		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 47657473207468652069636F6E206772617669747920666F72207468697320627574746F6E2E
-		Function GetIconGravityXC(Extends ctrl As MobileDateTimePicker) As IconGravity
+		Function GetIconGravityXC(Extends ctrl As MobileDateTimePicker) As IconGravityXC
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getIconGravity Lib "Object:ctrl:MobileDateTimePicker" As Integer
-		    Return IconGravity(getIconGravity)
+		    Declare Function getIconGravity Lib kMobileDateTimePicker As Integer
+		    Return IconGravityXC(getIconGravity)
 		    
 		  #EndIf
 		End Function
@@ -59,7 +59,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getIconPadding Lib "Object:ctrl:MobileButton" As Integer
+		    Declare Function getIconPadding Lib kLibMobileButton  As Int32
 		    Return getIconPadding
 		    
 		  #EndIf
@@ -72,7 +72,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getIconPadding Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Declare Function getIconPadding Lib kMobileDateTimePicker As Int32
 		    Return getIconPadding
 		    
 		  #EndIf
@@ -85,7 +85,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getIconSize Lib "Object:ctrl:MobileButton" As Integer
+		    Declare Function getIconSize Lib kLibMobileButton  As Int32
 		    Return getIconSize
 		    
 		  #EndIf
@@ -98,7 +98,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getIconSize Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Declare Function getIconSize Lib kMobileDateTimePicker As Int32
 		    Return getIconSize
 		    
 		  #EndIf
@@ -111,7 +111,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getInsetBottom Lib "Object:ctrl:MobileButton" As Integer
+		    Declare Function getInsetBottom Lib kLibMobileButton  As Int32
 		    Return getInsetBottom
 		    
 		  #EndIf
@@ -124,7 +124,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getInsetBottom Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Declare Function getInsetBottom Lib kMobileDateTimePicker As Int32
 		    Return getInsetBottom
 		    
 		  #EndIf
@@ -137,7 +137,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getInsetTop Lib "Object:ctrl:MobileButton" As Integer
+		    Declare Function getInsetTop Lib kLibMobileButton  As Int32
 		    Return getInsetTop
 		    
 		  #EndIf
@@ -150,7 +150,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getInsetTop Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Declare Function getInsetTop Lib kMobileDateTimePicker As Int32
 		    Return getInsetTop
 		    
 		  #EndIf
@@ -163,7 +163,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getStrokeWidth Lib "Object:ctrl:MobileButton" As Integer
+		    Declare Function getStrokeWidth Lib kLibMobileButton  As Int32
 		    Return getStrokeWidth
 		    
 		  #EndIf
@@ -176,7 +176,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getStrokeWidth Lib "Object:ctrl:MobileDateTimePicker" As Integer
+		    Declare Function getStrokeWidth Lib kMobileDateTimePicker As Int32
 		    Return getStrokeWidth
 		    
 		  #EndIf
@@ -189,45 +189,11 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function performClick Lib "Object:ctrl:MobileDateTimePicker" As Boolean
+		    Declare Function performClick Lib kMobileDateTimePicker As Boolean
 		    Return performClick
 		    
 		  #EndIf
 		End Function
-	#tag EndMethod
-
-	#tag Method, Flags = &h0, Description = 53657420746865206261636B67726F756E6420746F206120676976656E207265736F757263652E20546865207265736F757263652073686F756C6420726566657220746F2061204472617761626C65206F626A656374206F72203020746F2072656D6F766520746865206261636B67726F756E642E
-		Sub SetBackgroundResourceXC(Extends ctrl As MobileButton, resid As Integer)
-		  #Pragma Unused ctrl
-		  
-		  #If TargetAndroid
-		    
-		    Declare Sub setBackgroundResource Lib "Object:ctrl:MobileButton" (myResId As Integer)
-		    setBackgroundResource(resid)
-		    
-		  #Else
-		    
-		    #Pragma Unused resid
-		    
-		  #EndIf
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0, Description = 53657420746865206261636B67726F756E6420746F206120676976656E207265736F757263652E20546865207265736F757263652073686F756C6420726566657220746F2061204472617761626C65206F626A656374206F72203020746F2072656D6F766520746865206261636B67726F756E642E
-		Sub SetBackgroundResourceXC(Extends ctrl As MobileDateTimePicker, resid As Integer)
-		  #Pragma Unused ctrl
-		  
-		  #If TargetAndroid
-		    
-		    Declare Sub setBackgroundResource Lib "Object:ctrl:MobileDateTimePicker" (myResId As Integer)
-		    setBackgroundResource(resid)
-		    
-		  #Else
-		    
-		    #Pragma Unused resid
-		    
-		  #EndIf
-		End Sub
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 536574732074686520636F726E65722072616469757320666F72207468697320627574746F6E2E
@@ -236,7 +202,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setCornerRadius Lib "Object:ctrl:MobileButton" (myRadius As Integer)
+		    Declare Sub setCornerRadius Lib kLibMobileButton  (myRadius As Int32)
 		    setCornerRadius(radius)
 		    
 		  #Else
@@ -253,7 +219,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setCornerRadius Lib "Object:ctrl:MobileDateTimePicker" (myRadius As Integer)
+		    Declare Sub setCornerRadius Lib kMobileDateTimePicker (myRadius As Int32)
 		    setCornerRadius(radius)
 		    
 		  #Else
@@ -265,12 +231,12 @@ Protected Module ButtonXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 53657473207468652069636F6E206772617669747920666F72207468697320627574746F6E2E
-		Sub SetIconGravityXC(Extends ctrl As MobileButton, gravity As IconGravity)
+		Sub SetIconGravityXC(Extends ctrl As MobileButton, gravity As IconGravityXC)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIconGravity Lib "Object:ctrl:MobileButton" (myIconGravity As Integer)
+		    Declare Sub setIconGravity Lib kLibMobileButton  (myIconGravity As Int32)
 		    setIconGravity(Integer(gravity))
 		    
 		  #Else
@@ -282,12 +248,12 @@ Protected Module ButtonXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 53657473207468652069636F6E206772617669747920666F72207468697320627574746F6E2E
-		Sub SetIconGravityXC(Extends ctrl As MobileDateTimePicker, gravity As IconGravity)
+		Sub SetIconGravityXC(Extends ctrl As MobileDateTimePicker, gravity As IconGravityXC)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIconGravity Lib "Object:ctrl:MobileDateTimePicker" (myIconGravity As Integer)
+		    Declare Sub setIconGravity Lib kMobileDateTimePicker (myIconGravity As Int32)
 		    setIconGravity(Integer(gravity))
 		    
 		  #Else
@@ -304,7 +270,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIconPadding Lib "Object:ctrl:MobileButton" (myIconPadding As Integer)
+		    Declare Sub setIconPadding Lib kLibMobileButton  (myIconPadding As Int32)
 		    setIconPadding(iconPadding)
 		    
 		  #Else
@@ -321,7 +287,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIconPadding Lib "Object:ctrl:MobileDateTimePicker" (myIconPadding As Integer)
+		    Declare Sub setIconPadding Lib kMobileDateTimePicker (myIconPadding As Int32)
 		    setIconPadding(iconPadding)
 		    
 		  #Else
@@ -338,7 +304,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIconSize Lib "Object:ctrl:MobileButton" (myIconSize As Integer)
+		    Declare Sub setIconSize Lib kLibMobileButton  (myIconSize As Int32)
 		    setIconSize(iconSize)
 		    
 		  #Else
@@ -355,7 +321,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIconSize Lib "Object:ctrl:MobileDateTimePicker" (myIconSize As Integer)
+		    Declare Sub setIconSize Lib kMobileDateTimePicker (myIconSize As Int32)
 		    setIconSize(iconSize)
 		    
 		  #Else
@@ -367,12 +333,12 @@ Protected Module ButtonXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 53657473207468652074696E74206D6F646520666F72207468652069636F6E2073686F776E20666F72207468697320627574746F6E2E
-		Sub SetIconTintModeXC(Extends ctrl As MobileButton, mode As PorterDuffModes)
+		Sub SetIconTintModeXC(Extends ctrl As MobileButton, mode As PorterDuffModesXC)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIconTintMode Lib "Object:ctrl:MobileButton:Kotlin" Alias "setIconTintMode(android.graphics.PorterDuff.Mode.valueOf(mymode.toString()))" (myMode As CString)
+		    Declare Sub setIconTintMode Lib kLibMobileButtonKotlin Alias "setIconTintMode(android.graphics.PorterDuff.Mode.valueOf(mymode.toString()))" (myMode As CString)
 		    setIconTintMode(mode.ToString)
 		    
 		  #Else
@@ -384,12 +350,12 @@ Protected Module ButtonXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 53657473207468652074696E74206D6F646520666F72207468652069636F6E2073686F776E20666F72207468697320627574746F6E2E
-		Sub SetIconTintModeXC(Extends ctrl As MobileDateTimePicker, mode As PorterDuffModes)
+		Sub SetIconTintModeXC(Extends ctrl As MobileDateTimePicker, mode As PorterDuffModesXC)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIconTintMode Lib "Object:ctrl:MobileDateTimePicker:Kotlin" Alias "setIconTintMode(android.graphics.PorterDuff.Mode.valueOf(mymode.toString()))" (myMode As CString)
+		    Declare Sub setIconTintMode Lib kMobileDateTimePickerKotlin Alias "setIconTintMode(android.graphics.PorterDuff.Mode.valueOf(mymode.toString()))" (myMode As CString)
 		    setIconTintMode(mode.ToString)
 		    
 		  #Else
@@ -406,11 +372,9 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIconTint Lib "Object:ctrl:MobileButton:Kotlin" Alias _
-		    "setStrokeColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    
-		    setIconTint(255 - c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setIconTint Lib kLibMobileButtonKotlin Alias _
+		    "setIconTint(icontint as android.content.res.ColorStateList)" (iconTint As Ptr)
+		    setIconTint(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -426,11 +390,9 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIconTint Lib "Object:ctrl:MobileDateTimePicker:Kotlin" Alias _
-		    "setStrokeColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    
-		    setIconTint(255 - c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setIconTint Lib kMobileDateTimePickerKotlin Alias _
+		    "setIconTint(icontint as android.content.res.ColorStateList)" (iconTint As Ptr)
+		    setIconTint(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -441,12 +403,12 @@ Protected Module ButtonXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 53657473207468652069636F6E20746F2073686F7720666F72207468697320627574746F6E2E2042792064656661756C742C20746869732069636F6E2077696C6C2062652073686F776E206F6E20746865206C6566742073696465206F662074686520627574746F6E2E
-		Sub SetIconXC(Extends ctrl As MobileButton, file As FolderItem)
+		Attributes( Deprecated = "SetIconXC(icon As Picture)" )  Sub SetIconXC(Extends ctrl As MobileButton, file As FolderItem)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIcon Lib "Object:ctrl:MobileButton:Kotlin" Alias "setIcon(android.graphics.drawable.Drawable.createFromPath(myicon.toString()))" (myIcon As CString)
+		    Declare Sub setIcon Lib kLibMobileButtonKotlin Alias "setIcon(android.graphics.drawable.Drawable.createFromPath(myicon.toString()))" (myIcon As CString)
 		    setIcon(file.NativePath)
 		    
 		  #Else
@@ -458,17 +420,51 @@ Protected Module ButtonXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 53657473207468652069636F6E20746F2073686F7720666F72207468697320627574746F6E2E2042792064656661756C742C20746869732069636F6E2077696C6C2062652073686F776E206F6E20746865206C6566742073696465206F662074686520627574746F6E2E
-		Sub SetIconXC(Extends ctrl As MobileDateTimePicker, file As FolderItem)
+		Sub SetIconXC(Extends ctrl As MobileButton, icon As Picture)
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIcon Lib "Object:ctrl:MobileDateTimePicker:Kotlin" Alias "setIcon(android.graphics.drawable.Drawable.createFromPath(myicon.toString()))" (myIcon As CString)
+		    Declare Sub setIcon Lib kLibMobileButtonKotlin Alias "setIcon(myicon as android.graphics.drawable.Drawable)" (myIcon As Ptr)
+		    setIcon(icon.ToDrawable)
+		    
+		  #Else
+		    
+		    #Pragma Unused icon
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652069636F6E20746F2073686F7720666F72207468697320627574746F6E2E2042792064656661756C742C20746869732069636F6E2077696C6C2062652073686F776E206F6E20746865206C6566742073696465206F662074686520627574746F6E2E
+		Attributes( Deprecated = "SetIconXC(icon As Picture)" )  Sub SetIconXC(Extends ctrl As MobileDateTimePicker, file As FolderItem)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setIcon Lib kMobileDateTimePickerKotlin Alias "setIcon(android.graphics.drawable.Drawable.createFromPath(myicon.toString()))" (myIcon As CString)
 		    setIcon(file.NativePath)
 		    
 		  #Else
 		    
 		    #Pragma Unused file
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652069636F6E20746F2073686F7720666F72207468697320627574746F6E2E2042792064656661756C742C20746869732069636F6E2077696C6C2062652073686F776E206F6E20746865206C6566742073696465206F662074686520627574746F6E2E
+		Sub SetIconXC(Extends ctrl As MobileDateTimePicker, icon As Picture)
+		  #Pragma Unused ctrl
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setIcon Lib kMobileDateTimePickerKotlin Alias "setIcon(myicon as android.graphics.drawable.Drawable)" (myIcon As Ptr)
+		    setIcon(icon.ToDrawable)
+		    
+		  #Else
+		    
+		    #Pragma Unused icon
 		    
 		  #EndIf
 		End Sub
@@ -480,7 +476,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setInsetBottom Lib "Object:ctrl:MobileButton" (myInsetBottom As Integer)
+		    Declare Sub setInsetBottom Lib kLibMobileButton  (myInsetBottom As Int32)
 		    setInsetBottom(insetBottom)
 		    
 		  #Else
@@ -497,7 +493,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setInsetBottom Lib "Object:ctrl:MobileDateTimePicker" (myInsetBottom As Integer)
+		    Declare Sub setInsetBottom Lib kMobileDateTimePicker (myInsetBottom As Int32)
 		    setInsetBottom(insetBottom)
 		    
 		  #Else
@@ -514,7 +510,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setInsetTop Lib "Object:ctrl:MobileButton" (myInsetTop As Integer)
+		    Declare Sub setInsetTop Lib kLibMobileButton  (myInsetTop As Int32)
 		    setInsetTop(insetTop)
 		    
 		  #Else
@@ -531,7 +527,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setInsetTop Lib "Object:ctrl:MobileDateTimePicker" (myInsetTop As Integer)
+		    Declare Sub setInsetTop Lib kMobileDateTimePicker (myInsetTop As Int32)
 		    setInsetTop(insetTop)
 		    
 		  #Else
@@ -548,11 +544,9 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setRippleColor Lib "Object:ctrl:MobileButton:Kotlin" Alias _
-		    "setRippleColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    
-		    setRippleColor(255 - c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setRippleColor Lib kLibMobileButtonKotlin Alias _
+		    "setRippleColor(ripplecolor as android.content.res.ColorStateList)" (rippleColor As Ptr)
+		    setRippleColor(c.ToColorStateList)
 		    
 		  #EndIf
 		End Sub
@@ -564,11 +558,9 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setRippleColor Lib "Object:ctrl:MobileDateTimePicker:Kotlin" Alias _
-		    "setRippleColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    
-		    setRippleColor(255 - c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setRippleColor Lib kMobileDateTimePickerKotlin Alias _
+		    "setRippleColor(ripplecolor as android.content.res.ColorStateList)" (rippleColor As Ptr)
+		    setRippleColor(c.ToColorStateList)
 		    
 		  #EndIf
 		End Sub
@@ -580,7 +572,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setShadowLayer Lib "Object:ctrl:MobileButton" (myRadius As Single, mydX As Single, mydY As Single, myColor As Integer)
+		    Declare Sub setShadowLayer Lib kLibMobileButton  (myRadius As Single, mydX As Single, mydY As Single, myColor As Int32)
 		    setShadowLayer(radius, dX, dY, c.ToInteger)
 		    
 		  #Else
@@ -600,7 +592,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setShadowLayer Lib "Object:ctrl:MobileDateTimePicker" (myRadius As Single, mydX As Single, mydY As Single, myColor As Integer)
+		    Declare Sub setShadowLayer Lib kMobileDateTimePicker (myRadius As Single, mydX As Single, mydY As Single, myColor As Int32)
 		    setShadowLayer(radius, dX, dY, c.ToInteger)
 		    
 		  #Else
@@ -620,11 +612,9 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStrokeColor Lib "Object:ctrl:MobileButton:Kotlin" Alias _
-		    "setStrokeColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    
-		    setStrokeColor(255 - c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setStrokeColor Lib kLibMobileButtonKotlin Alias _
+		    "setStrokeColor(strokecolor as android.content.res.ColorStateList)" (strokeColor As Ptr)
+		    setStrokeColor(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -640,11 +630,9 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStrokeColor Lib "Object:ctrl:MobileDateTimePicker:Kotlin" _
-		    Alias "setStrokeColor(android.content.res.ColorStateList.valueOf(android.graphics.Color.argb(alpha.toInt(), r.toInt(), g.toInt(), b.toInt())))" _
-		    (alpha As Integer, r As Integer, g As Integer, b As Integer)
-		    
-		    setStrokeColor(255 - c.Alpha, c.Red, c.Green, c.Blue)
+		    Declare Sub setStrokeColor Lib kMobileDateTimePickerKotlin Alias _
+		    "setStrokeColor(strokecolor as android.content.res.ColorStateList)" (strokeColor As Ptr)
+		    setStrokeColor(c.ToColorStateList)
 		    
 		  #Else
 		    
@@ -660,7 +648,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStrokeWidth Lib "Object:ctrl:MobileButton" (myStrokeWidth As Integer)
+		    Declare Sub setStrokeWidth Lib kLibMobileButton  (myStrokeWidth As Int32)
 		    setStrokeWidth(strokeWidth)
 		    
 		  #Else
@@ -677,7 +665,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStrokeWidth Lib "Object:ctrl:MobileDateTimePicker" (myStrokeWidth As Integer)
+		    Declare Sub setStrokeWidth Lib kMobileDateTimePicker (myStrokeWidth As Int32)
 		    setStrokeWidth(strokeWidth)
 		    
 		  #Else
@@ -689,7 +677,20 @@ Protected Module ButtonXC
 	#tag EndMethod
 
 
-	#tag Enum, Name = IconGravity, Type = Integer, Flags = &h0
+	#tag Constant, Name = kLibMobileButton, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileButton", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibMobileButtonKotlin, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileButton:Kotlin", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kMobileDateTimePicker, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileDateTimePicker", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kMobileDateTimePickerKotlin, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileDateTimePicker:Kotlin", Scope = Private
+	#tag EndConstant
+
+
+	#tag Enum, Name = IconGravityXC, Type = Integer, Flags = &h0
 		End_ = 3
 		  Start = 1
 		  TextEnd = 4

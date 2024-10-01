@@ -1,7 +1,7 @@
 #tag Class
 Protected Class ColorButton
 Inherits MobileButton
-	#tag CompatibilityFlags = (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))
+	#tag CompatibilityFlags = ( TargetIOS and ( Target64Bit ) ) or ( TargetAndroid and ( Target64Bit ) )
 	#tag Event
 		Sub Opening()
 		  ' Call Opening-Event
@@ -20,7 +20,7 @@ Inherits MobileButton
 		    
 		  Case 1
 		    
-		    App.CurrentScreen.SetBackgroundColorXC(MyColor)
+		    App.CurrentScreen.SetMaterialToolbarBackgroundColorXC(MyColor)
 		    
 		  Case 2
 		    
@@ -28,9 +28,25 @@ Inherits MobileButton
 		    
 		  Case 3
 		    
-		    App.CurrentScreen.SetNavigationBarColorXC(MyColor)
+		    App.CurrentScreen.SetTitleTextColorXC(MyColor)
 		    
 		  Case 4
+		    
+		    App.CurrentScreen.SetBackgroundColorXC(MyColor)
+		    
+		  Case 5
+		    
+		    ' do nothing
+		    
+		  Case 6
+		    
+		    App.CurrentScreen.SetBottomAppBarBackgroundColorXC(MyColor)
+		    
+		  Case 7
+		    
+		    App.CurrentScreen.SetNavigationBarColorXC(MyColor)
+		    
+		  Case 8
 		    
 		    App.CurrentScreen.SetNavigationBarDividerColorXC(MyColor)
 		    

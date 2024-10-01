@@ -3,24 +3,67 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
 # AndroidDesignExtensions
-A set of 700+ UI extensions for Xojo Android framework.
+A set of 900+ UI extensions for Xojo Android framework.
 
 ![Android Design Extensions](Pictures/Screenshot.jpg)
 
 ## System requirements
 
-| **Extensions** |                                       **Xojo Version**                                       |
-|:--------------:|:--------------------------------------------------------------------------------------------:|
-|       2.6      | [![XOJO 2024r2](https://img.shields.io/badge/Xojo-2024r2+-green.svg)](https://www.xojo.com/) |
-|       2.5      | [![XOJO 2024r1](https://img.shields.io/badge/Xojo-2024r1+-green.svg)](https://www.xojo.com/) |
-|       2.0      | [![XOJO 2023r3](https://img.shields.io/badge/Xojo-2023r3+-green.svg)](https://www.xojo.com/) |
-|       1.5      | [![XOJO 2023r3](https://img.shields.io/badge/Xojo-2023r3+-green.svg)](https://www.xojo.com/) |
-|       1.0      | [![XOJO 2023r2](https://img.shields.io/badge/Xojo-2023r2+-green.svg)](https://www.xojo.com/) |
+| **Extensions** |  **Xojo Version**                                                   |
+|:--------------:|:-------------------------------------------------------------------:|
+|       3.0      | ![XOJO 2024r3](https://img.shields.io/badge/Xojo-2024r3+-green.svg) |
+|       2.6      | ![XOJO 2024r2](https://img.shields.io/badge/Xojo-2024r2+-green.svg) |
+|       2.5      | ![XOJO 2024r1](https://img.shields.io/badge/Xojo-2024r1+-green.svg) |
+|       2.0      | ![XOJO 2023r3](https://img.shields.io/badge/Xojo-2023r3+-green.svg) |
+|       1.5      | ![XOJO 2023r3](https://img.shields.io/badge/Xojo-2023r3+-green.svg) |
+|       1.0      | ![XOJO 2023r2](https://img.shields.io/badge/Xojo-2023r2+-green.svg) |
+
+<details>
+<summary>
+## Deprecations Version 3.0
+</summary>
+* `AndroidMobileTable.SetDividerXC(file As FolderItem)`. Use `AndroidMobileTable.SetDividerXC(divider As Picture)` instead.
+* `AndroidMobileTable.SetSelectorXC(file As FolderItem)`. Use `AndroidMobileTable. SetSelectorXC(sel As Picture)` instead.
+* `MobileButton.SetIconXC(file As FolderItem)`. Use `MobileButton.SetIconXC(icon As Picture)` instead.
+* `MobileUIControl.SetBackgroundXC(file As FolderItem)`. Use `MobileUIControl.SetBackgroundXC(background As Picture)` instead.
+* `MobileDateTimePicker.SetIconXC(file As FolderItem)`. Use `MobileDateTimePicker.SetIconXC(icon As Picture)` instead.
+* `MobileScreen.SetBackgroundXC(file As FolderItem)`. Use `MobileScreen.SetBackgroundXC(background As Picture)` instead.
+* `MobileSlider.SetThumbXC(file As FolderItem)`. Use `MobileSlider.SetThumbXC(thumb As Picture)` instead.
+* `MobileSwitch.SetThumbXC(file As FolderItem)`. Use `MobileSwitch.SetThumbXC(thumb As Picture)` instead.
+* `MobileTextField.SetEndIconXC(file As FolderItem)`. Use `MobileTextField.SetEndIconXC(icon As Picture)` instead.
+* `MobileTextField.SetErrorIconXC(file As FolderItem)`. Use  `MobileTextField. SetErrorIconXC(icon As Picture)` instead.
+* `MobileTextField.SetStartIconXC(file As FolderItem)`. Use  `MobileTextField. SetStartIconXC(icon As Picture)` instead.
+</details>
 
 ## Currently implemented extensions
 
+### Color
+* 181 Android System Colors
+* CompositeARGBWithAlphaXC
+* HarmonizeXC
+* IsLightColorXC
+* LayerXC
+
 ### Device
 * GetUidXC
+
+### FolderItem (SpecialFolder)
+* AlarmsXC
+* AudiobooksXC
+* DCIMXC
+* DocumentsXC
+* DownloadsXC
+* MoviesXC
+* MusicXC
+* NotificationsXC
+* PicturesXC
+* PodcastsXC
+* RecordingsXC
+* RingtonesXC
+* ScreenshotsXC
+
+### PictureXC
+* PrintXC
 
 ### MobileApplication
 * ClassNameXC
@@ -33,6 +76,7 @@ A set of 700+ UI extensions for Xojo Android framework.
 * GetDataDirXC
 * GetExternalCacheDirXC
 * GetFilesDirXC
+* IsNightModeActiveXC
 * IsScreenHdrXC
 * IsScreenRoundXC
 * IsVirtualPreloadXC
@@ -40,6 +84,7 @@ A set of 700+ UI extensions for Xojo Android framework.
 * NativeLibraryDirXC
 * ProcessNameXC
 * PublicSourceDirXC
+* ScaleFactorXC
 * ScreenHeightDpXC
 * ScreenWidthDpXC
 * SmallestScreenWidthDpXC
@@ -56,6 +101,7 @@ A set of 700+ UI extensions for Xojo Android framework.
 * CanResolveTextDirectionXC
 * CanScrollHorizontallyXC
 * CanScrollVerticallyXC
+* DrawIntoXC
 * GetAlphaXC
 * GetBaselineXC
 * GetDefaultFocusHighlightEnabledXC
@@ -137,6 +183,7 @@ A set of 700+ UI extensions for Xojo Android framework.
 * IsVerticalScrollBarEnabledXC
 * SetAlphaXC
 * SetBackgroundColorXC
+* SetBackgroundResourceXC
 * SetBackgroundXC
 * SetDefaultFocusHighlightEnabledXC
 * SetDuplicateParentStateEnabledXC
@@ -244,7 +291,6 @@ A set of 700+ UI extensions for Xojo Android framework.
 * GetInsetBottomXC
 * GetInsetTopXC
 * GetStrokeWidthXC
-* SetBackgroundResourceXC
 * SetCornerRadiusXC
 * SetIconGravityXC
 * SetIconPaddingXC
@@ -321,11 +367,14 @@ A set of 700+ UI extensions for Xojo Android framework.
 * GoBackXC
 * GoForwardXC
 * InvokeZoomPickerXC
+* IsAlgorithmicDarkeningAllowedXC
 * IsPrivateBrowsingEnabledXC
 * PageDownXC
 * PageUpXC
+* PrintXC
 * ReloadXC
 * SaveAsWebArchiveXC
+* SetAlgorithmicDarkeningAllowedXC
 * SetAllowContentAccessXC
 * SetAllowFileAccessXC
 * SetBlockNetworkImageXC
@@ -426,6 +475,7 @@ A set of 700+ UI extensions for Xojo Android framework.
 * SetDropDownWidthXC
 
 ### MobileScreen
+* DrawIntoXC
 * GetBoundsXC
 * GetCurrentFocusedControlXC
 * GetCurrentFocusIDXC
@@ -444,20 +494,35 @@ A set of 700+ UI extensions for Xojo Android framework.
 * GetWidthXC
 * IsDisplayHdrXC
 * IsLocalVoiceInteractionSupportedXC
+* IsOverflowMenuShowingXC
+* IsTitleCenteredXC
 * MoveTaskToBackXC
 * RequestShowKeyboardShortcutsXC
 * SetBackgroundBlurRadiusXC
 * SetBackgroundColorXC
+* SetBackgroundResourceXC
 * SetBackgroundXC
+* SetBottomAppBarBackgroundColorXC
+* SetContentInsetsAbsoluteXC
+* SetContentInsetsRelativeXC
+* SetContentInsetStartWithNavigationXC
 * SetDecorCaptionShadeXC
 * SetDecorFitsSystemWindowsXC
 * SetDimAmountXC
 * SetElevationXC
 * SetInheritShowWhenLockedXC
 * SetLayoutXC
+* SetLogoDescriptionXC
+* SetLogoXC
+* SetMaterialToolbarBackgroundColorXC
+* SetMaterialToolbarBackgroundXC
+* SetMaterialToolbarElevationXC
 * SetNavigationBarColorXC
 * SetNavigationBarContrastEnforcedXC
 * SetNavigationBarDividerColorXC
+* SetNavigationContentDescriptionXC
+* SetNavigationIconXC
+* SetOverflowIconXC
 * SetRequestedOrientationXC
 * SetShowWhenLockedXC
 * SetStatusBarColorXC
@@ -465,12 +530,18 @@ A set of 700+ UI extensions for Xojo Android framework.
 * SetSystemBarsAppearanceXC
 * SetSystemBarsBehaviorXC
 * SetSystemUiVisibilityXC
+* SetTitleCenteredXC
+* SetTitleMarginStartXC
+* SetTitleTextColorXC
+* SetTitleTextFontXC
+* SetTitleTextSizeXC
 * SetTransitionBackgroundFadeDurationXC
 * SetTranslucentXC
 * SetTurnScreenOnXC
 * SetWindowInsetsTypeHideXC
 * SetWindowInsetsTypeShowXC
 * ShowLockTaskEscapeMessageXC
+* ShowOverflowMenuXC
 * StartLockTaskXC
 * StopLockTaskXC
 

@@ -1,16 +1,29 @@
 #tag Module
 Protected Module ScreenXC
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
+	#tag Method, Flags = &h21, Description = 52657475726E732074686520426F74746F6D41707042617220696E7374616E636520666F7220746865204D6F62696C6553637265656E2E
+		Private Function BottomAppBar(Extends myScreen As MobileScreen) As Ptr
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function Toolbar Lib kLibMobileScreenKotlin Alias "toolbar" As Ptr
+		    Return Toolbar
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 52657475726E732074686520626F756E6473206F66207468652061726561206173736F636961746564207769746820746869732077696E646F77206F72205569436F6E746578742E0A0A4E6F74652074686174207468652073697A65206F6620746865207265706F7274656420626F756E64732063616E206861766520646966666572656E742073697A65207468616E20446973706C61792367657453697A6528506F696E74292E2054686973206D6574686F64207265706F727473207468652077696E646F772073697A6520696E636C7564696E6720616C6C2073797374656D206261722061726561732C207768696C6520446973706C61792367657453697A6528506F696E7429207265706F727473207468652061726561206578636C7564696E67206E617669676174696F6E206261727320616E6420646973706C6179206375746F75742061726561732E
 		Function GetBoundsXC(Extends myScreen As MobileScreen) As Rect
 		  #Pragma Unused myScreen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function left Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getWindowManager().getCurrentWindowMetrics().getBounds().left" As Integer
-		    Declare Function top Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getWindowManager().getCurrentWindowMetrics().getBounds().top" As Integer
-		    Declare Function width Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getWindowManager().getCurrentWindowMetrics().getBounds().width()" As Integer
-		    Declare Function height Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getWindowManager().getCurrentWindowMetrics().getBounds().height()" As Integer
+		    Declare Function left Lib kLibMobileScreen Alias "getWindow()!!.getWindowManager().getCurrentWindowMetrics().getBounds().left" As Int32
+		    Declare Function top Lib kLibMobileScreen Alias "getWindow()!!.getWindowManager().getCurrentWindowMetrics().getBounds().top" As Int32
+		    Declare Function width Lib kLibMobileScreen Alias "getWindow()!!.getWindowManager().getCurrentWindowMetrics().getBounds().width()" As Int32
+		    Declare Function height Lib kLibMobileScreen Alias "getWindow()!!.getWindowManager().getCurrentWindowMetrics().getBounds().height()" As Int32
 		    
 		    Return New Rect(left, top, width, height)
 		    
@@ -31,6 +44,9 @@ Protected Module ScreenXC
 		      
 		      '  Check for MobileUIControl
 		      If Not (obj IsA MobileUIControl) Then Continue
+		      
+		      '  Check for MobileContainer
+		      If obj IsA MobileContainer Then Continue
 		      
 		      iObjID = MobileUIControl(obj).GetIDXC
 		      
@@ -54,7 +70,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCurrentFocusID Lib "Object:myScreen:MobileScreen" Alias "getCurrentFocus()!!.getId" As Integer
+		    Declare Function getCurrentFocusID Lib kLibMobileScreen Alias "getCurrentFocus()!!.getId" As Int32
 		    
 		    Try
 		      
@@ -76,7 +92,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDensity Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getWindowManager().getCurrentWindowMetrics().getDensity()" As Single
+		    Declare Function getDensity Lib kLibMobileScreen Alias "getWindow()!!.getWindowManager().getCurrentWindowMetrics().getDensity()" As Single
 		    Return getDensity
 		    
 		  #EndIf
@@ -89,7 +105,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDisplayId Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.getDisplayId" As Integer
+		    Declare Function getDisplayId Lib kLibMobileScreen Alias "getWindow()!!.getContext().getDisplay()!!.getDisplayId" As Int32
 		    Return getDisplayId
 		    
 		  #EndIf
@@ -102,7 +118,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getRotation Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.getRotation" As Integer
+		    Declare Function getRotation Lib kLibMobileScreen Alias "getWindow()!!.getContext().getDisplay()!!.getRotation" As Int32
 		    Return getRotation
 		    
 		  #EndIf
@@ -115,7 +131,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getState Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.getState" As Integer
+		    Declare Function getState Lib kLibMobileScreen Alias "getWindow()!!.getContext().getDisplay()!!.getState" As Int32
 		    Return getState
 		    
 		  #EndIf
@@ -128,7 +144,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getHeight Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().getHeight" As Integer
+		    Declare Function getHeight Lib kLibMobileScreen Alias "getWindow()!!.getDecorView().getHeight" As Int32
 		    Return getHeight
 		    
 		  #EndIf
@@ -141,7 +157,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getNavigationBarColor Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getNavigationBarColor" As Integer
+		    Declare Function getNavigationBarColor Lib kLibMobileScreen Alias "getWindow()!!.getNavigationBarColor" As Int32
 		    Return getNavigationBarColor.ToColor
 		    
 		  #EndIf
@@ -154,7 +170,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getRequestedOrientation Lib "Object:myScreen:MobileScreen" As Integer
+		    Declare Function getRequestedOrientation Lib kLibMobileScreen As Int32
 		    Return getRequestedOrientation
 		    
 		  #EndIf
@@ -167,7 +183,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getStatusBarColor Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getStatusBarColor" As Integer
+		    Declare Function getStatusBarColor Lib kLibMobileScreen Alias "getWindow()!!.getStatusBarColor" As Int32
 		    Return getStatusBarColor.ToColor
 		    
 		  #EndIf
@@ -183,7 +199,7 @@ Protected Module ScreenXC
 		    ' Working for API 30+ (Android 11+)
 		    If System.Version.MajorVersion >= 11 Then
 		      
-		      Declare Function getSystemBarsAppearance Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getInsetsController()!!.getSystemBarsAppearance" As Integer
+		      Declare Function getSystemBarsAppearance Lib kLibMobileScreen Alias "getWindow()!!.getInsetsController()!!.getSystemBarsAppearance" As Int32
 		      Return getSystemBarsAppearance
 		      
 		    Else
@@ -205,7 +221,7 @@ Protected Module ScreenXC
 		    ' Working for API 30+ (Android 11+)
 		    If System.Version.MajorVersion >= 11 Then
 		      
-		      Declare Function getSystemBarsBehavior Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getInsetsController()!!.getSystemBarsBehavior" As Integer
+		      Declare Function getSystemBarsBehavior Lib kLibMobileScreen Alias "getWindow()!!.getInsetsController()!!.getSystemBarsBehavior" As Int32
 		      Return getSystemBarsBehavior
 		      
 		    Else
@@ -224,7 +240,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getSystemUiVisibility Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().getSystemUiVisibility" As Integer
+		    Declare Function getSystemUiVisibility Lib kLibMobileScreen Alias "getWindow()!!.getDecorView().getSystemUiVisibility" As Int32
 		    Return getSystemUiVisibility
 		    
 		  #EndIf
@@ -237,7 +253,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getTransitionBackgroundFadeDuration Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getTransitionBackgroundFadeDuration" As Int64
+		    Declare Function getTransitionBackgroundFadeDuration Lib kLibMobileScreen Alias "getWindow()!!.getTransitionBackgroundFadeDuration" As Int64
 		    Return getTransitionBackgroundFadeDuration
 		    
 		  #EndIf
@@ -250,7 +266,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getWidth Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().getWidth" As Integer
+		    Declare Function getWidth Lib kLibMobileScreen Alias "getWindow()!!.getDecorView().getWidth" As Int32
 		    Return getWidth
 		    
 		  #EndIf
@@ -263,7 +279,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isHdr Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getContext().getDisplay()!!.isHdr" As Boolean
+		    Declare Function isHdr Lib kLibMobileScreen Alias "getWindow()!!.getContext().getDisplay()!!.isHdr" As Boolean
 		    Return isHdr
 		    
 		  #EndIf
@@ -276,8 +292,59 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isLocalVoiceInteractionSupported Lib "Object:myScreen:MobileScreen" As Boolean
+		    Declare Function isLocalVoiceInteractionSupported Lib kLibMobileScreen As Boolean
 		    Return isLocalVoiceInteractionSupported
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 436865636B207768657468657220746865206F766572666C6F77206D656E752069732063757272656E746C792073686F77696E672E2054686973206D6179206E6F74207265666C65637420612070656E64696E672073686F77206F7065726174696F6E20696E2070726F67726573732E
+		Function IsOverflowMenuShowingXC(Extends myScreen As MobileScreen, isShowingForBottomAppBar As Boolean = False) As Boolean
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    If isShowingForBottomAppBar Then
+		      
+		      #Pragma Warning "ToDo before 2024r3 releases"
+		      
+		    Else
+		      
+		      Declare Function isOverflowMenuShowing Lib kLibMobileNavigationToolbar (toolbar As Ptr) As Boolean
+		      Return isOverflowMenuShowing(myScreen.MaterialToolbar)
+		      
+		    End If
+		    
+		  #Else
+		    
+		    #Pragma Unused isShowingForBottomAppBar
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 52657475726E73207768657468657220746865207469746C65207465787420636F72726573706F6E64696E6720746F2074686520546F6F6C6261722E7365745469746C6528696E7429206D6574686F642073686F756C642062652063656E746572656420686F72697A6F6E74616C6C792077697468696E2074686520746F6F6C6261722E
+		Function IsTitleCenteredXC(Extends myScreen As MobileScreen) As Boolean
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function isTitleCentered Lib kLibMobileNavigationToolbar (toolbar As Ptr) As Boolean
+		    Return isTitleCentered(myScreen.MaterialToolbar)
+		    
+		  #EndIf
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h21, Description = 52657475726E7320746865204D6174657269616C546F6F6C62617220696E7374616E636520666F7220746865204D6F62696C6553637265656E2E
+		Private Function MaterialToolbar(Extends myScreen As MobileScreen) As Ptr
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function NavigationToolbar Lib kLibMobileScreenKotlin Alias "navigationtoolbar" As Ptr
+		    Return NavigationToolbar
 		    
 		  #EndIf
 		End Function
@@ -289,7 +356,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function moveTaskToBack Lib "Object:myScreen:MobileScreen" (myNonRoot As Boolean) As Boolean
+		    Declare Function moveTaskToBack Lib kLibMobileScreen (myNonRoot As Boolean) As Boolean
 		    Return moveTaskToBack(nonRoot)
 		    
 		  #Else
@@ -306,7 +373,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub requestShowKeyboardShortcuts Lib "Object:myScreen:MobileScreen"
+		    Declare Sub requestShowKeyboardShortcuts Lib kLibMobileScreen
 		    requestShowKeyboardShortcuts
 		    
 		  #EndIf
@@ -319,7 +386,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackgroundBlurRadius Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setBackgroundBlurRadius" (myBlurRadius As Integer)
+		    Declare Sub setBackgroundBlurRadius Lib kLibMobileScreen Alias "getWindow()!!.setBackgroundBlurRadius" (myBlurRadius As Int32)
 		    setBackgroundBlurRadius(blurRadius)
 		    
 		  #Else
@@ -330,18 +397,122 @@ Protected Module ScreenXC
 		End Sub
 	#tag EndMethod
 
-	#tag Method, Flags = &h0, Description = 53657420746865206261636B67726F756E6420746F206120676976656E204472617761626C652C206F722072656D6F766520746865206261636B67726F756E642E20496620746865206261636B67726F756E64206861732070616464696E672C2074686973205669657727732070616464696E672069732073657420746F20746865206261636B67726F756E6427732070616464696E672E20486F77657665722C207768656E2061206261636B67726F756E642069732072656D6F7665642C2074686973205669657727732070616464696E672069736E277420746F75636865642E2049662073657474696E67207468652070616464696E6720697320646573697265642C20706C65617365207573652073657450616464696E6728696E742C20696E742C20696E742C20696E74292E
-		Sub SetBackgroundXC(Extends myScreen As MobileScreen, file As FolderItem)
+	#tag Method, Flags = &h0, Description = 53657420746865206261636B67726F756E6420746F206120676976656E207265736F757263652E20546865207265736F757263652073686F756C6420726566657220746F2061204472617761626C65206F626A656374206F72203020746F2072656D6F766520746865206261636B67726F756E642E
+		Sub SetBackgroundResourceXC(Extends myScreen As MobileScreen, resID As Integer)
 		  #Pragma Unused myScreen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setBackground Lib "Object:myScreen:MobileScreen:Kotlin" Alias "getWindow()!!.getDecorView().setBackground(android.graphics.drawable.Drawable.createFromPath(myfile.toString()))" (myFile As CString)
+		    Declare Sub setBackgroundResource Lib kLibMobileScreen Alias "getWindow()!!.getDecorView().setBackgroundResource" (myResID As Int32)
+		    setBackgroundResource(resID)
+		    
+		  #Else
+		    
+		    #Pragma Unused resID
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206261636B67726F756E6420746F206120676976656E204472617761626C652C206F722072656D6F766520746865206261636B67726F756E642E20496620746865206261636B67726F756E64206861732070616464696E672C2074686973205669657727732070616464696E672069732073657420746F20746865206261636B67726F756E6427732070616464696E672E20486F77657665722C207768656E2061206261636B67726F756E642069732072656D6F7665642C2074686973205669657727732070616464696E672069736E277420746F75636865642E2049662073657474696E67207468652070616464696E6720697320646573697265642C20706C65617365207573652073657450616464696E6728696E742C20696E742C20696E742C20696E74292E
+		Attributes( Deprecated = "SetBackgroundXC(background As Picture)" )  Sub SetBackgroundXC(Extends myScreen As MobileScreen, file As FolderItem)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackground Lib kLibMobileScreenKotlin Alias "getWindow()!!.getDecorView().setBackground(android.graphics.drawable.Drawable.createFromPath(myfile.toString()))" (myFile As CString)
 		    setBackground(file.NativePath)
 		    
 		  #Else
 		    
 		    #Pragma Unused file
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206261636B67726F756E6420746F206120676976656E204472617761626C652C206F722072656D6F766520746865206261636B67726F756E642E20496620746865206261636B67726F756E64206861732070616464696E672C2074686973205669657727732070616464696E672069732073657420746F20746865206261636B67726F756E6427732070616464696E672E20486F77657665722C207768656E2061206261636B67726F756E642069732072656D6F7665642C2074686973205669657727732070616464696E672069736E277420746F75636865642E2049662073657474696E67207468652070616464696E6720697320646573697265642C20706C65617365207573652073657450616464696E6728696E742C20696E742C20696E742C20696E74292E
+		Sub SetBackgroundXC(Extends myScreen As MobileScreen, background As Picture)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackground Lib kLibMobileScreenKotlin Alias "getWindow()!!.getDecorView().setBackground(background as android.graphics.drawable.Drawable)" (background As Ptr)
+		    setBackground(background.ToDrawable)
+		    
+		  #Else
+		    
+		    #Pragma Unused background
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F722074686520426F74746F6D417070426172206F66207468697320766965772E
+		Sub SetBottomAppBarBackgroundColorXC(Extends myScreen As MobileScreen, c As Color)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib kLibMobileToolbar (toolbar As Ptr, c As Int32)
+		    setBackgroundColor(myScreen.BottomAppBar, c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6E74656E7420696E7365747320666F72207468697320746F6F6C6261722E0A0A54686520636F6E74656E7420696E7365742061666665637473207468652076616C6964206172656120666F7220546F6F6C62617220636F6E74656E74206F74686572207468616E20746865206E617669676174696F6E20627574746F6E20616E64206D656E752E20496E7365747320646566696E6520746865206D696E696D756D206D617267696E20666F7220746865736520636F6D706F6E656E747320616E642063616E206265207573656420746F206566666563746976656C7920616C69676E20546F6F6C62617220636F6E74656E7420616C6F6E672077656C6C2D6B6E6F776E20677269646C696E65732E
+		Sub SetContentInsetsAbsoluteXC(Extends myScreen As MobileScreen, contentInsetLeft As Integer, contentInsetRight As Integer)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setContentInsetsAbsolute Lib kLibMobileNavigationToolbar (toolbar As Ptr, contentInsetLeft As Int32, contentInsetRight As Int32)
+		    setContentInsetsAbsolute(myScreen.MaterialToolbar, contentInsetLeft, contentInsetRight)
+		    
+		  #Else
+		    
+		    #Pragma Unused contentInsetLeft
+		    #Pragma Unused contentInsetRight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520636F6E74656E7420696E7365747320666F72207468697320746F6F6C6261722072656C617469766520746F206C61796F757420646972656374696F6E2E0A0A54686520636F6E74656E7420696E7365742061666665637473207468652076616C6964206172656120666F7220546F6F6C62617220636F6E74656E74206F74686572207468616E20746865206E617669676174696F6E20627574746F6E20616E64206D656E752E20496E7365747320646566696E6520746865206D696E696D756D206D617267696E20666F7220746865736520636F6D706F6E656E747320616E642063616E206265207573656420746F206566666563746976656C7920616C69676E20546F6F6C62617220636F6E74656E7420616C6F6E672077656C6C2D6B6E6F776E20677269646C696E65732E
+		Sub SetContentInsetsRelativeXC(Extends myScreen As MobileScreen, contentInsetLeft As Integer, contentInsetRight As Integer)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setContentInsetsRelative Lib kLibMobileNavigationToolbar (toolbar As Ptr, contentInsetLeft As Int32, contentInsetRight As Int32)
+		    setContentInsetsRelative(myScreen.MaterialToolbar, contentInsetLeft, contentInsetRight)
+		    
+		  #Else
+		    
+		    #Pragma Unused contentInsetLeft
+		    #Pragma Unused contentInsetRight
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520737461727420636F6E74656E7420696E73657420746F20757365207768656E2061206E617669676174696F6E20627574746F6E2069732070726573656E742E0A0A446966666572656E7420636F6E74656E7420696E7365747320617265206F6674656E2063616C6C656420666F72207768656E206164646974696F6E616C20627574746F6E73206172652070726573656E7420696E2074686520746F6F6C6261722C2061732077656C6C20617320617420646966666572656E7420746F6F6C6261722073697A65732E20546865206C61726765722076616C7565206F6620676574436F6E74656E74496E736574537461727420616E6420746869732076616C75652077696C6C206265207573656420647572696E67206C61796F75742E
+		Sub SetContentInsetStartWithNavigationXC(Extends myScreen As MobileScreen, insetStartWithNavigation As Integer)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setContentInsetStartWithNavigation Lib kLibMobileNavigationToolbar (toolbar As Ptr, insetStartWithNavigation As Int32)
+		    setContentInsetStartWithNavigation(myScreen.MaterialToolbar, insetStartWithNavigation)
+		    
+		  #Else
+		    
+		    #Pragma Unused insetStartWithNavigation
 		    
 		  #EndIf
 		End Sub
@@ -353,7 +524,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDecorCaptionShade Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setDecorCaptionShade" (myDecorCaptionShade As Integer)
+		    Declare Sub setDecorCaptionShade Lib kLibMobileScreen Alias "getWindow()!!.setDecorCaptionShade" (myDecorCaptionShade As Int32)
 		    setDecorCaptionShade(Integer(decorCaptionShade))
 		    
 		  #Else
@@ -370,7 +541,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDecorFitsSystemWindows Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setDecorFitsSystemWindows" (myDecorFitsSystemWindows As Boolean)
+		    Declare Sub setDecorFitsSystemWindows Lib kLibMobileScreen Alias "getWindow()!!.setDecorFitsSystemWindows" (myDecorFitsSystemWindows As Boolean)
 		    setDecorFitsSystemWindows(decorFitsSystemWindows)
 		    
 		  #Else
@@ -387,7 +558,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDimAmount Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setDimAmount" (myAmount As Single)
+		    Declare Sub setDimAmount Lib kLibMobileScreen Alias "getWindow()!!.setDimAmount" (myAmount As Single)
 		    setDimAmount(amount)
 		    
 		  #Else
@@ -404,7 +575,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setElevation Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setElevation" (myElevation As Single)
+		    Declare Sub setElevation Lib kLibMobileScreen Alias "getWindow()!!.setElevation" (myElevation As Single)
 		    setElevation(elevation)
 		    
 		  #Else
@@ -421,7 +592,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setInheritShowWhenLocked Lib "Object:myScreen:MobileScreen" (myInheritShowWhenLocked As Boolean)
+		    Declare Sub setInheritShowWhenLocked Lib kLibMobileScreen (myInheritShowWhenLocked As Boolean)
 		    setInheritShowWhenLocked(inheritShowWhenLocked)
 		    
 		  #Else
@@ -438,7 +609,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setLayout Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setLayout" (myWidth As Integer, myHeight As Integer)
+		    Declare Sub setLayout Lib kLibMobileScreen Alias "getWindow()!!.setLayout" (myWidth As Int32, myHeight As Int32)
 		    setLayout(width, height)
 		    
 		  #Else
@@ -450,13 +621,99 @@ Protected Module ScreenXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, Description = 536574207468652069636F6E20746F2075736520666F7220746865206F766572666C6F7720627574746F6E2E
+		Sub SetLogoDescriptionXC(Extends myScreen As MobileScreen, description As CString)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLogoDescription Lib kLibMobileNavigationToolbar (toolbar As Ptr, description As CString)
+		    setLogoDescription(myScreen.MaterialToolbar, description)
+		    
+		  #Else
+		    
+		    #Pragma Unused description
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365742061206C6F676F206472617761626C652E0A0A54686973206472617761626C652073686F756C642067656E6572616C6C792074616B652074686520706C616365206F66207469746C6520746578742E20546865206C6F676F2063616E6E6F7420626520636C69636B65642E2041707073207573696E672061206C6F676F2073686F756C6420616C736F20737570706C792061206465736372697074696F6E207573696E67207365744C6F676F4465736372697074696F6E2E
+		Sub SetLogoXC(Extends myScreen As MobileScreen, logo As Picture)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setLogo Lib kLibMobileNavigationToolbarKotlin Alias _
+		    "setLogo(drawable as android.graphics.drawable.Drawable)" (navigationToolbar As Ptr, drawable As Ptr)
+		    setLogo(myScreen.MaterialToolbar, logo.ToDrawable)
+		    
+		  #Else
+		    
+		    #Pragma Unused logo
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865206261636B67726F756E6420636F6C6F7220666F7220746865204D6174657269616C546F6F6C626172206F66207468697320766965772E
+		Sub SetMaterialToolbarBackgroundColorXC(Extends myScreen As MobileScreen, c As Color)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackgroundColor Lib kLibMobileNavigationToolbar (toolbar As Ptr, c As Int32)
+		    setBackgroundColor(myScreen.MaterialToolbar, c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657420746865206261636B67726F756E6420746F206120676976656E204472617761626C652C206F722072656D6F766520746865206261636B67726F756E642E20496620746865206261636B67726F756E64206861732070616464696E672C2074686973205669657727732070616464696E672069732073657420746F20746865206261636B67726F756E6427732070616464696E672E20486F77657665722C207768656E2061206261636B67726F756E642069732072656D6F7665642C2074686973205669657727732070616464696E672069736E277420746F75636865642E2049662073657474696E67207468652070616464696E6720697320646573697265642C20706C65617365207573652073657450616464696E6728696E742C20696E742C20696E742C20696E74292E
+		Sub SetMaterialToolbarBackgroundXC(Extends myScreen As MobileScreen, background As Picture)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setBackground Lib kLibMobileNavigationToolbarKotlin Alias "setBackground(background as android.graphics.drawable.Drawable)" (view As Ptr, background As Ptr)
+		    setBackground(myScreen.MaterialToolbar, background.ToDrawable)
+		    
+		  #Else
+		    
+		    #Pragma Unused background
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520656C65766174696F6E206F6620746865204D6174657269616C546F6F6C62617220666F722074686973204D6F62696C6553637265656E2E
+		Sub SetMaterialToolbarElevationXC(Extends myScreen As MobileScreen, elevation As Single)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setElevation Lib kLibMobileNavigationToolbar (toolbar As Ptr, elevation As Single)
+		    setElevation(myScreen.MaterialToolbar, elevation)
+		    
+		  #Else
+		    
+		    #Pragma Unused elevation
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 536574732074686520636F6C6F72206F6620746865206E617669676174696F6E2062617220746F202E20466F72207468697320746F2074616B65206566666563742C207468652077696E646F77206D7573742062652064726177696E67207468652073797374656D20626172206261636B67726F756E647320776974682057696E646F774D616E616765722E4C61796F7574506172616D732E464C41475F44524157535F53595354454D5F4241525F4241434B47524F554E445320616E642057696E646F774D616E616765722E4C61796F7574506172616D732E464C41475F5452414E534C5543454E545F4E415649474154494F4E206D757374206E6F74206265207365742E204966206973206E6F74206F70617175652C20636F6E73696465722073657474696E6720566965772E53595354454D5F55495F464C41475F4C41594F55545F535441424C4520616E6420566965772E53595354454D5F55495F464C41475F4C41594F55545F484944455F4E415649474154494F4E2E
 		Sub SetNavigationBarColorXC(Extends myScreen As MobileScreen, c As Color)
 		  #Pragma Unused myScreen
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setNavigationBarColor Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setNavigationBarColor" (myColor As Integer)
+		    Declare Sub setNavigationBarColor Lib kLibMobileScreen Alias "getWindow()!!.setNavigationBarColor" (myColor As Int32)
 		    setNavigationBarColor(c.ToInteger)
 		    
 		  #Else
@@ -473,7 +730,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setNavigationBarContrastEnforced Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setDecorFitsSystemWindows" (myEnforceContrast As Boolean)
+		    Declare Sub setNavigationBarContrastEnforced Lib kLibMobileScreen Alias "getWindow()!!.setDecorFitsSystemWindows" (myEnforceContrast As Boolean)
 		    setNavigationBarContrastEnforced(enforceContrast)
 		    
 		  #Else
@@ -490,12 +747,65 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setNavigationBarDividerColor Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setNavigationBarDividerColor" (myColor As Integer)
+		    Declare Sub setNavigationBarDividerColor Lib kLibMobileScreen Alias "getWindow()!!.setNavigationBarDividerColor" (myColor As Int32)
 		    setNavigationBarDividerColor(c.ToInteger)
 		    
 		  #Else
 		    
 		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574206120636F6E74656E74206465736372697074696F6E20666F7220746865206E617669676174696F6E20627574746F6E206966206F6E652069732070726573656E742E2054686520636F6E74656E74206465736372697074696F6E2077696C6C2062652072656164207669612073637265656E2072656164657273206F72206F74686572206163636573736962696C6974792073797374656D7320746F206578706C61696E2074686520616374696F6E206F6620746865206E617669676174696F6E20627574746F6E2E
+		Sub SetNavigationContentDescriptionXC(Extends myScreen As MobileScreen, description As CString)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNavigationContentDescription Lib kLibMobileNavigationToolbar (toolbar As Ptr, description As CString)
+		    setNavigationContentDescription(myScreen.MaterialToolbar, description)
+		    
+		  #Else
+		    
+		    #Pragma Unused description
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652069636F6E20746F2075736520666F722074686520746F6F6C6261722773206E617669676174696F6E20627574746F6E2E0A0A546865206E617669676174696F6E20627574746F6E206170706561727320617420746865207374617274206F662074686520746F6F6C6261722069662070726573656E742E2053657474696E6720616E2069636F6E2077696C6C206D616B6520746865206E617669676174696F6E20627574746F6E2076697369626C652E0A0A496620796F75207573652061206E617669676174696F6E2069636F6E20796F752073686F756C6420616C736F207365742061206465736372697074696F6E20666F722069747320616374696F6E207573696E67207365744E617669676174696F6E436F6E74656E744465736372697074696F6E2E2054686973206973207573656420666F72206163636573736962696C69747920616E6420746F6F6C746970732E
+		Sub SetNavigationIconXC(Extends myScreen As MobileScreen, icon As Picture)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setNavigationIcon Lib kLibMobileNavigationToolbarKotlin Alias _
+		    "setNavigationIcon(icon as android.graphics.drawable.Drawable)" (toolbar As Ptr, icon As Ptr)
+		    setNavigationIcon(myScreen.MaterialToolbar, icon.ToDrawable)
+		    
+		  #Else
+		    
+		    #Pragma Unused icon
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652069636F6E20746F2075736520666F7220746865206F766572666C6F7720627574746F6E2E
+		Sub SetOverflowIconXC(Extends myScreen As MobileScreen, icon As Picture)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setOverflowIcon Lib kLibMobileNavigationToolbarKotlin Alias _
+		    "setOverflowIcon(icon as android.graphics.drawable.Drawable)" (toolbar As Ptr, icon As Ptr)
+		    setOverflowIcon(myScreen.MaterialToolbar, icon.ToDrawable)
+		    
+		  #Else
+		    
+		    #Pragma Unused icon
 		    
 		  #EndIf
 		End Sub
@@ -507,7 +817,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setRequestedOrientation Lib "Object:myScreen:MobileScreen" (myRequestedOrientation As Integer)
+		    Declare Sub setRequestedOrientation Lib kLibMobileScreen (myRequestedOrientation As Int32)
 		    setRequestedOrientation(Integer(requestedOrientation))
 		    
 		  #Else
@@ -524,7 +834,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setShowWhenLocked Lib "Object:myScreen:MobileScreen" (myShowWhenLocked As Boolean)
+		    Declare Sub setShowWhenLocked Lib kLibMobileScreen (myShowWhenLocked As Boolean)
 		    setShowWhenLocked(showWhenLocked)
 		    
 		  #Else
@@ -541,7 +851,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStatusBarColor Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setStatusBarColor" (myColor As Integer)
+		    Declare Sub setStatusBarColor Lib kLibMobileScreen Alias "getWindow()!!.setStatusBarColor" (myColor As Int32)
 		    setStatusBarColor(c.ToInteger)
 		    
 		  #Else
@@ -558,7 +868,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStatusBarContrastEnforced Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setDecorFitsSystemWindows" (myEnsureContrast As Boolean)
+		    Declare Sub setStatusBarContrastEnforced Lib kLibMobileScreen Alias "getWindow()!!.setDecorFitsSystemWindows" (myEnsureContrast As Boolean)
 		    setStatusBarContrastEnforced(ensureContrast)
 		    
 		  #Else
@@ -578,7 +888,7 @@ Protected Module ScreenXC
 		    ' Working for API 30+ (Android 11+)
 		    If System.Version.MajorVersion >= 11 Then
 		      
-		      Declare Sub setSystemBarsAppearance Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().getWindowInsetsController()!!.setSystemBarsAppearance" (myAppearance As Integer, myMask As Integer)
+		      Declare Sub setSystemBarsAppearance Lib kLibMobileScreen Alias "getWindow()!!.getDecorView().getWindowInsetsController()!!.setSystemBarsAppearance" (myAppearance As Int32, myMask As Int32)
 		      setSystemBarsAppearance(appearance, mask)
 		      
 		    Else
@@ -605,7 +915,7 @@ Protected Module ScreenXC
 		    ' Working for API 30+ (Android 11+)
 		    If System.Version.MajorVersion >= 11 Then
 		      
-		      Declare Sub setSystemBarsBehavior Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().getWindowInsetsController()!!.setSystemBarsBehavior" (myBehavior As Integer)
+		      Declare Sub setSystemBarsBehavior Lib kLibMobileScreen Alias "getWindow()!!.getDecorView().getWindowInsetsController()!!.setSystemBarsBehavior" (myBehavior As Int32)
 		      setSystemBarsBehavior(behavior)
 		      
 		    Else
@@ -628,12 +938,104 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setSystemUiVisibility Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.getDecorView().setSystemUiVisibility" (myVisibility As Integer)
+		    Declare Sub setSystemUiVisibility Lib kLibMobileScreen Alias "getWindow()!!.getDecorView().setSystemUiVisibility" (myVisibility As Int32)
 		    setSystemUiVisibility(visibility)
 		    
 		  #Else
 		    
 		    #Pragma Unused visibility
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207768657468657220746865207469746C65207465787420636F72726573706F6E64696E6720746F2074686520546F6F6C6261722E7365745469746C6528696E7429206D6574686F642073686F756C642062652063656E746572656420686F72697A6F6E74616C6C792077697468696E2074686520746F6F6C6261722E0A0A4E6F74653A206974206973206E6F74207265636F6D6D656E64656420746F207573652063656E7465726564207469746C657320696E20636F6E6A756E6374696F6E20776974682061206E657374656420637573746F6D20766965772C206173207468657265206D617920626520706F736974696F6E696E6720616E64206F7665726C6170206973737565732E
+		Sub SetTitleCenteredXC(Extends myScreen As MobileScreen, titleCentered As Boolean)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTitleCentered Lib kLibMobileNavigationToolbar (toolbar As Ptr, titleCentered As Boolean)
+		    setTitleCentered(myScreen.MaterialToolbar, titleCentered)
+		    
+		  #Else
+		    
+		    #Pragma Unused titleCentered
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207374617274696E67207469746C65206D617267696E20696E20706978656C732E
+		Sub SetTitleMarginStartXC(Extends myScreen As MobileScreen, margin As Integer)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTitleMarginStart Lib kLibMobileNavigationToolbar (toolbar As Ptr, margin As Int32)
+		    setTitleMarginStart(myScreen.MaterialToolbar, margin)
+		    
+		  #Else
+		    
+		    #Pragma Unused margin
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 5365747320746865207465787420636F6C6F72206F6620746865207469746C652C2069662070726573656E742E
+		Sub SetTitleTextColorXC(Extends myScreen As MobileScreen, c As Color)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTitleTextColor Lib kLibMobileNavigationToolbar (toolbar As Ptr, c As Int32)
+		    setTitleTextColor(myScreen.MaterialToolbar, c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574732074686520747970656661636520616E64207374796C6520696E2077686963682074686520746578742073686F756C6420626520646973706C617965642C20616E64207475726E73206F6E207468652066616B6520626F6C6420616E64206974616C6963206269747320696E20746865205061696E7420696620746865205479706566616365207468617420796F752070726F766964656420646F6573206E6F74206861766520616C6C20746865206269747320696E20746865207374796C65207468617420796F75207370656369666965642E
+		Sub SetTitleTextFontXC(Extends myScreen As MobileScreen, index As Integer, font As Font)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getChildAt Lib kLibMobileNavigationToolbar (toolbar As Ptr, index As Int32) As Ptr
+		    Declare Sub setTypeface Lib "Kotlin" Alias "(textview as android.widget.TextView).setTypeface(font as android.graphics.Typeface, style.toInt())" (textView As Ptr, font As Ptr, style As Int32)
+		    Declare Function getStyle Lib "android.graphics.Typeface.instance" (font As Ptr) As Int32
+		    
+		    Var oTitleTextView As Ptr = getChildAt(myScreen.MaterialToolbar, index)
+		    setTypeface(oTitleTextView, font.Handle, getStyle(font.Handle))
+		    
+		  #Else
+		    
+		    #Pragma Unused font
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 536574207468652064656661756C7420746578742073697A6520746F2074686520676976656E2076616C75652C20696E74657270726574656420617320227363616C656420706978656C2220756E6974732E
+		Sub SetTitleTextSizeXC(Extends myScreen As MobileScreen, index As Integer, size As Single)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Function getChildAt Lib kLibMobileNavigationToolbar (toolbar As Ptr, index As Int32) As Ptr
+		    Declare Sub setTextSize Lib "Kotlin" Alias "(textview as android.widget.TextView).setTextSize(size.toFloat())" (textView As Ptr, size As Single)
+		    
+		    Var oTitleTextView As Ptr = getChildAt(myScreen.MaterialToolbar, index)
+		    setTextSize(oTitleTextView, size)
+		    
+		  #Else
+		    
+		    #Pragma Unused size
 		    
 		  #EndIf
 		End Sub
@@ -645,7 +1047,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTransitionBackgroundFadeDuration Lib "Object:myScreen:MobileScreen" Alias "getWindow()!!.setTransitionBackgroundFadeDuration" (myFadeDurationMillis As Int64)
+		    Declare Sub setTransitionBackgroundFadeDuration Lib kLibMobileScreen Alias "getWindow()!!.setTransitionBackgroundFadeDuration" (myFadeDurationMillis As Int64)
 		    setTransitionBackgroundFadeDuration(fadeDurationMillis)
 		    
 		  #Else
@@ -662,7 +1064,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function setTranslucent Lib "Object:myScreen:MobileScreen" (myTranslucent As Boolean) As Boolean
+		    Declare Function setTranslucent Lib kLibMobileScreen (myTranslucent As Boolean) As Boolean
 		    Return setTranslucent(translucent)
 		    
 		  #Else
@@ -680,7 +1082,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTurnScreenOn Lib "Object:myScreen:MobileScreen" (myTurnScreenOn As Boolean)
+		    Declare Sub setTurnScreenOn Lib kLibMobileScreen (myTurnScreenOn As Boolean)
 		    setTurnScreenOn(turnScreenOn)
 		    
 		  #Else
@@ -700,7 +1102,7 @@ Protected Module ScreenXC
 		    ' Working for API 30+ (Android 11+)
 		    If System.Version.MajorVersion >= 11 Then
 		      
-		      Declare Sub hide Lib "Object:myScreen:MobileScreen:Kotlin" Alias "getWindow()!!.getDecorView().getWindowInsetsController()!!.hide(mytypes.toInt())" (myTypes As Integer)
+		      Declare Sub hide Lib kLibMobileScreenKotlin Alias "getWindow()!!.getDecorView().getWindowInsetsController()!!.hide(mytypes.toInt())" (myTypes As Int32)
 		      hide(types)
 		      
 		    Else
@@ -726,7 +1128,7 @@ Protected Module ScreenXC
 		    ' Working for API 30+ (Android 11+)
 		    If System.Version.MajorVersion >= 11 Then
 		      
-		      Declare Sub show Lib "Object:myScreen:MobileScreen:Kotlin" Alias "getWindow()!!.getDecorView().getWindowInsetsController()!!.show(mytypes.toInt())" (myTypes As Integer)
+		      Declare Sub show Lib kLibMobileScreenKotlin Alias "getWindow()!!.getDecorView().getWindowInsetsController()!!.show(mytypes.toInt())" (myTypes As Int32)
 		      show(types)
 		      
 		    Else
@@ -749,8 +1151,29 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub showLockTaskEscapeMessage Lib "Object:myScreen:MobileScreen"
+		    Declare Sub showLockTaskEscapeMessage Lib kLibMobileScreen
 		    showLockTaskEscapeMessage
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53686F7720746865206F766572666C6F77206974656D732066726F6D20746865206173736F636961746564206D656E752E
+		Sub ShowOverflowMenuXC(Extends myScreen As MobileScreen, showForBottomAppBar As Boolean = False)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    If showForBottomAppBar Then
+		      
+		      #Pragma Warning "ToDo before 2024r3 releases"
+		      
+		    Else
+		      
+		      Declare Function showOverflowMenu Lib kLibMobileNavigationToolbar (toolbar As Ptr) As Boolean
+		      Call showOverflowMenu(myScreen.MaterialToolbar)
+		      
+		    End If
 		    
 		  #EndIf
 		End Sub
@@ -762,7 +1185,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub startLockTask Lib "Object:myScreen:MobileScreen"
+		    Declare Sub startLockTask Lib kLibMobileScreen
 		    startLockTask
 		    
 		  #EndIf
@@ -775,7 +1198,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub stopLockTask Lib "Object:myScreen:MobileScreen"
+		    Declare Sub stopLockTask Lib kLibMobileScreen
 		    stopLockTask
 		    
 		  #EndIf
@@ -784,6 +1207,24 @@ Protected Module ScreenXC
 
 
 	#tag Constant, Name = kAPPEARANCE_LIGHT_STATUS_BARS, Type = Double, Dynamic = False, Default = \"8", Scope = Public
+	#tag EndConstant
+
+	#tag Constant, Name = kLibMobileNavigationToolbar, Type = String, Dynamic = False, Default = \"com.google.android.material.appbar.MaterialToolbar.instance", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibMobileNavigationToolbarKotlin, Type = String, Dynamic = False, Default = \"com.google.android.material.appbar.MaterialToolbar.instance:Kotlin", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibMobileScreen, Type = String, Dynamic = False, Default = \"Object:myScreen:MobileScreen", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibMobileScreenKotlin, Type = String, Dynamic = False, Default = \"Object:myScreen:MobileScreen:Kotlin", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibMobileToolbar, Type = String, Dynamic = False, Default = \"com.google.android.material.bottomappbar.BottomAppBar.instance", Scope = Private
+	#tag EndConstant
+
+	#tag Constant, Name = kLibMobileToolbarKotlin, Type = String, Dynamic = False, Default = \"com.google.android.material.bottomappbar.BottomAppBar.instance:Kotlin", Scope = Private
 	#tag EndConstant
 
 	#tag Constant, Name = kSYSTEM_UI_FLAG_LIGHT_STATUS_BAR, Type = Double, Dynamic = False, Default = \"8192", Scope = Public

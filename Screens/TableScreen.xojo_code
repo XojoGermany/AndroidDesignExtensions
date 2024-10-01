@@ -1,42 +1,22 @@
 #tag MobileScreen
-Begin TemplateScreen TableScreen
+Begin TemplateScreenWithBackButton TableScreen
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
-   HasBackButton   =   False
-   HasNavigationBar=   False
+   Device          =   1
+   HasBackButton   =   True
+   HasNavigationBar=   True
    Modal           =   False
    Orientation     =   0
-   Title           =   "Untitled"
-   Begin NavigationBarContainer NavigationBarContainer1
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      BackgroundColor =   &c00000000
-      ControlCount    =   0
-      Enabled         =   True
-      HasBackButton   =   False
-      HasBackgroundColor=   False
-      HasGradient     =   True
-      Height          =   56
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Text            =   ""
-      Top             =   0
-      Visible         =   True
-      Width           =   360
-   End
+   Title           =   "Tables"
    Begin AndroidMobileTable Table1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
       HasHeader       =   False
       Header          =   ""
-      Height          =   676
+      Height          =   700
       InitialValue    =   "Background Color\n⭕️ Transparent\n⚪️ White\n🔴 Red\n🟢 Green\n🔵 Blue\nScrolling\nSmooth Scroll By\nSmooth Scroll To Position\nVertical Scrollbar Position\nDefault\nLeft\nRight\nScrollbar Style\nInside Inset\nInside Overlay\nOutside Inset\nOutside Overlay\nScrollbar Type\nDefault\nFast\nFruits\n🍏 Apple\n🍐 Pear\n🍋 Lemon\n🍌 Banana\n🍉 Melone\n🍇 Grapes\n🍓 Strawberry\n🫐 Blueberry\n🍒 Cherry\n🍑 Peach\n🥭 Mango\n🍍 Pineapple\n🥥 Coconut\n🥝 Kiwi\n🍅Tomato\n🥑 Avocado\n🥒 Cucumber\n🧅 Onion"
       LastAddedRowIndex=   0
+      LastRowIndex    =   0
       Left            =   0
       LockBottom      =   True
       LockedInPosition=   False
@@ -50,7 +30,7 @@ Begin TemplateScreen TableScreen
       SelectedRowText =   ""
       SeparatorColor  =   &c00000000
       SeparatorThickness=   0
-      Top             =   80
+      Top             =   0
       Visible         =   True
       Width           =   360
    End
@@ -60,7 +40,7 @@ End
 #tag ScreenCode
 	#tag Method, Flags = &h21
 		Private Sub SetHeaderAt(row As Integer)
-		  Table1.RowBackgroundColorAt(row) = Color.AccentThemeColor
+		  Table1.RowBackgroundColorAt(row) = If(Color.IsDarkMode, &c46464C, Color.AccentThemeColor)
 		  Table1.RowBoldAt(row) = True
 		  Table1.RowTextColorAt(row) = Color.White
 		End Sub
@@ -78,23 +58,11 @@ End
 
 #tag EndScreenCode
 
-#tag Events NavigationBarContainer1
-	#tag Event
-		Sub Opening()
-		  Me.Text = "Tables"
-		End Sub
-	#tag EndEvent
-	#tag Event
-		Sub Pressed()
-		  Close
-		End Sub
-	#tag EndEvent
-#tag EndEvents
 #tag Events Table1
 	#tag Event
 		Sub Opening()
 		  CheckBoxPicBlank = Picture.SystemImage("checkbox_blank_circle_outline", Picture.SystemImageSizes.dp24, Color.LightGray)
-		  CheckBoxPic = Picture.SystemImage("checkbox_marked_circle", Picture.SystemImageSizes.dp24, Color.AccentThemeColor)
+		  CheckBoxPic = Picture.SystemImage("checkbox_marked_circle", Picture.SystemImageSizes.dp24, If(Color.IsDarkMode, &cDAE2FF, Color.AccentThemeColor))
 		  
 		  Me.SetScrollBarSizeXC(20)
 		  Me.SetOverScrollModeXC(OverScrollModesXC.Never)
@@ -119,7 +87,7 @@ End
 		  
 		  Var headers() As Integer = Array(0, 6, 9, 13, 18, 21)
 		  
-		  For Each header As Integer in headers
+		  For Each header As Integer In headers
 		    
 		    SetHeaderAt(header)
 		    
@@ -157,7 +125,7 @@ End
 		      
 		      If Me.RowBackgroundColorAt(index) = Color.Clear Then
 		        
-		        Me.RowTextColorAt(index) = &cD3D3D3
+		        Me.RowTextColorAt(index) = &cF1F0F7
 		        
 		      End If
 		      
@@ -165,7 +133,16 @@ End
 		    
 		  End If
 		  
-		  Me.SetDividerXC(SpecialFolder.Resource("Divider.png"))
+		  Static oDividerPic As Picture
+		  
+		  If oDividerPic Is Nil Then
+		    
+		    oDividerPic = New Picture(5, 5)
+		    oDividerPic.Graphics.DrawPicture(Divider, 0, 0, 5, 5, 0, 0, Divider.Width, Divider.Height)
+		    
+		  End If
+		  
+		  Me.SetDividerXC(oDividerPic)
 		End Sub
 	#tag EndEvent
 	#tag Event
@@ -254,6 +231,30 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ToolbarColor"
+		Visible=false
+		Group="Behavior"
+		InitialValue="&c000000"
+		Type="Color"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="TitleCentered"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="StatusBarColor"
+		Visible=false
+		Group="Behavior"
+		InitialValue="Color.Clear"
+		Type="Color"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="HasBackButton"
 		Visible=true

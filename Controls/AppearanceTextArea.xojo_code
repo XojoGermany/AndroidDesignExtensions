@@ -1,12 +1,11 @@
 #tag Class
-Protected Class AppearanceLabel
-Inherits MobileLabel
-	#tag CompatibilityFlags = ( TargetIOS and ( Target64Bit ) ) or ( TargetAndroid and ( Target64Bit ) )
+Protected Class AppearanceTextArea
+Inherits MobileTextArea
 	#tag Event
 		Sub Opening()
 		  If Color.IsDarkMode Then
 		    
-		    Me.TextColor = &cF1F0F7
+		    Me.SetBoxBackgroundColorXC(&c2F3036)
 		    
 		  End If
 		  
@@ -22,14 +21,6 @@ Inherits MobileLabel
 
 
 	#tag ViewBehavior
-		#tag ViewProperty
-			Name="MaximumCharactersAllowed"
-			Visible=true
-			Group="Behavior"
-			InitialValue=""
-			Type="Integer"
-			EditorType=""
-		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Name"
 			Visible=true
@@ -74,7 +65,7 @@ Inherits MobileLabel
 			Name="Height"
 			Visible=true
 			Group="Position"
-			InitialValue="30"
+			InitialValue="200"
 			Type="Integer"
 			EditorType=""
 		#tag EndViewProperty
@@ -82,15 +73,63 @@ Inherits MobileLabel
 			Name="Width"
 			Visible=true
 			Group="Position"
-			InitialValue="100"
+			InitialValue="200"
 			Type="Integer"
 			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="MaximumCharactersAllowed"
+			Visible=true
+			Group="Text Control"
+			InitialValue=""
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="LockLeft"
+			Visible=true
+			Group="Behavior"
+			InitialValue=""
+			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="LockRight"
+			Visible=true
+			Group="Behavior"
+			InitialValue=""
+			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="LockTop"
+			Visible=true
+			Group="Behavior"
+			InitialValue=""
+			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="LockBottom"
+			Visible=true
+			Group="Behavior"
+			InitialValue=""
+			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="SelectedText"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="String"
+			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Text"
 			Visible=true
 			Group="Text Control"
-			InitialValue="Untitled"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
@@ -134,38 +173,6 @@ Inherits MobileLabel
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
-			Name="LockLeft"
-			Visible=true
-			Group="Behavior"
-			InitialValue=""
-			Type="Boolean"
-			EditorType=""
-		#tag EndViewProperty
-		#tag ViewProperty
-			Name="LockRight"
-			Visible=true
-			Group="Behavior"
-			InitialValue=""
-			Type="Boolean"
-			EditorType=""
-		#tag EndViewProperty
-		#tag ViewProperty
-			Name="LockTop"
-			Visible=true
-			Group="Behavior"
-			InitialValue=""
-			Type="Boolean"
-			EditorType=""
-		#tag EndViewProperty
-		#tag ViewProperty
-			Name="LockBottom"
-			Visible=true
-			Group="Behavior"
-			InitialValue=""
-			Type="Boolean"
-			EditorType=""
-		#tag EndViewProperty
-		#tag ViewProperty
 			Name="Enabled"
 			Visible=true
 			Group="UI Control"
@@ -182,20 +189,36 @@ Inherits MobileLabel
 			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
-			Name="LineBreakMode"
+			Name="AllowSpellChecking"
 			Visible=true
-			Group="Label"
-			InitialValue="0"
-			Type="MobileLabel.LineBreakModes"
-			EditorType="Enum"
-			#tag EnumValues
-				"0 - WordWrap"
-				"1 - CharacterWrap"
-				"2 - Clip"
-				"3 - TruncateStart"
-				"4 - TruncateEnd"
-				"5 - TruncateMiddle"
-			#tag EndEnumValues
+			Group="Text Area"
+			InitialValue=""
+			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="ReadOnly"
+			Visible=true
+			Group="Text Area"
+			InitialValue=""
+			Type="Boolean"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="SelectionLength"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="SelectionStart"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 	#tag EndViewBehavior
 End Class

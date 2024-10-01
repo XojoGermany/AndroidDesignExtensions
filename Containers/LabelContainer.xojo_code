@@ -9,6 +9,7 @@ Begin MobileContainer LabelContainer
    LockLeft        =   True
    LockRight       =   True
    LockTop         =   True
+   Orientation     =   0
    Visible         =   True
    Width           =   360
    Begin AppearanceLabel BackgroundColorLabel
@@ -24,6 +25,7 @@ Begin MobileContainer LabelContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Background Color"
       TextColor       =   &c00000000
@@ -44,6 +46,7 @@ Begin MobileContainer LabelContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "With Green Shadow"
       TextColor       =   &c00000000
@@ -64,6 +67,7 @@ Begin MobileContainer LabelContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Default Label"
       TextColor       =   &c00000000
@@ -84,6 +88,7 @@ Begin MobileContainer LabelContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Shadow Label"
       TextColor       =   &c00000000
@@ -120,6 +125,7 @@ Begin MobileContainer LabelContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Click me to edit Text"
       TextColor       =   &c00000000
@@ -136,6 +142,12 @@ End
 #tag Events BackgroundColorLabel
 	#tag Event
 		Sub Opening()
+		  If Color.IsDarkMode Then
+		    
+		    Me.TextColor = Color.Black
+		    
+		  End If
+		  
 		  Me.SetBackgroundColorXC(&cFFD60A00)
 		  Me.SetOutlineSpotShadowColorXC(Color.Clear)
 		End Sub
@@ -144,7 +156,16 @@ End
 #tag Events BackgroundShadowLabel
 	#tag Event
 		Sub Opening()
-		  Me.SetBackgroundColorXC(Color.White)
+		  If Color.IsDarkMode Then
+		    
+		    Me.SetBackgroundColorXC(&c1E1F25)
+		    
+		  Else
+		    
+		    Me.SetBackgroundColorXC(Color.White)
+		    
+		  End If
+		  
 		  Me.SetOutlineSpotShadowColorXC(Color.Green)
 		End Sub
 	#tag EndEvent
@@ -155,14 +176,14 @@ End
 		  Me.TextFont = Font.BoldSystemFont(24)
 		  Me.TextColor = Color.Red
 		  
-		  Me.SetShadowLayerXC(10, 1, 1, Color.Blue)
+		  Me.SetShadowLayerXC(10, 1, 1, If(Color.IsDarkMode, Color.Yellow, Color.Blue))
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events EditableLabel
 	#tag Event
 		Sub Opening()
-		  Me.SetInputTypeXC(1) ' Text
+		  Me.SetInputTypeXC(kTYPE_CLASS_TEXT) ' Text
 		  Me.SetShowSoftInputOnFocusXC(True)
 		  Me.SetTextIsSelectableXC(True)
 		  Me.SetErrorXC("Error")

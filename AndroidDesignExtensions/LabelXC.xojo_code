@@ -7,7 +7,7 @@ Protected Module LabelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getInputType Lib "Object:ctrl:MobileLabel" As Integer
+		    Declare Function getInputType Lib kLibMobileLabel As Int32
 		    Return getInputType
 		    
 		  #EndIf
@@ -20,7 +20,7 @@ Protected Module LabelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getShowSoftInputOnFocus Lib "Object:ctrl:MobileLabel" As Boolean
+		    Declare Function getShowSoftInputOnFocus Lib kLibMobileLabel As Boolean
 		    Return getShowSoftInputOnFocus
 		    
 		  #Else
@@ -37,7 +37,7 @@ Protected Module LabelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setError Lib "Object:ctrl:MobileLabel" (myError As CString)
+		    Declare Sub setError Lib kLibMobileLabel (myError As CString)
 		    setError(error)
 		    
 		  #Else
@@ -54,7 +54,7 @@ Protected Module LabelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setInputType Lib "Object:ctrl:MobileLabel" (myType As Integer)
+		    Declare Sub setInputType Lib kLibMobileLabel (myType As Int32)
 		    setInputType(type)
 		    
 		  #Else
@@ -71,7 +71,7 @@ Protected Module LabelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setShadowLayer Lib "Object:ctrl:MobileLabel" (myRadius As Single, mydX As Single, mydY As Single, myColor As Integer)
+		    Declare Sub setShadowLayer Lib kLibMobileLabel (myRadius As Single, mydX As Single, mydY As Single, myColor As Int32)
 		    setShadowLayer(radius, dX, dY, c.ToInteger)
 		    
 		  #Else
@@ -91,7 +91,7 @@ Protected Module LabelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setShowSoftInputOnFocus Lib "Object:ctrl:MobileLabel" (myShow As Boolean)
+		    Declare Sub setShowSoftInputOnFocus Lib kLibMobileLabel (myShow As Boolean)
 		    setShowSoftInputOnFocus(show)
 		    
 		  #Else
@@ -108,7 +108,7 @@ Protected Module LabelXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTextIsSelectable Lib "Object:ctrl:MobileLabel" (mySelectable As Boolean)
+		    Declare Sub setTextIsSelectable Lib kLibMobileLabel (mySelectable As Boolean)
 		    setTextIsSelectable(selectable)
 		    
 		  #Else
@@ -118,6 +118,10 @@ Protected Module LabelXC
 		  #EndIf
 		End Sub
 	#tag EndMethod
+
+
+	#tag Constant, Name = kLibMobileLabel, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileLabel", Scope = Private
+	#tag EndConstant
 
 
 	#tag ViewBehavior
