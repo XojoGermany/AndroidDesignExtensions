@@ -19,9 +19,8 @@ A set of 900+ UI extensions for Xojo Android framework.
 |       1.0      | ![XOJO 2023r2](https://img.shields.io/badge/Xojo-2023r2+-green.svg) |
 
 <details>
-<summary>
-## Deprecations Version 3.0
-</summary>
+<summary>Deprecations Version 3.0</summary>
+  
 * `AndroidMobileTable.SetDividerXC(file As FolderItem)`. Use `AndroidMobileTable.SetDividerXC(divider As Picture)` instead.
 * `AndroidMobileTable.SetSelectorXC(file As FolderItem)`. Use `AndroidMobileTable. SetSelectorXC(sel As Picture)` instead.
 * `MobileButton.SetIconXC(file As FolderItem)`. Use `MobileButton.SetIconXC(icon As Picture)` instead.
