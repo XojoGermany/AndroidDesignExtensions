@@ -35,6 +35,8 @@ End
 		  
 		  Self.Toolbar.AddButton(oBottomToolbarItem1)
 		  Self.Toolbar.AddButton(oBottomToolbarItem2)
+		  
+		  Self.SetBottomAppBarMenuAlignmentModeXC(MenuAlignmentModesXC.Start)
 		End Sub
 	#tag EndEvent
 
@@ -42,6 +44,14 @@ End
 #tag EndScreenCode
 
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ScaleFactor"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Double"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ToolbarColor"
 		Visible=false

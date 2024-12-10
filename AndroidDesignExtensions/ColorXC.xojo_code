@@ -56,8 +56,8 @@ Protected Module ColorXC
 		End Function
 	#tag EndMethod
 
-	#tag Method, Flags = &h21
-		Private Function ToAndroidColor(Extends androidColor As Int32) As Color
+	#tag Method, Flags = &h0
+		Attributes( Hidden )  Function ToAndroidColor(Extends androidColor As Int32) As Color
 		  Var iColor As Integer = androidColor
 		  
 		  Return Color.FromString("&h" + iColor.ToHex.MiddleBytes(2, 6))
@@ -266,8 +266,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_0, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_0, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -280,8 +289,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_10, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_10, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -294,8 +312,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_100, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_100, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -308,8 +335,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_1000, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_1000, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -322,8 +358,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_200, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_200, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -336,8 +381,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_300, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_300, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -350,8 +404,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_400, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_400, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -364,8 +427,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_50, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_50, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -378,8 +450,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_500, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_500, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -392,8 +473,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_600, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_600, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -406,8 +496,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_700, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_700, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -420,8 +519,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_800, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_800, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -434,8 +542,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_900, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent1_900, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -448,8 +565,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_0, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_0, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -462,8 +588,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_10, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_10, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -476,8 +611,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_100, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_100, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -490,8 +634,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_900, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_900, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -504,8 +657,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_200, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_200, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -518,8 +680,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_300, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_300, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -532,8 +703,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_400, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_400, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -546,8 +726,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_50, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_50, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -560,8 +749,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_500, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_500, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -574,8 +772,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_600, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_600, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -588,8 +795,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_700, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_700, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -602,8 +818,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_800, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_800, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -616,8 +841,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_900, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent2_900, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -630,8 +864,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_0, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_0, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -644,8 +887,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_10, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_10, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -658,8 +910,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_100, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_100, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -672,8 +933,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_900, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_900, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -686,8 +956,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_200, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_200, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -700,8 +979,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_300, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_300, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -714,8 +1002,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_400, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_400, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -728,8 +1025,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_50, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_50, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -742,8 +1048,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_500, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_500, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -756,8 +1071,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_600, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_600, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -770,8 +1094,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_700, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_700, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -784,8 +1117,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_800, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_800, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -798,8 +1140,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_900, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_accent3_900, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -812,8 +1163,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_background_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_background_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -826,8 +1186,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_background_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_background_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -840,8 +1209,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_control_activated_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_control_activated_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -854,8 +1232,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_control_activated_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_control_activated_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -868,8 +1255,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_control_highlight_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_control_highlight_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -882,8 +1278,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_control_highlight_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_control_highlight_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -896,8 +1301,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_control_normal_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_control_normal_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -910,8 +1324,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_control_normal_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_control_normal_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -924,8 +1347,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_container_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_container_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -938,8 +1370,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_container_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_container_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -952,8 +1393,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -966,8 +1416,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -980,8 +1439,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_0, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_0, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -994,8 +1462,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_10, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_10, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1008,8 +1485,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_100, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_100, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1022,8 +1508,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_1000, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_1000, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1036,8 +1531,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_200, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_200, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1050,8 +1554,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_300, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_300, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1064,8 +1577,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_400, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_400, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1078,8 +1600,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_50, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_50, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1092,8 +1623,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_500, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_500, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1106,8 +1646,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_600, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_600, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1120,8 +1669,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_700, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_700, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1134,8 +1692,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_800, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_800, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1148,8 +1715,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_900, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral1_900, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1162,8 +1738,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_0, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_0, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1176,8 +1761,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_10, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_10, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1190,8 +1784,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_100, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_100, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1204,8 +1807,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_1000, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_1000, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1218,8 +1830,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_200, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_200, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1232,8 +1853,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_300, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_300, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1246,8 +1876,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_400, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_400, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1260,8 +1899,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_50, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_50, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1274,8 +1922,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_500, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_500, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1288,8 +1945,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_600, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_600, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1302,8 +1968,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_700, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_700, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1316,8 +1991,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_800, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_800, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1330,8 +2014,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_900, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_neutral2_900, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1344,8 +2037,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_background_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_background_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1358,8 +2060,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_background_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_background_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1372,8 +2083,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_error_container_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_error_container_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1386,8 +2106,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_error_container_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_error_container_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1400,8 +2129,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_error_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_error_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1414,8 +2152,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_error_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_error_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1428,8 +2175,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_primary_container_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_primary_container_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1442,8 +2198,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_primary_container_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_primary_container_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1456,8 +2221,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_primary_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_primary_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1470,8 +2244,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_primary_fixed, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_primary_fixed, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1484,8 +2267,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_primary_fixed_variant, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_primary_fixed_variant, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1498,8 +2290,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_primary_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_primary_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1512,8 +2313,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_secondary_container_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_secondary_container_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1526,8 +2336,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_secondary_container_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_secondary_container_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1540,8 +2359,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_secondary_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_secondary_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1554,8 +2382,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_secondary_fixed, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_secondary_fixed, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1568,8 +2405,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_secondary_fixed_variant, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_secondary_fixed_variant, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1582,8 +2428,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_secondary_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_secondary_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1596,8 +2451,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_surface_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_surface_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1610,8 +2474,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_surface_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_surface_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1624,8 +2497,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_surface_variant_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_surface_variant_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1638,8 +2520,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_surface_variant_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_surface_variant_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1652,8 +2543,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_tertiary_container_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_tertiary_container_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1666,8 +2566,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_tertiary_container_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_tertiary_container_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1680,8 +2589,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_tertiary_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_tertiary_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1694,8 +2612,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_tertiary_fixed, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_tertiary_fixed, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1708,8 +2635,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_tertiary_fixed_variant, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_tertiary_fixed_variant, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1722,8 +2658,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_tertiary_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_tertiary_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1736,8 +2681,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_outline_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_outline_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1750,8 +2704,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_outline_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_outline_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1764,8 +2727,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_outline_variant_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_outline_variant_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1778,8 +2750,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_outline_variant_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_outline_variant_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1792,8 +2773,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_neutral_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_neutral_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1806,8 +2796,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_neutral_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_neutral_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1820,8 +2819,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_neutral_variant_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_neutral_variant_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1834,8 +2842,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_neutral_variant_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_neutral_variant_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1848,8 +2865,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_primary_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_primary_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1862,8 +2888,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_primary_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_primary_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1876,8 +2911,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_secondary_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_secondary_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1890,8 +2934,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_secondary_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_secondary_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1904,8 +2957,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_tertiary_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_tertiary_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1918,8 +2980,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_tertiary_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_palette_key_color_tertiary_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1932,8 +3003,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_primary_container_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_primary_container_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1946,8 +3026,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_primary_container_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_primary_container_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1960,8 +3049,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_primary_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_primary_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1974,8 +3072,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_primary_fixed, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_primary_fixed, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -1988,8 +3095,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_primary_fixed_dim, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_primary_fixed_dim, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2002,8 +3118,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_primary_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_primary_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2016,8 +3141,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_secondary_container_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_secondary_container_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2030,8 +3164,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_secondary_container_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_secondary_container_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2044,8 +3187,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_secondary_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_secondary_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2058,8 +3210,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_secondary_fixed, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_secondary_fixed, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2072,8 +3233,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_secondary_fixed_dim, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_secondary_fixed_dim, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2086,8 +3256,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_secondary_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_secondary_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2100,8 +3279,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_bright_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_bright_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2114,8 +3302,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_bright_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_bright_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2128,8 +3325,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2142,8 +3348,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_highest_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_highest_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2156,8 +3371,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_highest_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_highest_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2170,8 +3394,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_high_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_high_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2184,8 +3417,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_high_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_high_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2198,8 +3440,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2212,8 +3463,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_lowest_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_lowest_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2226,8 +3486,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_lowest_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_lowest_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2240,8 +3509,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_low_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_low_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2254,8 +3532,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_low_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_container_low_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2268,8 +3555,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2282,8 +3578,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_dim_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_dim_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2296,8 +3601,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_dim_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_dim_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2310,8 +3624,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2324,8 +3647,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_variant_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_variant_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2338,8 +3670,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_variant_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_variant_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2352,8 +3693,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_tertiary_container_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_tertiary_container_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2366,8 +3716,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_tertiary_container_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_tertiary_container_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2380,8 +3739,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_tertiary_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_tertiary_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2394,8 +3762,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_tertiary_fixed, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_tertiary_fixed, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2408,8 +3785,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_tertiary_fixed_dim, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_tertiary_fixed_dim, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2422,8 +3808,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_tertiary_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_tertiary_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2436,8 +3831,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_hint_inverse_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_hint_inverse_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2450,8 +3854,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_hint_inverse_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_hint_inverse_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2464,8 +3877,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_primary_inverse_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_primary_inverse_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2478,8 +3900,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_primary_inverse_disable_only_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_primary_inverse_disable_only_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2492,8 +3923,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_primary_inverse_disable_only_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_primary_inverse_disable_only_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2506,8 +3946,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_primary_inverse_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_primary_inverse_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2520,8 +3969,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_secondary_and_tertiary_inverse_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_secondary_and_tertiary_inverse_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2534,8 +3992,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_secondary_and_tertiary_inverse_disabled_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_secondary_and_tertiary_inverse_disabled_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2548,8 +4015,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_secondary_and_tertiary_inverse_disabled_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_secondary_and_tertiary_inverse_disabled_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2562,8 +4038,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_secondary_and_tertiary_inverse_light, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_text_secondary_and_tertiary_inverse_light, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2576,8 +4061,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.tab_indicator_text, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.tab_indicator_text, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -2590,8 +4084,17 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.widget_edittext_dark, null)" (obj As Ptr) As Int32
-			    Return getColor(Resources).ToAndroidColor
+			    ' Working for API 34+ (Android 14+)
+			    If System.Version.MajorVersion >= 14 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.widget_edittext_dark, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get

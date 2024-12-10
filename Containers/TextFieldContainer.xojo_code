@@ -372,7 +372,14 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.SetLetterSpacingXC(0.15)
-		  Me.SetTintXC(Color.Green)
+		  
+		  ' Working for API 29+ (Android 10+)
+		  If System.Version.MajorVersion >= 10 Then
+		    
+		    Me.SetTintXC(Color.Green)
+		    
+		  End If
+		  
 		  Me.SetHintEnabledXC(False)
 		  
 		  Me.SetStartIconXC(Picture.SystemImage("account_outline", Picture.SystemImageSizes.dp24, Color.Purple))

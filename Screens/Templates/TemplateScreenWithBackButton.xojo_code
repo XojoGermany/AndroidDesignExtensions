@@ -5,7 +5,14 @@ Inherits TemplateScreen
 		Sub Opening()
 		  Self.SetBottomAppBarBackgroundColorXC(PrimaryColor)
 		  Self.SetNavigationBarColorXC(PrimaryColor)
-		  Self.SetNavigationBarDividerColorXC(PrimaryColor)
+		  
+		  ' Working for API 28+ (Android 9+)
+		  If System.Version.MajorVersion >= 9 Then
+		    
+		    Self.SetNavigationBarDividerColorXC(PrimaryColor)
+		    
+		  End If
+		  
 		  Self.SetNavigationIconXC(App.ChevronLeftPicture)
 		  
 		  Self.StatusBarColor = PrimaryColor

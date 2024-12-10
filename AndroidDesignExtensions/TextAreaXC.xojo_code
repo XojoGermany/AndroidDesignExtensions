@@ -996,8 +996,8 @@ Protected Module TextAreaXC
 		End Function
 	#tag EndMethod
 
-	#tag Method, Flags = &h21, Description = 52657475726E73207468652054657874496E7075744C61796F757420696E7374616E636520666F7220746865204D6F62696C65546578744669656C642E
-		Private Function Layout(Extends ctrl As MobileTextArea) As Ptr
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652054657874496E7075744C61796F757420696E7374616E636520666F7220746865204D6F62696C65546578744669656C642E
+		Attributes( Hidden )  Function Layout(Extends ctrl As MobileTextArea) As Ptr
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid

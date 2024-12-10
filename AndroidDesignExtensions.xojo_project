@@ -1,5 +1,5 @@
 Type=Mobile
-RBProjectVersion=2024.03
+RBProjectVersion=2024.04
 MinIDEVersion=20190200
 OrigIDEVersion=20230200
 Class=App;App.xojo_code;&h000000001ED647FF;&h0000000000000000;false
@@ -50,6 +50,7 @@ Module=ExtensionsXC;AndroidDesignExtensions/ExtensionsXC.xojo_code;&h00000000678
 Module=HTMLViewerXC;AndroidDesignExtensions/HTMLViewerXC.xojo_code;&h00000000594D07FF;&h000000004BEA7FFF;false
 Module=ImageViewerXC;AndroidDesignExtensions/ImageViewerXC.xojo_code;&h000000002435A7FF;&h000000004BEA7FFF;false
 Module=LabelXC;AndroidDesignExtensions/LabelXC.xojo_code;&h000000007692BFFF;&h000000004BEA7FFF;false
+Module=MessageBoxXC;AndroidDesignExtensions/MessageBoxXC.xojo_code;&h00000000789937FF;&h000000004BEA7FFF;false
 Module=MoviePlayerXC;AndroidDesignExtensions/MoviePlayerXC.xojo_code;&h0000000078D1C7FF;&h000000004BEA7FFF;false
 Module=PictureXC;AndroidDesignExtensions/PictureXC.xojo_code;&h000000003150C7FF;&h000000004BEA7FFF;false
 Module=PopupMenuXC;AndroidDesignExtensions/PopupMenuXC.xojo_code;&h000000001E123FFF;&h000000004BEA7FFF;false

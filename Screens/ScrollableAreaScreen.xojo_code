@@ -89,7 +89,13 @@ End
 		Sub Opening()
 		  Me.SetElevationXC(12)
 		  Me.SetBackgroundColorXC(&cAC8E6800)
-		  Me.SetVerticalScrollbarThumbColor(&c008F0000)
+		  
+		  ' Working for API 29+ (Android 10+)
+		  If System.Version.MajorVersion >= 10 Then
+		    
+		    Me.SetVerticalScrollbarThumbColor(&c008F0000)
+		    
+		  End If
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -110,7 +116,12 @@ End
 #tag Events ShadowColorButton
 	#tag Event
 		Sub Pressed()
-		  ScrollableArea1.SetOutlineSpotShadowColorXC(&c008F0000)
+		  ' Working for API 28+ (Android 9+)
+		  If System.Version.MajorVersion >= 9 Then
+		    
+		    ScrollableArea1.SetOutlineSpotShadowColorXC(&c008F0000)
+		    
+		  End If
 		End Sub
 	#tag EndEvent
 #tag EndEvents

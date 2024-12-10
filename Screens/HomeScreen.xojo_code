@@ -6,7 +6,7 @@ Begin TemplateScreen HomeScreen
    HasNavigationBar=   True
    Modal           =   False
    Orientation     =   0
-   Title           =   "Android Design Extension 3.0"
+   Title           =   "Android Design Extension 3.5"
    Begin AndroidMobileTable Table1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
@@ -34,6 +34,18 @@ Begin TemplateScreen HomeScreen
       Visible         =   True
       Width           =   360
    End
+   Begin MobileMessageBox MessageBox1
+      Left            =   0
+      LeftButton      =   "Cancel"
+      LockedInPosition=   False
+      Message         =   "MobileMessageBox using Android Design Extensions"
+      PanelIndex      =   -1
+      Parent          =   ""
+      RightButton     =   "OK"
+      Scope           =   2
+      Title           =   "About"
+      Top             =   0
+   End
 End
 #tag EndMobileScreen
 
@@ -41,7 +53,14 @@ End
 	#tag Event
 		Sub Opening()
 		  Self.SetNavigationBarColorXC(If(Color.IsDarkMode, &c1A1B21, &cF2F2F7))
-		  Self.SetNavigationBarDividerColorXC(If(Color.IsDarkMode, &c1A1B21, &cF2F2F7))
+		  
+		  ' Working for API 28+ (Android 9+)
+		  If System.Version.MajorVersion >= 9 Then
+		    
+		    Self.SetNavigationBarDividerColorXC(If(Color.IsDarkMode, &c1A1B21, &cF2F2F7))
+		    
+		  End If
+		  
 		  StatusBarColor = If(Color.IsDarkMode, &c1A1B21, &cF2F2F7)
 		  TitleCentered = True
 		  ToolbarColor = StatusBarColor
@@ -117,7 +136,8 @@ End
 #tag Events Table1
 	#tag Event
 		Sub Opening()
-		  If Color.IsDarkMode Then
+		  ' Working for API 29+ (Android 10+)
+		  If System.Version.MajorVersion >= 10 And Color.IsDarkMode Then
 		    
 		    Me.SetVerticalScrollbarThumbColor(&c73737D)
 		    
@@ -139,8 +159,13 @@ End
 		  AddSection("Label Extensions")
 		  AddRow("Labels", "label", "format_color_text", &c419CFF00)
 		  
-		  AddSection("HTMLViewer Extensions")
-		  AddRow("HTMLViewer Examples", "htmlviewer", "code_tags", &cFF453A00)
+		  ' Not working on API 26 (Android 8)
+		  If System.Version.MajorVersion > 8 Then
+		    
+		    AddSection("HTMLViewer Extensions")
+		    AddRow("HTMLViewer Examples", "htmlviewer", "code_tags", &cFF453A00)
+		    
+		  End If
 		  
 		  AddSection("TabPanel Extensions")
 		  AddRow("TabPanel Examples", "tabpanel", "tab", &c32D74B00)
@@ -150,6 +175,9 @@ End
 		  
 		  AddSection("Indicator Extensions")
 		  AddRow("Indicator Examples", "indicator", "ray_vertex", &cFF40FF00)
+		  
+		  AddSection("MessageBox Extensions")
+		  AddRow("MessageBox Examples", "messagebox", "alert_box", &cCC4B0000, False)
 		  
 		  AddSection("Screen Extensions")
 		  AddRow("Screen Examples", "screen", "cellphone_android", &cFFD60A00)
@@ -254,6 +282,14 @@ End
 		    
 		    LabelScreen.Show
 		    
+		  Case "messagebox"
+		    
+		    MessageBox1.SetIconXC(Picture.SystemImage("information_outline", Picture.SystemImageSizes.dp48, Color.AccentThemeColor))
+		    MessageBox1.SetPositiveButtonIconXC(Picture.SystemImage("check_circle", Picture.SystemImageSizes.dp18, Color.AccentThemeColor))
+		    MessageBox1.SetNegativeButtonIconXC(Picture.SystemImage("close_circle", Picture.SystemImageSizes.dp18, Color.AccentThemeColor))
+		    MessageBox1.SetCancelableXC(False)
+		    MessageBox1.Show
+		    
 		  Case "screen"
 		    
 		    ActivityScreen.Show
@@ -283,6 +319,14 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ScaleFactor"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Double"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ToolbarColor"
 		Visible=false

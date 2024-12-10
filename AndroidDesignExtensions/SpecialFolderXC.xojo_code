@@ -20,8 +20,17 @@ Protected Module SpecialFolderXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function Folder Lib "android.os" Alias "Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_AUDIOBOOKS).toString()" As CString
-			    Return New FolderItem(Folder)
+			    ' Working for API 29+ (Android 10+)
+			    If System.Version.MajorVersion >= 10 Then
+			      
+			      Declare Function Folder Lib "android.os" Alias "Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_AUDIOBOOKS).toString()" As CString
+			      Return New FolderItem(Folder)
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -149,8 +158,17 @@ Protected Module SpecialFolderXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function Folder Lib "android.os" Alias "Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_RECORDINGS).toString()" As CString
-			    Return New FolderItem(Folder)
+			    ' Working for API 31+ (Android 12+)
+			    If System.Version.MajorVersion >= 12 Then
+			      
+			      Declare Function Folder Lib "android.os" Alias "Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_RECORDINGS).toString()" As CString
+			      Return New FolderItem(Folder)
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get
@@ -177,8 +195,17 @@ Protected Module SpecialFolderXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function Folder Lib "android.os" Alias "Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_SCREENSHOTS).toString()" As CString
-			    Return New FolderItem(Folder)
+			    ' Working for API 29+ (Android 10+)
+			    If System.Version.MajorVersion >= 10 Then
+			      
+			      Declare Function Folder Lib "android.os" Alias "Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_SCREENSHOTS).toString()" As CString
+			      Return New FolderItem(Folder)
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get

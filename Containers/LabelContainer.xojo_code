@@ -149,7 +149,13 @@ End
 		  End If
 		  
 		  Me.SetBackgroundColorXC(&cFFD60A00)
-		  Me.SetOutlineSpotShadowColorXC(Color.Clear)
+		  
+		  ' Working for API 28+ (Android 9+)
+		  If System.Version.MajorVersion >= 9 Then
+		    
+		    Me.SetOutlineSpotShadowColorXC(Color.Clear)
+		    
+		  End If
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -166,7 +172,12 @@ End
 		    
 		  End If
 		  
-		  Me.SetOutlineSpotShadowColorXC(Color.Green)
+		  ' Working for API 28+ (Android 9+)
+		  If System.Version.MajorVersion >= 9 Then
+		    
+		    Me.SetOutlineSpotShadowColorXC(Color.Green)
+		    
+		  End If
 		End Sub
 	#tag EndEvent
 #tag EndEvents

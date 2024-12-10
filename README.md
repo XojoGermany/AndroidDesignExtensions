@@ -3,7 +3,7 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
 # AndroidDesignExtensions
-A set of 900+ UI extensions for Xojo Android framework.
+A set of 910+ UI extensions for Xojo Android framework.
 
 ![Android Design Extensions](Pictures/Screenshot.jpg)
 
@@ -11,6 +11,7 @@ A set of 900+ UI extensions for Xojo Android framework.
 
 | **Extensions** |  **Xojo Version**                                                   |
 |:--------------:|:-------------------------------------------------------------------:|
+|       3.5      | ![XOJO 2024r4](https://img.shields.io/badge/Xojo-2024r4+-green.svg) |
 |       3.0      | ![XOJO 2024r3](https://img.shields.io/badge/Xojo-2024r3+-green.svg) |
 |       2.6      | ![XOJO 2024r2](https://img.shields.io/badge/Xojo-2024r2+-green.svg) |
 |       2.5      | ![XOJO 2024r1](https://img.shields.io/badge/Xojo-2024r1+-green.svg) |
@@ -22,7 +23,7 @@ A set of 900+ UI extensions for Xojo Android framework.
 <summary>Deprecations Version 3.0</summary>
   
 * `AndroidMobileTable.SetDividerXC(file As FolderItem)`. Use `AndroidMobileTable.SetDividerXC(divider As Picture)` instead.
-* `AndroidMobileTable.SetSelectorXC(file As FolderItem)`. Use `AndroidMobileTable. SetSelectorXC(sel As Picture)` instead.
+* `AndroidMobileTable.SetSelectorXC(file As FolderItem)`. Use `AndroidMobileTable.SetSelectorXC(sel As Picture)` instead.
 * `MobileButton.SetIconXC(file As FolderItem)`. Use `MobileButton.SetIconXC(icon As Picture)` instead.
 * `MobileUIControl.SetBackgroundXC(file As FolderItem)`. Use `MobileUIControl.SetBackgroundXC(background As Picture)` instead.
 * `MobileDateTimePicker.SetIconXC(file As FolderItem)`. Use `MobileDateTimePicker.SetIconXC(icon As Picture)` instead.
@@ -30,8 +31,8 @@ A set of 900+ UI extensions for Xojo Android framework.
 * `MobileSlider.SetThumbXC(file As FolderItem)`. Use `MobileSlider.SetThumbXC(thumb As Picture)` instead.
 * `MobileSwitch.SetThumbXC(file As FolderItem)`. Use `MobileSwitch.SetThumbXC(thumb As Picture)` instead.
 * `MobileTextField.SetEndIconXC(file As FolderItem)`. Use `MobileTextField.SetEndIconXC(icon As Picture)` instead.
-* `MobileTextField.SetErrorIconXC(file As FolderItem)`. Use  `MobileTextField. SetErrorIconXC(icon As Picture)` instead.
-* `MobileTextField.SetStartIconXC(file As FolderItem)`. Use  `MobileTextField. SetStartIconXC(icon As Picture)` instead.
+* `MobileTextField.SetErrorIconXC(file As FolderItem)`. Use `MobileTextField.SetErrorIconXC(icon As Picture)` instead.
+* `MobileTextField.SetStartIconXC(file As FolderItem)`. Use `MobileTextField.SetStartIconXC(icon As Picture)` instead.
 </details>
 
 ## Currently implemented extensions
@@ -437,6 +438,17 @@ A set of 900+ UI extensions for Xojo Android framework.
 * SetShowSoftInputOnFocusXC
 * SetTextIsSelectableXC
 
+### MobileMessageBox
+* SetBackgroundColorXC
+* SetBackgroundInsetBottomXC
+* SetBackgroundInsetEndXC
+* SetBackgroundInsetStartXC
+* SetBackgroundInsetTopXC
+* SetCancelableXC
+* SetIconXC
+* SetNegativeButtonIconXC
+* SetPositiveButtonIconXC
+
 ### MobileMoviePlayer
 * CanPauseXC
 * CanSeekBackwardXC
@@ -502,6 +514,7 @@ A set of 900+ UI extensions for Xojo Android framework.
 * SetBackgroundResourceXC
 * SetBackgroundXC
 * SetBottomAppBarBackgroundColorXC
+* SetBottomAppBarMenuAlignmentModeXC
 * SetContentInsetsAbsoluteXC
 * SetContentInsetsRelativeXC
 * SetContentInsetStartWithNavigationXC

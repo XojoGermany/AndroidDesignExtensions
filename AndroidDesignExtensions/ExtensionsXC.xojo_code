@@ -1717,8 +1717,17 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setOutlineSpotShadowColor Lib kLibView (view As Ptr, myColor As Int32)
-		    setOutlineSpotShadowColor(ctrl.Handle, c.ToInteger)
+		    ' Working for API 28+ (Android 9+)
+		    If System.Version.MajorVersion >= 9 Then
+		      
+		      Declare Sub setOutlineSpotShadowColor Lib kLibView (view As Ptr, myColor As Int32)
+		      setOutlineSpotShadowColor(ctrl.Handle, c.ToInteger)
+		      
+		    Else
+		      
+		      Raise New AndroidException(kAndroidVersionNotSupported)
+		      
+		    End If
 		    
 		  #Else
 		    
@@ -2302,8 +2311,17 @@ Protected Module ExtensionsXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTint Lib kLibView Alias "getVerticalScrollbarThumbDrawable()!!.setTint" (view As Ptr, myTintColor As Int32)
-		    setTint(ctrl.Handle, c.ToInteger)
+		    ' Working for API 29+ (Android 10+)
+		    If System.Version.MajorVersion >= 10 Then
+		      
+		      Declare Sub setTint Lib kLibView Alias "getVerticalScrollbarThumbDrawable()!!.setTint" (view As Ptr, myTintColor As Int32)
+		      setTint(ctrl.Handle, c.ToInteger)
+		      
+		    Else
+		      
+		      Raise New AndroidException(kAndroidVersionNotSupported)
+		      
+		    End If
 		    
 		  #Else
 		    

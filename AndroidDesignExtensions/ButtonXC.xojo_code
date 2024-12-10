@@ -7,7 +7,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCornerRadius Lib kLibMobileButton  As Int32
+		    Declare Function getCornerRadius Lib kLibMobileButton As Int32
 		    Return getCornerRadius
 		    
 		  #EndIf
@@ -33,7 +33,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getIconGravity Lib kLibMobileButton  As Integer
+		    Declare Function getIconGravity Lib kLibMobileButton As Integer
 		    Return IconGravityXC(getIconGravity)
 		    
 		  #EndIf
@@ -59,7 +59,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getIconPadding Lib kLibMobileButton  As Int32
+		    Declare Function getIconPadding Lib kLibMobileButton As Int32
 		    Return getIconPadding
 		    
 		  #EndIf
@@ -85,7 +85,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getIconSize Lib kLibMobileButton  As Int32
+		    Declare Function getIconSize Lib kLibMobileButton As Int32
 		    Return getIconSize
 		    
 		  #EndIf
@@ -111,7 +111,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getInsetBottom Lib kLibMobileButton  As Int32
+		    Declare Function getInsetBottom Lib kLibMobileButton As Int32
 		    Return getInsetBottom
 		    
 		  #EndIf
@@ -137,7 +137,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getInsetTop Lib kLibMobileButton  As Int32
+		    Declare Function getInsetTop Lib kLibMobileButton As Int32
 		    Return getInsetTop
 		    
 		  #EndIf
@@ -163,7 +163,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getStrokeWidth Lib kLibMobileButton  As Int32
+		    Declare Function getStrokeWidth Lib kLibMobileButton As Int32
 		    Return getStrokeWidth
 		    
 		  #EndIf

@@ -650,7 +650,13 @@ End
 		  CheckBoxPicBlank = Picture.SystemImage("radiobox_blank", Picture.SystemImageSizes.dp24, Color.LightGray)
 		  CheckBoxPic = Picture.SystemImage("radiobox_marked", Picture.SystemImageSizes.dp24, If(Color.IsDarkMode, &cDAE2FF, Color.AccentThemeColor))
 		  
-		  Me.SetOutlineSpotShadowColorXC(Color.Clear) ' no shadow
+		  ' Working for API 28+ (Android 9+)
+		  If System.Version.MajorVersion >= 9 Then
+		    
+		    Me.SetOutlineSpotShadowColorXC(Color.Clear) ' no shadow
+		    
+		  End If
+		  
 		  Me.RowTextFont = Font.SystemFont(17)
 		  Me.SeparatorColor = If(Color.IsDarkMode, &c21212100, &cCACACC00)
 		  

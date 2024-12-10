@@ -511,7 +511,13 @@ End
 #tag Events DefaultArea
 	#tag Event
 		Sub Opening()
-		  Me.SetAutoLinkMaskXC(AutoLinkMaskXC.All)
+		  ' Not working on API 26 (Android 8)
+		  If System.Version.MajorVersion > 8 Then
+		    
+		    Me.SetAutoLinkMaskXC(AutoLinkMaskXC.All)
+		    
+		  End If
+		  
 		  Me.SetLinksClickableXC(True)
 		  Me.SetLinkTextColorXC(Color.Red)
 		  Me.SetHighlightColorXC(&cFF2F9200)

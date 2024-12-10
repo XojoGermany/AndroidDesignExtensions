@@ -237,7 +237,12 @@ End
 #tag Events ShadowColorButton
 	#tag Event
 		Sub Pressed()
-		  Image1.SetOutlineSpotShadowColorXC(Color.Orange)
+		  ' Working for API 28+ (Android 9+)
+		  If System.Version.MajorVersion >= 9 Then
+		    
+		    Image1.SetOutlineSpotShadowColorXC(Color.Orange)
+		    
+		  End If
 		End Sub
 	#tag EndEvent
 #tag EndEvents

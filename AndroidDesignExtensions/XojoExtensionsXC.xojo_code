@@ -17,6 +17,10 @@ Protected Module XojoExtensionsXC
 	#tag EndMethod
 
 
+	#tag Constant, Name = kAndroidVersionNotSupported, Type = String, Dynamic = False, Default = \"Android version not supported.", Scope = Public
+	#tag EndConstant
+
+
 	#tag ViewBehavior
 		#tag ViewProperty
 			Name="Name"

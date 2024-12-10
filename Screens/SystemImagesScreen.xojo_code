@@ -89,7 +89,8 @@ End
 		  Me.SetFastScrollAlwaysVisibleXC(True)
 		  Me.SetFastScrollEnabledXC(True)
 		  
-		  If Color.IsDarkMode Then
+		  ' Working for API 29+ (Android 10+)
+		  If System.Version.MajorVersion >= 10 And Color.IsDarkMode Then
 		    
 		    Me.SetVerticalScrollbarThumbColor(&c73737D)
 		    

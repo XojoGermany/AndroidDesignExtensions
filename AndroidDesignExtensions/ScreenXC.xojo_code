@@ -1,8 +1,8 @@
 #tag Module
 Protected Module ScreenXC
 	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
-	#tag Method, Flags = &h21, Description = 52657475726E732074686520426F74746F6D41707042617220696E7374616E636520666F7220746865204D6F62696C6553637265656E2E
-		Private Function BottomAppBar(Extends myScreen As MobileScreen) As Ptr
+	#tag Method, Flags = &h0, Description = 52657475726E732074686520426F74746F6D41707042617220696E7374616E636520666F7220746865204D6F62696C6553637265656E2E
+		Attributes( Hidden )  Function BottomAppBar(Extends myScreen As MobileScreen) As Ptr
 		  #Pragma Unused myScreen
 		  
 		  #If TargetAndroid
@@ -204,7 +204,7 @@ Protected Module ScreenXC
 		      
 		    Else
 		      
-		      Raise New AndroidException(CurrentMethodName + EndOfLine + "This is only working for API 30+ (Android 11+).")
+		      Raise New AndroidException(kAndroidVersionNotSupported)
 		      
 		    End If
 		    
@@ -226,7 +226,7 @@ Protected Module ScreenXC
 		      
 		    Else
 		      
-		      Raise New AndroidException(CurrentMethodName + EndOfLine + "This is only working for API 30+ (Android 11+).")
+		      Raise New AndroidException(kAndroidVersionNotSupported)
 		      
 		    End If
 		    
@@ -307,12 +307,13 @@ Protected Module ScreenXC
 		    
 		    If isShowingForBottomAppBar Then
 		      
-		      #Pragma Warning "ToDo before 2024r3 releases"
+		      Declare Function isOverflowMenuShowing1 Lib kLibMobileToolbar Alias "isOverflowMenuShowing" (toolbar As Ptr) As Boolean
+		      Return isOverflowMenuShowing1(myScreen.BottomAppBar)
 		      
 		    Else
 		      
-		      Declare Function isOverflowMenuShowing Lib kLibMobileNavigationToolbar (toolbar As Ptr) As Boolean
-		      Return isOverflowMenuShowing(myScreen.MaterialToolbar)
+		      Declare Function isOverflowMenuShowing2 Lib kLibMobileNavigationToolbar Alias "isOverflowMenuShowing" (toolbar As Ptr) As Boolean
+		      Return isOverflowMenuShowing2(myScreen.MaterialToolbar)
 		      
 		    End If
 		    
@@ -337,8 +338,8 @@ Protected Module ScreenXC
 		End Function
 	#tag EndMethod
 
-	#tag Method, Flags = &h21, Description = 52657475726E7320746865204D6174657269616C546F6F6C62617220696E7374616E636520666F7220746865204D6F62696C6553637265656E2E
-		Private Function MaterialToolbar(Extends myScreen As MobileScreen) As Ptr
+	#tag Method, Flags = &h0, Description = 52657475726E7320746865204D6174657269616C546F6F6C62617220696E7374616E636520666F7220746865204D6F62696C6553637265656E2E
+		Attributes( Hidden )  Function MaterialToolbar(Extends myScreen As MobileScreen) As Ptr
 		  #Pragma Unused myScreen
 		  
 		  #If TargetAndroid
@@ -460,6 +461,23 @@ Protected Module ScreenXC
 		  #Else
 		    
 		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0, Description = 53657473207468652063757272656E74206D656E75416C69676E6D656E744D6F64652E2044657465726D696E657320776865726520746865206D656E75206974656D7320696E2074686520426F74746F6D4170704261722077696C6C20626520616C69676E65642E
+		Sub SetBottomAppBarMenuAlignmentModeXC(Extends myScreen As MobileScreen, mode As MenuAlignmentModesXC)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setMenuAlignmentMode Lib kLibMobileToolbar (toolbar As Ptr, menuAlignmentMode As Int32)
+		    setMenuAlignmentMode(myScreen.BottomAppBar, Integer(mode))
+		    
+		  #Else
+		    
+		    #Pragma Unused mode
 		    
 		  #EndIf
 		End Sub
@@ -747,8 +765,17 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setNavigationBarDividerColor Lib kLibMobileScreen Alias "getWindow()!!.setNavigationBarDividerColor" (myColor As Int32)
-		    setNavigationBarDividerColor(c.ToInteger)
+		    ' Working for API 28+ (Android 9+)
+		    If System.Version.MajorVersion >= 9 Then
+		      
+		      Declare Sub setNavigationBarDividerColor Lib kLibMobileScreen Alias "getWindow()!!.setNavigationBarDividerColor" (myColor As Int32)
+		      setNavigationBarDividerColor(c.ToInteger)
+		      
+		    Else
+		      
+		      Raise New AndroidException(kAndroidVersionNotSupported)
+		      
+		    End If
 		    
 		  #Else
 		    
@@ -893,7 +920,7 @@ Protected Module ScreenXC
 		      
 		    Else
 		      
-		      Raise New AndroidException(CurrentMethodName + EndOfLine + "This is only working for API 30+ (Android 11+).")
+		      Raise New AndroidException(kAndroidVersionNotSupported)
 		      
 		    End If
 		    
@@ -920,7 +947,7 @@ Protected Module ScreenXC
 		      
 		    Else
 		      
-		      Raise New AndroidException(CurrentMethodName + EndOfLine + "This is only working for API 30+ (Android 11+).")
+		      Raise New AndroidException(kAndroidVersionNotSupported)
 		      
 		    End If
 		    
@@ -1107,7 +1134,7 @@ Protected Module ScreenXC
 		      
 		    Else
 		      
-		      Raise New AndroidException(CurrentMethodName + EndOfLine + "This is only working for API 30+ (Android 11+).")
+		      Raise New AndroidException(kAndroidVersionNotSupported)
 		      
 		    End If
 		    
@@ -1133,7 +1160,7 @@ Protected Module ScreenXC
 		      
 		    Else
 		      
-		      Raise New AndroidException(CurrentMethodName + EndOfLine + "This is only working for API 30+ (Android 11+).")
+		      Raise New AndroidException(kAndroidVersionNotSupported)
 		      
 		    End If
 		    
@@ -1166,12 +1193,13 @@ Protected Module ScreenXC
 		    
 		    If showForBottomAppBar Then
 		      
-		      #Pragma Warning "ToDo before 2024r3 releases"
+		      Declare Function showOverflowMenu1 Lib kLibMobileToolbar Alias "showOverflowMenu" (toolbar As Ptr) As Boolean
+		      Call showOverflowMenu1(myScreen.BottomAppBar)
 		      
 		    Else
 		      
-		      Declare Function showOverflowMenu Lib kLibMobileNavigationToolbar (toolbar As Ptr) As Boolean
-		      Call showOverflowMenu(myScreen.MaterialToolbar)
+		      Declare Function showOverflowMenu2 Lib kLibMobileNavigationToolbar Alias "showOverflowMenu" (toolbar As Ptr) As Boolean
+		      Call showOverflowMenu2(myScreen.MaterialToolbar)
 		      
 		    End If
 		    
@@ -1238,6 +1266,11 @@ Protected Module ScreenXC
 		Auto = 0
 		  Light = 1
 		Dark = 2
+	#tag EndEnum
+
+	#tag Enum, Name = MenuAlignmentModesXC, Type = Integer, Flags = &h0
+		Auto = 0
+		Start = 1
 	#tag EndEnum
 
 	#tag Enum, Name = ScreenOrientationsXC, Type = Integer, Flags = &h0

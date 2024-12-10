@@ -48,7 +48,12 @@ Inherits MobileButton
 		    
 		  Case 8
 		    
-		    App.CurrentScreen.SetNavigationBarDividerColorXC(MyColor)
+		    ' Working for API 28+ (Android 9+)
+		    If System.Version.MajorVersion >= 9 Then
+		      
+		      App.CurrentScreen.SetNavigationBarDividerColorXC(MyColor)
+		      
+		    End If
 		    
 		  End Select
 		  

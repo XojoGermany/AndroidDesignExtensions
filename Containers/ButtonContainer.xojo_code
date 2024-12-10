@@ -287,7 +287,12 @@ End
 #tag Events ColoredShadowButton
 	#tag Event
 		Sub Opening()
-		  Me.SetOutlineSpotShadowColorXC(&c94110000)
+		  ' Working for API 28+ (Android 9+)
+		  If System.Version.MajorVersion >= 9 Then
+		    
+		    Me.SetOutlineSpotShadowColorXC(&c94110000)
+		    
+		  End If
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -332,7 +337,12 @@ End
 #tag Events ShadowButton
 	#tag Event
 		Sub Opening()
-		  Me.SetOutlineSpotShadowColorXC(Color.Clear)
+		  ' Working for API 28+ (Android 9+)
+		  If System.Version.MajorVersion >= 9 Then
+		    
+		    Me.SetOutlineSpotShadowColorXC(Color.Clear)
+		    
+		  End If
 		End Sub
 	#tag EndEvent
 #tag EndEvents

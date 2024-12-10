@@ -52,7 +52,8 @@ End
 #tag Events Table1
 	#tag Event
 		Sub Opening()
-		  If Color.IsDarkMode Then
+		  ' Working for API 29+ (Android 10+)
+		  If System.Version.MajorVersion >= 10 And Color.IsDarkMode Then
 		    
 		    Me.SetVerticalScrollbarThumbColor(&c73737D)
 		    
@@ -93,7 +94,12 @@ End
 		  
 		  AddRow("isScreenRound", App.IsScreenRoundXC.ToString)
 		  
-		  AddRow("isVirtualPreload", App.IsVirtualPreloadXC.ToString)
+		  ' Working for API 27+ (Android 8.1+)
+		  If System.Version.MajorVersion >= 8 And System.Version.MinorVersion >= 1 Then
+		    
+		    AddRow("isVirtualPreload", App.IsVirtualPreloadXC.ToString)
+		    
+		  End If
 		  
 		  AddRow("Minimum SDK Version", App.MinSdkVersionXC.ToString)
 		  
@@ -114,6 +120,30 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ToolbarColor"
+		Visible=false
+		Group="Behavior"
+		InitialValue="&c000000"
+		Type="Color"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="TitleCentered"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="StatusBarColor"
+		Visible=false
+		Group="Behavior"
+		InitialValue="Color.Clear"
+		Type="Color"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Name"
 		Visible=true

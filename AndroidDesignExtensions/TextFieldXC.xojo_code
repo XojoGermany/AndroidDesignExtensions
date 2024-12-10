@@ -466,8 +466,8 @@ Protected Module TextFieldXC
 		End Function
 	#tag EndMethod
 
-	#tag Method, Flags = &h21, Description = 52657475726E73207468652054657874496E7075744C61796F757420696E7374616E636520666F7220746865204D6F62696C65546578744669656C642E
-		Private Function Layout(Extends ctrl As MobileTextField) As Ptr
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652054657874496E7075744C61796F757420696E7374616E636520666F7220746865204D6F62696C65546578744669656C642E
+		Attributes( Hidden )  Function Layout(Extends ctrl As MobileTextField) As Ptr
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid
@@ -1543,8 +1543,17 @@ Protected Module TextFieldXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTint Lib kLibMobileTextField Alias "getTextCursorDrawable()!!.setTint" (myTintColor As Int32)
-		    setTint(c.ToInteger)
+		    ' Working for API 29+ (Android 10+)
+		    If System.Version.MajorVersion >= 10 Then
+		      
+		      Declare Sub setTint Lib kLibMobileTextField Alias "getTextCursorDrawable()!!.setTint" (myTintColor As Int32)
+		      setTint(c.ToInteger)
+		      
+		    Else
+		      
+		      Raise New AndroidException(kAndroidVersionNotSupported)
+		      
+		    End If
 		    
 		  #Else
 		    

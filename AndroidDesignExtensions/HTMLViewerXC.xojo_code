@@ -1466,8 +1466,8 @@ Protected Module HTMLViewerXC
 		End Sub
 	#tag EndMethod
 
-	#tag Method, Flags = &h21, Description = 52657475726E73207468652057656253657474696E677320696E7374616E636520666F7220746865204D6F62696C6548544D4C5669657765722E
-		Private Function Settings(Extends ctrl As MobileHTMLViewer) As Ptr
+	#tag Method, Flags = &h0, Description = 52657475726E73207468652057656253657474696E677320696E7374616E636520666F7220746865204D6F62696C6548544D4C5669657765722E
+		Attributes( Hidden )  Function Settings(Extends ctrl As MobileHTMLViewer) As Ptr
 		  #Pragma Unused ctrl
 		  
 		  #If TargetAndroid

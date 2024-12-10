@@ -138,8 +138,17 @@ Protected Module ApplicationXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isVirtualPreload Lib kApplicationInfoLib (obj As Ptr) As Boolean
-		    Return isVirtualPreload(ApplicationInfo)
+		    ' Working for API 27+ (Android 8.1+)
+		    If System.Version.MajorVersion >= 8 And System.Version.MinorVersion >= 1 Then
+		      
+		      Declare Function isVirtualPreload Lib kApplicationInfoLib (obj As Ptr) As Boolean
+		      Return isVirtualPreload(ApplicationInfo)
+		      
+		    Else
+		      
+		      Raise New AndroidException(kAndroidVersionNotSupported)
+		      
+		    End If
 		    
 		  #EndIf
 		End Function
@@ -311,8 +320,17 @@ Protected Module ApplicationXC
 			Get
 			  #If TargetAndroid
 			    
-			    Declare Function isNightModeActive Lib kConfigurationLib (obj As Ptr) As Boolean
-			    Return isNightModeActive(Configuration)
+			    ' Working for API 30+ (Android 11+)
+			    If System.Version.MajorVersion >= 11 Then
+			      
+			      Declare Function isNightModeActive Lib kConfigurationLib (obj As Ptr) As Boolean
+			      Return isNightModeActive(Configuration)
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
 			    
 			  #EndIf
 			End Get

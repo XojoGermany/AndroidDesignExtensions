@@ -67,9 +67,21 @@ End
 		  Me.SetScrollBarSizeXC(20)
 		  Me.SetOverScrollModeXC(OverScrollModesXC.Never)
 		  
-		  Me.SetOutlineSpotShadowColorXC(Color.Clear) ' no shadow
+		  ' Working for API 28+ (Android 9+)
+		  If System.Version.MajorVersion >= 9 Then
+		    
+		    Me.SetOutlineSpotShadowColorXC(Color.Clear) ' no shadow
+		    
+		  End If
+		  
 		  Me.SetScrollBarFadeDurationXC(0) ' make Scrollbar always visible
-		  Me.SetVerticalScrollbarThumbColor(Color.Orange)
+		  
+		  ' Working for API 29+ (Android 10+)
+		  If System.Version.MajorVersion >= 10 Then
+		    
+		    Me.SetVerticalScrollbarThumbColor(Color.Orange)
+		    
+		  End If
 		  
 		  Me.RowTextFont = Font.SystemFont(17)
 		  Me.SeparatorColor = If(Color.IsDarkMode, &c21212100, &cCACACC00)
