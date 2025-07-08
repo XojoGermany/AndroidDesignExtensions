@@ -3,7 +3,7 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
 # AndroidDesignExtensions
-A set of 910+ UI extensions for Xojo Android framework.
+A set of 965+ UI extensions for Xojo Android framework.
 
 ![Android Design Extensions](Pictures/Screenshot.jpg)
 
