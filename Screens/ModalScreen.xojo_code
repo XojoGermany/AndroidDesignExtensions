@@ -1,9 +1,12 @@
 #tag MobileScreen
 Begin MobileScreen ModalScreen
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
+   Device          =   1
+   HasBackButton   =   False
    HasNavigationBar=   False
    Modal           =   True
    Orientation     =   0
+   SupportedOrientation=   0
    Title           =   "Untitled"
    Begin MobileButton CloseButton
       AccessibilityHint=   ""
@@ -19,6 +22,8 @@ Begin MobileScreen ModalScreen
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   126
       Visible         =   True
       Width           =   100
@@ -110,9 +115,12 @@ Begin MobileScreen ModalScreen
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Dim Amount"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   14
       Visible         =   True
       Width           =   100
@@ -130,9 +138,12 @@ Begin MobileScreen ModalScreen
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Elevation"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   74
       Visible         =   True
       Width           =   100
@@ -173,7 +184,7 @@ End
 #tag Events DimAmountImage1
 	#tag Event
 		Sub Opening()
-		  Me.Image = Picture.SystemImage("vanish", Picture.SystemImageSizes.dp24)
+		  Me.Image = Picture.SystemImage("vanish", 24)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -187,7 +198,7 @@ End
 #tag Events DimAmountImage2
 	#tag Event
 		Sub Opening()
-		  Me.Image = Picture.SystemImage("white_balance_sunny", Picture.SystemImageSizes.dp24)
+		  Me.Image = Picture.SystemImage("white_balance_sunny", 24)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -204,6 +215,22 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="HasBackButton"
+		Visible=true
+		Group="Behavior"
+		InitialValue="False"
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="ScaleFactor"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Double"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Name"
 		Visible=true

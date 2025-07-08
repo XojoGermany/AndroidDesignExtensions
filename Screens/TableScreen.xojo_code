@@ -6,6 +6,7 @@ Begin TemplateScreenWithBackButton TableScreen
    HasNavigationBar=   True
    Modal           =   False
    Orientation     =   0
+   SupportedOrientation=   0
    Title           =   "Tables"
    Begin AndroidMobileTable Table1
       AccessibilityHint=   ""
@@ -61,8 +62,8 @@ End
 #tag Events Table1
 	#tag Event
 		Sub Opening()
-		  CheckBoxPicBlank = Picture.SystemImage("checkbox_blank_circle_outline", Picture.SystemImageSizes.dp24, Color.LightGray)
-		  CheckBoxPic = Picture.SystemImage("checkbox_marked_circle", Picture.SystemImageSizes.dp24, If(Color.IsDarkMode, &cDAE2FF, Color.AccentThemeColor))
+		  CheckBoxPicBlank = Picture.SystemImage("checkbox_blank_circle_outline", 24, Color.LightGray)
+		  CheckBoxPic = Picture.SystemImage("checkbox_marked_circle", 24, If(Color.IsDarkMode, &cDAE2FF, Color.AccentThemeColor))
 		  
 		  Me.SetScrollBarSizeXC(20)
 		  Me.SetOverScrollModeXC(OverScrollModesXC.Never)
@@ -243,6 +244,14 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ScaleFactor"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Double"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ToolbarColor"
 		Visible=false

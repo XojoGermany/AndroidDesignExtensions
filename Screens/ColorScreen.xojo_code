@@ -183,6 +183,31 @@ End
 		    
 		  End If
 		  
+		  ' Working for API 35+ (Android 15+)
+		  If System.Version.MajorVersion >= 15 Then
+		    
+		    AddSection("Android 15+ (API 35)")
+		    
+		    AddRow(ColorXC.System_Error_0, "System_Error_0")
+		    AddRow(ColorXC.System_Error_10, "System_Error_10")
+		    AddRow(ColorXC.System_Error_50, "System_Error_50")
+		    AddRow(ColorXC.System_Error_100, "System_Error_100")
+		    AddRow(ColorXC.System_Error_200, "System_Error_200")
+		    AddRow(ColorXC.System_Error_300, "System_Error_300")
+		    AddRow(ColorXC.System_Error_400, "System_Error_400")
+		    AddRow(ColorXC.System_Error_500, "System_Error_500")
+		    AddRow(ColorXC.System_Error_600, "System_Error_600")
+		    AddRow(ColorXC.System_Error_700, "System_Error_700")
+		    AddRow(ColorXC.System_Error_800, "System_Error_800")
+		    AddRow(ColorXC.System_Error_900, "System_Error_900")
+		    AddRow(ColorXC.System_Error_1000, "System_Error_1000")
+		    
+		    AddRow(ColorXC.System_On_Surface_Disabled, "System_On_Surface_Disabled")
+		    AddRow(ColorXC.System_Outline_Disabled, "System_Outline_Disabled")
+		    AddRow(ColorXC.System_Surface_Disabled, "System_Surface_Disabled")
+		    
+		  End If
+		  
 		  ' Working for API 31+ (Android 12+)
 		  If System.Version.MajorVersion >= 12 Then
 		    
@@ -343,6 +368,38 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ScaleFactor"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Double"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="ToolbarColor"
+		Visible=false
+		Group="Behavior"
+		InitialValue="&c000000"
+		Type="Color"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="TitleCentered"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="StatusBarColor"
+		Visible=false
+		Group="Behavior"
+		InitialValue="Color.Clear"
+		Type="Color"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Name"
 		Visible=true

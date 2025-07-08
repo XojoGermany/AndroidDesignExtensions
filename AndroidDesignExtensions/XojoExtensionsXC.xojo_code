@@ -1,8 +1,8 @@
 #tag Module
 Protected Module XojoExtensionsXC
-	#tag CompatibilityFlags = (TargetAndroid and (Target64Bit))
+	#tag CompatibilityFlags = ( TargetAndroid and ( Target64Bit ) )
 	#tag Method, Flags = &h0
-		Function SaveSystemImage(systemImage As String, size As Picture.SystemImageSizes = Picture.SystemImageSizes.dp48, c As Color = &c000000) As FolderItem
+		Function SaveSystemImage(systemImage As String, size As Double = 48, c As Color = &c000000) As FolderItem
 		  Var oFile As FolderItem = SpecialFolder.Documents.Child(systemImage + c.ToString + ".png")
 		  
 		  If oFile Is Nil Or Not oFile.Exists Then

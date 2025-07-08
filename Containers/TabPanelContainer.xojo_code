@@ -79,8 +79,8 @@ End
 #tag Events BackgroundColorPanel
 	#tag Event
 		Sub Opening()
-		  Me.IconAt(0) = Picture.SystemImage("format_paint", Picture.SystemImageSizes.dp18, Color.AccentThemeColor)
-		  Me.IconAt(1) = Picture.SystemImage("format_color_fill", Picture.SystemImageSizes.dp18, Color.AccentThemeColor)
+		  Me.IconAt(0) = Picture.SystemImage("format_paint", 18, Color.AccentThemeColor)
+		  Me.IconAt(1) = Picture.SystemImage("format_color_fill", 18, Color.AccentThemeColor)
 		  
 		  Me.SetBackgroundColorXC(If(Color.IsDarkMode, &c46464600, &c76D6FF00))
 		  Me.SetInlineLabelXC(False)

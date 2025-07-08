@@ -11,13 +11,14 @@ A set of 910+ UI extensions for Xojo Android framework.
 
 | **Extensions** |  **Xojo Version**                                                   |
 |:--------------:|:-------------------------------------------------------------------:|
-|       3.5      | ![XOJO 2024r4](https://img.shields.io/badge/Xojo-2024r4+-green.svg) |
-|       3.0      | ![XOJO 2024r3](https://img.shields.io/badge/Xojo-2024r3+-green.svg) |
-|       2.6      | ![XOJO 2024r2](https://img.shields.io/badge/Xojo-2024r2+-green.svg) |
+|       4.0      | ![XOJO 2025r2](https://img.shields.io/badge/Xojo-2025r2-green.svg) |
+|       3.5      | ![XOJO 2024r4](https://img.shields.io/badge/Xojo-2024r4-green.svg) |
+|       3.0      | ![XOJO 2024r3](https://img.shields.io/badge/Xojo-2024r3-green.svg) |
+|       2.6      | ![XOJO 2024r2](https://img.shields.io/badge/Xojo-2024r2-green.svg) |
 |       2.5      | ![XOJO 2024r1](https://img.shields.io/badge/Xojo-2024r1+-green.svg) |
-|       2.0      | ![XOJO 2023r3](https://img.shields.io/badge/Xojo-2023r3+-green.svg) |
-|       1.5      | ![XOJO 2023r3](https://img.shields.io/badge/Xojo-2023r3+-green.svg) |
-|       1.0      | ![XOJO 2023r2](https://img.shields.io/badge/Xojo-2023r2+-green.svg) |
+|       2.0      | ![XOJO 2023r3](https://img.shields.io/badge/Xojo-2023r3-green.svg) |
+|       1.5      | ![XOJO 2023r3](https://img.shields.io/badge/Xojo-2023r3-green.svg) |
+|       1.0      | ![XOJO 2023r2](https://img.shields.io/badge/Xojo-2023r2-green.svg) |
 
 <details>
 <summary>Deprecations Version 3.0</summary>
@@ -438,6 +439,44 @@ A set of 910+ UI extensions for Xojo Android framework.
 * SetShowSoftInputOnFocusXC
 * SetTextIsSelectableXC
 
+### MobileMapViewer
+* GetMapColorSchemeXC
+* IsBuildingsEnabledXC
+* IsCompassEnabledXC
+* IsIndoorEnabledXC
+* IsIndoorLevelPickerEnabledXC
+* IsMapToolbarEnabledXC
+* IsMyLocationButtonEnabledXC
+* IsMyLocationEnabledXC
+* IsRotateGesturesEnabledXC
+* IsScrollGesturesEnabledDuringRotateOrZoomXC
+* IsScrollGesturesEnabledXC
+* IsTiltGesturesEnabledXC
+* IsTrafficEnabledXC
+* IsZoomControlsEnabledXC
+* IsZoomGesturesEnabledXC
+* ResetMinMaxZoomPreferenceXC
+* SetAllGesturesEnabledXC
+* SetBuildingsEnabledXC
+* SetCompassEnabledXC
+* SetContentDescriptionXC
+* SetIndoorEnabledXC
+* SetIndoorLevelPickerEnabledXC
+* SetMapColorSchemeXC
+* SetMapToolbarEnabledXC
+* SetMapTypeXC
+* SetMaxZoomPreferenceXC
+* SetMinZoomPreferenceXC
+* SetMyLocationButtonEnabledXC
+* SetMyLocationEnabledXC
+* SetRotateGesturesEnabledXC
+* SetScrollGesturesEnabledDuringRotateOrZoomXC
+* SetScrollGesturesEnabledXC
+* SetTiltGesturesEnabledXC
+* SetTrafficEnabledXC
+* SetZoomControlsEnabledXC
+* SetZoomGesturesEnabledXC
+
 ### MobileMessageBox
 * SetBackgroundColorXC
 * SetBackgroundInsetBottomXC
@@ -788,8 +827,10 @@ A set of 910+ UI extensions for Xojo Android framework.
 * GetHelperTextCurrentTextColorXC
 * GetHelperTextXC
 * GetPrefixTextXC
+* GetShiftDrawingOffsetForStartOverhangXC
 * GetStartIconContentDescriptionXC
 * GetSuffixTextXC
+* GetUseBoundsForWidthXC
 * IsCounterEnabledXC
 * IsEndIconCheckableXC
 * IsEndIconVisibleXC
@@ -798,6 +839,7 @@ A set of 910+ UI extensions for Xojo Android framework.
 * IsHelperTextEnabledXC
 * IsHintAnimationEnabledXC
 * IsHintEnabledXC
+* IsLocalePreferredLineHeightForMinimumUsedXC
 * IsStartIconCheckableXC
 * IsStartIconVisibleXC
 * SetBoxBackgroundColorXC
@@ -836,9 +878,11 @@ A set of 910+ UI extensions for Xojo Android framework.
 * SetHintTextColorXC
 * SetHintXC
 * SetInputTypeXC
+* SetLocalePreferredLineHeightForMinimumUsedXC
 * SetPlaceholderTextColorXC
 * SetPrefixTextColorXC
 * SetPrefixTextXC
+* SetShiftDrawingOffsetForStartOverhangXC
 * SetStartIconCheckableXC
 * SetStartIconContentDescriptionXC
 * SetStartIconMinSizeXC
@@ -849,6 +893,7 @@ A set of 910+ UI extensions for Xojo Android framework.
 * SetSuffixTextColorXC
 * SetSuffixTextXC
 * SetTintXC (API 29+)
+* SetUseBoundsForWidthXC
 
 ## ToDo
 

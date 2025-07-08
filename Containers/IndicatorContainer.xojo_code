@@ -324,14 +324,14 @@ End
 #tag Events CustomSlider2
 	#tag Event
 		Sub Opening()
-		  Me.SetThumbXC(Picture.SystemImage("star_circle", Picture.SystemImageSizes.dp24, &cFF260000))
+		  Me.SetThumbXC(Picture.SystemImage("star_circle", 24, &cFF260000))
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events CustomSwitch2
 	#tag Event
 		Sub Opening()
-		  Me.SetThumbXC(Picture.SystemImage("star_circle", Picture.SystemImageSizes.dp24, &cFF260000))
+		  Me.SetThumbXC(Picture.SystemImage("star_circle", 24, &cFF260000))
 		End Sub
 	#tag EndEvent
 #tag EndEvents

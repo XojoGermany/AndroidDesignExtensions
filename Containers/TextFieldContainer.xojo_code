@@ -36,6 +36,8 @@ Begin MobileContainer TextFieldContainer
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   186
       Visible         =   True
       Width           =   200
@@ -64,6 +66,8 @@ Begin MobileContainer TextFieldContainer
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   30
       Visible         =   True
       Width           =   200
@@ -92,6 +96,8 @@ Begin MobileContainer TextFieldContainer
       SelectionStart  =   0
       Text            =   "Hello World"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   82
       Visible         =   True
       Width           =   200
@@ -120,6 +126,8 @@ Begin MobileContainer TextFieldContainer
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   134
       Visible         =   True
       Width           =   200
@@ -148,6 +156,8 @@ Begin MobileContainer TextFieldContainer
       SelectionStart  =   0
       Text            =   "Since MobileTextArea has no Hint property, we simply use MobileTextField and enable Multiline."
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   505
       Visible         =   True
       Width           =   320
@@ -176,6 +186,8 @@ Begin MobileContainer TextFieldContainer
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   446
       Visible         =   True
       Width           =   200
@@ -197,6 +209,8 @@ Begin MobileContainer TextFieldContainer
       Scope           =   2
       Text            =   "Password"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   663
       Visible         =   True
       Width           =   100
@@ -242,6 +256,8 @@ Begin MobileContainer TextFieldContainer
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   238
       Visible         =   True
       Width           =   200
@@ -286,6 +302,8 @@ Begin MobileContainer TextFieldContainer
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   290
       Visible         =   True
       Width           =   200
@@ -314,6 +332,8 @@ Begin MobileContainer TextFieldContainer
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   342
       Visible         =   True
       Width           =   200
@@ -342,6 +362,8 @@ Begin MobileContainer TextFieldContainer
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   394
       Visible         =   True
       Width           =   200
@@ -382,11 +404,11 @@ End
 		  
 		  Me.SetHintEnabledXC(False)
 		  
-		  Me.SetStartIconXC(Picture.SystemImage("account_outline", Picture.SystemImageSizes.dp24, Color.Purple))
+		  Me.SetStartIconXC(Picture.SystemImage("account_outline", 24, Color.Purple))
 		  Me.SetStartIconTintModeXC(PorterDuffModesXC.DST)
 		  
 		  Me.SetEndIconModeXC(EndIconModesXC.Custom)
-		  Me.SetEndIconXC(Picture.SystemImage("pencil", Picture.SystemImageSizes.dp24, Color.TextColor))
+		  Me.SetEndIconXC(Picture.SystemImage("pencil", 24, Color.TextColor))
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -395,7 +417,7 @@ End
 		Sub Opening()
 		  Me.SetErrorXC("My Error Message")
 		  
-		  Me.SetStartIconXC(Picture.SystemImage("lock_outline", Picture.SystemImageSizes.dp24, Color.TextColor))
+		  Me.SetStartIconXC(Picture.SystemImage("lock_outline", 24, Color.TextColor))
 		End Sub
 	#tag EndEvent
 #tag EndEvents

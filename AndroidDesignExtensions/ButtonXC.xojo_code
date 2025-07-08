@@ -202,7 +202,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setCornerRadius Lib kLibMobileButton  (myRadius As Int32)
+		    Declare Sub setCornerRadius Lib kLibMobileButton (myRadius As Int32)
 		    setCornerRadius(radius)
 		    
 		  #Else
@@ -236,7 +236,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIconGravity Lib kLibMobileButton  (myIconGravity As Int32)
+		    Declare Sub setIconGravity Lib kLibMobileButton (myIconGravity As Int32)
 		    setIconGravity(Integer(gravity))
 		    
 		  #Else
@@ -270,7 +270,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIconPadding Lib kLibMobileButton  (myIconPadding As Int32)
+		    Declare Sub setIconPadding Lib kLibMobileButton (myIconPadding As Int32)
 		    setIconPadding(iconPadding)
 		    
 		  #Else
@@ -304,7 +304,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setIconSize Lib kLibMobileButton  (myIconSize As Int32)
+		    Declare Sub setIconSize Lib kLibMobileButton (myIconSize As Int32)
 		    setIconSize(iconSize)
 		    
 		  #Else
@@ -476,7 +476,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setInsetBottom Lib kLibMobileButton  (myInsetBottom As Int32)
+		    Declare Sub setInsetBottom Lib kLibMobileButton (myInsetBottom As Int32)
 		    setInsetBottom(insetBottom)
 		    
 		  #Else
@@ -510,7 +510,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setInsetTop Lib kLibMobileButton  (myInsetTop As Int32)
+		    Declare Sub setInsetTop Lib kLibMobileButton (myInsetTop As Int32)
 		    setInsetTop(insetTop)
 		    
 		  #Else
@@ -572,7 +572,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setShadowLayer Lib kLibMobileButton  (myRadius As Single, mydX As Single, mydY As Single, myColor As Int32)
+		    Declare Sub setShadowLayer Lib kLibMobileButton (myRadius As Single, mydX As Single, mydY As Single, myColor As Int32)
 		    setShadowLayer(radius, dX, dY, c.ToInteger)
 		    
 		  #Else
@@ -648,7 +648,7 @@ Protected Module ButtonXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStrokeWidth Lib kLibMobileButton  (myStrokeWidth As Int32)
+		    Declare Sub setStrokeWidth Lib kLibMobileButton (myStrokeWidth As Int32)
 		    setStrokeWidth(strokeWidth)
 		    
 		  #Else

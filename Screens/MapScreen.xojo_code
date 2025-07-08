@@ -1,5 +1,5 @@
 #tag MobileScreen
-Begin TemplateScreenWithBackButton ActivityScreen
+Begin TemplateScreenWithBackButton MapScreen
    Compatibility   =   ""
    Device          =   1
    HasBackButton   =   True
@@ -7,52 +7,42 @@ Begin TemplateScreenWithBackButton ActivityScreen
    Modal           =   False
    Orientation     =   0
    SupportedOrientation=   0
-   Title           =   "Screens"
-   Begin MobileScrollableArea ScrollableArea1
+   Title           =   "Maps"
+   Begin MobileMapViewer MapViewer1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
       Height          =   700
+      Latitude        =   0.0
       Left            =   0
       LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      Longitude       =   0.0
+      MapType         =   0
       Scope           =   2
-      ScrollContent   =   724957183
       Top             =   0
+      TrackMode       =   0
       Visible         =   True
       Width           =   360
+      ZoomRadius      =   200.0
    End
 End
 #tag EndMobileScreen
 
 #tag ScreenCode
-	#tag Event
-		Sub Opening()
-		  Var oBottomToolbarItem1 As New MobileToolbarButton(MobileToolbarButton.Types.Plain, "Add", Picture.SystemImage("arrow_left", 48, If(Color.IsDarkMode, Color.White, &c419CFF)))
-		  Var oBottomToolbarItem2 As New MobileToolbarButton(MobileToolbarButton.Types.Plain, "Remove", Picture.SystemImage("arrow_right", 48, If(Color.IsDarkMode, Color.White, &c419CFF)))
-		  
-		  Self.Toolbar.AddButton(oBottomToolbarItem1)
-		  Self.Toolbar.AddButton(oBottomToolbarItem2)
-		  
-		  Self.SetBottomAppBarMenuAlignmentModeXC(MenuAlignmentModesXC.Start)
-		End Sub
-	#tag EndEvent
-
-
 #tag EndScreenCode
 
+#tag Events MapViewer1
+	#tag Event
+		Sub Opening()
+		  Me.SetZoomControlsEnabledXC(False)
+		End Sub
+	#tag EndEvent
+#tag EndEvents
 #tag ViewBehavior
-	#tag ViewProperty
-		Name="ScaleFactor"
-		Visible=false
-		Group="Behavior"
-		InitialValue=""
-		Type="Double"
-		EditorType=""
-	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ToolbarColor"
 		Visible=false
@@ -75,14 +65,6 @@ End
 		Group="Behavior"
 		InitialValue="Color.Clear"
 		Type="Color"
-		EditorType=""
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="HasBackButton"
-		Visible=true
-		Group="Behavior"
-		InitialValue="False"
-		Type="Boolean"
 		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
@@ -151,9 +133,9 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Modal"
-		Visible=false
+		Visible=true
 		Group="Behavior"
-		InitialValue=""
+		InitialValue="False"
 		Type="Boolean"
 		EditorType=""
 	#tag EndViewProperty
@@ -163,6 +145,22 @@ End
 		Group="Behavior"
 		InitialValue=""
 		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="HasBackButton"
+		Visible=true
+		Group="Behavior"
+		InitialValue="False"
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="ScaleFactor"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Double"
 		EditorType=""
 	#tag EndViewProperty
 #tag EndViewBehavior

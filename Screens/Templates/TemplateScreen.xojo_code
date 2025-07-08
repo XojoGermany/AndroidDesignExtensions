@@ -17,7 +17,7 @@ Inherits MobileScreen
 		    Var APIVersion As Integer = APIVersionString.ToInteger
 		    
 		    ' Cast Android API Version
-		    Select Case  APIVersion
+		    Select Case APIVersion
 		    Case Is <= 29
 		      ' Use setSystemUiVisibility()
 		      Self.SetSystemUiVisibilityXC(Self.GetSystemUiVisibilityXC + kSYSTEM_UI_FLAG_LIGHT_STATUS_BAR)
@@ -74,6 +74,14 @@ Inherits MobileScreen
 
 
 	#tag ViewBehavior
+		#tag ViewProperty
+			Name="ScaleFactor"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Double"
+			EditorType=""
+		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Name"
 			Visible=true

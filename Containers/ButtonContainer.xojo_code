@@ -99,6 +99,8 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       TimeCaption     =   "Choose a Time"
       Top             =   550
       Visible         =   True
@@ -302,7 +304,7 @@ End
 		  Me.SetBackgroundColorXC(&cFF375F00)
 		  Me.SetCornerRadiusXC(0)
 		  
-		  Me.SetIconXC(Picture.SystemImage("android", Picture.SystemImageSizes.dp24, Color.White))
+		  Me.SetIconXC(Picture.SystemImage("android", 24, Color.White))
 		  Me.SetIconGravityXC(IconGravityXC.TextStart)
 		End Sub
 	#tag EndEvent
@@ -321,7 +323,7 @@ End
 		  Me.SetBackgroundColorXC(&cFFD60A00)
 		  Me.SetCornerRadiusXC(0)
 		  
-		  Me.SetIconXC(Picture.SystemImage("calendar_clock", Picture.SystemImageSizes.dp24, Color.Blue))
+		  Me.SetIconXC(Picture.SystemImage("calendar_clock", 24, Color.Blue))
 		  Me.SetIconGravityXC(IconGravityXC.TextStart)
 		  Me.SetIconTintModeXC(PorterDuffModesXC.DST)
 		End Sub

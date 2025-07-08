@@ -6,7 +6,8 @@ Begin TemplateScreen HomeScreen
    HasNavigationBar=   True
    Modal           =   False
    Orientation     =   0
-   Title           =   "Android Design Extension 3.5"
+   SupportedOrientation=   0
+   Title           =   "Android Design Extension 4.0"
    Begin AndroidMobileTable Table1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
@@ -74,7 +75,7 @@ End
 		  
 		  If oChevronPic = Nil Then
 		    
-		    oChevronPic = Picture.SystemImage("chevron_right", Picture.SystemImageSizes.dp24, &cC5C5C7)
+		    oChevronPic = Picture.SystemImage("chevron_right", 24, &cC5C5C7)
 		    
 		  End If
 		  
@@ -116,7 +117,7 @@ End
 
 	#tag Method, Flags = &h21
 		Private Function GetPicture(name As String, aColor As Color = &c000000FF) As Picture
-		  Var kSize As Picture.SystemImageSizes = Picture.SystemImageSizes.dp24
+		  Const kSize As Double = 24
 		  
 		  If aColor <> Color.Clear Then
 		    
@@ -175,6 +176,9 @@ End
 		  
 		  AddSection("Indicator Extensions")
 		  AddRow("Indicator Examples", "indicator", "ray_vertex", &cFF40FF00)
+		  
+		  AddSection("MapViewer Extensions")
+		  AddRow("Maps Examples", "mapviewer", "map", &c0080FF00)
 		  
 		  AddSection("MessageBox Extensions")
 		  AddRow("MessageBox Examples", "messagebox", "alert_box", &cCC4B0000, False)
@@ -282,11 +286,15 @@ End
 		    
 		    LabelScreen.Show
 		    
+		  Case "mapviewer"
+		    
+		    MapScreen.Show
+		    
 		  Case "messagebox"
 		    
-		    MessageBox1.SetIconXC(Picture.SystemImage("information_outline", Picture.SystemImageSizes.dp48, Color.AccentThemeColor))
-		    MessageBox1.SetPositiveButtonIconXC(Picture.SystemImage("check_circle", Picture.SystemImageSizes.dp18, Color.AccentThemeColor))
-		    MessageBox1.SetNegativeButtonIconXC(Picture.SystemImage("close_circle", Picture.SystemImageSizes.dp18, Color.AccentThemeColor))
+		    MessageBox1.SetIconXC(Picture.SystemImage("information_outline", 48, Color.AccentThemeColor))
+		    MessageBox1.SetPositiveButtonIconXC(Picture.SystemImage("check_circle", 18, Color.AccentThemeColor))
+		    MessageBox1.SetNegativeButtonIconXC(Picture.SystemImage("close_circle", 18, Color.AccentThemeColor))
 		    MessageBox1.SetCancelableXC(False)
 		    MessageBox1.Show
 		    

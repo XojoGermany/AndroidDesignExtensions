@@ -12,10 +12,10 @@ Protected Module ContainerXC
 		    
 		    For Each obj As MobileControl In myContainer.Controls
 		      
-		      '  Check for MobileUIControl
+		      ' Check for MobileUIControl
 		      If Not (obj IsA MobileUIControl) Then Continue
 		      
-		      '  Check for MobileContainer
+		      ' Check for MobileContainer
 		      If obj IsA MobileContainer Then Continue
 		      
 		      iObjID = MobileUIControl(obj).GetIDXC

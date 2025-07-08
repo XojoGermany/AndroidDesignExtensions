@@ -1347,6 +1347,305 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_0, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_Error_0 As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_10, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_Error_10 As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_100, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_Error_100 As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_1000, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_Error_1000 As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_200, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_Error_200 As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_300, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_Error_300 As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_400, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_Error_400 As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_50, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_Error_50 As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_500, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_Error_500 As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_600, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_Error_600 As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_700, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_Error_700 As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_800, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_Error_800 As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_error_900, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_Error_900 As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
 			    ' Working for API 34+ (Android 14+)
 			    If System.Version.MajorVersion >= 14 Then
 			      
@@ -2474,6 +2773,29 @@ Protected Module ColorXC
 			Get
 			  #If TargetAndroid
 			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_on_surface_disabled, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_On_Surface_Disabled As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
 			    ' Working for API 34+ (Android 14+)
 			    If System.Version.MajorVersion >= 14 Then
 			      
@@ -2697,6 +3019,29 @@ Protected Module ColorXC
 			End Get
 		#tag EndGetter
 		System_Outline_Dark As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_outline_disabled, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_Outline_Disabled As Color
 	#tag EndComputedProperty
 
 	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
@@ -3617,6 +3962,29 @@ Protected Module ColorXC
 			End Get
 		#tag EndGetter
 		System_Surface_Dim_Light As Color
+	#tag EndComputedProperty
+
+	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
+		#tag Getter
+			Get
+			  #If TargetAndroid
+			    
+			    ' Working for API 35+ (Android 15+)
+			    If System.Version.MajorVersion >= 15 Then
+			      
+			      Declare Function getColor Lib kResourcesLib Alias "getColor(android.R.color.system_surface_disabled, null)" (obj As Ptr) As Int32
+			      Return getColor(Resources).ToAndroidColor
+			      
+			    Else
+			      
+			      Raise New AndroidException(kAndroidVersionNotSupported)
+			      
+			    End If
+			    
+			  #EndIf
+			End Get
+		#tag EndGetter
+		System_Surface_Disabled As Color
 	#tag EndComputedProperty
 
 	#tag ComputedProperty, Flags = &h0, CompatibilityFlags = (TargetAndroid and (Target64Bit))
@@ -5586,6 +5954,14 @@ Protected Module ColorXC
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Widget_Edittext_Dark"
+			Visible=false
+			Group="Behavior"
+			InitialValue="&c000000"
+			Type="Color"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="System_Error_0"
 			Visible=false
 			Group="Behavior"
 			InitialValue="&c000000"

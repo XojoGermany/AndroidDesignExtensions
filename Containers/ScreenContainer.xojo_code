@@ -26,6 +26,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   712
       Visible         =   True
       Width           =   68
@@ -44,6 +46,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   712
       Visible         =   True
       Width           =   68
@@ -62,6 +66,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   712
       Visible         =   True
       Width           =   68
@@ -80,6 +86,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   712
       Visible         =   True
       Width           =   68
@@ -98,6 +106,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   794
       Visible         =   True
       Width           =   68
@@ -116,6 +126,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   794
       Visible         =   True
       Width           =   68
@@ -134,6 +146,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   794
       Visible         =   True
       Width           =   68
@@ -152,6 +166,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   794
       Visible         =   True
       Width           =   68
@@ -170,6 +186,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   876
       Visible         =   True
       Width           =   68
@@ -188,6 +206,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   876
       Visible         =   True
       Width           =   68
@@ -206,6 +226,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   876
       Visible         =   True
       Width           =   68
@@ -224,6 +246,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   876
       Visible         =   True
       Width           =   68
@@ -242,6 +266,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   958
       Visible         =   True
       Width           =   68
@@ -260,6 +286,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   958
       Visible         =   True
       Width           =   68
@@ -278,6 +306,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   958
       Visible         =   True
       Width           =   68
@@ -339,6 +369,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   958
       Visible         =   True
       Width           =   68
@@ -357,6 +389,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   218
       Visible         =   True
       Width           =   320
@@ -375,6 +409,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   166
       Visible         =   True
       Width           =   320
@@ -393,6 +429,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   114
       Visible         =   True
       Width           =   150
@@ -411,6 +449,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   True
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   10
       Visible         =   True
       Width           =   150
@@ -429,6 +469,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   True
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   114
       Visible         =   True
       Width           =   150
@@ -447,6 +489,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   10
       Visible         =   True
       Width           =   150
@@ -465,6 +509,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   62
       Visible         =   True
       Width           =   320
@@ -483,6 +529,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   270
       Visible         =   True
       Width           =   320
@@ -501,6 +549,8 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   322
       Visible         =   True
       Width           =   320
@@ -647,8 +697,8 @@ End
 #tag Events Table1
 	#tag Event
 		Sub Opening()
-		  CheckBoxPicBlank = Picture.SystemImage("radiobox_blank", Picture.SystemImageSizes.dp24, Color.LightGray)
-		  CheckBoxPic = Picture.SystemImage("radiobox_marked", Picture.SystemImageSizes.dp24, If(Color.IsDarkMode, &cDAE2FF, Color.AccentThemeColor))
+		  CheckBoxPicBlank = Picture.SystemImage("radiobox_blank", 24, Color.LightGray)
+		  CheckBoxPic = Picture.SystemImage("radiobox_marked", 24, If(Color.IsDarkMode, &cDAE2FF, Color.AccentThemeColor))
 		  
 		  ' Working for API 28+ (Android 9+)
 		  If System.Version.MajorVersion >= 9 Then

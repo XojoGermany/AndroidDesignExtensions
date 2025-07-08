@@ -6,6 +6,7 @@ Begin TemplateScreenWithBackButton SystemImagesScreen
    HasNavigationBar=   True
    Modal           =   False
    Orientation     =   0
+   SupportedOrientation=   0
    Title           =   "System Images"
    Begin AndroidMobileTable Table1
       AccessibilityHint=   ""
@@ -51,6 +52,8 @@ Begin TemplateScreenWithBackButton SystemImagesScreen
       Scope           =   2
       Text            =   "Untitled"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   10
       Visible         =   True
       Width           =   100
@@ -72,7 +75,7 @@ End
 		    
 		    Table1.AddRow(sImageName)
 		    Table1.RowTextColorAt(Table1.LastAddedRowIndex) = If(Color.IsDarkMode, Color.White, Color.Black)
-		    Table1.RowPictureAt(Table1.LastAddedRowIndex) = Picture.SystemImage(sImageName, Picture.SystemImageSizes.dp48, If(Color.IsDarkMode, Color.White, Color.Black))
+		    Table1.RowPictureAt(Table1.LastAddedRowIndex) = Picture.SystemImage(sImageName, 48, If(Color.IsDarkMode, Color.White, Color.Black))
 		    
 		  Next
 		  
@@ -118,6 +121,14 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ScaleFactor"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Double"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ToolbarColor"
 		Visible=false
