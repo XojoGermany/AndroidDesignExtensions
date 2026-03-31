@@ -1,13 +1,16 @@
 #tag MobileScreen
 Begin TemplateScreen HomeScreen
+   BackgroundColor =   
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Device          =   1
    HasBackButton   =   False
    HasNavigationBar=   True
    Modal           =   False
+   NavigationBarColor=   
+   NavigationBarTextColor=   
    Orientation     =   0
    SupportedOrientation=   0
-   Title           =   "Android Design Extension 4.0"
+   Title           =   "Android Design Extension 4.1"
    Begin AndroidMobileTable Table1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
@@ -62,6 +65,12 @@ End
 		    
 		  End If
 		  
+		  If Not Color.IsDarkMode Then
+		    
+		    Self.SetBackgroundColorXC(&cF2F2F7)
+		    
+		  End If
+		  
 		  StatusBarColor = If(Color.IsDarkMode, &c1A1B21, &cF2F2F7)
 		  TitleCentered = True
 		  ToolbarColor = StatusBarColor
@@ -80,6 +89,12 @@ End
 		  End If
 		  
 		  Table1.AddRow(title)
+		  ' Fix for Xojo 2025r2+, since Edge-to-Egde Support broke some things
+		  If Not Color.IsDarkMode Then
+		    
+		    Table1.RowBackgroundColorAt(Table1.LastAddedRowIndex) = Color.White
+		    
+		  End If
 		  
 		  If hasChevron Then
 		    
@@ -327,6 +342,38 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="LastControlIndex"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="BackgroundColor"
+		Visible=true
+		Group="Behavior"
+		InitialValue=""
+		Type="ColorGroup"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="NavigationBarColor"
+		Visible=true
+		Group="Behavior"
+		InitialValue=""
+		Type="ColorGroup"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="NavigationBarTextColor"
+		Visible=true
+		Group="Behavior"
+		InitialValue=""
+		Type="ColorGroup"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ScaleFactor"
 		Visible=false

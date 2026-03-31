@@ -878,7 +878,7 @@ Protected Module ScreenXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setStatusBarColor Lib kLibMobileScreen Alias "getWindow()!!.setStatusBarColor" (myColor As Int32)
+		    Declare Sub setStatusBarColor Lib kLibMobileScreenKotlin Alias "getWindow()!!.decorView.setOnApplyWindowInsetsListener { view, insets -> val statusBarHeight = insets.getInsets(android.view.WindowInsets.Type.systemBars()).top; view.setPadding(0, statusBarHeight, 0, 0); view.setBackgroundColor(mycolor.toInt()); insets }" (myColor As Int32)
 		    setStatusBarColor(c.ToInteger)
 		    
 		  #Else
@@ -1010,8 +1010,25 @@ Protected Module ScreenXC
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0, CompatibilityFlags = (TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)), Description = 5365747320746865207465787420636F6C6F72206F6620746865207469746C652C2069662070726573656E742E
+		Attributes( Deprecated = "SetTitleTextColorXC(c As ColorGroup)" )  Sub SetTitleTextColorXC(Extends myScreen As MobileScreen, c As Color)
+		  #Pragma Unused myScreen
+		  
+		  #If TargetAndroid
+		    
+		    Declare Sub setTitleTextColor Lib kLibMobileNavigationToolbar (toolbar As Ptr, c As Int32)
+		    setTitleTextColor(myScreen.MaterialToolbar, c.ToInteger)
+		    
+		  #Else
+		    
+		    #Pragma Unused c
+		    
+		  #EndIf
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0, Description = 5365747320746865207465787420636F6C6F72206F6620746865207469746C652C2069662070726573656E742E
-		Sub SetTitleTextColorXC(Extends myScreen As MobileScreen, c As Color)
+		Sub SetTitleTextColorXC(Extends myScreen As MobileScreen, c As ColorGroup)
 		  #Pragma Unused myScreen
 		  
 		  #If TargetAndroid

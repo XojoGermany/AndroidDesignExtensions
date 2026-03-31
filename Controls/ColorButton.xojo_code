@@ -28,7 +28,8 @@ Inherits MobileButton
 		    
 		  Case 3
 		    
-		    App.CurrentScreen.SetTitleTextColorXC(MyColor)
+		    Var c As New ColorGroup(MyColor)
+		    App.CurrentScreen.SetTitleTextColorXC(c)
 		    
 		  Case 4
 		    
@@ -87,6 +88,46 @@ Inherits MobileButton
 
 
 	#tag ViewBehavior
+		#tag ViewProperty
+			Name="BackgroundColor"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="ColorGroup"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="BorderColor"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="ColorGroup"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="BorderWidth"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="CornerSize"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="Icon"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Picture"
+			EditorType=""
+		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Name"
 			Visible=true
@@ -220,7 +261,7 @@ Inherits MobileButton
 			Visible=true
 			Group="Button"
 			InitialValue="&cffffff"
-			Type="Color"
+			Type="ColorGroup"
 			EditorType=""
 		#tag EndViewProperty
 	#tag EndViewBehavior

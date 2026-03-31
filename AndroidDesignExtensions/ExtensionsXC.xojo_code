@@ -2430,6 +2430,45 @@ Protected Module ExtensionsXC
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
+		Function ToInteger(Extends value As ColorGroup) As Integer
+		  Var c As Color
+		  Var valueColors() As Color = value.Values
+		  
+		  Select Case value.Mode
+		  Case ColorGroup.Modes.Dual
+		    
+		    If Color.IsDarkMode And valueColors.LastIndex > 0 Then
+		      
+		      c = valueColors(1)
+		      
+		    Else
+		      
+		      c = value.ToColor
+		      
+		    End If
+		    
+		  Case ColorGroup.Modes.Single
+		    
+		    c = value.ToColor
+		    
+		  End Select
+		  
+		  If c = Color.Clear Then
+		    
+		    Return 0
+		    
+		  Else
+		    
+		    Var alpha As Integer = 255 - c.Alpha
+		    Var alphaHex As String = alpha.ToHex(2)
+		    
+		    Return Integer.FromHex(alphaHex + c.ToString.Right(6))
+		    
+		  End If
+		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
 		Function ToString(Extends value As PorterDuffModesXC) As String
 		  ' https://developer.android.com/reference/android/graphics/PorterDuff.Mode
 		  
