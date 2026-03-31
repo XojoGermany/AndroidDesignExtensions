@@ -11,6 +11,7 @@ A set of 965+ UI extensions for Xojo Android framework.
 
 | **Extensions** |  **Xojo Version**                                                   |
 |:--------------:|:-------------------------------------------------------------------:|
+|       4.1      | ![XOJO 2025r2](https://img.shields.io/badge/Xojo-2025r3-green.svg) |
 |       4.0      | ![XOJO 2025r2](https://img.shields.io/badge/Xojo-2025r2-green.svg) |
 |       3.5      | ![XOJO 2024r4](https://img.shields.io/badge/Xojo-2024r4-green.svg) |
 |       3.0      | ![XOJO 2024r3](https://img.shields.io/badge/Xojo-2024r3-green.svg) |
@@ -19,6 +20,11 @@ A set of 965+ UI extensions for Xojo Android framework.
 |       2.0      | ![XOJO 2023r3](https://img.shields.io/badge/Xojo-2023r3-green.svg) |
 |       1.5      | ![XOJO 2023r3](https://img.shields.io/badge/Xojo-2023r3-green.svg) |
 |       1.0      | ![XOJO 2023r2](https://img.shields.io/badge/Xojo-2023r2-green.svg) |
+
+<details>
+<summary>Deprecations Version 4.1</summary>
+* `ScreenXC.SetTitleTextColorXC(Extends myScreen As MobileScreen, c As Color)`. Use `ScreenXCSetTitleTextColorXC(Extends myScreen As MobileScreen, c As ColorGroup)` instead.
+</details>
 
 <details>
 <summary>Deprecations Version 3.0</summary>
