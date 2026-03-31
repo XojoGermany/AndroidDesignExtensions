@@ -3,6 +3,18 @@ Protected Class TemplateScreen
 Inherits MobileScreen
 	#tag Event
 		Sub Opening()
+		  Var APIVersionString As String = System.Version.BuildVersion
+		  Var APIVersion As Integer = APIVersionString.ToInteger
+		  
+		  #If XojoVersion > 2025.021
+		    
+		    Select Case APIVersion
+		    Case Is >= 30
+		      Self.SetDecorFitsSystemWindowsXC(False)
+		    End Select
+		    
+		  #EndIf
+		  
 		  If Color.IsDarkMode Then
 		    
 		    Self.SetBackgroundColorXC(&c1A1B21)
@@ -13,14 +25,9 @@ Inherits MobileScreen
 		    
 		    ' Set System Bars Text Color to the dark mode one
 		    
-		    Var APIVersionString As String = System.Version.BuildVersion
-		    Var APIVersion As Integer = APIVersionString.ToInteger
-		    
 		    ' Cast Android API Version
 		    Select Case APIVersion
-		    Case Is <= 29
-		      ' Use setSystemUiVisibility()
-		      Self.SetSystemUiVisibilityXC(Self.GetSystemUiVisibilityXC + kSYSTEM_UI_FLAG_LIGHT_STATUS_BAR)
+		      ' Versions below API 30 ar no longer supported, since this results in an exception.
 		    Case Is >= 30
 		      ' Use WindowInsetsController.setSystemBarsAppearance()
 		      Self.SetSystemBarsAppearanceXC(kAPPEARANCE_LIGHT_STATUS_BARS, kAPPEARANCE_LIGHT_STATUS_BARS)
@@ -31,9 +38,9 @@ Inherits MobileScreen
 		  RaiseEvent Opening
 		  
 		  Self.SetMaterialToolbarElevationXC(0) ' remove the toolbars shadow
-		  Self.SetMaterialToolbarBackgroundColorXC(ToolbarColor)
+		  Self.NavigationBarColor = ToolbarColor
 		  Self.SetTitleCenteredXC(TitleCentered)
-		  Self.SetTitleTextColorXC(If(Color.IsDarkMode, &cF1F0F7, Color.Black))
+		  Self.NavigationBarTextColor = New ColorGroup(Color.Black, &cF1F0F7)
 		  Self.SetTitleTextSizeXC(If(Self IsA TemplateScreenWithBackButton, 1, 0), 17.5)
 		  
 		  If StatusBarColor <> Color.Clear Then
@@ -51,6 +58,16 @@ Inherits MobileScreen
 		    End If
 		    
 		  Next
+		  
+		  #If XojoVersion <= 2025.02
+		    
+		    ' Fix for Xojo 2025r2+, since Edge-to-Egde Support broke some things
+		    ' Declare Sub setDecorFitsSystemWindows Lib "Kotlin" Alias "androidx.core.view.WindowCompat.setDecorFitsSystemWindows((ref as androidx.appcompat.app.AppCompatActivity).getWindow(), value)" (ref As Ptr, value As Boolean)
+		    ' setDecorFitsSystemWindows(Self.Handle, True)
+		    
+		    Self.SetDecorFitsSystemWindowsXC(True)
+		    
+		  #EndIf
 		End Sub
 	#tag EndEvent
 
@@ -74,6 +91,38 @@ Inherits MobileScreen
 
 
 	#tag ViewBehavior
+		#tag ViewProperty
+			Name="LastControlIndex"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="BackgroundColor"
+			Visible=true
+			Group="Behavior"
+			InitialValue=""
+			Type="ColorGroup"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="NavigationBarColor"
+			Visible=true
+			Group="Behavior"
+			InitialValue=""
+			Type="ColorGroup"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="NavigationBarTextColor"
+			Visible=true
+			Group="Behavior"
+			InitialValue=""
+			Type="ColorGroup"
+			EditorType=""
+		#tag EndViewProperty
 		#tag ViewProperty
 			Name="ScaleFactor"
 			Visible=false
