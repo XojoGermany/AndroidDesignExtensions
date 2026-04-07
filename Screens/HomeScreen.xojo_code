@@ -10,7 +10,7 @@ Begin TemplateScreen HomeScreen
    NavigationBarTextColor=   
    Orientation     =   0
    SupportedOrientation=   0
-   Title           =   "Android Design Extension 4.1"
+   Title           =   "Android Design Extension 4.5"
    Begin AndroidMobileTable Table1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""

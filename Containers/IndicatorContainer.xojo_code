@@ -4,7 +4,7 @@ Begin MobileContainer IndicatorContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   500
+   Height          =   600
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -106,6 +106,7 @@ Begin MobileContainer IndicatorContainer
       MaximumValue    =   100.0
       MinimumValue    =   0.0
       Scope           =   2
+      TintColor       =   
       Top             =   238
       Value           =   50.0
       Visible         =   True
@@ -125,6 +126,7 @@ Begin MobileContainer IndicatorContainer
       MaximumValue    =   100.0
       MinimumValue    =   0.0
       Scope           =   2
+      TintColor       =   
       Top             =   380
       Value           =   50.0
       Visible         =   True
@@ -201,6 +203,7 @@ Begin MobileContainer IndicatorContainer
       MaximumValue    =   100.0
       MinimumValue    =   0.0
       Scope           =   2
+      TintColor       =   
       Top             =   96
       Value           =   50.0
       Visible         =   True
@@ -235,7 +238,7 @@ Begin MobileContainer IndicatorContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
-      Top             =   478
+      Top             =   578
       Visible         =   True
       Width           =   360
    End
@@ -253,6 +256,7 @@ Begin MobileContainer IndicatorContainer
       MaximumValue    =   100.0
       MinimumValue    =   0.0
       Scope           =   2
+      TintColor       =   
       Top             =   418
       Value           =   50.0
       Visible         =   True
@@ -274,6 +278,49 @@ Begin MobileContainer IndicatorContainer
       Value           =   False
       Visible         =   True
       Width           =   50
+   End
+   Begin AppearanceSlider MaterialSlider
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Enabled         =   True
+      Height          =   30
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      MaximumValue    =   100.0
+      MinimumValue    =   0.0
+      Scope           =   2
+      TintColor       =   
+      Top             =   527
+      Value           =   50.0
+      Visible         =   True
+      Width           =   320
+   End
+   Begin AppearanceLabel CustomLabel2
+      AccessibilityHint=   ""
+      AccessibilityLabel=   ""
+      Alignment       =   1
+      Enabled         =   True
+      Height          =   30
+      Left            =   20
+      LineBreakMode   =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      MaximumCharactersAllowed=   0
+      Scope           =   2
+      Text            =   "Material Slider"
+      TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
+      Top             =   489
+      Visible         =   True
+      Width           =   320
    End
 End
 #tag EndMobileContainer
@@ -299,17 +346,36 @@ End
 #tag Events CustomSlider
 	#tag Event
 		Sub Opening()
-		  Me.SetTintXC(&c008F0000)
-		  Me.SetThumbColorXC(&cFF930000)
+		  #If XojoVersion < 2026.01
+		    
+		    Me.SetTintXC(&c008F0000)
+		    Me.SetThumbColorXC(&cFF930000)
+		    
+		  #Else
+		    
+		    Me.SetTrackTintListXC(&c008F0000)
+		    Me.SetThumbTintListXC(&cFF930000)
+		    
+		  #EndIf
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events CustomSlider1
 	#tag Event
 		Sub Opening()
-		  Me.SetProgressBackgroundTintListXC(Color.Cyan)
-		  Me.SetProgressTintListXC(Color.Magenta)
-		  Me.SetThumbColorXC(&cFFD47900)
+		  #If XojoVersion < 2026.01
+		    
+		    Me.SetProgressBackgroundTintListXC(Color.Cyan)
+		    Me.SetProgressTintListXC(Color.Magenta)
+		    Me.SetThumbColorXC(&cFFD47900)
+		    
+		  #Else
+		    
+		    Me.SetTrackTintListXC(Color.Cyan)
+		    Me.SetTrackActiveTintListXC(Color.Magenta)
+		    Me.SetThumbTintListXC(&cFFD47900)
+		    
+		  #EndIf
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -324,7 +390,11 @@ End
 #tag Events CustomSlider2
 	#tag Event
 		Sub Opening()
-		  Me.SetThumbXC(Picture.SystemImage("star_circle", 24, &cFF260000))
+		  #If XojoVersion < 2026.01
+		    
+		    Me.SetThumbXC(Picture.SystemImage("star_circle", 24, &cFF260000))
+		    
+		  #EndIf
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -332,6 +402,26 @@ End
 	#tag Event
 		Sub Opening()
 		  Me.SetThumbXC(Picture.SystemImage("star_circle", 24, &cFF260000))
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events MaterialSlider
+	#tag Event
+		Sub Opening()
+		  #If XojoVersion >= 2026.01
+		    
+		    Me.SetThumbWidthXC(25)
+		    Me.SetTrackHeightXC(Me.GetThumbHeightXC)
+		    Me.SetStepSizeXC(10)
+		    Me.SetThumbHeightXC(Me.GetThumbHeightXC + 30)
+		    Me.SetThumbStrokeWidthXC(4)
+		    Me.SetThumbStrokeColorXC(Color.Red)
+		    Me.SetThumbTintListXC(Color.Yellow)
+		    Me.SetTickActiveRadiusXC(12)
+		    Me.SetTickTintListXC(Color.Green)
+		    Me.SetTickInactiveTintListXC(Color.Red)
+		    
+		  #EndIf
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -458,6 +548,14 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="LastControlIndex"
 		Visible=false
 		Group="Behavior"
 		InitialValue=""

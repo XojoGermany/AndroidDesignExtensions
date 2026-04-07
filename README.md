@@ -3,7 +3,7 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
 # AndroidDesignExtensions
-A set of 965+ UI extensions for Xojo Android framework.
+A set of 1027+ UI extensions for Xojo Android framework.
 
 ![Android Design Extensions](Pictures/Screenshot.jpg)
 
@@ -11,7 +11,8 @@ A set of 965+ UI extensions for Xojo Android framework.
 
 | **Extensions** |  **Xojo Version**                                                   |
 |:--------------:|:-------------------------------------------------------------------:|
-|       4.1      | ![XOJO 2025r2](https://img.shields.io/badge/Xojo-2025r3-green.svg) |
+|       4.5      | ![XOJO 2026r1](https://img.shields.io/badge/Xojo-2026r1-green.svg) |
+|       4.1      | ![XOJO 2025r3](https://img.shields.io/badge/Xojo-2025r3-green.svg) |
 |       4.0      | ![XOJO 2025r2](https://img.shields.io/badge/Xojo-2025r2-green.svg) |
 |       3.5      | ![XOJO 2024r4](https://img.shields.io/badge/Xojo-2024r4-green.svg) |
 |       3.0      | ![XOJO 2024r3](https://img.shields.io/badge/Xojo-2024r3-green.svg) |
@@ -637,9 +638,66 @@ A set of 965+ UI extensions for Xojo Android framework.
 * SetThumbXC
 
 ### MobileSlider
+* GetActiveThumbIndexXC
+* GetFocusedThumbIndexXC
+* GetHaloRadiusXC
+* GetStepSizeXC
+* GetThumbElevationXC
+* GetThumbHeightXC
+* GetThumbRadiusXC
+* GetThumbStrokeWidthXC
+* GetThumbTrackGapSizeXC
+* GetThumbWidthXC
+* GetTickActiveRadiusXC
+* GetTickInactiveRadiusXC
+* GetTrackCornerSizeXC
+* GetTrackHeightXC
+* GetTrackIconSizeXC
+* GetTrackInsideCornerSizeXC
+* GetTrackSidePaddingXC
+* GetTrackStopIndicatorSizeXC
+* GetTrackWidthXC
+* HasLabelFormatterXC
+* IsCenteredXC
+* IsTickVisibleXC
+* IsVerticalXC
+* SetCenteredXC
+* SetCustomThumbDrawableXC
+* SetFocusedThumbIndexXC
+* SetHaloRadiusXC
+* SetHaloTintListXC
 * SetProgressBackgroundTintListXC
 * SetProgressTintListXC
+* SetStepSizeXC
+* SetThumbColorXC
+* SetThumbElevationXC
+* SetThumbHeightXC
+* SetThumbRadiusXC
+* SetThumbStrokeColorXC
+* SetThumbStrokeWidthXC
+* SetThumbTintListXC
+* SetThumbTrackGapSizeXC
+* SetThumbWidthXC
+* SetTickActiveRadiusXC
+* SetTickActiveTintListXC
+* SetTickInactiveRadiusXC
+* SetTickInactiveTintListXC
+* SetTickTintListXC
 * SetTintXC
+* SetTrackActiveTintListXC
+* SetTrackCornerSizeXC
+* SetTrackHeightXC
+* SetTrackIconActiveColorXC
+* SetTrackIconActiveEndXC
+* SetTrackIconActiveStartXC
+* SetTrackIconInactiveColorXC
+* SetTrackIconInactiveEndXC
+* SetTrackIconInactiveStartXC
+* SetTrackIconSizeXC
+* SetTrackInactiveTintListXC
+* SetTrackInsideCornerSizeXC
+* SetTrackStopIndicatorSizeXC
+* SetTrackTintListXC
 
 ### MobileSwitch
 * IsUseMaterialThemeColorsXC
