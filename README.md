@@ -25,7 +25,7 @@ A set of 1027+ UI extensions for Xojo Android framework.
 <details>
 <summary>Deprecations Version 4.1</summary>
   
-* `ScreenXC.SetTitleTextColorXC(Extends myScreen As MobileScreen, c As Color)`. Use `ScreenXCSetTitleTextColorXC(Extends myScreen As MobileScreen, c As ColorGroup)` instead.
+* `ScreenXC.SetTitleTextColorXC(Extends myScreen As MobileScreen, c As Color)`. Use `ScreenXC.SetTitleTextColorXC(Extends myScreen As MobileScreen, c As ColorGroup)` instead.
 </details>
 
 <details>
