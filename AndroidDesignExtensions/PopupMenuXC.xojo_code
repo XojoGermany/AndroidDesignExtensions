@@ -7,8 +7,8 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDropDownHorizontalOffset Lib kLibMobilePopupMenu As Int32
-		    Return getDropDownHorizontalOffset
+		    Declare Function getDropDownHorizontalOffset Lib kLibSpinner (ref As Ptr) As Int32
+		    Return getDropDownHorizontalOffset(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -20,8 +20,8 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDropDownVerticalOffset Lib kLibMobilePopupMenu As Int32
-		    Return getDropDownVerticalOffset
+		    Declare Function getDropDownVerticalOffset Lib kLibSpinner (ref As Ptr) As Int32
+		    Return getDropDownVerticalOffset(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -33,8 +33,8 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDropDownWidth Lib kLibMobilePopupMenu As Int32
-		    Return getDropDownWidth
+		    Declare Function getDropDownWidth Lib kLibSpinner (ref As Ptr) As Int32
+		    Return getDropDownWidth(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -46,8 +46,8 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function performClick Lib kLibMobilePopupMenu As Boolean
-		    Return performClick
+		    Declare Function performClick Lib kLibSpinner (ref As Ptr) As Boolean
+		    Return performClick(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -59,8 +59,8 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDropDownHorizontalOffset Lib kLibMobilePopupMenu (myPixels As Int32)
-		    setDropDownHorizontalOffset(pixels)
+		    Declare Sub setDropDownHorizontalOffset Lib kLibSpinner (ref As Ptr, myPixels As Int32)
+		    setDropDownHorizontalOffset(ctrl.Handle, pixels)
 		    
 		  #Else
 		    
@@ -76,8 +76,8 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDropDownVerticalOffset Lib kLibMobilePopupMenu (myPixels As Int32)
-		    setDropDownVerticalOffset(pixels)
+		    Declare Sub setDropDownVerticalOffset Lib kLibSpinner (ref As Ptr, myPixels As Int32)
+		    setDropDownVerticalOffset(ctrl.Handle, pixels)
 		    
 		  #Else
 		    
@@ -93,8 +93,8 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDropDownWidth Lib kLibMobilePopupMenu (myPixels As Int32)
-		    setDropDownWidth(pixels)
+		    Declare Sub setDropDownWidth Lib kLibSpinner (ref As Ptr, myPixels As Int32)
+		    setDropDownWidth(ctrl.Handle, pixels)
 		    
 		  #Else
 		    
@@ -104,10 +104,8 @@ Protected Module PopupMenuXC
 		End Sub
 	#tag EndMethod
 
-
-	#tag Constant, Name = kLibMobilePopupMenu, Type = String, Dynamic = False, Default = \"Object:ctrl:MobilePopupMenu", Scope = Private
+	#tag Constant, Name = kLibSpinner, Type = String, Dynamic = False, Default = \"android.widget.Spinner.instance", Scope = Private
 	#tag EndConstant
-
 
 	#tag ViewBehavior
 		#tag ViewProperty

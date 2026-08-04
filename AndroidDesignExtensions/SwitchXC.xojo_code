@@ -7,8 +7,8 @@ Protected Module SwitchXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isUseMaterialThemeColors Lib kLibMobileSwitch As Boolean
-		    Return isUseMaterialThemeColors
+		    Declare Function isUseMaterialThemeColors Lib kLibSwitchMaterial (ref As Ptr) As Boolean
+		    Return isUseMaterialThemeColors(ctrl.Handle)
 		    
 		  #EndIf
 		End Function
@@ -20,7 +20,7 @@ Protected Module SwitchXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTint Lib kLibMobileSwitch Alias "getThumbDrawable()!!.setTint" (myTintColor As Int32)
+		    Declare Sub setTint Lib kLibMobileSwitchKotlin Alias "getThumbDrawable()!!.setTint(mytintcolor.toInt())" (myTintColor As Int32)
 		    setTint(c.ToInteger)
 		    
 		  #Else
@@ -71,7 +71,7 @@ Protected Module SwitchXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setTint Lib kLibMobileSwitch Alias "getTrackDrawable()!!.setTint" (myTintColor As Int32)
+		    Declare Sub setTint Lib kLibMobileSwitchKotlin Alias "getTrackDrawable()!!.setTint(mytintcolor.toInt())" (myTintColor As Int32)
 		    setTint(c.ToInteger)
 		    
 		  #Else
@@ -88,8 +88,8 @@ Protected Module SwitchXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setUseMaterialThemeColors Lib kLibMobileSwitch (myUseMaterialThemeColors As Boolean)
-		    setUseMaterialThemeColors(useMaterialThemeColors)
+		    Declare Sub setUseMaterialThemeColors Lib kLibSwitchMaterial (ref As Ptr, myUseMaterialThemeColors As Boolean)
+		    setUseMaterialThemeColors(ctrl.Handle, useMaterialThemeColors)
 		    
 		  #Else
 		    
@@ -99,13 +99,11 @@ Protected Module SwitchXC
 		End Sub
 	#tag EndMethod
 
-
-	#tag Constant, Name = kLibMobileSwitch, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileSwitch", Scope = Private
-	#tag EndConstant
-
 	#tag Constant, Name = kLibMobileSwitchKotlin, Type = String, Dynamic = False, Default = \"Object:ctrl:MobileSwitch:Kotlin", Scope = Private
 	#tag EndConstant
 
+	#tag Constant, Name = kLibSwitchMaterial, Type = String, Dynamic = False, Default = \"com.google.android.material.switchmaterial.SwitchMaterial.instance", Scope = Private
+	#tag EndConstant
 
 	#tag ViewBehavior
 		#tag ViewProperty
