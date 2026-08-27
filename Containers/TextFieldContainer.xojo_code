@@ -17,9 +17,11 @@ Begin MobileContainer TextFieldContainer
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   3
       Enabled         =   True
       Height          =   44
       Hint            =   "Background Color"
+      HintColor       =   
       InputType       =   0
       Left            =   80
       LockBottom      =   False
@@ -38,6 +40,7 @@ Begin MobileContainer TextFieldContainer
       TextColor       =   &c00000000
       TextFont        =   ""
       TextSize        =   0
+      TintColor       =   
       Top             =   186
       Visible         =   True
       Width           =   200
@@ -47,9 +50,11 @@ Begin MobileContainer TextFieldContainer
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   3
       Enabled         =   True
       Height          =   44
       Hint            =   "Default TextField"
+      HintColor       =   
       InputType       =   0
       Left            =   80
       LockBottom      =   False
@@ -68,6 +73,7 @@ Begin MobileContainer TextFieldContainer
       TextColor       =   &c00000000
       TextFont        =   ""
       TextSize        =   0
+      TintColor       =   
       Top             =   30
       Visible         =   True
       Width           =   200
@@ -77,9 +83,11 @@ Begin MobileContainer TextFieldContainer
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   3
       Enabled         =   True
       Height          =   44
       Hint            =   "Error TextField"
+      HintColor       =   
       InputType       =   0
       Left            =   80
       LockBottom      =   False
@@ -98,6 +106,7 @@ Begin MobileContainer TextFieldContainer
       TextColor       =   &c00000000
       TextFont        =   ""
       TextSize        =   0
+      TintColor       =   
       Top             =   82
       Visible         =   True
       Width           =   200
@@ -107,9 +116,11 @@ Begin MobileContainer TextFieldContainer
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   3
       Enabled         =   True
       Height          =   44
       Hint            =   "Highlight Color"
+      HintColor       =   
       InputType       =   0
       Left            =   80
       LockBottom      =   False
@@ -128,6 +139,7 @@ Begin MobileContainer TextFieldContainer
       TextColor       =   &c00000000
       TextFont        =   ""
       TextSize        =   0
+      TintColor       =   
       Top             =   134
       Visible         =   True
       Width           =   200
@@ -137,9 +149,11 @@ Begin MobileContainer TextFieldContainer
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   3
       Enabled         =   True
       Height          =   148
       Hint            =   "Multiline"
+      HintColor       =   
       InputType       =   0
       Left            =   20
       LockBottom      =   False
@@ -158,6 +172,7 @@ Begin MobileContainer TextFieldContainer
       TextColor       =   &c00000000
       TextFont        =   ""
       TextSize        =   0
+      TintColor       =   
       Top             =   505
       Visible         =   True
       Width           =   320
@@ -167,9 +182,11 @@ Begin MobileContainer TextFieldContainer
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   3
       Enabled         =   True
       Height          =   44
       Hint            =   "Padding"
+      HintColor       =   
       InputType       =   0
       Left            =   80
       LockBottom      =   False
@@ -188,6 +205,7 @@ Begin MobileContainer TextFieldContainer
       TextColor       =   &c00000000
       TextFont        =   ""
       TextSize        =   0
+      TintColor       =   
       Top             =   446
       Visible         =   True
       Width           =   200
@@ -195,10 +213,11 @@ Begin MobileContainer TextFieldContainer
    Begin AppearanceLabel PasswordLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   2
       Enabled         =   True
       Height          =   26
-      Left            =   188
+      Left            =   186
       LineBreakMode   =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -220,26 +239,30 @@ Begin MobileContainer TextFieldContainer
       AccessibilityLabel=   ""
       Enabled         =   True
       Height          =   30
-      Left            =   296
+      Left            =   294
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   False
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      ThumbColor      =   
+      TintColor       =   
       Top             =   661
       Value           =   False
       Visible         =   True
-      Width           =   50
+      Width           =   52
    End
    Begin AppearanceTextField TransparentField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   3
       Enabled         =   True
       Height          =   44
       Hint            =   "Transparent"
+      HintColor       =   
       InputType       =   0
       Left            =   80
       LockBottom      =   False
@@ -258,6 +281,7 @@ Begin MobileContainer TextFieldContainer
       TextColor       =   &c00000000
       TextFont        =   ""
       TextSize        =   0
+      TintColor       =   
       Top             =   238
       Visible         =   True
       Width           =   200
@@ -283,9 +307,11 @@ Begin MobileContainer TextFieldContainer
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   3
       Enabled         =   True
       Height          =   44
       Hint            =   "Border Color/Width/Family"
+      HintColor       =   
       InputType       =   0
       Left            =   80
       LockBottom      =   False
@@ -304,6 +330,7 @@ Begin MobileContainer TextFieldContainer
       TextColor       =   &c00000000
       TextFont        =   ""
       TextSize        =   0
+      TintColor       =   
       Top             =   290
       Visible         =   True
       Width           =   200
@@ -313,9 +340,11 @@ Begin MobileContainer TextFieldContainer
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   3
       Enabled         =   True
       Height          =   44
       Hint            =   "Custom Box"
+      HintColor       =   
       InputType       =   0
       Left            =   80
       LockBottom      =   False
@@ -334,6 +363,7 @@ Begin MobileContainer TextFieldContainer
       TextColor       =   &c00000000
       TextFont        =   ""
       TextSize        =   0
+      TintColor       =   
       Top             =   342
       Visible         =   True
       Width           =   200
@@ -343,9 +373,11 @@ Begin MobileContainer TextFieldContainer
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   3
       Enabled         =   True
       Height          =   44
       Hint            =   "Password Box"
+      HintColor       =   
       InputType       =   0
       Left            =   80
       LockBottom      =   False
@@ -364,6 +396,7 @@ Begin MobileContainer TextFieldContainer
       TextColor       =   &c00000000
       TextFont        =   ""
       TextSize        =   0
+      TintColor       =   
       Top             =   394
       Visible         =   True
       Width           =   200
@@ -622,6 +655,14 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="LastControlIndex"
 		Visible=false
 		Group="Behavior"
 		InitialValue=""

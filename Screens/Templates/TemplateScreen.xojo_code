@@ -45,7 +45,8 @@ Inherits MobileScreen
 		  
 		  If StatusBarColor <> Color.Clear Then
 		    
-		    Self.SetStatusBarColorXC(StatusBarColor)
+		    ' Exception
+		    ' Self.SetStatusBarColorXC(StatusBarColor)
 		    
 		  End If
 		  

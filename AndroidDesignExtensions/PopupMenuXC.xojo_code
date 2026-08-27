@@ -7,8 +7,12 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDropDownHorizontalOffset Lib kLibMobilePopupMenu As Int32
-		    Return getDropDownHorizontalOffset
+		    #If XojoVersion < 2026.02
+		      
+		      Declare Function getDropDownHorizontalOffset Lib kLibMobilePopupMenu As Int32
+		      Return getDropDownHorizontalOffset
+		      
+		    #EndIf
 		    
 		  #EndIf
 		End Function
@@ -20,8 +24,12 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDropDownVerticalOffset Lib kLibMobilePopupMenu As Int32
-		    Return getDropDownVerticalOffset
+		    #If XojoVersion < 2026.02
+		      
+		      Declare Function getDropDownVerticalOffset Lib kLibMobilePopupMenu As Int32
+		      Return getDropDownVerticalOffset
+		      
+		    #EndIf
 		    
 		  #EndIf
 		End Function
@@ -33,8 +41,12 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getDropDownWidth Lib kLibMobilePopupMenu As Int32
-		    Return getDropDownWidth
+		    #If XojoVersion < 2026.02
+		      
+		      Declare Function getDropDownWidth Lib kLibMobilePopupMenu As Int32
+		      Return getDropDownWidth
+		      
+		    #EndIf
 		    
 		  #EndIf
 		End Function
@@ -59,8 +71,12 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDropDownHorizontalOffset Lib kLibMobilePopupMenu (myPixels As Int32)
-		    setDropDownHorizontalOffset(pixels)
+		    #If XojoVersion < 2026.02
+		      
+		      Declare Sub setDropDownHorizontalOffset Lib kLibMobilePopupMenu (myPixels As Int32)
+		      setDropDownHorizontalOffset(pixels)
+		      
+		    #EndIf
 		    
 		  #Else
 		    
@@ -76,8 +92,12 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDropDownVerticalOffset Lib kLibMobilePopupMenu (myPixels As Int32)
-		    setDropDownVerticalOffset(pixels)
+		    #If XojoVersion < 2026.02
+		      
+		      Declare Sub setDropDownVerticalOffset Lib kLibMobilePopupMenu (myPixels As Int32)
+		      setDropDownVerticalOffset(pixels)
+		      
+		    #EndIf
 		    
 		  #Else
 		    
@@ -93,8 +113,12 @@ Protected Module PopupMenuXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setDropDownWidth Lib kLibMobilePopupMenu (myPixels As Int32)
-		    setDropDownWidth(pixels)
+		    #If XojoVersion < 2026.02
+		      
+		      Declare Sub setDropDownWidth Lib kLibMobilePopupMenu (myPixels As Int32)
+		      setDropDownWidth(pixels)
+		      
+		    #EndIf
 		    
 		  #Else
 		    

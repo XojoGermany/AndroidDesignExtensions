@@ -31,6 +31,7 @@ Begin MobileContainer ControlContainer
    Begin AppearanceLabel RotationLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   28
@@ -63,6 +64,7 @@ Begin MobileContainer ControlContainer
       MaximumValue    =   360.0
       MinimumValue    =   0.0
       Scope           =   2
+      TintColor       =   
       Top             =   30
       Value           =   0.0
       Visible         =   True
@@ -71,6 +73,7 @@ Begin MobileContainer ControlContainer
    Begin AppearanceLabel DegreeLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   2
       Enabled         =   True
       Height          =   28
@@ -92,6 +95,7 @@ Begin MobileContainer ControlContainer
    Begin AppearanceLabel AlphaLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   28
@@ -124,6 +128,7 @@ Begin MobileContainer ControlContainer
       MaximumValue    =   100.0
       MinimumValue    =   0.0
       Scope           =   2
+      TintColor       =   
       Top             =   152
       Value           =   100.0
       Visible         =   True
@@ -132,6 +137,7 @@ Begin MobileContainer ControlContainer
    Begin AppearanceLabel AlphaPercentageLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   2
       Enabled         =   True
       Height          =   28
@@ -153,6 +159,7 @@ Begin MobileContainer ControlContainer
    Begin AppearanceLabel ScaleXLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   28
@@ -174,6 +181,7 @@ Begin MobileContainer ControlContainer
    Begin AppearanceLabel ScaleXPercentageLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   2
       Enabled         =   True
       Height          =   28
@@ -206,6 +214,7 @@ Begin MobileContainer ControlContainer
       MaximumValue    =   400.0
       MinimumValue    =   25.0
       Scope           =   2
+      TintColor       =   
       Top             =   194
       Value           =   100.0
       Visible         =   True
@@ -214,6 +223,7 @@ Begin MobileContainer ControlContainer
    Begin AppearanceLabel PlaygroundLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   33
@@ -235,10 +245,17 @@ Begin MobileContainer ControlContainer
    Begin AppearanceButton PlaygroundButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Playground Button"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   92
       LockBottom      =   False
       LockedInPosition=   False
@@ -253,6 +270,7 @@ Begin MobileContainer ControlContainer
    Begin AppearanceLabel ScaleYLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   28
@@ -274,6 +292,7 @@ Begin MobileContainer ControlContainer
    Begin AppearanceLabel ScaleYPercentageLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   2
       Enabled         =   True
       Height          =   28
@@ -306,6 +325,7 @@ Begin MobileContainer ControlContainer
       MaximumValue    =   400.0
       MinimumValue    =   25.0
       Scope           =   2
+      TintColor       =   
       Top             =   236
       Value           =   100.0
       Visible         =   True
@@ -314,6 +334,7 @@ Begin MobileContainer ControlContainer
    Begin AppearanceLabel ElevationLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   28
@@ -335,6 +356,7 @@ Begin MobileContainer ControlContainer
    Begin AppearanceLabel ElevationValueLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   2
       Enabled         =   True
       Height          =   28
@@ -367,6 +389,7 @@ Begin MobileContainer ControlContainer
       MaximumValue    =   400.0
       MinimumValue    =   0.0
       Scope           =   2
+      TintColor       =   
       Top             =   278
       Value           =   0.0
       Visible         =   True
@@ -375,6 +398,7 @@ Begin MobileContainer ControlContainer
    Begin AppearanceLabel RotationXLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   28
@@ -407,6 +431,7 @@ Begin MobileContainer ControlContainer
       MaximumValue    =   360.0
       MinimumValue    =   0.0
       Scope           =   2
+      TintColor       =   
       Top             =   68
       Value           =   0.0
       Visible         =   True
@@ -415,6 +440,7 @@ Begin MobileContainer ControlContainer
    Begin AppearanceLabel DegreeXLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   2
       Enabled         =   True
       Height          =   28
@@ -436,6 +462,7 @@ Begin MobileContainer ControlContainer
    Begin AppearanceLabel RotationYLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   28
@@ -468,6 +495,7 @@ Begin MobileContainer ControlContainer
       MaximumValue    =   360.0
       MinimumValue    =   0.0
       Scope           =   2
+      TintColor       =   
       Top             =   110
       Value           =   0.0
       Visible         =   True
@@ -476,6 +504,7 @@ Begin MobileContainer ControlContainer
    Begin AppearanceLabel DegreeYLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   2
       Enabled         =   True
       Height          =   28
@@ -715,6 +744,14 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="LastControlIndex"
 		Visible=false
 		Group="Behavior"
 		InitialValue=""

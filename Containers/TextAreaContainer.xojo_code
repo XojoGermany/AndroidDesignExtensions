@@ -17,6 +17,7 @@ Begin MobileContainer TextAreaContainer
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   2
       Enabled         =   True
       Height          =   330
       Left            =   20
@@ -33,6 +34,9 @@ Begin MobileContainer TextAreaContainer
       SelectionStart  =   0
       Text            =   "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. www.xojo.com At vero eos et accusam et justo duo dolores et ea rebum. noreply@xojo.com Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
+      TintColor       =   
       Top             =   101
       Visible         =   True
       Width           =   320
@@ -40,6 +44,7 @@ Begin MobileContainer TextAreaContainer
    Begin PropertyLabel BoldLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   31
@@ -54,47 +59,54 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Bold"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   447
       Visible         =   True
-      Width           =   110
+      Width           =   105
    End
    Begin AppearanceSwitch BoldSwitch
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
       Height          =   30
-      Left            =   121
+      Left            =   124
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      ThumbColor      =   
+      TintColor       =   
       Top             =   449
       Value           =   False
       Visible         =   True
-      Width           =   50
+      Width           =   52
    End
    Begin AppearanceSwitch UnderlineSwitch
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
       Height          =   30
-      Left            =   121
+      Left            =   124
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      ThumbColor      =   
+      TintColor       =   
       Top             =   498
       Value           =   False
       Visible         =   True
-      Width           =   50
+      Width           =   52
    End
    Begin PropertyLabel UnderlineLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   31
@@ -109,13 +121,16 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Underline"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   496
       Visible         =   True
-      Width           =   110
+      Width           =   105
    End
    Begin PropertyLabel StrikethroughLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   31
@@ -130,35 +145,41 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Strikethrough"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   545
       Visible         =   True
-      Width           =   110
+      Width           =   105
    End
    Begin AppearanceSwitch StrikethroughSwitch
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
       Height          =   30
-      Left            =   121
+      Left            =   124
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      ThumbColor      =   
+      TintColor       =   
       Top             =   547
       Value           =   False
       Visible         =   True
-      Width           =   50
+      Width           =   52
    End
    Begin AppearanceTextField LineSpacingField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   3
       Enabled         =   True
       Height          =   44
       Hint            =   ""
+      HintColor       =   
       InputType       =   0
       Left            =   277
       LockBottom      =   False
@@ -175,6 +196,9 @@ Begin MobileContainer TextAreaContainer
       SelectionStart  =   0
       Text            =   "1.0"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
+      TintColor       =   
       Top             =   439
       Visible         =   True
       Width           =   63
@@ -182,6 +206,7 @@ Begin MobileContainer TextAreaContainer
    Begin PropertyLabel LineSpacingLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   31
@@ -196,6 +221,8 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Line Spacing"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   447
       Visible         =   True
       Width           =   100
@@ -203,6 +230,7 @@ Begin MobileContainer TextAreaContainer
    Begin PropertyLabel LineHeightLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   31
@@ -217,6 +245,8 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Line Height"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   497
       Visible         =   True
       Width           =   100
@@ -226,9 +256,11 @@ Begin MobileContainer TextAreaContainer
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   3
       Enabled         =   True
       Height          =   44
       Hint            =   ""
+      HintColor       =   
       InputType       =   0
       Left            =   277
       LockBottom      =   False
@@ -245,6 +277,9 @@ Begin MobileContainer TextAreaContainer
       SelectionStart  =   0
       Text            =   "100"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
+      TintColor       =   
       Top             =   487
       Visible         =   True
       Width           =   63
@@ -254,9 +289,11 @@ Begin MobileContainer TextAreaContainer
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   3
       Enabled         =   True
       Height          =   44
       Hint            =   ""
+      HintColor       =   
       InputType       =   0
       Left            =   277
       LockBottom      =   False
@@ -273,6 +310,9 @@ Begin MobileContainer TextAreaContainer
       SelectionStart  =   0
       Text            =   "0.25"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
+      TintColor       =   
       Top             =   536
       Visible         =   True
       Width           =   63
@@ -280,6 +320,7 @@ Begin MobileContainer TextAreaContainer
    Begin PropertyLabel LetterSpacingLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   31
@@ -294,6 +335,8 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Letter Spacing"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   546
       Visible         =   True
       Width           =   100
@@ -317,6 +360,7 @@ Begin MobileContainer TextAreaContainer
    Begin PropertyLabel CursorLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   31
@@ -331,30 +375,35 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Cursor Visible"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   586
       Visible         =   True
-      Width           =   110
+      Width           =   105
    End
    Begin AppearanceSwitch CursorSwitch
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
       Height          =   30
-      Left            =   121
+      Left            =   124
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      ThumbColor      =   
+      TintColor       =   
       Top             =   588
       Value           =   True
       Visible         =   True
-      Width           =   50
+      Width           =   52
    End
    Begin PropertyLabel ScrollHLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   31
@@ -369,6 +418,8 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Scroll Horiz."
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   586
       Visible         =   True
       Width           =   100
@@ -385,19 +436,23 @@ Begin MobileContainer TextAreaContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      ThumbColor      =   
+      TintColor       =   
       Top             =   588
       Value           =   False
       Visible         =   True
-      Width           =   50
+      Width           =   52
    End
    Begin AppearanceTextField TextScaleXField
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   3
       Enabled         =   True
       Height          =   44
       Hint            =   ""
+      HintColor       =   
       InputType       =   0
       Left            =   277
       LockBottom      =   False
@@ -414,6 +469,9 @@ Begin MobileContainer TextAreaContainer
       SelectionStart  =   0
       Text            =   "1.0"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
+      TintColor       =   
       Top             =   617
       Visible         =   True
       Width           =   63
@@ -421,6 +479,7 @@ Begin MobileContainer TextAreaContainer
    Begin PropertyLabel TextScaleXLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   31
@@ -435,6 +494,8 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Text Scale X"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   627
       Visible         =   True
       Width           =   100
@@ -444,6 +505,7 @@ Begin MobileContainer TextAreaContainer
       AccessibilityLabel=   ""
       Alignment       =   0
       AllowSpellChecking=   False
+      BorderStyle     =   2
       Enabled         =   True
       Height          =   63
       Left            =   20
@@ -460,6 +522,9 @@ Begin MobileContainer TextAreaContainer
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
+      TintColor       =   
       Top             =   30
       Visible         =   True
       Width           =   320
@@ -467,6 +532,7 @@ Begin MobileContainer TextAreaContainer
    Begin PropertyLabel KeyboardLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   31
@@ -481,26 +547,30 @@ Begin MobileContainer TextAreaContainer
       Scope           =   2
       Text            =   "Show Keyboard"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   627
       Visible         =   True
-      Width           =   110
+      Width           =   105
    End
    Begin AppearanceSwitch KeyboardSwitch
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
       Height          =   30
-      Left            =   121
+      Left            =   124
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   False
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      ThumbColor      =   
+      TintColor       =   
       Top             =   626
       Value           =   True
       Visible         =   True
-      Width           =   50
+      Width           =   52
    End
 End
 #tag EndMobileContainer
@@ -744,6 +814,14 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="LastControlIndex"
 		Visible=false
 		Group="Behavior"
 		InitialValue=""

@@ -7,8 +7,12 @@ Protected Module SwitchXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function isUseMaterialThemeColors Lib kLibMobileSwitch As Boolean
-		    Return isUseMaterialThemeColors
+		    #If XojoVersion < 2026.02
+		      
+		      Declare Function isUseMaterialThemeColors Lib kLibMobileSwitch As Boolean
+		      Return isUseMaterialThemeColors
+		      
+		    #EndIf
 		    
 		  #EndIf
 		End Function
@@ -88,8 +92,12 @@ Protected Module SwitchXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Sub setUseMaterialThemeColors Lib kLibMobileSwitch (myUseMaterialThemeColors As Boolean)
-		    setUseMaterialThemeColors(useMaterialThemeColors)
+		    #If XojoVersion < 2026.02
+		      
+		      Declare Sub setUseMaterialThemeColors Lib kLibMobileSwitch (myUseMaterialThemeColors As Boolean)
+		      setUseMaterialThemeColors(useMaterialThemeColors)
+		      
+		    #EndIf
 		    
 		  #Else
 		    

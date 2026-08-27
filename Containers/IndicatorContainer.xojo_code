@@ -15,6 +15,7 @@ Begin MobileContainer IndicatorContainer
    Begin AppearanceLabel CustomLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   30
@@ -36,6 +37,7 @@ Begin MobileContainer IndicatorContainer
    Begin AppearanceLabel CustomLabel1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   30
@@ -59,6 +61,7 @@ Begin MobileContainer IndicatorContainer
       AccessibilityLabel=   ""
       Enabled         =   True
       Height          =   20
+      Indeterminate   =   False
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -68,6 +71,7 @@ Begin MobileContainer IndicatorContainer
       MaximumValue    =   100.0
       MinimumValue    =   0.0
       Scope           =   2
+      TintColor       =   
       Top             =   210
       Value           =   50.0
       Visible         =   True
@@ -78,6 +82,7 @@ Begin MobileContainer IndicatorContainer
       AccessibilityLabel=   ""
       Enabled         =   True
       Height          =   20
+      Indeterminate   =   False
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -87,6 +92,7 @@ Begin MobileContainer IndicatorContainer
       MaximumValue    =   100.0
       MinimumValue    =   0.0
       Scope           =   2
+      TintColor       =   
       Top             =   352
       Value           =   50.0
       Visible         =   True
@@ -144,14 +150,17 @@ Begin MobileContainer IndicatorContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      ThumbColor      =   
+      TintColor       =   
       Top             =   276
       Value           =   False
       Visible         =   True
-      Width           =   50
+      Width           =   52
    End
    Begin AppearanceLabel DefaultLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   30
@@ -175,6 +184,7 @@ Begin MobileContainer IndicatorContainer
       AccessibilityLabel=   ""
       Enabled         =   True
       Height          =   20
+      Indeterminate   =   False
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -184,6 +194,7 @@ Begin MobileContainer IndicatorContainer
       MaximumValue    =   100.0
       MinimumValue    =   0.0
       Scope           =   2
+      TintColor       =   
       Top             =   68
       Value           =   50.0
       Visible         =   True
@@ -221,10 +232,12 @@ Begin MobileContainer IndicatorContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      ThumbColor      =   
+      TintColor       =   
       Top             =   134
       Value           =   False
       Visible         =   True
-      Width           =   50
+      Width           =   52
    End
    Begin MobileCanvas FixBottomPaddingCanvas
       AccessibilityHint=   ""
@@ -274,16 +287,18 @@ Begin MobileContainer IndicatorContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      ThumbColor      =   
+      TintColor       =   
       Top             =   447
       Value           =   False
       Visible         =   True
-      Width           =   50
+      Width           =   52
    End
    Begin AppearanceSlider MaterialSlider
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Enabled         =   True
-      Height          =   30
+      Height          =   50
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -302,6 +317,7 @@ Begin MobileContainer IndicatorContainer
    Begin AppearanceLabel CustomLabel2
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   30
@@ -317,7 +333,7 @@ Begin MobileContainer IndicatorContainer
       Text            =   "Material Slider"
       TextColor       =   &c00000000
       TextFont        =   ""
-      TextSize        =   0
+      TextSize        =   "0"
       Top             =   489
       Visible         =   True
       Width           =   320
@@ -382,8 +398,8 @@ End
 #tag Events CustomSwitch
 	#tag Event
 		Sub Opening()
-		  Me.SetTrackColorXC(&cFFD47900)
-		  Me.SetThumbColorXC(&c94175100)
+		  Me.TintColor = &cFFD47900
+		  Me.ThumbColor = &c94175100
 		End Sub
 	#tag EndEvent
 #tag EndEvents
