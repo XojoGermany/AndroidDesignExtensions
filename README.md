@@ -11,6 +11,7 @@ A set of 1027+ UI extensions for Xojo Android framework.
 
 | **Extensions** |  **Xojo Version**                                                   |
 |:--------------:|:-------------------------------------------------------------------:|
+|       4.6      | ![XOJO 2026r2](https://img.shields.io/badge/Xojo-2026r2+-green.svg) |
 |       4.5      | ![XOJO 2026r1](https://img.shields.io/badge/Xojo-2026r1-green.svg) |
 |       4.1      | ![XOJO 2025r3](https://img.shields.io/badge/Xojo-2025r3-green.svg) |
 |       4.0      | ![XOJO 2025r2](https://img.shields.io/badge/Xojo-2025r2-green.svg) |
