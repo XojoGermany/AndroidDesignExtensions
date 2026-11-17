@@ -4,7 +4,7 @@ Begin MobileContainer ButtonContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   723
+   Height          =   688
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -15,10 +15,17 @@ Begin MobileContainer ButtonContainer
    Begin TestButton BackgroundColorButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Background Color"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -26,17 +33,26 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   238
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
    Begin TestButton ColoredShadowButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Colored Shadow"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -44,17 +60,26 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   498
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
    Begin TestButton CornerRadiusButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Corner Radius"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -62,17 +87,26 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   290
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
    Begin TestButton CornerRadiusButton2
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Corner Radius"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -80,18 +114,26 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   342
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
    Begin MobileDateTimePicker DateTimePicker1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       CaptionColor    =   &c00000000
+      CornerSize      =   0
       DateCaption     =   "Choose a Date"
       DisplayMode     =   1
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -99,20 +141,29 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       TimeCaption     =   "Choose a Time"
       Top             =   550
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
    Begin TestButton DefaultButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Default Button"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -120,17 +171,26 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   30
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
    Begin TestButton ShadowButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Without Shadow"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -138,33 +198,26 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   446
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
-   End
-   Begin MobileCanvas FixBottomPaddingCanvas
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Enabled         =   True
-      Height          =   22
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   671
-      Visible         =   True
-      Width           =   360
    End
    Begin TestButton TransparentButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Transparent Button"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -172,17 +225,26 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   134
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
    Begin TestButton TextShadowButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Text Shadow"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -190,17 +252,26 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   186
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
    Begin TestButton TooltipButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Press long for Tooltip"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -208,7 +279,9 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   82
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
@@ -235,10 +308,17 @@ Begin MobileContainer ButtonContainer
    Begin TestButton BorderedButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Border & Ripple Color"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -246,7 +326,9 @@ Begin MobileContainer ButtonContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   394
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
@@ -517,6 +599,14 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="LastControlIndex"
 		Visible=false
 		Group="Behavior"
 		InitialValue=""

@@ -4,7 +4,7 @@ Begin MobileContainer LabelContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   360
+   Height          =   350
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -15,6 +15,7 @@ Begin MobileContainer LabelContainer
    Begin AppearanceLabel BackgroundColorLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -30,12 +31,14 @@ Begin MobileContainer LabelContainer
       Text            =   "Background Color"
       TextColor       =   &c00000000
       Top             =   78
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
    Begin AppearanceLabel BackgroundShadowLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -51,12 +54,14 @@ Begin MobileContainer LabelContainer
       Text            =   "With Green Shadow"
       TextColor       =   &c00000000
       Top             =   152
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
    Begin AppearanceLabel DefaultLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -72,12 +77,14 @@ Begin MobileContainer LabelContainer
       Text            =   "Default Label"
       TextColor       =   &c00000000
       Top             =   30
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
    Begin AppearanceLabel ShadowLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -93,28 +100,14 @@ Begin MobileContainer LabelContainer
       Text            =   "Shadow Label"
       TextColor       =   &c00000000
       Top             =   216
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
-   End
-   Begin MobileCanvas FixBottomPaddingCanvas
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Enabled         =   True
-      Height          =   22
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   328
-      Visible         =   True
-      Width           =   360
    End
    Begin AppearanceLabel EditableLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -130,6 +123,7 @@ Begin MobileContainer LabelContainer
       Text            =   "Click me to edit Text"
       TextColor       =   &c00000000
       Top             =   280
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
@@ -324,6 +318,14 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="LastControlIndex"
 		Visible=false
 		Group="Behavior"
 		InitialValue=""

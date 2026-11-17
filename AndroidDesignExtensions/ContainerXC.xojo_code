@@ -40,17 +40,17 @@ Protected Module ContainerXC
 		  
 		  #If TargetAndroid
 		    
-		    Declare Function getCurrentFocusID Lib "Object:myContainer:MobileContainer" Alias "getActivity()!!.getCurrentFocus()!!.getId" As Int32
+		    ' Declare Function getCurrentFocusID Lib "Object:myContainer:MobileContainer" Alias "getActivity()!!.getCurrentFocus()!!.getId" As Int32
 		    
-		    Try
-		      
-		      Return getCurrentFocusID
-		      
-		    Catch error As NilObjectException
-		      
-		      Return -1 ' No selection
-		      
-		    End Try
+		    ' Try
+		    ' 
+		    ' Return getCurrentFocusID
+		    ' 
+		    ' Catch error As NilObjectException
+		    ' 
+		    ' Return -1 ' No selection
+		    ' 
+		    ' End Try
 		    
 		  #EndIf
 		End Function

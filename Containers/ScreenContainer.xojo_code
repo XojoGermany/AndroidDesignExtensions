@@ -4,7 +4,7 @@ Begin MobileContainer ScreenContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   1092
+   Height          =   1062
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -15,10 +15,17 @@ Begin MobileContainer ScreenContainer
    Begin ColorButton ColorButton1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   ""
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -26,19 +33,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   712
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
    Begin ColorButton ColorButton2
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   ""
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   96
       LockBottom      =   False
       LockedInPosition=   False
@@ -46,19 +62,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   712
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
    Begin ColorButton ColorButton3
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   ""
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   172
       LockBottom      =   False
       LockedInPosition=   False
@@ -66,19 +91,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   712
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
    Begin ColorButton ColorButton4
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   ""
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   248
       LockBottom      =   False
       LockedInPosition=   False
@@ -86,19 +120,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   712
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
    Begin ColorButton ColorButton5
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   ""
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -106,19 +149,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   794
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
    Begin ColorButton ColorButton6
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   ""
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   96
       LockBottom      =   False
       LockedInPosition=   False
@@ -126,19 +178,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   794
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
    Begin ColorButton ColorButton7
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   ""
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   172
       LockBottom      =   False
       LockedInPosition=   False
@@ -146,19 +207,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   794
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
    Begin ColorButton ColorButton8
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   ""
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   248
       LockBottom      =   False
       LockedInPosition=   False
@@ -166,19 +236,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   794
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
    Begin ColorButton ColorButton9
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   ""
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -186,19 +265,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   876
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
    Begin ColorButton ColorButton10
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   ""
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   96
       LockBottom      =   False
       LockedInPosition=   False
@@ -206,19 +294,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   876
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
    Begin ColorButton ColorButton11
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   ""
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   172
       LockBottom      =   False
       LockedInPosition=   False
@@ -226,19 +323,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   876
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
    Begin ColorButton ColorButton12
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   ""
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   248
       LockBottom      =   False
       LockedInPosition=   False
@@ -246,19 +352,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   876
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
    Begin ColorButton ColorButton13
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   ""
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -266,19 +381,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   958
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
    Begin ColorButton ColorButton14
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   ""
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   96
       LockBottom      =   False
       LockedInPosition=   False
@@ -286,19 +410,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   958
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
    Begin ColorButton ColorButton15
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   ""
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   172
       LockBottom      =   False
       LockedInPosition=   False
@@ -306,9 +439,11 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   958
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
@@ -339,29 +474,20 @@ Begin MobileContainer ScreenContainer
       Visible         =   True
       Width           =   320
    End
-   Begin MobileCanvas FixBottomPaddingCanvas
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Enabled         =   True
-      Height          =   22
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   1040
-      Visible         =   True
-      Width           =   360
-   End
    Begin ColorButton ColorButton16
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "None"
       CaptionColor    =   &c00000000
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   74
+      Icon            =   0
       Left            =   248
       LockBottom      =   False
       LockedInPosition=   False
@@ -369,19 +495,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   False
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   958
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   68
    End
    Begin AppearanceButton ModalScreenButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Modal Screen Parameters"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -389,19 +524,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   218
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   320
    End
    Begin AppearanceButton DecorFitsSystemWindowsButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Decor Fits System Windows"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -409,19 +553,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   166
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   320
    End
    Begin AppearanceButton KeyboardShortcutsButton1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Keyboard Shortcuts"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   190
       LockBottom      =   False
       LockedInPosition=   False
@@ -429,19 +582,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   114
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   150
    End
    Begin AppearanceButton LandscapeButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Landscape"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -449,19 +611,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   10
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   150
    End
    Begin AppearanceButton MoveTaskToBackButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Move Task To Back"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -469,19 +640,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   False
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   114
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   150
    End
    Begin AppearanceButton PortraitButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Portrait"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   190
       LockBottom      =   False
       LockedInPosition=   False
@@ -489,19 +669,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   10
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   150
    End
    Begin AppearanceButton TranslucentButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Translucent (False)"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -509,19 +698,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   62
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   320
    End
    Begin AppearanceButton FullScreenMode
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Fullscreen Mode"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -529,19 +727,28 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   270
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   320
    End
    Begin AppearanceButton ToolbarFontButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Toolbar Font"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -549,9 +756,11 @@ Begin MobileContainer ScreenContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       TextFont        =   ""
       TextSize        =   0
       Top             =   322
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   320
    End
@@ -754,11 +963,11 @@ End
 		  Select Case Me.SelectedRowIndex
 		  Case 2
 		    
-		    App.CurrentScreen.SetMaterialToolbarBackgroundXC(Background)
+		    ' App.CurrentScreen.SetMaterialToolbarBackgroundXC(Background)
 		    
 		  Case 5
 		    
-		    App.CurrentScreen.SetBackgroundXC(Background)
+		    ' App.CurrentScreen.SetBackgroundXC(Background)
 		    
 		  End Select
 		End Sub
@@ -987,6 +1196,14 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="LastControlIndex"
 		Visible=false
 		Group="Behavior"
 		InitialValue=""

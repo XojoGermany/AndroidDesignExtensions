@@ -4,7 +4,7 @@ Begin MobileContainer ControlContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   662
+   Height          =   515
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -12,22 +12,6 @@ Begin MobileContainer ControlContainer
    Orientation     =   0
    Visible         =   True
    Width           =   360
-   Begin MobileCanvas FixBottomPaddingCanvas
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Enabled         =   True
-      Height          =   22
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   610
-      Visible         =   True
-      Width           =   360
-   End
    Begin AppearanceLabel RotationLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
@@ -47,6 +31,7 @@ Begin MobileContainer ControlContainer
       Text            =   "Rotate"
       TextColor       =   &c00000000
       Top             =   36
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   65
    End
@@ -89,6 +74,7 @@ Begin MobileContainer ControlContainer
       Text            =   "0°"
       TextColor       =   &c00000000
       Top             =   36
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   42
    End
@@ -111,6 +97,7 @@ Begin MobileContainer ControlContainer
       Text            =   "Alpha"
       TextColor       =   &c00000000
       Top             =   158
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   65
    End
@@ -153,6 +140,7 @@ Begin MobileContainer ControlContainer
       Text            =   "100%"
       TextColor       =   &c00000000
       Top             =   158
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   42
    End
@@ -175,6 +163,7 @@ Begin MobileContainer ControlContainer
       Text            =   "Scale X"
       TextColor       =   &c00000000
       Top             =   200
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   65
    End
@@ -197,6 +186,7 @@ Begin MobileContainer ControlContainer
       Text            =   "100%"
       TextColor       =   &c00000000
       Top             =   200
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   42
    End
@@ -239,6 +229,7 @@ Begin MobileContainer ControlContainer
       Text            =   "Playground"
       TextColor       =   &c00000000
       Top             =   327
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   137
    End
@@ -263,7 +254,9 @@ Begin MobileContainer ControlContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   441
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   175
    End
@@ -286,6 +279,7 @@ Begin MobileContainer ControlContainer
       Text            =   "Scale Y"
       TextColor       =   &c00000000
       Top             =   242
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   65
    End
@@ -308,6 +302,7 @@ Begin MobileContainer ControlContainer
       Text            =   "100%"
       TextColor       =   &c00000000
       Top             =   242
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   42
    End
@@ -350,6 +345,7 @@ Begin MobileContainer ControlContainer
       Text            =   "Elevation"
       TextColor       =   &c00000000
       Top             =   284
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   72
    End
@@ -372,6 +368,7 @@ Begin MobileContainer ControlContainer
       Text            =   "0"
       TextColor       =   &c00000000
       Top             =   284
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   42
    End
@@ -414,6 +411,7 @@ Begin MobileContainer ControlContainer
       Text            =   "Rotate X"
       TextColor       =   &c00000000
       Top             =   74
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   65
    End
@@ -456,6 +454,7 @@ Begin MobileContainer ControlContainer
       Text            =   "0°"
       TextColor       =   &c00000000
       Top             =   74
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   42
    End
@@ -478,6 +477,7 @@ Begin MobileContainer ControlContainer
       Text            =   "Rotate Y"
       TextColor       =   &c00000000
       Top             =   116
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   65
    End
@@ -520,6 +520,7 @@ Begin MobileContainer ControlContainer
       Text            =   "0°"
       TextColor       =   &c00000000
       Top             =   116
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   42
    End

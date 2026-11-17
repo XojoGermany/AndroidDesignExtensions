@@ -31,6 +31,7 @@ Begin MobileContainer IndicatorContainer
       Text            =   "Global Custom Styles"
       TextColor       =   &c00000000
       Top             =   172
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   320
    End
@@ -53,6 +54,7 @@ Begin MobileContainer IndicatorContainer
       Text            =   "Individual Custom Styles"
       TextColor       =   &c00000000
       Top             =   314
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   320
    End
@@ -176,6 +178,7 @@ Begin MobileContainer IndicatorContainer
       Text            =   "Default"
       TextColor       =   &c00000000
       Top             =   30
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   320
    End
@@ -238,22 +241,6 @@ Begin MobileContainer IndicatorContainer
       Value           =   False
       Visible         =   True
       Width           =   52
-   End
-   Begin MobileCanvas FixBottomPaddingCanvas
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Enabled         =   True
-      Height          =   22
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   578
-      Visible         =   True
-      Width           =   360
    End
    Begin AppearanceSlider CustomSlider2
       AccessibilityHint=   ""
@@ -335,6 +322,7 @@ Begin MobileContainer IndicatorContainer
       TextFont        =   ""
       TextSize        =   "0"
       Top             =   489
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   320
    End

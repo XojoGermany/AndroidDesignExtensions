@@ -4,7 +4,7 @@ Begin MobileContainer TabPanelContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   400
+   Height          =   365
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -53,22 +53,6 @@ Begin MobileContainer TabPanelContainer
       Top             =   195
       Visible         =   True
       Width           =   320
-   End
-   Begin MobileCanvas FixBottomPaddingCanvas
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Enabled         =   True
-      Height          =   22
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   348
-      Visible         =   True
-      Width           =   360
    End
 End
 #tag EndMobileContainer
@@ -233,6 +217,14 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="LastControlIndex"
 		Visible=false
 		Group="Behavior"
 		InitialValue=""

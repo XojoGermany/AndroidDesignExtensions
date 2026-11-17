@@ -9,11 +9,13 @@ Begin MobileContainer ScrollableContainer
    LockLeft        =   True
    LockRight       =   True
    LockTop         =   True
+   Orientation     =   0
    Visible         =   True
    Width           =   360
    Begin AppearanceLabel Label1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   0
       Enabled         =   True
       Height          =   40
@@ -24,10 +26,14 @@ Begin MobileContainer ScrollableContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Hello World"
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
       Top             =   30
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   320
    End
@@ -35,6 +41,8 @@ Begin MobileContainer ScrollableContainer
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
       Alignment       =   0
+      AllowSpellChecking=   False
+      BorderStyle     =   2
       Enabled         =   True
       Height          =   200
       Left            =   20
@@ -43,6 +51,7 @@ Begin MobileContainer ScrollableContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       ReadOnly        =   False
       Scope           =   2
       SelectedText    =   ""
@@ -50,18 +59,28 @@ Begin MobileContainer ScrollableContainer
       SelectionStart  =   0
       Text            =   ""
       TextColor       =   &c00000000
+      TextFont        =   ""
+      TextSize        =   0
+      TintColor       =   
       Top             =   133
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   320
    End
    Begin MobileDateTimePicker DateTimePicker1
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       CaptionColor    =   &c00000000
+      CornerSize      =   0
       DateCaption     =   "Choose a Date"
       DisplayMode     =   1
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
@@ -69,26 +88,14 @@ Begin MobileContainer ScrollableContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
+      TextFont        =   ""
+      TextSize        =   0
       TimeCaption     =   "Choose a Time"
       Top             =   926
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   320
-   End
-   Begin MobileCanvas FixBottomPaddingCanvas
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Enabled         =   True
-      Height          =   22
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   978
-      Visible         =   True
-      Width           =   360
    End
 End
 #tag EndMobileContainer
@@ -102,6 +109,14 @@ End
 		Visible=true
 		Group="ID"
 		InitialValue="-2147483648"
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="LastControlIndex"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
 		Type="Integer"
 		EditorType=""
 	#tag EndViewProperty

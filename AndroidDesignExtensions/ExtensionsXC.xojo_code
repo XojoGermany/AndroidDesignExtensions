@@ -156,12 +156,12 @@ Protected Module ExtensionsXC
 		    ' Draw the View into the Bitmap's Canvas
 		    If ctrl IsA MobileContainer Then
 		      
-		      Var cc As MobileContainer = MobileContainer(ctrl)
-		      
-		      #Pragma Unused cc
-		      
-		      Declare Sub draw Lib "Object:cc:MobileContainer:Kotlin" Alias "getView()!!.draw(canvas as android.graphics.Canvas)" (canvas As Ptr)
-		      draw(viewCanvas)
+		      ' Var cc As MobileContainer = MobileContainer(ctrl)
+		      ' 
+		      ' #Pragma Unused cc
+		      ' 
+		      ' Declare Sub draw Lib "Object:cc:MobileContainer:Kotlin" Alias "getView()!!.draw(canvas as android.graphics.Canvas)" (canvas As Ptr)
+		      ' draw(viewCanvas)
 		      
 		    Else
 		      
@@ -1264,12 +1264,12 @@ Protected Module ExtensionsXC
 		    
 		    If ctrl IsA MobileContainer Then
 		      
-		      Var cc As MobileContainer = MobileContainer(ctrl)
-		      
-		      #Pragma Unused cc
-		      
-		      Declare Sub setBackgroundColor Lib "Object:cc:MobileContainer" Alias "getView()!!.setBackgroundColor" (myColor As Int32)
-		      setBackgroundColor(c.ToInteger)
+		      ' Var cc As MobileContainer = MobileContainer(ctrl)
+		      ' 
+		      ' #Pragma Unused cc
+		      ' 
+		      ' Declare Sub setBackgroundColor Lib "Object:cc:MobileContainer" Alias "getView()!!.setBackgroundColor" (myColor As Int32)
+		      ' setBackgroundColor(c.ToInteger)
 		      
 		    Else
 		      

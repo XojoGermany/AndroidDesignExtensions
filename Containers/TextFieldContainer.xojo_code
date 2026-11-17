@@ -4,7 +4,7 @@ Begin MobileContainer TextFieldContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   749
+   Height          =   721
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -42,6 +42,7 @@ Begin MobileContainer TextFieldContainer
       TextSize        =   0
       TintColor       =   
       Top             =   186
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
@@ -75,6 +76,7 @@ Begin MobileContainer TextFieldContainer
       TextSize        =   0
       TintColor       =   
       Top             =   30
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
@@ -108,6 +110,7 @@ Begin MobileContainer TextFieldContainer
       TextSize        =   0
       TintColor       =   
       Top             =   82
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
@@ -141,6 +144,7 @@ Begin MobileContainer TextFieldContainer
       TextSize        =   0
       TintColor       =   
       Top             =   134
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
@@ -174,6 +178,7 @@ Begin MobileContainer TextFieldContainer
       TextSize        =   0
       TintColor       =   
       Top             =   505
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   320
    End
@@ -207,6 +212,7 @@ Begin MobileContainer TextFieldContainer
       TextSize        =   0
       TintColor       =   
       Top             =   446
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
@@ -231,6 +237,7 @@ Begin MobileContainer TextFieldContainer
       TextFont        =   ""
       TextSize        =   0
       Top             =   663
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   100
    End
@@ -283,24 +290,9 @@ Begin MobileContainer TextFieldContainer
       TextSize        =   0
       TintColor       =   
       Top             =   238
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
-   End
-   Begin MobileCanvas FixBottomPaddingCanvas
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Enabled         =   True
-      Height          =   22
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   697
-      Visible         =   True
-      Width           =   360
    End
    Begin AppearanceTextField BorderField
       AccessibilityHint=   ""
@@ -332,6 +324,7 @@ Begin MobileContainer TextFieldContainer
       TextSize        =   0
       TintColor       =   
       Top             =   290
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
@@ -365,6 +358,7 @@ Begin MobileContainer TextFieldContainer
       TextSize        =   0
       TintColor       =   
       Top             =   342
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
@@ -398,6 +392,7 @@ Begin MobileContainer TextFieldContainer
       TextSize        =   0
       TintColor       =   
       Top             =   394
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End

@@ -4,7 +4,7 @@ Begin MobileContainer ImageContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   650
+   Height          =   638
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -15,6 +15,7 @@ Begin MobileContainer ImageContainer
    Begin AppearanceLabel AlphaLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -30,6 +31,7 @@ Begin MobileContainer ImageContainer
       Text            =   "Alpha: 255"
       TextColor       =   &c00000000
       Top             =   308
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   177
    End
@@ -47,6 +49,7 @@ Begin MobileContainer ImageContainer
       MaximumValue    =   255.0
       MinimumValue    =   0.0
       Scope           =   2
+      TintColor       =   
       Top             =   278
       Value           =   255.0
       Visible         =   True
@@ -55,10 +58,17 @@ Begin MobileContainer ImageContainer
    Begin AppearanceButton BackgroundColor1Button
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Yellow Background Color"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -66,17 +76,26 @@ Begin MobileContainer ImageContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   408
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
    Begin AppearanceButton BackgroundColor2Button
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Red Background Color"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -84,17 +103,26 @@ Begin MobileContainer ImageContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   356
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
    Begin AppearanceButton ClearTintColorButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Clear Tint Color"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -102,7 +130,9 @@ Begin MobileContainer ImageContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   564
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
@@ -121,16 +151,24 @@ Begin MobileContainer ImageContainer
       LockTop         =   True
       Scope           =   0
       Top             =   30
+      URL             =   ""
       Visible         =   True
       Width           =   177
    End
    Begin AppearanceButton ShadowColorButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Orange Shadow"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -138,17 +176,26 @@ Begin MobileContainer ImageContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   460
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
    End
    Begin AppearanceButton TintColorButton
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
+      BackgroundColor =   
+      BorderColor     =   
+      BorderWidth     =   0
       Caption         =   "Red Tint Color"
       CaptionColor    =   &cFFFFFF00
+      CornerSize      =   0
+      DisplayMenuAsAction=   False
       Enabled         =   True
       Height          =   44
+      Icon            =   0
       Left            =   80
       LockBottom      =   False
       LockedInPosition=   False
@@ -156,25 +203,11 @@ Begin MobileContainer ImageContainer
       LockRight       =   True
       LockTop         =   True
       Scope           =   2
+      Symbol          =   ""
       Top             =   512
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   200
-   End
-   Begin MobileCanvas FixBottomPaddingCanvas
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Enabled         =   True
-      Height          =   22
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   616
-      Visible         =   True
-      Width           =   360
    End
 End
 #tag EndMobileContainer
@@ -376,6 +409,14 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="LastControlIndex"
 		Visible=false
 		Group="Behavior"
 		InitialValue=""

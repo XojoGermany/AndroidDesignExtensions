@@ -4,16 +4,18 @@ Begin MobileContainer FontContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   779
+   Height          =   751
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
    LockTop         =   True
+   Orientation     =   0
    Visible         =   True
    Width           =   360
    Begin AppearanceLabel DefaultLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -24,16 +26,19 @@ Begin MobileContainer FontContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Default Font"
       TextColor       =   &c00000000
       Top             =   30
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   300
    End
    Begin FontLabel MonospaceLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -44,16 +49,19 @@ Begin MobileContainer FontContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Monospace"
       TextColor       =   &c00000000
       Top             =   174
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   300
    End
    Begin FontLabel SerifLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -64,16 +72,19 @@ Begin MobileContainer FontContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Serif"
       TextColor       =   &c00000000
       Top             =   654
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   300
    End
    Begin FontLabel SansSerifLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -84,16 +95,19 @@ Begin MobileContainer FontContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Sans Serif"
       TextColor       =   &c00000000
       Top             =   222
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   300
    End
    Begin FontLabel CasualLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -104,16 +118,19 @@ Begin MobileContainer FontContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Casual"
       TextColor       =   &c00000000
       Top             =   78
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   300
    End
    Begin FontLabel CursiveLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -124,16 +141,19 @@ Begin MobileContainer FontContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Cursive"
       TextColor       =   &c00000000
       Top             =   126
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   300
    End
    Begin FontLabel SansSerifBlackLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -144,16 +164,19 @@ Begin MobileContainer FontContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Sans Serif Black"
       TextColor       =   &c00000000
       Top             =   270
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   300
    End
    Begin FontLabel SansSerifCondensedLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -164,16 +187,19 @@ Begin MobileContainer FontContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Sans Serif Condensed"
       TextColor       =   &c00000000
       Top             =   318
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   300
    End
    Begin FontLabel SansSerifCondensedLightLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -184,16 +210,19 @@ Begin MobileContainer FontContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Sans Serif Condensed Light"
       TextColor       =   &c00000000
       Top             =   366
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   300
    End
    Begin FontLabel SansSerifCondensedMediumLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -204,16 +233,19 @@ Begin MobileContainer FontContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Sans Serif Condensed Medium"
       TextColor       =   &c00000000
       Top             =   414
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   300
    End
    Begin FontLabel SansSerifLightLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -224,16 +256,19 @@ Begin MobileContainer FontContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Sans Serif Light"
       TextColor       =   &c00000000
       Top             =   462
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   300
    End
    Begin FontLabel SansSerifMediumLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -244,16 +279,19 @@ Begin MobileContainer FontContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Sans Serif Medium"
       TextColor       =   &c00000000
       Top             =   510
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   300
    End
    Begin FontLabel SansSerifSmallcapsLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -264,16 +302,19 @@ Begin MobileContainer FontContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Sans Serif Smallcaps"
       TextColor       =   &c00000000
       Top             =   558
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   300
    End
    Begin FontLabel SansSerifThinLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   40
@@ -284,16 +325,19 @@ Begin MobileContainer FontContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Sans Serif Thin"
       TextColor       =   &c00000000
       Top             =   606
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   300
    End
    Begin FontLabel SerifMonospaceLabel
       AccessibilityHint=   ""
       AccessibilityLabel=   ""
+      AdjustTextSizeToFit=   False
       Alignment       =   1
       Enabled         =   True
       Height          =   55
@@ -304,28 +348,14 @@ Begin MobileContainer FontContainer
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
+      MaximumCharactersAllowed=   0
       Scope           =   2
       Text            =   "Serif Monospace"
       TextColor       =   &c00000000
       Top             =   702
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   300
-   End
-   Begin MobileCanvas FixBottomPaddingCanvas
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Enabled         =   True
-      Height          =   22
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   735
-      Visible         =   True
-      Width           =   360
    End
 End
 #tag EndMobileContainer
@@ -339,34 +369,6 @@ End
 		  Me.TextFont = Font.SystemFont(20)
 		End Sub
 	#tag EndEvent
-#tag EndEvents
-#tag Events MonospaceLabel
-#tag EndEvents
-#tag Events SerifLabel
-#tag EndEvents
-#tag Events SansSerifLabel
-#tag EndEvents
-#tag Events CasualLabel
-#tag EndEvents
-#tag Events CursiveLabel
-#tag EndEvents
-#tag Events SansSerifBlackLabel
-#tag EndEvents
-#tag Events SansSerifCondensedLabel
-#tag EndEvents
-#tag Events SansSerifCondensedLightLabel
-#tag EndEvents
-#tag Events SansSerifCondensedMediumLabel
-#tag EndEvents
-#tag Events SansSerifLightLabel
-#tag EndEvents
-#tag Events SansSerifMediumLabel
-#tag EndEvents
-#tag Events SansSerifSmallcapsLabel
-#tag EndEvents
-#tag Events SansSerifThinLabel
-#tag EndEvents
-#tag Events SerifMonospaceLabel
 #tag EndEvents
 #tag ViewBehavior
 	#tag ViewProperty
@@ -491,6 +493,14 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="LastControlIndex"
 		Visible=false
 		Group="Behavior"
 		InitialValue=""

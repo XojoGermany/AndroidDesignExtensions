@@ -1,5 +1,5 @@
 Type=Mobile
-RBProjectVersion=2026.02
+RBProjectVersion=2026.03
 MinIDEVersion=20190200
 OrigIDEVersion=20230200
 Class=App;App.xojo_code;&h000000001ED647FF;&h0000000000000000;false
@@ -113,8 +113,8 @@ MobileThemeColorName=Custom
 MobileThemePrimaryColor=&h00419CFF
 MobileThemeStatusBarColor=&h00F2F2F7
 MobileThemeAccentColor=&h000A84FF
-MinSdkVersion=28
-TargetSdkVersion=36
+MinSdkVersion=29
+TargetSdkVersion=37
 ManifestPermissions=
 ProjectDependencies=androidx.print:print:1.1.0
 ManifestGlobals=

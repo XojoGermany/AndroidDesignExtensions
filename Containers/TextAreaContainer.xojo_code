@@ -4,7 +4,7 @@ Begin MobileContainer TextAreaContainer
    AccessibilityLabel=   ""
    Compatibility   =   "(TargetConsole and (Target32Bit or Target64Bit)) or  (TargetWeb and (Target32Bit or Target64Bit)) or  (TargetDesktop and (Target32Bit or Target64Bit)) or  (TargetIOS and (Target64Bit)) or  (TargetAndroid and (Target64Bit))"
    Enabled         =   True
-   Height          =   700
+   Height          =   691
    LockBottom      =   False
    LockLeft        =   True
    LockRight       =   True
@@ -38,6 +38,7 @@ Begin MobileContainer TextAreaContainer
       TextSize        =   0
       TintColor       =   
       Top             =   101
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   320
    End
@@ -62,6 +63,7 @@ Begin MobileContainer TextAreaContainer
       TextFont        =   ""
       TextSize        =   0
       Top             =   447
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   105
    End
@@ -124,6 +126,7 @@ Begin MobileContainer TextAreaContainer
       TextFont        =   ""
       TextSize        =   0
       Top             =   496
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   105
    End
@@ -148,6 +151,7 @@ Begin MobileContainer TextAreaContainer
       TextFont        =   ""
       TextSize        =   0
       Top             =   545
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   105
    End
@@ -200,6 +204,7 @@ Begin MobileContainer TextAreaContainer
       TextSize        =   0
       TintColor       =   
       Top             =   439
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   63
    End
@@ -224,6 +229,7 @@ Begin MobileContainer TextAreaContainer
       TextFont        =   ""
       TextSize        =   0
       Top             =   447
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   100
    End
@@ -248,6 +254,7 @@ Begin MobileContainer TextAreaContainer
       TextFont        =   ""
       TextSize        =   0
       Top             =   497
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   100
    End
@@ -281,6 +288,7 @@ Begin MobileContainer TextAreaContainer
       TextSize        =   0
       TintColor       =   
       Top             =   487
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   63
    End
@@ -314,6 +322,7 @@ Begin MobileContainer TextAreaContainer
       TextSize        =   0
       TintColor       =   
       Top             =   536
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   63
    End
@@ -338,24 +347,9 @@ Begin MobileContainer TextAreaContainer
       TextFont        =   ""
       TextSize        =   0
       Top             =   546
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   100
-   End
-   Begin MobileCanvas FixBottomPaddingCanvas
-      AccessibilityHint=   ""
-      AccessibilityLabel=   ""
-      Enabled         =   True
-      Height          =   22
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Scope           =   2
-      Top             =   678
-      Visible         =   True
-      Width           =   360
    End
    Begin PropertyLabel CursorLabel
       AccessibilityHint=   ""
@@ -378,6 +372,7 @@ Begin MobileContainer TextAreaContainer
       TextFont        =   ""
       TextSize        =   0
       Top             =   586
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   105
    End
@@ -421,6 +416,7 @@ Begin MobileContainer TextAreaContainer
       TextFont        =   ""
       TextSize        =   0
       Top             =   586
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   100
    End
@@ -473,6 +469,7 @@ Begin MobileContainer TextAreaContainer
       TextSize        =   0
       TintColor       =   
       Top             =   617
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   63
    End
@@ -497,6 +494,7 @@ Begin MobileContainer TextAreaContainer
       TextFont        =   ""
       TextSize        =   0
       Top             =   627
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   100
    End
@@ -526,6 +524,7 @@ Begin MobileContainer TextAreaContainer
       TextSize        =   0
       TintColor       =   
       Top             =   30
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   320
    End
@@ -550,6 +549,7 @@ Begin MobileContainer TextAreaContainer
       TextFont        =   ""
       TextSize        =   0
       Top             =   627
+      UseAccessibiltyFontSize=   False
       Visible         =   True
       Width           =   105
    End
